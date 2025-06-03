@@ -1,0 +1,87 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "botswana-amr-diagnostic-report",
+  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report",
+  "name": "BotswanaAMRDiagnosticReport",
+  "title": "Botswana AMR DiagnosticReport",
+  "status": "draft",
+  "description": "Bundles AMR susceptibility observations into one report",
+  "fhirVersion": "4.3.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DiagnosticReport.meta.profile",
+        "path": "DiagnosticReport.meta.profile",
+        "patternCanonical": "http://example.org/fhir/StructureDefinition/BotswanaAMR-DiagnosticReport"
+      },
+      {
+        "id": "DiagnosticReport.status",
+        "path": "DiagnosticReport.status",
+        "patternCode": "draft"
+      },
+      {
+        "id": "DiagnosticReport.code",
+        "path": "DiagnosticReport.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "58321-0",
+              "system": "http://loinc.org",
+              "display": "Bacteria identified and antimicrobial susceptibility panel"
+            }
+          ]
+        }
+      },
+      {
+        "id": "DiagnosticReport.subject",
+        "path": "DiagnosticReport.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.effective[x]",
+        "path": "DiagnosticReport.effective[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.effective[x]:effectiveDateTime",
+        "path": "DiagnosticReport.effective[x]",
+        "sliceName": "effectiveDateTime",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.result",
+        "path": "DiagnosticReport.result",
+        "min": 1
+      }
+    ]
+  }
+}

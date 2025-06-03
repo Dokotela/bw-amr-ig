@@ -1,11 +1,3 @@
-# sushi-config.yaml
-
-# FSH project settings
-sushi:
-  input: input
-  output: output
-
-# ImplementationGuide metadata (required by SUSHI)
 id: bw-amr-ig
 name: BW-AMR-IG
 status: draft
