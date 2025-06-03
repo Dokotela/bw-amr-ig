@@ -20,7 +20,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/BotswanaAMR-DiagnosticReport"
+          "reference": "StructureDefinition/botswana-amr-diagnostic-report"
         },
         "name": "Botswana AMR DiagnosticReport",
         "description": "Bundles AMR susceptibility observations into one report",
@@ -39,12 +39,12 @@
           "reference": "ValueSet/botswana-amr-specimen-type-vs"
         },
         "name": "Botswana AMR Specimen Type VS",
-        "description": "Specimen types used in Botswana AMR data collection, reusing v3‐SpecimenType codes",
+        "description": "Specimen types used in Botswana AMR data collection, reusing v3-SpecimenType codes",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/BotswanaAMR-SusceptibilityObservation"
+          "reference": "StructureDefinition/botswana-amr-susceptibility-observation"
         },
         "name": "Botswana AMR Susceptibility Observation",
         "description": "Records S/I/R (and optional MIC) for a single antibiotic test on a specimen",
@@ -52,9 +52,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/BotswanaAMR-Specimen"
+          "reference": "StructureDefinition/BotswanaAMRSpecimen"
         },
-        "name": "BotswanaAMR_Specimen",
+        "name": "BotswanaAMRSpecimen",
         "exampleBoolean": false
       },
       {
@@ -72,6 +72,14 @@
         "description": "This profile describes a susceptibility test in microbiology",
         "exampleBoolean": false,
         "name": "MII PR Mikrobio Empfindlichkeit"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-mikrobio-keimzahl"
+        },
+        "description": "This profile describes a colony count test in miobiology.",
+        "exampleBoolean": false,
+        "name": "MII PR Mikrobio Keimzahl"
       },
       {
         "reference": {

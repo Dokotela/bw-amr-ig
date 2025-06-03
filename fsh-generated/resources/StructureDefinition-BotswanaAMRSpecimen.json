@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "BotswanaAMR-Specimen",
-  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMR_Specimen",
-  "name": "BotswanaAMR_Specimen",
+  "id": "BotswanaAMRSpecimen",
+  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen",
+  "name": "BotswanaAMRSpecimen",
   "status": "draft",
   "fhirVersion": "4.3.0",
   "kind": "resource",
@@ -30,7 +30,11 @@
       {
         "id": "Specimen.type",
         "path": "Specimen.type",
-        "min": 1
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs"
+        }
       },
       {
         "id": "Specimen.subject",

@@ -1,5 +1,5 @@
-Profile: BotswanaAMR_DiagnosticReport
-Id: BotswanaAMR-DiagnosticReport
+Profile: BotswanaAMRDiagnosticReport
+Id: botswana-amr-diagnostic-report
 Parent: DiagnosticReport
 Title: "Botswana AMR DiagnosticReport"
 Description: "Bundles AMR susceptibility observations into one report"
