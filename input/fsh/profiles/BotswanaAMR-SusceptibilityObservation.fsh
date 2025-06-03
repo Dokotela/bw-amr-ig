@@ -1,0 +1,2 @@
+Profile: BotswanaAMR-SusceptibilityObservation
+Parent: MII_PR_Mikrobio_Empfindlichkeit
