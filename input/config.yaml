@@ -1,0 +1,5 @@
+id: bw-amr-ig
+canonical: http://example.org/fhir/ImplementationGuide/bw-amr-ig
+version: 0.1.0
+fhirVersion: 4.3.0
+dependencies: []
