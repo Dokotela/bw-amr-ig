@@ -1,0 +1,50 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "BotswanaAMR-Specimen",
+  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMR_Specimen",
+  "name": "BotswanaAMR_Specimen",
+  "status": "draft",
+  "fhirVersion": "4.3.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Specimen",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Specimen",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Specimen.id",
+        "path": "Specimen.id",
+        "patternId": "botswana-amr-specimen"
+      },
+      {
+        "id": "Specimen.meta.profile",
+        "path": "Specimen.meta.profile",
+        "patternCanonical": "http://example.org/fhir/StructureDefinition/BotswanaAMR-Specimen"
+      },
+      {
+        "id": "Specimen.status",
+        "path": "Specimen.status",
+        "patternCode": "draft"
+      },
+      {
+        "id": "Specimen.type",
+        "path": "Specimen.type",
+        "min": 1
+      },
+      {
+        "id": "Specimen.subject",
+        "path": "Specimen.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

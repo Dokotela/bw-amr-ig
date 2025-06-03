@@ -1,0 +1,50 @@
+[
+  {
+    "outputFile": "StructureDefinition-BotswanaAMR-DiagnosticReport.json",
+    "fshName": "BotswanaAMR_DiagnosticReport",
+    "fshType": "Profile",
+    "fshFile": "profiles/BotswanaAMR-DiagnosticReport.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-BotswanaAMR-Specimen.json",
+    "fshName": "BotswanaAMR_Specimen",
+    "fshType": "Profile",
+    "fshFile": "profiles/BotswanaAMR-Specimen.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "StructureDefinition-BotswanaAMR-SusceptibilityObservation.json",
+    "fshName": "BotswanaAMR_SusceptibilityObservation",
+    "fshType": "Profile",
+    "fshFile": "profiles/BotswanaAMR-SusceptibilityObservation.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
+    "outputFile": "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.json",
+    "fshName": "BotswanaAMR_AntibioticSusceptibilityLOINC",
+    "fshType": "ValueSet",
+    "fshFile": "valueSets/BotswanaAMR-AntibioticSusceptibilityLOINC.fsh",
+    "startLine": 1,
+    "endLine": 44
+  },
+  {
+    "outputFile": "ValueSet-botswana-amr-interpretation.json",
+    "fshName": "BotswanaAMR_Interpretation",
+    "fshType": "ValueSet",
+    "fshFile": "valueSets/BotswanaAMR-Interpretation.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "ValueSet-botswana-amr-specimen-type-vs.json",
+    "fshName": "BotswanaAMR_SpecimenTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSets/BotswanaAMR-SpecimenTypeVS.fsh",
+    "startLine": 1,
+    "endLine": 7
+  }
+]

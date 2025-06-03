@@ -1,0 +1,15 @@
+# sushi-config.yaml
+
+# FSH project settings
+sushi:
+  input: input
+  output: output
+
+# ImplementationGuide metadata (required by SUSHI)
+id: bw-amr-ig
+name: BW-AMR-IG
+status: draft
+canonical: http://example.org/fhir/ImplementationGuide/bw-amr-ig
+fhirVersion: 4.3.0
+copyrightYear: 2025
+releaseLabel: "0.1.0"

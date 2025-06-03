@@ -1,0 +1,10 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "BotswanaAMR_Interpretation",
+  "id": "botswana-amr-interpretation",
+  "title": "Botswana AMR Interpretation",
+  "description": "Only Susceptible, Intermediate, or Resistant",
+  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation",
+  "compose": null
+}

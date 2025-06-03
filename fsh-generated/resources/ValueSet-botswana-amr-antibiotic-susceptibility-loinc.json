@@ -1,0 +1,10 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "BotswanaAMR_AntibioticSusceptibilityLOINC",
+  "id": "botswana-amr-antibiotic-susceptibility-loinc",
+  "title": "Botswana AMR Antibiotic Susceptibility LOINC",
+  "description": "Collection of LOINC codes for antibiotic-susceptibility tests (MIC panel and individual drugs)",
+  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc",
+  "compose": null
+}
