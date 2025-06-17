@@ -15,10 +15,10 @@
   "toolingVersion" : "5.0.0",
   "toolingRevision" : "3",
   "toolingVersionFull" : "5.0.0 (3)",
-  "genDate" : "Tue, Jun 17, 2025 16:57-0400",
+  "genDate" : "Tue, Jun 17, 2025 17:21-0400",
   "genDay" : "17/06/2025",
   "totalFiles" : 7,
-  "processedFiles" : 15,
+  "processedFiles" : 29,
   "repoSource" : "https://github.com/Dokotela/bw-amr-ig.git",
   "resourceTypes" : [
     "Account",
@@ -234,18 +234,24 @@
   "ig" : {
     "id" : "bw-amr-ig",
     "name" : "BWAMRIG",
-    "title" : null,
+    "title" : "Botswana AMR Implementation Guide",
     "titlelang" : {
     },
     "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig",
     "version" : "0.1.0",
     "status" : "draft",
     "experimental" : false,
-    "publisher" : null,
+    "publisher" : "University of Botswana - Children's Hospital of Philadelphia Partnership",
     "publisherlang" : {
     },
-    "date" : "2025-06-17T16:56:51-04:00",
-    "description" : "",
+    "contact" : [
+      {
+        "name" : "University of Botswana - Children's Hospital of Philadelphia Partnership",
+        "telecom" : ["https://github.com/Dokotela/bw-amr-ig"]
+      }
+    ],
+    "date" : "2025-06-17T17:21:30-04:00",
+    "description" : "FHIR Implementation Guide for the Botswana AMR Data Analytics Platform - a BUP-CHOP collaboration for antimicrobial resistance surveillance",
     "descriptionlang" : {
     },
     "tx-server" : "https://tx.fhir.org/r4",

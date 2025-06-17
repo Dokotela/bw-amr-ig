@@ -16,7 +16,15 @@
   <version value="0.1.0"/>
   <name value="BotswanaAMRSpecimen"/>
   <status value="draft"/>
-  <date value="2025-06-17T16:56:51-04:00"/>
+  <date value="2025-06-17T17:21:30-04:00"/>
+  <publisher value="University of Botswana - Children's Hospital of Philadelphia Partnership"/>
+  <contact>
+    <name value="University of Botswana - Children's Hospital of Philadelphia Partnership"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/Dokotela/bw-amr-ig"/>
+    </telecom>
+  </contact>
   <fhirVersion value="4.3.0"/>
   <mapping>
     <identity value="rim"/>

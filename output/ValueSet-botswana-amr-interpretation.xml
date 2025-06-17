@@ -10,7 +10,15 @@
   <name value="BotswanaAMRInterpretation"/>
   <title value="Botswana AMR Interpretation"/>
   <status value="draft"/>
-  <date value="2025-06-17T16:56:51-04:00"/>
+  <date value="2025-06-17T17:21:30-04:00"/>
+  <publisher value="University of Botswana - Children's Hospital of Philadelphia Partnership"/>
+  <contact>
+    <name value="University of Botswana - Children's Hospital of Philadelphia Partnership"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/Dokotela/bw-amr-ig"/>
+    </telecom>
+  </contact>
   <description value="Only Susceptible, Intermediate, or Resistant"/>
   <compose>
     <include>

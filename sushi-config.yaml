@@ -1,15 +1,20 @@
 id: bw-amr-ig
 name: BW-AMR-IG
+title: "Botswana AMR Implementation Guide"
 status: draft
 version: 0.1.0
 canonical: http://example.org/fhir/ImplementationGuide/bw-amr-ig
 fhirVersion: 4.3.0
 copyrightYear: 2025
 releaseLabel: "0.1.0"
-
+description: "FHIR Implementation Guide for the Botswana AMR Data Analytics Platform - a BUP-CHOP collaboration for antimicrobial resistance surveillance"
+publisher:
+  name: "University of Botswana - Children's Hospital of Philadelphia Partnership"
+  url: "https://github.com/Dokotela/bw-amr-ig"
 menu:
   Home: index.html
+  Background: background.html
+  Use Cases: use-cases.html
+  Implementation: implementation.html
   Profiles: artifacts.html#structures-resource-profiles
-  Extensions: artifacts.html#structures-extension-definitions
   Value Sets: artifacts.html#terminology-value-sets
-  Code Systems: artifacts.html#terminology-code-systems

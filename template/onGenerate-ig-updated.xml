@@ -11,13 +11,26 @@
          <h2>BWAMRIG</h2>
          <p>The official URL for this implementation guide is: </p>
          <pre>http://example.org/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig</pre>
+         <div>
+            <p>FHIR Implementation Guide for the Botswana AMR Data Analytics Platform - a BUP-CHOP collaboration for antimicrobial resistance surveillance</p>
+         </div>
       </div>
    </text>
    <url value="http://example.org/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig"/>
    <version value="0.1.0"/>
    <name value="BWAMRIG"/>
+   <title value="Botswana AMR Implementation Guide"/>
    <status value="draft"/>
-   <date value="2025-06-17T16:56:51-04:00"/>
+   <date value="2025-06-17T17:21:30-04:00"/>
+   <publisher value="University of Botswana - Children's Hospital of Philadelphia Partnership"/>
+   <contact>
+      <name value="University of Botswana - Children's Hospital of Philadelphia Partnership"/>
+      <telecom>
+         <system value="url"/>
+         <value value="https://github.com/Dokotela/bw-amr-ig"/>
+      </telecom>
+   </contact>
+   <description value="FHIR Implementation Guide for the Botswana AMR Data Analytics Platform - a BUP-CHOP collaboration for antimicrobial resistance surveillance"/>
    <packageId value="bw-amr-ig"/>
    <license value="CC0-1.0"/>
    <fhirVersion value="4.3.0"/>
@@ -369,6 +382,30 @@
             </extension>
             <nameUrl value="index.html"/>
             <title value="Home"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="background.html"/>
+            </extension>
+            <nameUrl value="background.html"/>
+            <title value="Background"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="implementation.html"/>
+            </extension>
+            <nameUrl value="implementation.html"/>
+            <title value="Implementation"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="use-cases.html"/>
+            </extension>
+            <nameUrl value="use-cases.html"/>
+            <title value="Use Cases"/>
             <generation value="markdown"/>
          </page>
          <page>

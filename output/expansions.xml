@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="ad03bb2e-1137-4908-8a24-e992747f0b45"/>
+  <id value="28c6faf3-d9c0-45ce-bdd4-422bca12a9af"/>
   <meta>
-    <lastUpdated value="2025-06-17T16:57:06.064-04:00"/>
+    <lastUpdated value="2025-06-17T17:21:45.824-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -356,10 +356,10 @@
         <name value="BotswanaAMRAntibioticSusceptibilityLOINC"/>
         <title value="Botswana AMR Antibiotic Susceptibility LOINC"/>
         <status value="draft"/>
-        <date value="2025-06-17T16:56:51-04:00"/>
+        <date value="2025-06-17T17:21:30-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:2100d4de-45be-4641-88a1-73bb2f4bf0b5"/>
-          <timestamp value="2025-06-17T16:57:15-04:00"/>
+          <identifier value="urn:uuid:7be62cf4-fdda-41e6-9fcb-2fa27523470c"/>
+          <timestamp value="2025-06-17T17:21:55-04:00"/>
           <total value="40"/>
           <offset value="0"/>
           <parameter>
@@ -687,10 +687,10 @@
         <name value="BotswanaAMRInterpretation"/>
         <title value="Botswana AMR Interpretation"/>
         <status value="draft"/>
-        <date value="2025-06-17T16:56:51-04:00"/>
+        <date value="2025-06-17T17:21:30-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:0a94b8de-2535-420d-bf7c-3db975b8779d"/>
-          <timestamp value="2025-06-17T16:57:16-04:00"/>
+          <identifier value="urn:uuid:8f442d48-35b8-411d-8528-87388634b94d"/>
+          <timestamp value="2025-06-17T17:21:56-04:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -820,10 +820,10 @@
         <name value="BotswanaAMRSpecimenTypeVS"/>
         <title value="Botswana AMR Specimen Type VS"/>
         <status value="draft"/>
-        <date value="2025-06-17T16:56:51-04:00"/>
+        <date value="2025-06-17T17:21:30-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:52b7271a-5daa-4e32-bf76-c15ea3788827"/>
-          <timestamp value="2025-06-17T16:57:16-04:00"/>
+          <identifier value="urn:uuid:641e035f-8ee5-4cb0-9523-c4dfd6737622"/>
+          <timestamp value="2025-06-17T17:21:56-04:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>

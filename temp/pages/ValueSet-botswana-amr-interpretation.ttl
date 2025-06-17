@@ -18,7 +18,15 @@
   fhir:name [ fhir:v "BotswanaAMRInterpretation"] ; # 
   fhir:title [ fhir:v "Botswana AMR Interpretation"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-06-17T16:56:51-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-17T17:21:30-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "University of Botswana - Children's Hospital of Philadelphia Partnership"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "University of Botswana - Children's Hospital of Philadelphia Partnership" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/Dokotela/bw-amr-ig" ]
+     ] )
+  ] ) ; # 
   fhir:description [ fhir:v "Only Susceptible, Intermediate, or Resistant"] ; # 
   fhir:compose [
      fhir:include ( [

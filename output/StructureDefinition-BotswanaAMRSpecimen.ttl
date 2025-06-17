@@ -17,7 +17,15 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "BotswanaAMRSpecimen"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-06-17T16:56:51-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-17T17:21:30-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "University of Botswana - Children's Hospital of Philadelphia Partnership"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "University of Botswana - Children's Hospital of Philadelphia Partnership" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/Dokotela/bw-amr-ig" ]
+     ] )
+  ] ) ; # 
   fhir:fhirVersion [ fhir:v "4.3.0"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "rim" ] ;

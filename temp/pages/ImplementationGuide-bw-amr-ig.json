@@ -3,13 +3,23 @@
   "id" : "bw-amr-ig",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide bw-amr-ig</b></p><a name=\"bw-amr-ig\"> </a><a name=\"hcbw-amr-ig\"> </a><h2>BWAMRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide bw-amr-ig</b></p><a name=\"bw-amr-ig\"> </a><a name=\"hcbw-amr-ig\"> </a><h2>BWAMRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig</pre><div><p>FHIR Implementation Guide for the Botswana AMR Data Analytics Platform - a BUP-CHOP collaboration for antimicrobial resistance surveillance</p>\n</div></div>"
   },
   "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig",
   "version" : "0.1.0",
   "name" : "BWAMRIG",
+  "title" : "Botswana AMR Implementation Guide",
   "status" : "draft",
-  "date" : "2025-06-17T16:56:51-04:00",
+  "date" : "2025-06-17T17:21:30-04:00",
+  "publisher" : "University of Botswana - Children's Hospital of Philadelphia Partnership",
+  "contact" : [{
+    "name" : "University of Botswana - Children's Hospital of Philadelphia Partnership",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/Dokotela/bw-amr-ig"
+    }]
+  }],
+  "description" : "FHIR Implementation Guide for the Botswana AMR Data Analytics Platform - a BUP-CHOP collaboration for antimicrobial resistance surveillance",
   "packageId" : "bw-amr-ig",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.3.0"],
@@ -666,6 +676,21 @@
       "page" : [{
         "nameUrl" : "index.html",
         "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "background.html",
+        "title" : "Background",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "implementation.html",
+        "title" : "Implementation",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "use-cases.html",
+        "title" : "Use Cases",
         "generation" : "markdown"
       }]
     },

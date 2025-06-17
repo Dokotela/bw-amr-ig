@@ -1,5 +1,12 @@
-# bw-amr-ig
-FHIR Implementation Guide for the Botswana Antimicrobial Resistance Project
+# Botswana AMR Implementation Guide
+
+📖 **[View the Implementation Guide](./output/index.html)** (download and open locally)
+
+Or browse the individual pages:
+- [Home](./output/index.html)
+- [Background](./output/background.html)
+- [Use Cases](./output/use-cases.html)
+- [Profiles](./output/artifacts.html)
 
 ## Setup
 ```bash

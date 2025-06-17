@@ -14,15 +14,18 @@
     <a href="index.html">Home</a>
   </li>
   <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="use-cases.html">Use Cases</a>
+  </li>
+  <li>
+    <a href="implementation.html">Implementation</a>
+  </li>
+  <li>
     <a href="artifacts.html#structures-resource-profiles">Profiles</a>
   </li>
   <li>
-    <a href="artifacts.html#structures-extension-definitions">Extensions</a>
-  </li>
-  <li>
     <a href="artifacts.html#terminology-value-sets">Value Sets</a>
-  </li>
-  <li>
-    <a href="artifacts.html#terminology-code-systems">Code Systems</a>
   </li>
 </ul>

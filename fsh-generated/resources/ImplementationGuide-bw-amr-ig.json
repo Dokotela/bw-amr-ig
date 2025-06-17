@@ -4,7 +4,21 @@
   "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig",
   "version": "0.1.0",
   "name": "BWAMRIG",
+  "title": "Botswana AMR Implementation Guide",
   "status": "draft",
+  "publisher": "University of Botswana - Children's Hospital of Philadelphia Partnership",
+  "contact": [
+    {
+      "name": "University of Botswana - Children's Hospital of Philadelphia Partnership",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/Dokotela/bw-amr-ig"
+        }
+      ]
+    }
+  ],
+  "description": "FHIR Implementation Guide for the Botswana AMR Data Analytics Platform - a BUP-CHOP collaboration for antimicrobial resistance surveillance",
   "packageId": "bw-amr-ig",
   "fhirVersion": [
     "4.3.0"
@@ -67,6 +81,21 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "background.html",
+          "title": "Background",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "implementation.html",
+          "title": "Implementation",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "use-cases.html",
+          "title": "Use Cases",
           "generation": "markdown"
         }
       ]

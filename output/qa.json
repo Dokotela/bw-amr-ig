@@ -1,13 +1,13 @@
 {
   "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig",
   "name" : "BWAMRIG",
-  "title" : null,
-  "description" : null,
+  "title" : "Botswana AMR Implementation Guide",
+  "description" : "FHIR Implementation Guide for the Botswana AMR Data Analytics Platform - a BUP-CHOP collaboration for antimicrobial resistance surveillance",
   "status" : "draft",
   "package-id" : "bw-amr-ig",
   "ig-ver" : "0.1.0",
-  "date" : "Tue, 17 Jun, 2025 16:57:06 -0400",
-  "dateISO8601" : "2025-06-17T16:57:06-04:00",
+  "date" : "Tue, 17 Jun, 2025 17:21:45 -0400",
+  "dateISO8601" : "2025-06-17T17:21:45-04:00",
   "errs" : 21,
   "warnings" : 18,
   "hints" : 4,
@@ -15,5 +15,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.3.0",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1615574256
+  "maxMemory" : 1481613072
 }
