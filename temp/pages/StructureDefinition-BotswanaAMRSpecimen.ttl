@@ -16,16 +16,18 @@
   fhir:url [ fhir:v "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "BotswanaAMRSpecimen"] ; # 
+  fhir:title [ fhir:v "Botswana AMR Specimen"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-06-17T17:21:30-04:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "University of Botswana - Children's Hospital of Philadelphia Partnership"] ; # 
+  fhir:date [ fhir:v "2025-06-17T18:14:37-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "University of Botswana Partnership"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "University of Botswana - Children's Hospital of Philadelphia Partnership" ] ;
+     fhir:name [ fhir:v "University of Botswana Partnership" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
        fhir:value [ fhir:v "https://github.com/Dokotela/bw-amr-ig" ]
      ] )
   ] ) ; # 
+  fhir:description [ fhir:v "Constrains the Specimen Types for Botswana AMR"] ; # 
   fhir:fhirVersion [ fhir:v "4.3.0"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "rim" ] ;

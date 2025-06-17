@@ -6,10 +6,10 @@
   "name": "BWAMRIG",
   "title": "Botswana AMR Implementation Guide",
   "status": "draft",
-  "publisher": "University of Botswana - Children's Hospital of Philadelphia Partnership",
+  "publisher": "University of Botswana Partnership",
   "contact": [
     {
-      "name": "University of Botswana - Children's Hospital of Philadelphia Partnership",
+      "name": "University of Botswana Partnership",
       "telecom": [
         {
           "system": "url",
@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "description": "FHIR Implementation Guide for the Botswana AMR Data Analytics Platform - a BUP-CHOP collaboration for antimicrobial resistance surveillance",
+  "description": "FHIR Implementation Guide for the Botswana AMR Data Analytics Platform",
   "packageId": "bw-amr-ig",
   "fhirVersion": [
     "4.3.0"
@@ -51,6 +51,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/BotswanaAMRSpecimen"
+        },
+        "name": "Botswana AMR Specimen",
+        "description": "Constrains the Specimen Types for Botswana AMR",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/botswana-amr-specimen-type-vs"
         },
         "name": "Botswana AMR Specimen Type VS",
@@ -63,13 +71,6 @@
         },
         "name": "Botswana AMR Susceptibility Observation",
         "description": "Records S/I/R (and optional MIC) for a single antibiotic test on a specimen",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/BotswanaAMRSpecimen"
-        },
-        "name": "BotswanaAMRSpecimen",
         "exampleBoolean": false
       }
     ],
@@ -108,6 +109,14 @@
       {
         "code": "releaselabel",
         "value": "0.1.0"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      },
+      {
+        "code": "usage-stats-opt-out",
+        "value": "false"
       }
     ]
   }

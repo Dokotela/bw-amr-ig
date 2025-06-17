@@ -12,7 +12,7 @@
          <p>The official URL for this implementation guide is: </p>
          <pre>http://example.org/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig</pre>
          <div>
-            <p>FHIR Implementation Guide for the Botswana AMR Data Analytics Platform - a BUP-CHOP collaboration for antimicrobial resistance surveillance</p>
+            <p>FHIR Implementation Guide for the Botswana AMR Data Analytics Platform</p>
          </div>
       </div>
    </text>
@@ -21,16 +21,16 @@
    <name value="BWAMRIG"/>
    <title value="Botswana AMR Implementation Guide"/>
    <status value="draft"/>
-   <date value="2025-06-17T17:21:30-04:00"/>
-   <publisher value="University of Botswana - Children's Hospital of Philadelphia Partnership"/>
+   <date value="2025-06-17T18:14:37-04:00"/>
+   <publisher value="University of Botswana Partnership"/>
    <contact>
-      <name value="University of Botswana - Children's Hospital of Philadelphia Partnership"/>
+      <name value="University of Botswana Partnership"/>
       <telecom>
          <system value="url"/>
          <value value="https://github.com/Dokotela/bw-amr-ig"/>
       </telecom>
    </contact>
-   <description value="FHIR Implementation Guide for the Botswana AMR Data Analytics Platform - a BUP-CHOP collaboration for antimicrobial resistance surveillance"/>
+   <description value="FHIR Implementation Guide for the Botswana AMR Data Analytics Platform"/>
    <packageId value="bw-amr-ig"/>
    <license value="CC0-1.0"/>
    <fhirVersion value="4.3.0"/>
@@ -65,6 +65,22 @@
          </extension>
          <extension url="value">
             <valueString value="0.1.0"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="show-inherited-invariants"/>
+         </extension>
+         <extension url="value">
+            <valueString value="false"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="usage-stats-opt-out"/>
+         </extension>
+         <extension url="value">
+            <valueString value="false"/>
          </extension>
       </extension>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -288,13 +304,13 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-botswana-amr-susceptibility-observation.html"/>
+            <valueUri value="StructureDefinition-BotswanaAMRSpecimen.html"/>
          </extension>
          <reference>
-            <reference value="StructureDefinition/botswana-amr-susceptibility-observation"/>
+            <reference value="StructureDefinition/BotswanaAMRSpecimen"/>
          </reference>
-         <name value="Botswana AMR Susceptibility Observation"/>
-         <description value="Records S/I/R (and optional MIC) for a single antibiotic test on a specimen"/>
+         <name value="Botswana AMR Specimen"/>
+         <description value="Constrains the Specimen Types for Botswana AMR"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -306,12 +322,13 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-BotswanaAMRSpecimen.html"/>
+            <valueUri value="StructureDefinition-botswana-amr-susceptibility-observation.html"/>
          </extension>
          <reference>
-            <reference value="StructureDefinition/BotswanaAMRSpecimen"/>
+            <reference value="StructureDefinition/botswana-amr-susceptibility-observation"/>
          </reference>
-         <name value="BotswanaAMRSpecimen"/>
+         <name value="Botswana AMR Susceptibility Observation"/>
+         <description value="Records S/I/R (and optional MIC) for a single antibiotic test on a specimen"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -418,13 +435,13 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-botswana-amr-susceptibility-observation.html"/>
-               <title value="Botswana AMR Susceptibility Observation"/>
+               <nameUrl value="StructureDefinition-BotswanaAMRSpecimen.html"/>
+               <title value="Botswana AMR Specimen"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-BotswanaAMRSpecimen.html"/>
-               <title value="BotswanaAMRSpecimen"/>
+               <nameUrl value="StructureDefinition-botswana-amr-susceptibility-observation.html"/>
+               <title value="Botswana AMR Susceptibility Observation"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -511,6 +528,14 @@
       <parameter>
          <code value="releaselabel"/>
          <value value="0.1.0"/>
+      </parameter>
+      <parameter>
+         <code value="show-inherited-invariants"/>
+         <value value="false"/>
+      </parameter>
+      <parameter>
+         <code value="usage-stats-opt-out"/>
+         <value value="false"/>
       </parameter>
       <parameter>
          <code value="autoload-resources"/>

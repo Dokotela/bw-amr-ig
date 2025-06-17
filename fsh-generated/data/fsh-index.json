@@ -5,7 +5,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/BotswanaAMRSpecimen.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 13
   },
   {
     "outputFile": "StructureDefinition-botswana-amr-diagnostic-report.json",

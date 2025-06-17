@@ -7,14 +7,16 @@ canonical: http://example.org/fhir/ImplementationGuide/bw-amr-ig
 fhirVersion: 4.3.0
 copyrightYear: 2025
 releaseLabel: "0.1.0"
-description: "FHIR Implementation Guide for the Botswana AMR Data Analytics Platform - a BUP-CHOP collaboration for antimicrobial resistance surveillance"
+description: "FHIR Implementation Guide for the Botswana AMR Data Analytics Platform"
 publisher:
-  name: "University of Botswana - Children's Hospital of Philadelphia Partnership"
+  name: "University of Botswana Partnership"
   url: "https://github.com/Dokotela/bw-amr-ig"
+parameters:
+  show-inherited-invariants: false
+  usage-stats-opt-out: false
 menu:
   Home: index.html
   Background: background.html
   Use Cases: use-cases.html
   Implementation: implementation.html
-  Profiles: artifacts.html#structures-resource-profiles
-  Value Sets: artifacts.html#terminology-value-sets
+  Artifacts: artifacts.html

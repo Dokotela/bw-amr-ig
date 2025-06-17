@@ -31,18 +31,18 @@
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-botswana-amr-susceptibility-observation.html"
-                  title="StructureDefinition/botswana-amr-susceptibility-observation">Botswana AMR Susceptibility Observation</a>
+               <a href="StructureDefinition-BotswanaAMRSpecimen.html"
+                  title="StructureDefinition/BotswanaAMRSpecimen">Botswana AMR Specimen</a>
             </td>
-            <td>{% capture desc %}Records S/I/R (and optional MIC) for a single antibiotic test on a specimen{% endcapture %}
+            <td>{% capture desc %}Constrains the Specimen Types for Botswana AMR{% endcapture %}
 {{ desc | markdownify}}</td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-BotswanaAMRSpecimen.html"
-                  title="StructureDefinition/BotswanaAMRSpecimen">BotswanaAMRSpecimen</a>
+               <a href="StructureDefinition-botswana-amr-susceptibility-observation.html"
+                  title="StructureDefinition/botswana-amr-susceptibility-observation">Botswana AMR Susceptibility Observation</a>
             </td>
-            <td>{% capture desc %}{% endcapture %}
+            <td>{% capture desc %}Records S/I/R (and optional MIC) for a single antibiotic test on a specimen{% endcapture %}
 {{ desc | markdownify}}</td>
          </tr>
       </tbody>

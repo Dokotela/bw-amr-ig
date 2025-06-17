@@ -1,0 +1,33 @@
+/* Custom styles for Botswana AMR IG */
+
+/* Increase base font size */
+body {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+}
+
+/* Increase heading sizes */
+h1 { font-size: 2.2em !important; }
+h2 { font-size: 1.8em !important; }
+h3 { font-size: 1.5em !important; }
+h4 { font-size: 1.3em !important; }
+
+/* Increase table text */
+table, th, td {
+    font-size: 15px !important;
+}
+
+/* Increase navigation menu text */
+.navbar, .nav {
+    font-size: 16px !important;
+}
+
+/* Increase code/pre text */
+code, pre {
+    font-size: 14px !important;
+}
+
+/* Increase paragraph text in main content */
+.container p, .content p {
+    font-size: 16px !important;
+}

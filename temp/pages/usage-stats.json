@@ -7,7 +7,7 @@
     "Specimen": [
       {
         "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen",
-        "title": "BotswanaAMRSpecimen"
+        "title": "Botswana AMR Specimen"
       }
     ],
     "DiagnosticReport": [

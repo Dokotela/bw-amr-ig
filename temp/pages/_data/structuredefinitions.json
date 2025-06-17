@@ -3,7 +3,7 @@
     "index" : 0,
     "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen",
     "name" : "BotswanaAMRSpecimen",
-    "title" : "BotswanaAMRSpecimen",
+    "title" : "Botswana AMR Specimen",
     "uml" : false,
     "titlelang" : {
     },
@@ -15,16 +15,16 @@
     "basepath" : "http://hl7.org/fhir/R4B/specimen.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Tue Jun 17 17:21:30 EDT 2025",
+    "date" : "Tue Jun 17 18:14:37 EDT 2025",
     "abstract" : false,
     "derivation" : "constraint",
-    "publisher" : "University of Botswana - Children's Hospital of Philadelphia Partnership",
+    "publisher" : "University of Botswana Partnership",
     "publisherlang" : {
     },
     "copyright" : null,
     "copyrightlang" : {
     },
-    "description" : "",
+    "description" : "Constrains the Specimen Types for Botswana AMR",
     "descriptionlang" : {
     },
     "obligations" : false
@@ -45,10 +45,10 @@
     "basepath" : "http://hl7.org/fhir/R4B/diagnosticreport.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Tue Jun 17 17:21:30 EDT 2025",
+    "date" : "Tue Jun 17 18:14:37 EDT 2025",
     "abstract" : false,
     "derivation" : "constraint",
-    "publisher" : "University of Botswana - Children's Hospital of Philadelphia Partnership",
+    "publisher" : "University of Botswana Partnership",
     "publisherlang" : {
     },
     "copyright" : null,
@@ -75,10 +75,10 @@
     "basepath" : "http://hl7.org/fhir/R4B/observation.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Tue Jun 17 17:21:30 EDT 2025",
+    "date" : "Tue Jun 17 18:14:37 EDT 2025",
     "abstract" : false,
     "derivation" : "constraint",
-    "publisher" : "University of Botswana - Children's Hospital of Philadelphia Partnership",
+    "publisher" : "University of Botswana Partnership",
     "publisherlang" : {
     },
     "copyright" : null,

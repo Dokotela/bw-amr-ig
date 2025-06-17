@@ -1,5 +1,7 @@
 # AMR in Botswana
 
+![Deaths from AMR](amr-deaths-graph.png)
+
 ## The Challenge
 
 - Reports of outbreaks and sporadic infections due to AMR are rising in Botswana
@@ -7,6 +9,8 @@
 - AMR is now estimated to be the number-5 leading cause of death in Botswana
 
 ## Key AMR Reports in Botswana
+
+![AMR Case Reports in Botswana](case-reports.png)
 
 ### Multidrug-resistant Klebsiella in hospitalized newborns
 Klebsiella pneumoniae is the leading cause of bloodstream infection in hospitalized neonates in Botswana, with over 80% being multi-drug resistant.

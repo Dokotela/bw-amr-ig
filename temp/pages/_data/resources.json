@@ -13,13 +13,13 @@
     "title" : "Botswana AMR Implementation Guide",
     "titlelang" : {
     },
-    "date" : "2025-06-17T17:21:30-04:00",
-    "description" : "FHIR Implementation Guide for the Botswana AMR Data Analytics Platform - a BUP-CHOP collaboration for antimicrobial resistance surveillance",
+    "date" : "2025-06-17T18:14:37-04:00",
+    "description" : "FHIR Implementation Guide for the Botswana AMR Data Analytics Platform",
     "descriptionlang" : {
     },
     "status" : {
       "class" : "colsd",
-      "owner" : "University of Botswana - Children's Hospital of Philadelphia Partnership",
+      "owner" : "University of Botswana Partnership",
       "link" : "https://github.com/Dokotela/bw-amr-ig",
       "status" : "Draft"
     }
@@ -35,10 +35,16 @@
     "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen",
     "version" : "0.1.0",
     "name" : "BotswanaAMRSpecimen",
-    "date" : "2025-06-17T17:21:30-04:00",
+    "title" : "Botswana AMR Specimen",
+    "titlelang" : {
+    },
+    "date" : "2025-06-17T18:14:37-04:00",
+    "description" : "Constrains the Specimen Types for Botswana AMR",
+    "descriptionlang" : {
+    },
     "status" : {
       "class" : "colsd",
-      "owner" : "University of Botswana - Children's Hospital of Philadelphia Partnership",
+      "owner" : "University of Botswana Partnership",
       "link" : "https://github.com/Dokotela/bw-amr-ig",
       "status" : "Draft"
     }
@@ -57,13 +63,13 @@
     "title" : "Botswana AMR DiagnosticReport",
     "titlelang" : {
     },
-    "date" : "2025-06-17T17:21:30-04:00",
+    "date" : "2025-06-17T18:14:37-04:00",
     "description" : "Bundles AMR susceptibility observations into one report",
     "descriptionlang" : {
     },
     "status" : {
       "class" : "colsd",
-      "owner" : "University of Botswana - Children's Hospital of Philadelphia Partnership",
+      "owner" : "University of Botswana Partnership",
       "link" : "https://github.com/Dokotela/bw-amr-ig",
       "status" : "Draft"
     }
@@ -82,13 +88,13 @@
     "title" : "Botswana AMR Susceptibility Observation",
     "titlelang" : {
     },
-    "date" : "2025-06-17T17:21:30-04:00",
+    "date" : "2025-06-17T18:14:37-04:00",
     "description" : "Records S/I/R (and optional MIC) for a single antibiotic test on a specimen",
     "descriptionlang" : {
     },
     "status" : {
       "class" : "colsd",
-      "owner" : "University of Botswana - Children's Hospital of Philadelphia Partnership",
+      "owner" : "University of Botswana Partnership",
       "link" : "https://github.com/Dokotela/bw-amr-ig",
       "status" : "Draft"
     }
@@ -107,13 +113,13 @@
     "title" : "Botswana AMR Antibiotic Susceptibility LOINC",
     "titlelang" : {
     },
-    "date" : "2025-06-17T17:21:30-04:00",
+    "date" : "2025-06-17T18:14:37-04:00",
     "description" : "Collection of LOINC codes for antibiotic-susceptibility tests (MIC panel and individual drugs)",
     "descriptionlang" : {
     },
     "status" : {
       "class" : "colsd",
-      "owner" : "University of Botswana - Children's Hospital of Philadelphia Partnership",
+      "owner" : "University of Botswana Partnership",
       "link" : "https://github.com/Dokotela/bw-amr-ig",
       "status" : "Draft"
     }
@@ -132,13 +138,13 @@
     "title" : "Botswana AMR Interpretation",
     "titlelang" : {
     },
-    "date" : "2025-06-17T17:21:30-04:00",
+    "date" : "2025-06-17T18:14:37-04:00",
     "description" : "Only Susceptible, Intermediate, or Resistant",
     "descriptionlang" : {
     },
     "status" : {
       "class" : "colsd",
-      "owner" : "University of Botswana - Children's Hospital of Philadelphia Partnership",
+      "owner" : "University of Botswana Partnership",
       "link" : "https://github.com/Dokotela/bw-amr-ig",
       "status" : "Draft"
     }
@@ -157,13 +163,13 @@
     "title" : "Botswana AMR Specimen Type VS",
     "titlelang" : {
     },
-    "date" : "2025-06-17T17:21:30-04:00",
+    "date" : "2025-06-17T18:14:37-04:00",
     "description" : "Specimen types used in Botswana AMR data collection, reusing v3-SpecimenType codes",
     "descriptionlang" : {
     },
     "status" : {
       "class" : "colsd",
-      "owner" : "University of Botswana - Children's Hospital of Philadelphia Partnership",
+      "owner" : "University of Botswana Partnership",
       "link" : "https://github.com/Dokotela/bw-amr-ig",
       "status" : "Draft"
     }

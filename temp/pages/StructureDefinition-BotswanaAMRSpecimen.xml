@@ -15,16 +15,18 @@
   <url value="http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen"/>
   <version value="0.1.0"/>
   <name value="BotswanaAMRSpecimen"/>
+  <title value="Botswana AMR Specimen"/>
   <status value="draft"/>
-  <date value="2025-06-17T17:21:30-04:00"/>
-  <publisher value="University of Botswana - Children's Hospital of Philadelphia Partnership"/>
+  <date value="2025-06-17T18:14:37-04:00"/>
+  <publisher value="University of Botswana Partnership"/>
   <contact>
-    <name value="University of Botswana - Children's Hospital of Philadelphia Partnership"/>
+    <name value="University of Botswana Partnership"/>
     <telecom>
       <system value="url"/>
       <value value="https://github.com/Dokotela/bw-amr-ig"/>
     </telecom>
   </contact>
+  <description value="Constrains the Specimen Types for Botswana AMR"/>
   <fhirVersion value="4.3.0"/>
   <mapping>
     <identity value="rim"/>

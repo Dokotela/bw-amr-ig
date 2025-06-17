@@ -1,5 +1,7 @@
 Profile: BotswanaAMRSpecimen
 Parent: Specimen
+Title: "Botswana AMR Specimen"
+Description: "Constrains the Specimen Types for Botswana AMR"
 
 * id = "botswana-amr-specimen"
 * status = #draft

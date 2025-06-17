@@ -23,10 +23,10 @@
   <name value="BotswanaAMRDiagnosticReport"/>
   <title value="Botswana AMR DiagnosticReport"/>
   <status value="draft"/>
-  <date value="2025-06-17T17:21:30-04:00"/>
-  <publisher value="University of Botswana - Children's Hospital of Philadelphia Partnership"/>
+  <date value="2025-06-17T18:14:37-04:00"/>
+  <publisher value="University of Botswana Partnership"/>
   <contact>
-    <name value="University of Botswana - Children's Hospital of Philadelphia Partnership"/>
+    <name value="University of Botswana Partnership"/>
     <telecom>
       <system value="url"/>
       <value value="https://github.com/Dokotela/bw-amr-ig"/>

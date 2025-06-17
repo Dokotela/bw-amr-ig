@@ -1,0 +1,11 @@
+{
+  "name": "bw-amr-template",
+  "version": "0.1.0",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "Botswana AMR Template with logos",
+  "base": "fhir.base.template",
+  "dependencies": {
+    "fhir.base.template": "current"
+  }
+}

@@ -1,10 +1,10 @@
 BWAMRIG : Validation Results
 =========================================
 
-err = 21, warn = 18, info = 4
+err = 21, warn = 17, info = 4
 $--
 Generated $--. FHIR version $-- for bw-amr-ig#$-- (canonical = http://example.org/fhir)
- Build Errors : 4 / 5 / 0
+ Build Errors : 4 / 4 / 0
  /home/grey/dev/bw-amr-ig/fsh-generated/resources/ImplementationGuide-bw-amr-ig : 3 / 1 / 1
  /home/grey/dev/bw-amr-ig/fsh-generated/resources/StructureDefinition-BotswanaAMRSpecimen : 2 / 2 / 3
  /home/grey/dev/bw-amr-ig/fsh-generated/resources/StructureDefinition-botswana-amr-diagnostic-report : 4 / 2 / 2
@@ -14,11 +14,10 @@ Generated $--. FHIR version $-- for bw-amr-ig#$-- (canonical = http://example.or
  /home/grey/dev/bw-amr-ig/fsh-generated/resources/ValueSet-botswana-amr-specimen-type-vs : 2 / 1 / 1
 </table>
 == n/a ==
-ERROR: ImplementationGuide.definition.parameter[23].value: Supressed messages file not found
+ERROR: ImplementationGuide.definition.parameter[25].value: Supressed messages file not found
 ERROR: ImplementationGuide/bw-amr-ig: This IG is version 4.3.0, while the IG 'hl7.terminology.r4' is from version 4.0.1
 ERROR: ImplementationGuide/bw-amr-ig: This IG is version 4.3.0, while the IG 'hl7.fhir.uv.extensions.r4' is from version 4.0.1
 ERROR: ImplementationGuide/bw-amr-ig: This IG is version 4.3.0, while the IG 'hl7.fhir.uv.tools.r4' is from version 4.0.1
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BotswanaAMRSpecimen.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide

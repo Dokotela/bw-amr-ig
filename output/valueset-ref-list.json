@@ -36,7 +36,7 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v3-SpecimenType"],
       "uses" : {
       },
-      "StructureDefinition-BotswanaAMRSpecimen.html" : "BotswanaAMRSpecimen"
+      "StructureDefinition-BotswanaAMRSpecimen.html" : "Botswana AMR Specimen"
     }
   ]
 }

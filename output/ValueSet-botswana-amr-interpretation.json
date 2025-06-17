@@ -10,10 +10,10 @@
   "name" : "BotswanaAMRInterpretation",
   "title" : "Botswana AMR Interpretation",
   "status" : "draft",
-  "date" : "2025-06-17T17:21:30-04:00",
-  "publisher" : "University of Botswana - Children's Hospital of Philadelphia Partnership",
+  "date" : "2025-06-17T18:14:37-04:00",
+  "publisher" : "University of Botswana Partnership",
   "contact" : [{
-    "name" : "University of Botswana - Children's Hospital of Philadelphia Partnership",
+    "name" : "University of Botswana Partnership",
     "telecom" : [{
       "system" : "url",
       "value" : "https://github.com/Dokotela/bw-amr-ig"
