@@ -1,0 +1,92 @@
+{
+  "BotswanaAMRSpecimen" : {
+    "index" : 0,
+    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen",
+    "name" : "BotswanaAMRSpecimen",
+    "title" : "BotswanaAMRSpecimen",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-BotswanaAMRSpecimen.html",
+    "kind" : "resource",
+    "type" : "Specimen",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Specimen",
+    "basename" : "Specimen",
+    "basepath" : "http://hl7.org/fhir/R4B/specimen.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Tue Jun 17 16:56:51 EDT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "botswana-amr-diagnostic-report" : {
+    "index" : 1,
+    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report",
+    "name" : "BotswanaAMRDiagnosticReport",
+    "title" : "Botswana AMR DiagnosticReport",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-botswana-amr-diagnostic-report.html",
+    "kind" : "resource",
+    "type" : "DiagnosticReport",
+    "base" : "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+    "basename" : "DiagnosticReport",
+    "basepath" : "http://hl7.org/fhir/R4B/diagnosticreport.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Tue Jun 17 16:56:51 EDT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Bundles AMR susceptibility observations into one report",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "botswana-amr-susceptibility-observation" : {
+    "index" : 2,
+    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
+    "name" : "BotswanaAMRSusceptibilityObservation",
+    "title" : "Botswana AMR Susceptibility Observation",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-botswana-amr-susceptibility-observation.html",
+    "kind" : "resource",
+    "type" : "Observation",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Observation",
+    "basename" : "Observation",
+    "basepath" : "http://hl7.org/fhir/R4B/observation.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Tue Jun 17 16:56:51 EDT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : null,
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Records S/I/R (and optional MIC) for a single antibiotic test on a specimen",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  }
+}

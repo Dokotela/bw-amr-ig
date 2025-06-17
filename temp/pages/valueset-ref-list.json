@@ -1,0 +1,42 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BotswanaAMRAntibioticSusceptibilityLOINC",
+      "title" : "Botswana AMR Antibiotic Susceptibility LOINC",
+      "description" : "Collection of LOINC codes for antibiotic-susceptibility tests (MIC panel and individual drugs)",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BotswanaAMRInterpretation",
+      "title" : "Botswana AMR Interpretation",
+      "description" : "Only Susceptible, Intermediate, or Resistant",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BotswanaAMRSpecimenTypeVS",
+      "title" : "Botswana AMR Specimen Type VS",
+      "description" : "Specimen types used in Botswana AMR data collection, reusing v3-SpecimenType codes",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-SpecimenType"],
+      "uses" : {
+      },
+      "StructureDefinition-BotswanaAMRSpecimen.html" : "BotswanaAMRSpecimen"
+    }
+  ]
+}

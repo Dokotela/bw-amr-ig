@@ -1,0 +1,450 @@
+{
+  "toc.html" : {
+    "title" : "Table of Contents",
+    "titlelang" : {
+    },
+    "label" : "0.0",
+    "breadcrumb" : "<li><b>Table of Contents</b></li>",
+    "breadcrumblang" : {
+    },
+    "next" : "index.html"
+  },
+  "index.html" : {
+    "title" : "Home",
+    "titlelang" : {
+    },
+    "label" : "1",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>",
+    "breadcrumblang" : {
+    },
+    "examples" : [],
+    "testplans" : [],
+    "testscripts" : [],
+    "previous" : "toc.html",
+    "next" : "artifacts.html"
+  },
+  "artifacts.html" : {
+    "title" : "Artifacts Summary",
+    "titlelang" : {
+    },
+    "label" : "2.0",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "index.html",
+    "next" : "StructureDefinition-botswana-amr-diagnostic-report.html"
+  },
+  "StructureDefinition-botswana-amr-diagnostic-report.html" : {
+    "title" : "Botswana AMR DiagnosticReport",
+    "titlelang" : {
+    },
+    "label" : "2.1",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR DiagnosticReport</b></li>",
+    "breadcrumblang" : {
+    },
+    "examples" : [],
+    "testplans" : [],
+    "testscripts" : [],
+    "previous" : "artifacts.html",
+    "next" : "StructureDefinition-botswana-amr-diagnostic-report-definitions.html"
+  },
+  "StructureDefinition-botswana-amr-diagnostic-report-definitions.html" : {
+    "title" : "Botswana AMR DiagnosticReport - Definitions",
+    "titlelang" : {
+    },
+    "label" : "2.1",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR DiagnosticReport</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "StructureDefinition-botswana-amr-diagnostic-report.html",
+    "next" : "StructureDefinition-botswana-amr-diagnostic-report-mappings.html"
+  },
+  "StructureDefinition-botswana-amr-diagnostic-report-mappings.html" : {
+    "title" : "Botswana AMR DiagnosticReport - Mappings",
+    "titlelang" : {
+    },
+    "label" : "2.1",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR DiagnosticReport</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "StructureDefinition-botswana-amr-diagnostic-report-definitions.html",
+    "next" : "StructureDefinition-botswana-amr-diagnostic-report-testing.html"
+  },
+  "StructureDefinition-botswana-amr-diagnostic-report-testing.html" : {
+    "title" : "Botswana AMR DiagnosticReport - Testing",
+    "titlelang" : {
+    },
+    "label" : "2.1",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR DiagnosticReport</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "StructureDefinition-botswana-amr-diagnostic-report-mappings.html",
+    "next" : "StructureDefinition-botswana-amr-diagnostic-report.profile.xml.html"
+  },
+  "StructureDefinition-botswana-amr-diagnostic-report.profile.xml.html" : {
+    "title" : "Botswana AMR DiagnosticReport - XML Representation",
+    "titlelang" : {
+    },
+    "label" : "2.1",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR DiagnosticReport</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "StructureDefinition-botswana-amr-diagnostic-report-testing.html",
+    "next" : "StructureDefinition-botswana-amr-diagnostic-report.profile.json.html"
+  },
+  "StructureDefinition-botswana-amr-diagnostic-report.profile.json.html" : {
+    "title" : "Botswana AMR DiagnosticReport - JSON Representation",
+    "titlelang" : {
+    },
+    "label" : "2.1",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR DiagnosticReport</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "StructureDefinition-botswana-amr-diagnostic-report.profile.xml.html",
+    "next" : "StructureDefinition-botswana-amr-diagnostic-report.profile.ttl.html"
+  },
+  "StructureDefinition-botswana-amr-diagnostic-report.profile.ttl.html" : {
+    "title" : "Botswana AMR DiagnosticReport - TTL Representation",
+    "titlelang" : {
+    },
+    "label" : "2.1",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR DiagnosticReport</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "StructureDefinition-botswana-amr-diagnostic-report.profile.json.html",
+    "next" : "StructureDefinition-botswana-amr-susceptibility-observation.html"
+  },
+  "StructureDefinition-botswana-amr-susceptibility-observation.html" : {
+    "title" : "Botswana AMR Susceptibility Observation",
+    "titlelang" : {
+    },
+    "label" : "2.2",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Susceptibility Observation</b></li>",
+    "breadcrumblang" : {
+    },
+    "examples" : [],
+    "testplans" : [],
+    "testscripts" : [],
+    "previous" : "StructureDefinition-botswana-amr-diagnostic-report.profile.ttl.html",
+    "next" : "StructureDefinition-botswana-amr-susceptibility-observation-definitions.html"
+  },
+  "StructureDefinition-botswana-amr-susceptibility-observation-definitions.html" : {
+    "title" : "Botswana AMR Susceptibility Observation - Definitions",
+    "titlelang" : {
+    },
+    "label" : "2.2",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Susceptibility Observation</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "StructureDefinition-botswana-amr-susceptibility-observation.html",
+    "next" : "StructureDefinition-botswana-amr-susceptibility-observation-mappings.html"
+  },
+  "StructureDefinition-botswana-amr-susceptibility-observation-mappings.html" : {
+    "title" : "Botswana AMR Susceptibility Observation - Mappings",
+    "titlelang" : {
+    },
+    "label" : "2.2",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Susceptibility Observation</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "StructureDefinition-botswana-amr-susceptibility-observation-definitions.html",
+    "next" : "StructureDefinition-botswana-amr-susceptibility-observation-testing.html"
+  },
+  "StructureDefinition-botswana-amr-susceptibility-observation-testing.html" : {
+    "title" : "Botswana AMR Susceptibility Observation - Testing",
+    "titlelang" : {
+    },
+    "label" : "2.2",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Susceptibility Observation</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "StructureDefinition-botswana-amr-susceptibility-observation-mappings.html",
+    "next" : "StructureDefinition-botswana-amr-susceptibility-observation.profile.xml.html"
+  },
+  "StructureDefinition-botswana-amr-susceptibility-observation.profile.xml.html" : {
+    "title" : "Botswana AMR Susceptibility Observation - XML Representation",
+    "titlelang" : {
+    },
+    "label" : "2.2",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Susceptibility Observation</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "StructureDefinition-botswana-amr-susceptibility-observation-testing.html",
+    "next" : "StructureDefinition-botswana-amr-susceptibility-observation.profile.json.html"
+  },
+  "StructureDefinition-botswana-amr-susceptibility-observation.profile.json.html" : {
+    "title" : "Botswana AMR Susceptibility Observation - JSON Representation",
+    "titlelang" : {
+    },
+    "label" : "2.2",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Susceptibility Observation</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "StructureDefinition-botswana-amr-susceptibility-observation.profile.xml.html",
+    "next" : "StructureDefinition-botswana-amr-susceptibility-observation.profile.ttl.html"
+  },
+  "StructureDefinition-botswana-amr-susceptibility-observation.profile.ttl.html" : {
+    "title" : "Botswana AMR Susceptibility Observation - TTL Representation",
+    "titlelang" : {
+    },
+    "label" : "2.2",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Susceptibility Observation</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "StructureDefinition-botswana-amr-susceptibility-observation.profile.json.html",
+    "next" : "StructureDefinition-BotswanaAMRSpecimen.html"
+  },
+  "StructureDefinition-BotswanaAMRSpecimen.html" : {
+    "title" : "BotswanaAMRSpecimen",
+    "titlelang" : {
+    },
+    "label" : "2.3",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>BotswanaAMRSpecimen</b></li>",
+    "breadcrumblang" : {
+    },
+    "examples" : [],
+    "testplans" : [],
+    "testscripts" : [],
+    "previous" : "StructureDefinition-botswana-amr-susceptibility-observation.profile.ttl.html",
+    "next" : "StructureDefinition-BotswanaAMRSpecimen-definitions.html"
+  },
+  "StructureDefinition-BotswanaAMRSpecimen-definitions.html" : {
+    "title" : "BotswanaAMRSpecimen - Definitions",
+    "titlelang" : {
+    },
+    "label" : "2.3",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>BotswanaAMRSpecimen</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "StructureDefinition-BotswanaAMRSpecimen.html",
+    "next" : "StructureDefinition-BotswanaAMRSpecimen-mappings.html"
+  },
+  "StructureDefinition-BotswanaAMRSpecimen-mappings.html" : {
+    "title" : "BotswanaAMRSpecimen - Mappings",
+    "titlelang" : {
+    },
+    "label" : "2.3",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>BotswanaAMRSpecimen</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "StructureDefinition-BotswanaAMRSpecimen-definitions.html",
+    "next" : "StructureDefinition-BotswanaAMRSpecimen-testing.html"
+  },
+  "StructureDefinition-BotswanaAMRSpecimen-testing.html" : {
+    "title" : "BotswanaAMRSpecimen - Testing",
+    "titlelang" : {
+    },
+    "label" : "2.3",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>BotswanaAMRSpecimen</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "StructureDefinition-BotswanaAMRSpecimen-mappings.html",
+    "next" : "StructureDefinition-BotswanaAMRSpecimen.profile.xml.html"
+  },
+  "StructureDefinition-BotswanaAMRSpecimen.profile.xml.html" : {
+    "title" : "BotswanaAMRSpecimen - XML Representation",
+    "titlelang" : {
+    },
+    "label" : "2.3",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>BotswanaAMRSpecimen</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "StructureDefinition-BotswanaAMRSpecimen-testing.html",
+    "next" : "StructureDefinition-BotswanaAMRSpecimen.profile.json.html"
+  },
+  "StructureDefinition-BotswanaAMRSpecimen.profile.json.html" : {
+    "title" : "BotswanaAMRSpecimen - JSON Representation",
+    "titlelang" : {
+    },
+    "label" : "2.3",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>BotswanaAMRSpecimen</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "StructureDefinition-BotswanaAMRSpecimen.profile.xml.html",
+    "next" : "StructureDefinition-BotswanaAMRSpecimen.profile.ttl.html"
+  },
+  "StructureDefinition-BotswanaAMRSpecimen.profile.ttl.html" : {
+    "title" : "BotswanaAMRSpecimen - TTL Representation",
+    "titlelang" : {
+    },
+    "label" : "2.3",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>BotswanaAMRSpecimen</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "StructureDefinition-BotswanaAMRSpecimen.profile.json.html",
+    "next" : "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.html"
+  },
+  "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.html" : {
+    "title" : "Botswana AMR Antibiotic Susceptibility LOINC",
+    "titlelang" : {
+    },
+    "label" : "2.4",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Antibiotic Susceptibility LOINC</b></li>",
+    "breadcrumblang" : {
+    },
+    "examples" : [],
+    "testplans" : [],
+    "testscripts" : [],
+    "previous" : "StructureDefinition-BotswanaAMRSpecimen.profile.ttl.html",
+    "next" : "ValueSet-botswana-amr-antibiotic-susceptibility-loinc-testing.html"
+  },
+  "ValueSet-botswana-amr-antibiotic-susceptibility-loinc-testing.html" : {
+    "title" : "Botswana AMR Antibiotic Susceptibility LOINC - Testing",
+    "titlelang" : {
+    },
+    "label" : "2.4",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Antibiotic Susceptibility LOINC</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.html",
+    "next" : "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.xml.html"
+  },
+  "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.xml.html" : {
+    "title" : "Botswana AMR Antibiotic Susceptibility LOINC - XML Representation",
+    "titlelang" : {
+    },
+    "label" : "2.4",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Antibiotic Susceptibility LOINC</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "ValueSet-botswana-amr-antibiotic-susceptibility-loinc-testing.html",
+    "next" : "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.json.html"
+  },
+  "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.json.html" : {
+    "title" : "Botswana AMR Antibiotic Susceptibility LOINC - JSON Representation",
+    "titlelang" : {
+    },
+    "label" : "2.4",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Antibiotic Susceptibility LOINC</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.xml.html",
+    "next" : "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.ttl.html"
+  },
+  "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.ttl.html" : {
+    "title" : "Botswana AMR Antibiotic Susceptibility LOINC - TTL Representation",
+    "titlelang" : {
+    },
+    "label" : "2.4",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Antibiotic Susceptibility LOINC</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.json.html",
+    "next" : "ValueSet-botswana-amr-interpretation.html"
+  },
+  "ValueSet-botswana-amr-interpretation.html" : {
+    "title" : "Botswana AMR Interpretation",
+    "titlelang" : {
+    },
+    "label" : "2.5",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Interpretation</b></li>",
+    "breadcrumblang" : {
+    },
+    "examples" : [],
+    "testplans" : [],
+    "testscripts" : [],
+    "previous" : "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.ttl.html",
+    "next" : "ValueSet-botswana-amr-interpretation-testing.html"
+  },
+  "ValueSet-botswana-amr-interpretation-testing.html" : {
+    "title" : "Botswana AMR Interpretation - Testing",
+    "titlelang" : {
+    },
+    "label" : "2.5",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Interpretation</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "ValueSet-botswana-amr-interpretation.html",
+    "next" : "ValueSet-botswana-amr-interpretation.xml.html"
+  },
+  "ValueSet-botswana-amr-interpretation.xml.html" : {
+    "title" : "Botswana AMR Interpretation - XML Representation",
+    "titlelang" : {
+    },
+    "label" : "2.5",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Interpretation</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "ValueSet-botswana-amr-interpretation-testing.html",
+    "next" : "ValueSet-botswana-amr-interpretation.json.html"
+  },
+  "ValueSet-botswana-amr-interpretation.json.html" : {
+    "title" : "Botswana AMR Interpretation - JSON Representation",
+    "titlelang" : {
+    },
+    "label" : "2.5",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Interpretation</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "ValueSet-botswana-amr-interpretation.xml.html",
+    "next" : "ValueSet-botswana-amr-interpretation.ttl.html"
+  },
+  "ValueSet-botswana-amr-interpretation.ttl.html" : {
+    "title" : "Botswana AMR Interpretation - TTL Representation",
+    "titlelang" : {
+    },
+    "label" : "2.5",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Interpretation</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "ValueSet-botswana-amr-interpretation.json.html",
+    "next" : "ValueSet-botswana-amr-specimen-type-vs.html"
+  },
+  "ValueSet-botswana-amr-specimen-type-vs.html" : {
+    "title" : "Botswana AMR Specimen Type VS",
+    "titlelang" : {
+    },
+    "label" : "2.6",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Specimen Type VS</b></li>",
+    "breadcrumblang" : {
+    },
+    "examples" : [],
+    "testplans" : [],
+    "testscripts" : [],
+    "previous" : "ValueSet-botswana-amr-interpretation.ttl.html",
+    "next" : "ValueSet-botswana-amr-specimen-type-vs-testing.html"
+  },
+  "ValueSet-botswana-amr-specimen-type-vs-testing.html" : {
+    "title" : "Botswana AMR Specimen Type VS - Testing",
+    "titlelang" : {
+    },
+    "label" : "2.6",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Specimen Type VS</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "ValueSet-botswana-amr-specimen-type-vs.html",
+    "next" : "ValueSet-botswana-amr-specimen-type-vs.xml.html"
+  },
+  "ValueSet-botswana-amr-specimen-type-vs.xml.html" : {
+    "title" : "Botswana AMR Specimen Type VS - XML Representation",
+    "titlelang" : {
+    },
+    "label" : "2.6",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Specimen Type VS</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "ValueSet-botswana-amr-specimen-type-vs-testing.html",
+    "next" : "ValueSet-botswana-amr-specimen-type-vs.json.html"
+  },
+  "ValueSet-botswana-amr-specimen-type-vs.json.html" : {
+    "title" : "Botswana AMR Specimen Type VS - JSON Representation",
+    "titlelang" : {
+    },
+    "label" : "2.6",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Specimen Type VS</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "ValueSet-botswana-amr-specimen-type-vs.xml.html",
+    "next" : "ValueSet-botswana-amr-specimen-type-vs.ttl.html"
+  },
+  "ValueSet-botswana-amr-specimen-type-vs.ttl.html" : {
+    "title" : "Botswana AMR Specimen Type VS - TTL Representation",
+    "titlelang" : {
+    },
+    "label" : "2.6",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Specimen Type VS</b></li>",
+    "breadcrumblang" : {
+    },
+    "previous" : "ValueSet-botswana-amr-specimen-type-vs.json.html"
+  }
+}

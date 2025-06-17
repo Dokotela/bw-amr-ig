@@ -1,0 +1,747 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 96, errors = 21, warn = 18, info = 4-->
+<head>
+  <title>BWAMRIG : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    button { padding: 0px 8px; font-size: 12px; cursor: pointer; border-radius: 2px; border: 1px solid #ccc; background-color: #f0f0f0 }
+    button:hover { background-color: #e0e0e0; }
+    .code-value { display: inline; }
+    .code-hidden { display: none; }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+    function toggleCodes() {
+      const codes = document.getElementsByClassName('code-value');
+      for (let code of codes) {
+        code.classList.toggle('code-hidden');
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for BWAMRIG</h1>
+ <p>Generated Tue Jun 17 16:58:46 EDT 2025, FHIR version 4.3.0 for bw-amr-ig#0.1.0 (canonical = <a href="http://example.org/fhir">http://example.org/fhir</a> (<a href="http://example.org/fhir/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.0.7</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = bw-amr-ig, Canonical = http://example.org/fhir</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Language Info:</td><td>This IG has no language information</td></tr>
+ <tr><td>Publication Request:</td><td><ul><li><span title="Not Found">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="dep" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/grey/dev/bw-amr-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> bw-amr-ig</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B">R4B</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://example.org/fhir</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/grey/dev/bw-amr-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAACwSURBVDhP7ZLBDsIwCIaLZz34xG3f2cQYo5UfYalJoY07ePFL4GcbpZSVWmvJgwifG+njkLDACgfVIehAQ5ffdMDvxSS2Dmqty62UUmS1rIWD8UuWd9xxVt1AnoaSGx6Buap+0G80K3BTtbtwhLPZQL0CSIA9OwUXON7dZkBeASTAThb3bffMjnCHGy00ZgUeqi5f3YOcsw01vsqYMrMljwgLrBDOwP53xL+D3R2k9ALHsmr3Yu73+gAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.4.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="background-color: #ffcccc; background-color: #ffcccc" href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.4.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">FHIR Version Mismatch</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/grey/dev/bw-amr-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="background-color: #ffcccc; background-color: #ffcccc" href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.2.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">FHIR Version Mismatch</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/grey/dev/bw-amr-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="background-color: #ffcccc; background-color: #ffcccc" href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.2.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">see above</td></tr>
+</table><para>Templates: fhir.base.template#current. Tools: 0.5.0</para></div></td></tr>
+ <tr><td>Related IGs:</td><td>n/a</td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4b.core#4.3.0:     <a href="http://hl7.org/fhir/R4B/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4B/specimen.html">Specimen</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4B/valueset-common-tags.html">CommonTags</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4B/valueset-languages.html">CommonLanguages</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4B/valueset-specimen-status.html">SpecimenStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/servicerequest.html">ServiceRequest</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4B/practitioner.html">Practitioner</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4B/practitionerrole.html">PractitionerRole</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4B/valueset-specimen-collection-method.html">FHIRSpecimenCollectionMethod</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/valueset-body-site.html">SNOMEDCTBodyStructures</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4B/valueset-specimen-processing-procedure.html">SpecimenProcessingProcedure</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/substance.html">Substance</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4B/valueset-specimen-container-type.html">SpecimenContainer</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/diagnosticreport.html">DiagnosticReport</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4B/careplan.html">CarePlan</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4B/immunizationrecommendation.html">ImmunizationRecommendation</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4B/medicationrequest.html">MedicationRequest</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4B/nutritionorder.html">NutritionOrder</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4B/valueset-diagnostic-report-status.html">DiagnosticReportStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/valueset-diagnostic-service-sections.html">DiagnosticServiceSectionCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/valueset-report-codes.html">LOINCDiagnosticReportCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/encounter.html">Encounter</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4B/organization.html">Organization</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4B/careteam.html">CareTeam</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4B/imagingstudy.html">ImagingStudy</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4B/media.html">Media</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4B/valueset-clinical-findings.html">SNOMEDCTClinicalFindings</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/devicerequest.html">DeviceRequest</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/medicationadministration.html">MedicationAdministration</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/medicationdispense.html">MedicationDispense</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/medicationstatement.html">MedicationStatement</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/procedure.html">Procedure</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/immunization.html">Immunization</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/valueset-observation-status.html">ObservationStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/valueset-observation-category.html">ObservationCategoryCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/relatedperson.html">RelatedPerson</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/valueset-observation-methods.html">ObservationMethods</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/device.html">Device</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/devicemetric.html">DeviceMetric</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/valueset-referencerange-meaning.html">ObservationReferenceRangeMeaningCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/valueset-referencerange-appliesto.html">ObservationReferenceRangeAppliesToCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/questionnaireresponse.html">QuestionnaireResponse</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4B/molecularsequence.html">MolecularSequence</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4B/documentreference.html">DocumentReference</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/valueset-observation-codes.html">LOINCCodes</a>
+ (1 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.org/fhir (Problem #1 with package-list.json at http://example.org/fhir: Not Found)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
+ <tr><td>Summary:</td><td> errors = 21, warn = 18, info = 4, broken links = 96, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>100</b></td><td><b>5</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_grey_dev_bw-amr-ig_fsh-generated_resources_ImplementationGuide-bw-amr-ig"><b>/home/grey/dev/bw-amr-ig/fsh-generated/resources/ImplementationGuide-bw-amr-ig</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_grey_dev_bw-amr-ig_fsh-generated_resources_StructureDefinition-BotswanaAMRSpecimen"><b>/home/grey/dev/bw-amr-ig/fsh-generated/resources/StructureDefinition-BotswanaAMRSpecimen</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_grey_dev_bw-amr-ig_fsh-generated_resources_StructureDefinition-botswana-amr-diagnostic-report"><b>/home/grey/dev/bw-amr-ig/fsh-generated/resources/StructureDefinition-botswana-amr-diagnostic-report</b></a></td><td><b>4</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_grey_dev_bw-amr-ig_fsh-generated_resources_StructureDefinition-botswana-amr-susceptibility-observation"><b>/home/grey/dev/bw-amr-ig/fsh-generated/resources/StructureDefinition-botswana-amr-susceptibility-observation</b></a></td><td><b>2</b></td><td><b>5</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_grey_dev_bw-amr-ig_fsh-generated_resources_ValueSet-botswana-amr-antibiotic-susceptibility-loinc"><b>/home/grey/dev/bw-amr-ig/fsh-generated/resources/ValueSet-botswana-amr-antibiotic-susceptibility-loinc</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_grey_dev_bw-amr-ig_fsh-generated_resources_ValueSet-botswana-amr-interpretation"><b>/home/grey/dev/bw-amr-ig/fsh-generated/resources/ValueSet-botswana-amr-interpretation</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_grey_dev_bw-amr-ig_fsh-generated_resources_ValueSet-botswana-amr-specimen-type-vs"><b>/home/grey/dev/bw-amr-ig/fsh-generated/resources/ValueSet-botswana-amr-specimen-type-vs</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[23]&#8203;.value</b></td><td><b>error</b></td><td><b>Supressed messages file not found</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide/bw-amr-ig</b></td><td><b>error</b></td><td><b>This IG is version 4.3.0, while the IG 'hl7.terminology.r4' is from version 4.0.1</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide/bw-amr-ig</b></td><td><b>error</b></td><td><b>This IG is version 4.3.0, while the IG 'hl7.fhir.uv.extensions.r4' is from version 4.0.1</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide/bw-amr-ig</b></td><td><b>error</b></td><td><b>This IG is version 4.3.0, while the IG 'hl7.fhir.uv.tools.r4' is from version 4.0.1</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BotswanaAMRSpecimen.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BotswanaAMRSpecimen-definitions.html#l149">StructureDefinition-BotswanaAMRSpecimen-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BotswanaAMRSpecimen-definitions.html#l161">StructureDefinition-BotswanaAMRSpecimen-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BotswanaAMRSpecimen-examples.html#l149">StructureDefinition-BotswanaAMRSpecimen-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BotswanaAMRSpecimen-examples.html#l161">StructureDefinition-BotswanaAMRSpecimen-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BotswanaAMRSpecimen-mappings.html#l149">StructureDefinition-BotswanaAMRSpecimen-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BotswanaAMRSpecimen-mappings.html#l161">StructureDefinition-BotswanaAMRSpecimen-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BotswanaAMRSpecimen-testing.html#l149">StructureDefinition-BotswanaAMRSpecimen-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BotswanaAMRSpecimen-testing.html#l161">StructureDefinition-BotswanaAMRSpecimen-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BotswanaAMRSpecimen.html#l149">StructureDefinition-BotswanaAMRSpecimen&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BotswanaAMRSpecimen.html#l161">StructureDefinition-BotswanaAMRSpecimen&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BotswanaAMRSpecimen.profile.history.html#l149">StructureDefinition-BotswanaAMRSpecimen&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BotswanaAMRSpecimen.profile.history.html#l161">StructureDefinition-BotswanaAMRSpecimen&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BotswanaAMRSpecimen.profile.json.html#l149">StructureDefinition-BotswanaAMRSpecimen&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 97, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BotswanaAMRSpecimen.profile.json.html#l161">StructureDefinition-BotswanaAMRSpecimen&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 103, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BotswanaAMRSpecimen.profile.ttl.html#l149">StructureDefinition-BotswanaAMRSpecimen&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 97, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BotswanaAMRSpecimen.profile.ttl.html#l161">StructureDefinition-BotswanaAMRSpecimen&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 103, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BotswanaAMRSpecimen.profile.xml.html#l149">StructureDefinition-BotswanaAMRSpecimen&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 97, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BotswanaAMRSpecimen.profile.xml.html#l161">StructureDefinition-BotswanaAMRSpecimen&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 103, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-diagnostic-report-definitions.html#l149">StructureDefinition-botswana-amr-diagnostic-report-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-diagnostic-report-definitions.html#l161">StructureDefinition-botswana-amr-diagnostic-report-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-diagnostic-report-examples.html#l149">StructureDefinition-botswana-amr-diagnostic-report-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-diagnostic-report-examples.html#l161">StructureDefinition-botswana-amr-diagnostic-report-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-diagnostic-report-mappings.html#l149">StructureDefinition-botswana-amr-diagnostic-report-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-diagnostic-report-mappings.html#l161">StructureDefinition-botswana-amr-diagnostic-report-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-diagnostic-report-testing.html#l149">StructureDefinition-botswana-amr-diagnostic-report-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-diagnostic-report-testing.html#l161">StructureDefinition-botswana-amr-diagnostic-report-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-diagnostic-report.html#l149">StructureDefinition-botswana-amr-diagnostic-report&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-diagnostic-report.html#l161">StructureDefinition-botswana-amr-diagnostic-report&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-diagnostic-report.profile.history.html#l149">StructureDefinition-botswana-amr-diagnostic-report&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-diagnostic-report.profile.history.html#l161">StructureDefinition-botswana-amr-diagnostic-report&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-diagnostic-report.profile.json.html#l149">StructureDefinition-botswana-amr-diagnostic-report&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 97, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-diagnostic-report.profile.json.html#l161">StructureDefinition-botswana-amr-diagnostic-report&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 103, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-diagnostic-report.profile.ttl.html#l149">StructureDefinition-botswana-amr-diagnostic-report&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 97, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-diagnostic-report.profile.ttl.html#l161">StructureDefinition-botswana-amr-diagnostic-report&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 103, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-diagnostic-report.profile.xml.html#l149">StructureDefinition-botswana-amr-diagnostic-report&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 97, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-diagnostic-report.profile.xml.html#l161">StructureDefinition-botswana-amr-diagnostic-report&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 103, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-susceptibility-observation-definitions.html#l149">StructureDefinition-botswana-amr-susceptibility-observation-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-susceptibility-observation-definitions.html#l161">StructureDefinition-botswana-amr-susceptibility-observation-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-susceptibility-observation-examples.html#l149">StructureDefinition-botswana-amr-susceptibility-observation-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-susceptibility-observation-examples.html#l161">StructureDefinition-botswana-amr-susceptibility-observation-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-susceptibility-observation-mappings.html#l149">StructureDefinition-botswana-amr-susceptibility-observation-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-susceptibility-observation-mappings.html#l161">StructureDefinition-botswana-amr-susceptibility-observation-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-susceptibility-observation-testing.html#l149">StructureDefinition-botswana-amr-susceptibility-observation-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-susceptibility-observation-testing.html#l161">StructureDefinition-botswana-amr-susceptibility-observation-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-susceptibility-observation.html#l149">StructureDefinition-botswana-amr-susceptibility-observation&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-susceptibility-observation.html#l161">StructureDefinition-botswana-amr-susceptibility-observation&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-susceptibility-observation.profile.history.html#l149">StructureDefinition-botswana-amr-susceptibility-observation&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-susceptibility-observation.profile.history.html#l161">StructureDefinition-botswana-amr-susceptibility-observation&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-susceptibility-observation.profile.json.html#l149">StructureDefinition-botswana-amr-susceptibility-observation&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 97, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-susceptibility-observation.profile.json.html#l161">StructureDefinition-botswana-amr-susceptibility-observation&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 103, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-susceptibility-observation.profile.ttl.html#l149">StructureDefinition-botswana-amr-susceptibility-observation&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 97, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-susceptibility-observation.profile.ttl.html#l161">StructureDefinition-botswana-amr-susceptibility-observation&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 103, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-susceptibility-observation.profile.xml.html#l149">StructureDefinition-botswana-amr-susceptibility-observation&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 97, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-botswana-amr-susceptibility-observation.profile.xml.html#l161">StructureDefinition-botswana-amr-susceptibility-observation&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 103, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-antibiotic-susceptibility-loinc-testing.html#l148">ValueSet-botswana-amr-antibiotic-susceptibility-loinc-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 89, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-antibiotic-susceptibility-loinc-testing.html#l160">ValueSet-botswana-amr-antibiotic-susceptibility-loinc-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 95, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-antibiotic-susceptibility-loinc.change.history.html#l150">ValueSet-botswana-amr-antibiotic-susceptibility-loinc&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-antibiotic-susceptibility-loinc.change.history.html#l162">ValueSet-botswana-amr-antibiotic-susceptibility-loinc&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-antibiotic-susceptibility-loinc.html#l148">ValueSet-botswana-amr-antibiotic-susceptibility-loinc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 89, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-antibiotic-susceptibility-loinc.html#l160">ValueSet-botswana-amr-antibiotic-susceptibility-loinc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 95, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-antibiotic-susceptibility-loinc.json.html#l148">ValueSet-botswana-amr-antibiotic-susceptibility-loinc&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 91, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-antibiotic-susceptibility-loinc.json.html#l160">ValueSet-botswana-amr-antibiotic-susceptibility-loinc&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 97, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-antibiotic-susceptibility-loinc.ttl.html#l148">ValueSet-botswana-amr-antibiotic-susceptibility-loinc&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 91, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-antibiotic-susceptibility-loinc.ttl.html#l160">ValueSet-botswana-amr-antibiotic-susceptibility-loinc&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 97, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-antibiotic-susceptibility-loinc.xml.html#l148">ValueSet-botswana-amr-antibiotic-susceptibility-loinc&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 91, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-antibiotic-susceptibility-loinc.xml.html#l160">ValueSet-botswana-amr-antibiotic-susceptibility-loinc&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 97, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-interpretation-testing.html#l148">ValueSet-botswana-amr-interpretation-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 89, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-interpretation-testing.html#l160">ValueSet-botswana-amr-interpretation-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 95, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-interpretation.change.history.html#l150">ValueSet-botswana-amr-interpretation&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-interpretation.change.history.html#l162">ValueSet-botswana-amr-interpretation&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-interpretation.html#l148">ValueSet-botswana-amr-interpretation&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 89, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-interpretation.html#l160">ValueSet-botswana-amr-interpretation&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 95, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-interpretation.json.html#l148">ValueSet-botswana-amr-interpretation&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 91, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-interpretation.json.html#l160">ValueSet-botswana-amr-interpretation&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 97, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-interpretation.ttl.html#l148">ValueSet-botswana-amr-interpretation&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 91, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-interpretation.ttl.html#l160">ValueSet-botswana-amr-interpretation&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 97, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-interpretation.xml.html#l148">ValueSet-botswana-amr-interpretation&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 91, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-interpretation.xml.html#l160">ValueSet-botswana-amr-interpretation&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 97, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-specimen-type-vs-testing.html#l148">ValueSet-botswana-amr-specimen-type-vs-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 89, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-specimen-type-vs-testing.html#l160">ValueSet-botswana-amr-specimen-type-vs-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 95, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-specimen-type-vs.change.history.html#l150">ValueSet-botswana-amr-specimen-type-vs&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 93, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-specimen-type-vs.change.history.html#l162">ValueSet-botswana-amr-specimen-type-vs&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 99, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-specimen-type-vs.html#l148">ValueSet-botswana-amr-specimen-type-vs&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 89, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-specimen-type-vs.html#l160">ValueSet-botswana-amr-specimen-type-vs&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 95, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-specimen-type-vs.json.html#l148">ValueSet-botswana-amr-specimen-type-vs&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 91, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-specimen-type-vs.json.html#l160">ValueSet-botswana-amr-specimen-type-vs&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 97, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-specimen-type-vs.ttl.html#l148">ValueSet-botswana-amr-specimen-type-vs&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 91, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-specimen-type-vs.ttl.html#l160">ValueSet-botswana-amr-specimen-type-vs&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 97, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-specimen-type-vs.xml.html#l148">ValueSet-botswana-amr-specimen-type-vs&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 91, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-botswana-amr-specimen-type-vs.xml.html#l160">ValueSet-botswana-amr-specimen-type-vs&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 97, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#l148">artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 89, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#l160">artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 95, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#l148">index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 89, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#l160">index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 95, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#l148">toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 89, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#structures-extension-definitions' for &quot;Extensions&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#l160">toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 95, column 6</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology-code-systems' for &quot;Code Systems&quot; cannot be resolved (valid targets: [terminology-value-sets, segment-header, publish-box, bottom, segment-post-footer, structures-resource-profiles, ig-status, artifacts-summary, 1, 2, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_grey_dev_bw-amr-ig_fsh-generated_resources_ImplementationGuide-bw-amr-ig"> </a>
+<h2><a href="index.html">fsh-generated/resources/ImplementationGuide-bw-amr-ig.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>ImplementationGuide/bw-amr-ig: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/implementationguide.html">ImplementationGuide</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/fhir&#8203;/ImplementationGuide&#8203;/bw-amr-ig&#8203;/ImplementationGuide&#8203;/bw-amr-ig')</b></td><td><b>error</b></td><td><b>Conformance resource /home/grey/dev/bw-amr-ig/fsh-generated/resources/ImplementationGuide-bw-amr-ig.json - the canonical URL (http://example.org/fhir/ImplementationGuide/bw-amr-ig) does not match the URL (http://example.org/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide&#8203;.dependsOn[0] (l1&#8203;/c1052)</b></td><td><b>warning</b></td><td><b>The ImplementationGuide is based on FHIR version 4.3.0 but package hl7.terminology.r4#6.4.0 is based on FHIR version 4.0.1. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">IG_DEPENDENCY_VERSION_WARNING</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide&#8203;.dependsOn[1] (l1&#8203;/c1414)</b></td><td><b>error</b></td><td><b>The canonical URL http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions points to the package hl7.fhir.uv.extensions which is inconsistent with the stated packageId of hl7.fhir.uv.extensions.r4</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">IG_DEPENDENCY_CLASH_PACKAGEID</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/ImplementationGuide-bw-amr-ig</b></td><td><b>error</b></td><td><b>URL Mismatch http://example.org/fhir/ImplementationGuide/bw-amr-ig vs http://example.org/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_grey_dev_bw-amr-ig_fsh-generated_resources_StructureDefinition-BotswanaAMRSpecimen"> </a>
+<h2><a href="StructureDefinition-BotswanaAMRSpecimen.html">fsh-generated/resources/StructureDefinition-BotswanaAMRSpecimen.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/fhir&#8203;/ImplementationGuide&#8203;/bw-amr-ig&#8203;/StructureDefinition&#8203;/BotswanaAMRSpecimen')</b></td><td><b>error</b></td><td><b>Conformance resource /home/grey/dev/bw-amr-ig/fsh-generated/resources/StructureDefinition-BotswanaAMRSpecimen.json - the canonical URL (http://example.org/fhir/StructureDefinition/BotswanaAMRSpecimen) does not match the URL (http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[12]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c35462)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.pattern&#8203;.ofType(canonical)</b></td><td><b>information</b></td><td><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.pattern&#8203;.ofType(canonical)</b></td><td><b>warning</b></td><td><b>The repeating element has a pattern value for a primitive type. The DotNet validator will not apply this to all the repeats - this is an error</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_VALUE_TYPE_REPEAT_WARNING_DOTNET</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/fhir&#8203;/ImplementationGuide&#8203;/bw-amr-ig&#8203;/StructureDefinition&#8203;/BotswanaAMRSpecimen')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-BotswanaAMRSpecimen</b></td><td><b>error</b></td><td><b>URL Mismatch http://example.org/fhir/StructureDefinition/BotswanaAMRSpecimen vs http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_grey_dev_bw-amr-ig_fsh-generated_resources_StructureDefinition-botswana-amr-diagnostic-report"> </a>
+<h2><a href="StructureDefinition-botswana-amr-diagnostic-report.html">fsh-generated/resources/StructureDefinition-botswana-amr-diagnostic-report.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/fhir&#8203;/ImplementationGuide&#8203;/bw-amr-ig&#8203;/StructureDefinition&#8203;/botswana-amr-diagnostic-report')</b></td><td><b>error</b></td><td><b>Conformance resource /home/grey/dev/bw-amr-ig/fsh-generated/resources/StructureDefinition-botswana-amr-diagnostic-report.json - the canonical URL (http://example.org/fhir/StructureDefinition/botswana-amr-diagnostic-report) does not match the URL (http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c62966)</b></td><td><b>error</b></td><td><b>Unknown code '58321-0' in the CodeSystem 'http://loinc.org' version '2.80'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c88869)</b></td><td><b>error</b></td><td><b>Unknown code '58321-0' in the CodeSystem 'http://loinc.org' version '2.80'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.pattern&#8203;.ofType(canonical)</b></td><td><b>information</b></td><td><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.pattern&#8203;.ofType(canonical)</b></td><td><b>warning</b></td><td><b>The repeating element has a pattern value for a primitive type. The DotNet validator will not apply this to all the repeats - this is an error</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_VALUE_TYPE_REPEAT_WARNING_DOTNET</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/fhir&#8203;/ImplementationGuide&#8203;/bw-amr-ig&#8203;/StructureDefinition&#8203;/botswana-amr-diagnostic-report')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-botswana-amr-diagnostic-report</b></td><td><b>error</b></td><td><b>URL Mismatch http://example.org/fhir/StructureDefinition/botswana-amr-diagnostic-report vs http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_grey_dev_bw-amr-ig_fsh-generated_resources_StructureDefinition-botswana-amr-susceptibility-observation"> </a>
+<h2><a href="StructureDefinition-botswana-amr-susceptibility-observation.html">fsh-generated/resources/StructureDefinition-botswana-amr-susceptibility-observation.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/fhir&#8203;/ImplementationGuide&#8203;/bw-amr-ig&#8203;/StructureDefinition&#8203;/botswana-amr-susceptibility-observation')</b></td><td><b>error</b></td><td><b>Conformance resource /home/grey/dev/bw-amr-ig/fsh-generated/resources/StructureDefinition-botswana-amr-susceptibility-observation.json - the canonical URL (http://example.org/fhir/StructureDefinition/botswana-amr-susceptibility-observation) does not match the URL (http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.pattern&#8203;.ofType(canonical)</b></td><td><b>information</b></td><td><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.pattern&#8203;.ofType(canonical)</b></td><td><b>warning</b></td><td><b>The repeating element has a pattern value for a primitive type. The DotNet validator will not apply this to all the repeats - this is an error</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_VALUE_TYPE_REPEAT_WARNING_DOTNET</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[20]&#8203;.binding</b></td><td><b>warning</b></td><td><b>The definition for the element 'Observation.status' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-status|4.3.0' which is experimental, but this structure is not labeled as experimental</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_EXPERIMENTAL_BINDING</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.binding</b></td><td><b>warning</b></td><td><b>The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category' which is experimental, but this structure is not labeled as experimental</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_EXPERIMENTAL_BINDING</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[45]&#8203;.binding</b></td><td><b>warning</b></td><td><b>The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning' which is experimental, but this structure is not labeled as experimental</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_EXPERIMENTAL_BINDING</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/fhir&#8203;/ImplementationGuide&#8203;/bw-amr-ig&#8203;/StructureDefinition&#8203;/botswana-amr-susceptibility-observation')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-botswana-amr-susceptibility-observation</b></td><td><b>error</b></td><td><b>URL Mismatch http://example.org/fhir/StructureDefinition/botswana-amr-susceptibility-observation vs http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_grey_dev_bw-amr-ig_fsh-generated_resources_ValueSet-botswana-amr-antibiotic-susceptibility-loinc"> </a>
+<h2><a href="ValueSet-botswana-amr-antibiotic-susceptibility-loinc.html">fsh-generated/resources/ValueSet-botswana-amr-antibiotic-susceptibility-loinc.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/fhir&#8203;/ImplementationGuide&#8203;/bw-amr-ig&#8203;/ValueSet&#8203;/botswana-amr-antibiotic-susceptibility-loinc')</b></td><td><b>error</b></td><td><b>Conformance resource /home/grey/dev/bw-amr-ig/fsh-generated/resources/ValueSet-botswana-amr-antibiotic-susceptibility-loinc.json - the canonical URL (http://example.org/fhir/ValueSet/botswana-amr-antibiotic-susceptibility-loinc) does not match the URL (http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c10912)</b></td><td><b>warning</b></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/ValueSet-botswana-amr-antibiotic-susceptibility-loinc</b></td><td><b>error</b></td><td><b>URL Mismatch http://example.org/fhir/ValueSet/botswana-amr-antibiotic-susceptibility-loinc vs http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_grey_dev_bw-amr-ig_fsh-generated_resources_ValueSet-botswana-amr-interpretation"> </a>
+<h2><a href="ValueSet-botswana-amr-interpretation.html">fsh-generated/resources/ValueSet-botswana-amr-interpretation.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/fhir&#8203;/ImplementationGuide&#8203;/bw-amr-ig&#8203;/ValueSet&#8203;/botswana-amr-interpretation')</b></td><td><b>error</b></td><td><b>Conformance resource /home/grey/dev/bw-amr-ig/fsh-generated/resources/ValueSet-botswana-amr-interpretation.json - the canonical URL (http://example.org/fhir/ValueSet/botswana-amr-interpretation) does not match the URL (http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c4069)</b></td><td><b>warning</b></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/ValueSet-botswana-amr-interpretation</b></td><td><b>error</b></td><td><b>URL Mismatch http://example.org/fhir/ValueSet/botswana-amr-interpretation vs http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_grey_dev_bw-amr-ig_fsh-generated_resources_ValueSet-botswana-amr-specimen-type-vs"> </a>
+<h2><a href="ValueSet-botswana-amr-specimen-type-vs.html">fsh-generated/resources/ValueSet-botswana-amr-specimen-type-vs.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/fhir&#8203;/ImplementationGuide&#8203;/bw-amr-ig&#8203;/ValueSet&#8203;/botswana-amr-specimen-type-vs')</b></td><td><b>error</b></td><td><b>Conformance resource /home/grey/dev/bw-amr-ig/fsh-generated/resources/ValueSet-botswana-amr-specimen-type-vs.json - the canonical URL (http://example.org/fhir/ValueSet/botswana-amr-specimen-type-vs) does not match the URL (http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2327)</b></td><td><b>warning</b></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/ValueSet-botswana-amr-specimen-type-vs</b></td><td><b>error</b></td><td><b>URL Mismatch http://example.org/fhir/ValueSet/botswana-amr-specimen-type-vs vs http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="IG_DEPENDENCY_CLASH_PACKAGEID"> </a>
+<h2>IG_DEPENDENCY_CLASH_PACKAGEID</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-bw-amr-ig.json</a></td><td><b>The canonical URL http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions points to the package hl7.fhir.uv.extensions which is inconsistent with the stated packageId of hl7.fhir.uv.extensions.r4</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="IG_DEPENDENCY_VERSION_WARNING"> </a>
+<h2>IG_DEPENDENCY_VERSION_WARNING</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-bw-amr-ig.json</a></td><td><b>The ImplementationGuide is based on FHIR version 4.3.0 but package hl7.terminology.r4#6.4.0 is based on FHIR version 4.0.1. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_DEPENDS_ON_DEPRECATED"> </a>
+<h2>MSG_DEPENDS_ON_DEPRECATED</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-BotswanaAMRSpecimen.html">fsh-generated/resources/StructureDefinition-BotswanaAMRSpecimen.json</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-bw-amr-ig.json</a></td><td><b>Conformance resource /home/grey/dev/bw-amr-ig/fsh-generated/resources/ImplementationGuide-bw-amr-ig.json - the canonical URL (http://example.org/fhir/ImplementationGuide/bw-amr-ig) does not match the URL (http://example.org/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-BotswanaAMRSpecimen.html">fsh-generated/resources/StructureDefinition-BotswanaAMRSpecimen.json</a></td><td><b>Conformance resource /home/grey/dev/bw-amr-ig/fsh-generated/resources/StructureDefinition-BotswanaAMRSpecimen.json - the canonical URL (http://example.org/fhir/StructureDefinition/BotswanaAMRSpecimen) does not match the URL (http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-botswana-amr-diagnostic-report.html">fsh-generated/resources/StructureDefinition-botswana-amr-diagnostic-report.json</a></td><td><b>Conformance resource /home/grey/dev/bw-amr-ig/fsh-generated/resources/StructureDefinition-botswana-amr-diagnostic-report.json - the canonical URL (http://example.org/fhir/StructureDefinition/botswana-amr-diagnostic-report) does not match the URL (http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-botswana-amr-susceptibility-observation.html">fsh-generated/resources/StructureDefinition-botswana-amr-susceptibility-observation.json</a></td><td><b>Conformance resource /home/grey/dev/bw-amr-ig/fsh-generated/resources/StructureDefinition-botswana-amr-susceptibility-observation.json - the canonical URL (http://example.org/fhir/StructureDefinition/botswana-amr-susceptibility-observation) does not match the URL (http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-botswana-amr-antibiotic-susceptibility-loinc.html">fsh-generated/resources/ValueSet-botswana-amr-antibiotic-susceptibility-loinc.json</a></td><td><b>Conformance resource /home/grey/dev/bw-amr-ig/fsh-generated/resources/ValueSet-botswana-amr-antibiotic-susceptibility-loinc.json - the canonical URL (http://example.org/fhir/ValueSet/botswana-amr-antibiotic-susceptibility-loinc) does not match the URL (http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-botswana-amr-interpretation.html">fsh-generated/resources/ValueSet-botswana-amr-interpretation.json</a></td><td><b>Conformance resource /home/grey/dev/bw-amr-ig/fsh-generated/resources/ValueSet-botswana-amr-interpretation.json - the canonical URL (http://example.org/fhir/ValueSet/botswana-amr-interpretation) does not match the URL (http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-botswana-amr-specimen-type-vs.html">fsh-generated/resources/ValueSet-botswana-amr-specimen-type-vs.json</a></td><td><b>Conformance resource /home/grey/dev/bw-amr-ig/fsh-generated/resources/ValueSet-botswana-amr-specimen-type-vs.json - the canonical URL (http://example.org/fhir/ValueSet/botswana-amr-specimen-type-vs) does not match the URL (http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SD_ED_EXPERIMENTAL_BINDING"> </a>
+<h2>SD_ED_EXPERIMENTAL_BINDING</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-botswana-amr-susceptibility-observation.html">fsh-generated/resources/StructureDefinition-botswana-amr-susceptibility-observation.json</a></td><td><b>The definition for the element 'Observation.status' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-status|4.3.0' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-botswana-amr-susceptibility-observation.html">fsh-generated/resources/StructureDefinition-botswana-amr-susceptibility-observation.json</a></td><td><b>The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-botswana-amr-susceptibility-observation.html">fsh-generated/resources/StructureDefinition-botswana-amr-susceptibility-observation.json</a></td><td><b>The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SD_VALUE_TYPE_REPEAT_WARNING_DOTNET"> </a>
+<h2>SD_VALUE_TYPE_REPEAT_WARNING_DOTNET</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-BotswanaAMRSpecimen.html">fsh-generated/resources/StructureDefinition-BotswanaAMRSpecimen.json</a></td><td><b>The repeating element has a pattern value for a primitive type. The DotNet validator will not apply this to all the repeats - this is an error</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-botswana-amr-diagnostic-report.html">fsh-generated/resources/StructureDefinition-botswana-amr-diagnostic-report.json</a></td><td><b>The repeating element has a pattern value for a primitive type. The DotNet validator will not apply this to all the repeats - this is an error</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-botswana-amr-susceptibility-observation.html">fsh-generated/resources/StructureDefinition-botswana-amr-susceptibility-observation.json</a></td><td><b>The repeating element has a pattern value for a primitive type. The DotNet validator will not apply this to all the repeats - this is an error</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Unknown_Code_in_Version"> </a>
+<h2>Unknown_Code_in_Version</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-botswana-amr-diagnostic-report.html">fsh-generated/resources/StructureDefinition-botswana-amr-diagnostic-report.json</a></td><td><b>Unknown code '58321-0' in the CodeSystem 'http://loinc.org' version '2.80'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-botswana-amr-diagnostic-report.html">fsh-generated/resources/StructureDefinition-botswana-amr-diagnostic-report.json</a></td><td><b>Unknown code '58321-0' in the CodeSystem 'http://loinc.org' version '2.80'</b></td>
+   </tr>
+</table>
+</body>
+</html>

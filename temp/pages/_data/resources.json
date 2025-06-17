@@ -1,0 +1,151 @@
+{
+  "ImplementationGuide/bw-amr-ig" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 0,
+    "source" : "/home/grey/dev/bw-amr-ig/fsh-generated/resources/ImplementationGuide-bw-amr-ig.json",
+    "sourceTail" : "ImplementationGuide-bw-amr-ig.json",
+    "path" : "index.html",
+    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig",
+    "version" : "0.1.0",
+    "name" : "BWAMRIG",
+    "date" : "2025-06-17T16:56:51-04:00",
+    "status" : {
+      "class" : "colsd",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/BotswanaAMRSpecimen" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 1,
+    "source" : "fsh-generated/resources/StructureDefinition-BotswanaAMRSpecimen.json",
+    "sourceTail" : "StructureDefinition-BotswanaAMRSpecimen.json",
+    "path" : "StructureDefinition-BotswanaAMRSpecimen.html",
+    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRSpecimen",
+    "date" : "2025-06-17T16:56:51-04:00",
+    "status" : {
+      "class" : "colsd",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/botswana-amr-diagnostic-report" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 2,
+    "source" : "fsh-generated/resources/StructureDefinition-botswana-amr-diagnostic-report.json",
+    "sourceTail" : "StructureDefinition-botswana-amr-diagnostic-report.json",
+    "path" : "StructureDefinition-botswana-amr-diagnostic-report.html",
+    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRDiagnosticReport",
+    "title" : "Botswana AMR DiagnosticReport",
+    "titlelang" : {
+    },
+    "date" : "2025-06-17T16:56:51-04:00",
+    "description" : "Bundles AMR susceptibility observations into one report",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/botswana-amr-susceptibility-observation" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 3,
+    "source" : "fsh-generated/resources/StructureDefinition-botswana-amr-susceptibility-observation.json",
+    "sourceTail" : "StructureDefinition-botswana-amr-susceptibility-observation.json",
+    "path" : "StructureDefinition-botswana-amr-susceptibility-observation.html",
+    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRSusceptibilityObservation",
+    "title" : "Botswana AMR Susceptibility Observation",
+    "titlelang" : {
+    },
+    "date" : "2025-06-17T16:56:51-04:00",
+    "description" : "Records S/I/R (and optional MIC) for a single antibiotic test on a specimen",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "status" : "Draft"
+    }
+  },
+  "ValueSet/botswana-amr-antibiotic-susceptibility-loinc" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 4,
+    "source" : "fsh-generated/resources/ValueSet-botswana-amr-antibiotic-susceptibility-loinc.json",
+    "sourceTail" : "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.json",
+    "path" : "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.html",
+    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRAntibioticSusceptibilityLOINC",
+    "title" : "Botswana AMR Antibiotic Susceptibility LOINC",
+    "titlelang" : {
+    },
+    "date" : "2025-06-17T16:56:51-04:00",
+    "description" : "Collection of LOINC codes for antibiotic-susceptibility tests (MIC panel and individual drugs)",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "status" : "Draft"
+    }
+  },
+  "ValueSet/botswana-amr-interpretation" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 5,
+    "source" : "fsh-generated/resources/ValueSet-botswana-amr-interpretation.json",
+    "sourceTail" : "ValueSet-botswana-amr-interpretation.json",
+    "path" : "ValueSet-botswana-amr-interpretation.html",
+    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRInterpretation",
+    "title" : "Botswana AMR Interpretation",
+    "titlelang" : {
+    },
+    "date" : "2025-06-17T16:56:51-04:00",
+    "description" : "Only Susceptible, Intermediate, or Resistant",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "status" : "Draft"
+    }
+  },
+  "ValueSet/botswana-amr-specimen-type-vs" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 6,
+    "source" : "fsh-generated/resources/ValueSet-botswana-amr-specimen-type-vs.json",
+    "sourceTail" : "ValueSet-botswana-amr-specimen-type-vs.json",
+    "path" : "ValueSet-botswana-amr-specimen-type-vs.html",
+    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRSpecimenTypeVS",
+    "title" : "Botswana AMR Specimen Type VS",
+    "titlelang" : {
+    },
+    "date" : "2025-06-17T16:56:51-04:00",
+    "description" : "Specimen types used in Botswana AMR data collection, reusing v3-SpecimenType codes",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "status" : "Draft"
+    }
+  }
+}

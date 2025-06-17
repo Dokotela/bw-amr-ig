@@ -1,0 +1,51 @@
+[
+  {
+    "id" : "bw-amr-ig",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig",
+    "version" : "0.1.0",
+    "name" : "BWAMRIG"
+  },
+  {
+    "id" : "BotswanaAMRSpecimen",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRSpecimen"
+  },
+  {
+    "id" : "botswana-amr-diagnostic-report",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRDiagnosticReport"
+  },
+  {
+    "id" : "botswana-amr-susceptibility-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRSusceptibilityObservation"
+  },
+  {
+    "id" : "botswana-amr-antibiotic-susceptibility-loinc",
+    "type" : "ValueSet",
+    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRAntibioticSusceptibilityLOINC"
+  },
+  {
+    "id" : "botswana-amr-interpretation",
+    "type" : "ValueSet",
+    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRInterpretation"
+  },
+  {
+    "id" : "botswana-amr-specimen-type-vs",
+    "type" : "ValueSet",
+    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRSpecimenTypeVS"
+  }
+]

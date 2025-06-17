@@ -1,0 +1,2314 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : false,
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "50545-3",
+        "display" : "Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "12-5",
+        "display" : "Amikacin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "20-8",
+        "display" : "Amoxicillin+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "28-1",
+        "display" : "Ampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "32-3",
+        "display" : "Ampicillin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "36-4",
+        "display" : "Azithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "44-8",
+        "display" : "Aztreonam [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "76-0",
+        "display" : "Cefazolin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "6644-9",
+        "display" : "Cefepime [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "108-1",
+        "display" : "Cefotaxime [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "112-3",
+        "display" : "Cefotetan [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "116-4",
+        "display" : "Cefoxitin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "133-9",
+        "display" : "Ceftazidime [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "141-2",
+        "display" : "Ceftriaxone [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "145-3",
+        "display" : "Cefuroxime Parenteral [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "161-0",
+        "display" : "Cephalothin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "173-5",
+        "display" : "Chloramphenicol [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "185-9",
+        "display" : "Ciprofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "193-3",
+        "display" : "Clindamycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "205-5",
+        "display" : "Colistin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "35801-0",
+        "display" : "Ertapenem [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "233-7",
+        "display" : "Erythromycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "25653-7",
+        "display" : "Fosfomycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "262-6",
+        "display" : "Fusidate [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "267-5",
+        "display" : "Gentamicin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "279-0",
+        "display" : "Imipenem [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "6652-2",
+        "display" : "Meropenem [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "363-2",
+        "display" : "Nitrofurantoin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "371-5",
+        "display" : "Novobiocin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "383-0",
+        "display" : "Oxacillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "6932-8",
+        "display" : "Penicillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "408-5",
+        "display" : "Piperacillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "412-7",
+        "display" : "Piperacillin+Tazobactam [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "496-0",
+        "display" : "Tetracycline [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "500-9",
+        "display" : "Ticarcillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "42355-8",
+        "display" : "Tigecycline [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "508-2",
+        "display" : "Tobramycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "512-4",
+        "display" : "Trimethoprim [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "516-5",
+        "display" : "Trimethoprim+Sulfamethoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "524-9",
+        "display" : "Vancomycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "source" : tx.fhir.org,
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:66077846-dd61-4e80-93e1-c5fcc825d37a",
+    "timestamp" : "2025-06-17T20:53:24.579Z",
+    "total" : 40,
+    "offset" : 0,
+    "parameter" : [{
+      "name" : "displayLanguage",
+      "valueCode" : "en-US"
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "offset",
+      "valueInteger" : 0
+    },
+    {
+      "name" : "count",
+      "valueInteger" : 1000
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://loinc.org|2.80"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://loinc.org|2.80"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "50545-3",
+      "display" : "Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "12-5",
+      "display" : "Amikacin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "20-8",
+      "display" : "Amoxicillin+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "28-1",
+      "display" : "Ampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "32-3",
+      "display" : "Ampicillin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "36-4",
+      "display" : "Azithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "44-8",
+      "display" : "Aztreonam [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "76-0",
+      "display" : "ceFAZolin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "6644-9",
+      "display" : "Cefepime [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "108-1",
+      "display" : "Cefotaxime [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "112-3",
+      "display" : "cefoTEtan [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "116-4",
+      "display" : "cefOXitin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "133-9",
+      "display" : "cefTAZidime [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "141-2",
+      "display" : "cefTRIAXone [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "145-3",
+      "display" : "Cefuroxime Parenteral [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "161-0",
+      "display" : "Cephalothin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "173-5",
+      "display" : "Chloramphenicol [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "185-9",
+      "display" : "Ciprofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "193-3",
+      "display" : "Clindamycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "205-5",
+      "display" : "Colistin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "35801-0",
+      "display" : "Ertapenem [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "233-7",
+      "display" : "Erythromycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "25653-7",
+      "display" : "Fosfomycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "262-6",
+      "display" : "Fusidate [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "267-5",
+      "display" : "Gentamicin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "279-0",
+      "display" : "Imipenem [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "6652-2",
+      "display" : "Meropenem [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "363-2",
+      "display" : "Nitrofurantoin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "371-5",
+      "display" : "Novobiocin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "383-0",
+      "display" : "Oxacillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "6932-8",
+      "display" : "Penicillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "408-5",
+      "display" : "Piperacillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "412-7",
+      "display" : "Piperacillin+Tazobactam [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "496-0",
+      "display" : "Tetracycline [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "500-9",
+      "display" : "Ticarcillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "42355-8",
+      "display" : "Tigecycline [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "508-2",
+      "display" : "Tobramycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "512-4",
+      "display" : "Trimethoprim [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "516-5",
+      "display" : "Trimethoprim+Sulfamethoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "524-9",
+      "display" : "Vancomycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "50545-3"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)",
+  "code" : "50545-3",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "12-5"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Amikacin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "12-5",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "20-8"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Amoxicillin+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "20-8",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "28-1"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Ampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "28-1",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "32-3"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Ampicillin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "32-3",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "36-4"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Azithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "36-4",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "44-8"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Aztreonam [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "44-8",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "76-0"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "ceFAZolin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "76-0",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "6644-9"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Cefepime [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "6644-9",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "108-1"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Cefotaxime [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "108-1",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "112-3"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "cefoTEtan [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "112-3",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "116-4"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "cefOXitin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "116-4",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "133-9"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "cefTAZidime [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "133-9",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "141-2"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "cefTRIAXone [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "141-2",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "145-3"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Cefuroxime Parenteral [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "145-3",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "161-0"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Cephalothin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "161-0",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "173-5"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Chloramphenicol [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "173-5",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "185-9"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Ciprofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "185-9",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "193-3"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Clindamycin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "193-3",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "205-5"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Colistin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "205-5",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "35801-0"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Ertapenem [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "35801-0",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "233-7"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Erythromycin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "233-7",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "25653-7"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Fosfomycin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "25653-7",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "262-6"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Fusidate [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "262-6",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "267-5"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Gentamicin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "267-5",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "279-0"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Imipenem [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "279-0",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "6652-2"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Meropenem [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "6652-2",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "363-2"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Nitrofurantoin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "363-2",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "371-5"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Novobiocin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "371-5",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "383-0"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Oxacillin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "383-0",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "6932-8"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Penicillin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "6932-8",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "408-5"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Piperacillin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "408-5",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "412-7"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Piperacillin+Tazobactam [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "412-7",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "496-0"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Tetracycline [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "496-0",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "500-9"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Ticarcillin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "500-9",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "42355-8"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Tigecycline [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "42355-8",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "508-2"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Tobramycin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "508-2",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "512-4"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Trimethoprim [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "512-4",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "516-5"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Trimethoprim+Sulfamethoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "516-5",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "524-9"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "exampleOK":"true", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Vancomycin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+  "code" : "524-9",
+  "system" : "http://loinc.org",
+  "version" : "2.80",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "58321-0",
+  "display" : "Bacteria identified and antimicrobial susceptibility panel"
+}, "valueSet" :null, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "displayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "code" : "58321-0",
+  "system" : "http://loinc.org",
+  "severity" : "error",
+  "error" : "Unknown code '58321-0' in the CodeSystem 'http://loinc.org' version '2.80'",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "Unknown_Code_in_Version"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown code '58321-0' in the CodeSystem 'http://loinc.org' version '2.80'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "50545-3",
+        "display" : "Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "12-5",
+        "display" : "Amikacin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "20-8",
+        "display" : "Amoxicillin+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "28-1",
+        "display" : "Ampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "32-3",
+        "display" : "Ampicillin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "36-4",
+        "display" : "Azithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "44-8",
+        "display" : "Aztreonam [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "76-0",
+        "display" : "Cefazolin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "6644-9",
+        "display" : "Cefepime [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "108-1",
+        "display" : "Cefotaxime [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "112-3",
+        "display" : "Cefotetan [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "116-4",
+        "display" : "Cefoxitin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "133-9",
+        "display" : "Ceftazidime [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "141-2",
+        "display" : "Ceftriaxone [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "145-3",
+        "display" : "Cefuroxime Parenteral [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "161-0",
+        "display" : "Cephalothin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "173-5",
+        "display" : "Chloramphenicol [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "185-9",
+        "display" : "Ciprofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "193-3",
+        "display" : "Clindamycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "205-5",
+        "display" : "Colistin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "35801-0",
+        "display" : "Ertapenem [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "233-7",
+        "display" : "Erythromycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "25653-7",
+        "display" : "Fosfomycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "262-6",
+        "display" : "Fusidate [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "267-5",
+        "display" : "Gentamicin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "279-0",
+        "display" : "Imipenem [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "6652-2",
+        "display" : "Meropenem [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "363-2",
+        "display" : "Nitrofurantoin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "371-5",
+        "display" : "Novobiocin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "383-0",
+        "display" : "Oxacillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "6932-8",
+        "display" : "Penicillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "408-5",
+        "display" : "Piperacillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "412-7",
+        "display" : "Piperacillin+Tazobactam [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "496-0",
+        "display" : "Tetracycline [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "500-9",
+        "display" : "Ticarcillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "42355-8",
+        "display" : "Tigecycline [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "508-2",
+        "display" : "Tobramycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "512-4",
+        "display" : "Trimethoprim [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "516-5",
+        "display" : "Trimethoprim+Sulfamethoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "524-9",
+        "display" : "Vancomycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "source" : tx.fhir.org,
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:9c76697c-0c42-4a2a-8325-51109b510d08",
+    "timestamp" : "2025-06-17T20:54:35.201Z",
+    "total" : 40,
+    "offset" : 0,
+    "parameter" : [{
+      "name" : "displayLanguage",
+      "valueCode" : "en-US"
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "offset",
+      "valueInteger" : 0
+    },
+    {
+      "name" : "count",
+      "valueInteger" : 1000
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://loinc.org|2.80"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://loinc.org|2.80"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "50545-3",
+      "display" : "Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "12-5",
+      "display" : "Amikacin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "20-8",
+      "display" : "Amoxicillin+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "28-1",
+      "display" : "Ampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "32-3",
+      "display" : "Ampicillin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "36-4",
+      "display" : "Azithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "44-8",
+      "display" : "Aztreonam [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "76-0",
+      "display" : "ceFAZolin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "6644-9",
+      "display" : "Cefepime [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "108-1",
+      "display" : "Cefotaxime [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "112-3",
+      "display" : "cefoTEtan [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "116-4",
+      "display" : "cefOXitin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "133-9",
+      "display" : "cefTAZidime [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "141-2",
+      "display" : "cefTRIAXone [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "145-3",
+      "display" : "Cefuroxime Parenteral [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "161-0",
+      "display" : "Cephalothin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "173-5",
+      "display" : "Chloramphenicol [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "185-9",
+      "display" : "Ciprofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "193-3",
+      "display" : "Clindamycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "205-5",
+      "display" : "Colistin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "35801-0",
+      "display" : "Ertapenem [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "233-7",
+      "display" : "Erythromycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "25653-7",
+      "display" : "Fosfomycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "262-6",
+      "display" : "Fusidate [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "267-5",
+      "display" : "Gentamicin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "279-0",
+      "display" : "Imipenem [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "6652-2",
+      "display" : "Meropenem [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "363-2",
+      "display" : "Nitrofurantoin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "371-5",
+      "display" : "Novobiocin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "383-0",
+      "display" : "Oxacillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "6932-8",
+      "display" : "Penicillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "408-5",
+      "display" : "Piperacillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "412-7",
+      "display" : "Piperacillin+Tazobactam [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "496-0",
+      "display" : "Tetracycline [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "500-9",
+      "display" : "Ticarcillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "42355-8",
+      "display" : "Tigecycline [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "508-2",
+      "display" : "Tobramycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "512-4",
+      "display" : "Trimethoprim [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "516-5",
+      "display" : "Trimethoprim+Sulfamethoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "524-9",
+      "display" : "Vancomycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "50545-3",
+        "display" : "Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "12-5",
+        "display" : "Amikacin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "20-8",
+        "display" : "Amoxicillin+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "28-1",
+        "display" : "Ampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "32-3",
+        "display" : "Ampicillin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "36-4",
+        "display" : "Azithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "44-8",
+        "display" : "Aztreonam [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "76-0",
+        "display" : "Cefazolin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "6644-9",
+        "display" : "Cefepime [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "108-1",
+        "display" : "Cefotaxime [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "112-3",
+        "display" : "Cefotetan [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "116-4",
+        "display" : "Cefoxitin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "133-9",
+        "display" : "Ceftazidime [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "141-2",
+        "display" : "Ceftriaxone [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "145-3",
+        "display" : "Cefuroxime Parenteral [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "161-0",
+        "display" : "Cephalothin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "173-5",
+        "display" : "Chloramphenicol [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "185-9",
+        "display" : "Ciprofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "193-3",
+        "display" : "Clindamycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "205-5",
+        "display" : "Colistin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "35801-0",
+        "display" : "Ertapenem [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "233-7",
+        "display" : "Erythromycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "25653-7",
+        "display" : "Fosfomycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "262-6",
+        "display" : "Fusidate [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "267-5",
+        "display" : "Gentamicin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "279-0",
+        "display" : "Imipenem [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "6652-2",
+        "display" : "Meropenem [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "363-2",
+        "display" : "Nitrofurantoin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "371-5",
+        "display" : "Novobiocin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "383-0",
+        "display" : "Oxacillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "6932-8",
+        "display" : "Penicillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "408-5",
+        "display" : "Piperacillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "412-7",
+        "display" : "Piperacillin+Tazobactam [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "496-0",
+        "display" : "Tetracycline [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "500-9",
+        "display" : "Ticarcillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "42355-8",
+        "display" : "Tigecycline [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "508-2",
+        "display" : "Tobramycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "512-4",
+        "display" : "Trimethoprim [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "516-5",
+        "display" : "Trimethoprim+Sulfamethoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      },
+      {
+        "code" : "524-9",
+        "display" : "Vancomycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "source" : tx.fhir.org,
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:da800cd1-34df-44a0-848a-ea5a67ce7e53",
+    "timestamp" : "2025-06-17T20:54:36.173Z",
+    "total" : 40,
+    "offset" : 0,
+    "parameter" : [{
+      "name" : "displayLanguage",
+      "valueCode" : "en-US"
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : false
+    },
+    {
+      "name" : "offset",
+      "valueInteger" : 0
+    },
+    {
+      "name" : "count",
+      "valueInteger" : 1000
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://loinc.org|2.80"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://loinc.org|2.80"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "50545-3",
+      "display" : "Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "12-5",
+      "display" : "Amikacin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "20-8",
+      "display" : "Amoxicillin+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "28-1",
+      "display" : "Ampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "32-3",
+      "display" : "Ampicillin+Sulbactam [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "36-4",
+      "display" : "Azithromycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "44-8",
+      "display" : "Aztreonam [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "76-0",
+      "display" : "ceFAZolin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "6644-9",
+      "display" : "Cefepime [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "108-1",
+      "display" : "Cefotaxime [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "112-3",
+      "display" : "cefoTEtan [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "116-4",
+      "display" : "cefOXitin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "133-9",
+      "display" : "cefTAZidime [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "141-2",
+      "display" : "cefTRIAXone [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "145-3",
+      "display" : "Cefuroxime Parenteral [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "161-0",
+      "display" : "Cephalothin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "173-5",
+      "display" : "Chloramphenicol [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "185-9",
+      "display" : "Ciprofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "193-3",
+      "display" : "Clindamycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "205-5",
+      "display" : "Colistin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "35801-0",
+      "display" : "Ertapenem [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "233-7",
+      "display" : "Erythromycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "25653-7",
+      "display" : "Fosfomycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "262-6",
+      "display" : "Fusidate [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "267-5",
+      "display" : "Gentamicin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "279-0",
+      "display" : "Imipenem [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "6652-2",
+      "display" : "Meropenem [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "363-2",
+      "display" : "Nitrofurantoin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "371-5",
+      "display" : "Novobiocin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "383-0",
+      "display" : "Oxacillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "6932-8",
+      "display" : "Penicillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "408-5",
+      "display" : "Piperacillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "412-7",
+      "display" : "Piperacillin+Tazobactam [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "496-0",
+      "display" : "Tetracycline [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "500-9",
+      "display" : "Ticarcillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "42355-8",
+      "display" : "Tigecycline [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "508-2",
+      "display" : "Tobramycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "512-4",
+      "display" : "Trimethoprim [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "516-5",
+      "display" : "Trimethoprim+Sulfamethoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "524-9",
+      "display" : "Vancomycin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
