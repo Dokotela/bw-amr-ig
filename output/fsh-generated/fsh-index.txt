@@ -1,7 +1,0 @@
-Output File                                                       Name                                      Type      FSH File                                                Lines
-StructureDefinition-BotswanaAMRSpecimen.json                      BotswanaAMRSpecimen                       Profile   profiles/BotswanaAMRSpecimen.fsh                        1 - 11
-StructureDefinition-botswana-amr-diagnostic-report.json           BotswanaAMRDiagnosticReport               Profile   profiles/BotswanaAMRDiagnosticReport.fsh                1 - 17
-StructureDefinition-botswana-amr-susceptibility-observation.json  BotswanaAMRSusceptibilityObservation      Profile   profiles/BotswanaAMRSusceptibilityObservation.fsh       1 - 27
-ValueSet-botswana-amr-antibiotic-susceptibility-loinc.json        BotswanaAMRAntibioticSusceptibilityLOINC  ValueSet  valueSets/BotswanaAMRAntibioticSusceptibilityLOINC.fsh  3 - 46
-ValueSet-botswana-amr-interpretation.json                         BotswanaAMRInterpretation                 ValueSet  valueSets/BotswanaAMRInterpretation.fsh                 3 - 9
-ValueSet-botswana-amr-specimen-type-vs.json                       BotswanaAMRSpecimenTypeVS                 ValueSet  valueSets/BotswanaAMRSpecimenTypeVS.fsh                 3 - 13

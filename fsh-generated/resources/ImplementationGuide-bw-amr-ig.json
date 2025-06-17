@@ -2,6 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "bw-amr-ig",
   "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig",
+  "version": "0.1.0",
   "name": "BWAMRIG",
   "status": "draft",
   "packageId": "bw-amr-ig",

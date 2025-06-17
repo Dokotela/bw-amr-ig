@@ -1,7 +1,15 @@
 id: bw-amr-ig
 name: BW-AMR-IG
 status: draft
+version: 0.1.0
 canonical: http://example.org/fhir/ImplementationGuide/bw-amr-ig
 fhirVersion: 4.3.0
 copyrightYear: 2025
 releaseLabel: "0.1.0"
+
+menu:
+  Home: index.html
+  Profiles: artifacts.html#structures-resource-profiles
+  Extensions: artifacts.html#structures-extension-definitions
+  Value Sets: artifacts.html#terminology-value-sets
+  Code Systems: artifacts.html#terminology-code-systems
