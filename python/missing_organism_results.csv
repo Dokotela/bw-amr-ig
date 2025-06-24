@@ -1,0 +1,36 @@
+original_organism,search_term_used,snomed_code,display_name
+Acinetobacter baumannii complex,Acinetobacter baumannii,91288006,Acinetobacter baumannii
+Aeromonas hydrophila/punctata,Aeromonas hydrophila,85823000,Aeromonas hydrophila
+Alcaligenes faecalis subsp. faecalis,Alcaligenes faecalis,25223004,Alcaligenes faecalis
+Brevundimonas diminuta/Brevundimonas vesicularis,Brevundimonas diminuta,113689009,Brevundimonas diminuta
+Burkholderia cepacia group,Burkholderia cepacia complex,131281002,Burkholderia cepacia complex
+Cedecia lapagei,Cedecea lapagei,2345009,Cedecea lapagei
+Cronobacter sakazakii group,Cronobacter sakazakii,445562004,Cronobacter sakazakii
+Dermacoccus nishinomiyaensis/Kytococcus sedentarius,Dermacoccus nishinomiyaensis,113776005,Dermacoccus nishinomiyaensis
+Enterococcus spp.,Enterococcus,2785000,Enterococcus
+Klebsiella pneumoniae subsp. pneumoniae,Klebsiella pneumoniae,56415008,Klebsiella pneumoniae
+Klebsiella spp.,Klebsiella,75032006,Klebsiella
+Leuconostoc mesenteroides subsp. cremoris,Leuconostoc mesenteroides,71403009,Leuconostoc mesenteroides
+Leuconostoc mesenteroides subsp. dextranicum,Leuconostoc mesenteroides,71403009,Leuconostoc mesenteroides
+Low Discrimination Organism,,,
+Methylobacterium spp.,Methylobacterium,38395008,Methylobacterium
+Moraxella group,Moraxella,36361003,Moraxella
+Morganella morganii subsp. morganii,Morganella morganii,243301005,Morganella morganii
+Morganella morganii subsp. sibonii,Morganella morganii,243301005,Morganella morganii
+Myroides spp.,Myroides,115127008,Myroides
+Neisseria animaloris/Neisseria zoodegmatis,Neisseria animaloris,442202005,Neisseria animaloris
+Non/Low Reacting Biopattern,,,
+Non/Low reactive biopattern,,,
+Pandoraea spp.,Pandoraea,414998001,Pandoraea
+Pantoea spp.,Pantoea,115013001,Pantoea
+Pseudomonas spp.,Pseudomonas,57032008,Pseudomonas
+Salmonella group,Salmonella,27268008,Salmonella
+Serratia liquefaciens group,Serratia liquefaciens complex,722258003,Serratia liquefaciens complex
+Shigella group,Shigella,77352002,Shigella
+Staphylococcus cohnii subsp. cohnii,Staphylococcus cohnii,66872005,Staphylococcus cohnii
+Staphylococcus hominis subsp. hominis,Staphylococcus hominis,44827007,Staphylococcus hominis
+Streptococcus constellatus subsp. pharyngis,Streptococcus constellatus,76199005,Streptococcus constellatus
+Streptococcus infantarius subsp. coli,Streptococcus infantarius,415603007,Streptococcus infantarius
+Streptococcus mitis/Streptococcus oralis,Streptococcus mitis,57997003,Streptococcus mitis
+Vagococcus fluviali,Vagococcus fluvialis,116418005,Vagococcus fluvialis
+Yersinia enterocolitica/Yersinia frederiksenii,Yersinia enterocolitica,65255000,Yersinia enterocolitica

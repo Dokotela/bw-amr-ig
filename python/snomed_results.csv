@@ -1,0 +1,168 @@
+organism,snomed_code,display_name
+Achromobacter denitrificans,413414001,Achromobacter denitrificans
+Achromobacter xylosoxidans,413424009,Achromobacter xylosoxidans
+Acinetobacter baumannii,91288006,Acinetobacter baumannii
+Acinetobacter baumannii complex,,
+Acinetobacter haemolyticus,77045006,Acinetobacter haemolyticus
+Acinetobacter junii,13879009,Acinetobacter junii
+Acinetobacter lwoffii,83088009,Acinetobacter lwoffii
+Acinetobacter radioresistens,113381003,Acinetobacter radioresistens
+Acinetobacter ursingii,424791004,Acinetobacter ursingii
+Aerococcus viridans,78803006,Aerococcus viridans
+Aeromonas hydrophila/punctata,,
+Aeromonas salmonicida,30334005,Aeromonas salmonicida
+Aeromonas sobria,43731003,Aeromonas sobria
+Aeromonas veronii,9281006,Aeromonas veronii
+Alcaligenes faecalis subsp. faecalis,,
+Alloiococcus otitis,396454000,Alloiococcus otitis
+Bordetella hinzii,113495004,Bordetella hinzii
+Brevundimonas diminuta/Brevundimonas vesicularis,,
+Brucella melitensis,72829003,Brucella melitensis
+Burkholderia cepacia group,,
+Burkholderia mallei,113674000,Burkholderia mallei
+Buttiauxella agrestis,10969007,Buttiauxella agrestis
+Cedecia lapagei,,
+Chromobacterium violaceum,11042002,Chromobacterium violaceum
+Chryseobacterium indologenes,113549008,Chryseobacterium indologenes
+Citrobacter amalonaticus,55744003,Citrobacter amalonaticus
+Citrobacter braakii,114262000,Citrobacter braakii
+Citrobacter freundii,6265002,Citrobacter freundii
+Citrobacter koseri,114264004,Citrobacter koseri
+Citrobacter sedlakii,114265003,Citrobacter sedlakii
+Citrobacter werkmanii,114442006,Citrobacter werkmanii
+Coagulase-negative Staphylococcus,116197008,"Staphylococcus, coagulase negative"
+Comamonas testosteroni,43721005,Comamonas testosteroni
+Cronobacter sakazakii group,,
+Delftia acidovorans,20432002,Delftia acidovorans
+Dermacoccus nishinomiyaensis/Kytococcus sedentarius,,
+Elizabethkingia meningoseptica,425774009,Elizabethkingia meningoseptica
+Enterobacter aerogenes,62592009,Klebsiella aerogenes
+Enterobacter cancerogenus,114451003,Enterobacter cancerogenus
+Enterobacter cloacae complex,414102007,Enterobacter cloacae complex
+Enterobacter cloacae subsp. cloacae,721950003,Enterobacter cloacae subsp. cloacae
+Enterobacter cloacae subsp. dissolvens,56813009,Enterobacter cloacae subspecies dissolvens
+Enterococcus casseliflavus,30949009,Enterococcus casseliflavus
+Enterococcus durans,46464008,Enterococcus durans
+Enterococcus faecalis,1187454003,Enterococcus faecalis
+Enterococcus faecium,90272000,Enterococcus faecium
+Enterococcus gallinarum,53233007,Enterococcus gallinarum
+Enterococcus spp.,,
+Escherichia coli,112283007,Escherichia coli
+Ewingella americana,19027003,Ewingella americana
+Gemella morbillorum,113765006,Gemella morbillorum
+Hafnia alvei,76694001,Hafnia alvei
+Klebsiella oxytoca,40886007,Klebsiella oxytoca
+Klebsiella pneumoniae,56415008,Klebsiella pneumoniae
+Klebsiella pneumoniae subsp. ozaenae,65186004,Klebsiella pneumoniae subsp. ozaenae
+Klebsiella pneumoniae subsp. pneumoniae,,
+Klebsiella spp.,,
+Kluyvera ascorbata,58493008,Kluyvera ascorbata
+Kluyvera cryocrescens,32547006,Kluyvera cryocrescens
+Kocuria kristinae,113772007,Rothia kristinae
+Kocuria rhizophila,432451007,Kocuria rhizophila
+Kocuria rosea,113773002,Kocuria rosea
+Kocuria varians,113774008,Kocuria varians
+Lactococcus garvieae,27716002,Lactococcus garvieae
+Leclercia adecarboxylata,57459006,Leclercia adecarboxylata
+Lelliottia amnigena,84221003,Lelliottia amnigena
+Leuconostoc mesenteroides subsp. cremoris,,
+Leuconostoc mesenteroides subsp. dextranicum,,
+Leuconostoc pseudomesenteroides,243235006,Leuconostoc pseudomesenteroides
+Listeria innocua,48331004,Listeria innocua
+Low Discrimination Organism,,
+Methylobacterium spp.,,
+Micrococcus luteus,48299003,Micrococcus luteus
+Moraxella group,,
+Morganella morganii subsp. morganii,,
+Morganella morganii subsp. sibonii,,
+Myroides spp.,,
+Neisseria animaloris/Neisseria zoodegmatis,,
+Non/Low Reacting Biopattern,,
+Non/Low reactive biopattern,,
+Oligella ureolytica,11309009,Oligella ureolytica
+Pandoraea spp.,,
+Pantoea spp.,,
+Pasteurella multocida,10879005,Pasteurella multocida
+Pasteurella pneumotropica,32562008,Rodentibacter pneumotropicus
+Pasteurella testudinis,3388005,Pasteurella testudinis
+Proteus hauseri,417592004,Proteus hauseri
+Proteus mirabilis,73457008,Proteus mirabilis
+Proteus penneri,45298005,Proteus penneri
+Providencia rettgeri,14196002,Providencia rettgeri
+Providencia stuartii,1445008,Providencia stuartii
+Pseudomonas aeruginosa,52499004,Pseudomonas aeruginosa
+Pseudomonas alcaligenes,46247008,Pseudomonas alcaligenes
+Pseudomonas fluorescens,39289003,Pseudomonas fluorescens
+Pseudomonas luteola,33919008,Pseudomonas luteola
+Pseudomonas mendocina,59419001,Pseudomonas mendocina
+Pseudomonas oleovorans,53053000,Pseudomonas oleovorans
+Pseudomonas oryzihabitans,113931000,Pseudomonas oryzihabitans
+Pseudomonas putida,68608003,Pseudomonas putida
+Pseudomonas spp.,,
+Pseudomonas stutzeri,58024003,Pseudomonas stutzeri
+Ralstonia insidiosa,415235000,Ralstonia insidiosa
+Ralstonia pickettii,114053008,Ralstonia pickettii
+Raoultella ornithinolytica,416832000,Raoultella ornithinolytica
+Raoultella planticola,416264004,Raoultella planticola
+Rhizobium radiobacter,438107000,Rhizobium radiobacter
+Roseomonas gilardii,113710007,Roseomonas gilardii
+Salmonella enterica subsp. arizonae,397502001,Salmonella enterica subsp. arizonae
+Salmonella enterica subsp. diarizonae,398428002,Salmonella enterica subsp. diarizonae
+Salmonella enterica subsp. enterica,398508004,Salmonella enterica subsp. enterica
+Salmonella Gallinarum,370576005,Salmonella Gallinarum
+Salmonella group,,
+Serratia ficaria,802004,Serratia ficaria
+Serratia fonticola,112329006,Serratia fonticola
+Serratia liquefaciens group,,
+Serratia marcescens,33522002,Serratia marcescens
+Serratia odorifera,10413007,Serratia odorifera
+Serratia plymuthica,28955009,Serratia plymuthica
+Serratia rubidaea,55825002,Serratia rubidaea
+Shewanella putrefaciens,113700003,Shewanella putrefaciens
+Shigella group,,
+Shigella sonnei,4298009,Shigella sonnei
+Sphingobacterium spiritivorum,61675006,Sphingobacterium spiritivorum
+Sphingobacterium thalpophilum,113954009,Sphingobacterium thalpophilum
+Sphingomonas paucimobilis,243350004,Sphingomonas paucimobilis
+Staphylococcus aureus,3092008,Staphylococcus aureus
+Staphylococcus auricularis,45654003,Staphylococcus auricularis
+Staphylococcus capitis,40347003,Staphylococcus capitis
+Staphylococcus chromogenes,56629004,Staphylococcus chromogenes
+Staphylococcus cohnii subsp. cohnii,,
+Staphylococcus epidermidis,60875001,Staphylococcus epidermidis
+Staphylococcus gallinarum,8056006,Staphylococcus gallinarum
+Staphylococcus haemolyticus,83452006,Staphylococcus haemolyticus
+Staphylococcus hominis subsp. hominis,,
+Staphylococcus lentus,40253001,Mammaliicoccus lentus
+Staphylococcus pseudintermedius,427316000,Staphylococcus pseudintermedius
+Staphylococcus sciuri,70806002,Mammaliicoccus sciuri
+Staphylococcus warneri,63550006,Staphylococcus warneri
+Stenotrophomonas maltophilia,113697002,Stenotrophomonas maltophilia
+Streptococcus agalactiae,43492007,Group B streptococcus
+Streptococcus alactolyticus,34228005,Streptococcus alactolyticus
+Streptococcus anginosus,44304009,Streptococcus anginosus
+Streptococcus constellatus subsp. pharyngis,,
+Streptococcus gallolyticus subsp. pasteurianus,421253004,Streptococcus gallolyticus subspecies pasteurianus
+Streptococcus infantarius subsp. coli,,
+Streptococcus iniae,79050007,Streptococcus iniae
+Streptococcus intermedius,62170002,Streptococcus intermedius
+Streptococcus mitis/Streptococcus oralis,,
+Streptococcus mutans,214001,Streptococcus mutans
+Streptococcus parasanguinis,113990002,Streptococcus parasanguinis
+Streptococcus pluranimalium,438187002,Streptococcus pluranimalium
+Streptococcus pneumoniae,9861002,Streptococcus pneumoniae
+Streptococcus porcinus,59512008,Streptococcus porcinus
+Streptococcus pseudoporcinus,429189003,Streptococcus pseudoporcinus
+Streptococcus salivarius subsp. salivarius,84684000,Streptococcus salivarius subsp. salivarius
+Streptococcus sanguinis,113993000,Streptococcus sanguinis
+Streptococcus suis,7912006,Streptococcus suis
+Streptococcus thermophilus,23310006,Streptococcus salivarius subsp. thermophilus
+Streptococcus thoraltensis,113997004,Streptococcus thoraltensis
+Streptococcus uberis,13250005,Streptococcus uberis
+Streptococcus vestibularis,113998009,Streptococcus vestibularis
+Vagococcus fluviali,,
+Vibrio fluvialis,43199008,Vibrio fluvialis
+Vibrio parahaemolyticus,11736008,Vibrio parahaemolyticus
+Vibrio vulnificus,55905000,Vibrio vulnificus
+Yersinia enterocolitica/Yersinia frederiksenii,,
+Yersinia kristensenii,91042006,Yersinia kristensenii
