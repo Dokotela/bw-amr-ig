@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "BotswanaAMRGramStainResultVS",
+  "id": "botswana-amr-gram-stain-result-vs",
+  "title": "Botswana AMR Gram Stain Results",
+  "description": "Gram stain results used in Botswana AMR surveillance",
+  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-gram-stain-result-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "8745002",
+            "display": "Gram-positive"
+          },
+          {
+            "code": "87172008",
+            "display": "Gram-negative"
+          },
+          {
+            "code": "411933009",
+            "display": "Gram-variable"
+          },
+          {
+            "code": "58296003",
+            "display": "Yeast"
+          },
+          {
+            "code": "74964007",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}

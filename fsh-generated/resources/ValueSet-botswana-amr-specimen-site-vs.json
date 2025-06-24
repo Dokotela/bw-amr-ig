@@ -1,0 +1,82 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "BotswanaAMRSpecimenSiteVS",
+  "id": "botswana-amr-specimen-site-vs",
+  "title": "Botswana AMR Specimen Collection Sites",
+  "description": "Anatomical sites where specimens are collected for Botswana AMR surveillance",
+  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "87612001",
+            "display": "Blood"
+          },
+          {
+            "code": "68171009",
+            "display": "Urine"
+          },
+          {
+            "code": "119334006",
+            "display": "Sputum specimen"
+          },
+          {
+            "code": "258580003",
+            "display": "Wound"
+          },
+          {
+            "code": "69695003",
+            "display": "Cerebrospinal fluid"
+          },
+          {
+            "code": "119339001",
+            "display": "Stool specimen"
+          },
+          {
+            "code": "258603006",
+            "display": "Respiratory tract structure"
+          },
+          {
+            "code": "45206002",
+            "display": "Nasal cavity structure"
+          },
+          {
+            "code": "123851003",
+            "display": "Mouth region structure"
+          },
+          {
+            "code": "69536005",
+            "display": "Head structure"
+          },
+          {
+            "code": "416775004",
+            "display": "Throat structure"
+          },
+          {
+            "code": "76784001",
+            "display": "Vaginal structure"
+          },
+          {
+            "code": "13648007",
+            "display": "Urethral structure"
+          },
+          {
+            "code": "127949000",
+            "display": "Catheter tip"
+          },
+          {
+            "code": "302562005",
+            "display": "Tissue specimen"
+          },
+          {
+            "code": "74964007",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}

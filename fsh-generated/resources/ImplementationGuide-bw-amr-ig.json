@@ -43,6 +43,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/botswana-amr-gram-stain-observation"
+        },
+        "name": "Botswana AMR Gram Stain Observation",
+        "description": "Records gram stain results for specimens in Botswana AMR surveillance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/botswana-amr-gram-stain-result-vs"
+        },
+        "name": "Botswana AMR Gram Stain Results",
+        "description": "Gram stain results used in Botswana AMR surveillance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/botswana-amr-interpretation"
         },
         "name": "Botswana AMR Interpretation",
@@ -51,10 +67,74 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/botswana-amr-local-method-cs"
+        },
+        "name": "Botswana AMR Local Identification Method Codes",
+        "description": "Local codes for identification methods used in Botswana AMR surveillance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/botswana-amr-local-organism-cs"
+        },
+        "name": "Botswana AMR Local Organism Codes",
+        "description": "Local codes for organism combinations and complex designations used in Botswana AMR surveillance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/botswana-amr-identification-method-vs"
+        },
+        "name": "Botswana AMR Organism Identification Methods",
+        "description": "Methods used for organism identification in Botswana AMR surveillance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/botswana-amr-organism-observation"
+        },
+        "name": "Botswana AMR Organism Identification Observation",
+        "description": "Records organism identification results from culture in Botswana AMR surveillance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/botswana-amr-organism-vs"
+        },
+        "name": "Botswana AMR Organism ValueSet",
+        "description": "Organisms identified in Botswana AMR surveillance using SNOMED CT codes and local codes for combinations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/botswana-amr-special-test-observation"
+        },
+        "name": "Botswana AMR Special Test Observation",
+        "description": "Records special AMR test results (ESBL, Carbapenemase, D-Zone, MRSA) in Botswana AMR surveillance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/botswana-amr-special-test-vs"
+        },
+        "name": "Botswana AMR Special Tests",
+        "description": "Special antimicrobial resistance tests performed in Botswana AMR surveillance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/BotswanaAMRSpecimen"
         },
         "name": "Botswana AMR Specimen",
         "description": "Constrains the Specimen Types for Botswana AMR",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/botswana-amr-specimen-site-vs"
+        },
+        "name": "Botswana AMR Specimen Collection Sites",
+        "description": "Anatomical sites where specimens are collected for Botswana AMR surveillance",
         "exampleBoolean": false
       },
       {
@@ -71,6 +151,14 @@
         },
         "name": "Botswana AMR Susceptibility Observation",
         "description": "Records S/I/R (and optional MIC) for a single antibiotic test on a specimen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/botswana-amr-test-result-status-vs"
+        },
+        "name": "Botswana AMR Test Result Status",
+        "description": "Status values for test results in Botswana AMR surveillance",
         "exampleBoolean": false
       }
     ],

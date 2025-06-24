@@ -1,0 +1,33 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "BotswanaAMRLocalMethodCS",
+  "id": "botswana-amr-local-method-cs",
+  "title": "Botswana AMR Local Identification Method Codes",
+  "description": "Local codes for identification methods used in Botswana AMR surveillance",
+  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs",
+  "concept": [
+    {
+      "code": "vitek",
+      "display": "Vitek automated system",
+      "definition": "bioMérieux Vitek automated identification and susceptibility testing system"
+    },
+    {
+      "code": "phoenix",
+      "display": "Phoenix automated system",
+      "definition": "BD Phoenix automated identification and susceptibility testing system"
+    },
+    {
+      "code": "api",
+      "display": "API biochemical strips",
+      "definition": "bioMérieux API manual biochemical identification strips"
+    },
+    {
+      "code": "manual",
+      "display": "Manual biochemical testing",
+      "definition": "Traditional manual biochemical identification methods"
+    }
+  ],
+  "count": 4
+}

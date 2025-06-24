@@ -1,5 +1,21 @@
 [
   {
+    "outputFile": "CodeSystem-botswana-amr-local-method-cs.json",
+    "fshName": "BotswanaAMRLocalMethodCS",
+    "fshType": "CodeSystem",
+    "fshFile": "codeSystems/BotswanaAMRLocalMethodCS.fsh",
+    "startLine": 2,
+    "endLine": 10
+  },
+  {
+    "outputFile": "CodeSystem-botswana-amr-local-organism-cs.json",
+    "fshName": "BotswanaAMRLocalOrganismCS",
+    "fshType": "CodeSystem",
+    "fshFile": "valueSets/BotswanaAMROrganismVS.fsh",
+    "startLine": 212,
+    "endLine": 248
+  },
+  {
     "outputFile": "StructureDefinition-BotswanaAMRSpecimen.json",
     "fshName": "BotswanaAMRSpecimen",
     "fshType": "Profile",
@@ -14,6 +30,30 @@
     "fshFile": "profiles/BotswanaAMRDiagnosticReport.fsh",
     "startLine": 1,
     "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-botswana-amr-gram-stain-observation.json",
+    "fshName": "BotswanaAMRGramStainObservation",
+    "fshType": "Profile",
+    "fshFile": "profiles/BotswanaAMRGramStainObservation.fsh",
+    "startLine": 4,
+    "endLine": 29
+  },
+  {
+    "outputFile": "StructureDefinition-botswana-amr-organism-observation.json",
+    "fshName": "BotswanaAMROrganismObservation",
+    "fshType": "Profile",
+    "fshFile": "profiles/BotswanaAMROrganismObservation.fsh",
+    "startLine": 5,
+    "endLine": 33
+  },
+  {
+    "outputFile": "StructureDefinition-botswana-amr-special-test-observation.json",
+    "fshName": "BotswanaAMRSpecialTestObservation",
+    "fshType": "Profile",
+    "fshFile": "profiles/BotswanaAMRSpecialTestObservation.fsh",
+    "startLine": 4,
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-botswana-amr-susceptibility-observation.json",
@@ -32,6 +72,22 @@
     "endLine": 46
   },
   {
+    "outputFile": "ValueSet-botswana-amr-gram-stain-result-vs.json",
+    "fshName": "BotswanaAMRGramStainResultVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSets/BotswanaAMRGramStrainResultVS.fsh",
+    "startLine": 4,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-botswana-amr-identification-method-vs.json",
+    "fshName": "BotswanaAMRIdentificationMethodVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSets/BotswanaAMRIdentificationMethodVS.fsh",
+    "startLine": 2,
+    "endLine": 16
+  },
+  {
     "outputFile": "ValueSet-botswana-amr-interpretation.json",
     "fshName": "BotswanaAMRInterpretation",
     "fshType": "ValueSet",
@@ -40,11 +96,43 @@
     "endLine": 9
   },
   {
+    "outputFile": "ValueSet-botswana-amr-organism-vs.json",
+    "fshName": "BotswanaAMROrganismVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSets/BotswanaAMROrganismVS.fsh",
+    "startLine": 4,
+    "endLine": 209
+  },
+  {
+    "outputFile": "ValueSet-botswana-amr-special-test-vs.json",
+    "fshName": "BotswanaAMRSpecialTestVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSets/BotswanaAMRSpecialTestVS.fsh",
+    "startLine": 4,
+    "endLine": 19
+  },
+  {
+    "outputFile": "ValueSet-botswana-amr-specimen-site-vs.json",
+    "fshName": "BotswanaAMRSpecimenSiteVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSets/BotswanaAMRSpecimenSiteVS.fsh",
+    "startLine": 3,
+    "endLine": 24
+  },
+  {
     "outputFile": "ValueSet-botswana-amr-specimen-type-vs.json",
     "fshName": "BotswanaAMRSpecimenTypeVS",
     "fshType": "ValueSet",
     "fshFile": "valueSets/BotswanaAMRSpecimenTypeVS.fsh",
     "startLine": 3,
     "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-botswana-amr-test-result-status-vs.json",
+    "fshName": "BotswanaAMRTestResultStatusVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSets/BotswanaAMRTestResultStatusVS.fsh",
+    "startLine": 3,
+    "endLine": 12
   }
 ]

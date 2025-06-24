@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "BotswanaAMRTestResultStatusVS",
+  "id": "botswana-amr-test-result-status-vs",
+  "title": "Botswana AMR Test Result Status",
+  "description": "Status values for test results in Botswana AMR surveillance",
+  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "10828004",
+            "display": "Positive"
+          },
+          {
+            "code": "260385009",
+            "display": "Negative"
+          },
+          {
+            "code": "82334004",
+            "display": "Indeterminate"
+          },
+          {
+            "code": "385660001",
+            "display": "Not done"
+          },
+          {
+            "code": "261665006",
+            "display": "Unknown"
+          }
+        ]
+      }
+    ]
+  }
+}

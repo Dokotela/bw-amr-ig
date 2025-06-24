@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "BotswanaAMRIdentificationMethodVS",
+  "id": "botswana-amr-identification-method-vs",
+  "title": "Botswana AMR Organism Identification Methods",
+  "description": "Methods used for organism identification in Botswana AMR surveillance",
+  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-identification-method-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "258066000",
+            "display": "Automated identification system"
+          },
+          {
+            "code": "252398009",
+            "display": "Biochemical identification"
+          },
+          {
+            "code": "87273009",
+            "display": "Manual method"
+          }
+        ]
+      },
+      {
+        "system": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs",
+        "concept": [
+          {
+            "code": "vitek",
+            "display": "Vitek automated system"
+          },
+          {
+            "code": "phoenix",
+            "display": "Phoenix automated system"
+          },
+          {
+            "code": "api",
+            "display": "API biochemical strips"
+          },
+          {
+            "code": "manual",
+            "display": "Manual biochemical testing"
+          }
+        ]
+      }
+    ]
+  }
+}

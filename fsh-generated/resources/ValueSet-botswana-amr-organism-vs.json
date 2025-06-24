@@ -1,0 +1,783 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "BotswanaAMROrganismVS",
+  "id": "botswana-amr-organism-vs",
+  "title": "Botswana AMR Organism ValueSet",
+  "description": "Organisms identified in Botswana AMR surveillance using SNOMED CT codes and local codes for combinations",
+  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "413414001",
+            "display": "Achromobacter denitrificans"
+          },
+          {
+            "code": "413424009",
+            "display": "Achromobacter xylosoxidans"
+          },
+          {
+            "code": "91288006",
+            "display": "Acinetobacter baumannii"
+          },
+          {
+            "code": "77045006",
+            "display": "Acinetobacter haemolyticus"
+          },
+          {
+            "code": "13879009",
+            "display": "Acinetobacter junii"
+          },
+          {
+            "code": "83088009",
+            "display": "Acinetobacter lwoffii"
+          },
+          {
+            "code": "113381003",
+            "display": "Acinetobacter radioresistens"
+          },
+          {
+            "code": "424791004",
+            "display": "Acinetobacter ursingii"
+          },
+          {
+            "code": "78803006",
+            "display": "Aerococcus viridans"
+          },
+          {
+            "code": "85823000",
+            "display": "Aeromonas hydrophila"
+          },
+          {
+            "code": "115036005",
+            "display": "Aeromonas caviae"
+          },
+          {
+            "code": "30334005",
+            "display": "Aeromonas salmonicida"
+          },
+          {
+            "code": "43731003",
+            "display": "Aeromonas sobria"
+          },
+          {
+            "code": "9281006",
+            "display": "Aeromonas veronii"
+          },
+          {
+            "code": "25223004",
+            "display": "Alcaligenes faecalis"
+          },
+          {
+            "code": "396454000",
+            "display": "Alloiococcus otitis"
+          },
+          {
+            "code": "113495004",
+            "display": "Bordetella hinzii"
+          },
+          {
+            "code": "113689009",
+            "display": "Brevundimonas diminuta"
+          },
+          {
+            "code": "113690000",
+            "display": "Brevundimonas vesicularis"
+          },
+          {
+            "code": "72829003",
+            "display": "Brucella melitensis"
+          },
+          {
+            "code": "131281002",
+            "display": "Burkholderia cepacia complex"
+          },
+          {
+            "code": "113674000",
+            "display": "Burkholderia mallei"
+          },
+          {
+            "code": "10969007",
+            "display": "Buttiauxella agrestis"
+          },
+          {
+            "code": "2345009",
+            "display": "Cedecea lapagei"
+          },
+          {
+            "code": "11042002",
+            "display": "Chromobacterium violaceum"
+          },
+          {
+            "code": "113549008",
+            "display": "Chryseobacterium indologenes"
+          },
+          {
+            "code": "55744003",
+            "display": "Citrobacter amalonaticus"
+          },
+          {
+            "code": "114262000",
+            "display": "Citrobacter braakii"
+          },
+          {
+            "code": "6265002",
+            "display": "Citrobacter freundii"
+          },
+          {
+            "code": "114264004",
+            "display": "Citrobacter koseri"
+          },
+          {
+            "code": "114265003",
+            "display": "Citrobacter sedlakii"
+          },
+          {
+            "code": "114442006",
+            "display": "Citrobacter werkmanii"
+          },
+          {
+            "code": "116197008",
+            "display": "Staphylococcus, coagulase negative"
+          },
+          {
+            "code": "43721005",
+            "display": "Comamonas testosteroni"
+          },
+          {
+            "code": "445562004",
+            "display": "Cronobacter sakazakii"
+          },
+          {
+            "code": "20432002",
+            "display": "Delftia acidovorans"
+          },
+          {
+            "code": "113776005",
+            "display": "Dermacoccus nishinomiyaensis"
+          },
+          {
+            "code": "113775009",
+            "display": "Kytococcus sedentarius"
+          },
+          {
+            "code": "425774009",
+            "display": "Elizabethkingia meningoseptica"
+          },
+          {
+            "code": "62592009",
+            "display": "Klebsiella aerogenes"
+          },
+          {
+            "code": "114451003",
+            "display": "Enterobacter cancerogenus"
+          },
+          {
+            "code": "414102007",
+            "display": "Enterobacter cloacae complex"
+          },
+          {
+            "code": "721950003",
+            "display": "Enterobacter cloacae subsp. cloacae"
+          },
+          {
+            "code": "56813009",
+            "display": "Enterobacter cloacae subspecies dissolvens"
+          },
+          {
+            "code": "30949009",
+            "display": "Enterococcus casseliflavus"
+          },
+          {
+            "code": "46464008",
+            "display": "Enterococcus durans"
+          },
+          {
+            "code": "1187454003",
+            "display": "Enterococcus faecalis"
+          },
+          {
+            "code": "90272000",
+            "display": "Enterococcus faecium"
+          },
+          {
+            "code": "53233007",
+            "display": "Enterococcus gallinarum"
+          },
+          {
+            "code": "2785000",
+            "display": "Enterococcus"
+          },
+          {
+            "code": "112283007",
+            "display": "Escherichia coli"
+          },
+          {
+            "code": "19027003",
+            "display": "Ewingella americana"
+          },
+          {
+            "code": "113765006",
+            "display": "Gemella morbillorum"
+          },
+          {
+            "code": "76694001",
+            "display": "Hafnia alvei"
+          },
+          {
+            "code": "40886007",
+            "display": "Klebsiella oxytoca"
+          },
+          {
+            "code": "56415008",
+            "display": "Klebsiella pneumoniae"
+          },
+          {
+            "code": "65186004",
+            "display": "Klebsiella pneumoniae subsp. ozaenae"
+          },
+          {
+            "code": "75032006",
+            "display": "Klebsiella"
+          },
+          {
+            "code": "58493008",
+            "display": "Kluyvera ascorbata"
+          },
+          {
+            "code": "32547006",
+            "display": "Kluyvera cryocrescens"
+          },
+          {
+            "code": "113772007",
+            "display": "Rothia kristinae"
+          },
+          {
+            "code": "432451007",
+            "display": "Kocuria rhizophila"
+          },
+          {
+            "code": "113773002",
+            "display": "Kocuria rosea"
+          },
+          {
+            "code": "113774008",
+            "display": "Kocuria varians"
+          },
+          {
+            "code": "27716002",
+            "display": "Lactococcus garvieae"
+          },
+          {
+            "code": "57459006",
+            "display": "Leclercia adecarboxylata"
+          },
+          {
+            "code": "84221003",
+            "display": "Lelliottia amnigena"
+          },
+          {
+            "code": "71403009",
+            "display": "Leuconostoc mesenteroides"
+          },
+          {
+            "code": "243235006",
+            "display": "Leuconostoc pseudomesenteroides"
+          },
+          {
+            "code": "48331004",
+            "display": "Listeria innocua"
+          },
+          {
+            "code": "38395008",
+            "display": "Methylobacterium"
+          },
+          {
+            "code": "48299003",
+            "display": "Micrococcus luteus"
+          },
+          {
+            "code": "36361003",
+            "display": "Moraxella"
+          },
+          {
+            "code": "243301005",
+            "display": "Morganella morganii"
+          },
+          {
+            "code": "115127008",
+            "display": "Myroides"
+          },
+          {
+            "code": "442202005",
+            "display": "Neisseria animaloris"
+          },
+          {
+            "code": "449121005",
+            "display": "Neisseria zoodegmatis"
+          },
+          {
+            "code": "11309009",
+            "display": "Oligella ureolytica"
+          },
+          {
+            "code": "414998001",
+            "display": "Pandoraea"
+          },
+          {
+            "code": "115013001",
+            "display": "Pantoea"
+          },
+          {
+            "code": "10879005",
+            "display": "Pasteurella multocida"
+          },
+          {
+            "code": "32562008",
+            "display": "Rodentibacter pneumotropicus"
+          },
+          {
+            "code": "3388005",
+            "display": "Pasteurella testudinis"
+          },
+          {
+            "code": "417592004",
+            "display": "Proteus hauseri"
+          },
+          {
+            "code": "73457008",
+            "display": "Proteus mirabilis"
+          },
+          {
+            "code": "45298005",
+            "display": "Proteus penneri"
+          },
+          {
+            "code": "14196002",
+            "display": "Providencia rettgeri"
+          },
+          {
+            "code": "1445008",
+            "display": "Providencia stuartii"
+          },
+          {
+            "code": "52499004",
+            "display": "Pseudomonas aeruginosa"
+          },
+          {
+            "code": "46247008",
+            "display": "Pseudomonas alcaligenes"
+          },
+          {
+            "code": "39289003",
+            "display": "Pseudomonas fluorescens"
+          },
+          {
+            "code": "33919008",
+            "display": "Pseudomonas luteola"
+          },
+          {
+            "code": "59419001",
+            "display": "Pseudomonas mendocina"
+          },
+          {
+            "code": "53053000",
+            "display": "Pseudomonas oleovorans"
+          },
+          {
+            "code": "113931000",
+            "display": "Pseudomonas oryzihabitans"
+          },
+          {
+            "code": "68608003",
+            "display": "Pseudomonas putida"
+          },
+          {
+            "code": "58024003",
+            "display": "Pseudomonas stutzeri"
+          },
+          {
+            "code": "57032008",
+            "display": "Pseudomonas"
+          },
+          {
+            "code": "415235000",
+            "display": "Ralstonia insidiosa"
+          },
+          {
+            "code": "114053008",
+            "display": "Ralstonia pickettii"
+          },
+          {
+            "code": "416832000",
+            "display": "Raoultella ornithinolytica"
+          },
+          {
+            "code": "416264004",
+            "display": "Raoultella planticola"
+          },
+          {
+            "code": "438107000",
+            "display": "Rhizobium radiobacter"
+          },
+          {
+            "code": "113710007",
+            "display": "Roseomonas gilardii"
+          },
+          {
+            "code": "397502001",
+            "display": "Salmonella enterica subsp. arizonae"
+          },
+          {
+            "code": "398428002",
+            "display": "Salmonella enterica subsp. diarizonae"
+          },
+          {
+            "code": "398508004",
+            "display": "Salmonella enterica subsp. enterica"
+          },
+          {
+            "code": "370576005",
+            "display": "Salmonella Gallinarum"
+          },
+          {
+            "code": "27268008",
+            "display": "Salmonella"
+          },
+          {
+            "code": "802004",
+            "display": "Serratia ficaria"
+          },
+          {
+            "code": "112329006",
+            "display": "Serratia fonticola"
+          },
+          {
+            "code": "722258003",
+            "display": "Serratia liquefaciens complex"
+          },
+          {
+            "code": "33522002",
+            "display": "Serratia marcescens"
+          },
+          {
+            "code": "10413007",
+            "display": "Serratia odorifera"
+          },
+          {
+            "code": "28955009",
+            "display": "Serratia plymuthica"
+          },
+          {
+            "code": "55825002",
+            "display": "Serratia rubidaea"
+          },
+          {
+            "code": "113700003",
+            "display": "Shewanella putrefaciens"
+          },
+          {
+            "code": "77352002",
+            "display": "Shigella"
+          },
+          {
+            "code": "4298009",
+            "display": "Shigella sonnei"
+          },
+          {
+            "code": "61675006",
+            "display": "Sphingobacterium spiritivorum"
+          },
+          {
+            "code": "113954009",
+            "display": "Sphingobacterium thalpophilum"
+          },
+          {
+            "code": "243350004",
+            "display": "Sphingomonas paucimobilis"
+          },
+          {
+            "code": "3092008",
+            "display": "Staphylococcus aureus"
+          },
+          {
+            "code": "45654003",
+            "display": "Staphylococcus auricularis"
+          },
+          {
+            "code": "40347003",
+            "display": "Staphylococcus capitis"
+          },
+          {
+            "code": "56629004",
+            "display": "Staphylococcus chromogenes"
+          },
+          {
+            "code": "66872005",
+            "display": "Staphylococcus cohnii"
+          },
+          {
+            "code": "60875001",
+            "display": "Staphylococcus epidermidis"
+          },
+          {
+            "code": "8056006",
+            "display": "Staphylococcus gallinarum"
+          },
+          {
+            "code": "83452006",
+            "display": "Staphylococcus haemolyticus"
+          },
+          {
+            "code": "44827007",
+            "display": "Staphylococcus hominis"
+          },
+          {
+            "code": "40253001",
+            "display": "Mammaliicoccus lentus"
+          },
+          {
+            "code": "427316000",
+            "display": "Staphylococcus pseudintermedius"
+          },
+          {
+            "code": "70806002",
+            "display": "Mammaliicoccus sciuri"
+          },
+          {
+            "code": "63550006",
+            "display": "Staphylococcus warneri"
+          },
+          {
+            "code": "113697002",
+            "display": "Stenotrophomonas maltophilia"
+          },
+          {
+            "code": "43492007",
+            "display": "Group B streptococcus"
+          },
+          {
+            "code": "34228005",
+            "display": "Streptococcus alactolyticus"
+          },
+          {
+            "code": "44304009",
+            "display": "Streptococcus anginosus"
+          },
+          {
+            "code": "76199005",
+            "display": "Streptococcus constellatus"
+          },
+          {
+            "code": "421253004",
+            "display": "Streptococcus gallolyticus subspecies pasteurianus"
+          },
+          {
+            "code": "415603007",
+            "display": "Streptococcus infantarius"
+          },
+          {
+            "code": "79050007",
+            "display": "Streptococcus iniae"
+          },
+          {
+            "code": "62170002",
+            "display": "Streptococcus intermedius"
+          },
+          {
+            "code": "57997003",
+            "display": "Streptococcus mitis"
+          },
+          {
+            "code": "19870004",
+            "display": "Streptococcus oralis"
+          },
+          {
+            "code": "214001",
+            "display": "Streptococcus mutans"
+          },
+          {
+            "code": "113990002",
+            "display": "Streptococcus parasanguinis"
+          },
+          {
+            "code": "438187002",
+            "display": "Streptococcus pluranimalium"
+          },
+          {
+            "code": "9861002",
+            "display": "Streptococcus pneumoniae"
+          },
+          {
+            "code": "59512008",
+            "display": "Streptococcus porcinus"
+          },
+          {
+            "code": "429189003",
+            "display": "Streptococcus pseudoporcinus"
+          },
+          {
+            "code": "84684000",
+            "display": "Streptococcus salivarius subsp. salivarius"
+          },
+          {
+            "code": "113993000",
+            "display": "Streptococcus sanguinis"
+          },
+          {
+            "code": "7912006",
+            "display": "Streptococcus suis"
+          },
+          {
+            "code": "23310006",
+            "display": "Streptococcus salivarius subsp. thermophilus"
+          },
+          {
+            "code": "113997004",
+            "display": "Streptococcus thoraltensis"
+          },
+          {
+            "code": "13250005",
+            "display": "Streptococcus uberis"
+          },
+          {
+            "code": "113998009",
+            "display": "Streptococcus vestibularis"
+          },
+          {
+            "code": "116418005",
+            "display": "Vagococcus fluvialis"
+          },
+          {
+            "code": "43199008",
+            "display": "Vibrio fluvialis"
+          },
+          {
+            "code": "11736008",
+            "display": "Vibrio parahaemolyticus"
+          },
+          {
+            "code": "55905000",
+            "display": "Vibrio vulnificus"
+          },
+          {
+            "code": "65255000",
+            "display": "Yersinia enterocolitica"
+          },
+          {
+            "code": "85159008",
+            "display": "Yersinia frederiksenii"
+          },
+          {
+            "code": "91042006",
+            "display": "Yersinia kristensenii"
+          }
+        ]
+      },
+      {
+        "system": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+        "concept": [
+          {
+            "code": "acinetobacter-baumannii-complex"
+          },
+          {
+            "code": "aeromonas-hydrophila-punctata"
+          },
+          {
+            "code": "alcaligenes-faecalis-subsp-faecalis"
+          },
+          {
+            "code": "brevundimonas-diminuta-vesicularis"
+          },
+          {
+            "code": "burkholderia-cepacia-group"
+          },
+          {
+            "code": "cedecia-lapagei"
+          },
+          {
+            "code": "cronobacter-sakazakii-group"
+          },
+          {
+            "code": "dermacoccus-nishinomiyaensis-kytococcus-sedentarius"
+          },
+          {
+            "code": "enterococcus-spp"
+          },
+          {
+            "code": "klebsiella-pneumoniae-subsp-pneumoniae"
+          },
+          {
+            "code": "klebsiella-spp"
+          },
+          {
+            "code": "leuconostoc-mesenteroides-subsp-cremoris"
+          },
+          {
+            "code": "leuconostoc-mesenteroides-subsp-dextranicum"
+          },
+          {
+            "code": "methylobacterium-spp"
+          },
+          {
+            "code": "moraxella-group"
+          },
+          {
+            "code": "morganella-morganii-subsp-morganii"
+          },
+          {
+            "code": "morganella-morganii-subsp-sibonii"
+          },
+          {
+            "code": "myroides-spp"
+          },
+          {
+            "code": "neisseria-animaloris-zoodegmatis"
+          },
+          {
+            "code": "pandoraea-spp"
+          },
+          {
+            "code": "pantoea-spp"
+          },
+          {
+            "code": "pseudomonas-spp"
+          },
+          {
+            "code": "salmonella-group"
+          },
+          {
+            "code": "serratia-liquefaciens-group"
+          },
+          {
+            "code": "shigella-group"
+          },
+          {
+            "code": "staphylococcus-cohnii-subsp-cohnii"
+          },
+          {
+            "code": "staphylococcus-hominis-subsp-hominis"
+          },
+          {
+            "code": "streptococcus-constellatus-subsp-pharyngis"
+          },
+          {
+            "code": "streptococcus-infantarius-subsp-coli"
+          },
+          {
+            "code": "streptococcus-mitis-oralis"
+          },
+          {
+            "code": "vagococcus-fluviali"
+          },
+          {
+            "code": "yersinia-enterocolitica-frederiksenii"
+          }
+        ]
+      }
+    ]
+  }
+}
