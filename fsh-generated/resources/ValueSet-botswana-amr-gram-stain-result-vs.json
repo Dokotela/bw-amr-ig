@@ -5,7 +5,7 @@
   "id": "botswana-amr-gram-stain-result-vs",
   "title": "Botswana AMR Gram Stain Results",
   "description": "Gram stain results used in Botswana AMR surveillance",
-  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-gram-stain-result-vs",
+  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-gram-stain-result-vs",
   "compose": {
     "include": [
       {

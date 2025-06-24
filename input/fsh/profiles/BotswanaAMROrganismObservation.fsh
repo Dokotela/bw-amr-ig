@@ -9,7 +9,7 @@ Title: "Botswana AMR Organism Identification Observation"
 Description: "Records organism identification results from culture in Botswana AMR surveillance"
 
 * status = #final
-* meta.profile = "http://example.org/fhir/StructureDefinition/BotswanaAMR-OrganismObservation"
+* meta.profile = "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-OrganismObservation"
 
 // LOINC code for organism identification
 * code = LNC#634-6 "Bacteria identified in Specimen by Culture"

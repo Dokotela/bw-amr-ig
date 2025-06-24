@@ -5,7 +5,7 @@
   "id": "botswana-amr-interpretation",
   "title": "Botswana AMR Interpretation",
   "description": "Only Susceptible, Intermediate, or Resistant",
-  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation",
+  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation",
   "compose": {
     "include": [
       {

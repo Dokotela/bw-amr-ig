@@ -5,7 +5,7 @@
   "id": "botswana-amr-organism-vs",
   "title": "Botswana AMR Organism ValueSet",
   "description": "Organisms identified in Botswana AMR surveillance using SNOMED CT codes and local codes for combinations",
-  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs",
+  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs",
   "compose": {
     "include": [
       {
@@ -678,7 +678,7 @@
         ]
       },
       {
-        "system": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+        "system": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
         "concept": [
           {
             "code": "acinetobacter-baumannii-complex"

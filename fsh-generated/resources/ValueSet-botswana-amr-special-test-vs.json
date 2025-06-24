@@ -5,7 +5,7 @@
   "id": "botswana-amr-special-test-vs",
   "title": "Botswana AMR Special Tests",
   "description": "Special antimicrobial resistance tests performed in Botswana AMR surveillance",
-  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-special-test-vs",
+  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-special-test-vs",
   "compose": {
     "include": [
       {

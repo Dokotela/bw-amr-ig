@@ -5,7 +5,7 @@
   "id": "botswana-amr-test-result-status-vs",
   "title": "Botswana AMR Test Result Status",
   "description": "Status values for test results in Botswana AMR surveillance",
-  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs",
+  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs",
   "compose": {
     "include": [
       {

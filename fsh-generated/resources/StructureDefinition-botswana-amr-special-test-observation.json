@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "botswana-amr-special-test-observation",
-  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation",
+  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation",
   "name": "BotswanaAMRSpecialTestObservation",
   "title": "Botswana AMR Special Test Observation",
   "status": "draft",
@@ -17,7 +17,7 @@
       {
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
-        "patternCanonical": "http://example.org/fhir/StructureDefinition/BotswanaAMR-SpecialTestObservation"
+        "patternCanonical": "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SpecialTestObservation"
       },
       {
         "id": "Observation.status",
@@ -29,7 +29,7 @@
         "path": "Observation.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-special-test-vs"
+          "valueSet": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-special-test-vs"
         }
       },
       {
@@ -100,7 +100,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs"
+          "valueSet": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs"
         }
       },
       {
@@ -111,7 +111,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen"
+              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen"
             ]
           }
         ]

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "botswana-amr-diagnostic-report",
-  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report",
+  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report",
   "name": "BotswanaAMRDiagnosticReport",
   "title": "Botswana AMR DiagnosticReport",
   "status": "draft",
@@ -17,7 +17,7 @@
       {
         "id": "DiagnosticReport.meta.profile",
         "path": "DiagnosticReport.meta.profile",
-        "patternCanonical": "http://example.org/fhir/StructureDefinition/BotswanaAMR-DiagnosticReport"
+        "patternCanonical": "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-DiagnosticReport"
       },
       {
         "id": "DiagnosticReport.status",

@@ -6,7 +6,7 @@ Description: "Records S/I/R (and optional MIC) for a single antibiotic test on a
 
 * id = "botswana-amr-susceptibility-observation"
 * status = #draft
-* meta.profile = "http://example.org/fhir/StructureDefinition/BotswanaAMR-SusceptibilityObservation"
+* meta.profile = "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SusceptibilityObservation"
 
 * code only CodeableConcept
 * code from botswana-amr-antibiotic-susceptibility-loinc

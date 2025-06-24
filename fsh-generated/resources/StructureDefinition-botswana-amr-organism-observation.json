@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "botswana-amr-organism-observation",
-  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation",
+  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation",
   "name": "BotswanaAMROrganismObservation",
   "title": "Botswana AMR Organism Identification Observation",
   "status": "draft",
@@ -17,7 +17,7 @@
       {
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
-        "patternCanonical": "http://example.org/fhir/StructureDefinition/BotswanaAMR-OrganismObservation"
+        "patternCanonical": "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-OrganismObservation"
       },
       {
         "id": "Observation.status",
@@ -105,7 +105,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs"
+          "valueSet": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs"
         }
       },
       {
@@ -113,7 +113,7 @@
         "path": "Observation.method",
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-identification-method-vs"
+          "valueSet": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-identification-method-vs"
         }
       },
       {
@@ -124,7 +124,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen"
+              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen"
             ]
           }
         ]

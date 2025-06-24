@@ -5,7 +5,7 @@
   "id": "botswana-amr-antibiotic-susceptibility-loinc",
   "title": "Botswana AMR Antibiotic Susceptibility LOINC",
   "description": "Collection of LOINC codes for antibiotic-susceptibility tests (MIC panel and individual drugs)",
-  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc",
+  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc",
   "compose": {
     "include": [
       {

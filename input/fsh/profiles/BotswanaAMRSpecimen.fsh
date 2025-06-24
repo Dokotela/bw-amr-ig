@@ -5,7 +5,7 @@ Description: "Constrains the Specimen Types for Botswana AMR"
 
 * id = "botswana-amr-specimen"
 * status = #draft
-* meta.profile = "http://example.org/fhir/StructureDefinition/BotswanaAMR-Specimen"
+* meta.profile = "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Specimen"
 * type only CodeableConcept
 * type from botswana-amr-specimen-type-vs
 * type 1..1

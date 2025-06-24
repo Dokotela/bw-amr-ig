@@ -3,7 +3,7 @@ name: BW-AMR-IG
 title: "Botswana AMR Implementation Guide"
 status: draft
 version: 0.1.0
-canonical: http://example.org/fhir/ImplementationGuide/bw-amr-ig
+canonical: http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig
 fhirVersion: 4.3.0
 copyrightYear: 2025
 releaseLabel: "0.1.0"

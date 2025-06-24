@@ -7,7 +7,7 @@
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc"/>
+    <fullUrl value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc"/>
     <resource>
       <ValueSet>
         <text>
@@ -351,7 +351,7 @@
             </table>
           </div>
         </text>
-        <url value="http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc"/>
+        <url value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc"/>
         <version value="0.1.0"/>
         <name value="BotswanaAMRAntibioticSusceptibilityLOINC"/>
         <title value="Botswana AMR Antibiotic Susceptibility LOINC"/>
@@ -595,7 +595,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation"/>
+    <fullUrl value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation"/>
     <resource>
       <ValueSet>
         <text>
@@ -682,7 +682,7 @@
             </table>
           </div>
         </text>
-        <url value="http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation"/>
+        <url value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation"/>
         <version value="0.1.0"/>
         <name value="BotswanaAMRInterpretation"/>
         <title value="Botswana AMR Interpretation"/>
@@ -733,7 +733,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs"/>
+    <fullUrl value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs"/>
     <resource>
       <ValueSet>
         <text>
@@ -815,7 +815,7 @@
             </table>
           </div>
         </text>
-        <url value="http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs"/>
+        <url value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs"/>
         <version value="0.1.0"/>
         <name value="BotswanaAMRSpecimenTypeVS"/>
         <title value="Botswana AMR Specimen Type VS"/>

@@ -1,6 +1,6 @@
 {
   "path" : "http://hl7.org/fhir/R4B/",
-  "canonical" : "http://example.org/fhir",
+  "canonical" : "http://bw.health.gov/fhir",
   "igId" : "bw-amr-ig",
   "igName" : "BWAMRIG",
   "packageId" : "bw-amr-ig",
@@ -237,7 +237,7 @@
     "title" : "Botswana AMR Implementation Guide",
     "titlelang" : {
     },
-    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig",
     "version" : "0.1.0",
     "status" : "draft",
     "experimental" : false,

@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "bw-amr-ig",
-  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig",
+  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig",
   "version": "0.1.0",
   "name": "BWAMRIG",
   "title": "Botswana AMR Implementation Guide",

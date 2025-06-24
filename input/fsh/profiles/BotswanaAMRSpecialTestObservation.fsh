@@ -8,7 +8,7 @@ Title: "Botswana AMR Special Test Observation"
 Description: "Records special AMR test results (ESBL, Carbapenemase, D-Zone, MRSA) in Botswana AMR surveillance"
 
 * status = #final
-* meta.profile = "http://example.org/fhir/StructureDefinition/BotswanaAMR-SpecialTestObservation"
+* meta.profile = "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SpecialTestObservation"
 
 // Test type from special test valueset
 * code from BotswanaAMRSpecialTestVS (required)

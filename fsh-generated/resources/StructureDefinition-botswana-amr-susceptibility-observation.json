@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "botswana-amr-susceptibility-observation",
-  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
+  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
   "name": "BotswanaAMRSusceptibilityObservation",
   "title": "Botswana AMR Susceptibility Observation",
   "status": "draft",
@@ -22,7 +22,7 @@
       {
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
-        "patternCanonical": "http://example.org/fhir/StructureDefinition/BotswanaAMR-SusceptibilityObservation"
+        "patternCanonical": "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SusceptibilityObservation"
       },
       {
         "id": "Observation.status",
@@ -34,7 +34,7 @@
         "path": "Observation.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc"
+          "valueSet": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc"
         }
       },
       {
@@ -110,7 +110,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation"
+          "valueSet": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation"
         }
       },
       {
@@ -121,7 +121,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen"
+              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen"
             ]
           }
         ]

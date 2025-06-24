@@ -6,7 +6,7 @@
   "id": "botswana-amr-local-method-cs",
   "title": "Botswana AMR Local Identification Method Codes",
   "description": "Local codes for identification methods used in Botswana AMR surveillance",
-  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs",
+  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs",
   "concept": [
     {
       "code": "vitek",

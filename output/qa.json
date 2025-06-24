@@ -1,5 +1,5 @@
 {
-  "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig",
+  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig",
   "name" : "BWAMRIG",
   "title" : "Botswana AMR Implementation Guide",
   "description" : "FHIR Implementation Guide for the Botswana AMR Data Analytics Platform",

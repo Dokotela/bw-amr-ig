@@ -6,7 +6,7 @@
   "id": "botswana-amr-local-organism-cs",
   "title": "Botswana AMR Local Organism Codes",
   "description": "Local codes for organism combinations and complex designations used in Botswana AMR surveillance",
-  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
   "concept": [
     {
       "code": "acinetobacter-baumannii-complex",

@@ -1,7 +1,7 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc",
+      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "BotswanaAMRAntibioticSusceptibilityLOINC",
@@ -10,7 +10,7 @@
       "systems" : ["http://loinc.org"]
     },
     {
-      "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation",
+      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "BotswanaAMRInterpretation",
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs",
+      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "BotswanaAMRSpecimenTypeVS",

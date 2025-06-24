@@ -5,7 +5,7 @@
   "id": "botswana-amr-specimen-site-vs",
   "title": "Botswana AMR Specimen Collection Sites",
   "description": "Anatomical sites where specimens are collected for Botswana AMR surveillance",
-  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs",
+  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs",
   "compose": {
     "include": [
       {

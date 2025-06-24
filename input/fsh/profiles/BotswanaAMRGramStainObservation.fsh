@@ -8,7 +8,7 @@ Title: "Botswana AMR Gram Stain Observation"
 Description: "Records gram stain results for specimens in Botswana AMR surveillance"
 
 * status = #final
-* meta.profile = "http://example.org/fhir/StructureDefinition/BotswanaAMR-GramStainObservation"
+* meta.profile = "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-GramStainObservation"
 
 // Fixed LOINC code for gram stain
 * code = LNC#664-3 "Microscopic observation [Identifier] in Specimen by Gram stain"

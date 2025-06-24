@@ -3,10 +3,10 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="bw-amr-ig"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide bw-amr-ig</b></p><a name="bw-amr-ig"> </a><a name="hcbw-amr-ig"> </a><h2>BWAMRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig</pre><div><p>FHIR Implementation Guide for the Botswana AMR Data Analytics Platform</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide bw-amr-ig</b></p><a name="bw-amr-ig"> </a><a name="hcbw-amr-ig"> </a><h2>BWAMRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig</pre><div><p>FHIR Implementation Guide for the Botswana AMR Data Analytics Platform</p>
 </div></div>
   </text>
-  <url value="http://example.org/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig"/>
+  <url value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig"/>
   <version value="0.1.0"/>
   <name value="BWAMRIG"/>
   <title value="Botswana AMR Implementation Guide"/>
@@ -134,7 +134,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://example.org/fhir/history.html"/>
+        <valueString value="http://bw.health.gov/fhir/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -353,7 +353,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://example.org/fhir/history.html"/>
+        <valueString value="http://bw.health.gov/fhir/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

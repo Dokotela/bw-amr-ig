@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "BotswanaAMRSpecimen",
-  "url": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen",
+  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen",
   "name": "BotswanaAMRSpecimen",
   "title": "Botswana AMR Specimen",
   "status": "draft",
@@ -22,7 +22,7 @@
       {
         "id": "Specimen.meta.profile",
         "path": "Specimen.meta.profile",
-        "patternCanonical": "http://example.org/fhir/StructureDefinition/BotswanaAMR-Specimen"
+        "patternCanonical": "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Specimen"
       },
       {
         "id": "Specimen.status",
@@ -35,7 +35,7 @@
         "min": 1,
         "binding": {
           "strength": "required",
-          "valueSet": "http://example.org/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs"
+          "valueSet": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs"
         }
       },
       {

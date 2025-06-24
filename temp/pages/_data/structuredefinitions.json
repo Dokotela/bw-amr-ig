@@ -1,7 +1,7 @@
 {
   "BotswanaAMRSpecimen" : {
     "index" : 0,
-    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen",
     "name" : "BotswanaAMRSpecimen",
     "title" : "Botswana AMR Specimen",
     "uml" : false,
@@ -31,7 +31,7 @@
   },
   "botswana-amr-diagnostic-report" : {
     "index" : 1,
-    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report",
     "name" : "BotswanaAMRDiagnosticReport",
     "title" : "Botswana AMR DiagnosticReport",
     "uml" : false,
@@ -61,7 +61,7 @@
   },
   "botswana-amr-susceptibility-observation" : {
     "index" : 2,
-    "url" : "http://example.org/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
     "name" : "BotswanaAMRSusceptibilityObservation",
     "title" : "Botswana AMR Susceptibility Observation",
     "uml" : false,
