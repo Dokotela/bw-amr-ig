@@ -1,0 +1,19 @@
+name: bw_amr_ig
+description: Minimal library to use the Artifacts from the bw-amr-ig project.
+version: 0.1.0
+repository: https://github.com/Dokotela/bw-amr-ig
+
+# This package supports all platforms listed below.
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  fhir_r4: ^0.4.2
