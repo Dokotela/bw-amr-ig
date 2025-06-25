@@ -1,6 +1,6 @@
 Output File                                                       Name                                      Type        FSH File                                                Lines
 CodeSystem-botswana-amr-local-method-cs.json                      BotswanaAMRLocalMethodCS                  CodeSystem  codeSystems/BotswanaAMRLocalMethodCS.fsh                2 - 10
-CodeSystem-botswana-amr-local-organism-cs.json                    BotswanaAMRLocalOrganismCS                CodeSystem  valueSets/BotswanaAMROrganismVS.fsh                     212 - 248
+CodeSystem-botswana-amr-local-organism-cs.json                    BotswanaAMRLocalOrganismCS                CodeSystem  codeSystems/BotswanaAMRLocalOrganismCS.fsh              2 - 38
 StructureDefinition-BotswanaAMRSpecimen.json                      BotswanaAMRSpecimen                       Profile     profiles/BotswanaAMRSpecimen.fsh                        1 - 13
 StructureDefinition-botswana-amr-diagnostic-report.json           BotswanaAMRDiagnosticReport               Profile     profiles/BotswanaAMRDiagnosticReport.fsh                1 - 17
 StructureDefinition-botswana-amr-gram-stain-observation.json      BotswanaAMRGramStainObservation           Profile     profiles/BotswanaAMRGramStainObservation.fsh            4 - 29

@@ -19,7 +19,119 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
   	<link href="assets/css/cqf.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
+    <style>
+html { font-size: 18px !important; }
+body { font-size: 18px !important; }
+* { font-size: inherit !important; }
+p, li, div, span, td, th { font-size: 18px !important; line-height: 1.6 !important; }
+
+/* Make headings smaller */
+h1 { font-size: 1.3em !important; }
+h2 { font-size: 1.2em !important; }
+h3 { font-size: 1.1em !important; }
+h4 { font-size: 1.05em !important; }
+h5 { font-size: 1.0em !important; }
+h6 { font-size: 0.95em !important; }
+
+/* Target specific elements that are too big */
+.copy-text { font-size: 16px !important; }
+table.colsd td { font-size: 16px !important; }
+table.colsd i { font-size: 16px !important; }
+
+code, pre { font-size: 16px !important; }
+
+/* Add more space between the title area and navigation menu */
+.navbar, .nav-tabs, .page-header + .nav, .breadcrumb {
+  margin-top: 20px !important;
+}
+
+/* Hide HL7 logo */
+#hl7-nav, #hl7-logo { display: none !important; }
+
+/* Style the existing title area with background and logos */
+#ig-status {
+  background-image: url('assets/images/flag_of_botswana.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Add overlay for readability */
+#ig-status::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+/* Style the container paragraph */
+#ig-status p {
+  color: white !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+  z-index: 2;
+  position: relative;
+  flex-grow: 1;
+  text-align: center;
+  margin: 0 20px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Space out the title and version specifically */
+#ig-status p span:first-child {
+  margin-bottom: 15px !important;
+  display: block;
+}
+
+#ig-status p br + span {
+  margin-top: 15px !important;
+  display: block;
+}
+
+/* Add logos as pseudo-elements */
+#ig-status::after {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+  background-image: url('assets/images/bup-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(255,255,255,0.95);
+  border-radius: 8px;
+  z-index: 2;
+}
+
+/* Add right logo */
+#ig-status {
+  background-image: 
+    url('assets/images/chop-logo.png'),
+    url('assets/images/flag_of_botswana.png');
+  background-position: 
+    right 20px center,
+    center center;
+  background-size: 
+    80px auto,
+    100% 100%;
+  background-repeat: no-repeat;
+}
+</style>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -48,11 +160,11 @@
 
         <!-- Placeholder for child template header declarations -->
 
-<div style="display: flex; align-items: center; justify-content: space-between; margin: 10px 0;">
-  <img src="assets/images/bup-logo.png" alt="University of Botswana" style="height: 50px;"/>
-  <img src="assets/images/chop-logo.png" alt="Children's Hospital of Philadelphia" style="height: 50px;"/>
-</div>
-
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Botswana AMR Implementation Guide</span>
@@ -147,25 +259,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#amr-in-botswana" id="markdown-toc-amr-in-botswana">AMR in Botswana</a>    <ul>
-      <li><a href="#the-challenge" id="markdown-toc-the-challenge">The Challenge</a></li>
-      <li><a href="#key-amr-reports-in-botswana" id="markdown-toc-key-amr-reports-in-botswana">Key AMR Reports in Botswana</a>        <ul>
-          <li><a href="#multidrug-resistant-klebsiella-in-hospitalized-newborns" id="markdown-toc-multidrug-resistant-klebsiella-in-hospitalized-newborns">Multidrug-resistant Klebsiella in hospitalized newborns</a></li>
-          <li><a href="#carriage-of-multidrug-resistant-organisms-in-the-community" id="markdown-toc-carriage-of-multidrug-resistant-organisms-in-the-community">Carriage of multidrug-resistant organisms in the community</a></li>
-          <li><a href="#prolonged-hospital-outbreak-with-carbapenem-resistant-acinetobacter-baumannii" id="markdown-toc-prolonged-hospital-outbreak-with-carbapenem-resistant-acinetobacter-baumannii">Prolonged hospital outbreak with Carbapenem-resistant Acinetobacter baumannii</a></li>
-          <li><a href="#first-report-of-candida-auris-in-botswana" id="markdown-toc-first-report-of-candida-auris-in-botswana">First report of Candida auris in Botswana</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 <h1 id="amr-in-botswana">AMR in Botswana</h1>
 
-<p><img src="amr-deaths-graph.png" alt="Deaths from AMR" /></p>
+<div style="text-align: center; margin: 20px 0;">
+  <img src="amr-deaths-graph.png" alt="Deaths from AMR" style="max-width: 70%; width: 100%; height: auto; display: block; margin: 0 auto;" />
+</div>
 
 <h2 id="the-challenge">The Challenge</h2>
 
@@ -177,20 +278,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h2 id="key-amr-reports-in-botswana">Key AMR Reports in Botswana</h2>
 
-<p><img src="case-reports.png" alt="AMR Case Reports in Botswana" /></p>
-
-<h3 id="multidrug-resistant-klebsiella-in-hospitalized-newborns">Multidrug-resistant Klebsiella in hospitalized newborns</h3>
-<p>Klebsiella pneumoniae is the leading cause of bloodstream infection in hospitalized neonates in Botswana, with over 80% being multi-drug resistant.</p>
-
-<h3 id="carriage-of-multidrug-resistant-organisms-in-the-community">Carriage of multidrug-resistant organisms in the community</h3>
-<p>In a rectal carriage study among 2000 adults, 27.8% of participants were extended-spectrum cephalosporin resistant Enterobacterales (ESCRE)-colonized.</p>
-
-<h3 id="prolonged-hospital-outbreak-with-carbapenem-resistant-acinetobacter-baumannii">Prolonged hospital outbreak with Carbapenem-resistant Acinetobacter baumannii</h3>
-<p>Environmental reservoirs and ongoing transmission from environmental sources pose significant containment challenges.</p>
-
-<h3 id="first-report-of-candida-auris-in-botswana">First report of Candida auris in Botswana</h3>
-<p>Prior to 2023, C. auris had never before been reported in Botswana, representing an emerging multi-drug-resistant pathogen.</p>
-
+<div style="text-align: center; margin: 20px 0;">
+  <img src="case-reports.png" alt="AMR Case Reports in Botswana" style="max-width: 70%; width: 100%; height: auto; display: block; margin: 0 auto;" />
+</div>
 
 
 
@@ -210,7 +300,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/Dokotela/bw-amr-ig">University of Botswana Partnership</a>.  Package bw-amr-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Tue, Jun 17, 2025 18:14-0400">2025-06-17</span>
+          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/Dokotela/bw-amr-ig">University of Botswana Partnership</a>.  Package bw-amr-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Wed, Jun 25, 2025 00:43-0400">2025-06-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -18,6 +18,18 @@
     ],
     "Observation": [
       {
+        "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation",
+        "title": "Botswana AMR Gram Stain Observation"
+      },
+      {
+        "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation",
+        "title": "Botswana AMR Organism Identification Observation"
+      },
+      {
+        "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation",
+        "title": "Botswana AMR Special Test Observation"
+      },
+      {
         "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
         "title": "Botswana AMR Susceptibility Observation"
       }

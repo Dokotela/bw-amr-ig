@@ -166,22 +166,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","OBX-7","value:IVL_PQ.high"
 "Observation.referenceRange.type","Observation.referenceRange.type","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Reference range qualifier","Codes to indicate the what part of the targeted reference population it applies to. For example, the normal or therapeutic range.","This SHOULD be populated if there is more than one range.  If this element is not present then the normal range is assumed.","Need to be able to say what kind of reference range this is - normal, recommended, therapeutic, etc.,  - for proper interpretation.","","","","","","","",,"preferred","Code for the meaning of a reference range.","http://hl7.org/fhir/ValueSet/referencerange-meaning","",,,,"Observation.referenceRange.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","< 260245000 |Findings values| OR  
-< 365860008 |General clinical state finding| 
-OR 
-< 250171008 |Clinical history or observation findings| OR  
-< 415229000 |Racial group| OR 
-< 365400002 |Finding of puberty stage| OR
-< 443938003 |Procedure carried out on subject|","OBX-10","interpretationCode"
+","< 260245000 |Findings values| OR  < 365860008 |General clinical state finding| OR < 250171008 |Clinical history or observation findings| OR  < 415229000 |Racial group| OR < 365400002 |Finding of puberty stage| OR< 443938003 |Procedure carried out on subject|","OBX-10","interpretationCode"
 "Observation.referenceRange.appliesTo","Observation.referenceRange.appliesTo","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Reference range population","Codes to indicate the target population this reference range applies to.  For example, a reference range may be based on the normal population or a particular sex or race.  Multiple `appliesTo`  are interpreted as an ""AND"" of the target populations.  For example, to represent a target population of African American females, both a code of female and a code for African American would be used.","This SHOULD be populated if there is more than one range.  If this element is not present then the normal population is assumed.","Need to be able to identify the target population for proper interpretation.","","","","","","","",,"example","Codes identifying the population the reference range applies to.","http://hl7.org/fhir/ValueSet/referencerange-appliesto","",,,,"Observation.referenceRange.appliesTo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","< 260245000 |Findings values| OR  
-< 365860008 |General clinical state finding| 
-OR 
-< 250171008 |Clinical history or observation findings| OR  
-< 415229000 |Racial group| OR 
-< 365400002 |Finding of puberty stage| OR
-< 443938003 |Procedure carried out on subject|","OBX-10","interpretationCode"
+","< 260245000 |Findings values| OR  < 365860008 |General clinical state finding| OR < 250171008 |Clinical history or observation findings| OR  < 415229000 |Racial group| OR < 365400002 |Finding of puberty stage| OR< 443938003 |Procedure carried out on subject|","OBX-10","interpretationCode"
 "Observation.referenceRange.age","Observation.referenceRange.age","","","",0,1,"","","","Range {[]} {[]}
 ","Applicable age range, if relevant","The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.","","Some analytes vary greatly over age.","","","","","","","",,,,,"",,,,"Observation.referenceRange.age",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","outboundRelationship[typeCode=PRCN].targetObservationCriterion[code=""age""].value"
@@ -211,8 +199,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "Observation.component.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","< 363787002 |Observable entity| OR 
-< 386053000 |Evaluation procedure|","OBX-3","code","FiveWs.what[x]"
+","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","FiveWs.what[x]"
 "Observation.component.value[x]","Observation.component.value[x]","","","",0,1,"","","Y","Quantity {[]} {[]}
 CodeableConcept {[]} {[]}string {[]} {[]}boolean {[]} {[]}integer {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}SampledData {[]} {[]}time {[]} {[]}dateTime {[]} {[]}Period {[]} {[]}","Actual component result","The information determined as a result of making the observation, if the information has a simple value.","Used when observation has a set of component observations. An observation may have both a value (e.g. an  Apgar score)  and component observations (the observations from which the Apgar score was derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4B/observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","","","","",,,,,"",,,,"Observation.component.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","363714003 |Interprets| < 441742003 |Evaluation finding|","OBX.2, OBX.5, OBX.6","value","363714003 |Interprets|"

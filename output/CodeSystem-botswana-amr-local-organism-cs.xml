@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="botswana-amr-local-organism-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem botswana-amr-local-organism-cs</b></p><a name="botswana-amr-local-organism-cs"> </a><a name="hcbotswana-amr-local-organism-cs"> </a><p>This  code system <code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">acinetobacter-baumannii-complex<a name="botswana-amr-local-organism-cs-acinetobacter-baumannii-complex"> </a></td><td>Acinetobacter baumannii complex</td></tr><tr><td style="white-space:nowrap">aeromonas-hydrophila-punctata<a name="botswana-amr-local-organism-cs-aeromonas-hydrophila-punctata"> </a></td><td>Aeromonas hydrophila/punctata</td></tr><tr><td style="white-space:nowrap">alcaligenes-faecalis-subsp-faecalis<a name="botswana-amr-local-organism-cs-alcaligenes-faecalis-subsp-faecalis"> </a></td><td>Alcaligenes faecalis subsp. faecalis</td></tr><tr><td style="white-space:nowrap">brevundimonas-diminuta-vesicularis<a name="botswana-amr-local-organism-cs-brevundimonas-diminuta-vesicularis"> </a></td><td>Brevundimonas diminuta/Brevundimonas vesicularis</td></tr><tr><td style="white-space:nowrap">burkholderia-cepacia-group<a name="botswana-amr-local-organism-cs-burkholderia-cepacia-group"> </a></td><td>Burkholderia cepacia group</td></tr><tr><td style="white-space:nowrap">cedecia-lapagei<a name="botswana-amr-local-organism-cs-cedecia-lapagei"> </a></td><td>Cedecia lapagei</td></tr><tr><td style="white-space:nowrap">cronobacter-sakazakii-group<a name="botswana-amr-local-organism-cs-cronobacter-sakazakii-group"> </a></td><td>Cronobacter sakazakii group</td></tr><tr><td style="white-space:nowrap">dermacoccus-nishinomiyaensis-kytococcus-sedentarius<a name="botswana-amr-local-organism-cs-dermacoccus-nishinomiyaensis-kytococcus-sedentarius"> </a></td><td>Dermacoccus nishinomiyaensis/Kytococcus sedentarius</td></tr><tr><td style="white-space:nowrap">enterococcus-spp<a name="botswana-amr-local-organism-cs-enterococcus-spp"> </a></td><td>Enterococcus spp.</td></tr><tr><td style="white-space:nowrap">klebsiella-pneumoniae-subsp-pneumoniae<a name="botswana-amr-local-organism-cs-klebsiella-pneumoniae-subsp-pneumoniae"> </a></td><td>Klebsiella pneumoniae subsp. pneumoniae</td></tr><tr><td style="white-space:nowrap">klebsiella-spp<a name="botswana-amr-local-organism-cs-klebsiella-spp"> </a></td><td>Klebsiella spp.</td></tr><tr><td style="white-space:nowrap">leuconostoc-mesenteroides-subsp-cremoris<a name="botswana-amr-local-organism-cs-leuconostoc-mesenteroides-subsp-cremoris"> </a></td><td>Leuconostoc mesenteroides subsp. cremoris</td></tr><tr><td style="white-space:nowrap">leuconostoc-mesenteroides-subsp-dextranicum<a name="botswana-amr-local-organism-cs-leuconostoc-mesenteroides-subsp-dextranicum"> </a></td><td>Leuconostoc mesenteroides subsp. dextranicum</td></tr><tr><td style="white-space:nowrap">methylobacterium-spp<a name="botswana-amr-local-organism-cs-methylobacterium-spp"> </a></td><td>Methylobacterium spp.</td></tr><tr><td style="white-space:nowrap">moraxella-group<a name="botswana-amr-local-organism-cs-moraxella-group"> </a></td><td>Moraxella group</td></tr><tr><td style="white-space:nowrap">morganella-morganii-subsp-morganii<a name="botswana-amr-local-organism-cs-morganella-morganii-subsp-morganii"> </a></td><td>Morganella morganii subsp. morganii</td></tr><tr><td style="white-space:nowrap">morganella-morganii-subsp-sibonii<a name="botswana-amr-local-organism-cs-morganella-morganii-subsp-sibonii"> </a></td><td>Morganella morganii subsp. sibonii</td></tr><tr><td style="white-space:nowrap">myroides-spp<a name="botswana-amr-local-organism-cs-myroides-spp"> </a></td><td>Myroides spp.</td></tr><tr><td style="white-space:nowrap">neisseria-animaloris-zoodegmatis<a name="botswana-amr-local-organism-cs-neisseria-animaloris-zoodegmatis"> </a></td><td>Neisseria animaloris/Neisseria zoodegmatis</td></tr><tr><td style="white-space:nowrap">pandoraea-spp<a name="botswana-amr-local-organism-cs-pandoraea-spp"> </a></td><td>Pandoraea spp.</td></tr><tr><td style="white-space:nowrap">pantoea-spp<a name="botswana-amr-local-organism-cs-pantoea-spp"> </a></td><td>Pantoea spp.</td></tr><tr><td style="white-space:nowrap">pseudomonas-spp<a name="botswana-amr-local-organism-cs-pseudomonas-spp"> </a></td><td>Pseudomonas spp.</td></tr><tr><td style="white-space:nowrap">salmonella-group<a name="botswana-amr-local-organism-cs-salmonella-group"> </a></td><td>Salmonella group</td></tr><tr><td style="white-space:nowrap">serratia-liquefaciens-group<a name="botswana-amr-local-organism-cs-serratia-liquefaciens-group"> </a></td><td>Serratia liquefaciens group</td></tr><tr><td style="white-space:nowrap">shigella-group<a name="botswana-amr-local-organism-cs-shigella-group"> </a></td><td>Shigella group</td></tr><tr><td style="white-space:nowrap">staphylococcus-cohnii-subsp-cohnii<a name="botswana-amr-local-organism-cs-staphylococcus-cohnii-subsp-cohnii"> </a></td><td>Staphylococcus cohnii subsp. cohnii</td></tr><tr><td style="white-space:nowrap">staphylococcus-hominis-subsp-hominis<a name="botswana-amr-local-organism-cs-staphylococcus-hominis-subsp-hominis"> </a></td><td>Staphylococcus hominis subsp. hominis</td></tr><tr><td style="white-space:nowrap">streptococcus-constellatus-subsp-pharyngis<a name="botswana-amr-local-organism-cs-streptococcus-constellatus-subsp-pharyngis"> </a></td><td>Streptococcus constellatus subsp. pharyngis</td></tr><tr><td style="white-space:nowrap">streptococcus-infantarius-subsp-coli<a name="botswana-amr-local-organism-cs-streptococcus-infantarius-subsp-coli"> </a></td><td>Streptococcus infantarius subsp. coli</td></tr><tr><td style="white-space:nowrap">streptococcus-mitis-oralis<a name="botswana-amr-local-organism-cs-streptococcus-mitis-oralis"> </a></td><td>Streptococcus mitis/Streptococcus oralis</td></tr><tr><td style="white-space:nowrap">vagococcus-fluviali<a name="botswana-amr-local-organism-cs-vagococcus-fluviali"> </a></td><td>Vagococcus fluviali</td></tr><tr><td style="white-space:nowrap">yersinia-enterocolitica-frederiksenii<a name="botswana-amr-local-organism-cs-yersinia-enterocolitica-frederiksenii"> </a></td><td>Yersinia enterocolitica/Yersinia frederiksenii</td></tr></table></div>
+  </text>
+  <url value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs"/>
+  <version value="0.1.0"/>
+  <name value="BotswanaAMRLocalOrganismCS"/>
+  <title value="Botswana AMR Local Organism Codes"/>
+  <status value="draft"/>
+  <date value="2025-06-25T00:42:48-04:00"/>
+  <publisher value="University of Botswana Partnership"/>
+  <contact>
+    <name value="University of Botswana Partnership"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/Dokotela/bw-amr-ig"/>
+    </telecom>
+  </contact>
+  <description value="Local codes for organism combinations and complex designations used in Botswana AMR surveillance"/>
+  <content value="complete"/>
+  <count value="32"/>
+  <concept>
+    <code value="acinetobacter-baumannii-complex"/>
+    <display value="Acinetobacter baumannii complex"/>
+  </concept>
+  <concept>
+    <code value="aeromonas-hydrophila-punctata"/>
+    <display value="Aeromonas hydrophila/punctata"/>
+  </concept>
+  <concept>
+    <code value="alcaligenes-faecalis-subsp-faecalis"/>
+    <display value="Alcaligenes faecalis subsp. faecalis"/>
+  </concept>
+  <concept>
+    <code value="brevundimonas-diminuta-vesicularis"/>
+    <display value="Brevundimonas diminuta/Brevundimonas vesicularis"/>
+  </concept>
+  <concept>
+    <code value="burkholderia-cepacia-group"/>
+    <display value="Burkholderia cepacia group"/>
+  </concept>
+  <concept>
+    <code value="cedecia-lapagei"/>
+    <display value="Cedecia lapagei"/>
+  </concept>
+  <concept>
+    <code value="cronobacter-sakazakii-group"/>
+    <display value="Cronobacter sakazakii group"/>
+  </concept>
+  <concept>
+    <code value="dermacoccus-nishinomiyaensis-kytococcus-sedentarius"/>
+    <display value="Dermacoccus nishinomiyaensis/Kytococcus sedentarius"/>
+  </concept>
+  <concept>
+    <code value="enterococcus-spp"/>
+    <display value="Enterococcus spp."/>
+  </concept>
+  <concept>
+    <code value="klebsiella-pneumoniae-subsp-pneumoniae"/>
+    <display value="Klebsiella pneumoniae subsp. pneumoniae"/>
+  </concept>
+  <concept>
+    <code value="klebsiella-spp"/>
+    <display value="Klebsiella spp."/>
+  </concept>
+  <concept>
+    <code value="leuconostoc-mesenteroides-subsp-cremoris"/>
+    <display value="Leuconostoc mesenteroides subsp. cremoris"/>
+  </concept>
+  <concept>
+    <code value="leuconostoc-mesenteroides-subsp-dextranicum"/>
+    <display value="Leuconostoc mesenteroides subsp. dextranicum"/>
+  </concept>
+  <concept>
+    <code value="methylobacterium-spp"/>
+    <display value="Methylobacterium spp."/>
+  </concept>
+  <concept>
+    <code value="moraxella-group"/>
+    <display value="Moraxella group"/>
+  </concept>
+  <concept>
+    <code value="morganella-morganii-subsp-morganii"/>
+    <display value="Morganella morganii subsp. morganii"/>
+  </concept>
+  <concept>
+    <code value="morganella-morganii-subsp-sibonii"/>
+    <display value="Morganella morganii subsp. sibonii"/>
+  </concept>
+  <concept>
+    <code value="myroides-spp"/>
+    <display value="Myroides spp."/>
+  </concept>
+  <concept>
+    <code value="neisseria-animaloris-zoodegmatis"/>
+    <display value="Neisseria animaloris/Neisseria zoodegmatis"/>
+  </concept>
+  <concept>
+    <code value="pandoraea-spp"/>
+    <display value="Pandoraea spp."/>
+  </concept>
+  <concept>
+    <code value="pantoea-spp"/>
+    <display value="Pantoea spp."/>
+  </concept>
+  <concept>
+    <code value="pseudomonas-spp"/>
+    <display value="Pseudomonas spp."/>
+  </concept>
+  <concept>
+    <code value="salmonella-group"/>
+    <display value="Salmonella group"/>
+  </concept>
+  <concept>
+    <code value="serratia-liquefaciens-group"/>
+    <display value="Serratia liquefaciens group"/>
+  </concept>
+  <concept>
+    <code value="shigella-group"/>
+    <display value="Shigella group"/>
+  </concept>
+  <concept>
+    <code value="staphylococcus-cohnii-subsp-cohnii"/>
+    <display value="Staphylococcus cohnii subsp. cohnii"/>
+  </concept>
+  <concept>
+    <code value="staphylococcus-hominis-subsp-hominis"/>
+    <display value="Staphylococcus hominis subsp. hominis"/>
+  </concept>
+  <concept>
+    <code value="streptococcus-constellatus-subsp-pharyngis"/>
+    <display value="Streptococcus constellatus subsp. pharyngis"/>
+  </concept>
+  <concept>
+    <code value="streptococcus-infantarius-subsp-coli"/>
+    <display value="Streptococcus infantarius subsp. coli"/>
+  </concept>
+  <concept>
+    <code value="streptococcus-mitis-oralis"/>
+    <display value="Streptococcus mitis/Streptococcus oralis"/>
+  </concept>
+  <concept>
+    <code value="vagococcus-fluviali"/>
+    <display value="Vagococcus fluviali"/>
+  </concept>
+  <concept>
+    <code value="yersinia-enterocolitica-frederiksenii"/>
+    <display value="Yersinia enterocolitica/Yersinia frederiksenii"/>
+  </concept>
+</CodeSystem>

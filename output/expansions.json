@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "3f31e252-f8a5-4e48-b9c4-bdd24314ac57",
+  "id" : "2fabbab0-9d60-41dc-acd2-be025d536703",
   "meta" : {
-    "lastUpdated" : "2025-06-17T18:14:52.668-04:00"
+    "lastUpdated" : "2025-06-25T00:43:06.480-04:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,10 +18,10 @@
       "name" : "BotswanaAMRAntibioticSusceptibilityLOINC",
       "title" : "Botswana AMR Antibiotic Susceptibility LOINC",
       "status" : "draft",
-      "date" : "2025-06-17T18:14:37-04:00",
+      "date" : "2025-06-25T00:42:48-04:00",
       "expansion" : {
-        "identifier" : "urn:uuid:05326ede-9626-4a06-a73d-98b872e45417",
-        "timestamp" : "2025-06-17T18:15:02-04:00",
+        "identifier" : "urn:uuid:e5bdc1ef-0648-44c4-aec7-0c7219f883c7",
+        "timestamp" : "2025-06-25T00:43:30-04:00",
         "total" : 40,
         "offset" : 0,
         "parameter" : [{
@@ -256,6 +256,165 @@
     }
   },
   {
+    "fullUrl" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-gram-stain-result-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-8745002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/8745002\">8745002</a></td><td>http://snomed.info/sct</td><td>Gram-positive bacterium</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-87172008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/87172008\">87172008</a></td><td>http://snomed.info/sct</td><td>Gram-negative bacillus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-58296003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/58296003\">58296003</a></td><td>http://snomed.info/sct</td><td>Saccharomyces cerevisiae</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-74964007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/74964007\">74964007</a></td><td>http://snomed.info/sct</td><td>Other</td></tr></table></div>"
+      },
+      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-gram-stain-result-vs",
+      "version" : "0.1.0",
+      "name" : "BotswanaAMRGramStainResultVS",
+      "title" : "Botswana AMR Gram Stain Results",
+      "status" : "draft",
+      "date" : "2025-06-25T00:42:48-04:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:047ef576-7edd-4ed0-9593-86ffff537683",
+        "timestamp" : "2025-06-25T00:43:31-04:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "8745002",
+          "display" : "Gram-positive bacterium"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "87172008",
+          "display" : "Gram-negative bacillus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "58296003",
+          "display" : "Saccharomyces cerevisiae"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "74964007",
+          "display" : "Other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-identification-method-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li><a href=\"CodeSystem-botswana-amr-local-method-cs.html\">codesystem Botswana AMR Local Identification Method Codes v0.1.0 (CodeSystem)</a></li><li>SNOMED CT International edition 01-Feb 2025</li></ul></div><p>This value set contains 7 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-258066000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/258066000\">258066000</a></td><td>http://snomed.info/sct</td><td>Polymerase chain reaction</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-252398009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/252398009\">252398009</a></td><td>http://snomed.info/sct</td><td>Culture - general</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-87273009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/87273009\">87273009</a></td><td>http://snomed.info/sct</td><td>Temperature normal</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs-vitek\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-method-cs.html#botswana-amr-local-method-cs-vitek\">vitek</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs</td><td>Vitek automated system</td><td>bioMérieux Vitek automated identification and susceptibility testing system</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs-phoenix\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-method-cs.html#botswana-amr-local-method-cs-phoenix\">phoenix</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs</td><td>Phoenix automated system</td><td>BD Phoenix automated identification and susceptibility testing system</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs-api\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-method-cs.html#botswana-amr-local-method-cs-api\">api</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs</td><td>API biochemical strips</td><td>bioMérieux API manual biochemical identification strips</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs-manual\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-method-cs.html#botswana-amr-local-method-cs-manual\">manual</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs</td><td>Manual biochemical testing</td><td>Traditional manual biochemical identification methods</td></tr></table></div>"
+      },
+      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-identification-method-vs",
+      "version" : "0.1.0",
+      "name" : "BotswanaAMRIdentificationMethodVS",
+      "title" : "Botswana AMR Organism Identification Methods",
+      "status" : "draft",
+      "date" : "2025-06-25T00:42:48-04:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:86fb7012-3767-4448-8f82-75fbd9283f33",
+        "timestamp" : "2025-06-25T00:43:31-04:00",
+        "total" : 7,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "258066000",
+          "display" : "Polymerase chain reaction"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "252398009",
+          "display" : "Culture - general"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "87273009",
+          "display" : "Temperature normal"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs",
+          "code" : "vitek",
+          "display" : "Vitek automated system"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs",
+          "code" : "phoenix",
+          "display" : "Phoenix automated system"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs",
+          "code" : "api",
+          "display" : "API biochemical strips"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs",
+          "code" : "manual",
+          "display" : "Manual biochemical testing"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -268,10 +427,10 @@
       "name" : "BotswanaAMRInterpretation",
       "title" : "Botswana AMR Interpretation",
       "status" : "draft",
-      "date" : "2025-06-17T18:14:37-04:00",
+      "date" : "2025-06-25T00:42:48-04:00",
       "expansion" : {
-        "identifier" : "urn:uuid:874761af-7de2-41e0-a819-47840f6f560d",
-        "timestamp" : "2025-06-17T18:15:03-04:00",
+        "identifier" : "urn:uuid:3318d6af-be61-43f7-a31a-f6ff002df6b5",
+        "timestamp" : "2025-06-25T00:43:31-04:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -313,6 +472,1225 @@
     }
   },
   {
+    "fullUrl" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li><a href=\"CodeSystem-botswana-amr-local-organism-cs.html\">codesystem Botswana AMR Local Organism Codes v0.1.0 (CodeSystem)</a></li><li>SNOMED CT International edition 01-Feb 2025</li></ul></div><p>This value set contains 198 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-413414001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/413414001\">413414001</a></td><td>http://snomed.info/sct</td><td>Achromobacter denitrificans (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-413424009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/413424009\">413424009</a></td><td>http://snomed.info/sct</td><td>Achromobacter xylosoxidans (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-91288006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/91288006\">91288006</a></td><td>http://snomed.info/sct</td><td>Acinetobacter baumannii</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-77045006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/77045006\">77045006</a></td><td>http://snomed.info/sct</td><td>Acinetobacter haemolyticus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-13879009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/13879009\">13879009</a></td><td>http://snomed.info/sct</td><td>Acinetobacter junii</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-83088009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/83088009\">83088009</a></td><td>http://snomed.info/sct</td><td>Mima polymorpha</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113381003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113381003\">113381003</a></td><td>http://snomed.info/sct</td><td>Acinetobacter radioresistens</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-424791004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/424791004\">424791004</a></td><td>http://snomed.info/sct</td><td>Acinetobacter ursingii (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-78803006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/78803006\">78803006</a></td><td>http://snomed.info/sct</td><td>Aerococcus viridans</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-85823000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/85823000\">85823000</a></td><td>http://snomed.info/sct</td><td>Aeromonas hydrophila</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-115036005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/115036005\">115036005</a></td><td>http://snomed.info/sct</td><td>Aeromonas punctata</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-30334005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/30334005\">30334005</a></td><td>http://snomed.info/sct</td><td>Aeromonas salmonicida</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-43731003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/43731003\">43731003</a></td><td>http://snomed.info/sct</td><td>Aeromonas sobria</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-9281006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/9281006\">9281006</a></td><td>http://snomed.info/sct</td><td>Aeromonas veronii</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-25223004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/25223004\">25223004</a></td><td>http://snomed.info/sct</td><td>Alcaligenes faecalis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-396454000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/396454000\">396454000</a></td><td>http://snomed.info/sct</td><td>Alloiococcus otitis (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113495004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113495004\">113495004</a></td><td>http://snomed.info/sct</td><td>Bordetella hinzii</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113689009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113689009\">113689009</a></td><td>http://snomed.info/sct</td><td>Brevundimonas diminuta</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113690000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113690000\">113690000</a></td><td>http://snomed.info/sct</td><td>Brevundimonas vesicularis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-72829003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/72829003\">72829003</a></td><td>http://snomed.info/sct</td><td>Brucella melitensis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-131281002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/131281002\">131281002</a></td><td>http://snomed.info/sct</td><td>Burkholderia cepacia complex</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113674000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113674000\">113674000</a></td><td>http://snomed.info/sct</td><td>Burkholderia mallei</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-10969007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/10969007\">10969007</a></td><td>http://snomed.info/sct</td><td>Buttiauxella agrestis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-2345009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/2345009\">2345009</a></td><td>http://snomed.info/sct</td><td>Cedecea lapagei</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-11042002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/11042002\">11042002</a></td><td>http://snomed.info/sct</td><td>Chromobacterium violaceum</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113549008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113549008\">113549008</a></td><td>http://snomed.info/sct</td><td>Chryseobacterium indologenes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-55744003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/55744003\">55744003</a></td><td>http://snomed.info/sct</td><td>Citrobacter amalonaticus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-114262000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/114262000\">114262000</a></td><td>http://snomed.info/sct</td><td>Citrobacter braakii</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-6265002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/6265002\">6265002</a></td><td>http://snomed.info/sct</td><td>Citrobacter freundii</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-114264004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/114264004\">114264004</a></td><td>http://snomed.info/sct</td><td>Citrobacter koseri</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-114265003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/114265003\">114265003</a></td><td>http://snomed.info/sct</td><td>Citrobacter sedlakii</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-114442006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/114442006\">114442006</a></td><td>http://snomed.info/sct</td><td>Citrobacter werkmanii</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-116197008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/116197008\">116197008</a></td><td>http://snomed.info/sct</td><td>Staphylococcus, coagulase negative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-43721005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/43721005\">43721005</a></td><td>http://snomed.info/sct</td><td>Comamonas testosteroni</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-445562004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/445562004\">445562004</a></td><td>http://snomed.info/sct</td><td>Cronobacter sakazakii (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-20432002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/20432002\">20432002</a></td><td>http://snomed.info/sct</td><td>Comamonas acidovorans</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113776005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113776005\">113776005</a></td><td>http://snomed.info/sct</td><td>Dermacoccus nishinomiyaensis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113775009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113775009\">113775009</a></td><td>http://snomed.info/sct</td><td>Kytococcus sedentarius</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-425774009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/425774009\">425774009</a></td><td>http://snomed.info/sct</td><td>Elizabethkingia meningoseptica (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-62592009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/62592009\">62592009</a></td><td>http://snomed.info/sct</td><td>Enterobacter aerogenes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-114451003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/114451003\">114451003</a></td><td>http://snomed.info/sct</td><td>Enterobacter cancerogenus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-414102007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/414102007\">414102007</a></td><td>http://snomed.info/sct</td><td>Enterobacter cloacae complex (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-721950003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/721950003\">721950003</a></td><td>http://snomed.info/sct</td><td>Enterobacter cloacae subspecies cloacae (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-56813009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/56813009\">56813009</a></td><td>http://snomed.info/sct</td><td>Enterobacter dissolvens</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-30949009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/30949009\">30949009</a></td><td>http://snomed.info/sct</td><td>Enterococcus casseliflavus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-46464008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/46464008\">46464008</a></td><td>http://snomed.info/sct</td><td>Enterococcus durans</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-1187454003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1187454003\">1187454003</a></td><td>http://snomed.info/sct</td><td>Streptococcus faecalis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-90272000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/90272000\">90272000</a></td><td>http://snomed.info/sct</td><td>Enterococcus faecium</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-53233007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/53233007\">53233007</a></td><td>http://snomed.info/sct</td><td>Enterococcus gallinarum</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-2785000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/2785000\">2785000</a></td><td>http://snomed.info/sct</td><td>Enterococcus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-112283007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/112283007\">112283007</a></td><td>http://snomed.info/sct</td><td>Escherichia coli</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-19027003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/19027003\">19027003</a></td><td>http://snomed.info/sct</td><td>Ewingella americana</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113765006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113765006\">113765006</a></td><td>http://snomed.info/sct</td><td>Gemella morbillorum</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-76694001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/76694001\">76694001</a></td><td>http://snomed.info/sct</td><td>Hafnia alvei</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-40886007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/40886007\">40886007</a></td><td>http://snomed.info/sct</td><td>Klebsiella oxytoca</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-56415008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/56415008\">56415008</a></td><td>http://snomed.info/sct</td><td>Klebsiella pneumoniae</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-65186004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/65186004\">65186004</a></td><td>http://snomed.info/sct</td><td>Klebsiella ozaenae</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-75032006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/75032006\">75032006</a></td><td>http://snomed.info/sct</td><td>Klebsiella</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-58493008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/58493008\">58493008</a></td><td>http://snomed.info/sct</td><td>Kluyvera ascorbata</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-32547006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/32547006\">32547006</a></td><td>http://snomed.info/sct</td><td>Kluyvera cryocrescens</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113772007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113772007\">113772007</a></td><td>http://snomed.info/sct</td><td>Kocuria kristinae</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-432451007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/432451007\">432451007</a></td><td>http://snomed.info/sct</td><td>Kocuria rhizophila (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113773002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113773002\">113773002</a></td><td>http://snomed.info/sct</td><td>Kocuria rosea</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113774008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113774008\">113774008</a></td><td>http://snomed.info/sct</td><td>Kocuria varians</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-27716002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/27716002\">27716002</a></td><td>http://snomed.info/sct</td><td>Streptococcus garviae</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-57459006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/57459006\">57459006</a></td><td>http://snomed.info/sct</td><td>Leclercia adecarboxylata</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-84221003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/84221003\">84221003</a></td><td>http://snomed.info/sct</td><td>Enterobacter amnigenus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-71403009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/71403009\">71403009</a></td><td>http://snomed.info/sct</td><td>Leuconostoc mesenteroides</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-243235006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/243235006\">243235006</a></td><td>http://snomed.info/sct</td><td>Leuconostoc pseudomesenteroides</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-48331004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/48331004\">48331004</a></td><td>http://snomed.info/sct</td><td>Listeria innocua</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-38395008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/38395008\">38395008</a></td><td>http://snomed.info/sct</td><td>Methylobacterium</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-48299003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/48299003\">48299003</a></td><td>http://snomed.info/sct</td><td>Micrococcus luteus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-36361003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/36361003\">36361003</a></td><td>http://snomed.info/sct</td><td>Moraxella</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-243301005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/243301005\">243301005</a></td><td>http://snomed.info/sct</td><td>Morganella morganii</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-115127008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/115127008\">115127008</a></td><td>http://snomed.info/sct</td><td>Myroides</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-442202005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/442202005\">442202005</a></td><td>http://snomed.info/sct</td><td>Neisseria animaloris</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-449121005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/449121005\">449121005</a></td><td>http://snomed.info/sct</td><td>Neisseria zoodegmatis (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-11309009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/11309009\">11309009</a></td><td>http://snomed.info/sct</td><td>Oligella ureolytica</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-414998001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/414998001\">414998001</a></td><td>http://snomed.info/sct</td><td>Pandoraea</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-115013001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/115013001\">115013001</a></td><td>http://snomed.info/sct</td><td>Pantoea</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-10879005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/10879005\">10879005</a></td><td>http://snomed.info/sct</td><td>Pasteurella multocida</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-32562008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/32562008\">32562008</a></td><td>http://snomed.info/sct</td><td>Pasteurella pneumotropica</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-3388005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/3388005\">3388005</a></td><td>http://snomed.info/sct</td><td>Pasteurella testudinis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-417592004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/417592004\">417592004</a></td><td>http://snomed.info/sct</td><td>Proteus hauseri (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-73457008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/73457008\">73457008</a></td><td>http://snomed.info/sct</td><td>Proteus mirabilis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-45298005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/45298005\">45298005</a></td><td>http://snomed.info/sct</td><td>Proteus penneri</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-14196002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/14196002\">14196002</a></td><td>http://snomed.info/sct</td><td>Providencia rettgeri</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-1445008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1445008\">1445008</a></td><td>http://snomed.info/sct</td><td>Providencia stuartii</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-52499004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/52499004\">52499004</a></td><td>http://snomed.info/sct</td><td>Pseudomonas aeruginosa</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-46247008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/46247008\">46247008</a></td><td>http://snomed.info/sct</td><td>Pseudomonas alcaligenes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-39289003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/39289003\">39289003</a></td><td>http://snomed.info/sct</td><td>Pseudomonas fluorescens</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-33919008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/33919008\">33919008</a></td><td>http://snomed.info/sct</td><td>Chryseomonas luteola</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-59419001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/59419001\">59419001</a></td><td>http://snomed.info/sct</td><td>Pseudomonas mendocina</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-53053000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/53053000\">53053000</a></td><td>http://snomed.info/sct</td><td>Pseudomonas oleovorans</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113931000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113931000\">113931000</a></td><td>http://snomed.info/sct</td><td>Pseudomonas oryzihabitans</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-68608003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/68608003\">68608003</a></td><td>http://snomed.info/sct</td><td>Pseudomonas putida</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-58024003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/58024003\">58024003</a></td><td>http://snomed.info/sct</td><td>Pseudomonas stutzeri</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-57032008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/57032008\">57032008</a></td><td>http://snomed.info/sct</td><td>Pseudomonas</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-415235000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/415235000\">415235000</a></td><td>http://snomed.info/sct</td><td>Ralstonia insidiosa (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-114053008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/114053008\">114053008</a></td><td>http://snomed.info/sct</td><td>Ralstonia picketti</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-416832000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/416832000\">416832000</a></td><td>http://snomed.info/sct</td><td>Raoultella ornithinolytica (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-416264004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/416264004\">416264004</a></td><td>http://snomed.info/sct</td><td>Raoultella planticola (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-438107000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/438107000\">438107000</a></td><td>http://snomed.info/sct</td><td>Rhizobium radiobacter (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113710007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113710007\">113710007</a></td><td>http://snomed.info/sct</td><td>Roseomonas gilardii</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-397502001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/397502001\">397502001</a></td><td>http://snomed.info/sct</td><td>Salmonella enterica subsp. arizonae (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-398428002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/398428002\">398428002</a></td><td>http://snomed.info/sct</td><td>Salmonella enterica subsp. diarizonae (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-398508004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/398508004\">398508004</a></td><td>http://snomed.info/sct</td><td>Salmonella enterica subsp. enterica (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-370576005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/370576005\">370576005</a></td><td>http://snomed.info/sct</td><td>Salmonella Gallinarum (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-27268008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/27268008\">27268008</a></td><td>http://snomed.info/sct</td><td>Salmonella</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-802004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/802004\">802004</a></td><td>http://snomed.info/sct</td><td>Serratia ficaria</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-112329006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/112329006\">112329006</a></td><td>http://snomed.info/sct</td><td>Serratia fonticola</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-722258003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/722258003\">722258003</a></td><td>http://snomed.info/sct</td><td>Serratia liquefaciens complex (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-33522002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/33522002\">33522002</a></td><td>http://snomed.info/sct</td><td>Serratia marcescens</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-10413007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/10413007\">10413007</a></td><td>http://snomed.info/sct</td><td>Serratia odorifera</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-28955009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/28955009\">28955009</a></td><td>http://snomed.info/sct</td><td>Serratia plymuthica</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-55825002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/55825002\">55825002</a></td><td>http://snomed.info/sct</td><td>Serratia rubidaea</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113700003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113700003\">113700003</a></td><td>http://snomed.info/sct</td><td>Shewanella putrefaciens</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-77352002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/77352002\">77352002</a></td><td>http://snomed.info/sct</td><td>Shigella</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-4298009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/4298009\">4298009</a></td><td>http://snomed.info/sct</td><td>Shigella sonnei</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-61675006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/61675006\">61675006</a></td><td>http://snomed.info/sct</td><td>Sphingobacterium spiritivorum</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113954009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113954009\">113954009</a></td><td>http://snomed.info/sct</td><td>Sphingobacterium thalpophilum</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-243350004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/243350004\">243350004</a></td><td>http://snomed.info/sct</td><td>Sphingomonas paucimobilis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-3092008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/3092008\">3092008</a></td><td>http://snomed.info/sct</td><td>Staphylococcus aureus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-45654003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/45654003\">45654003</a></td><td>http://snomed.info/sct</td><td>Staphylococcus auricularis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-40347003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/40347003\">40347003</a></td><td>http://snomed.info/sct</td><td>Staphylococcus capitis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-56629004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/56629004\">56629004</a></td><td>http://snomed.info/sct</td><td>Staphylococcus chromogenes (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-66872005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/66872005\">66872005</a></td><td>http://snomed.info/sct</td><td>Staphylococcus cohnii</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-60875001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/60875001\">60875001</a></td><td>http://snomed.info/sct</td><td>Staphylococcus epidermidis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-8056006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/8056006\">8056006</a></td><td>http://snomed.info/sct</td><td>Staphylococcus gallinarum</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-83452006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/83452006\">83452006</a></td><td>http://snomed.info/sct</td><td>Staphylococcus haemolyticus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-44827007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/44827007\">44827007</a></td><td>http://snomed.info/sct</td><td>Staphylococcus hominis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-40253001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/40253001\">40253001</a></td><td>http://snomed.info/sct</td><td>Staphylococcus lentus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-427316000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/427316000\">427316000</a></td><td>http://snomed.info/sct</td><td>Staphylococcus pseudintermedius (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-70806002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/70806002\">70806002</a></td><td>http://snomed.info/sct</td><td>Staphylococcus sciuri</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-63550006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/63550006\">63550006</a></td><td>http://snomed.info/sct</td><td>Staphylococcus warneri</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113697002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113697002\">113697002</a></td><td>http://snomed.info/sct</td><td>Stenotrophomonas maltophilia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-43492007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/43492007\">43492007</a></td><td>http://snomed.info/sct</td><td>Streptococcus agalactiae</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-34228005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/34228005\">34228005</a></td><td>http://snomed.info/sct</td><td>Streptococcus alactolyticus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-44304009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/44304009\">44304009</a></td><td>http://snomed.info/sct</td><td>Streptococcus anginosus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-76199005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/76199005\">76199005</a></td><td>http://snomed.info/sct</td><td>Streptococcus constellatus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-421253004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/421253004\">421253004</a></td><td>http://snomed.info/sct</td><td>Streptococcus gallolyticus subspecies pasteurianus (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-415603007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/415603007\">415603007</a></td><td>http://snomed.info/sct</td><td>Streptococcus infantarius (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-79050007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/79050007\">79050007</a></td><td>http://snomed.info/sct</td><td>Streptococcus iniae</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-62170002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/62170002\">62170002</a></td><td>http://snomed.info/sct</td><td>Streptococcus intermedius</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-57997003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/57997003\">57997003</a></td><td>http://snomed.info/sct</td><td>Streptococcus mitis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-19870004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/19870004\">19870004</a></td><td>http://snomed.info/sct</td><td>Streptococcus oralis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-214001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/214001\">214001</a></td><td>http://snomed.info/sct</td><td>Streptococcus mutans</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113990002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113990002\">113990002</a></td><td>http://snomed.info/sct</td><td>Streptococcus parasanguinis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-438187002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/438187002\">438187002</a></td><td>http://snomed.info/sct</td><td>Streptococcus pluranimalium (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-9861002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/9861002\">9861002</a></td><td>http://snomed.info/sct</td><td>Streptococcus pneumoniae</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-59512008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/59512008\">59512008</a></td><td>http://snomed.info/sct</td><td>Streptococcus porcinus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-429189003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/429189003\">429189003</a></td><td>http://snomed.info/sct</td><td>Streptococcus pseudoporcinus (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-84684000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/84684000\">84684000</a></td><td>http://snomed.info/sct</td><td>Streptococcus salivarius subspecies salivarius (organism)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113993000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113993000\">113993000</a></td><td>http://snomed.info/sct</td><td>Streptococcus sanguinis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-7912006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/7912006\">7912006</a></td><td>http://snomed.info/sct</td><td>Streptococcus suis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-23310006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/23310006\">23310006</a></td><td>http://snomed.info/sct</td><td>Streptococcus salivarius ss. thermophilus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113997004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113997004\">113997004</a></td><td>http://snomed.info/sct</td><td>Streptococcus thoraltensis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-13250005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/13250005\">13250005</a></td><td>http://snomed.info/sct</td><td>Streptococcus uberis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-113998009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/113998009\">113998009</a></td><td>http://snomed.info/sct</td><td>Streptococcus vestibularis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-116418005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/116418005\">116418005</a></td><td>http://snomed.info/sct</td><td>Vagococcus fluvialis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-43199008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/43199008\">43199008</a></td><td>http://snomed.info/sct</td><td>Vibrio fluvialis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-11736008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/11736008\">11736008</a></td><td>http://snomed.info/sct</td><td>Vibrio parahaemolyticus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-55905000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/55905000\">55905000</a></td><td>http://snomed.info/sct</td><td>Vibrio vulnificus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-65255000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/65255000\">65255000</a></td><td>http://snomed.info/sct</td><td>Yersinia enterocolitica</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-85159008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/85159008\">85159008</a></td><td>http://snomed.info/sct</td><td>Yersinia frederiksenii</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-91042006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/91042006\">91042006</a></td><td>http://snomed.info/sct</td><td>Yersinia kristensenii</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-acinetobacter-baumannii-complex\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-acinetobacter-baumannii-complex\">acinetobacter-baumannii-complex</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Acinetobacter baumannii complex</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-aeromonas-hydrophila-punctata\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-aeromonas-hydrophila-punctata\">aeromonas-hydrophila-punctata</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Aeromonas hydrophila/punctata</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-alcaligenes-faecalis-subsp-faecalis\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-alcaligenes-faecalis-subsp-faecalis\">alcaligenes-faecalis-subsp-faecalis</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Alcaligenes faecalis subsp. faecalis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-brevundimonas-diminuta-vesicularis\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-brevundimonas-diminuta-vesicularis\">brevundimonas-diminuta-vesicularis</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Brevundimonas diminuta/Brevundimonas vesicularis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-burkholderia-cepacia-group\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-burkholderia-cepacia-group\">burkholderia-cepacia-group</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Burkholderia cepacia group</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-cedecia-lapagei\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-cedecia-lapagei\">cedecia-lapagei</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Cedecia lapagei</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-cronobacter-sakazakii-group\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-cronobacter-sakazakii-group\">cronobacter-sakazakii-group</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Cronobacter sakazakii group</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-dermacoccus-nishinomiyaensis-kytococcus-sedentarius\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-dermacoccus-nishinomiyaensis-kytococcus-sedentarius\">dermacoccus-nishinomiyaensis-kytococcus-sedentarius</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Dermacoccus nishinomiyaensis/Kytococcus sedentarius</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-enterococcus-spp\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-enterococcus-spp\">enterococcus-spp</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Enterococcus spp.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-klebsiella-pneumoniae-subsp-pneumoniae\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-klebsiella-pneumoniae-subsp-pneumoniae\">klebsiella-pneumoniae-subsp-pneumoniae</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Klebsiella pneumoniae subsp. pneumoniae</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-klebsiella-spp\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-klebsiella-spp\">klebsiella-spp</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Klebsiella spp.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-leuconostoc-mesenteroides-subsp-cremoris\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-leuconostoc-mesenteroides-subsp-cremoris\">leuconostoc-mesenteroides-subsp-cremoris</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Leuconostoc mesenteroides subsp. cremoris</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-leuconostoc-mesenteroides-subsp-dextranicum\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-leuconostoc-mesenteroides-subsp-dextranicum\">leuconostoc-mesenteroides-subsp-dextranicum</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Leuconostoc mesenteroides subsp. dextranicum</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-methylobacterium-spp\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-methylobacterium-spp\">methylobacterium-spp</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Methylobacterium spp.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-moraxella-group\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-moraxella-group\">moraxella-group</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Moraxella group</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-morganella-morganii-subsp-morganii\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-morganella-morganii-subsp-morganii\">morganella-morganii-subsp-morganii</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Morganella morganii subsp. morganii</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-morganella-morganii-subsp-sibonii\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-morganella-morganii-subsp-sibonii\">morganella-morganii-subsp-sibonii</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Morganella morganii subsp. sibonii</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-myroides-spp\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-myroides-spp\">myroides-spp</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Myroides spp.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-neisseria-animaloris-zoodegmatis\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-neisseria-animaloris-zoodegmatis\">neisseria-animaloris-zoodegmatis</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Neisseria animaloris/Neisseria zoodegmatis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-pandoraea-spp\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-pandoraea-spp\">pandoraea-spp</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Pandoraea spp.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-pantoea-spp\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-pantoea-spp\">pantoea-spp</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Pantoea spp.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-pseudomonas-spp\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-pseudomonas-spp\">pseudomonas-spp</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Pseudomonas spp.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-salmonella-group\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-salmonella-group\">salmonella-group</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Salmonella group</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-serratia-liquefaciens-group\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-serratia-liquefaciens-group\">serratia-liquefaciens-group</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Serratia liquefaciens group</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-shigella-group\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-shigella-group\">shigella-group</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Shigella group</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-staphylococcus-cohnii-subsp-cohnii\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-staphylococcus-cohnii-subsp-cohnii\">staphylococcus-cohnii-subsp-cohnii</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Staphylococcus cohnii subsp. cohnii</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-staphylococcus-hominis-subsp-hominis\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-staphylococcus-hominis-subsp-hominis\">staphylococcus-hominis-subsp-hominis</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Staphylococcus hominis subsp. hominis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-streptococcus-constellatus-subsp-pharyngis\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-streptococcus-constellatus-subsp-pharyngis\">streptococcus-constellatus-subsp-pharyngis</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Streptococcus constellatus subsp. pharyngis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-streptococcus-infantarius-subsp-coli\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-streptococcus-infantarius-subsp-coli\">streptococcus-infantarius-subsp-coli</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Streptococcus infantarius subsp. coli</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-streptococcus-mitis-oralis\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-streptococcus-mitis-oralis\">streptococcus-mitis-oralis</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Streptococcus mitis/Streptococcus oralis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-vagococcus-fluviali\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-vagococcus-fluviali\">vagococcus-fluviali</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Vagococcus fluviali</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs-yersinia-enterocolitica-frederiksenii\"> </a>\u00a0\u00a0<a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-yersinia-enterocolitica-frederiksenii\">yersinia-enterocolitica-frederiksenii</a></td><td>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</td><td>Yersinia enterocolitica/Yersinia frederiksenii</td></tr></table></div>"
+      },
+      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs",
+      "version" : "0.1.0",
+      "name" : "BotswanaAMROrganismVS",
+      "title" : "Botswana AMR Organism ValueSet",
+      "status" : "draft",
+      "date" : "2025-06-25T00:42:48-04:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:72ff190f-dcb2-423d-a072-2584e1040168",
+        "timestamp" : "2025-06-25T00:43:31-04:00",
+        "total" : 198,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "413414001",
+          "display" : "Achromobacter denitrificans (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "413424009",
+          "display" : "Achromobacter xylosoxidans (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "91288006",
+          "display" : "Acinetobacter baumannii"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "77045006",
+          "display" : "Acinetobacter haemolyticus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "13879009",
+          "display" : "Acinetobacter junii"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "83088009",
+          "display" : "Mima polymorpha"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113381003",
+          "display" : "Acinetobacter radioresistens"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "424791004",
+          "display" : "Acinetobacter ursingii (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "78803006",
+          "display" : "Aerococcus viridans"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "85823000",
+          "display" : "Aeromonas hydrophila"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "115036005",
+          "display" : "Aeromonas punctata"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "30334005",
+          "display" : "Aeromonas salmonicida"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "43731003",
+          "display" : "Aeromonas sobria"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "9281006",
+          "display" : "Aeromonas veronii"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "25223004",
+          "display" : "Alcaligenes faecalis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "396454000",
+          "display" : "Alloiococcus otitis (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113495004",
+          "display" : "Bordetella hinzii"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113689009",
+          "display" : "Brevundimonas diminuta"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113690000",
+          "display" : "Brevundimonas vesicularis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "72829003",
+          "display" : "Brucella melitensis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "131281002",
+          "display" : "Burkholderia cepacia complex"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113674000",
+          "display" : "Burkholderia mallei"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "10969007",
+          "display" : "Buttiauxella agrestis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "2345009",
+          "display" : "Cedecea lapagei"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "11042002",
+          "display" : "Chromobacterium violaceum"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113549008",
+          "display" : "Chryseobacterium indologenes"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "55744003",
+          "display" : "Citrobacter amalonaticus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "114262000",
+          "display" : "Citrobacter braakii"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "6265002",
+          "display" : "Citrobacter freundii"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "114264004",
+          "display" : "Citrobacter koseri"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "114265003",
+          "display" : "Citrobacter sedlakii"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "114442006",
+          "display" : "Citrobacter werkmanii"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "116197008",
+          "display" : "Staphylococcus, coagulase negative"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "43721005",
+          "display" : "Comamonas testosteroni"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "445562004",
+          "display" : "Cronobacter sakazakii (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "20432002",
+          "display" : "Comamonas acidovorans"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113776005",
+          "display" : "Dermacoccus nishinomiyaensis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113775009",
+          "display" : "Kytococcus sedentarius"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "425774009",
+          "display" : "Elizabethkingia meningoseptica (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "62592009",
+          "display" : "Enterobacter aerogenes"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "114451003",
+          "display" : "Enterobacter cancerogenus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "414102007",
+          "display" : "Enterobacter cloacae complex (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "721950003",
+          "display" : "Enterobacter cloacae subspecies cloacae (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "56813009",
+          "display" : "Enterobacter dissolvens"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "30949009",
+          "display" : "Enterococcus casseliflavus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "46464008",
+          "display" : "Enterococcus durans"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "1187454003",
+          "display" : "Streptococcus faecalis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "90272000",
+          "display" : "Enterococcus faecium"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "53233007",
+          "display" : "Enterococcus gallinarum"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "2785000",
+          "display" : "Enterococcus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "112283007",
+          "display" : "Escherichia coli"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "19027003",
+          "display" : "Ewingella americana"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113765006",
+          "display" : "Gemella morbillorum"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "76694001",
+          "display" : "Hafnia alvei"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "40886007",
+          "display" : "Klebsiella oxytoca"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "56415008",
+          "display" : "Klebsiella pneumoniae"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "65186004",
+          "display" : "Klebsiella ozaenae"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "75032006",
+          "display" : "Klebsiella"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "58493008",
+          "display" : "Kluyvera ascorbata"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "32547006",
+          "display" : "Kluyvera cryocrescens"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113772007",
+          "display" : "Kocuria kristinae"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "432451007",
+          "display" : "Kocuria rhizophila (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113773002",
+          "display" : "Kocuria rosea"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113774008",
+          "display" : "Kocuria varians"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "27716002",
+          "display" : "Streptococcus garviae"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "57459006",
+          "display" : "Leclercia adecarboxylata"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "84221003",
+          "display" : "Enterobacter amnigenus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "71403009",
+          "display" : "Leuconostoc mesenteroides"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "243235006",
+          "display" : "Leuconostoc pseudomesenteroides"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "48331004",
+          "display" : "Listeria innocua"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "38395008",
+          "display" : "Methylobacterium"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "48299003",
+          "display" : "Micrococcus luteus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "36361003",
+          "display" : "Moraxella"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "243301005",
+          "display" : "Morganella morganii"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "115127008",
+          "display" : "Myroides"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "442202005",
+          "display" : "Neisseria animaloris"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "449121005",
+          "display" : "Neisseria zoodegmatis (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "11309009",
+          "display" : "Oligella ureolytica"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "414998001",
+          "display" : "Pandoraea"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "115013001",
+          "display" : "Pantoea"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "10879005",
+          "display" : "Pasteurella multocida"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "32562008",
+          "display" : "Pasteurella pneumotropica"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "3388005",
+          "display" : "Pasteurella testudinis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "417592004",
+          "display" : "Proteus hauseri (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "73457008",
+          "display" : "Proteus mirabilis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "45298005",
+          "display" : "Proteus penneri"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "14196002",
+          "display" : "Providencia rettgeri"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "1445008",
+          "display" : "Providencia stuartii"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "52499004",
+          "display" : "Pseudomonas aeruginosa"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "46247008",
+          "display" : "Pseudomonas alcaligenes"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "39289003",
+          "display" : "Pseudomonas fluorescens"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "33919008",
+          "display" : "Chryseomonas luteola"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "59419001",
+          "display" : "Pseudomonas mendocina"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "53053000",
+          "display" : "Pseudomonas oleovorans"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113931000",
+          "display" : "Pseudomonas oryzihabitans"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "68608003",
+          "display" : "Pseudomonas putida"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "58024003",
+          "display" : "Pseudomonas stutzeri"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "57032008",
+          "display" : "Pseudomonas"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "415235000",
+          "display" : "Ralstonia insidiosa (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "114053008",
+          "display" : "Ralstonia picketti"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "416832000",
+          "display" : "Raoultella ornithinolytica (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "416264004",
+          "display" : "Raoultella planticola (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "438107000",
+          "display" : "Rhizobium radiobacter (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113710007",
+          "display" : "Roseomonas gilardii"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "397502001",
+          "display" : "Salmonella enterica subsp. arizonae (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "398428002",
+          "display" : "Salmonella enterica subsp. diarizonae (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "398508004",
+          "display" : "Salmonella enterica subsp. enterica (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "370576005",
+          "display" : "Salmonella Gallinarum (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "27268008",
+          "display" : "Salmonella"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "802004",
+          "display" : "Serratia ficaria"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "112329006",
+          "display" : "Serratia fonticola"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "722258003",
+          "display" : "Serratia liquefaciens complex (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "33522002",
+          "display" : "Serratia marcescens"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "10413007",
+          "display" : "Serratia odorifera"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "28955009",
+          "display" : "Serratia plymuthica"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "55825002",
+          "display" : "Serratia rubidaea"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113700003",
+          "display" : "Shewanella putrefaciens"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "77352002",
+          "display" : "Shigella"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "4298009",
+          "display" : "Shigella sonnei"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "61675006",
+          "display" : "Sphingobacterium spiritivorum"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113954009",
+          "display" : "Sphingobacterium thalpophilum"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "243350004",
+          "display" : "Sphingomonas paucimobilis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "3092008",
+          "display" : "Staphylococcus aureus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "45654003",
+          "display" : "Staphylococcus auricularis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "40347003",
+          "display" : "Staphylococcus capitis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "56629004",
+          "display" : "Staphylococcus chromogenes (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "66872005",
+          "display" : "Staphylococcus cohnii"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "60875001",
+          "display" : "Staphylococcus epidermidis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "8056006",
+          "display" : "Staphylococcus gallinarum"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "83452006",
+          "display" : "Staphylococcus haemolyticus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "44827007",
+          "display" : "Staphylococcus hominis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "40253001",
+          "display" : "Staphylococcus lentus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "427316000",
+          "display" : "Staphylococcus pseudintermedius (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "70806002",
+          "display" : "Staphylococcus sciuri"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "63550006",
+          "display" : "Staphylococcus warneri"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113697002",
+          "display" : "Stenotrophomonas maltophilia"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "43492007",
+          "display" : "Streptococcus agalactiae"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "34228005",
+          "display" : "Streptococcus alactolyticus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "44304009",
+          "display" : "Streptococcus anginosus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "76199005",
+          "display" : "Streptococcus constellatus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "421253004",
+          "display" : "Streptococcus gallolyticus subspecies pasteurianus (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "415603007",
+          "display" : "Streptococcus infantarius (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "79050007",
+          "display" : "Streptococcus iniae"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "62170002",
+          "display" : "Streptococcus intermedius"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "57997003",
+          "display" : "Streptococcus mitis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "19870004",
+          "display" : "Streptococcus oralis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "214001",
+          "display" : "Streptococcus mutans"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113990002",
+          "display" : "Streptococcus parasanguinis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "438187002",
+          "display" : "Streptococcus pluranimalium (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "9861002",
+          "display" : "Streptococcus pneumoniae"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "59512008",
+          "display" : "Streptococcus porcinus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "429189003",
+          "display" : "Streptococcus pseudoporcinus (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "84684000",
+          "display" : "Streptococcus salivarius subspecies salivarius (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113993000",
+          "display" : "Streptococcus sanguinis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "7912006",
+          "display" : "Streptococcus suis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "23310006",
+          "display" : "Streptococcus salivarius ss. thermophilus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113997004",
+          "display" : "Streptococcus thoraltensis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "13250005",
+          "display" : "Streptococcus uberis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "113998009",
+          "display" : "Streptococcus vestibularis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "116418005",
+          "display" : "Vagococcus fluvialis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "43199008",
+          "display" : "Vibrio fluvialis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "11736008",
+          "display" : "Vibrio parahaemolyticus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "55905000",
+          "display" : "Vibrio vulnificus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "65255000",
+          "display" : "Yersinia enterocolitica"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "85159008",
+          "display" : "Yersinia frederiksenii"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "91042006",
+          "display" : "Yersinia kristensenii"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "acinetobacter-baumannii-complex",
+          "display" : "Acinetobacter baumannii complex"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "aeromonas-hydrophila-punctata",
+          "display" : "Aeromonas hydrophila/punctata"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "alcaligenes-faecalis-subsp-faecalis",
+          "display" : "Alcaligenes faecalis subsp. faecalis"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "brevundimonas-diminuta-vesicularis",
+          "display" : "Brevundimonas diminuta/Brevundimonas vesicularis"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "burkholderia-cepacia-group",
+          "display" : "Burkholderia cepacia group"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "cedecia-lapagei",
+          "display" : "Cedecia lapagei"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "cronobacter-sakazakii-group",
+          "display" : "Cronobacter sakazakii group"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "dermacoccus-nishinomiyaensis-kytococcus-sedentarius",
+          "display" : "Dermacoccus nishinomiyaensis/Kytococcus sedentarius"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "enterococcus-spp",
+          "display" : "Enterococcus spp."
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "klebsiella-pneumoniae-subsp-pneumoniae",
+          "display" : "Klebsiella pneumoniae subsp. pneumoniae"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "klebsiella-spp",
+          "display" : "Klebsiella spp."
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "leuconostoc-mesenteroides-subsp-cremoris",
+          "display" : "Leuconostoc mesenteroides subsp. cremoris"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "leuconostoc-mesenteroides-subsp-dextranicum",
+          "display" : "Leuconostoc mesenteroides subsp. dextranicum"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "methylobacterium-spp",
+          "display" : "Methylobacterium spp."
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "moraxella-group",
+          "display" : "Moraxella group"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "morganella-morganii-subsp-morganii",
+          "display" : "Morganella morganii subsp. morganii"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "morganella-morganii-subsp-sibonii",
+          "display" : "Morganella morganii subsp. sibonii"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "myroides-spp",
+          "display" : "Myroides spp."
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "neisseria-animaloris-zoodegmatis",
+          "display" : "Neisseria animaloris/Neisseria zoodegmatis"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "pandoraea-spp",
+          "display" : "Pandoraea spp."
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "pantoea-spp",
+          "display" : "Pantoea spp."
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "pseudomonas-spp",
+          "display" : "Pseudomonas spp."
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "salmonella-group",
+          "display" : "Salmonella group"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "serratia-liquefaciens-group",
+          "display" : "Serratia liquefaciens group"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "shigella-group",
+          "display" : "Shigella group"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "staphylococcus-cohnii-subsp-cohnii",
+          "display" : "Staphylococcus cohnii subsp. cohnii"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "staphylococcus-hominis-subsp-hominis",
+          "display" : "Staphylococcus hominis subsp. hominis"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "streptococcus-constellatus-subsp-pharyngis",
+          "display" : "Streptococcus constellatus subsp. pharyngis"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "streptococcus-infantarius-subsp-coli",
+          "display" : "Streptococcus infantarius subsp. coli"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "streptococcus-mitis-oralis",
+          "display" : "Streptococcus mitis/Streptococcus oralis"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "vagococcus-fluviali",
+          "display" : "Vagococcus fluviali"
+        },
+        {
+          "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+          "code" : "yersinia-enterocolitica-frederiksenii",
+          "display" : "Yersinia enterocolitica/Yersinia frederiksenii"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-special-test-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on Loinc v2.80</p><p>This value set contains 1 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-99596-9\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/99596-9/\">99596-9</a></td><td>http://loinc.org</td><td>SARS-CoV-2 (COVID-19) N protein IgG Ab [Presence] in Serum or Plasma by Immunoassay</td></tr></table></div>"
+      },
+      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-special-test-vs",
+      "version" : "0.1.0",
+      "name" : "BotswanaAMRSpecialTestVS",
+      "title" : "Botswana AMR Special Tests",
+      "status" : "draft",
+      "date" : "2025-06-25T00:42:48-04:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:fc36076a-4be4-4503-935b-93911385d576",
+        "timestamp" : "2025-06-25T00:43:36-04:00",
+        "total" : 1,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.80"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.80"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "99596-9",
+          "display" : "SARS-CoV-2 (COVID-19) N protein IgG Ab [Presence] in Serum or Plasma by Immunoassay"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 14 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-87612001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/87612001\">87612001</a></td><td>http://snomed.info/sct</td><td>Blood</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-68171009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/68171009\">68171009</a></td><td>http://snomed.info/sct</td><td>Axillary lymph node</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-119334006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/119334006\">119334006</a></td><td>http://snomed.info/sct</td><td>Sputum specimen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-258580003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/258580003\">258580003</a></td><td>http://snomed.info/sct</td><td>Whole blood sample</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-69695003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/69695003\">69695003</a></td><td>http://snomed.info/sct</td><td>Stomach</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-119339001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/119339001\">119339001</a></td><td>http://snomed.info/sct</td><td>Stool specimen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-45206002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/45206002\">45206002</a></td><td>http://snomed.info/sct</td><td>Nose</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-123851003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/123851003\">123851003</a></td><td>http://snomed.info/sct</td><td>Mouth region</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-69536005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/69536005\">69536005</a></td><td>http://snomed.info/sct</td><td>Head</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-416775004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/416775004\">416775004</a></td><td>http://snomed.info/sct</td><td>Chest and/or abdomen and/or pelvis structure (body structure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-76784001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/76784001\">76784001</a></td><td>http://snomed.info/sct</td><td>Vagina</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-13648007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/13648007\">13648007</a></td><td>http://snomed.info/sct</td><td>Urethra</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-127949000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/127949000\">127949000</a></td><td>http://snomed.info/sct</td><td>Elbow region</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-74964007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/74964007\">74964007</a></td><td>http://snomed.info/sct</td><td>Other</td></tr></table></div>"
+      },
+      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs",
+      "version" : "0.1.0",
+      "name" : "BotswanaAMRSpecimenSiteVS",
+      "title" : "Botswana AMR Specimen Collection Sites",
+      "status" : "draft",
+      "date" : "2025-06-25T00:42:48-04:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:1c3c062e-7560-4e42-befc-b205ab15a1d2",
+        "timestamp" : "2025-06-25T00:43:36-04:00",
+        "total" : 14,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "87612001",
+          "display" : "Blood"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "68171009",
+          "display" : "Axillary lymph node"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "119334006",
+          "display" : "Sputum specimen"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "258580003",
+          "display" : "Whole blood sample"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "69695003",
+          "display" : "Stomach"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "119339001",
+          "display" : "Stool specimen"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "45206002",
+          "display" : "Nose"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "123851003",
+          "display" : "Mouth region"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "69536005",
+          "display" : "Head"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "416775004",
+          "display" : "Chest and/or abdomen and/or pelvis structure (body structure)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "76784001",
+          "display" : "Vagina"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "13648007",
+          "display" : "Urethra"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "127949000",
+          "display" : "Elbow region"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "74964007",
+          "display" : "Other"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -325,10 +1703,10 @@
       "name" : "BotswanaAMRSpecimenTypeVS",
       "title" : "Botswana AMR Specimen Type VS",
       "status" : "draft",
-      "date" : "2025-06-17T18:14:37-04:00",
+      "date" : "2025-06-25T00:42:48-04:00",
       "expansion" : {
-        "identifier" : "urn:uuid:8138facc-cec1-4763-8c5b-cc4e063153a0",
-        "timestamp" : "2025-06-17T18:15:03-04:00",
+        "identifier" : "urn:uuid:8241bc9d-712b-442e-a5dc-0a6683f73e05",
+        "timestamp" : "2025-06-25T00:43:36-04:00",
         "total" : 7,
         "offset" : 0,
         "parameter" : [{
@@ -385,6 +1763,81 @@
           "system" : "http://terminology.hl7.org/CodeSystem/v3-SpecimenType",
           "code" : "SPT",
           "display" : "Sputum"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-10828004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/10828004\">10828004</a></td><td>http://snomed.info/sct</td><td>Positive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-260385009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/260385009\">260385009</a></td><td>http://snomed.info/sct</td><td>Negative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-82334004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/82334004\">82334004</a></td><td>http://snomed.info/sct</td><td>Indeterminate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-385660001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/385660001\">385660001</a></td><td>http://snomed.info/sct</td><td>Not done (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-261665006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>http://snomed.info/sct</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs",
+      "version" : "0.1.0",
+      "name" : "BotswanaAMRTestResultStatusVS",
+      "title" : "Botswana AMR Test Result Status",
+      "status" : "draft",
+      "date" : "2025-06-25T00:42:48-04:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:9ddb7a6b-858c-4d86-99f2-2706b13c60d1",
+        "timestamp" : "2025-06-25T00:43:36-04:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "10828004",
+          "display" : "Positive"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "260385009",
+          "display" : "Negative"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "82334004",
+          "display" : "Indeterminate"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "385660001",
+          "display" : "Not done (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "261665006",
+          "display" : "Unknown"
         }]
       }
     }

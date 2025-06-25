@@ -1,0 +1,604 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://bw.health.gov/fhir/ValueSet/botswana-amr-organism-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "botswana-amr-organism-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet botswana-amr-organism-vs</b></p><a name=\"botswana-amr-organism-vs\"> </a><a name=\"hcbotswana-amr-organism-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/413414001\">413414001</a></td><td>Achromobacter denitrificans</td></tr><tr><td><a href=\"http://snomed.info/id/413424009\">413424009</a></td><td>Achromobacter xylosoxidans</td></tr><tr><td><a href=\"http://snomed.info/id/91288006\">91288006</a></td><td>Acinetobacter baumannii</td></tr><tr><td><a href=\"http://snomed.info/id/77045006\">77045006</a></td><td>Acinetobacter haemolyticus</td></tr><tr><td><a href=\"http://snomed.info/id/13879009\">13879009</a></td><td>Acinetobacter junii</td></tr><tr><td><a href=\"http://snomed.info/id/83088009\">83088009</a></td><td>Acinetobacter lwoffii</td></tr><tr><td><a href=\"http://snomed.info/id/113381003\">113381003</a></td><td>Acinetobacter radioresistens</td></tr><tr><td><a href=\"http://snomed.info/id/424791004\">424791004</a></td><td>Acinetobacter ursingii</td></tr><tr><td><a href=\"http://snomed.info/id/78803006\">78803006</a></td><td>Aerococcus viridans</td></tr><tr><td><a href=\"http://snomed.info/id/85823000\">85823000</a></td><td>Aeromonas hydrophila</td></tr><tr><td><a href=\"http://snomed.info/id/115036005\">115036005</a></td><td>Aeromonas caviae</td></tr><tr><td><a href=\"http://snomed.info/id/30334005\">30334005</a></td><td>Aeromonas salmonicida</td></tr><tr><td><a href=\"http://snomed.info/id/43731003\">43731003</a></td><td>Aeromonas sobria</td></tr><tr><td><a href=\"http://snomed.info/id/9281006\">9281006</a></td><td>Aeromonas veronii</td></tr><tr><td><a href=\"http://snomed.info/id/25223004\">25223004</a></td><td>Alcaligenes faecalis</td></tr><tr><td><a href=\"http://snomed.info/id/396454000\">396454000</a></td><td>Alloiococcus otitis</td></tr><tr><td><a href=\"http://snomed.info/id/113495004\">113495004</a></td><td>Bordetella hinzii</td></tr><tr><td><a href=\"http://snomed.info/id/113689009\">113689009</a></td><td>Brevundimonas diminuta</td></tr><tr><td><a href=\"http://snomed.info/id/113690000\">113690000</a></td><td>Brevundimonas vesicularis</td></tr><tr><td><a href=\"http://snomed.info/id/72829003\">72829003</a></td><td>Brucella melitensis</td></tr><tr><td><a href=\"http://snomed.info/id/131281002\">131281002</a></td><td>Burkholderia cepacia complex</td></tr><tr><td><a href=\"http://snomed.info/id/113674000\">113674000</a></td><td>Burkholderia mallei</td></tr><tr><td><a href=\"http://snomed.info/id/10969007\">10969007</a></td><td>Buttiauxella agrestis</td></tr><tr><td><a href=\"http://snomed.info/id/2345009\">2345009</a></td><td>Cedecea lapagei</td></tr><tr><td><a href=\"http://snomed.info/id/11042002\">11042002</a></td><td>Chromobacterium violaceum</td></tr><tr><td><a href=\"http://snomed.info/id/113549008\">113549008</a></td><td>Chryseobacterium indologenes</td></tr><tr><td><a href=\"http://snomed.info/id/55744003\">55744003</a></td><td>Citrobacter amalonaticus</td></tr><tr><td><a href=\"http://snomed.info/id/114262000\">114262000</a></td><td>Citrobacter braakii</td></tr><tr><td><a href=\"http://snomed.info/id/6265002\">6265002</a></td><td>Citrobacter freundii</td></tr><tr><td><a href=\"http://snomed.info/id/114264004\">114264004</a></td><td>Citrobacter koseri</td></tr><tr><td><a href=\"http://snomed.info/id/114265003\">114265003</a></td><td>Citrobacter sedlakii</td></tr><tr><td><a href=\"http://snomed.info/id/114442006\">114442006</a></td><td>Citrobacter werkmanii</td></tr><tr><td><a href=\"http://snomed.info/id/116197008\">116197008</a></td><td>Staphylococcus, coagulase negative</td></tr><tr><td><a href=\"http://snomed.info/id/43721005\">43721005</a></td><td>Comamonas testosteroni</td></tr><tr><td><a href=\"http://snomed.info/id/445562004\">445562004</a></td><td>Cronobacter sakazakii</td></tr><tr><td><a href=\"http://snomed.info/id/20432002\">20432002</a></td><td>Delftia acidovorans</td></tr><tr><td><a href=\"http://snomed.info/id/113776005\">113776005</a></td><td>Dermacoccus nishinomiyaensis</td></tr><tr><td><a href=\"http://snomed.info/id/113775009\">113775009</a></td><td>Kytococcus sedentarius</td></tr><tr><td><a href=\"http://snomed.info/id/425774009\">425774009</a></td><td>Elizabethkingia meningoseptica</td></tr><tr><td><a href=\"http://snomed.info/id/62592009\">62592009</a></td><td>Klebsiella aerogenes</td></tr><tr><td><a href=\"http://snomed.info/id/114451003\">114451003</a></td><td>Enterobacter cancerogenus</td></tr><tr><td><a href=\"http://snomed.info/id/414102007\">414102007</a></td><td>Enterobacter cloacae complex</td></tr><tr><td><a href=\"http://snomed.info/id/721950003\">721950003</a></td><td>Enterobacter cloacae subsp. cloacae</td></tr><tr><td><a href=\"http://snomed.info/id/56813009\">56813009</a></td><td>Enterobacter cloacae subspecies dissolvens</td></tr><tr><td><a href=\"http://snomed.info/id/30949009\">30949009</a></td><td>Enterococcus casseliflavus</td></tr><tr><td><a href=\"http://snomed.info/id/46464008\">46464008</a></td><td>Enterococcus durans</td></tr><tr><td><a href=\"http://snomed.info/id/1187454003\">1187454003</a></td><td>Enterococcus faecalis</td></tr><tr><td><a href=\"http://snomed.info/id/90272000\">90272000</a></td><td>Enterococcus faecium</td></tr><tr><td><a href=\"http://snomed.info/id/53233007\">53233007</a></td><td>Enterococcus gallinarum</td></tr><tr><td><a href=\"http://snomed.info/id/2785000\">2785000</a></td><td>Enterococcus</td></tr><tr><td><a href=\"http://snomed.info/id/112283007\">112283007</a></td><td>Escherichia coli</td></tr><tr><td><a href=\"http://snomed.info/id/19027003\">19027003</a></td><td>Ewingella americana</td></tr><tr><td><a href=\"http://snomed.info/id/113765006\">113765006</a></td><td>Gemella morbillorum</td></tr><tr><td><a href=\"http://snomed.info/id/76694001\">76694001</a></td><td>Hafnia alvei</td></tr><tr><td><a href=\"http://snomed.info/id/40886007\">40886007</a></td><td>Klebsiella oxytoca</td></tr><tr><td><a href=\"http://snomed.info/id/56415008\">56415008</a></td><td>Klebsiella pneumoniae</td></tr><tr><td><a href=\"http://snomed.info/id/65186004\">65186004</a></td><td>Klebsiella pneumoniae subsp. ozaenae</td></tr><tr><td><a href=\"http://snomed.info/id/75032006\">75032006</a></td><td>Klebsiella</td></tr><tr><td><a href=\"http://snomed.info/id/58493008\">58493008</a></td><td>Kluyvera ascorbata</td></tr><tr><td><a href=\"http://snomed.info/id/32547006\">32547006</a></td><td>Kluyvera cryocrescens</td></tr><tr><td><a href=\"http://snomed.info/id/113772007\">113772007</a></td><td>Rothia kristinae</td></tr><tr><td><a href=\"http://snomed.info/id/432451007\">432451007</a></td><td>Kocuria rhizophila</td></tr><tr><td><a href=\"http://snomed.info/id/113773002\">113773002</a></td><td>Kocuria rosea</td></tr><tr><td><a href=\"http://snomed.info/id/113774008\">113774008</a></td><td>Kocuria varians</td></tr><tr><td><a href=\"http://snomed.info/id/27716002\">27716002</a></td><td>Lactococcus garvieae</td></tr><tr><td><a href=\"http://snomed.info/id/57459006\">57459006</a></td><td>Leclercia adecarboxylata</td></tr><tr><td><a href=\"http://snomed.info/id/84221003\">84221003</a></td><td>Lelliottia amnigena</td></tr><tr><td><a href=\"http://snomed.info/id/71403009\">71403009</a></td><td>Leuconostoc mesenteroides</td></tr><tr><td><a href=\"http://snomed.info/id/243235006\">243235006</a></td><td>Leuconostoc pseudomesenteroides</td></tr><tr><td><a href=\"http://snomed.info/id/48331004\">48331004</a></td><td>Listeria innocua</td></tr><tr><td><a href=\"http://snomed.info/id/38395008\">38395008</a></td><td>Methylobacterium</td></tr><tr><td><a href=\"http://snomed.info/id/48299003\">48299003</a></td><td>Micrococcus luteus</td></tr><tr><td><a href=\"http://snomed.info/id/36361003\">36361003</a></td><td>Moraxella</td></tr><tr><td><a href=\"http://snomed.info/id/243301005\">243301005</a></td><td>Morganella morganii</td></tr><tr><td><a href=\"http://snomed.info/id/115127008\">115127008</a></td><td>Myroides</td></tr><tr><td><a href=\"http://snomed.info/id/442202005\">442202005</a></td><td>Neisseria animaloris</td></tr><tr><td><a href=\"http://snomed.info/id/449121005\">449121005</a></td><td>Neisseria zoodegmatis</td></tr><tr><td><a href=\"http://snomed.info/id/11309009\">11309009</a></td><td>Oligella ureolytica</td></tr><tr><td><a href=\"http://snomed.info/id/414998001\">414998001</a></td><td>Pandoraea</td></tr><tr><td><a href=\"http://snomed.info/id/115013001\">115013001</a></td><td>Pantoea</td></tr><tr><td><a href=\"http://snomed.info/id/10879005\">10879005</a></td><td>Pasteurella multocida</td></tr><tr><td><a href=\"http://snomed.info/id/32562008\">32562008</a></td><td>Rodentibacter pneumotropicus</td></tr><tr><td><a href=\"http://snomed.info/id/3388005\">3388005</a></td><td>Pasteurella testudinis</td></tr><tr><td><a href=\"http://snomed.info/id/417592004\">417592004</a></td><td>Proteus hauseri</td></tr><tr><td><a href=\"http://snomed.info/id/73457008\">73457008</a></td><td>Proteus mirabilis</td></tr><tr><td><a href=\"http://snomed.info/id/45298005\">45298005</a></td><td>Proteus penneri</td></tr><tr><td><a href=\"http://snomed.info/id/14196002\">14196002</a></td><td>Providencia rettgeri</td></tr><tr><td><a href=\"http://snomed.info/id/1445008\">1445008</a></td><td>Providencia stuartii</td></tr><tr><td><a href=\"http://snomed.info/id/52499004\">52499004</a></td><td>Pseudomonas aeruginosa</td></tr><tr><td><a href=\"http://snomed.info/id/46247008\">46247008</a></td><td>Pseudomonas alcaligenes</td></tr><tr><td><a href=\"http://snomed.info/id/39289003\">39289003</a></td><td>Pseudomonas fluorescens</td></tr><tr><td><a href=\"http://snomed.info/id/33919008\">33919008</a></td><td>Pseudomonas luteola</td></tr><tr><td><a href=\"http://snomed.info/id/59419001\">59419001</a></td><td>Pseudomonas mendocina</td></tr><tr><td><a href=\"http://snomed.info/id/53053000\">53053000</a></td><td>Pseudomonas oleovorans</td></tr><tr><td><a href=\"http://snomed.info/id/113931000\">113931000</a></td><td>Pseudomonas oryzihabitans</td></tr><tr><td><a href=\"http://snomed.info/id/68608003\">68608003</a></td><td>Pseudomonas putida</td></tr><tr><td><a href=\"http://snomed.info/id/58024003\">58024003</a></td><td>Pseudomonas stutzeri</td></tr><tr><td><a href=\"http://snomed.info/id/57032008\">57032008</a></td><td>Pseudomonas</td></tr><tr><td><a href=\"http://snomed.info/id/415235000\">415235000</a></td><td>Ralstonia insidiosa</td></tr><tr><td><a href=\"http://snomed.info/id/114053008\">114053008</a></td><td>Ralstonia pickettii</td></tr><tr><td><a href=\"http://snomed.info/id/416832000\">416832000</a></td><td>Raoultella ornithinolytica</td></tr><tr><td><a href=\"http://snomed.info/id/416264004\">416264004</a></td><td>Raoultella planticola</td></tr><tr><td><a href=\"http://snomed.info/id/438107000\">438107000</a></td><td>Rhizobium radiobacter</td></tr><tr><td><a href=\"http://snomed.info/id/113710007\">113710007</a></td><td>Roseomonas gilardii</td></tr><tr><td><a href=\"http://snomed.info/id/397502001\">397502001</a></td><td>Salmonella enterica subsp. arizonae</td></tr><tr><td><a href=\"http://snomed.info/id/398428002\">398428002</a></td><td>Salmonella enterica subsp. diarizonae</td></tr><tr><td><a href=\"http://snomed.info/id/398508004\">398508004</a></td><td>Salmonella enterica subsp. enterica</td></tr><tr><td><a href=\"http://snomed.info/id/370576005\">370576005</a></td><td>Salmonella Gallinarum</td></tr><tr><td><a href=\"http://snomed.info/id/27268008\">27268008</a></td><td>Salmonella</td></tr><tr><td><a href=\"http://snomed.info/id/802004\">802004</a></td><td>Serratia ficaria</td></tr><tr><td><a href=\"http://snomed.info/id/112329006\">112329006</a></td><td>Serratia fonticola</td></tr><tr><td><a href=\"http://snomed.info/id/722258003\">722258003</a></td><td>Serratia liquefaciens complex</td></tr><tr><td><a href=\"http://snomed.info/id/33522002\">33522002</a></td><td>Serratia marcescens</td></tr><tr><td><a href=\"http://snomed.info/id/10413007\">10413007</a></td><td>Serratia odorifera</td></tr><tr><td><a href=\"http://snomed.info/id/28955009\">28955009</a></td><td>Serratia plymuthica</td></tr><tr><td><a href=\"http://snomed.info/id/55825002\">55825002</a></td><td>Serratia rubidaea</td></tr><tr><td><a href=\"http://snomed.info/id/113700003\">113700003</a></td><td>Shewanella putrefaciens</td></tr><tr><td><a href=\"http://snomed.info/id/77352002\">77352002</a></td><td>Shigella</td></tr><tr><td><a href=\"http://snomed.info/id/4298009\">4298009</a></td><td>Shigella sonnei</td></tr><tr><td><a href=\"http://snomed.info/id/61675006\">61675006</a></td><td>Sphingobacterium spiritivorum</td></tr><tr><td><a href=\"http://snomed.info/id/113954009\">113954009</a></td><td>Sphingobacterium thalpophilum</td></tr><tr><td><a href=\"http://snomed.info/id/243350004\">243350004</a></td><td>Sphingomonas paucimobilis</td></tr><tr><td><a href=\"http://snomed.info/id/3092008\">3092008</a></td><td>Staphylococcus aureus</td></tr><tr><td><a href=\"http://snomed.info/id/45654003\">45654003</a></td><td>Staphylococcus auricularis</td></tr><tr><td><a href=\"http://snomed.info/id/40347003\">40347003</a></td><td>Staphylococcus capitis</td></tr><tr><td><a href=\"http://snomed.info/id/56629004\">56629004</a></td><td>Staphylococcus chromogenes</td></tr><tr><td><a href=\"http://snomed.info/id/66872005\">66872005</a></td><td>Staphylococcus cohnii</td></tr><tr><td><a href=\"http://snomed.info/id/60875001\">60875001</a></td><td>Staphylococcus epidermidis</td></tr><tr><td><a href=\"http://snomed.info/id/8056006\">8056006</a></td><td>Staphylococcus gallinarum</td></tr><tr><td><a href=\"http://snomed.info/id/83452006\">83452006</a></td><td>Staphylococcus haemolyticus</td></tr><tr><td><a href=\"http://snomed.info/id/44827007\">44827007</a></td><td>Staphylococcus hominis</td></tr><tr><td><a href=\"http://snomed.info/id/40253001\">40253001</a></td><td>Mammaliicoccus lentus</td></tr><tr><td><a href=\"http://snomed.info/id/427316000\">427316000</a></td><td>Staphylococcus pseudintermedius</td></tr><tr><td><a href=\"http://snomed.info/id/70806002\">70806002</a></td><td>Mammaliicoccus sciuri</td></tr><tr><td><a href=\"http://snomed.info/id/63550006\">63550006</a></td><td>Staphylococcus warneri</td></tr><tr><td><a href=\"http://snomed.info/id/113697002\">113697002</a></td><td>Stenotrophomonas maltophilia</td></tr><tr><td><a href=\"http://snomed.info/id/43492007\">43492007</a></td><td>Group B streptococcus</td></tr><tr><td><a href=\"http://snomed.info/id/34228005\">34228005</a></td><td>Streptococcus alactolyticus</td></tr><tr><td><a href=\"http://snomed.info/id/44304009\">44304009</a></td><td>Streptococcus anginosus</td></tr><tr><td><a href=\"http://snomed.info/id/76199005\">76199005</a></td><td>Streptococcus constellatus</td></tr><tr><td><a href=\"http://snomed.info/id/421253004\">421253004</a></td><td>Streptococcus gallolyticus subspecies pasteurianus</td></tr><tr><td><a href=\"http://snomed.info/id/415603007\">415603007</a></td><td>Streptococcus infantarius</td></tr><tr><td><a href=\"http://snomed.info/id/79050007\">79050007</a></td><td>Streptococcus iniae</td></tr><tr><td><a href=\"http://snomed.info/id/62170002\">62170002</a></td><td>Streptococcus intermedius</td></tr><tr><td><a href=\"http://snomed.info/id/57997003\">57997003</a></td><td>Streptococcus mitis</td></tr><tr><td><a href=\"http://snomed.info/id/19870004\">19870004</a></td><td>Streptococcus oralis</td></tr><tr><td><a href=\"http://snomed.info/id/214001\">214001</a></td><td>Streptococcus mutans</td></tr><tr><td><a href=\"http://snomed.info/id/113990002\">113990002</a></td><td>Streptococcus parasanguinis</td></tr><tr><td><a href=\"http://snomed.info/id/438187002\">438187002</a></td><td>Streptococcus pluranimalium</td></tr><tr><td><a href=\"http://snomed.info/id/9861002\">9861002</a></td><td>Streptococcus pneumoniae</td></tr><tr><td><a href=\"http://snomed.info/id/59512008\">59512008</a></td><td>Streptococcus porcinus</td></tr><tr><td><a href=\"http://snomed.info/id/429189003\">429189003</a></td><td>Streptococcus pseudoporcinus</td></tr><tr><td><a href=\"http://snomed.info/id/84684000\">84684000</a></td><td>Streptococcus salivarius subsp. salivarius</td></tr><tr><td><a href=\"http://snomed.info/id/113993000\">113993000</a></td><td>Streptococcus sanguinis</td></tr><tr><td><a href=\"http://snomed.info/id/7912006\">7912006</a></td><td>Streptococcus suis</td></tr><tr><td><a href=\"http://snomed.info/id/23310006\">23310006</a></td><td>Streptococcus salivarius subsp. thermophilus</td></tr><tr><td><a href=\"http://snomed.info/id/113997004\">113997004</a></td><td>Streptococcus thoraltensis</td></tr><tr><td><a href=\"http://snomed.info/id/13250005\">13250005</a></td><td>Streptococcus uberis</td></tr><tr><td><a href=\"http://snomed.info/id/113998009\">113998009</a></td><td>Streptococcus vestibularis</td></tr><tr><td><a href=\"http://snomed.info/id/116418005\">116418005</a></td><td>Vagococcus fluvialis</td></tr><tr><td><a href=\"http://snomed.info/id/43199008\">43199008</a></td><td>Vibrio fluvialis</td></tr><tr><td><a href=\"http://snomed.info/id/11736008\">11736008</a></td><td>Vibrio parahaemolyticus</td></tr><tr><td><a href=\"http://snomed.info/id/55905000\">55905000</a></td><td>Vibrio vulnificus</td></tr><tr><td><a href=\"http://snomed.info/id/65255000\">65255000</a></td><td>Yersinia enterocolitica</td></tr><tr><td><a href=\"http://snomed.info/id/85159008\">85159008</a></td><td>Yersinia frederiksenii</td></tr><tr><td><a href=\"http://snomed.info/id/91042006\">91042006</a></td><td>Yersinia kristensenii</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-botswana-amr-local-organism-cs.html\"><code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-acinetobacter-baumannii-complex\">acinetobacter-baumannii-complex</a></td><td style=\"color: #cccccc\">Acinetobacter baumannii complex</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-aeromonas-hydrophila-punctata\">aeromonas-hydrophila-punctata</a></td><td style=\"color: #cccccc\">Aeromonas hydrophila/punctata</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-alcaligenes-faecalis-subsp-faecalis\">alcaligenes-faecalis-subsp-faecalis</a></td><td style=\"color: #cccccc\">Alcaligenes faecalis subsp. faecalis</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-brevundimonas-diminuta-vesicularis\">brevundimonas-diminuta-vesicularis</a></td><td style=\"color: #cccccc\">Brevundimonas diminuta/Brevundimonas vesicularis</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-burkholderia-cepacia-group\">burkholderia-cepacia-group</a></td><td style=\"color: #cccccc\">Burkholderia cepacia group</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-cedecia-lapagei\">cedecia-lapagei</a></td><td style=\"color: #cccccc\">Cedecia lapagei</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-cronobacter-sakazakii-group\">cronobacter-sakazakii-group</a></td><td style=\"color: #cccccc\">Cronobacter sakazakii group</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-dermacoccus-nishinomiyaensis-kytococcus-sedentarius\">dermacoccus-nishinomiyaensis-kytococcus-sedentarius</a></td><td style=\"color: #cccccc\">Dermacoccus nishinomiyaensis/Kytococcus sedentarius</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-enterococcus-spp\">enterococcus-spp</a></td><td style=\"color: #cccccc\">Enterococcus spp.</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-klebsiella-pneumoniae-subsp-pneumoniae\">klebsiella-pneumoniae-subsp-pneumoniae</a></td><td style=\"color: #cccccc\">Klebsiella pneumoniae subsp. pneumoniae</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-klebsiella-spp\">klebsiella-spp</a></td><td style=\"color: #cccccc\">Klebsiella spp.</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-leuconostoc-mesenteroides-subsp-cremoris\">leuconostoc-mesenteroides-subsp-cremoris</a></td><td style=\"color: #cccccc\">Leuconostoc mesenteroides subsp. cremoris</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-leuconostoc-mesenteroides-subsp-dextranicum\">leuconostoc-mesenteroides-subsp-dextranicum</a></td><td style=\"color: #cccccc\">Leuconostoc mesenteroides subsp. dextranicum</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-methylobacterium-spp\">methylobacterium-spp</a></td><td style=\"color: #cccccc\">Methylobacterium spp.</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-moraxella-group\">moraxella-group</a></td><td style=\"color: #cccccc\">Moraxella group</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-morganella-morganii-subsp-morganii\">morganella-morganii-subsp-morganii</a></td><td style=\"color: #cccccc\">Morganella morganii subsp. morganii</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-morganella-morganii-subsp-sibonii\">morganella-morganii-subsp-sibonii</a></td><td style=\"color: #cccccc\">Morganella morganii subsp. sibonii</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-myroides-spp\">myroides-spp</a></td><td style=\"color: #cccccc\">Myroides spp.</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-neisseria-animaloris-zoodegmatis\">neisseria-animaloris-zoodegmatis</a></td><td style=\"color: #cccccc\">Neisseria animaloris/Neisseria zoodegmatis</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-pandoraea-spp\">pandoraea-spp</a></td><td style=\"color: #cccccc\">Pandoraea spp.</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-pantoea-spp\">pantoea-spp</a></td><td style=\"color: #cccccc\">Pantoea spp.</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-pseudomonas-spp\">pseudomonas-spp</a></td><td style=\"color: #cccccc\">Pseudomonas spp.</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-salmonella-group\">salmonella-group</a></td><td style=\"color: #cccccc\">Salmonella group</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-serratia-liquefaciens-group\">serratia-liquefaciens-group</a></td><td style=\"color: #cccccc\">Serratia liquefaciens group</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-shigella-group\">shigella-group</a></td><td style=\"color: #cccccc\">Shigella group</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-staphylococcus-cohnii-subsp-cohnii\">staphylococcus-cohnii-subsp-cohnii</a></td><td style=\"color: #cccccc\">Staphylococcus cohnii subsp. cohnii</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-staphylococcus-hominis-subsp-hominis\">staphylococcus-hominis-subsp-hominis</a></td><td style=\"color: #cccccc\">Staphylococcus hominis subsp. hominis</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-streptococcus-constellatus-subsp-pharyngis\">streptococcus-constellatus-subsp-pharyngis</a></td><td style=\"color: #cccccc\">Streptococcus constellatus subsp. pharyngis</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-streptococcus-infantarius-subsp-coli\">streptococcus-infantarius-subsp-coli</a></td><td style=\"color: #cccccc\">Streptococcus infantarius subsp. coli</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-streptococcus-mitis-oralis\">streptococcus-mitis-oralis</a></td><td style=\"color: #cccccc\">Streptococcus mitis/Streptococcus oralis</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-vagococcus-fluviali\">vagococcus-fluviali</a></td><td style=\"color: #cccccc\">Vagococcus fluviali</td></tr><tr><td><a href=\"CodeSystem-botswana-amr-local-organism-cs.html#botswana-amr-local-organism-cs-yersinia-enterocolitica-frederiksenii\">yersinia-enterocolitica-frederiksenii</a></td><td style=\"color: #cccccc\">Yersinia enterocolitica/Yersinia frederiksenii</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "BotswanaAMROrganismVS"] ; # 
+  fhir:title [ fhir:v "Botswana AMR Organism ValueSet"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-06-25T00:42:48-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "University of Botswana Partnership"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "University of Botswana Partnership" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/Dokotela/bw-amr-ig" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Organisms identified in Botswana AMR surveillance using SNOMED CT codes and local codes for combinations"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "413414001" ] ;
+         fhir:display [ fhir:v "Achromobacter denitrificans" ]
+       ] [
+         fhir:code [ fhir:v "413424009" ] ;
+         fhir:display [ fhir:v "Achromobacter xylosoxidans" ]
+       ] [
+         fhir:code [ fhir:v "91288006" ] ;
+         fhir:display [ fhir:v "Acinetobacter baumannii" ]
+       ] [
+         fhir:code [ fhir:v "77045006" ] ;
+         fhir:display [ fhir:v "Acinetobacter haemolyticus" ]
+       ] [
+         fhir:code [ fhir:v "13879009" ] ;
+         fhir:display [ fhir:v "Acinetobacter junii" ]
+       ] [
+         fhir:code [ fhir:v "83088009" ] ;
+         fhir:display [ fhir:v "Acinetobacter lwoffii" ]
+       ] [
+         fhir:code [ fhir:v "113381003" ] ;
+         fhir:display [ fhir:v "Acinetobacter radioresistens" ]
+       ] [
+         fhir:code [ fhir:v "424791004" ] ;
+         fhir:display [ fhir:v "Acinetobacter ursingii" ]
+       ] [
+         fhir:code [ fhir:v "78803006" ] ;
+         fhir:display [ fhir:v "Aerococcus viridans" ]
+       ] [
+         fhir:code [ fhir:v "85823000" ] ;
+         fhir:display [ fhir:v "Aeromonas hydrophila" ]
+       ] [
+         fhir:code [ fhir:v "115036005" ] ;
+         fhir:display [ fhir:v "Aeromonas caviae" ]
+       ] [
+         fhir:code [ fhir:v "30334005" ] ;
+         fhir:display [ fhir:v "Aeromonas salmonicida" ]
+       ] [
+         fhir:code [ fhir:v "43731003" ] ;
+         fhir:display [ fhir:v "Aeromonas sobria" ]
+       ] [
+         fhir:code [ fhir:v "9281006" ] ;
+         fhir:display [ fhir:v "Aeromonas veronii" ]
+       ] [
+         fhir:code [ fhir:v "25223004" ] ;
+         fhir:display [ fhir:v "Alcaligenes faecalis" ]
+       ] [
+         fhir:code [ fhir:v "396454000" ] ;
+         fhir:display [ fhir:v "Alloiococcus otitis" ]
+       ] [
+         fhir:code [ fhir:v "113495004" ] ;
+         fhir:display [ fhir:v "Bordetella hinzii" ]
+       ] [
+         fhir:code [ fhir:v "113689009" ] ;
+         fhir:display [ fhir:v "Brevundimonas diminuta" ]
+       ] [
+         fhir:code [ fhir:v "113690000" ] ;
+         fhir:display [ fhir:v "Brevundimonas vesicularis" ]
+       ] [
+         fhir:code [ fhir:v "72829003" ] ;
+         fhir:display [ fhir:v "Brucella melitensis" ]
+       ] [
+         fhir:code [ fhir:v "131281002" ] ;
+         fhir:display [ fhir:v "Burkholderia cepacia complex" ]
+       ] [
+         fhir:code [ fhir:v "113674000" ] ;
+         fhir:display [ fhir:v "Burkholderia mallei" ]
+       ] [
+         fhir:code [ fhir:v "10969007" ] ;
+         fhir:display [ fhir:v "Buttiauxella agrestis" ]
+       ] [
+         fhir:code [ fhir:v "2345009" ] ;
+         fhir:display [ fhir:v "Cedecea lapagei" ]
+       ] [
+         fhir:code [ fhir:v "11042002" ] ;
+         fhir:display [ fhir:v "Chromobacterium violaceum" ]
+       ] [
+         fhir:code [ fhir:v "113549008" ] ;
+         fhir:display [ fhir:v "Chryseobacterium indologenes" ]
+       ] [
+         fhir:code [ fhir:v "55744003" ] ;
+         fhir:display [ fhir:v "Citrobacter amalonaticus" ]
+       ] [
+         fhir:code [ fhir:v "114262000" ] ;
+         fhir:display [ fhir:v "Citrobacter braakii" ]
+       ] [
+         fhir:code [ fhir:v "6265002" ] ;
+         fhir:display [ fhir:v "Citrobacter freundii" ]
+       ] [
+         fhir:code [ fhir:v "114264004" ] ;
+         fhir:display [ fhir:v "Citrobacter koseri" ]
+       ] [
+         fhir:code [ fhir:v "114265003" ] ;
+         fhir:display [ fhir:v "Citrobacter sedlakii" ]
+       ] [
+         fhir:code [ fhir:v "114442006" ] ;
+         fhir:display [ fhir:v "Citrobacter werkmanii" ]
+       ] [
+         fhir:code [ fhir:v "116197008" ] ;
+         fhir:display [ fhir:v "Staphylococcus, coagulase negative" ]
+       ] [
+         fhir:code [ fhir:v "43721005" ] ;
+         fhir:display [ fhir:v "Comamonas testosteroni" ]
+       ] [
+         fhir:code [ fhir:v "445562004" ] ;
+         fhir:display [ fhir:v "Cronobacter sakazakii" ]
+       ] [
+         fhir:code [ fhir:v "20432002" ] ;
+         fhir:display [ fhir:v "Delftia acidovorans" ]
+       ] [
+         fhir:code [ fhir:v "113776005" ] ;
+         fhir:display [ fhir:v "Dermacoccus nishinomiyaensis" ]
+       ] [
+         fhir:code [ fhir:v "113775009" ] ;
+         fhir:display [ fhir:v "Kytococcus sedentarius" ]
+       ] [
+         fhir:code [ fhir:v "425774009" ] ;
+         fhir:display [ fhir:v "Elizabethkingia meningoseptica" ]
+       ] [
+         fhir:code [ fhir:v "62592009" ] ;
+         fhir:display [ fhir:v "Klebsiella aerogenes" ]
+       ] [
+         fhir:code [ fhir:v "114451003" ] ;
+         fhir:display [ fhir:v "Enterobacter cancerogenus" ]
+       ] [
+         fhir:code [ fhir:v "414102007" ] ;
+         fhir:display [ fhir:v "Enterobacter cloacae complex" ]
+       ] [
+         fhir:code [ fhir:v "721950003" ] ;
+         fhir:display [ fhir:v "Enterobacter cloacae subsp. cloacae" ]
+       ] [
+         fhir:code [ fhir:v "56813009" ] ;
+         fhir:display [ fhir:v "Enterobacter cloacae subspecies dissolvens" ]
+       ] [
+         fhir:code [ fhir:v "30949009" ] ;
+         fhir:display [ fhir:v "Enterococcus casseliflavus" ]
+       ] [
+         fhir:code [ fhir:v "46464008" ] ;
+         fhir:display [ fhir:v "Enterococcus durans" ]
+       ] [
+         fhir:code [ fhir:v "1187454003" ] ;
+         fhir:display [ fhir:v "Enterococcus faecalis" ]
+       ] [
+         fhir:code [ fhir:v "90272000" ] ;
+         fhir:display [ fhir:v "Enterococcus faecium" ]
+       ] [
+         fhir:code [ fhir:v "53233007" ] ;
+         fhir:display [ fhir:v "Enterococcus gallinarum" ]
+       ] [
+         fhir:code [ fhir:v "2785000" ] ;
+         fhir:display [ fhir:v "Enterococcus" ]
+       ] [
+         fhir:code [ fhir:v "112283007" ] ;
+         fhir:display [ fhir:v "Escherichia coli" ]
+       ] [
+         fhir:code [ fhir:v "19027003" ] ;
+         fhir:display [ fhir:v "Ewingella americana" ]
+       ] [
+         fhir:code [ fhir:v "113765006" ] ;
+         fhir:display [ fhir:v "Gemella morbillorum" ]
+       ] [
+         fhir:code [ fhir:v "76694001" ] ;
+         fhir:display [ fhir:v "Hafnia alvei" ]
+       ] [
+         fhir:code [ fhir:v "40886007" ] ;
+         fhir:display [ fhir:v "Klebsiella oxytoca" ]
+       ] [
+         fhir:code [ fhir:v "56415008" ] ;
+         fhir:display [ fhir:v "Klebsiella pneumoniae" ]
+       ] [
+         fhir:code [ fhir:v "65186004" ] ;
+         fhir:display [ fhir:v "Klebsiella pneumoniae subsp. ozaenae" ]
+       ] [
+         fhir:code [ fhir:v "75032006" ] ;
+         fhir:display [ fhir:v "Klebsiella" ]
+       ] [
+         fhir:code [ fhir:v "58493008" ] ;
+         fhir:display [ fhir:v "Kluyvera ascorbata" ]
+       ] [
+         fhir:code [ fhir:v "32547006" ] ;
+         fhir:display [ fhir:v "Kluyvera cryocrescens" ]
+       ] [
+         fhir:code [ fhir:v "113772007" ] ;
+         fhir:display [ fhir:v "Rothia kristinae" ]
+       ] [
+         fhir:code [ fhir:v "432451007" ] ;
+         fhir:display [ fhir:v "Kocuria rhizophila" ]
+       ] [
+         fhir:code [ fhir:v "113773002" ] ;
+         fhir:display [ fhir:v "Kocuria rosea" ]
+       ] [
+         fhir:code [ fhir:v "113774008" ] ;
+         fhir:display [ fhir:v "Kocuria varians" ]
+       ] [
+         fhir:code [ fhir:v "27716002" ] ;
+         fhir:display [ fhir:v "Lactococcus garvieae" ]
+       ] [
+         fhir:code [ fhir:v "57459006" ] ;
+         fhir:display [ fhir:v "Leclercia adecarboxylata" ]
+       ] [
+         fhir:code [ fhir:v "84221003" ] ;
+         fhir:display [ fhir:v "Lelliottia amnigena" ]
+       ] [
+         fhir:code [ fhir:v "71403009" ] ;
+         fhir:display [ fhir:v "Leuconostoc mesenteroides" ]
+       ] [
+         fhir:code [ fhir:v "243235006" ] ;
+         fhir:display [ fhir:v "Leuconostoc pseudomesenteroides" ]
+       ] [
+         fhir:code [ fhir:v "48331004" ] ;
+         fhir:display [ fhir:v "Listeria innocua" ]
+       ] [
+         fhir:code [ fhir:v "38395008" ] ;
+         fhir:display [ fhir:v "Methylobacterium" ]
+       ] [
+         fhir:code [ fhir:v "48299003" ] ;
+         fhir:display [ fhir:v "Micrococcus luteus" ]
+       ] [
+         fhir:code [ fhir:v "36361003" ] ;
+         fhir:display [ fhir:v "Moraxella" ]
+       ] [
+         fhir:code [ fhir:v "243301005" ] ;
+         fhir:display [ fhir:v "Morganella morganii" ]
+       ] [
+         fhir:code [ fhir:v "115127008" ] ;
+         fhir:display [ fhir:v "Myroides" ]
+       ] [
+         fhir:code [ fhir:v "442202005" ] ;
+         fhir:display [ fhir:v "Neisseria animaloris" ]
+       ] [
+         fhir:code [ fhir:v "449121005" ] ;
+         fhir:display [ fhir:v "Neisseria zoodegmatis" ]
+       ] [
+         fhir:code [ fhir:v "11309009" ] ;
+         fhir:display [ fhir:v "Oligella ureolytica" ]
+       ] [
+         fhir:code [ fhir:v "414998001" ] ;
+         fhir:display [ fhir:v "Pandoraea" ]
+       ] [
+         fhir:code [ fhir:v "115013001" ] ;
+         fhir:display [ fhir:v "Pantoea" ]
+       ] [
+         fhir:code [ fhir:v "10879005" ] ;
+         fhir:display [ fhir:v "Pasteurella multocida" ]
+       ] [
+         fhir:code [ fhir:v "32562008" ] ;
+         fhir:display [ fhir:v "Rodentibacter pneumotropicus" ]
+       ] [
+         fhir:code [ fhir:v "3388005" ] ;
+         fhir:display [ fhir:v "Pasteurella testudinis" ]
+       ] [
+         fhir:code [ fhir:v "417592004" ] ;
+         fhir:display [ fhir:v "Proteus hauseri" ]
+       ] [
+         fhir:code [ fhir:v "73457008" ] ;
+         fhir:display [ fhir:v "Proteus mirabilis" ]
+       ] [
+         fhir:code [ fhir:v "45298005" ] ;
+         fhir:display [ fhir:v "Proteus penneri" ]
+       ] [
+         fhir:code [ fhir:v "14196002" ] ;
+         fhir:display [ fhir:v "Providencia rettgeri" ]
+       ] [
+         fhir:code [ fhir:v "1445008" ] ;
+         fhir:display [ fhir:v "Providencia stuartii" ]
+       ] [
+         fhir:code [ fhir:v "52499004" ] ;
+         fhir:display [ fhir:v "Pseudomonas aeruginosa" ]
+       ] [
+         fhir:code [ fhir:v "46247008" ] ;
+         fhir:display [ fhir:v "Pseudomonas alcaligenes" ]
+       ] [
+         fhir:code [ fhir:v "39289003" ] ;
+         fhir:display [ fhir:v "Pseudomonas fluorescens" ]
+       ] [
+         fhir:code [ fhir:v "33919008" ] ;
+         fhir:display [ fhir:v "Pseudomonas luteola" ]
+       ] [
+         fhir:code [ fhir:v "59419001" ] ;
+         fhir:display [ fhir:v "Pseudomonas mendocina" ]
+       ] [
+         fhir:code [ fhir:v "53053000" ] ;
+         fhir:display [ fhir:v "Pseudomonas oleovorans" ]
+       ] [
+         fhir:code [ fhir:v "113931000" ] ;
+         fhir:display [ fhir:v "Pseudomonas oryzihabitans" ]
+       ] [
+         fhir:code [ fhir:v "68608003" ] ;
+         fhir:display [ fhir:v "Pseudomonas putida" ]
+       ] [
+         fhir:code [ fhir:v "58024003" ] ;
+         fhir:display [ fhir:v "Pseudomonas stutzeri" ]
+       ] [
+         fhir:code [ fhir:v "57032008" ] ;
+         fhir:display [ fhir:v "Pseudomonas" ]
+       ] [
+         fhir:code [ fhir:v "415235000" ] ;
+         fhir:display [ fhir:v "Ralstonia insidiosa" ]
+       ] [
+         fhir:code [ fhir:v "114053008" ] ;
+         fhir:display [ fhir:v "Ralstonia pickettii" ]
+       ] [
+         fhir:code [ fhir:v "416832000" ] ;
+         fhir:display [ fhir:v "Raoultella ornithinolytica" ]
+       ] [
+         fhir:code [ fhir:v "416264004" ] ;
+         fhir:display [ fhir:v "Raoultella planticola" ]
+       ] [
+         fhir:code [ fhir:v "438107000" ] ;
+         fhir:display [ fhir:v "Rhizobium radiobacter" ]
+       ] [
+         fhir:code [ fhir:v "113710007" ] ;
+         fhir:display [ fhir:v "Roseomonas gilardii" ]
+       ] [
+         fhir:code [ fhir:v "397502001" ] ;
+         fhir:display [ fhir:v "Salmonella enterica subsp. arizonae" ]
+       ] [
+         fhir:code [ fhir:v "398428002" ] ;
+         fhir:display [ fhir:v "Salmonella enterica subsp. diarizonae" ]
+       ] [
+         fhir:code [ fhir:v "398508004" ] ;
+         fhir:display [ fhir:v "Salmonella enterica subsp. enterica" ]
+       ] [
+         fhir:code [ fhir:v "370576005" ] ;
+         fhir:display [ fhir:v "Salmonella Gallinarum" ]
+       ] [
+         fhir:code [ fhir:v "27268008" ] ;
+         fhir:display [ fhir:v "Salmonella" ]
+       ] [
+         fhir:code [ fhir:v "802004" ] ;
+         fhir:display [ fhir:v "Serratia ficaria" ]
+       ] [
+         fhir:code [ fhir:v "112329006" ] ;
+         fhir:display [ fhir:v "Serratia fonticola" ]
+       ] [
+         fhir:code [ fhir:v "722258003" ] ;
+         fhir:display [ fhir:v "Serratia liquefaciens complex" ]
+       ] [
+         fhir:code [ fhir:v "33522002" ] ;
+         fhir:display [ fhir:v "Serratia marcescens" ]
+       ] [
+         fhir:code [ fhir:v "10413007" ] ;
+         fhir:display [ fhir:v "Serratia odorifera" ]
+       ] [
+         fhir:code [ fhir:v "28955009" ] ;
+         fhir:display [ fhir:v "Serratia plymuthica" ]
+       ] [
+         fhir:code [ fhir:v "55825002" ] ;
+         fhir:display [ fhir:v "Serratia rubidaea" ]
+       ] [
+         fhir:code [ fhir:v "113700003" ] ;
+         fhir:display [ fhir:v "Shewanella putrefaciens" ]
+       ] [
+         fhir:code [ fhir:v "77352002" ] ;
+         fhir:display [ fhir:v "Shigella" ]
+       ] [
+         fhir:code [ fhir:v "4298009" ] ;
+         fhir:display [ fhir:v "Shigella sonnei" ]
+       ] [
+         fhir:code [ fhir:v "61675006" ] ;
+         fhir:display [ fhir:v "Sphingobacterium spiritivorum" ]
+       ] [
+         fhir:code [ fhir:v "113954009" ] ;
+         fhir:display [ fhir:v "Sphingobacterium thalpophilum" ]
+       ] [
+         fhir:code [ fhir:v "243350004" ] ;
+         fhir:display [ fhir:v "Sphingomonas paucimobilis" ]
+       ] [
+         fhir:code [ fhir:v "3092008" ] ;
+         fhir:display [ fhir:v "Staphylococcus aureus" ]
+       ] [
+         fhir:code [ fhir:v "45654003" ] ;
+         fhir:display [ fhir:v "Staphylococcus auricularis" ]
+       ] [
+         fhir:code [ fhir:v "40347003" ] ;
+         fhir:display [ fhir:v "Staphylococcus capitis" ]
+       ] [
+         fhir:code [ fhir:v "56629004" ] ;
+         fhir:display [ fhir:v "Staphylococcus chromogenes" ]
+       ] [
+         fhir:code [ fhir:v "66872005" ] ;
+         fhir:display [ fhir:v "Staphylococcus cohnii" ]
+       ] [
+         fhir:code [ fhir:v "60875001" ] ;
+         fhir:display [ fhir:v "Staphylococcus epidermidis" ]
+       ] [
+         fhir:code [ fhir:v "8056006" ] ;
+         fhir:display [ fhir:v "Staphylococcus gallinarum" ]
+       ] [
+         fhir:code [ fhir:v "83452006" ] ;
+         fhir:display [ fhir:v "Staphylococcus haemolyticus" ]
+       ] [
+         fhir:code [ fhir:v "44827007" ] ;
+         fhir:display [ fhir:v "Staphylococcus hominis" ]
+       ] [
+         fhir:code [ fhir:v "40253001" ] ;
+         fhir:display [ fhir:v "Mammaliicoccus lentus" ]
+       ] [
+         fhir:code [ fhir:v "427316000" ] ;
+         fhir:display [ fhir:v "Staphylococcus pseudintermedius" ]
+       ] [
+         fhir:code [ fhir:v "70806002" ] ;
+         fhir:display [ fhir:v "Mammaliicoccus sciuri" ]
+       ] [
+         fhir:code [ fhir:v "63550006" ] ;
+         fhir:display [ fhir:v "Staphylococcus warneri" ]
+       ] [
+         fhir:code [ fhir:v "113697002" ] ;
+         fhir:display [ fhir:v "Stenotrophomonas maltophilia" ]
+       ] [
+         fhir:code [ fhir:v "43492007" ] ;
+         fhir:display [ fhir:v "Group B streptococcus" ]
+       ] [
+         fhir:code [ fhir:v "34228005" ] ;
+         fhir:display [ fhir:v "Streptococcus alactolyticus" ]
+       ] [
+         fhir:code [ fhir:v "44304009" ] ;
+         fhir:display [ fhir:v "Streptococcus anginosus" ]
+       ] [
+         fhir:code [ fhir:v "76199005" ] ;
+         fhir:display [ fhir:v "Streptococcus constellatus" ]
+       ] [
+         fhir:code [ fhir:v "421253004" ] ;
+         fhir:display [ fhir:v "Streptococcus gallolyticus subspecies pasteurianus" ]
+       ] [
+         fhir:code [ fhir:v "415603007" ] ;
+         fhir:display [ fhir:v "Streptococcus infantarius" ]
+       ] [
+         fhir:code [ fhir:v "79050007" ] ;
+         fhir:display [ fhir:v "Streptococcus iniae" ]
+       ] [
+         fhir:code [ fhir:v "62170002" ] ;
+         fhir:display [ fhir:v "Streptococcus intermedius" ]
+       ] [
+         fhir:code [ fhir:v "57997003" ] ;
+         fhir:display [ fhir:v "Streptococcus mitis" ]
+       ] [
+         fhir:code [ fhir:v "19870004" ] ;
+         fhir:display [ fhir:v "Streptococcus oralis" ]
+       ] [
+         fhir:code [ fhir:v "214001" ] ;
+         fhir:display [ fhir:v "Streptococcus mutans" ]
+       ] [
+         fhir:code [ fhir:v "113990002" ] ;
+         fhir:display [ fhir:v "Streptococcus parasanguinis" ]
+       ] [
+         fhir:code [ fhir:v "438187002" ] ;
+         fhir:display [ fhir:v "Streptococcus pluranimalium" ]
+       ] [
+         fhir:code [ fhir:v "9861002" ] ;
+         fhir:display [ fhir:v "Streptococcus pneumoniae" ]
+       ] [
+         fhir:code [ fhir:v "59512008" ] ;
+         fhir:display [ fhir:v "Streptococcus porcinus" ]
+       ] [
+         fhir:code [ fhir:v "429189003" ] ;
+         fhir:display [ fhir:v "Streptococcus pseudoporcinus" ]
+       ] [
+         fhir:code [ fhir:v "84684000" ] ;
+         fhir:display [ fhir:v "Streptococcus salivarius subsp. salivarius" ]
+       ] [
+         fhir:code [ fhir:v "113993000" ] ;
+         fhir:display [ fhir:v "Streptococcus sanguinis" ]
+       ] [
+         fhir:code [ fhir:v "7912006" ] ;
+         fhir:display [ fhir:v "Streptococcus suis" ]
+       ] [
+         fhir:code [ fhir:v "23310006" ] ;
+         fhir:display [ fhir:v "Streptococcus salivarius subsp. thermophilus" ]
+       ] [
+         fhir:code [ fhir:v "113997004" ] ;
+         fhir:display [ fhir:v "Streptococcus thoraltensis" ]
+       ] [
+         fhir:code [ fhir:v "13250005" ] ;
+         fhir:display [ fhir:v "Streptococcus uberis" ]
+       ] [
+         fhir:code [ fhir:v "113998009" ] ;
+         fhir:display [ fhir:v "Streptococcus vestibularis" ]
+       ] [
+         fhir:code [ fhir:v "116418005" ] ;
+         fhir:display [ fhir:v "Vagococcus fluvialis" ]
+       ] [
+         fhir:code [ fhir:v "43199008" ] ;
+         fhir:display [ fhir:v "Vibrio fluvialis" ]
+       ] [
+         fhir:code [ fhir:v "11736008" ] ;
+         fhir:display [ fhir:v "Vibrio parahaemolyticus" ]
+       ] [
+         fhir:code [ fhir:v "55905000" ] ;
+         fhir:display [ fhir:v "Vibrio vulnificus" ]
+       ] [
+         fhir:code [ fhir:v "65255000" ] ;
+         fhir:display [ fhir:v "Yersinia enterocolitica" ]
+       ] [
+         fhir:code [ fhir:v "85159008" ] ;
+         fhir:display [ fhir:v "Yersinia frederiksenii" ]
+       ] [
+         fhir:code [ fhir:v "91042006" ] ;
+         fhir:display [ fhir:v "Yersinia kristensenii" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "acinetobacter-baumannii-complex" ]
+       ] [
+         fhir:code [ fhir:v "aeromonas-hydrophila-punctata" ]
+       ] [
+         fhir:code [ fhir:v "alcaligenes-faecalis-subsp-faecalis" ]
+       ] [
+         fhir:code [ fhir:v "brevundimonas-diminuta-vesicularis" ]
+       ] [
+         fhir:code [ fhir:v "burkholderia-cepacia-group" ]
+       ] [
+         fhir:code [ fhir:v "cedecia-lapagei" ]
+       ] [
+         fhir:code [ fhir:v "cronobacter-sakazakii-group" ]
+       ] [
+         fhir:code [ fhir:v "dermacoccus-nishinomiyaensis-kytococcus-sedentarius" ]
+       ] [
+         fhir:code [ fhir:v "enterococcus-spp" ]
+       ] [
+         fhir:code [ fhir:v "klebsiella-pneumoniae-subsp-pneumoniae" ]
+       ] [
+         fhir:code [ fhir:v "klebsiella-spp" ]
+       ] [
+         fhir:code [ fhir:v "leuconostoc-mesenteroides-subsp-cremoris" ]
+       ] [
+         fhir:code [ fhir:v "leuconostoc-mesenteroides-subsp-dextranicum" ]
+       ] [
+         fhir:code [ fhir:v "methylobacterium-spp" ]
+       ] [
+         fhir:code [ fhir:v "moraxella-group" ]
+       ] [
+         fhir:code [ fhir:v "morganella-morganii-subsp-morganii" ]
+       ] [
+         fhir:code [ fhir:v "morganella-morganii-subsp-sibonii" ]
+       ] [
+         fhir:code [ fhir:v "myroides-spp" ]
+       ] [
+         fhir:code [ fhir:v "neisseria-animaloris-zoodegmatis" ]
+       ] [
+         fhir:code [ fhir:v "pandoraea-spp" ]
+       ] [
+         fhir:code [ fhir:v "pantoea-spp" ]
+       ] [
+         fhir:code [ fhir:v "pseudomonas-spp" ]
+       ] [
+         fhir:code [ fhir:v "salmonella-group" ]
+       ] [
+         fhir:code [ fhir:v "serratia-liquefaciens-group" ]
+       ] [
+         fhir:code [ fhir:v "shigella-group" ]
+       ] [
+         fhir:code [ fhir:v "staphylococcus-cohnii-subsp-cohnii" ]
+       ] [
+         fhir:code [ fhir:v "staphylococcus-hominis-subsp-hominis" ]
+       ] [
+         fhir:code [ fhir:v "streptococcus-constellatus-subsp-pharyngis" ]
+       ] [
+         fhir:code [ fhir:v "streptococcus-infantarius-subsp-coli" ]
+       ] [
+         fhir:code [ fhir:v "streptococcus-mitis-oralis" ]
+       ] [
+         fhir:code [ fhir:v "vagococcus-fluviali" ]
+       ] [
+         fhir:code [ fhir:v "yersinia-enterocolitica-frederiksenii" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

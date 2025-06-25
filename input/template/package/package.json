@@ -1,11 +1,13 @@
 {
-  "name": "bw-amr-template",
-  "version": "0.1.0",
+  "name": "bw-amr-ig-template",
   "type": "fhir.template",
   "license": "CC0-1.0",
-  "description": "Botswana AMR Template with logos",
-  "base": "fhir.base.template",
+  "description": "Custom FHIR IG template for Botswana AMR Implementation Guide",
+  "author": "University of Botswana Partnership",
+  "canonical": "http://bw.health.gov/fhir/templates/bw-amr-ig-template",
+  "base": "hl7.base.template",
   "dependencies": {
-    "fhir.base.template": "current"
-  }
+    "hl7.base.template": "current"
+  },
+  "version": "0.1.0"
 }

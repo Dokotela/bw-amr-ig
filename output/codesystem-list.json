@@ -1,3 +1,20 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [
+    {
+      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BotswanaAMRLocalMethodCS",
+      "title" : "Botswana AMR Local Identification Method Codes",
+      "description" : "Local codes for identification methods used in Botswana AMR surveillance"
+    },
+    {
+      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BotswanaAMRLocalOrganismCS",
+      "title" : "Botswana AMR Local Organism Codes",
+      "description" : "Local codes for organism combinations and complex designations used in Botswana AMR surveillance"
+    }
+  ]
 }

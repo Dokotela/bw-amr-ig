@@ -1,6 +1,28 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BotswanaAMRLocalMethodCS",
+      "title" : "Botswana AMR Local Identification Method Codes",
+      "description" : "Local codes for identification methods used in Botswana AMR surveillance",
+      "uses" : {
+      },
+      "ValueSet-botswana-amr-identification-method-vs.html" : "Botswana AMR Organism Identification Methods"
+    },
+    {
+      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BotswanaAMRLocalOrganismCS",
+      "title" : "Botswana AMR Local Organism Codes",
+      "description" : "Local codes for organism combinations and complex designations used in Botswana AMR surveillance",
+      "uses" : {
+      },
+      "ValueSet-botswana-amr-organism-vs.html" : "Botswana AMR Organism ValueSet"
+    },
+    {
       "url" : "http://hl7.org/fhir/diagnostic-report-status",
       "version" : "4.3.0",
       "status" : "draft",
@@ -46,9 +68,10 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.html" : "Botswana AMR Antibiotic Susceptibility LOINC",
+      "ValueSet-botswana-amr-special-test-vs.html" : "Botswana AMR Special Tests",
+      "http://hl7.org/fhir/R4B/valueset-report-codes.html" : "LOINC Diagnostic Report Codes",
       "http://hl7.org/fhir/R4B/valueset-observation-codes.html" : "LOINC Codes",
-      "http://hl7.org/fhir/R4B/valueset-report-codes.html" : "LOINC Diagnostic Report Codes"
+      "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.html" : "Botswana AMR Antibiotic Susceptibility LOINC"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -60,12 +83,17 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4B/valueset-specimen-container-type.html" : "SpecimenContainer",
-      "http://hl7.org/fhir/R4B/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
       "http://hl7.org/fhir/R4B/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
+      "ValueSet-botswana-amr-test-result-status-vs.html" : "Botswana AMR Test Result Status",
       "http://hl7.org/fhir/R4B/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "ValueSet-botswana-amr-gram-stain-result-vs.html" : "Botswana AMR Gram Stain Results",
+      "ValueSet-botswana-amr-organism-vs.html" : "Botswana AMR Organism ValueSet",
+      "ValueSet-botswana-amr-specimen-site-vs.html" : "Botswana AMR Specimen Collection Sites",
+      "http://hl7.org/fhir/R4B/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+      "http://hl7.org/fhir/R4B/valueset-specimen-container-type.html" : "SpecimenContainer",
       "http://hl7.org/fhir/R4B/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4B/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes"
+      "http://hl7.org/fhir/R4B/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "ValueSet-botswana-amr-identification-method-vs.html" : "Botswana AMR Organism Identification Methods"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
@@ -185,8 +213,8 @@
       "oids" : ["2.16.840.1.113883.5.83"],
       "uses" : {
       },
-      "ValueSet-botswana-amr-interpretation.html" : "Botswana AMR Interpretation",
-      "http://hl7.org/fhir/R4B/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
+      "http://hl7.org/fhir/R4B/valueset-observation-interpretation.html" : "Observation Interpretation Codes",
+      "ValueSet-botswana-amr-interpretation.html" : "Botswana AMR Interpretation"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-SpecimenType",

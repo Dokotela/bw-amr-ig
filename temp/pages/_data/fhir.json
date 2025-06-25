@@ -5,7 +5,7 @@
   "igName" : "BWAMRIG",
   "packageId" : "bw-amr-ig",
   "igVer" : "0.1.0",
-  "errorCount" : 14,
+  "errorCount" : 33,
   "version" : "4.3.0",
   "releaseLabel" : "0.1.0",
   "releaseLabellang" : {
@@ -15,10 +15,10 @@
   "toolingVersion" : "5.0.0",
   "toolingRevision" : "3",
   "toolingVersionFull" : "5.0.0 (3)",
-  "genDate" : "Tue, Jun 17, 2025 18:14-0400",
-  "genDay" : "17/06/2025",
-  "totalFiles" : 7,
-  "processedFiles" : 34,
+  "genDate" : "Wed, Jun 25, 2025 00:43-0400",
+  "genDay" : "25/06/2025",
+  "totalFiles" : 18,
+  "processedFiles" : 31,
   "repoSource" : "https://github.com/Dokotela/bw-amr-ig.git",
   "resourceTypes" : [
     "Account",
@@ -250,7 +250,7 @@
         "telecom" : ["https://github.com/Dokotela/bw-amr-ig"]
       }
     ],
-    "date" : "2025-06-17T18:14:37-04:00",
+    "date" : "2025-06-25T00:42:48-04:00",
     "description" : "FHIR Implementation Guide for the Botswana AMR Data Analytics Platform",
     "descriptionlang" : {
     },

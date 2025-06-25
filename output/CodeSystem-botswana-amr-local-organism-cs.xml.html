@@ -1,0 +1,522 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Botswana AMR Local Organism Codes - XML Representation - Botswana AMR Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <style>
+html { font-size: 18px !important; }
+body { font-size: 18px !important; }
+* { font-size: inherit !important; }
+p, li, div, span, td, th { font-size: 18px !important; line-height: 1.6 !important; }
+
+/* Make headings smaller */
+h1 { font-size: 1.3em !important; }
+h2 { font-size: 1.2em !important; }
+h3 { font-size: 1.1em !important; }
+h4 { font-size: 1.05em !important; }
+h5 { font-size: 1.0em !important; }
+h6 { font-size: 0.95em !important; }
+
+/* Target specific elements that are too big */
+.copy-text { font-size: 16px !important; }
+table.colsd td { font-size: 16px !important; }
+table.colsd i { font-size: 16px !important; }
+
+code, pre { font-size: 16px !important; }
+
+/* Add more space between the title area and navigation menu */
+.navbar, .nav-tabs, .page-header + .nav, .breadcrumb {
+  margin-top: 20px !important;
+}
+
+/* Hide HL7 logo */
+#hl7-nav, #hl7-logo { display: none !important; }
+
+/* Style the existing title area with background and logos */
+#ig-status {
+  background-image: url('assets/images/flag_of_botswana.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Add overlay for readability */
+#ig-status::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+/* Style the container paragraph */
+#ig-status p {
+  color: white !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+  z-index: 2;
+  position: relative;
+  flex-grow: 1;
+  text-align: center;
+  margin: 0 20px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Space out the title and version specifically */
+#ig-status p span:first-child {
+  margin-bottom: 15px !important;
+  display: block;
+}
+
+#ig-status p br + span {
+  margin-top: 15px !important;
+  display: block;
+}
+
+/* Add logos as pseudo-elements */
+#ig-status::after {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+  background-image: url('assets/images/bup-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(255,255,255,0.95);
+  border-radius: 8px;
+  z-index: 2;
+}
+
+/* Add right logo */
+#ig-status {
+  background-image: 
+    url('assets/images/chop-logo.png'),
+    url('assets/images/flag_of_botswana.png');
+  background-position: 
+    right 20px center,
+    center center;
+  background-size: 
+    80px auto,
+    100% 100%;
+  background-repeat: no-repeat;
+}
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5.17"}
+    h3,h4,h5,h6{--heading-prefix:"5.17"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Botswana AMR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - 0.1.0
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4B/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="use-cases.html">Use Cases</a>
+  </li>
+  <li>
+    <a href="implementation.html">Implementation</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Botswana AMR Local Organism Codes</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Botswana AMR Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://bw.health.gov/fhir/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-botswana-amr-local-organism-cs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-botswana-amr-local-organism-cs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-botswana-amr-local-organism-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Botswana AMR Local Organism Codes - XML Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2025-06-25
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-botswana-amr-local-organism-cs.xml" no-download="true">Raw xml</a> | <a href="CodeSystem-botswana-amr-local-organism-cs.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem">CodeSystem</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#id">value</a>=&quot;botswana-amr-local-organism-cs&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem botswana-amr-local-organism-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;botswana-amr-local-organism-cs&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcbotswana-amr-local-organism-cs&quot;&gt; &lt;/a&gt;&lt;p&gt;This  code system &lt;code&gt;http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;acinetobacter-baumannii-complex&lt;a name=&quot;botswana-amr-local-organism-cs-acinetobacter-baumannii-complex&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acinetobacter baumannii complex&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;aeromonas-hydrophila-punctata&lt;a name=&quot;botswana-amr-local-organism-cs-aeromonas-hydrophila-punctata&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aeromonas hydrophila/punctata&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;alcaligenes-faecalis-subsp-faecalis&lt;a name=&quot;botswana-amr-local-organism-cs-alcaligenes-faecalis-subsp-faecalis&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alcaligenes faecalis subsp. faecalis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;brevundimonas-diminuta-vesicularis&lt;a name=&quot;botswana-amr-local-organism-cs-brevundimonas-diminuta-vesicularis&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Brevundimonas diminuta/Brevundimonas vesicularis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;burkholderia-cepacia-group&lt;a name=&quot;botswana-amr-local-organism-cs-burkholderia-cepacia-group&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Burkholderia cepacia group&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;cedecia-lapagei&lt;a name=&quot;botswana-amr-local-organism-cs-cedecia-lapagei&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cedecia lapagei&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;cronobacter-sakazakii-group&lt;a name=&quot;botswana-amr-local-organism-cs-cronobacter-sakazakii-group&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cronobacter sakazakii group&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;dermacoccus-nishinomiyaensis-kytococcus-sedentarius&lt;a name=&quot;botswana-amr-local-organism-cs-dermacoccus-nishinomiyaensis-kytococcus-sedentarius&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dermacoccus nishinomiyaensis/Kytococcus sedentarius&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;enterococcus-spp&lt;a name=&quot;botswana-amr-local-organism-cs-enterococcus-spp&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Enterococcus spp.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;klebsiella-pneumoniae-subsp-pneumoniae&lt;a name=&quot;botswana-amr-local-organism-cs-klebsiella-pneumoniae-subsp-pneumoniae&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Klebsiella pneumoniae subsp. pneumoniae&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;klebsiella-spp&lt;a name=&quot;botswana-amr-local-organism-cs-klebsiella-spp&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Klebsiella spp.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;leuconostoc-mesenteroides-subsp-cremoris&lt;a name=&quot;botswana-amr-local-organism-cs-leuconostoc-mesenteroides-subsp-cremoris&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leuconostoc mesenteroides subsp. cremoris&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;leuconostoc-mesenteroides-subsp-dextranicum&lt;a name=&quot;botswana-amr-local-organism-cs-leuconostoc-mesenteroides-subsp-dextranicum&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leuconostoc mesenteroides subsp. dextranicum&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;methylobacterium-spp&lt;a name=&quot;botswana-amr-local-organism-cs-methylobacterium-spp&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Methylobacterium spp.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;moraxella-group&lt;a name=&quot;botswana-amr-local-organism-cs-moraxella-group&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Moraxella group&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;morganella-morganii-subsp-morganii&lt;a name=&quot;botswana-amr-local-organism-cs-morganella-morganii-subsp-morganii&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Morganella morganii subsp. morganii&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;morganella-morganii-subsp-sibonii&lt;a name=&quot;botswana-amr-local-organism-cs-morganella-morganii-subsp-sibonii&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Morganella morganii subsp. sibonii&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;myroides-spp&lt;a name=&quot;botswana-amr-local-organism-cs-myroides-spp&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Myroides spp.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;neisseria-animaloris-zoodegmatis&lt;a name=&quot;botswana-amr-local-organism-cs-neisseria-animaloris-zoodegmatis&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neisseria animaloris/Neisseria zoodegmatis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;pandoraea-spp&lt;a name=&quot;botswana-amr-local-organism-cs-pandoraea-spp&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pandoraea spp.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;pantoea-spp&lt;a name=&quot;botswana-amr-local-organism-cs-pantoea-spp&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pantoea spp.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;pseudomonas-spp&lt;a name=&quot;botswana-amr-local-organism-cs-pseudomonas-spp&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pseudomonas spp.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;salmonella-group&lt;a name=&quot;botswana-amr-local-organism-cs-salmonella-group&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Salmonella group&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;serratia-liquefaciens-group&lt;a name=&quot;botswana-amr-local-organism-cs-serratia-liquefaciens-group&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Serratia liquefaciens group&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;shigella-group&lt;a name=&quot;botswana-amr-local-organism-cs-shigella-group&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Shigella group&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;staphylococcus-cohnii-subsp-cohnii&lt;a name=&quot;botswana-amr-local-organism-cs-staphylococcus-cohnii-subsp-cohnii&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Staphylococcus cohnii subsp. cohnii&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;staphylococcus-hominis-subsp-hominis&lt;a name=&quot;botswana-amr-local-organism-cs-staphylococcus-hominis-subsp-hominis&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Staphylococcus hominis subsp. hominis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;streptococcus-constellatus-subsp-pharyngis&lt;a name=&quot;botswana-amr-local-organism-cs-streptococcus-constellatus-subsp-pharyngis&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Streptococcus constellatus subsp. pharyngis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;streptococcus-infantarius-subsp-coli&lt;a name=&quot;botswana-amr-local-organism-cs-streptococcus-infantarius-subsp-coli&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Streptococcus infantarius subsp. coli&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;streptococcus-mitis-oralis&lt;a name=&quot;botswana-amr-local-organism-cs-streptococcus-mitis-oralis&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Streptococcus mitis/Streptococcus oralis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;vagococcus-fluviali&lt;a name=&quot;botswana-amr-local-organism-cs-vagococcus-fluviali&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vagococcus fluviali&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;yersinia-enterocolitica-frederiksenii&lt;a name=&quot;botswana-amr-local-organism-cs-yersinia-enterocolitica-frederiksenii&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Yersinia enterocolitica/Yersinia frederiksenii&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.url">url</a>
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>=&quot;http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;0.1.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;BotswanaAMRLocalOrganismCS&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.title">title</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Botswana AMR Local Organism Codes&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.status">status</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#dateTime">value</a>=&quot;2025-06-25T00:42:48-04:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.publisher">publisher</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;University of Botswana Partnership&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;University of Botswana Partnership&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;https://github.com/Dokotela/bw-amr-ig&quot;/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.description">description</a>
+               <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>=&quot;Local codes for organism combinations and complex designations used in Botswana AMR surveillance&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.content">content</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;complete&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.count">count</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#unsignedInt">value</a>=&quot;32&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;acinetobacter-baumannii-complex&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Acinetobacter baumannii complex&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;aeromonas-hydrophila-punctata&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Aeromonas hydrophila/punctata&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;alcaligenes-faecalis-subsp-faecalis&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Alcaligenes faecalis subsp. faecalis&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;brevundimonas-diminuta-vesicularis&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Brevundimonas diminuta/Brevundimonas vesicularis&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;burkholderia-cepacia-group&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Burkholderia cepacia group&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;cedecia-lapagei&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Cedecia lapagei&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;cronobacter-sakazakii-group&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Cronobacter sakazakii group&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;dermacoccus-nishinomiyaensis-kytococcus-sedentarius&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Dermacoccus nishinomiyaensis/Kytococcus sedentarius&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;enterococcus-spp&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Enterococcus spp.&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;klebsiella-pneumoniae-subsp-pneumoniae&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Klebsiella pneumoniae subsp. pneumoniae&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;klebsiella-spp&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Klebsiella spp.&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;leuconostoc-mesenteroides-subsp-cremoris&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Leuconostoc mesenteroides subsp. cremoris&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;leuconostoc-mesenteroides-subsp-dextranicum&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Leuconostoc mesenteroides subsp. dextranicum&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;methylobacterium-spp&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Methylobacterium spp.&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;moraxella-group&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Moraxella group&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;morganella-morganii-subsp-morganii&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Morganella morganii subsp. morganii&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;morganella-morganii-subsp-sibonii&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Morganella morganii subsp. sibonii&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;myroides-spp&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Myroides spp.&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;neisseria-animaloris-zoodegmatis&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Neisseria animaloris/Neisseria zoodegmatis&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;pandoraea-spp&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Pandoraea spp.&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;pantoea-spp&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Pantoea spp.&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;pseudomonas-spp&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Pseudomonas spp.&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;salmonella-group&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Salmonella group&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;serratia-liquefaciens-group&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Serratia liquefaciens group&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;shigella-group&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Shigella group&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;staphylococcus-cohnii-subsp-cohnii&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Staphylococcus cohnii subsp. cohnii&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;staphylococcus-hominis-subsp-hominis&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Staphylococcus hominis subsp. hominis&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;streptococcus-constellatus-subsp-pharyngis&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Streptococcus constellatus subsp. pharyngis&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;streptococcus-infantarius-subsp-coli&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Streptococcus infantarius subsp. coli&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;streptococcus-mitis-oralis&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Streptococcus mitis/Streptococcus oralis&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;vagococcus-fluviali&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Vagococcus fluviali&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;yersinia-enterocolitica-frederiksenii&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Yersinia enterocolitica/Yersinia frederiksenii&quot;/&gt;
+  &lt;/concept&gt;
+&lt;/CodeSystem&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/Dokotela/bw-amr-ig">University of Botswana Partnership</a>.  Package bw-amr-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Wed, Jun 25, 2025 00:43-0400">2025-06-25</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

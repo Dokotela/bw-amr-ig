@@ -21,7 +21,7 @@
    <name value="BWAMRIG"/>
    <title value="Botswana AMR Implementation Guide"/>
    <status value="draft"/>
-   <date value="2025-06-17T18:14:37-04:00"/>
+   <date value="2025-06-25T00:42:48-04:00"/>
    <publisher value="University of Botswana Partnership"/>
    <contact>
       <name value="University of Botswana Partnership"/>
@@ -423,6 +423,42 @@
             <valueInteger value="999999999"/>
          </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-botswana-amr-gram-stain-observation.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/botswana-amr-gram-stain-observation"/>
+         </reference>
+         <name value="Botswana AMR Gram Stain Observation"/>
+         <description value="Records gram stain results for specimens in Botswana AMR surveillance"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-botswana-amr-gram-stain-result-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/botswana-amr-gram-stain-result-vs"/>
+         </reference>
+         <name value="Botswana AMR Gram Stain Results"/>
+         <description value="Gram stain results used in Botswana AMR surveillance"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -433,6 +469,132 @@
          </reference>
          <name value="Botswana AMR Interpretation"/>
          <description value="Only Susceptible, Intermediate, or Resistant"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-botswana-amr-local-method-cs.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/botswana-amr-local-method-cs"/>
+         </reference>
+         <name value="Botswana AMR Local Identification Method Codes"/>
+         <description value="Local codes for identification methods used in Botswana AMR surveillance"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-botswana-amr-local-organism-cs.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/botswana-amr-local-organism-cs"/>
+         </reference>
+         <name value="Botswana AMR Local Organism Codes"/>
+         <description value="Local codes for organism combinations and complex designations used in Botswana AMR surveillance"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-botswana-amr-identification-method-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/botswana-amr-identification-method-vs"/>
+         </reference>
+         <name value="Botswana AMR Organism Identification Methods"/>
+         <description value="Methods used for organism identification in Botswana AMR surveillance"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-botswana-amr-organism-observation.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/botswana-amr-organism-observation"/>
+         </reference>
+         <name value="Botswana AMR Organism Identification Observation"/>
+         <description value="Records organism identification results from culture in Botswana AMR surveillance"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-botswana-amr-organism-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/botswana-amr-organism-vs"/>
+         </reference>
+         <name value="Botswana AMR Organism ValueSet"/>
+         <description value="Organisms identified in Botswana AMR surveillance using SNOMED CT codes and local codes for combinations"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-botswana-amr-special-test-observation.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/botswana-amr-special-test-observation"/>
+         </reference>
+         <name value="Botswana AMR Special Test Observation"/>
+         <description value="Records special AMR test results (ESBL, Carbapenemase, D-Zone, MRSA) in Botswana AMR surveillance"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-botswana-amr-special-test-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/botswana-amr-special-test-vs"/>
+         </reference>
+         <name value="Botswana AMR Special Tests"/>
+         <description value="Special antimicrobial resistance tests performed in Botswana AMR surveillance"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -453,6 +615,24 @@
          <description value="Constrains the Specimen Types for Botswana AMR"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-botswana-amr-specimen-site-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/botswana-amr-specimen-site-vs"/>
+         </reference>
+         <name value="Botswana AMR Specimen Collection Sites"/>
+         <description value="Anatomical sites where specimens are collected for Botswana AMR surveillance"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -489,6 +669,24 @@
          <description value="Records S/I/R (and optional MIC) for a single antibiotic test on a specimen"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-botswana-amr-test-result-status-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/botswana-amr-test-result-status-vs"/>
+         </reference>
+         <name value="Botswana AMR Test Result Status"/>
+         <description value="Status values for test results in Botswana AMR surveillance"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
       </resource>
       <page>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

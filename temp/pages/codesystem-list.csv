@@ -1,1 +1,3 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
+http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs,0.1.0,draft,,BotswanaAMRLocalMethodCS,Botswana AMR Local Identification Method Codes,"Local codes for identification methods used in Botswana AMR surveillance",
+http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs,0.1.0,draft,,BotswanaAMRLocalOrganismCS,Botswana AMR Local Organism Codes,"Local codes for organism combinations and complex designations used in Botswana AMR surveillance",

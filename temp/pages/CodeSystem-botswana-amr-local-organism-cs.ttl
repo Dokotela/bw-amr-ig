@@ -1,0 +1,132 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://bw.health.gov/fhir/CodeSystem/botswana-amr-local-organism-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "botswana-amr-local-organism-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem botswana-amr-local-organism-cs</b></p><a name=\"botswana-amr-local-organism-cs\"> </a><a name=\"hcbotswana-amr-local-organism-cs\"> </a><p>This  code system <code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">acinetobacter-baumannii-complex<a name=\"botswana-amr-local-organism-cs-acinetobacter-baumannii-complex\"> </a></td><td>Acinetobacter baumannii complex</td></tr><tr><td style=\"white-space:nowrap\">aeromonas-hydrophila-punctata<a name=\"botswana-amr-local-organism-cs-aeromonas-hydrophila-punctata\"> </a></td><td>Aeromonas hydrophila/punctata</td></tr><tr><td style=\"white-space:nowrap\">alcaligenes-faecalis-subsp-faecalis<a name=\"botswana-amr-local-organism-cs-alcaligenes-faecalis-subsp-faecalis\"> </a></td><td>Alcaligenes faecalis subsp. faecalis</td></tr><tr><td style=\"white-space:nowrap\">brevundimonas-diminuta-vesicularis<a name=\"botswana-amr-local-organism-cs-brevundimonas-diminuta-vesicularis\"> </a></td><td>Brevundimonas diminuta/Brevundimonas vesicularis</td></tr><tr><td style=\"white-space:nowrap\">burkholderia-cepacia-group<a name=\"botswana-amr-local-organism-cs-burkholderia-cepacia-group\"> </a></td><td>Burkholderia cepacia group</td></tr><tr><td style=\"white-space:nowrap\">cedecia-lapagei<a name=\"botswana-amr-local-organism-cs-cedecia-lapagei\"> </a></td><td>Cedecia lapagei</td></tr><tr><td style=\"white-space:nowrap\">cronobacter-sakazakii-group<a name=\"botswana-amr-local-organism-cs-cronobacter-sakazakii-group\"> </a></td><td>Cronobacter sakazakii group</td></tr><tr><td style=\"white-space:nowrap\">dermacoccus-nishinomiyaensis-kytococcus-sedentarius<a name=\"botswana-amr-local-organism-cs-dermacoccus-nishinomiyaensis-kytococcus-sedentarius\"> </a></td><td>Dermacoccus nishinomiyaensis/Kytococcus sedentarius</td></tr><tr><td style=\"white-space:nowrap\">enterococcus-spp<a name=\"botswana-amr-local-organism-cs-enterococcus-spp\"> </a></td><td>Enterococcus spp.</td></tr><tr><td style=\"white-space:nowrap\">klebsiella-pneumoniae-subsp-pneumoniae<a name=\"botswana-amr-local-organism-cs-klebsiella-pneumoniae-subsp-pneumoniae\"> </a></td><td>Klebsiella pneumoniae subsp. pneumoniae</td></tr><tr><td style=\"white-space:nowrap\">klebsiella-spp<a name=\"botswana-amr-local-organism-cs-klebsiella-spp\"> </a></td><td>Klebsiella spp.</td></tr><tr><td style=\"white-space:nowrap\">leuconostoc-mesenteroides-subsp-cremoris<a name=\"botswana-amr-local-organism-cs-leuconostoc-mesenteroides-subsp-cremoris\"> </a></td><td>Leuconostoc mesenteroides subsp. cremoris</td></tr><tr><td style=\"white-space:nowrap\">leuconostoc-mesenteroides-subsp-dextranicum<a name=\"botswana-amr-local-organism-cs-leuconostoc-mesenteroides-subsp-dextranicum\"> </a></td><td>Leuconostoc mesenteroides subsp. dextranicum</td></tr><tr><td style=\"white-space:nowrap\">methylobacterium-spp<a name=\"botswana-amr-local-organism-cs-methylobacterium-spp\"> </a></td><td>Methylobacterium spp.</td></tr><tr><td style=\"white-space:nowrap\">moraxella-group<a name=\"botswana-amr-local-organism-cs-moraxella-group\"> </a></td><td>Moraxella group</td></tr><tr><td style=\"white-space:nowrap\">morganella-morganii-subsp-morganii<a name=\"botswana-amr-local-organism-cs-morganella-morganii-subsp-morganii\"> </a></td><td>Morganella morganii subsp. morganii</td></tr><tr><td style=\"white-space:nowrap\">morganella-morganii-subsp-sibonii<a name=\"botswana-amr-local-organism-cs-morganella-morganii-subsp-sibonii\"> </a></td><td>Morganella morganii subsp. sibonii</td></tr><tr><td style=\"white-space:nowrap\">myroides-spp<a name=\"botswana-amr-local-organism-cs-myroides-spp\"> </a></td><td>Myroides spp.</td></tr><tr><td style=\"white-space:nowrap\">neisseria-animaloris-zoodegmatis<a name=\"botswana-amr-local-organism-cs-neisseria-animaloris-zoodegmatis\"> </a></td><td>Neisseria animaloris/Neisseria zoodegmatis</td></tr><tr><td style=\"white-space:nowrap\">pandoraea-spp<a name=\"botswana-amr-local-organism-cs-pandoraea-spp\"> </a></td><td>Pandoraea spp.</td></tr><tr><td style=\"white-space:nowrap\">pantoea-spp<a name=\"botswana-amr-local-organism-cs-pantoea-spp\"> </a></td><td>Pantoea spp.</td></tr><tr><td style=\"white-space:nowrap\">pseudomonas-spp<a name=\"botswana-amr-local-organism-cs-pseudomonas-spp\"> </a></td><td>Pseudomonas spp.</td></tr><tr><td style=\"white-space:nowrap\">salmonella-group<a name=\"botswana-amr-local-organism-cs-salmonella-group\"> </a></td><td>Salmonella group</td></tr><tr><td style=\"white-space:nowrap\">serratia-liquefaciens-group<a name=\"botswana-amr-local-organism-cs-serratia-liquefaciens-group\"> </a></td><td>Serratia liquefaciens group</td></tr><tr><td style=\"white-space:nowrap\">shigella-group<a name=\"botswana-amr-local-organism-cs-shigella-group\"> </a></td><td>Shigella group</td></tr><tr><td style=\"white-space:nowrap\">staphylococcus-cohnii-subsp-cohnii<a name=\"botswana-amr-local-organism-cs-staphylococcus-cohnii-subsp-cohnii\"> </a></td><td>Staphylococcus cohnii subsp. cohnii</td></tr><tr><td style=\"white-space:nowrap\">staphylococcus-hominis-subsp-hominis<a name=\"botswana-amr-local-organism-cs-staphylococcus-hominis-subsp-hominis\"> </a></td><td>Staphylococcus hominis subsp. hominis</td></tr><tr><td style=\"white-space:nowrap\">streptococcus-constellatus-subsp-pharyngis<a name=\"botswana-amr-local-organism-cs-streptococcus-constellatus-subsp-pharyngis\"> </a></td><td>Streptococcus constellatus subsp. pharyngis</td></tr><tr><td style=\"white-space:nowrap\">streptococcus-infantarius-subsp-coli<a name=\"botswana-amr-local-organism-cs-streptococcus-infantarius-subsp-coli\"> </a></td><td>Streptococcus infantarius subsp. coli</td></tr><tr><td style=\"white-space:nowrap\">streptococcus-mitis-oralis<a name=\"botswana-amr-local-organism-cs-streptococcus-mitis-oralis\"> </a></td><td>Streptococcus mitis/Streptococcus oralis</td></tr><tr><td style=\"white-space:nowrap\">vagococcus-fluviali<a name=\"botswana-amr-local-organism-cs-vagococcus-fluviali\"> </a></td><td>Vagococcus fluviali</td></tr><tr><td style=\"white-space:nowrap\">yersinia-enterocolitica-frederiksenii<a name=\"botswana-amr-local-organism-cs-yersinia-enterocolitica-frederiksenii\"> </a></td><td>Yersinia enterocolitica/Yersinia frederiksenii</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "BotswanaAMRLocalOrganismCS"] ; # 
+  fhir:title [ fhir:v "Botswana AMR Local Organism Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-06-25T00:42:48-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "University of Botswana Partnership"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "University of Botswana Partnership" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/Dokotela/bw-amr-ig" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Local codes for organism combinations and complex designations used in Botswana AMR surveillance"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "32"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "acinetobacter-baumannii-complex" ] ;
+     fhir:display [ fhir:v "Acinetobacter baumannii complex" ]
+  ] [
+     fhir:code [ fhir:v "aeromonas-hydrophila-punctata" ] ;
+     fhir:display [ fhir:v "Aeromonas hydrophila/punctata" ]
+  ] [
+     fhir:code [ fhir:v "alcaligenes-faecalis-subsp-faecalis" ] ;
+     fhir:display [ fhir:v "Alcaligenes faecalis subsp. faecalis" ]
+  ] [
+     fhir:code [ fhir:v "brevundimonas-diminuta-vesicularis" ] ;
+     fhir:display [ fhir:v "Brevundimonas diminuta/Brevundimonas vesicularis" ]
+  ] [
+     fhir:code [ fhir:v "burkholderia-cepacia-group" ] ;
+     fhir:display [ fhir:v "Burkholderia cepacia group" ]
+  ] [
+     fhir:code [ fhir:v "cedecia-lapagei" ] ;
+     fhir:display [ fhir:v "Cedecia lapagei" ]
+  ] [
+     fhir:code [ fhir:v "cronobacter-sakazakii-group" ] ;
+     fhir:display [ fhir:v "Cronobacter sakazakii group" ]
+  ] [
+     fhir:code [ fhir:v "dermacoccus-nishinomiyaensis-kytococcus-sedentarius" ] ;
+     fhir:display [ fhir:v "Dermacoccus nishinomiyaensis/Kytococcus sedentarius" ]
+  ] [
+     fhir:code [ fhir:v "enterococcus-spp" ] ;
+     fhir:display [ fhir:v "Enterococcus spp." ]
+  ] [
+     fhir:code [ fhir:v "klebsiella-pneumoniae-subsp-pneumoniae" ] ;
+     fhir:display [ fhir:v "Klebsiella pneumoniae subsp. pneumoniae" ]
+  ] [
+     fhir:code [ fhir:v "klebsiella-spp" ] ;
+     fhir:display [ fhir:v "Klebsiella spp." ]
+  ] [
+     fhir:code [ fhir:v "leuconostoc-mesenteroides-subsp-cremoris" ] ;
+     fhir:display [ fhir:v "Leuconostoc mesenteroides subsp. cremoris" ]
+  ] [
+     fhir:code [ fhir:v "leuconostoc-mesenteroides-subsp-dextranicum" ] ;
+     fhir:display [ fhir:v "Leuconostoc mesenteroides subsp. dextranicum" ]
+  ] [
+     fhir:code [ fhir:v "methylobacterium-spp" ] ;
+     fhir:display [ fhir:v "Methylobacterium spp." ]
+  ] [
+     fhir:code [ fhir:v "moraxella-group" ] ;
+     fhir:display [ fhir:v "Moraxella group" ]
+  ] [
+     fhir:code [ fhir:v "morganella-morganii-subsp-morganii" ] ;
+     fhir:display [ fhir:v "Morganella morganii subsp. morganii" ]
+  ] [
+     fhir:code [ fhir:v "morganella-morganii-subsp-sibonii" ] ;
+     fhir:display [ fhir:v "Morganella morganii subsp. sibonii" ]
+  ] [
+     fhir:code [ fhir:v "myroides-spp" ] ;
+     fhir:display [ fhir:v "Myroides spp." ]
+  ] [
+     fhir:code [ fhir:v "neisseria-animaloris-zoodegmatis" ] ;
+     fhir:display [ fhir:v "Neisseria animaloris/Neisseria zoodegmatis" ]
+  ] [
+     fhir:code [ fhir:v "pandoraea-spp" ] ;
+     fhir:display [ fhir:v "Pandoraea spp." ]
+  ] [
+     fhir:code [ fhir:v "pantoea-spp" ] ;
+     fhir:display [ fhir:v "Pantoea spp." ]
+  ] [
+     fhir:code [ fhir:v "pseudomonas-spp" ] ;
+     fhir:display [ fhir:v "Pseudomonas spp." ]
+  ] [
+     fhir:code [ fhir:v "salmonella-group" ] ;
+     fhir:display [ fhir:v "Salmonella group" ]
+  ] [
+     fhir:code [ fhir:v "serratia-liquefaciens-group" ] ;
+     fhir:display [ fhir:v "Serratia liquefaciens group" ]
+  ] [
+     fhir:code [ fhir:v "shigella-group" ] ;
+     fhir:display [ fhir:v "Shigella group" ]
+  ] [
+     fhir:code [ fhir:v "staphylococcus-cohnii-subsp-cohnii" ] ;
+     fhir:display [ fhir:v "Staphylococcus cohnii subsp. cohnii" ]
+  ] [
+     fhir:code [ fhir:v "staphylococcus-hominis-subsp-hominis" ] ;
+     fhir:display [ fhir:v "Staphylococcus hominis subsp. hominis" ]
+  ] [
+     fhir:code [ fhir:v "streptococcus-constellatus-subsp-pharyngis" ] ;
+     fhir:display [ fhir:v "Streptococcus constellatus subsp. pharyngis" ]
+  ] [
+     fhir:code [ fhir:v "streptococcus-infantarius-subsp-coli" ] ;
+     fhir:display [ fhir:v "Streptococcus infantarius subsp. coli" ]
+  ] [
+     fhir:code [ fhir:v "streptococcus-mitis-oralis" ] ;
+     fhir:display [ fhir:v "Streptococcus mitis/Streptococcus oralis" ]
+  ] [
+     fhir:code [ fhir:v "vagococcus-fluviali" ] ;
+     fhir:display [ fhir:v "Vagococcus fluviali" ]
+  ] [
+     fhir:code [ fhir:v "yersinia-enterocolitica-frederiksenii" ] ;
+     fhir:display [ fhir:v "Yersinia enterocolitica/Yersinia frederiksenii" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

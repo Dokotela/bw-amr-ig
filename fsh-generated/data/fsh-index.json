@@ -11,9 +11,9 @@
     "outputFile": "CodeSystem-botswana-amr-local-organism-cs.json",
     "fshName": "BotswanaAMRLocalOrganismCS",
     "fshType": "CodeSystem",
-    "fshFile": "valueSets/BotswanaAMROrganismVS.fsh",
-    "startLine": 212,
-    "endLine": 248
+    "fshFile": "codeSystems/BotswanaAMRLocalOrganismCS.fsh",
+    "startLine": 2,
+    "endLine": 38
   },
   {
     "outputFile": "StructureDefinition-BotswanaAMRSpecimen.json",

@@ -15,7 +15,7 @@
     "basepath" : "http://hl7.org/fhir/R4B/specimen.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Tue Jun 17 18:14:37 EDT 2025",
+    "date" : "Wed Jun 25 00:42:48 EDT 2025",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "University of Botswana Partnership",
@@ -45,7 +45,7 @@
     "basepath" : "http://hl7.org/fhir/R4B/diagnosticreport.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Tue Jun 17 18:14:37 EDT 2025",
+    "date" : "Wed Jun 25 00:42:48 EDT 2025",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "University of Botswana Partnership",
@@ -59,8 +59,98 @@
     },
     "obligations" : false
   },
-  "botswana-amr-susceptibility-observation" : {
+  "botswana-amr-gram-stain-observation" : {
     "index" : 2,
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation",
+    "name" : "BotswanaAMRGramStainObservation",
+    "title" : "Botswana AMR Gram Stain Observation",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-botswana-amr-gram-stain-observation.html",
+    "kind" : "resource",
+    "type" : "Observation",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Observation",
+    "basename" : "Observation",
+    "basepath" : "http://hl7.org/fhir/R4B/observation.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Wed Jun 25 00:42:48 EDT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "University of Botswana Partnership",
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Records gram stain results for specimens in Botswana AMR surveillance",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "botswana-amr-organism-observation" : {
+    "index" : 3,
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation",
+    "name" : "BotswanaAMROrganismObservation",
+    "title" : "Botswana AMR Organism Identification Observation",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-botswana-amr-organism-observation.html",
+    "kind" : "resource",
+    "type" : "Observation",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Observation",
+    "basename" : "Observation",
+    "basepath" : "http://hl7.org/fhir/R4B/observation.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Wed Jun 25 00:42:48 EDT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "University of Botswana Partnership",
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Records organism identification results from culture in Botswana AMR surveillance",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "botswana-amr-special-test-observation" : {
+    "index" : 4,
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation",
+    "name" : "BotswanaAMRSpecialTestObservation",
+    "title" : "Botswana AMR Special Test Observation",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-botswana-amr-special-test-observation.html",
+    "kind" : "resource",
+    "type" : "Observation",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Observation",
+    "basename" : "Observation",
+    "basepath" : "http://hl7.org/fhir/R4B/observation.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Wed Jun 25 00:42:48 EDT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "University of Botswana Partnership",
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Records special AMR test results (ESBL, Carbapenemase, D-Zone, MRSA) in Botswana AMR surveillance",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "botswana-amr-susceptibility-observation" : {
+    "index" : 5,
     "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
     "name" : "BotswanaAMRSusceptibilityObservation",
     "title" : "Botswana AMR Susceptibility Observation",
@@ -75,7 +165,7 @@
     "basepath" : "http://hl7.org/fhir/R4B/observation.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Tue Jun 17 18:14:37 EDT 2025",
+    "date" : "Wed Jun 25 00:42:48 EDT 2025",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "University of Botswana Partnership",

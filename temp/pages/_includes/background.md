@@ -1,6 +1,8 @@
 # AMR in Botswana
 
-![Deaths from AMR](amr-deaths-graph.png)
+<div style="text-align: center; margin: 20px 0;">
+  <img src="amr-deaths-graph.png" alt="Deaths from AMR" style="max-width: 70%; width: 100%; height: auto; display: block; margin: 0 auto;" />
+</div>
 
 ## The Challenge
 
@@ -10,16 +12,6 @@
 
 ## Key AMR Reports in Botswana
 
-![AMR Case Reports in Botswana](case-reports.png)
-
-### Multidrug-resistant Klebsiella in hospitalized newborns
-Klebsiella pneumoniae is the leading cause of bloodstream infection in hospitalized neonates in Botswana, with over 80% being multi-drug resistant.
-
-### Carriage of multidrug-resistant organisms in the community
-In a rectal carriage study among 2000 adults, 27.8% of participants were extended-spectrum cephalosporin resistant Enterobacterales (ESCRE)-colonized.
-
-### Prolonged hospital outbreak with Carbapenem-resistant Acinetobacter baumannii
-Environmental reservoirs and ongoing transmission from environmental sources pose significant containment challenges.
-
-### First report of Candida auris in Botswana
-Prior to 2023, C. auris had never before been reported in Botswana, representing an emerging multi-drug-resistant pathogen.
+<div style="text-align: center; margin: 20px 0;">
+  <img src="case-reports.png" alt="AMR Case Reports in Botswana" style="max-width: 70%; width: 100%; height: auto; display: block; margin: 0 auto;" />
+</div>

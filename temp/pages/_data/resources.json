@@ -13,8 +13,58 @@
     "title" : "Botswana AMR Implementation Guide",
     "titlelang" : {
     },
-    "date" : "2025-06-17T18:14:37-04:00",
+    "date" : "2025-06-25T00:42:48-04:00",
     "description" : "FHIR Implementation Guide for the Botswana AMR Data Analytics Platform",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "University of Botswana Partnership",
+      "link" : "https://github.com/Dokotela/bw-amr-ig",
+      "status" : "Draft"
+    }
+  },
+  "CodeSystem/botswana-amr-local-method-cs" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 1,
+    "source" : "fsh-generated/resources/CodeSystem-botswana-amr-local-method-cs.json",
+    "sourceTail" : "CodeSystem-botswana-amr-local-method-cs.json",
+    "path" : "CodeSystem-botswana-amr-local-method-cs.html",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRLocalMethodCS",
+    "title" : "Botswana AMR Local Identification Method Codes",
+    "titlelang" : {
+    },
+    "date" : "2025-06-25T00:42:48-04:00",
+    "description" : "Local codes for identification methods used in Botswana AMR surveillance",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "University of Botswana Partnership",
+      "link" : "https://github.com/Dokotela/bw-amr-ig",
+      "status" : "Draft"
+    }
+  },
+  "CodeSystem/botswana-amr-local-organism-cs" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 2,
+    "source" : "fsh-generated/resources/CodeSystem-botswana-amr-local-organism-cs.json",
+    "sourceTail" : "CodeSystem-botswana-amr-local-organism-cs.json",
+    "path" : "CodeSystem-botswana-amr-local-organism-cs.html",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRLocalOrganismCS",
+    "title" : "Botswana AMR Local Organism Codes",
+    "titlelang" : {
+    },
+    "date" : "2025-06-25T00:42:48-04:00",
+    "description" : "Local codes for organism combinations and complex designations used in Botswana AMR surveillance",
     "descriptionlang" : {
     },
     "status" : {
@@ -28,7 +78,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 1,
+    "index" : 3,
     "source" : "fsh-generated/resources/StructureDefinition-BotswanaAMRSpecimen.json",
     "sourceTail" : "StructureDefinition-BotswanaAMRSpecimen.json",
     "path" : "StructureDefinition-BotswanaAMRSpecimen.html",
@@ -38,7 +88,7 @@
     "title" : "Botswana AMR Specimen",
     "titlelang" : {
     },
-    "date" : "2025-06-17T18:14:37-04:00",
+    "date" : "2025-06-25T00:42:48-04:00",
     "description" : "Constrains the Specimen Types for Botswana AMR",
     "descriptionlang" : {
     },
@@ -53,7 +103,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 2,
+    "index" : 4,
     "source" : "fsh-generated/resources/StructureDefinition-botswana-amr-diagnostic-report.json",
     "sourceTail" : "StructureDefinition-botswana-amr-diagnostic-report.json",
     "path" : "StructureDefinition-botswana-amr-diagnostic-report.html",
@@ -63,8 +113,83 @@
     "title" : "Botswana AMR DiagnosticReport",
     "titlelang" : {
     },
-    "date" : "2025-06-17T18:14:37-04:00",
+    "date" : "2025-06-25T00:42:48-04:00",
     "description" : "Bundles AMR susceptibility observations into one report",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "University of Botswana Partnership",
+      "link" : "https://github.com/Dokotela/bw-amr-ig",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/botswana-amr-gram-stain-observation" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 5,
+    "source" : "fsh-generated/resources/StructureDefinition-botswana-amr-gram-stain-observation.json",
+    "sourceTail" : "StructureDefinition-botswana-amr-gram-stain-observation.json",
+    "path" : "StructureDefinition-botswana-amr-gram-stain-observation.html",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRGramStainObservation",
+    "title" : "Botswana AMR Gram Stain Observation",
+    "titlelang" : {
+    },
+    "date" : "2025-06-25T00:42:48-04:00",
+    "description" : "Records gram stain results for specimens in Botswana AMR surveillance",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "University of Botswana Partnership",
+      "link" : "https://github.com/Dokotela/bw-amr-ig",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/botswana-amr-organism-observation" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 6,
+    "source" : "fsh-generated/resources/StructureDefinition-botswana-amr-organism-observation.json",
+    "sourceTail" : "StructureDefinition-botswana-amr-organism-observation.json",
+    "path" : "StructureDefinition-botswana-amr-organism-observation.html",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMROrganismObservation",
+    "title" : "Botswana AMR Organism Identification Observation",
+    "titlelang" : {
+    },
+    "date" : "2025-06-25T00:42:48-04:00",
+    "description" : "Records organism identification results from culture in Botswana AMR surveillance",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "University of Botswana Partnership",
+      "link" : "https://github.com/Dokotela/bw-amr-ig",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/botswana-amr-special-test-observation" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 7,
+    "source" : "fsh-generated/resources/StructureDefinition-botswana-amr-special-test-observation.json",
+    "sourceTail" : "StructureDefinition-botswana-amr-special-test-observation.json",
+    "path" : "StructureDefinition-botswana-amr-special-test-observation.html",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRSpecialTestObservation",
+    "title" : "Botswana AMR Special Test Observation",
+    "titlelang" : {
+    },
+    "date" : "2025-06-25T00:42:48-04:00",
+    "description" : "Records special AMR test results (ESBL, Carbapenemase, D-Zone, MRSA) in Botswana AMR surveillance",
     "descriptionlang" : {
     },
     "status" : {
@@ -78,7 +203,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 3,
+    "index" : 8,
     "source" : "fsh-generated/resources/StructureDefinition-botswana-amr-susceptibility-observation.json",
     "sourceTail" : "StructureDefinition-botswana-amr-susceptibility-observation.json",
     "path" : "StructureDefinition-botswana-amr-susceptibility-observation.html",
@@ -88,7 +213,7 @@
     "title" : "Botswana AMR Susceptibility Observation",
     "titlelang" : {
     },
-    "date" : "2025-06-17T18:14:37-04:00",
+    "date" : "2025-06-25T00:42:48-04:00",
     "description" : "Records S/I/R (and optional MIC) for a single antibiotic test on a specimen",
     "descriptionlang" : {
     },
@@ -103,7 +228,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 4,
+    "index" : 9,
     "source" : "fsh-generated/resources/ValueSet-botswana-amr-antibiotic-susceptibility-loinc.json",
     "sourceTail" : "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.json",
     "path" : "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.html",
@@ -113,8 +238,58 @@
     "title" : "Botswana AMR Antibiotic Susceptibility LOINC",
     "titlelang" : {
     },
-    "date" : "2025-06-17T18:14:37-04:00",
+    "date" : "2025-06-25T00:42:48-04:00",
     "description" : "Collection of LOINC codes for antibiotic-susceptibility tests (MIC panel and individual drugs)",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "University of Botswana Partnership",
+      "link" : "https://github.com/Dokotela/bw-amr-ig",
+      "status" : "Draft"
+    }
+  },
+  "ValueSet/botswana-amr-gram-stain-result-vs" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 10,
+    "source" : "fsh-generated/resources/ValueSet-botswana-amr-gram-stain-result-vs.json",
+    "sourceTail" : "ValueSet-botswana-amr-gram-stain-result-vs.json",
+    "path" : "ValueSet-botswana-amr-gram-stain-result-vs.html",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-gram-stain-result-vs",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRGramStainResultVS",
+    "title" : "Botswana AMR Gram Stain Results",
+    "titlelang" : {
+    },
+    "date" : "2025-06-25T00:42:48-04:00",
+    "description" : "Gram stain results used in Botswana AMR surveillance",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "University of Botswana Partnership",
+      "link" : "https://github.com/Dokotela/bw-amr-ig",
+      "status" : "Draft"
+    }
+  },
+  "ValueSet/botswana-amr-identification-method-vs" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 11,
+    "source" : "fsh-generated/resources/ValueSet-botswana-amr-identification-method-vs.json",
+    "sourceTail" : "ValueSet-botswana-amr-identification-method-vs.json",
+    "path" : "ValueSet-botswana-amr-identification-method-vs.html",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-identification-method-vs",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRIdentificationMethodVS",
+    "title" : "Botswana AMR Organism Identification Methods",
+    "titlelang" : {
+    },
+    "date" : "2025-06-25T00:42:48-04:00",
+    "description" : "Methods used for organism identification in Botswana AMR surveillance",
     "descriptionlang" : {
     },
     "status" : {
@@ -128,7 +303,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 5,
+    "index" : 12,
     "source" : "fsh-generated/resources/ValueSet-botswana-amr-interpretation.json",
     "sourceTail" : "ValueSet-botswana-amr-interpretation.json",
     "path" : "ValueSet-botswana-amr-interpretation.html",
@@ -138,8 +313,83 @@
     "title" : "Botswana AMR Interpretation",
     "titlelang" : {
     },
-    "date" : "2025-06-17T18:14:37-04:00",
+    "date" : "2025-06-25T00:42:48-04:00",
     "description" : "Only Susceptible, Intermediate, or Resistant",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "University of Botswana Partnership",
+      "link" : "https://github.com/Dokotela/bw-amr-ig",
+      "status" : "Draft"
+    }
+  },
+  "ValueSet/botswana-amr-organism-vs" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 13,
+    "source" : "fsh-generated/resources/ValueSet-botswana-amr-organism-vs.json",
+    "sourceTail" : "ValueSet-botswana-amr-organism-vs.json",
+    "path" : "ValueSet-botswana-amr-organism-vs.html",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMROrganismVS",
+    "title" : "Botswana AMR Organism ValueSet",
+    "titlelang" : {
+    },
+    "date" : "2025-06-25T00:42:48-04:00",
+    "description" : "Organisms identified in Botswana AMR surveillance using SNOMED CT codes and local codes for combinations",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "University of Botswana Partnership",
+      "link" : "https://github.com/Dokotela/bw-amr-ig",
+      "status" : "Draft"
+    }
+  },
+  "ValueSet/botswana-amr-special-test-vs" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 14,
+    "source" : "fsh-generated/resources/ValueSet-botswana-amr-special-test-vs.json",
+    "sourceTail" : "ValueSet-botswana-amr-special-test-vs.json",
+    "path" : "ValueSet-botswana-amr-special-test-vs.html",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-special-test-vs",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRSpecialTestVS",
+    "title" : "Botswana AMR Special Tests",
+    "titlelang" : {
+    },
+    "date" : "2025-06-25T00:42:48-04:00",
+    "description" : "Special antimicrobial resistance tests performed in Botswana AMR surveillance",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "University of Botswana Partnership",
+      "link" : "https://github.com/Dokotela/bw-amr-ig",
+      "status" : "Draft"
+    }
+  },
+  "ValueSet/botswana-amr-specimen-site-vs" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 15,
+    "source" : "fsh-generated/resources/ValueSet-botswana-amr-specimen-site-vs.json",
+    "sourceTail" : "ValueSet-botswana-amr-specimen-site-vs.json",
+    "path" : "ValueSet-botswana-amr-specimen-site-vs.html",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRSpecimenSiteVS",
+    "title" : "Botswana AMR Specimen Collection Sites",
+    "titlelang" : {
+    },
+    "date" : "2025-06-25T00:42:48-04:00",
+    "description" : "Anatomical sites where specimens are collected for Botswana AMR surveillance",
     "descriptionlang" : {
     },
     "status" : {
@@ -153,7 +403,7 @@
     "history" : false,
     "testplan" : false,
     "testscript" : false,
-    "index" : 6,
+    "index" : 16,
     "source" : "fsh-generated/resources/ValueSet-botswana-amr-specimen-type-vs.json",
     "sourceTail" : "ValueSet-botswana-amr-specimen-type-vs.json",
     "path" : "ValueSet-botswana-amr-specimen-type-vs.html",
@@ -163,8 +413,33 @@
     "title" : "Botswana AMR Specimen Type VS",
     "titlelang" : {
     },
-    "date" : "2025-06-17T18:14:37-04:00",
+    "date" : "2025-06-25T00:42:48-04:00",
     "description" : "Specimen types used in Botswana AMR data collection, reusing v3-SpecimenType codes",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "University of Botswana Partnership",
+      "link" : "https://github.com/Dokotela/bw-amr-ig",
+      "status" : "Draft"
+    }
+  },
+  "ValueSet/botswana-amr-test-result-status-vs" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 17,
+    "source" : "fsh-generated/resources/ValueSet-botswana-amr-test-result-status-vs.json",
+    "sourceTail" : "ValueSet-botswana-amr-test-result-status-vs.json",
+    "path" : "ValueSet-botswana-amr-test-result-status-vs.html",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRTestResultStatusVS",
+    "title" : "Botswana AMR Test Result Status",
+    "titlelang" : {
+    },
+    "date" : "2025-06-25T00:42:48-04:00",
+    "description" : "Status values for test results in Botswana AMR surveillance",
     "descriptionlang" : {
     },
     "status" : {

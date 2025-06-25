@@ -21,7 +21,119 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
   	<link href="assets/css/cqf.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
+    <style>
+html { font-size: 18px !important; }
+body { font-size: 18px !important; }
+* { font-size: inherit !important; }
+p, li, div, span, td, th { font-size: 18px !important; line-height: 1.6 !important; }
+
+/* Make headings smaller */
+h1 { font-size: 1.3em !important; }
+h2 { font-size: 1.2em !important; }
+h3 { font-size: 1.1em !important; }
+h4 { font-size: 1.05em !important; }
+h5 { font-size: 1.0em !important; }
+h6 { font-size: 0.95em !important; }
+
+/* Target specific elements that are too big */
+.copy-text { font-size: 16px !important; }
+table.colsd td { font-size: 16px !important; }
+table.colsd i { font-size: 16px !important; }
+
+code, pre { font-size: 16px !important; }
+
+/* Add more space between the title area and navigation menu */
+.navbar, .nav-tabs, .page-header + .nav, .breadcrumb {
+  margin-top: 20px !important;
+}
+
+/* Hide HL7 logo */
+#hl7-nav, #hl7-logo { display: none !important; }
+
+/* Style the existing title area with background and logos */
+#ig-status {
+  background-image: url('assets/images/flag_of_botswana.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Add overlay for readability */
+#ig-status::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+/* Style the container paragraph */
+#ig-status p {
+  color: white !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+  z-index: 2;
+  position: relative;
+  flex-grow: 1;
+  text-align: center;
+  margin: 0 20px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Space out the title and version specifically */
+#ig-status p span:first-child {
+  margin-bottom: 15px !important;
+  display: block;
+}
+
+#ig-status p br + span {
+  margin-top: 15px !important;
+  display: block;
+}
+
+/* Add logos as pseudo-elements */
+#ig-status::after {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+  background-image: url('assets/images/bup-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(255,255,255,0.95);
+  border-radius: 8px;
+  z-index: 2;
+}
+
+/* Add right logo */
+#ig-status {
+  background-image: 
+    url('assets/images/chop-logo.png'),
+    url('assets/images/flag_of_botswana.png');
+  background-position: 
+    right 20px center,
+    center center;
+  background-size: 
+    80px auto,
+    100% 100%;
+  background-repeat: no-repeat;
+}
+</style>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -43,18 +155,18 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5.6"}
-    h3,h4,h5,h6{--heading-prefix:"5.6"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.14"}
+    h3,h4,h5,h6{--heading-prefix:"5.14"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
         <!-- Placeholder for child template header declarations -->
 
-<div style="display: flex; align-items: center; justify-content: space-between; margin: 10px 0;">
-  <img src="assets/images/bup-logo.png" alt="University of Botswana" style="height: 50px;"/>
-  <img src="assets/images/chop-logo.png" alt="Children's Hospital of Philadelphia" style="height: 50px;"/>
-</div>
-
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Botswana AMR Implementation Guide</span>
@@ -181,7 +293,7 @@
         
           Draft
           
-            as of 2025-06-17
+            as of 2025-06-25
           
         
       </td>
@@ -209,7 +321,7 @@
   "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.name">name</a>" : "BotswanaAMRSpecimenTypeVS",
   "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.title">title</a>" : "Botswana AMR Specimen Type VS",
   "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.date">date</a>" : "2025-06-17T18:14:37-04:00",
+  "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.date">date</a>" : "2025-06-25T00:42:48-04:00",
   "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.publisher">publisher</a>" : "University of Botswana Partnership",
   "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -284,7 +396,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/Dokotela/bw-amr-ig">University of Botswana Partnership</a>.  Package bw-amr-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Tue, Jun 17, 2025 18:14-0400">2025-06-17</span>
+          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/Dokotela/bw-amr-ig">University of Botswana Partnership</a>.  Package bw-amr-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Wed, Jun 25, 2025 00:43-0400">2025-06-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

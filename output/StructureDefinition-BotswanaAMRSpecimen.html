@@ -23,7 +23,119 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
   	<link href="assets/css/cqf.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
+    <style>
+html { font-size: 18px !important; }
+body { font-size: 18px !important; }
+* { font-size: inherit !important; }
+p, li, div, span, td, th { font-size: 18px !important; line-height: 1.6 !important; }
+
+/* Make headings smaller */
+h1 { font-size: 1.3em !important; }
+h2 { font-size: 1.2em !important; }
+h3 { font-size: 1.1em !important; }
+h4 { font-size: 1.05em !important; }
+h5 { font-size: 1.0em !important; }
+h6 { font-size: 0.95em !important; }
+
+/* Target specific elements that are too big */
+.copy-text { font-size: 16px !important; }
+table.colsd td { font-size: 16px !important; }
+table.colsd i { font-size: 16px !important; }
+
+code, pre { font-size: 16px !important; }
+
+/* Add more space between the title area and navigation menu */
+.navbar, .nav-tabs, .page-header + .nav, .breadcrumb {
+  margin-top: 20px !important;
+}
+
+/* Hide HL7 logo */
+#hl7-nav, #hl7-logo { display: none !important; }
+
+/* Style the existing title area with background and logos */
+#ig-status {
+  background-image: url('assets/images/flag_of_botswana.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Add overlay for readability */
+#ig-status::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+/* Style the container paragraph */
+#ig-status p {
+  color: white !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+  z-index: 2;
+  position: relative;
+  flex-grow: 1;
+  text-align: center;
+  margin: 0 20px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Space out the title and version specifically */
+#ig-status p span:first-child {
+  margin-bottom: 15px !important;
+  display: block;
+}
+
+#ig-status p br + span {
+  margin-top: 15px !important;
+  display: block;
+}
+
+/* Add logos as pseudo-elements */
+#ig-status::after {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+  background-image: url('assets/images/bup-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(255,255,255,0.95);
+  border-radius: 8px;
+  z-index: 2;
+}
+
+/* Add right logo */
+#ig-status {
+  background-image: 
+    url('assets/images/chop-logo.png'),
+    url('assets/images/flag_of_botswana.png');
+  background-position: 
+    right 20px center,
+    center center;
+  background-size: 
+    80px auto,
+    100% 100%;
+  background-repeat: no-repeat;
+}
+</style>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -45,18 +157,18 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5.2"}
-    h3,h4,h5,h6{--heading-prefix:"5.2"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.5"}
+    h3,h4,h5,h6{--heading-prefix:"5.5"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
         <!-- Placeholder for child template header declarations -->
 
-<div style="display: flex; align-items: center; justify-content: space-between; margin: 10px 0;">
-  <img src="assets/images/bup-logo.png" alt="University of Botswana" style="height: 50px;"/>
-  <img src="assets/images/chop-logo.png" alt="Children's Hospital of Philadelphia" style="height: 50px;"/>
-</div>
-
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Botswana AMR Implementation Guide</span>
@@ -224,7 +336,7 @@
         
           Draft
           
-            as of 2025-06-17
+            as of 2025-06-25
           
         
       </td>
@@ -253,7 +365,7 @@
 
 <p><b>Usages:</b></p>
 <ul>
- <li>Refer to this Profile: <a href="StructureDefinition-botswana-amr-susceptibility-observation.html">Botswana AMR Susceptibility Observation</a></li>
+ <li>Refer to this Profile: <a href="StructureDefinition-botswana-amr-gram-stain-observation.html">Botswana AMR Gram Stain Observation</a>, <a href="StructureDefinition-botswana-amr-organism-observation.html">Botswana AMR Organism Identification Observation</a>, <a href="StructureDefinition-botswana-amr-special-test-observation.html">Botswana AMR Special Test Observation</a> and <a href="StructureDefinition-botswana-amr-susceptibility-observation.html">Botswana AMR Susceptibility Observation</a></li>
 </ul>
 
 
@@ -338,7 +450,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4B/patient.html">Patient</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Where the specimen came from. This may be from patient(s), from a location (e.g., the source of an environmental sample), or a sampling of a substance or a device</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 99724b4e-d7b9-4cb8-802c-ee04105cc9c9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 696c5dd9-50c8-4c27-b414-dfced05ddeb5
 document.getElementById('cbBotswanaAMRSpecimenK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('BotswanaAMRSpecimenK'), 'binding', document.getElementById('cbBotswanaAMRSpecimenK-binding').checked, document.getElementById('ppBotswanaAMRSpecimenK'));
 document.getElementById('cbBotswanaAMRSpecimenK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -418,7 +530,7 @@ filterDesc(document.getElementById('BotswanaAMRSpecimenK'), 'obligation', docume
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4B/patient.html">Patient</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Where the specimen came from. This may be from patient(s), from a location (e.g., the source of an environmental sample), or a sampling of a substance or a device</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 99724b4e-d7b9-4cb8-802c-ee04105cc9c9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 696c5dd9-50c8-4c27-b414-dfced05ddeb5
 document.getElementById('cbBotswanaAMRSpecimenD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('BotswanaAMRSpecimenD'), 'binding', document.getElementById('cbBotswanaAMRSpecimenD-binding').checked, document.getElementById('ppBotswanaAMRSpecimenD'));
 document.getElementById('cbBotswanaAMRSpecimenD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -777,7 +889,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#Annotation">Annotation</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Comments<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 99724b4e-d7b9-4cb8-802c-ee04105cc9c9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 696c5dd9-50c8-4c27-b414-dfced05ddeb5
 document.getElementById('cbBotswanaAMRSpecimenS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('BotswanaAMRSpecimenS'), 'binding', document.getElementById('cbBotswanaAMRSpecimenS-binding').checked, document.getElementById('ppBotswanaAMRSpecimenS'));
 document.getElementById('cbBotswanaAMRSpecimenS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1002,7 +1114,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4B/patient.html">Patient</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Where the specimen came from. This may be from patient(s), from a location (e.g., the source of an environmental sample), or a sampling of a substance or a device</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 99724b4e-d7b9-4cb8-802c-ee04105cc9c9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 696c5dd9-50c8-4c27-b414-dfced05ddeb5
 document.getElementById('cbBotswanaAMRSpecimenKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('BotswanaAMRSpecimenKA'), 'binding', document.getElementById('cbBotswanaAMRSpecimenKA-binding').checked, document.getElementById('ppBotswanaAMRSpecimenKA'));
 document.getElementById('cbBotswanaAMRSpecimenKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1082,7 +1194,7 @@ filterDesc(document.getElementById('BotswanaAMRSpecimenKA'), 'obligation', docum
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4B/patient.html">Patient</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Where the specimen came from. This may be from patient(s), from a location (e.g., the source of an environmental sample), or a sampling of a substance or a device</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 99724b4e-d7b9-4cb8-802c-ee04105cc9c9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 696c5dd9-50c8-4c27-b414-dfced05ddeb5
 document.getElementById('cbBotswanaAMRSpecimenDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('BotswanaAMRSpecimenDA'), 'binding', document.getElementById('cbBotswanaAMRSpecimenDA-binding').checked, document.getElementById('ppBotswanaAMRSpecimenDA'));
 document.getElementById('cbBotswanaAMRSpecimenDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1440,7 +1552,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#Annotation">Annotation</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Comments<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 99724b4e-d7b9-4cb8-802c-ee04105cc9c9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 696c5dd9-50c8-4c27-b414-dfced05ddeb5
 document.getElementById('cbBotswanaAMRSpecimenSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('BotswanaAMRSpecimenSA'), 'binding', document.getElementById('cbBotswanaAMRSpecimenSA-binding').checked, document.getElementById('ppBotswanaAMRSpecimenSA'));
 document.getElementById('cbBotswanaAMRSpecimenSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1648,7 +1760,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/Dokotela/bw-amr-ig">University of Botswana Partnership</a>.  Package bw-amr-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Tue, Jun 17, 2025 18:14-0400">2025-06-17</span>
+          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/Dokotela/bw-amr-ig">University of Botswana Partnership</a>.  Package bw-amr-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Wed, Jun 25, 2025 00:43-0400">2025-06-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

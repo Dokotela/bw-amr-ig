@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="botswana-amr-test-result-status-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet botswana-amr-test-result-status-vs</b></p><a name="botswana-amr-test-result-status-vs"> </a><a name="hcbotswana-amr-test-result-status-vs"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/10828004">10828004</a></td><td>Positive</td></tr><tr><td><a href="http://snomed.info/id/260385009">260385009</a></td><td>Negative</td></tr><tr><td><a href="http://snomed.info/id/82334004">82334004</a></td><td>Indeterminate</td></tr><tr><td><a href="http://snomed.info/id/385660001">385660001</a></td><td>Not done</td></tr><tr><td><a href="http://snomed.info/id/261665006">261665006</a></td><td>Unknown</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs"/>
+  <version value="0.1.0"/>
+  <name value="BotswanaAMRTestResultStatusVS"/>
+  <title value="Botswana AMR Test Result Status"/>
+  <status value="draft"/>
+  <date value="2025-06-25T00:42:48-04:00"/>
+  <publisher value="University of Botswana Partnership"/>
+  <contact>
+    <name value="University of Botswana Partnership"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/Dokotela/bw-amr-ig"/>
+    </telecom>
+  </contact>
+  <description value="Status values for test results in Botswana AMR surveillance"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="10828004"/>
+        <display value="Positive"/>
+      </concept>
+      <concept>
+        <code value="260385009"/>
+        <display value="Negative"/>
+      </concept>
+      <concept>
+        <code value="82334004"/>
+        <display value="Indeterminate"/>
+      </concept>
+      <concept>
+        <code value="385660001"/>
+        <display value="Not done"/>
+      </concept>
+      <concept>
+        <code value="261665006"/>
+        <display value="Unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

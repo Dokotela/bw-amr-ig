@@ -1,5 +1,19 @@
 [
   {
+    "id" : "botswana-amr-local-method-cs",
+    "type" : "CodeSystem",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRLocalMethodCS"
+  },
+  {
+    "id" : "botswana-amr-local-organism-cs",
+    "type" : "CodeSystem",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRLocalOrganismCS"
+  },
+  {
     "id" : "bw-amr-ig",
     "type" : "ImplementationGuide",
     "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig",
@@ -21,6 +35,27 @@
     "name" : "BotswanaAMRDiagnosticReport"
   },
   {
+    "id" : "botswana-amr-gram-stain-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRGramStainObservation"
+  },
+  {
+    "id" : "botswana-amr-organism-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMROrganismObservation"
+  },
+  {
+    "id" : "botswana-amr-special-test-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRSpecialTestObservation"
+  },
+  {
     "id" : "botswana-amr-susceptibility-observation",
     "type" : "StructureDefinition",
     "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
@@ -35,6 +70,20 @@
     "name" : "BotswanaAMRAntibioticSusceptibilityLOINC"
   },
   {
+    "id" : "botswana-amr-gram-stain-result-vs",
+    "type" : "ValueSet",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-gram-stain-result-vs",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRGramStainResultVS"
+  },
+  {
+    "id" : "botswana-amr-identification-method-vs",
+    "type" : "ValueSet",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-identification-method-vs",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRIdentificationMethodVS"
+  },
+  {
     "id" : "botswana-amr-interpretation",
     "type" : "ValueSet",
     "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation",
@@ -42,10 +91,38 @@
     "name" : "BotswanaAMRInterpretation"
   },
   {
+    "id" : "botswana-amr-organism-vs",
+    "type" : "ValueSet",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMROrganismVS"
+  },
+  {
+    "id" : "botswana-amr-special-test-vs",
+    "type" : "ValueSet",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-special-test-vs",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRSpecialTestVS"
+  },
+  {
+    "id" : "botswana-amr-specimen-site-vs",
+    "type" : "ValueSet",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRSpecimenSiteVS"
+  },
+  {
     "id" : "botswana-amr-specimen-type-vs",
     "type" : "ValueSet",
     "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs",
     "version" : "0.1.0",
     "name" : "BotswanaAMRSpecimenTypeVS"
+  },
+  {
+    "id" : "botswana-amr-test-result-status-vs",
+    "type" : "ValueSet",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRTestResultStatusVS"
   }
 ]
