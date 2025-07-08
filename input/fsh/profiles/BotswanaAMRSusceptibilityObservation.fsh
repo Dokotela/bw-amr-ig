@@ -1,27 +1,30 @@
+// Susceptibility Observation Profile
 Profile: BotswanaAMRSusceptibilityObservation
-Id: botswana-amr-susceptibility-observation
 Parent: Observation
+Id: botswana-amr-susceptibility-observation
 Title: "Botswana AMR Susceptibility Observation"
 Description: "Records S/I/R (and optional MIC) for a single antibiotic test on a specimen"
 
-* id = "botswana-amr-susceptibility-observation"
-* status = #draft
 * meta.profile = "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SusceptibilityObservation"
 
-* code only CodeableConcept
-* code from botswana-amr-antibiotic-susceptibility-loinc
+* status = #final
+
 * code 1..1
+* code from BotswanaAMRAntibioticSusceptibilityLOINC (required)
 
-* interpretation only CodeableConcept
-* interpretation from botswana-amr-interpretation
 * interpretation 1..1
+* interpretation from BotswanaAMRInterpretation (required)
 
-* valueQuantity 0..1
+* valueQuantity 0..1  // Optional MIC value
 
-* specimen only Reference(BotswanaAMRSpecimen)
 * specimen 1..1
+* specimen only Reference(BotswanaAMRSpecimen)
 
-* subject only Reference(Patient)
 * subject 1..1
+* subject only Reference(BotswanaAMRPatient)
 
 * effectiveDateTime 1..1
+
+* derivedFrom 0..1
+* derivedFrom only Reference(BotswanaAMROrganismObservation)  // Link to organism identified
+
