@@ -16,6 +16,7 @@
       <sch:assert test="count(f:interpretation) &gt;= 1">interpretation: minimum cardinality of 'interpretation' is 1</sch:assert>
       <sch:assert test="count(f:interpretation) &lt;= 1">interpretation: maximum cardinality of 'interpretation' is 1</sch:assert>
       <sch:assert test="count(f:specimen) &gt;= 1">specimen: minimum cardinality of 'specimen' is 1</sch:assert>
+      <sch:assert test="count(f:derivedFrom) &lt;= 1">derivedFrom: maximum cardinality of 'derivedFrom' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

@@ -2,14 +2,16 @@
   "package": "bw-amr-ig",
   "version": "0.1.0",
   "fhirVersion": "4.3.0",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/specimen-collection-location",
+      "title": "Specimen Collection Location",
+      "types": [
+        "Reference"
+      ]
+    }
+  ],
   "profiles": {
-    "Specimen": [
-      {
-        "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen",
-        "title": "Botswana AMR Specimen"
-      }
-    ],
     "DiagnosticReport": [
       {
         "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report",
@@ -18,24 +20,27 @@
     ],
     "Observation": [
       {
-        "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation",
-        "title": "Botswana AMR Gram Stain Observation"
-      },
-      {
-        "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation",
-        "title": "Botswana AMR Organism Identification Observation"
-      },
-      {
-        "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation",
-        "title": "Botswana AMR Special Test Observation"
-      },
-      {
         "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
         "title": "Botswana AMR Susceptibility Observation"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient",
+        "title": "Botswana AMR Patient"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen",
+        "title": "Botswana AMR Specimen"
       }
     ]
   },
   "usage": {
+    "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/specimen-collection-location": [
+      "Specimen.collection"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -52,6 +57,9 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/build/StructureDefinition/binding-definition": [

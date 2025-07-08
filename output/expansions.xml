@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="2fabbab0-9d60-41dc-acd2-be025d536703"/>
+  <id value="e61466ee-9ace-4650-a54a-c999dcc73bf1"/>
   <meta>
-    <lastUpdated value="2025-06-25T00:43:06.480-04:00"/>
+    <lastUpdated value="2025-07-08T11:52:42.459-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -356,10 +356,10 @@
         <name value="BotswanaAMRAntibioticSusceptibilityLOINC"/>
         <title value="Botswana AMR Antibiotic Susceptibility LOINC"/>
         <status value="draft"/>
-        <date value="2025-06-25T00:42:48-04:00"/>
+        <date value="2025-07-08T11:52:18-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:e5bdc1ef-0648-44c4-aec7-0c7219f883c7"/>
-          <timestamp value="2025-06-25T00:43:30-04:00"/>
+          <identifier value="urn:uuid:9a857e56-f1c9-4c2d-9bbf-6c52618bad1f"/>
+          <timestamp value="2025-07-08T11:53:07-04:00"/>
           <total value="40"/>
           <offset value="0"/>
           <parameter>
@@ -656,10 +656,10 @@
         <name value="BotswanaAMRGramStainResultVS"/>
         <title value="Botswana AMR Gram Stain Results"/>
         <status value="draft"/>
-        <date value="2025-06-25T00:42:48-04:00"/>
+        <date value="2025-07-08T11:52:18-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:047ef576-7edd-4ed0-9593-86ffff537683"/>
-          <timestamp value="2025-06-25T00:43:31-04:00"/>
+          <identifier value="urn:uuid:a503321f-d1c1-4bb0-9495-df6a69669cb3"/>
+          <timestamp value="2025-07-08T11:53:07-04:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -818,10 +818,10 @@
         <name value="BotswanaAMRIdentificationMethodVS"/>
         <title value="Botswana AMR Organism Identification Methods"/>
         <status value="draft"/>
-        <date value="2025-06-25T00:42:48-04:00"/>
+        <date value="2025-07-08T11:52:18-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:86fb7012-3767-4448-8f82-75fbd9283f33"/>
-          <timestamp value="2025-06-25T00:43:31-04:00"/>
+          <identifier value="urn:uuid:d4615ba7-8db7-450b-bfd2-701f15ff11ad"/>
+          <timestamp value="2025-07-08T11:53:07-04:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -904,7 +904,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="http://terminology.hl7.org/6.4.0/CodeSystem-v3-ObservationInterpretation.html">codesystem ObservationInterpretation v3.0.0 (CodeSystem)</a>
+              <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ObservationInterpretation.html">codesystem ObservationInterpretation v3.0.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 3 concepts</p>
             <table class="codes">
@@ -925,7 +925,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-S"> </a>  
-                  <a href="http://terminology.hl7.org/6.4.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-S">S</a>
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-S">S</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</td>
                 <td>Susceptible</td>
@@ -943,7 +943,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-I"> </a>  
-                  <a href="http://terminology.hl7.org/6.4.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-I">I</a>
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-I">I</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</td>
                 <td>Intermediate</td>
@@ -965,7 +965,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-R"> </a>  
-                  <a href="http://terminology.hl7.org/6.4.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-R">R</a>
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-R">R</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</td>
                 <td>Resistant</td>
@@ -988,10 +988,10 @@
         <name value="BotswanaAMRInterpretation"/>
         <title value="Botswana AMR Interpretation"/>
         <status value="draft"/>
-        <date value="2025-06-25T00:42:48-04:00"/>
+        <date value="2025-07-08T11:52:18-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:3318d6af-be61-43f7-a31a-f6ff002df6b5"/>
-          <timestamp value="2025-06-25T00:43:31-04:00"/>
+          <identifier value="urn:uuid:c522c553-6cf2-46a8-b21b-120c460895db"/>
+          <timestamp value="2025-07-08T11:53:08-04:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -2655,10 +2655,10 @@
         <name value="BotswanaAMROrganismVS"/>
         <title value="Botswana AMR Organism ValueSet"/>
         <status value="draft"/>
-        <date value="2025-06-25T00:42:48-04:00"/>
+        <date value="2025-07-08T11:52:18-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:72ff190f-dcb2-423d-a072-2584e1040168"/>
-          <timestamp value="2025-06-25T00:43:31-04:00"/>
+          <identifier value="urn:uuid:6f745a86-2565-4e3e-8b0a-4657ce78fcb5"/>
+          <timestamp value="2025-07-08T11:53:08-04:00"/>
           <total value="198"/>
           <offset value="0"/>
           <parameter>
@@ -3725,10 +3725,10 @@
         <name value="BotswanaAMRSpecialTestVS"/>
         <title value="Botswana AMR Special Tests"/>
         <status value="draft"/>
-        <date value="2025-06-25T00:42:48-04:00"/>
+        <date value="2025-07-08T11:52:18-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:fc36076a-4be4-4503-935b-93911385d576"/>
-          <timestamp value="2025-06-25T00:43:36-04:00"/>
+          <identifier value="urn:uuid:492fe5f3-76f9-4271-97e1-cef4ff84de25"/>
+          <timestamp value="2025-07-08T11:53:11-04:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -3910,10 +3910,10 @@
         <name value="BotswanaAMRSpecimenSiteVS"/>
         <title value="Botswana AMR Specimen Collection Sites"/>
         <status value="draft"/>
-        <date value="2025-06-25T00:42:48-04:00"/>
+        <date value="2025-07-08T11:52:18-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:1c3c062e-7560-4e42-befc-b205ab15a1d2"/>
-          <timestamp value="2025-06-25T00:43:36-04:00"/>
+          <identifier value="urn:uuid:f2fe3518-c2e7-4970-9d2e-a7f25cca0656"/>
+          <timestamp value="2025-07-08T11:53:11-04:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -4027,7 +4027,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="http://terminology.hl7.org/6.4.0/CodeSystem-v3-SpecimenType.html">codesystem SpecimenType v3.0.0 (CodeSystem)</a>
+              <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-SpecimenType.html">codesystem SpecimenType v3.0.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 7 concepts</p>
             <table class="codes">
@@ -4045,7 +4045,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-http://terminology.hl7.org/CodeSystem/v3-SpecimenType-BLD"> </a>  
-                  <a href="http://terminology.hl7.org/6.4.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-BLD">BLD</a>
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-BLD">BLD</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-SpecimenType</td>
                 <td>Whole blood</td>
@@ -4053,7 +4053,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-http://terminology.hl7.org/CodeSystem/v3-SpecimenType-CSF"> </a>  
-                  <a href="http://terminology.hl7.org/6.4.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-CSF">CSF</a>
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-CSF">CSF</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-SpecimenType</td>
                 <td>Cerebrospinal fluid</td>
@@ -4061,7 +4061,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-http://terminology.hl7.org/CodeSystem/v3-SpecimenType-GEN"> </a>  
-                  <a href="http://terminology.hl7.org/6.4.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-GEN">GEN</a>
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-GEN">GEN</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-SpecimenType</td>
                 <td>Genital</td>
@@ -4069,7 +4069,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-http://terminology.hl7.org/CodeSystem/v3-SpecimenType-STL"> </a>  
-                  <a href="http://terminology.hl7.org/6.4.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-STL">STL</a>
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-STL">STL</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-SpecimenType</td>
                 <td>Stool</td>
@@ -4077,7 +4077,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-http://terminology.hl7.org/CodeSystem/v3-SpecimenType-UR"> </a>  
-                  <a href="http://terminology.hl7.org/6.4.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-UR">UR</a>
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-UR">UR</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-SpecimenType</td>
                 <td>Urine</td>
@@ -4085,7 +4085,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-http://terminology.hl7.org/CodeSystem/v3-SpecimenType-PUS"> </a>  
-                  <a href="http://terminology.hl7.org/6.4.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-PUS">PUS</a>
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-PUS">PUS</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-SpecimenType</td>
                 <td>Pus</td>
@@ -4093,7 +4093,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-http://terminology.hl7.org/CodeSystem/v3-SpecimenType-SPT"> </a>  
-                  <a href="http://terminology.hl7.org/6.4.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-SPT">SPT</a>
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-SPT">SPT</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-SpecimenType</td>
                 <td>Sputum</td>
@@ -4106,10 +4106,10 @@
         <name value="BotswanaAMRSpecimenTypeVS"/>
         <title value="Botswana AMR Specimen Type VS"/>
         <status value="draft"/>
-        <date value="2025-06-25T00:42:48-04:00"/>
+        <date value="2025-07-08T11:52:18-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:8241bc9d-712b-442e-a5dc-0a6683f73e05"/>
-          <timestamp value="2025-06-25T00:43:36-04:00"/>
+          <identifier value="urn:uuid:b9bba81d-88bb-478d-9317-d114d4ecad6f"/>
+          <timestamp value="2025-07-08T11:53:11-04:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -4241,10 +4241,10 @@
         <name value="BotswanaAMRTestResultStatusVS"/>
         <title value="Botswana AMR Test Result Status"/>
         <status value="draft"/>
-        <date value="2025-06-25T00:42:48-04:00"/>
+        <date value="2025-07-08T11:52:18-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:9ddb7a6b-858c-4d86-99f2-2706b13c60d1"/>
-          <timestamp value="2025-06-25T00:43:36-04:00"/>
+          <identifier value="urn:uuid:8a145520-ab5e-4d23-bec3-4ad6bf2cf3b8"/>
+          <timestamp value="2025-07-08T11:53:11-04:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>

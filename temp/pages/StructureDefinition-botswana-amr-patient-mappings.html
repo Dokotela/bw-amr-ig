@@ -1,0 +1,27 @@
+---
+---
+<!-- get modelType -->
+{% include fragment-modelType.html id='botswana-amr-patient' %}
+
+{% include fragment-pagebegin.html %}
+<div style="counter-reset: section 5" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-profile-navtabs.html type='StructureDefinition' id='botswana-amr-patient' active='mapping' %}
+
+<a name="root"> </a>
+<h2 id="root">{{modelType}}: BotswanaAMRPatient - Mappings</h2>
+{% include fragment-simpletable.html %}
+
+<p>Mappings for the botswana-amr-patient {{modelType | downcase }}.</p>
+
+  <!-- insert intro if present -->
+  {% include fragment-intro.html type='StructureDefinition' id='botswana-amr-patient' %}
+
+  {%include StructureDefinition-botswana-amr-patient-maps.xhtml%}
+
+  <!-- insert notes if present -->
+  {% include fragment-notes.html type='StructureDefinition' id='botswana-amr-patient' %}
+
+</div>
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}

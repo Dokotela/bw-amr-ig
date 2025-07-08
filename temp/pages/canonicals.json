@@ -21,13 +21,6 @@
     "name" : "BWAMRIG"
   },
   {
-    "id" : "BotswanaAMRSpecimen",
-    "type" : "StructureDefinition",
-    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen",
-    "version" : "0.1.0",
-    "name" : "BotswanaAMRSpecimen"
-  },
-  {
     "id" : "botswana-amr-diagnostic-report",
     "type" : "StructureDefinition",
     "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report",
@@ -49,6 +42,13 @@
     "name" : "BotswanaAMROrganismObservation"
   },
   {
+    "id" : "botswana-amr-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRPatient"
+  },
+  {
     "id" : "botswana-amr-special-test-observation",
     "type" : "StructureDefinition",
     "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation",
@@ -56,11 +56,25 @@
     "name" : "BotswanaAMRSpecialTestObservation"
   },
   {
+    "id" : "botswana-amr-specimen",
+    "type" : "StructureDefinition",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRSpecimen"
+  },
+  {
     "id" : "botswana-amr-susceptibility-observation",
     "type" : "StructureDefinition",
     "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
     "version" : "0.1.0",
     "name" : "BotswanaAMRSusceptibilityObservation"
+  },
+  {
+    "id" : "specimen-collection-location",
+    "type" : "StructureDefinition",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/specimen-collection-location",
+    "version" : "0.1.0",
+    "name" : "SpecimenCollectionLocation"
   },
   {
     "id" : "botswana-amr-antibiotic-susceptibility-loinc",

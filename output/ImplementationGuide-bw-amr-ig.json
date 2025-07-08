@@ -10,7 +10,7 @@
   "name" : "BWAMRIG",
   "title" : "Botswana AMR Implementation Guide",
   "status" : "draft",
-  "date" : "2025-06-25T00:42:48-04:00",
+  "date" : "2025-07-08T11:52:18-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [{
     "name" : "University of Botswana Partnership",
@@ -31,7 +31,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.4.0"
+    "version" : "6.5.0"
   },
   {
     "id" : "hl7ext",
@@ -663,7 +663,7 @@
         "reference" : "StructureDefinition/botswana-amr-diagnostic-report"
       },
       "name" : "Botswana AMR DiagnosticReport",
-      "description" : "Bundles AMR susceptibility observations into one report",
+      "description" : "Bundles AMR susceptibility observations into one comprehensive report",
       "exampleBoolean" : false
     },
     {
@@ -768,6 +768,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/botswana-amr-patient"
+      },
+      "name" : "Botswana AMR Patient",
+      "description" : "Patient profile for Botswana AMR surveillance capturing essential demographics",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/botswana-amr-special-test-observation"
       },
       "name" : "Botswana AMR Special Test Observation",
@@ -792,10 +804,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BotswanaAMRSpecimen"
+        "reference" : "StructureDefinition/botswana-amr-specimen"
       },
       "name" : "Botswana AMR Specimen",
-      "description" : "Constrains the Specimen Types for Botswana AMR",
+      "description" : "Specimen profile for Botswana AMR surveillance with required collection details",
       "exampleBoolean" : false
     },
     {
@@ -844,6 +856,18 @@
       },
       "name" : "Botswana AMR Test Result Status",
       "description" : "Status values for test results in Botswana AMR surveillance",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/specimen-collection-location"
+      },
+      "name" : "Specimen Collection Location",
+      "description" : "Ward or facility location where specimen was collected",
       "exampleBoolean" : false
     }],
     "page" : {

@@ -161,7 +161,7 @@ code, pre { font-size: 16px !important; }
         <!-- Placeholder for child template header declarations -->
 
         <div id="hl7-nav">
-          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+          <a id="hl7-logo" data-no-external="true" href="http://hl7.org">
             <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
           </a>
         </div>
@@ -258,10 +258,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#2">Terminology: Value Sets</a>
+         <a href="#2">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#3">Terminology: Code Systems</a>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
       </li>
    </ul>
 </div>
@@ -281,7 +284,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/botswana-amr-diagnostic-report">Botswana AMR DiagnosticReport</a>
             </td>
             <td>
-<p>Bundles AMR susceptibility observations into one report</p>
+<p>Bundles AMR susceptibility observations into one comprehensive report</p>
 </td>
          </tr>
          <tr>
@@ -304,6 +307,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-botswana-amr-patient.html"
+                  title="StructureDefinition/botswana-amr-patient">Botswana AMR Patient</a>
+            </td>
+            <td>
+<p>Patient profile for Botswana AMR surveillance capturing essential demographics</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-botswana-amr-special-test-observation.html"
                   title="StructureDefinition/botswana-amr-special-test-observation">Botswana AMR Special Test Observation</a>
             </td>
@@ -313,11 +325,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-BotswanaAMRSpecimen.html"
-                  title="StructureDefinition/BotswanaAMRSpecimen">Botswana AMR Specimen</a>
+               <a href="StructureDefinition-botswana-amr-specimen.html"
+                  title="StructureDefinition/botswana-amr-specimen">Botswana AMR Specimen</a>
             </td>
             <td>
-<p>Constrains the Specimen Types for Botswana AMR</p>
+<p>Specimen profile for Botswana AMR surveillance with required collection details</p>
 </td>
          </tr>
          <tr>
@@ -332,6 +344,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tbody>
    </table>
    <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-specimen-collection-location.html"
+                  title="StructureDefinition/specimen-collection-location">Specimen Collection Location</a>
+            </td>
+            <td>
+<p>Ward or facility location where specimen was collected</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -420,7 +449,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -464,7 +493,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/Dokotela/bw-amr-ig">University of Botswana Partnership</a>.  Package bw-amr-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Wed, Jun 25, 2025 00:43-0400">2025-06-25</span>
+          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/Dokotela/bw-amr-ig">University of Botswana Partnership</a>.  Package bw-amr-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Tue, Jul 8, 2025 11:52-0400">2025-07-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

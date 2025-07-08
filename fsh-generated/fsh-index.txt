@@ -1,12 +1,14 @@
 Output File                                                       Name                                      Type        FSH File                                                Lines
 CodeSystem-botswana-amr-local-method-cs.json                      BotswanaAMRLocalMethodCS                  CodeSystem  codeSystems/BotswanaAMRLocalMethodCS.fsh                2 - 10
 CodeSystem-botswana-amr-local-organism-cs.json                    BotswanaAMRLocalOrganismCS                CodeSystem  codeSystems/BotswanaAMRLocalOrganismCS.fsh              2 - 38
-StructureDefinition-BotswanaAMRSpecimen.json                      BotswanaAMRSpecimen                       Profile     profiles/BotswanaAMRSpecimen.fsh                        1 - 13
-StructureDefinition-botswana-amr-diagnostic-report.json           BotswanaAMRDiagnosticReport               Profile     profiles/BotswanaAMRDiagnosticReport.fsh                1 - 17
+StructureDefinition-botswana-amr-diagnostic-report.json           BotswanaAMRDiagnosticReport               Profile     profiles/BotswanaAMRDiagnosticReport.fsh                2 - 38
 StructureDefinition-botswana-amr-gram-stain-observation.json      BotswanaAMRGramStainObservation           Profile     profiles/BotswanaAMRGramStainObservation.fsh            4 - 29
 StructureDefinition-botswana-amr-organism-observation.json        BotswanaAMROrganismObservation            Profile     profiles/BotswanaAMROrganismObservation.fsh             5 - 33
+StructureDefinition-botswana-amr-patient.json                     BotswanaAMRPatient                        Profile     profiles/BotswanaAMRPatient.fsh                         2 - 12
 StructureDefinition-botswana-amr-special-test-observation.json    BotswanaAMRSpecialTestObservation         Profile     profiles/BotswanaAMRSpecialTestObservation.fsh          4 - 30
-StructureDefinition-botswana-amr-susceptibility-observation.json  BotswanaAMRSusceptibilityObservation      Profile     profiles/BotswanaAMRSusceptibilityObservation.fsh       1 - 27
+StructureDefinition-botswana-amr-specimen.json                    BotswanaAMRSpecimen                       Profile     profiles/BotswanaAMRSpecimen.fsh                        2 - 21
+StructureDefinition-botswana-amr-susceptibility-observation.json  BotswanaAMRSusceptibilityObservation      Profile     profiles/BotswanaAMRSusceptibilityObservation.fsh       2 - 29
+StructureDefinition-specimen-collection-location.json             SpecimenCollectionLocation                Extension   extensions/SpecimenCollectionLocation.fsh               2 - 9
 ValueSet-botswana-amr-antibiotic-susceptibility-loinc.json        BotswanaAMRAntibioticSusceptibilityLOINC  ValueSet    valueSets/BotswanaAMRAntibioticSusceptibilityLOINC.fsh  3 - 46
 ValueSet-botswana-amr-gram-stain-result-vs.json                   BotswanaAMRGramStainResultVS              ValueSet    valueSets/BotswanaAMRGramStrainResultVS.fsh             4 - 13
 ValueSet-botswana-amr-identification-method-vs.json               BotswanaAMRIdentificationMethodVS         ValueSet    valueSets/BotswanaAMRIdentificationMethodVS.fsh         2 - 16

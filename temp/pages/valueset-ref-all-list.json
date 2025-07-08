@@ -87,7 +87,10 @@
       "name" : "BotswanaAMRSpecimenSiteVS",
       "title" : "Botswana AMR Specimen Collection Sites",
       "description" : "Anatomical sites where specimens are collected for Botswana AMR surveillance",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen"
     },
     {
       "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs",
@@ -99,7 +102,7 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v3-SpecimenType"],
       "uses" : {
       },
-      "StructureDefinition-BotswanaAMRSpecimen.html" : "Botswana AMR Specimen"
+      "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen"
     },
     {
       "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs",
@@ -114,6 +117,20 @@
       "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.3.0",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-patient.html" : "Botswana AMR Patient"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
       "version" : "4.3.0",
       "status" : "draft",
@@ -125,11 +142,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
       "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-BotswanaAMRSpecimen.html" : "Botswana AMR Specimen",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
+      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
@@ -157,12 +173,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.79"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
+      "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen",
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
       "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-BotswanaAMRSpecimen.html" : "Botswana AMR Specimen",
       "StructureDefinition-botswana-amr-diagnostic-report.html" : "Botswana AMR DiagnosticReport",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
+      "StructureDefinition-botswana-amr-patient.html" : "Botswana AMR Patient",
+      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -176,10 +193,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
       "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
+      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
@@ -221,12 +238,44 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
+      "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen",
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
       "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-BotswanaAMRSpecimen.html" : "Botswana AMR Specimen",
       "StructureDefinition-botswana-amr-diagnostic-report.html" : "Botswana AMR DiagnosticReport",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
+      "StructureDefinition-botswana-amr-patient.html" : "Botswana AMR Patient",
+      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.3.0",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-patient.html" : "Botswana AMR Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "4.3.0",
+      "status" : "active",
+      "name" : "Marital Status Codes",
+      "title" : "MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-patient.html" : "Botswana AMR Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-category",
@@ -240,10 +289,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
       "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
+      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -257,10 +306,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
       "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
+      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -276,10 +325,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
       "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
+      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -293,9 +342,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
       "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
+      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -309,10 +358,24 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
       "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
+      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "4.3.0",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-patient.html" : "Botswana AMR Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -329,10 +392,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
       "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
+      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -348,10 +411,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
       "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
+      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/report-codes",
@@ -385,12 +448,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
+      "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen",
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
       "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-BotswanaAMRSpecimen.html" : "Botswana AMR Specimen",
       "StructureDefinition-botswana-amr-diagnostic-report.html" : "Botswana AMR DiagnosticReport",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
+      "StructureDefinition-botswana-amr-patient.html" : "Botswana AMR Patient",
+      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/specimen-collection-method",
@@ -404,7 +468,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.468"],
       "uses" : {
       },
-      "StructureDefinition-BotswanaAMRSpecimen.html" : "Botswana AMR Specimen"
+      "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/specimen-container-type",
@@ -418,7 +482,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.470"],
       "uses" : {
       },
-      "StructureDefinition-BotswanaAMRSpecimen.html" : "Botswana AMR Specimen"
+      "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/specimen-processing-procedure",
@@ -432,7 +496,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.469"],
       "uses" : {
       },
-      "StructureDefinition-BotswanaAMRSpecimen.html" : "Botswana AMR Specimen"
+      "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/specimen-status",
@@ -446,7 +510,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.471"],
       "uses" : {
       },
-      "StructureDefinition-BotswanaAMRSpecimen.html" : "Botswana AMR Specimen"
+      "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0371",
@@ -460,7 +524,7 @@
       "sources" : ["2.16.840.1.113883.21.245"],
       "uses" : {
       },
-      "StructureDefinition-BotswanaAMRSpecimen.html" : "Botswana AMR Specimen"
+      "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0493",
@@ -474,7 +538,7 @@
       "sources" : ["2.16.840.1.113883.21.333"],
       "uses" : {
       },
-      "StructureDefinition-BotswanaAMRSpecimen.html" : "Botswana AMR Specimen"
+      "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0916",
@@ -488,7 +552,7 @@
       "sources" : ["2.16.840.1.113883.21.440"],
       "uses" : {
       },
-      "StructureDefinition-BotswanaAMRSpecimen.html" : "Botswana AMR Specimen"
+      "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen"
     }
   ]
 }

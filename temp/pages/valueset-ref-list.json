@@ -87,7 +87,10 @@
       "name" : "BotswanaAMRSpecimenSiteVS",
       "title" : "Botswana AMR Specimen Collection Sites",
       "description" : "Anatomical sites where specimens are collected for Botswana AMR surveillance",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen"
     },
     {
       "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs",
@@ -99,7 +102,7 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v3-SpecimenType"],
       "uses" : {
       },
-      "StructureDefinition-BotswanaAMRSpecimen.html" : "Botswana AMR Specimen"
+      "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen"
     },
     {
       "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs",

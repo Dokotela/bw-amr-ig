@@ -15,11 +15,6 @@
   "differential": {
     "element": [
       {
-        "id": "Observation.id",
-        "path": "Observation.id",
-        "patternId": "botswana-amr-susceptibility-observation"
-      },
-      {
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
         "patternCanonical": "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SusceptibilityObservation"
@@ -27,7 +22,7 @@
       {
         "id": "Observation.status",
         "path": "Observation.status",
-        "patternCode": "draft"
+        "patternCode": "final"
       },
       {
         "id": "Observation.code",
@@ -45,7 +40,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
+              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient"
             ]
           }
         ]
@@ -121,7 +116,20 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/BotswanaAMRSpecimen"
+              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.derivedFrom",
+        "path": "Observation.derivedFrom",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation"
             ]
           }
         ]

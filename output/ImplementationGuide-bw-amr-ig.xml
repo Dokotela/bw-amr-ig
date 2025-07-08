@@ -11,7 +11,7 @@
   <name value="BWAMRIG"/>
   <title value="Botswana AMR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-06-25T00:42:48-04:00"/>
+  <date value="2025-07-08T11:52:18-04:00"/>
   <publisher value="University of Botswana Partnership"/>
   <contact>
     <name value="University of Botswana Partnership"/>
@@ -30,7 +30,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.4.0"/>
+    <version value="6.5.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -495,7 +495,7 @@
         <reference value="StructureDefinition/botswana-amr-diagnostic-report"/>
       </reference>
       <name value="Botswana AMR DiagnosticReport"/>
-      <description value="Bundles AMR susceptibility observations into one report"/>
+      <description value="Bundles AMR susceptibility observations into one comprehensive report"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -591,6 +591,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/botswana-amr-patient"/>
+      </reference>
+      <name value="Botswana AMR Patient"/>
+      <description value="Patient profile for Botswana AMR surveillance capturing essential demographics"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/botswana-amr-special-test-observation"/>
       </reference>
       <name value="Botswana AMR Special Test Observation"/>
@@ -613,10 +624,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/BotswanaAMRSpecimen"/>
+        <reference value="StructureDefinition/botswana-amr-specimen"/>
       </reference>
       <name value="Botswana AMR Specimen"/>
-      <description value="Constrains the Specimen Types for Botswana AMR"/>
+      <description value="Specimen profile for Botswana AMR surveillance with required collection details"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -661,6 +672,17 @@
       </reference>
       <name value="Botswana AMR Test Result Status"/>
       <description value="Status values for test results in Botswana AMR surveillance"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/specimen-collection-location"/>
+      </reference>
+      <name value="Specimen Collection Location"/>
+      <description value="Ward or facility location where specimen was collected"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

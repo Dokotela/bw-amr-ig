@@ -23,6 +23,18 @@
       "ValueSet-botswana-amr-organism-vs.html" : "Botswana AMR Organism ValueSet"
     },
     {
+      "url" : "http://hl7.org/fhir/administrative-gender",
+      "version" : "4.3.0",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-administrative-gender.html" : "AdministrativeGender"
+    },
+    {
       "url" : "http://hl7.org/fhir/diagnostic-report-status",
       "version" : "4.3.0",
       "status" : "draft",
@@ -33,6 +45,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4B/valueset-diagnostic-report-status.html" : "DiagnosticReportStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/link-type",
+      "version" : "4.3.0",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "oids" : ["2.16.840.1.113883.4.642.4.424"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-link-type.html" : "LinkType"
     },
     {
       "url" : "http://hl7.org/fhir/observation-status",
@@ -68,9 +92,9 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "ValueSet-botswana-amr-special-test-vs.html" : "Botswana AMR Special Tests",
       "http://hl7.org/fhir/R4B/valueset-report-codes.html" : "LOINC Diagnostic Report Codes",
       "http://hl7.org/fhir/R4B/valueset-observation-codes.html" : "LOINC Codes",
+      "ValueSet-botswana-amr-special-test-vs.html" : "Botswana AMR Special Tests",
       "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.html" : "Botswana AMR Antibiotic Susceptibility LOINC"
     },
     {
@@ -83,17 +107,17 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4B/valueset-observation-methods.html" : "Observation Methods",
       "http://hl7.org/fhir/R4B/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
       "ValueSet-botswana-amr-test-result-status-vs.html" : "Botswana AMR Test Result Status",
       "http://hl7.org/fhir/R4B/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "ValueSet-botswana-amr-identification-method-vs.html" : "Botswana AMR Organism Identification Methods",
+      "http://hl7.org/fhir/R4B/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
       "ValueSet-botswana-amr-gram-stain-result-vs.html" : "Botswana AMR Gram Stain Results",
-      "ValueSet-botswana-amr-organism-vs.html" : "Botswana AMR Organism ValueSet",
       "ValueSet-botswana-amr-specimen-site-vs.html" : "Botswana AMR Specimen Collection Sites",
       "http://hl7.org/fhir/R4B/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
       "http://hl7.org/fhir/R4B/valueset-specimen-container-type.html" : "SpecimenContainer",
-      "http://hl7.org/fhir/R4B/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4B/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "ValueSet-botswana-amr-identification-method-vs.html" : "Botswana AMR Organism Identification Methods"
+      "ValueSet-botswana-amr-organism-vs.html" : "Botswana AMR Organism ValueSet"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
@@ -156,6 +180,18 @@
       "http://hl7.org/fhir/R4B/valueset-diagnostic-service-sections.html" : "Diagnostic Service Section Codes"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ContactRole2",
+      "title" : "contactRole2",
+      "description" : "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
+      "oids" : ["2.16.840.1.113883.18.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-patient-contactrelationship.html" : "Patient Contact Relationship"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0371",
       "version" : "2.0.0",
       "status" : "active",
@@ -165,7 +201,7 @@
       "oids" : ["2.16.840.1.113883.18.229"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.4.0/ValueSet-v2-0371.html" : "hl7VS-additivePreservative"
+      "http://terminology.hl7.org/6.5.0/ValueSet-v2-0371.html" : "hl7VS-additivePreservative"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0373",
@@ -189,7 +225,7 @@
       "oids" : ["2.16.840.1.113883.18.317"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.4.0/ValueSet-v2-0493.html" : "hl7VS-specimenCondition"
+      "http://terminology.hl7.org/6.5.0/ValueSet-v2-0493.html" : "hl7VS-specimenCondition"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0916",
@@ -201,7 +237,31 @@
       "oids" : ["2.16.840.1.113883.18.422"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.4.0/ValueSet-v2-0916.html" : "hl7VS-relevantClincialInformation"
+      "http://terminology.hl7.org/6.5.0/ValueSet-v2-0916.html" : "hl7VS-relevantClincialInformation"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "MaritalStatus",
+      "title" : "MaritalStatus",
+      "description" : "\\* \\* \\* No description supplied \\* \\* \\*\r\n\r\n*Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.\r\n\r\n*Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.",
+      "oids" : ["2.16.840.1.113883.5.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-marital-status.html" : "MaritalStatus"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "NullFlavor",
+      "title" : "NullFlavor",
+      "description" : "A collection of codes specifying why a valid value is not present.",
+      "oids" : ["2.16.840.1.113883.5.1008"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-marital-status.html" : "MaritalStatus"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -213,8 +273,8 @@
       "oids" : ["2.16.840.1.113883.5.83"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4B/valueset-observation-interpretation.html" : "Observation Interpretation Codes",
-      "ValueSet-botswana-amr-interpretation.html" : "Botswana AMR Interpretation"
+      "ValueSet-botswana-amr-interpretation.html" : "Botswana AMR Interpretation",
+      "http://hl7.org/fhir/R4B/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-SpecimenType",

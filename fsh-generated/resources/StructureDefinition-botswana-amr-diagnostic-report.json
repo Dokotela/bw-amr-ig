@@ -5,7 +5,7 @@
   "name": "BotswanaAMRDiagnosticReport",
   "title": "Botswana AMR DiagnosticReport",
   "status": "draft",
-  "description": "Bundles AMR susceptibility observations into one report",
+  "description": "Bundles AMR susceptibility observations into one comprehensive report",
   "fhirVersion": "4.3.0",
   "kind": "resource",
   "abstract": false,
@@ -22,7 +22,7 @@
       {
         "id": "DiagnosticReport.status",
         "path": "DiagnosticReport.status",
-        "patternCode": "draft"
+        "patternCode": "final"
       },
       {
         "id": "DiagnosticReport.code",
@@ -45,7 +45,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
+              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient"
             ]
           }
         ]
@@ -78,9 +78,91 @@
         ]
       },
       {
+        "id": "DiagnosticReport.specimen",
+        "path": "DiagnosticReport.specimen",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen"
+            ]
+          }
+        ]
+      },
+      {
         "id": "DiagnosticReport.result",
         "path": "DiagnosticReport.result",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "resolve().code"
+            }
+          ],
+          "rules": "open"
+        },
         "min": 1
+      },
+      {
+        "id": "DiagnosticReport.result:gramStain",
+        "path": "DiagnosticReport.result",
+        "sliceName": "gramStain",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.result:organism",
+        "path": "DiagnosticReport.result",
+        "sliceName": "organism",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.result:susceptibility",
+        "path": "DiagnosticReport.result",
+        "sliceName": "susceptibility",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.result:specialTests",
+        "path": "DiagnosticReport.result",
+        "sliceName": "specialTests",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation"
+            ]
+          }
+        ]
       }
     ]
   }

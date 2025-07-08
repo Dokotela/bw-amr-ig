@@ -16,20 +16,12 @@
     "endLine": 38
   },
   {
-    "outputFile": "StructureDefinition-BotswanaAMRSpecimen.json",
-    "fshName": "BotswanaAMRSpecimen",
-    "fshType": "Profile",
-    "fshFile": "profiles/BotswanaAMRSpecimen.fsh",
-    "startLine": 1,
-    "endLine": 13
-  },
-  {
     "outputFile": "StructureDefinition-botswana-amr-diagnostic-report.json",
     "fshName": "BotswanaAMRDiagnosticReport",
     "fshType": "Profile",
     "fshFile": "profiles/BotswanaAMRDiagnosticReport.fsh",
-    "startLine": 1,
-    "endLine": 17
+    "startLine": 2,
+    "endLine": 38
   },
   {
     "outputFile": "StructureDefinition-botswana-amr-gram-stain-observation.json",
@@ -48,6 +40,14 @@
     "endLine": 33
   },
   {
+    "outputFile": "StructureDefinition-botswana-amr-patient.json",
+    "fshName": "BotswanaAMRPatient",
+    "fshType": "Profile",
+    "fshFile": "profiles/BotswanaAMRPatient.fsh",
+    "startLine": 2,
+    "endLine": 12
+  },
+  {
     "outputFile": "StructureDefinition-botswana-amr-special-test-observation.json",
     "fshName": "BotswanaAMRSpecialTestObservation",
     "fshType": "Profile",
@@ -56,12 +56,28 @@
     "endLine": 30
   },
   {
+    "outputFile": "StructureDefinition-botswana-amr-specimen.json",
+    "fshName": "BotswanaAMRSpecimen",
+    "fshType": "Profile",
+    "fshFile": "profiles/BotswanaAMRSpecimen.fsh",
+    "startLine": 2,
+    "endLine": 21
+  },
+  {
     "outputFile": "StructureDefinition-botswana-amr-susceptibility-observation.json",
     "fshName": "BotswanaAMRSusceptibilityObservation",
     "fshType": "Profile",
     "fshFile": "profiles/BotswanaAMRSusceptibilityObservation.fsh",
-    "startLine": 1,
-    "endLine": 27
+    "startLine": 2,
+    "endLine": 29
+  },
+  {
+    "outputFile": "StructureDefinition-specimen-collection-location.json",
+    "fshName": "SpecimenCollectionLocation",
+    "fshType": "Extension",
+    "fshFile": "extensions/SpecimenCollectionLocation.fsh",
+    "startLine": 2,
+    "endLine": 9
   },
   {
     "outputFile": "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.json",

@@ -8,10 +8,12 @@
 [BotswanaAMRIdentificationMethodVS]: ValueSet-botswana-amr-identification-method-vs.html
 [BotswanaAMROrganismObservation]: StructureDefinition-botswana-amr-organism-observation.html
 [BotswanaAMROrganismVS]: ValueSet-botswana-amr-organism-vs.html
+[BotswanaAMRPatient]: StructureDefinition-botswana-amr-patient.html
 [BotswanaAMRSpecialTestObservation]: StructureDefinition-botswana-amr-special-test-observation.html
 [BotswanaAMRSpecialTestVS]: ValueSet-botswana-amr-special-test-vs.html
-[BotswanaAMRSpecimen]: StructureDefinition-BotswanaAMRSpecimen.html
+[BotswanaAMRSpecimen]: StructureDefinition-botswana-amr-specimen.html
 [BotswanaAMRSpecimenSiteVS]: ValueSet-botswana-amr-specimen-site-vs.html
 [BotswanaAMRSpecimenTypeVS]: ValueSet-botswana-amr-specimen-type-vs.html
 [BotswanaAMRSusceptibilityObservation]: StructureDefinition-botswana-amr-susceptibility-observation.html
 [BotswanaAMRTestResultStatusVS]: ValueSet-botswana-amr-test-result-status-vs.html
+[SpecimenCollectionLocation]: StructureDefinition-specimen-collection-location.html

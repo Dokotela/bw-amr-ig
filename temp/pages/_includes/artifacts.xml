@@ -8,10 +8,13 @@
          <a href="#1">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#2">Terminology: Value Sets</a>
+         <a href="#2">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#3">Terminology: Code Systems</a>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
       </li>
    </ul>
 </div>
@@ -29,7 +32,7 @@
                <a href="StructureDefinition-botswana-amr-diagnostic-report.html"
                   title="StructureDefinition/botswana-amr-diagnostic-report">Botswana AMR DiagnosticReport</a>
             </td>
-            <td>{% capture desc %}Bundles AMR susceptibility observations into one report{% endcapture %}
+            <td>{% capture desc %}Bundles AMR susceptibility observations into one comprehensive report{% endcapture %}
 {{ desc | markdownify}}</td>
          </tr>
          <tr>
@@ -50,6 +53,14 @@
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-botswana-amr-patient.html"
+                  title="StructureDefinition/botswana-amr-patient">Botswana AMR Patient</a>
+            </td>
+            <td>{% capture desc %}Patient profile for Botswana AMR surveillance capturing essential demographics{% endcapture %}
+{{ desc | markdownify}}</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-botswana-amr-special-test-observation.html"
                   title="StructureDefinition/botswana-amr-special-test-observation">Botswana AMR Special Test Observation</a>
             </td>
@@ -58,10 +69,10 @@
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-BotswanaAMRSpecimen.html"
-                  title="StructureDefinition/BotswanaAMRSpecimen">Botswana AMR Specimen</a>
+               <a href="StructureDefinition-botswana-amr-specimen.html"
+                  title="StructureDefinition/botswana-amr-specimen">Botswana AMR Specimen</a>
             </td>
-            <td>{% capture desc %}Constrains the Specimen Types for Botswana AMR{% endcapture %}
+            <td>{% capture desc %}Specimen profile for Botswana AMR surveillance with required collection details{% endcapture %}
 {{ desc | markdownify}}</td>
          </tr>
          <tr>
@@ -75,6 +86,21 @@
       </tbody>
    </table>
    <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>{% capture grouping_desc %}These define constraints on FHIR data types for systems conforming to this implementation guide.{% endcapture %}
+    {{ grouping_desc | markdownify}}<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-specimen-collection-location.html"
+                  title="StructureDefinition/specimen-collection-location">Specimen Collection Location</a>
+            </td>
+            <td>{% capture desc %}Ward or facility location where specimen was collected{% endcapture %}
+{{ desc | markdownify}}</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
    <h3>Terminology: Value Sets </h3>{% capture grouping_desc %}These define sets of codes used by systems conforming to this implementation guide.{% endcapture %}
     {{ grouping_desc | markdownify}}<table class="grid">
       <col style="width:20%"/>
@@ -153,7 +179,7 @@
          </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Terminology: Code Systems </h3>{% capture grouping_desc %}These define new code systems used by systems conforming to this implementation guide.{% endcapture %}
     {{ grouping_desc | markdownify}}<table class="grid">
       <col style="width:20%"/>

@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "BWAMRIG"] ; # 
   fhir:title [ fhir:v "Botswana AMR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-06-25T00:42:48-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-08T11:52:18-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "University of Botswana Partnership"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "University of Botswana Partnership" ] ;
@@ -45,7 +45,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.4.0" ]
+     fhir:version [ fhir:v "6.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -911,7 +911,7 @@
          fhir:reference [ fhir:v "StructureDefinition/botswana-amr-diagnostic-report" ]
        ] ;
        fhir:name [ fhir:v "Botswana AMR DiagnosticReport" ] ;
-       fhir:description [ fhir:v "Bundles AMR susceptibility observations into one report" ] ;
+       fhir:description [ fhir:v "Bundles AMR susceptibility observations into one comprehensive report" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1069,6 +1069,24 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://bw.health.gov/fhir/StructureDefinition/botswana-amr-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/botswana-amr-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Botswana AMR Patient" ] ;
+       fhir:description [ fhir:v "Patient profile for Botswana AMR surveillance capturing essential demographics" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://bw.health.gov/fhir/StructureDefinition/botswana-amr-special-test-observation> ;
          fhir:reference [ fhir:v "StructureDefinition/botswana-amr-special-test-observation" ]
        ] ;
@@ -1105,11 +1123,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://bw.health.gov/fhir/StructureDefinition/BotswanaAMRSpecimen> ;
-         fhir:reference [ fhir:v "StructureDefinition/BotswanaAMRSpecimen" ]
+         fhir:link <http://bw.health.gov/fhir/StructureDefinition/botswana-amr-specimen> ;
+         fhir:reference [ fhir:v "StructureDefinition/botswana-amr-specimen" ]
        ] ;
        fhir:name [ fhir:v "Botswana AMR Specimen" ] ;
-       fhir:description [ fhir:v "Constrains the Specimen Types for Botswana AMR" ] ;
+       fhir:description [ fhir:v "Specimen profile for Botswana AMR surveillance with required collection details" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1182,6 +1200,24 @@
        ] ;
        fhir:name [ fhir:v "Botswana AMR Test Result Status" ] ;
        fhir:description [ fhir:v "Status values for test results in Botswana AMR surveillance" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://bw.health.gov/fhir/StructureDefinition/specimen-collection-location> ;
+         fhir:reference [ fhir:v "StructureDefinition/specimen-collection-location" ]
+       ] ;
+       fhir:name [ fhir:v "Specimen Collection Location" ] ;
+       fhir:description [ fhir:v "Ward or facility location where specimen was collected" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

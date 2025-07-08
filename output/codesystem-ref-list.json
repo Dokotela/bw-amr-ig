@@ -46,10 +46,10 @@
       "uses" : {
       },
       "ValueSet-botswana-amr-test-result-status-vs.html" : "Botswana AMR Test Result Status",
+      "ValueSet-botswana-amr-identification-method-vs.html" : "Botswana AMR Organism Identification Methods",
       "ValueSet-botswana-amr-gram-stain-result-vs.html" : "Botswana AMR Gram Stain Results",
-      "ValueSet-botswana-amr-organism-vs.html" : "Botswana AMR Organism ValueSet",
       "ValueSet-botswana-amr-specimen-site-vs.html" : "Botswana AMR Specimen Collection Sites",
-      "ValueSet-botswana-amr-identification-method-vs.html" : "Botswana AMR Organism Identification Methods"
+      "ValueSet-botswana-amr-organism-vs.html" : "Botswana AMR Organism ValueSet"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
