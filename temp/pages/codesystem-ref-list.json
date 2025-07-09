@@ -32,8 +32,8 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "ValueSet-botswana-amr-special-test-vs.html" : "Botswana AMR Special Tests",
-      "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.html" : "Botswana AMR Antibiotic Susceptibility LOINC"
+      "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.html" : "Botswana AMR Antibiotic Susceptibility LOINC",
+      "ValueSet-botswana-amr-special-test-vs.html" : "Botswana AMR Special Tests"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -47,9 +47,9 @@
       },
       "ValueSet-botswana-amr-test-result-status-vs.html" : "Botswana AMR Test Result Status",
       "ValueSet-botswana-amr-identification-method-vs.html" : "Botswana AMR Organism Identification Methods",
-      "ValueSet-botswana-amr-gram-stain-result-vs.html" : "Botswana AMR Gram Stain Results",
+      "ValueSet-botswana-amr-organism-vs.html" : "Botswana AMR Organism ValueSet",
       "ValueSet-botswana-amr-specimen-site-vs.html" : "Botswana AMR Specimen Collection Sites",
-      "ValueSet-botswana-amr-organism-vs.html" : "Botswana AMR Organism ValueSet"
+      "ValueSet-botswana-amr-gram-stain-result-vs.html" : "Botswana AMR Gram Stain Results"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",

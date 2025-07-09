@@ -3,7 +3,7 @@ BWAMRIG : Validation Results
 
 err = 139, warn = 59, info = 12
 IG Publisher Version: 2.0.7 Out of date - current version is 2.0.8
-Generated Tue Jul 08 11:53:36 EDT 2025. FHIR version 4.3.0 for bw-amr-ig#0.1.0 (canonical = http://bw.health.gov/fhir)
+Generated Wed Jul 09 10:15:54 EDT 2025. FHIR version 4.3.0 for bw-amr-ig#0.1.0 (canonical = http://bw.health.gov/fhir)
  Build Errors : 88 / 4 / 0
  /home/grey/dev/bw-amr-ig/fsh-generated/resources/CodeSystem-botswana-amr-local-method-cs : 2 / 2 / 2
  /home/grey/dev/bw-amr-ig/fsh-generated/resources/CodeSystem-botswana-amr-local-organism-cs : 2 / 2 / 2

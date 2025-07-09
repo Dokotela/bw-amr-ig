@@ -13,7 +13,7 @@
     "title" : "Botswana AMR Implementation Guide",
     "titlelang" : {
     },
-    "date" : "2025-07-08T11:52:18-04:00",
+    "date" : "2025-07-09T10:14:37-04:00",
     "description" : "FHIR Implementation Guide for the Botswana AMR Data Analytics Platform",
     "descriptionlang" : {
     },
@@ -38,7 +38,7 @@
     "title" : "Botswana AMR Local Identification Method Codes",
     "titlelang" : {
     },
-    "date" : "2025-07-08T11:52:18-04:00",
+    "date" : "2025-07-09T10:14:37-04:00",
     "description" : "Local codes for identification methods used in Botswana AMR surveillance",
     "descriptionlang" : {
     },
@@ -63,7 +63,7 @@
     "title" : "Botswana AMR Local Organism Codes",
     "titlelang" : {
     },
-    "date" : "2025-07-08T11:52:18-04:00",
+    "date" : "2025-07-09T10:14:37-04:00",
     "description" : "Local codes for organism combinations and complex designations used in Botswana AMR surveillance",
     "descriptionlang" : {
     },
@@ -88,7 +88,7 @@
     "title" : "Botswana AMR DiagnosticReport",
     "titlelang" : {
     },
-    "date" : "2025-07-08T11:52:18-04:00",
+    "date" : "2025-07-09T10:14:37-04:00",
     "description" : "Bundles AMR susceptibility observations into one comprehensive report",
     "descriptionlang" : {
     },
@@ -113,7 +113,7 @@
     "title" : "Botswana AMR Gram Stain Observation",
     "titlelang" : {
     },
-    "date" : "2025-07-08T11:52:18-04:00",
+    "date" : "2025-07-09T10:14:37-04:00",
     "description" : "Records gram stain results for specimens in Botswana AMR surveillance",
     "descriptionlang" : {
     },
@@ -138,7 +138,7 @@
     "title" : "Botswana AMR Organism Identification Observation",
     "titlelang" : {
     },
-    "date" : "2025-07-08T11:52:18-04:00",
+    "date" : "2025-07-09T10:14:37-04:00",
     "description" : "Records organism identification results from culture in Botswana AMR surveillance",
     "descriptionlang" : {
     },
@@ -163,7 +163,7 @@
     "title" : "Botswana AMR Patient",
     "titlelang" : {
     },
-    "date" : "2025-07-08T11:52:18-04:00",
+    "date" : "2025-07-09T10:14:37-04:00",
     "description" : "Patient profile for Botswana AMR surveillance capturing essential demographics",
     "descriptionlang" : {
     },
@@ -188,7 +188,7 @@
     "title" : "Botswana AMR Special Test Observation",
     "titlelang" : {
     },
-    "date" : "2025-07-08T11:52:18-04:00",
+    "date" : "2025-07-09T10:14:37-04:00",
     "description" : "Records special AMR test results (ESBL, Carbapenemase, D-Zone, MRSA) in Botswana AMR surveillance",
     "descriptionlang" : {
     },
@@ -213,7 +213,7 @@
     "title" : "Botswana AMR Specimen",
     "titlelang" : {
     },
-    "date" : "2025-07-08T11:52:18-04:00",
+    "date" : "2025-07-09T10:14:37-04:00",
     "description" : "Specimen profile for Botswana AMR surveillance with required collection details",
     "descriptionlang" : {
     },
@@ -238,7 +238,7 @@
     "title" : "Botswana AMR Susceptibility Observation",
     "titlelang" : {
     },
-    "date" : "2025-07-08T11:52:18-04:00",
+    "date" : "2025-07-09T10:14:37-04:00",
     "description" : "Records S/I/R (and optional MIC) for a single antibiotic test on a specimen",
     "descriptionlang" : {
     },
@@ -263,7 +263,7 @@
     "title" : "Specimen Collection Location",
     "titlelang" : {
     },
-    "date" : "2025-07-08T11:52:18-04:00",
+    "date" : "2025-07-09T10:14:37-04:00",
     "description" : "Ward or facility location where specimen was collected",
     "descriptionlang" : {
     },
@@ -288,7 +288,7 @@
     "title" : "Botswana AMR Antibiotic Susceptibility LOINC",
     "titlelang" : {
     },
-    "date" : "2025-07-08T11:52:18-04:00",
+    "date" : "2025-07-09T10:14:37-04:00",
     "description" : "Collection of LOINC codes for antibiotic-susceptibility tests (MIC panel and individual drugs)",
     "descriptionlang" : {
     },
@@ -313,7 +313,7 @@
     "title" : "Botswana AMR Gram Stain Results",
     "titlelang" : {
     },
-    "date" : "2025-07-08T11:52:18-04:00",
+    "date" : "2025-07-09T10:14:37-04:00",
     "description" : "Gram stain results used in Botswana AMR surveillance",
     "descriptionlang" : {
     },
@@ -338,7 +338,7 @@
     "title" : "Botswana AMR Organism Identification Methods",
     "titlelang" : {
     },
-    "date" : "2025-07-08T11:52:18-04:00",
+    "date" : "2025-07-09T10:14:37-04:00",
     "description" : "Methods used for organism identification in Botswana AMR surveillance",
     "descriptionlang" : {
     },
@@ -363,7 +363,7 @@
     "title" : "Botswana AMR Interpretation",
     "titlelang" : {
     },
-    "date" : "2025-07-08T11:52:18-04:00",
+    "date" : "2025-07-09T10:14:37-04:00",
     "description" : "Only Susceptible, Intermediate, or Resistant",
     "descriptionlang" : {
     },
@@ -388,7 +388,7 @@
     "title" : "Botswana AMR Organism ValueSet",
     "titlelang" : {
     },
-    "date" : "2025-07-08T11:52:18-04:00",
+    "date" : "2025-07-09T10:14:37-04:00",
     "description" : "Organisms identified in Botswana AMR surveillance using SNOMED CT codes and local codes for combinations",
     "descriptionlang" : {
     },
@@ -413,7 +413,7 @@
     "title" : "Botswana AMR Special Tests",
     "titlelang" : {
     },
-    "date" : "2025-07-08T11:52:18-04:00",
+    "date" : "2025-07-09T10:14:37-04:00",
     "description" : "Special antimicrobial resistance tests performed in Botswana AMR surveillance",
     "descriptionlang" : {
     },
@@ -438,7 +438,7 @@
     "title" : "Botswana AMR Specimen Collection Sites",
     "titlelang" : {
     },
-    "date" : "2025-07-08T11:52:18-04:00",
+    "date" : "2025-07-09T10:14:37-04:00",
     "description" : "Anatomical sites where specimens are collected for Botswana AMR surveillance",
     "descriptionlang" : {
     },
@@ -463,7 +463,7 @@
     "title" : "Botswana AMR Specimen Type VS",
     "titlelang" : {
     },
-    "date" : "2025-07-08T11:52:18-04:00",
+    "date" : "2025-07-09T10:14:37-04:00",
     "description" : "Specimen types used in Botswana AMR data collection, reusing v3-SpecimenType codes",
     "descriptionlang" : {
     },
@@ -488,7 +488,7 @@
     "title" : "Botswana AMR Test Result Status",
     "titlelang" : {
     },
-    "date" : "2025-07-08T11:52:18-04:00",
+    "date" : "2025-07-09T10:14:37-04:00",
     "description" : "Status values for test results in Botswana AMR surveillance",
     "descriptionlang" : {
     },

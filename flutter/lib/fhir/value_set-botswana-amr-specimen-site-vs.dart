@@ -12,7 +12,7 @@ final ValueSet botswanaAmrSpecimenSiteVs = ValueSet.fromJson({
   "name": "BotswanaAMRSpecimenSiteVS",
   "title": "Botswana AMR Specimen Collection Sites",
   "status": "draft",
-  "date": "2025-07-08T12:05:30-04:00",
+  "date": "2025-07-09T10:14:37-04:00",
   "publisher": "University of Botswana Partnership",
   "contact": [
     {
