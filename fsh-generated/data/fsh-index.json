@@ -16,28 +16,220 @@
     "endLine": 38
   },
   {
+    "outputFile": "DiagnosticReport-ExampleDiagnosticReportAMR.json",
+    "fshName": "ExampleDiagnosticReportAMR",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 379,
+    "endLine": 392
+  },
+  {
+    "outputFile": "Encounter-ExampleEncounterInpatient.json",
+    "fshName": "ExampleEncounterInpatient",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 37,
+    "endLine": 46
+  },
+  {
+    "outputFile": "Observation-ExampleGramStainNegative.json",
+    "fshName": "ExampleGramStainNegative",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 69,
+    "endLine": 78
+  },
+  {
+    "outputFile": "Observation-ExampleOrganismEcoli.json",
+    "fshName": "ExampleOrganismEcoli",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 84,
+    "endLine": 103
+  },
+  {
+    "outputFile": "Observation-ExampleOrganismKlebsiella.json",
+    "fshName": "ExampleOrganismKlebsiella",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 109,
+    "endLine": 127
+  },
+  {
+    "outputFile": "Observation-ExampleSpecialTestEcoliEsbl.json",
+    "fshName": "ExampleSpecialTestEcoliEsbl",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 350,
+    "endLine": 360
+  },
+  {
+    "outputFile": "Observation-ExampleSpecialTestKlebEsbl.json",
+    "fshName": "ExampleSpecialTestKlebEsbl",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 363,
+    "endLine": 373
+  },
+  {
+    "outputFile": "Observation-ExampleSusceptEcoliAmoxClav.json",
+    "fshName": "ExampleSusceptEcoliAmoxClav",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 150,
+    "endLine": 163
+  },
+  {
+    "outputFile": "Observation-ExampleSusceptEcoliAmpicillin.json",
+    "fshName": "ExampleSusceptEcoliAmpicillin",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 134,
+    "endLine": 147
+  },
+  {
+    "outputFile": "Observation-ExampleSusceptEcoliCeftriaxone.json",
+    "fshName": "ExampleSusceptEcoliCeftriaxone",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 166,
+    "endLine": 179
+  },
+  {
+    "outputFile": "Observation-ExampleSusceptEcoliCiprofloxacin.json",
+    "fshName": "ExampleSusceptEcoliCiprofloxacin",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 182,
+    "endLine": 195
+  },
+  {
+    "outputFile": "Observation-ExampleSusceptEcoliGentamicin.json",
+    "fshName": "ExampleSusceptEcoliGentamicin",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 198,
+    "endLine": 211
+  },
+  {
+    "outputFile": "Observation-ExampleSusceptEcoliNitrofurantoin.json",
+    "fshName": "ExampleSusceptEcoliNitrofurantoin",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 230,
+    "endLine": 243
+  },
+  {
+    "outputFile": "Observation-ExampleSusceptEcoliTmpSmx.json",
+    "fshName": "ExampleSusceptEcoliTmpSmx",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 214,
+    "endLine": 227
+  },
+  {
+    "outputFile": "Observation-ExampleSusceptKlebAmoxClav.json",
+    "fshName": "ExampleSusceptKlebAmoxClav",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 266,
+    "endLine": 279
+  },
+  {
+    "outputFile": "Observation-ExampleSusceptKlebAmpicillin.json",
+    "fshName": "ExampleSusceptKlebAmpicillin",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 250,
+    "endLine": 263
+  },
+  {
+    "outputFile": "Observation-ExampleSusceptKlebCeftriaxone.json",
+    "fshName": "ExampleSusceptKlebCeftriaxone",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 282,
+    "endLine": 295
+  },
+  {
+    "outputFile": "Observation-ExampleSusceptKlebCiprofloxacin.json",
+    "fshName": "ExampleSusceptKlebCiprofloxacin",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 298,
+    "endLine": 311
+  },
+  {
+    "outputFile": "Observation-ExampleSusceptKlebGentamicin.json",
+    "fshName": "ExampleSusceptKlebGentamicin",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 314,
+    "endLine": 327
+  },
+  {
+    "outputFile": "Observation-ExampleSusceptKlebMeropenem.json",
+    "fshName": "ExampleSusceptKlebMeropenem",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 330,
+    "endLine": 343
+  },
+  {
+    "outputFile": "OperationDefinition-ExportWHONET.json",
+    "fshName": "ExportWHONET",
+    "fshType": "Instance",
+    "fshFile": "operations/ExportWHONET.fsh",
+    "startLine": 1,
+    "endLine": 55
+  },
+  {
+    "outputFile": "Patient-ExamplePatientMotswana.json",
+    "fshName": "ExamplePatientMotswana",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 22,
+    "endLine": 31
+  },
+  {
+    "outputFile": "Specimen-ExampleSpecimenUrine.json",
+    "fshName": "ExampleSpecimenUrine",
+    "fshType": "Instance",
+    "fshFile": "examples/BotswanaAMRExample.fsh",
+    "startLine": 52,
+    "endLine": 63
+  },
+  {
     "outputFile": "StructureDefinition-botswana-amr-diagnostic-report.json",
     "fshName": "BotswanaAMRDiagnosticReport",
     "fshType": "Profile",
     "fshFile": "profiles/BotswanaAMRDiagnosticReport.fsh",
-    "startLine": 2,
-    "endLine": 38
+    "startLine": 4,
+    "endLine": 57
+  },
+  {
+    "outputFile": "StructureDefinition-botswana-amr-encounter.json",
+    "fshName": "BotswanaAMREncounter",
+    "fshType": "Profile",
+    "fshFile": "profiles/BotswanaAMREncounter.fsh",
+    "startLine": 4,
+    "endLine": 37
   },
   {
     "outputFile": "StructureDefinition-botswana-amr-gram-stain-observation.json",
     "fshName": "BotswanaAMRGramStainObservation",
     "fshType": "Profile",
     "fshFile": "profiles/BotswanaAMRGramStainObservation.fsh",
-    "startLine": 4,
-    "endLine": 29
+    "startLine": 5,
+    "endLine": 42
   },
   {
     "outputFile": "StructureDefinition-botswana-amr-organism-observation.json",
     "fshName": "BotswanaAMROrganismObservation",
     "fshType": "Profile",
     "fshFile": "profiles/BotswanaAMROrganismObservation.fsh",
-    "startLine": 5,
-    "endLine": 33
+    "startLine": 6,
+    "endLine": 54
   },
   {
     "outputFile": "StructureDefinition-botswana-amr-patient.json",
@@ -52,8 +244,8 @@
     "fshName": "BotswanaAMRSpecialTestObservation",
     "fshType": "Profile",
     "fshFile": "profiles/BotswanaAMRSpecialTestObservation.fsh",
-    "startLine": 4,
-    "endLine": 30
+    "startLine": 5,
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-botswana-amr-specimen.json",
@@ -68,8 +260,8 @@
     "fshName": "BotswanaAMRSusceptibilityObservation",
     "fshType": "Profile",
     "fshFile": "profiles/BotswanaAMRSusceptibilityObservation.fsh",
-    "startLine": 2,
-    "endLine": 29
+    "startLine": 6,
+    "endLine": 52
   },
   {
     "outputFile": "StructureDefinition-specimen-collection-location.json",
@@ -86,6 +278,14 @@
     "fshFile": "valueSets/BotswanaAMRAntibioticSusceptibilityLOINC.fsh",
     "startLine": 3,
     "endLine": 46
+  },
+  {
+    "outputFile": "ValueSet-botswana-amr-ast-method-vs.json",
+    "fshName": "BotswanaAMRASTMethodVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSets/BotswanaAMRASTMethodVS.fsh",
+    "startLine": 3,
+    "endLine": 18
   },
   {
     "outputFile": "ValueSet-botswana-amr-gram-stain-result-vs.json",
@@ -117,7 +317,7 @@
     "fshType": "ValueSet",
     "fshFile": "valueSets/BotswanaAMROrganismVS.fsh",
     "startLine": 4,
-    "endLine": 209
+    "endLine": 13
   },
   {
     "outputFile": "ValueSet-botswana-amr-special-test-vs.json",
@@ -125,7 +325,7 @@
     "fshType": "ValueSet",
     "fshFile": "valueSets/BotswanaAMRSpecialTestVS.fsh",
     "startLine": 4,
-    "endLine": 19
+    "endLine": 22
   },
   {
     "outputFile": "ValueSet-botswana-amr-specimen-site-vs.json",
@@ -150,5 +350,13 @@
     "fshFile": "valueSets/BotswanaAMRTestResultStatusVS.fsh",
     "startLine": 3,
     "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-botswana-amr-ward-type-vs.json",
+    "fshName": "BotswanaAMRWardTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSets/BotswanaAMRWardTypeVS.fsh",
+    "startLine": 3,
+    "endLine": 11
   }
 ]

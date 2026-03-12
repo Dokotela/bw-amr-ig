@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "BotswanaAMRASTMethodVS",
+  "id": "botswana-amr-ast-method-vs",
+  "title": "Botswana AMR AST Method",
+  "description": "Antimicrobial susceptibility testing methods used in Botswana AMR surveillance",
+  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ast-method-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "115254003",
+            "display": "Disc diffusion method"
+          },
+          {
+            "code": "91461000",
+            "display": "Broth dilution susceptibility test"
+          },
+          {
+            "code": "89588004",
+            "display": "Gradient diffusion method"
+          },
+          {
+            "code": "702873001",
+            "display": "Automated antimicrobial susceptibility test"
+          }
+        ]
+      }
+    ]
+  }
+}

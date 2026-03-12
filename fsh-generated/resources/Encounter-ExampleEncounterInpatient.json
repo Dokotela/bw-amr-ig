@@ -1,0 +1,22 @@
+{
+  "resourceType": "Encounter",
+  "id": "ExampleEncounterInpatient",
+  "meta": {
+    "profile": [
+      "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-encounter",
+      "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Encounter"
+    ]
+  },
+  "status": "finished",
+  "class": {
+    "code": "IMP",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "display": "inpatient encounter"
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatientMotswana"
+  },
+  "period": {
+    "start": "2026-03-08"
+  }
+}

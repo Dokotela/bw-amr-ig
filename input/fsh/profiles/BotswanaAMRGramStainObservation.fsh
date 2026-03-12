@@ -1,4 +1,5 @@
 Alias: LNC = http://loinc.org
+Alias: ObsCat = http://terminology.hl7.org/CodeSystem/observation-category
 
 // Profile for Gram Stain Observation
 Profile: BotswanaAMRGramStainObservation
@@ -9,6 +10,15 @@ Description: "Records gram stain results for specimens in Botswana AMR surveilla
 
 * status = #final
 * meta.profile = "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-GramStainObservation"
+
+// Standard microbiology category coding for discoverability
+* category 1..*
+* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category contains laboratory 1..1 and microbiologyStudies 1..1
+* category[laboratory] = ObsCat#laboratory "Laboratory"
+* category[microbiologyStudies] = LNC#18725-2 "Microbiology studies (set)"
 
 // Fixed LOINC code for gram stain
 * code = LNC#664-3 "Microscopic observation [Identifier] in Specimen by Gram stain"
@@ -27,6 +37,14 @@ Description: "Records gram stain results for specimens in Botswana AMR surveilla
 
 // When the observation was made
 * effectiveDateTime 1..1
+
+// Data absent reason invariant
+* obeys bw-amr-3
+
+Invariant: bw-amr-3
+Description: "If there is no value, a dataAbsentReason must be provided"
+Expression: "value.exists() or dataAbsentReason.exists()"
+Severity: #error
 
 // Example Usage Instructions in Comments
 /*

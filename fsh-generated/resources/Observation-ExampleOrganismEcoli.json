@@ -1,0 +1,96 @@
+{
+  "resourceType": "Observation",
+  "id": "ExampleOrganismEcoli",
+  "meta": {
+    "profile": [
+      "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation",
+      "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-OrganismObservation"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "display": "Laboratory"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "18725-2",
+          "system": "http://loinc.org",
+          "display": "Microbiology studies (set)"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "634-6",
+        "system": "http://loinc.org",
+        "display": "Bacteria identified in Specimen by Culture"
+      }
+    ]
+  },
+  "identifier": [
+    {
+      "value": "isolate-1"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/ExamplePatientMotswana"
+  },
+  "specimen": {
+    "reference": "Specimen/ExampleSpecimenUrine"
+  },
+  "effectiveDateTime": "2026-03-11T09:00:00+02:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "112283007",
+        "system": "http://snomed.info/sct",
+        "display": "Escherichia coli"
+      }
+    ]
+  },
+  "method": {
+    "coding": [
+      {
+        "code": "vitek",
+        "system": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs",
+        "display": "Vitek automated system"
+      }
+    ]
+  },
+  "hasMember": [
+    {
+      "reference": "Observation/ExampleSusceptEcoliAmpicillin"
+    },
+    {
+      "reference": "Observation/ExampleSusceptEcoliAmoxClav"
+    },
+    {
+      "reference": "Observation/ExampleSusceptEcoliCeftriaxone"
+    },
+    {
+      "reference": "Observation/ExampleSusceptEcoliCiprofloxacin"
+    },
+    {
+      "reference": "Observation/ExampleSusceptEcoliGentamicin"
+    },
+    {
+      "reference": "Observation/ExampleSusceptEcoliTmpSmx"
+    },
+    {
+      "reference": "Observation/ExampleSusceptEcoliNitrofurantoin"
+    },
+    {
+      "reference": "Observation/ExampleSpecialTestEcoliEsbl"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "resourceType": "Observation",
+  "id": "ExampleSusceptKlebGentamicin",
+  "meta": {
+    "profile": [
+      "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
+      "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SusceptibilityObservation"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "display": "Laboratory"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "18725-2",
+          "system": "http://loinc.org",
+          "display": "Microbiology studies (set)"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/ExamplePatientMotswana"
+  },
+  "specimen": {
+    "reference": "Specimen/ExampleSpecimenUrine"
+  },
+  "effectiveDateTime": "2026-03-11T14:00:00+02:00",
+  "code": {
+    "coding": [
+      {
+        "code": "267-5",
+        "system": "http://loinc.org",
+        "display": "Gentamicin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "value": 18,
+    "code": "mm",
+    "system": "http://unitsofmeasure.org",
+    "unit": "mm"
+  },
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "S",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "display": "Susceptible",
+          "version": "CLSI 2025"
+        }
+      ]
+    }
+  ],
+  "method": {
+    "coding": [
+      {
+        "code": "115254003",
+        "system": "http://snomed.info/sct",
+        "display": "Disc diffusion method"
+      }
+    ]
+  }
+}

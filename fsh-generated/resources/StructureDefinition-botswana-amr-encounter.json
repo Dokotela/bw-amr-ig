@@ -1,0 +1,50 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "botswana-amr-encounter",
+  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-encounter",
+  "name": "BotswanaAMREncounter",
+  "title": "Botswana AMR Encounter",
+  "status": "draft",
+  "description": "Captures the clinical encounter context for AMR surveillance: ward type (inpatient/outpatient/ICU), admission date, department, and facility. Required for WHONET export and GLASS hospital-acquired vs community-acquired classification.",
+  "fhirVersion": "4.3.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Encounter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.meta.profile",
+        "path": "Encounter.meta.profile",
+        "patternCanonical": "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Encounter"
+      },
+      {
+        "id": "Encounter.status",
+        "path": "Encounter.status",
+        "patternCode": "finished"
+      },
+      {
+        "id": "Encounter.class",
+        "path": "Encounter.class",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ward-type-vs"
+        }
+      },
+      {
+        "id": "Encounter.subject",
+        "path": "Encounter.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

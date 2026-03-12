@@ -16,6 +16,27 @@ class BotswanaAMRSpecialTestObservationBuilder {
             'http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SpecialTestObservation')
       ]),
       status: ObservationStatus.final_,
+      category: [
+        CodeableConcept(
+          coding: [
+            Coding(
+              system: FhirUri(
+                  'http://terminology.hl7.org/CodeSystem/observation-category'),
+              code: FhirCode('laboratory'),
+              display: FhirString('Laboratory'),
+            )
+          ],
+        ),
+        CodeableConcept(
+          coding: [
+            Coding(
+              system: FhirUri('http://loinc.org'),
+              code: FhirCode('18725-2'),
+              display: FhirString('Microbiology studies (set)'),
+            )
+          ],
+        ),
+      ],
       code: botswanaAmrSpecialTestVs.getCodeableConceptByDisplay(testType!) ??
           CodeableConcept(text: FhirString(testType!)),
       valueX:

@@ -8,14 +8,45 @@ class BotswanaAMROrganismObservationBuilder {
   String? patientId;
   DateTime? effectiveDateTime;
   String? identificationMethod;
+  String? isolateNumber;
+  List<String> susceptibilityObservationIds = [];
+  List<String> specialTestObservationIds = [];
 
   Observation build() {
+    final hasMemberReferences = <Reference>[
+      ...susceptibilityObservationIds
+          .map((id) => Reference(reference: FhirString('Observation/$id'))),
+      ...specialTestObservationIds
+          .map((id) => Reference(reference: FhirString('Observation/$id'))),
+    ];
+
     return Observation(
       meta: FhirMeta(profile: [
         FhirCanonical(
             'http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-OrganismObservation')
       ]),
       status: ObservationStatus.final_,
+      category: [
+        CodeableConcept(
+          coding: [
+            Coding(
+              system: FhirUri(
+                  'http://terminology.hl7.org/CodeSystem/observation-category'),
+              code: FhirCode('laboratory'),
+              display: FhirString('Laboratory'),
+            )
+          ],
+        ),
+        CodeableConcept(
+          coding: [
+            Coding(
+              system: FhirUri('http://loinc.org'),
+              code: FhirCode('18725-2'),
+              display: FhirString('Microbiology studies (set)'),
+            )
+          ],
+        ),
+      ],
       code: CodeableConcept(
         coding: [
           Coding(
@@ -25,6 +56,9 @@ class BotswanaAMROrganismObservationBuilder {
           )
         ],
       ),
+      identifier: isolateNumber != null
+          ? [Identifier(value: FhirString(isolateNumber!))]
+          : null,
       valueX:
           botswanaAmrOrganismVs.getCodeableConceptByDisplay(organismDisplay!),
       specimen: Reference(reference: FhirString('Specimen/$specimenId')),
@@ -36,6 +70,7 @@ class BotswanaAMROrganismObservationBuilder {
           ? botswanaAmrIdentificationMethodVs
               .getCodeableConceptByDisplay(identificationMethod!)
           : null,
+      hasMember: hasMemberReferences.isNotEmpty ? hasMemberReferences : null,
     );
   }
 }

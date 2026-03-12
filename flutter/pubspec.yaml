@@ -16,4 +16,4 @@ environment:
   sdk: ^3.5.0
 
 dependencies:
-  fhir_r4: ^0.4.2
+  fhir_r4: ^0.5.1

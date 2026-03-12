@@ -1,0 +1,60 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "ExportWHONET",
+  "url": "http://bw.health.gov/fhir/OperationDefinition/export-whonet",
+  "title": "Export WHONET Flat File",
+  "description": "Exports AMR DiagnosticReport data as a WHONET-compatible flat file or GLASS submission file. The operation flattens the FHIR resource graph (DiagnosticReport -> OrganismObservation -> SusceptibilityObservation) into isolate-centric rows suitable for WHONET import or WHO GLASS batch upload.",
+  "version": "0.1.0",
+  "name": "ExportWHONET",
+  "status": "draft",
+  "kind": "operation",
+  "code": "export-whonet",
+  "system": false,
+  "type": true,
+  "instance": false,
+  "resource": [
+    "DiagnosticReport"
+  ],
+  "parameter": [
+    {
+      "name": "start",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Start of date range filter for specimen collection date (inclusive). Only DiagnosticReports whose specimen was collected on or after this date are included.",
+      "type": "date"
+    },
+    {
+      "name": "end",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "End of date range filter for specimen collection date (inclusive). Only DiagnosticReports whose specimen was collected on or before this date are included.",
+      "type": "date"
+    },
+    {
+      "name": "facility",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Filter results by facility name. Matches against the Encounter.serviceProvider organization name or DiagnosticReport.performer organization name.",
+      "type": "string"
+    },
+    {
+      "name": "format",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Output format: 'whonet' for WHONET pipe-delimited format, 'glass' for WHO GLASS batch submission format. Defaults to 'whonet'.",
+      "type": "code"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "The generated flat file returned as a Binary resource with contentType text/csv.",
+      "type": "Binary"
+    }
+  ]
+}

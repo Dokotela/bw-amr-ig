@@ -11,8 +11,24 @@ Antimicrobial Resistance (AMR) is the ability of microorganisms to resist the ef
 The Botswana AMR Data Analytics Platform leverages open source software to prevent and contain AMR through:
 
 - Real-time electronic surveillance for early outbreak detection
-- Data-driven deployment of prevention and control measures  
+- Data-driven deployment of prevention and control measures
 - Informed decision-making for clinicians and policymakers
 - Centralized AMR data collection, analysis, and reporting
 
 This FHIR Implementation Guide provides the technical foundation for standardized data exchange within the platform.
+
+## What This IG Covers
+
+**Profiles** for the complete AMR culture workflow:
+
+- **DiagnosticReport** — bundles a full culture result: gram stain, organism identifications, and susceptibility panels
+- **Encounter** — captures ward type (inpatient/outpatient/ICU), admission date, and facility for GLASS origin classification
+- **OrganismObservation** — identified organism per isolate, with hasMember links to susceptibility and special test results
+- **SusceptibilityObservation** — S/I/R interpretation and optional MIC/zone diameter per antibiotic
+- **Specimen**, **Patient**, **GramStainObservation**, **SpecialTestObservation**
+
+**Operations:**
+
+- `$export-whonet` — exports DiagnosticReport data as WHONET pipe-delimited or GLASS batch CSV flat files
+
+**Terminology** bindings using LOINC, SNOMED CT, ATC, and Botswana-specific local CodeSystems, with ConceptMaps planned for organism and antibiotic translation.

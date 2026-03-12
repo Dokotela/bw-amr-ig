@@ -1,0 +1,43 @@
+whonet_code,name,snomed_code,snomed_display
+AMC,Amoxicillin/clavulanic acid,89519005,Amoxicillin + clavulanic acid
+AMK,Amikacin,387266001,Amikacin
+AMP,Ampicillin,387170002,Ampicillin
+AMX,Amoxicillin,372687004,Amoxicillin
+AZM,Azithromycin,387531004,Azithromycin
+CAZ,Ceftazidime,387200005,Ceftazidime
+CHL,Chloramphenicol,372777009,Chloramphenicol
+CIP,Ciprofloxacin,372840008,Ciprofloxacin
+CLI,Clindamycin,372786004,Clindamycin
+CLR,Clarithromycin,387487009,Clarithromycin
+COL,Colistin,387412007,Colistin
+CRO,Ceftriaxone,372670001,Ceftriaxone
+CTX,Cefotaxime,372704003,Cefotaxime
+CXM,Cefuroxime,372833007,Cefuroxime
+CZO,Cefazolin,387470007,Cefazolin
+DOX,Doxycycline,372478003,Doxycycline
+ERY,Erythromycin,372694001,Erythromycin
+ETP,Ertapenem,396346003,Ertapenem
+FEP,Cefepime,96048006,Cefepime
+FOS,Fosfomycin,372534005,Fosfomycin
+GEN,Gentamicin,387321007,Gentamicin
+IPM,Imipenem,46558003,Imipenem
+LEX,Cefalexin,387304003,Cefalexin
+LNZ,Linezolid,387056004,Linezolid
+LVX,Levofloxacin,387552007,Levofloxacin
+MEM,Meropenem,387540000,Meropenem
+MFX,Moxifloxacin,412439003,Moxifloxacin
+MTR,Metronidazole,372602008,Metronidazole
+NAL,Nalidixic acid,387517004,Nalidixic acid
+NIT,Nitrofurantoin,373543005,Nitrofurantoin
+NOR,Norfloxacin,387271008,Norfloxacin
+OXA,Oxacillin,372868007,Oxacillin
+PEN,Benzylpenicillin,323389000,Benzylpenicillin
+PIP,Piperacillin,372836004,Piperacillin
+RIF,Rifampicin,387159009,Rifampicin
+SXT,Trimethoprim/sulfamethoxazole,398731002,Sulfamethoxazole + trimethoprim
+TCY,Tetracycline,372809001,Tetracycline
+TGC,Tigecycline,418313005,Tigecycline
+TMP,Trimethoprim,387179001,Trimethoprim
+TOB,Tobramycin,373548001,Tobramycin
+TZP,Piperacillin/tazobactam,346618003,Piperacillin + tazobactam
+VAN,Vancomycin,372735009,Vancomycin

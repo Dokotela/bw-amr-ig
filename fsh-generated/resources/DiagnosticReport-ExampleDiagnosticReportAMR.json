@@ -1,0 +1,55 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "ExampleDiagnosticReportAMR",
+  "meta": {
+    "profile": [
+      "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report",
+      "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-DiagnosticReport"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "18725-2",
+          "system": "http://loinc.org",
+          "display": "Microbiology studies (set)"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "58321-0",
+        "system": "http://loinc.org",
+        "display": "Bacteria identified and antimicrobial susceptibility panel"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatientMotswana"
+  },
+  "encounter": {
+    "reference": "Encounter/ExampleEncounterInpatient"
+  },
+  "specimen": [
+    {
+      "reference": "Specimen/ExampleSpecimenUrine"
+    }
+  ],
+  "effectiveDateTime": "2026-03-11T17:00:00+02:00",
+  "issued": "2026-03-11T17:30:00+02:00",
+  "result": [
+    {
+      "reference": "Observation/ExampleGramStainNegative"
+    },
+    {
+      "reference": "Observation/ExampleOrganismEcoli"
+    },
+    {
+      "reference": "Observation/ExampleOrganismKlebsiella"
+    }
+  ]
+}

@@ -17,3 +17,6 @@ Description: "Special antimicrobial resistance tests performed in Botswana AMR s
 
 // MRSA Detection
 * include LNC#33747-0 "Methicillin resistant Staphylococcus aureus [Presence] in Specimen"
+
+// Beta-lactamase detection (distinct from ESBL — detects basic beta-lactamase production)
+* include LNC#6984-4 "Beta lactamase [Presence] in Isolate"

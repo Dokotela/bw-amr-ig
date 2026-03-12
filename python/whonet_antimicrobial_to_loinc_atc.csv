@@ -1,0 +1,506 @@
+whonet_code,name,group,atc_code,atc_group,loinc_count,loinc_codes
+AMA,4-aminosalicylic acid,Antimycobacterials,J04AA01,Drugs for treatment of tuberculosis,0,
+ACM,Acetylmidecamycin,Macrolides,,,0,
+ASP,Acetylspiramycin,Macrolides,,,0,
+ALS,Aldesulfone sodium,Other,J04BA03,Drugs for treatment of lepra,0,
+AMK,Amikacin,Aminoglycosides,"D06AX12,J01GB06,QD06AX12,QJ01GB06,QS01AA21,S01AA21",Aminoglycoside antibacterials,35,101493-5|11-7|12-5|13-3|13546-7|14-1|15098-7|17798-0|18860-7|20373-7
+AKF,Amikacin/fosfomycin,"Aminoglycosides,Phosphonics",,,0,
+AMO,Amorolfine,Antifungals,"D01AE16,QD01AE16",Antifungals for topical use,0,
+AMX,Amoxicillin,"Aminopenicillins,Penicillins,Beta-lactams","J01CA04,QG51AA03,QJ01CA04","Beta-lactam antibacterials, penicillins",21,101498-4|15-8|16-6|16365-9|17-4|18-2|18861-5|18862-3|19-0|20-8
+AMC,Amoxicillin/clavulanic acid,"Aminopenicillins,Penicillins,Beta-lactams,Beta-lactamase inhibitors","J01CR02,QJ01CR02","Beta-lactam antibacterials, penicillins",5,18862-3|20-8|21-6|6977-3|101498-4
+AXS,Amoxicillin/sulbactam,"Penicillins,Beta-lactams,Beta-lactamase inhibitors","J01CR02,QJ01CR02",,3,55614-2|55615-9|55616-7
+AMB,Amphotericin B,Antifungals,"A01AB04,A07AA07,G01AA03,J02AA01,QA01AB04,QA07AA07,QG01AA03,QJ02AA01",Antimycotics for systemic use,12,16370-9|18863-1|23-2|24-0|25-7|26-5|3353-0|3354-8|40707-2|40757-7
+AMH,Amphotericin B-high,Antifungals,,,0,
+AMP,Ampicillin,"Aminopenicillins,Penicillins,Beta-lactams","J01CA01,QJ01CA01,QJ51CA01,QS01AA19,S01AA19","Beta-lactam antibacterials, penicillins",23,101477-8|101478-6|18864-9|18865-6|20374-5|21066-6|23618-2|27-3|28-1|29-9
+SAM,Ampicillin/sulbactam,"Penicillins,Beta-lactams,Beta-lactamase inhibitors","J01CR01,QJ01CR01","Beta-lactam antibacterials, penicillins",9,101478-6|18865-6|20374-5|23618-2|31-5|32-3|33-1|34-9|6980-7
+AMR,Amprolium,Other,QP51BX02,,0,
+ANI,Anidulafungin,Antifungals,"J02AX06,QJ02AX06",Antimycotics for systemic use,4,55343-8|57095-2|58420-1|77162-6
+APL,Apalcillin,"Penicillins,Beta-lactams",,,0,
+APR,Apramycin,Aminoglycosides,"QA07AA92,QJ01GB90,QJ51GB90",,3,23659-6|73652-0|73653-8
+ARB,Arbekacin,Aminoglycosides,"J01GB12,QJ01GB12",,3,32373-3|53818-1|54173-0
+APX,Aspoxicillin,"Penicillins,Beta-lactams","J01CA19,QJ01CA19",,0,
+AST,Astromicin,Aminoglycosides,,,0,
+AVB,Avibactam,Beta-lactamase inhibitors,,,0,
+AVI,Avilamycin,Other,QA07AA95,,4,35754-1|35755-8|35756-6|55619-1
+AVO,Avoparcin,"Glycopeptides,Peptides",,,0,
+AZD,Azidocillin,"Penicillins,Beta-lactams","J01CE04,QJ01CE04","Beta-lactam antibacterials, penicillins",0,
+AZM,Azithromycin,Macrolides,"J01FA10,QJ01FA10,QS01AA26,S01AA26","Macrolides, lincosamides and streptogramins",12,100043-9|16420-2|16421-0|18866-4|23612-5|25233-8|35-6|36-4|37-2|38-0
+AFC,Azithromycin/fluconazole/secnidazole,Other,"J01RA07,QJ01RA07",Combinations of antibacterials,0,
+AZL,Azlocillin,"Ureidopenicillins,Penicillins,Beta-lactams","J01CA09,QJ01CA09","Beta-lactam antibacterials, penicillins",8,16422-8|18867-2|3368-8|39-8|40-6|41-4|41661-0|42-2
+ATM,Aztreonam,"Monobactams,Beta-lactams","J01DF01,QJ01DF01",Other beta-lactam antibacterials,14,101497-6|16423-6|18868-0|25234-6|3369-6|41662-8|41663-6|41664-4|41727-9|43-0
+AZA,Aztreonam/avibactam,"Monobactams,Beta-lactams,Beta-lactamase inhibitors","J01DF51,QJ01DF51",,0,
+ANC,Aztreonam/nacubactam,"Monobactams,Beta-lactams,Beta-lactamase inhibitors","J01DF51,QJ01DF51",,0,
+BAM,Bacampicillin,"Penicillins,Beta-lactams","J01CA06,QJ01CA06","Beta-lactam antibacterials, penicillins",6,18869-8|47-1|48-9|49-7|50-5|55620-9
+BAC,Bacitracin,Peptides,"D06AX05,J01XX10,QA07AA93,QD06AX05,QJ01XX10,QR02AB04,QS01AA32,R02AB04,S01AA32",,6,10868-8|16428-5|18870-6|6827-0|6983-1|87603-7
+BDQ,Bedaquiline,Other,"J04AK05,QJ04AK05",,5,80637-2|88703-4|88704-2|94274-8|96107-8
+BEK,Bekanamycin,Aminoglycosides,"J01GB13,QJ01GB13",,0,
+BNB,Benzathine benzylpenicillin,"Penicillins,Beta-lactams","J01CE08,QJ01CE08","Beta-lactam antibacterials, penicillins",0,
+BNP,Benzathine phenoxymethylpenicillin,"Penicillins,Beta-lactams","J01CE10,QJ01CE10","Beta-lactam antibacterials, penicillins",0,
+PEN,Benzylpenicillin,"Penicillins,Beta-lactams","J01CE01,QJ01CE01,QJ51CE01,QS01AA14,S01AA14",Combinations of antibacterials,5,18965-4|392-1|393-9|7041-7|394-7
+PEN-S,Benzylpenicillin screening test,"Penicillins,Beta-lactams",,,0,
+BES,Besifloxacin,"Fluoroquinolones,Quinolones","QS01AE08,S01AE08",,3,73606-6|73628-0|73651-2
+BLA-S,Beta-lactamase screening test,Other,,,0,
+BIA,Biapenem,"Carbapenems,Beta-lactams","J01DH05,QJ01DH05",,4,41665-1|41666-9|41667-7|41728-7
+BCZ,Bicyclomycin,Other,,,0,
+BLM,Bleomycin,"Glycopeptides,Peptides","L01DC01,QL01DC01",,0,
+BDP,Brodimoprim,Trimethoprims,"J01EA02,QJ01EA02",Sulfonamides and trimethoprim,0,
+BUT,Butoconazole,Antifungals,"G01AF15,QG01AF15",,0,
+CDZ,Cadazolid,Oxazolidinones,,,0,
+CLA,Calcium aminosalicylate,Antimycobacterials,"J04AA03,QJ04AA03",Drugs for treatment of tuberculosis,0,
+CAP,Capreomycin,Antimycobacterials,"J04AB30,QJ04AB30",Drugs for treatment of tuberculosis,15,16545-6|18872-2|23607-5|25210-6|25211-4|25212-2|42643-7|48170-5|55-4|55623-3
+CRB,Carbenicillin,"Penicillins,Beta-lactams","J01CA03,QJ01CA03","Beta-lactam antibacterials, penicillins",7,18873-0|3434-8|41668-5|59-6|60-4|61-2|62-0
+CRN,Carindacillin,"Penicillins,Beta-lactams","J01CA05,QJ01CA05","Beta-lactam antibacterials, penicillins",0,
+CAR,Carumonam,"Monobactams,Beta-lactams","J01DF02,QJ01DF02",,1,51694-8
+CAS,Caspofungin,Antifungals,"J02AX04,QJ02AX04",Antimycotics for systemic use,5,32378-2|54175-5|54176-3|54185-4|58419-3
+CAC,Cefacetrile,"Cephalosporins (1st gen.),Cephalosporins,Beta-lactams","J01DB10,QJ01DB10,QJ51DB10",Other beta-lactam antibacterials,4,55624-1|55625-8|55626-6|55627-4
+CEC,Cefaclor,"Cephalosporins (2nd gen.),Cephalosporins,Beta-lactams","J01DC04,QJ01DC04",Other beta-lactam antibacterials,8,16564-7|18874-8|21149-0|6986-4|83-6|84-4|85-1|86-9
+CFR,Cefadroxil,"Cephalosporins (1st gen.),Cephalosporins,Beta-lactams","J01DB05,QJ01DB05",Other beta-lactam antibacterials,7,16565-4|18875-5|55628-2|63-8|64-6|65-3|66-1
+LEX,Cefalexin,"Cephalosporins (1st gen.),Cephalosporins,Beta-lactams","J01DB01,QJ01DB01,QJ51DB01",Other beta-lactam antibacterials,4,18897-9|149-5|150-3|35784-8
+RID,Cefaloridine,"Cephalosporins (1st gen.),Cephalosporins,Beta-lactams","J01DB02,QJ01DB02",Other beta-lactam antibacterials,0,
+CEP,Cefalotin,"Cephalosporins (1st gen.),Cephalosporins,Beta-lactams","J01DB03,QJ01DB03",Other beta-lactam antibacterials,4,18900-1|161-0|162-8|7000-3
+MAN,Cefamandole,"Cephalosporins (2nd gen.),Cephalosporins,Beta-lactams","J01DC03,QJ01DC03",Other beta-lactam antibacterials,11,18876-3|3441-3|41669-3|55634-0|55635-7|55636-5|55637-3|67-9|68-7|69-5
+HAP,Cefapirin,"Cephalosporins (1st gen.),Cephalosporins,Beta-lactams","J01DB08,QG51AA05,QJ01DB08,QJ51DB08",Other beta-lactam antibacterials,0,
+CTZ,Cefatrizine,"Cephalosporins (1st gen.),Cephalosporins,Beta-lactams","J01DB07,QJ01DB07",Other beta-lactam antibacterials,6,18877-1|55639-9|71-1|72-9|73-7|74-5
+CZD,Cefazedone,"Cephalosporins (1st gen.),Cephalosporins,Beta-lactams","J01DB06,QJ01DB06",Other beta-lactam antibacterials,0,
+CZO,Cefazolin,"Cephalosporins (1st gen.),Cephalosporins,Beta-lactams","J01DB04,QJ01DB04,QJ51DB04",Other beta-lactam antibacterials,12,16566-2|18878-9|25235-3|3442-1|3443-9|41670-1|75-2|76-0|77-8|78-6
+CFB,Cefbuperazone,Other,"J01DC13,QJ01DC13",,0,
+CCP,Cefcapene,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD17,QJ01DD17",,2,100044-7|76143-7
+CCX,Cefcapene pivoxil,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams",,,0,
+CDR,Cefdinir,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD15,QJ01DD15",Other beta-lactam antibacterials,4,23636-4|23637-2|35757-4|35758-2
+DIT,Cefditoren,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD16,QJ01DD16",Other beta-lactam antibacterials,4,35759-0|35760-8|35761-6|35762-4
+DIX,Cefditoren pivoxil,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams",,,0,
+FEP,Cefepime,"Cephalosporins (4th gen.),Cephalosporins,Beta-lactams","J01DE01,QJ01DE01",Other beta-lactam antibacterials,18,101502-3|18879-7|31142-3|31143-1|35763-2|38363-8|42350-9|42351-7|42353-3|50631-1
+CFA,Cefepime/amikacin,"Cephalosporins (4th gen.),Cephalosporins,Beta-lactams","J01DE51,QJ01DE51",Combinations of antibacterials,0,
+CPC,Cefepime/clavulanic acid,"Cephalosporins (4th gen.),Cephalosporins,Beta-lactams","J01DE51,QJ01DE51",,2,42353-3|35763-2
+FPE,Cefepime/enmetazobactam,"Cephalosporins (4th gen.),Cephalosporins,Beta-lactams,Beta-lactamase inhibitors","J01DE51,QJ01DE51",,0,
+FNC,Cefepime/nacubactam,"Cephalosporins (4th gen.),Cephalosporins,Beta-lactams,Beta-lactamase inhibitors","J01DE51,QJ01DE51",,0,
+FTA,Cefepime/taniborbactam,"Cephalosporins (4th gen.),Cephalosporins,Beta-lactams,Beta-lactamase inhibitors","J01DE51,QJ01DE51",,0,
+FPT,Cefepime/tazobactam,"Cephalosporins (4th gen.),Cephalosporins,Beta-lactams,Beta-lactamase inhibitors","J01DE51,QJ01DE51",,0,
+FPZ,Cefepime/zidebactam,"Cephalosporins (4th gen.),Cephalosporins,Beta-lactams,Beta-lactamase inhibitors","J01DE51,QJ01DE51",,0,
+CAT,Cefetamet,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD10,QJ01DD10",Other beta-lactam antibacterials,4,32377-4|35764-0|35765-7|55640-7
+CPI,Cefetamet pivoxil,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams",,,0,
+CCL,Cefetecol,"Cephalosporins (4th gen.),Cephalosporins,Beta-lactams",,,0,
+CZL,Cefetrizole,"Cephalosporins,Beta-lactams",,,0,
+FDC,Cefiderocol,"Cephalosporins,Beta-lactams","J01DI04,QJ01DI04",,3,95767-0|99280-0|99503-5
+CFM,Cefixime,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD08,QJ01DD08",Other beta-lactam antibacterials,8,16567-0|18880-5|25236-1|35766-5|79-4|80-2|81-0|82-8
+CEO,Cefixime/ornidazole,Other,"J01DD58,QJ01DD58",Combinations of antibacterials,0,
+CMX,Cefmenoxime,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD05,QJ01DD05,QS01AA31,QS02AA18,S01AA31,S02AA18",Other beta-lactam antibacterials,4,32375-8|54174-8|54203-5|55641-5
+CMZ,Cefmetazole,"Cephalosporins (2nd gen.),Cephalosporins,Beta-lactams","J01DC09,QJ01DC09",Other beta-lactam antibacterials,7,11575-8|18881-3|25222-1|87-7|88-5|89-3|90-1
+CNX,Cefminox,Other,"J01DC12,QJ01DC12",,1,54908-9
+DIZ,Cefodizime,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD09,QJ01DD09",Other beta-lactam antibacterials,6,18882-1|6988-0|91-9|92-7|93-5|94-3
+CID,Cefonicid,"Cephalosporins (2nd gen.),Cephalosporins,Beta-lactams","J01DC06,QJ01DC06",Other beta-lactam antibacterials,8,18883-9|25237-9|3444-7|55642-3|95-0|96-8|97-6|98-4
+CFP,Cefoperazone,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD12,QJ01DD12,QJ51DD12",Other beta-lactam antibacterials,11,100-8|101-6|102-4|18884-7|3445-4|35767-3|35768-1|54166-4|54167-2|54168-0
+CSL,Cefoperazone/sulbactam,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams,Beta-lactamase inhibitors","J01DD62,QJ01DD62",Other beta-lactam antibacterials,4,35768-1|54166-4|54167-2|54168-0
+CND,Ceforanide,"Cephalosporins (2nd gen.),Cephalosporins,Beta-lactams","J01DC11,QJ01DC11",Other beta-lactam antibacterials,6,103-2|104-0|105-7|106-5|18885-4|55643-1
+CSE,Cefoselis,"Cephalosporins (4th gen.),Cephalosporins,Beta-lactams",,,0,
+CTX,Cefotaxime,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD01,QJ01DD01",Other beta-lactam antibacterials,24,101479-4|101480-2|107-3|108-1|109-9|110-7|18886-2|25238-7|31138-1|31139-9
+CTX-S,Cefotaxime screening test,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams",,,0,
+CTC,Cefotaxime/clavulanic acid,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD51,QJ01DD51",,5,35771-5|35770-7|35769-9|41671-9|101480-2
+CTS,Cefotaxime/sulbactam,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams,Beta-lactamase inhibitors","J01DD51,QJ01DD51",,4,54191-2|54192-0|54193-8|55644-9
+CTT,Cefotetan,"Cephalosporins (2nd gen.),Cephalosporins,Beta-lactams","J01DC05,QJ01DC05",Other beta-lactam antibacterials,12,111-5|112-3|113-1|114-9|18887-0|25239-5|3447-0|41672-7|41673-5|41674-3
+CTF,Cefotiam,"Cephalosporins (2nd gen.),Cephalosporins,Beta-lactams","J01DC07,QJ01DC07",Other beta-lactam antibacterials,8,32374-1|35772-3|35773-1|55645-6|55737-1|55738-9|55739-7|55740-5
+CHE,Cefotiam hexetil,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams",,,4,55737-1|55738-9|55739-7|55740-5
+FOV,Cefovecin,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams",QJ01DD91,,2,76147-8|87792-8
+FOX,Cefoxitin,"Cephalosporins (2nd gen.),Cephalosporins,Beta-lactams","J01DC01,QJ01DC01",Other beta-lactam antibacterials,15,101492-7|115-6|116-4|117-2|118-0|18888-8|25220-5|25240-3|25366-6|3448-8
+FOX-S,Cefoxitin screening test,"Cephalosporins (2nd gen.),Cephalosporins,Beta-lactams",,,0,
+ZOP,Cefozopran,"Cephalosporins (4th gen.),Cephalosporins,Beta-lactams","J01DE03,QJ01DE03",,2,100045-4|53820-7
+CFZ,Cefpimizole,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams",,,0,
+CPM,Cefpiramide,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD11,QJ01DD11",Other beta-lactam antibacterials,0,
+CPO,Cefpirome,"Cephalosporins (4th gen.),Cephalosporins,Beta-lactams","J01DE02,QJ01DE02",Other beta-lactam antibacterials,9,18889-6|6647-3|6648-1|6649-9|6650-6|6992-2|8274-3|8275-0|8276-8
+CPD,Cefpodoxime,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD13,QJ01DD13",Other beta-lactam antibacterials,12,119-8|120-6|121-4|122-2|18890-4|25241-1|41678-4|41679-2|41680-0|41731-1
+CPX,Cefpodoxime proxetil,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams",,,0,
+CDC,Cefpodoxime/clavulanic acid,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD64,QJ01DD64",,2,41678-4|41680-0
+CPR,Cefprozil,"Cephalosporins (2nd gen.),Cephalosporins,Beta-lactams","J01DC10,QJ01DC10",Other beta-lactam antibacterials,6,123-0|124-8|125-5|126-3|18891-2|6994-8
+CEQ,Cefquinome,"Cephalosporins (4th gen.),Cephalosporins,Beta-lactams","QG51AA07,QJ01DE90,QJ51DE90",,2,100046-2|76150-2
+CRD,Cefroxadine,"Cephalosporins (1st gen.),Cephalosporins,Beta-lactams","J01DB11,QJ01DB11",Other beta-lactam antibacterials,0,
+CFS,Cefsulodin,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD03,QJ01DD03",Other beta-lactam antibacterials,8,127-1|128-9|129-7|130-5|131-3|18892-0|25242-9|55647-2
+CSU,Cefsumide,"Cephalosporins,Beta-lactams",,,0,
+CPT,Ceftaroline,"Cephalosporins (5th gen.),Cephalosporins,Beta-lactams","J01DI02,QJ01DI02",,7,73604-1|73605-8|73626-4|73627-2|73649-6|73650-4|74170-2
+CPA,Ceftaroline/avibactam,"Cephalosporins (5th gen.),Cephalosporins,Beta-lactams,Beta-lactamase inhibitors",,,3,73604-1|73626-4|73649-6
+CAZ,Ceftazidime,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD02,QJ01DD02",Other beta-lactam antibacterials,26,101481-0|101482-8|101483-6|132-1|133-9|134-7|135-4|18893-8|21151-6|3449-6
+CZA,Ceftazidime/avibactam,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams,Beta-lactamase inhibitors","J01DD52,QJ01DD52",,5,101483-6|73603-3|73625-6|73648-8|87734-0
+CCV,Ceftazidime/clavulanic acid,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD52,QJ01DD52",Other beta-lactam antibacterials,5,35776-4|35775-6|35774-9|42352-5|101482-8
+CEM,Cefteram,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD18,QJ01DD18",,2,100047-0|76144-5
+CPL,Cefteram pivoxil,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams",,,0,
+CTL,Ceftezole,"Cephalosporins (1st gen.),Cephalosporins,Beta-lactams","J01DB12,QJ01DB12",Other beta-lactam antibacterials,0,
+CTB,Ceftibuten,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD14,QJ01DD14",Other beta-lactam antibacterials,4,35777-2|35778-0|35779-8|6996-3
+CTA,Ceftibuten/avibactam,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams,Beta-lactamase inhibitors",,,0,
+TIO,Ceftiofur,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","QJ01DD90,QJ51DD90",,4,23709-9|35780-6|35781-4|55652-2
+CZX,Ceftizoxime,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD07,QJ01DD07",Other beta-lactam antibacterials,10,136-2|137-0|138-8|139-6|18894-6|20378-6|23622-4|25243-7|3450-4|6997-1
+CZP,Ceftizoxime alapivoxil,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams",,,0,
+BPR,Ceftobiprole,"Cephalosporins (5th gen.),Cephalosporins,Beta-lactams",,,5,43269-0|43270-8|43271-6|43272-4|85052-9
+CFM1,Ceftobiprole medocaril,"Cephalosporins (5th gen.),Cephalosporins,Beta-lactams","J01DI01,QJ01DI01",Other beta-lactam antibacterials,0,
+CZT,Ceftolozane/tazobactam,"Cephalosporins (5th gen.),Cephalosporins,Beta-lactams,Beta-lactamase inhibitors","J01DI54,QJ01DI54",Other beta-lactam antibacterials,5,101484-4|73602-5|73624-9|73647-0|87735-7
+CRO,Ceftriaxone,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD04,QJ01DD04",Other beta-lactam antibacterials,19,101485-1|140-4|141-2|142-0|143-8|18895-3|25244-5|25367-4|31140-7|31141-5
+CEB,Ceftriaxone/beta-lactamase inhibitor,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD63,QJ01DD63",Other beta-lactam antibacterials,0,
+CXM,Cefuroxime,"Cephalosporins (2nd gen.),Cephalosporins,Beta-lactams","J01DC02,QJ01DC02,QJ51DC02,QS01AA27,S01AA27",Other beta-lactam antibacterials,19,101503-1|144-6|145-3|146-1|147-9|18896-1|20460-2|25245-2|3452-0|35782-2
+CXA,Cefuroxime axetil,"Cephalosporins (2nd gen.),Cephalosporins,Beta-lactams",,,0,
+CFM2,Cefuroxime/metronidazole,Other,"J01DC52,QJ01DC52",Combinations of antibacterials,0,
+ZON,Cefuzonam,Other,,,0,
+CED,Cephradine,"Cephalosporins (1st gen.),Cephalosporins,Beta-lactams",,Other beta-lactam antibacterials,6,168-5|169-3|170-1|171-9|18902-7|55646-4
+CTO,Cetocycline,Tetracyclines,,,0,
+CHL,Chloramphenicol,Phenicols,"D06AX02,D10AF03,G01AA05,J01BA01,QD06AX02,QD10AF03,QG01AA05,QJ01BA01,QJ51BA01,QS01AA01,QS02AA01,QS03AA08,S01AA01,S02AA01,S03AA08",Amphenicols,14,15101-9|16603-3|16604-1|172-7|173-5|174-3|175-0|18903-5|25247-8|29214-4
+CTE,Chlortetracycline,Tetracyclines,"A01AB21,D06AA02,J01AA03,QA01AB21,QD06AA02,QG51AA08,QJ01AA03,QJ51AA03,QS01AA02,S01AA02",Tetracyclines,7,176-8|177-6|178-4|179-2|18904-3|55655-5|87600-3
+CIC,Ciclacillin,"Penicillins,Beta-lactams",,,0,
+CIX,Ciclopirox,Antifungals,"D01AE14,G01AX12,QD01AE14,QG01AX12",Antifungals for topical use,0,
+CIN,Cinoxacin,Quinolones,"J01MB06,QJ01MB06",Quinolone antibacterials,6,180-0|181-8|182-6|183-4|18905-0|55656-3
+CIP,Ciprofloxacin,"Fluoroquinolones,Quinolones","J01MA02,QJ01MA02,QS01AE03,QS02AA15,QS03AA07,S01AE03,S02AA15,S03AA07",Quinolone antibacterials,22,101500-7|14031-9|14032-7|14058-2|14059-0|184-2|185-9|186-7|187-5|18906-8
+CIM,Ciprofloxacin/metronidazole,"Fluoroquinolones,Quinolones","J01RA10,QJ01RA10",Combinations of antibacterials,0,
+CIO,Ciprofloxacin/ornidazole,"Fluoroquinolones,Quinolones","J01RA12,QJ01RA12",Combinations of antibacterials,0,
+CIT,Ciprofloxacin/tinidazole,"Fluoroquinolones,Quinolones","J01RA11,QJ01RA11",Combinations of antibacterials,0,
+CLR,Clarithromycin,Macrolides,"J01FA09,QJ01FA09","Macrolides, lincosamides and streptogramins",21,100048-8|16619-9|16620-7|188-3|189-1|18907-6|190-9|191-7|20375-2|23619-0
+CLA1,Clavulanic acid,Other,,,0,
+CLX,Clinafloxacin,"Fluoroquinolones,Quinolones",,,5,32376-6|33284-1|35785-5|35786-3|7004-5
+CLI,Clindamycin,Lincosamides,"D10AF01,G01AA10,J01FF01,QD10AF01,QG01AA10,QJ01FF01","Macrolides, lincosamides and streptogramins",16,16621-5|16622-3|18908-4|192-5|193-3|194-1|195-8|25249-4|3486-8|42720-3
+CLI-S,Clindamycin inducible screening test,"Lincosamides,Macrolides",,,0,
+CLF,Clofazimine,Antimycobacterials,"J04BA01,QJ04BA01",Drugs for treatment of lepra,10,16623-1|20376-0|23620-8|23627-3|43986-9|43988-5|43989-3|55661-3|55662-1|96108-6
+CLF1,Clofoctol,Other,"J01XX03,QJ01XX03",Other antibacterials,0,
+CLM,Clometocillin,"Penicillins,Beta-lactams","J01CE07,QJ01CE07","Beta-lactam antibacterials, penicillins",0,
+CLM1,Clomocycline,Tetracyclines,"J01AA11,QJ01AA11",Tetracyclines,0,
+CLB,Clorobiocin,Aminocoumarins,,,0,
+CTR,Clotrimazole,Antifungals,"A01AB18,D01AC01,G01AF02,QA01AB18,QD01AC01,QG01AF02,QJ02AB90",,5,10653-4|10654-2|18909-2|54177-1|55663-9
+CLO,Cloxacillin,"Isoxazolylpenicillins,Penicillins,Beta-lactams","J01CF02,QJ01CF02,QJ51CF02,QS01AA90","Beta-lactam antibacterials, penicillins",8,16628-0|18910-0|196-6|197-4|198-2|199-0|25250-2|55664-7
+COL,Colistin,Polymyxins,"A07AA10,J01XB01,QA07AA10,QJ01XB01,QJ51XB01",Other antibacterials,8,16645-4|18912-6|204-8|205-5|206-3|207-1|29493-4|33333-6
+COP,Colistin/polysorbate,Other,,,0,
+CYC,Cycloserine,Oxazolidinones,"J04AB01,QJ04AB01",Drugs for treatment of tuberculosis,13,16702-3|18914-2|212-1|213-9|214-7|215-4|23608-3|25207-2|25208-0|25209-8
+DAL,Dalbavancin,"Lipoglycopeptides,Glycopeptides,Peptides","J01XA04,QJ01XA04",Other antibacterials,4,41688-3|41689-1|41690-9|41734-5
+DAN,Danofloxacin,"Fluoroquinolones,Quinolones",QJ01MA92,,3,73601-7|73623-1|73646-2
+DPS,Dapsone,Other,"D10AX05,J04BA02,QD10AX05,QJ04BA02",Drugs for treatment of lepra,2,51698-9|9747-7
+DAP,Daptomycin,Peptides,"J01XX09,QJ01XX09",Other antibacterials,4,35787-1|35788-9|35789-7|41691-7
+DFX,Delafloxacin,"Fluoroquinolones,Quinolones","J01MA23,QJ01MA23",,3,88885-9|90447-4|93790-4
+DLM,Delamanid,Antimycobacterials,"J04AK06,QJ04AK06",Drugs for treatment of tuberculosis,2,93851-4|96109-4
+DEM,Demeclocycline,Tetracyclines,"D06AA01,J01AA01,QD06AA01,QJ01AA01",Tetracyclines,8,10982-7|18915-9|216-2|217-0|218-8|219-6|29494-2|7006-0
+DKB,Dibekacin,Aminoglycosides,"J01GB09,QJ01GB09,QS01AA29,S01AA29",Aminoglycoside antibacterials,4,55669-6|55670-4|55671-2|55672-0
+DIC,Dicloxacillin,"Isoxazolylpenicillins,Penicillins,Beta-lactams","J01CF01,QJ01CF01,QJ51CF01","Beta-lactam antibacterials, penicillins",10,10984-3|16769-2|18916-7|220-4|221-2|222-0|223-8|25252-8|32380-8|55668-8
+DIF,Difloxacin,"Fluoroquinolones,Quinolones",QJ01MA94,,3,35790-5|35791-3|35792-1
+DIR,Dirithromycin,Macrolides,"J01FA13,QJ01FA13","Macrolides, lincosamides and streptogramins",4,35793-9|35794-7|35795-4|7007-8
+DOR,Doripenem,"Carbapenems,Beta-lactams","J01DH04,QJ01DH04",Other beta-lactam antibacterials,4,56031-8|58711-3|60535-2|72893-1
+DOX,Doxycycline,Tetracyclines,"A01AB22,J01AA02,QA01AB22,QJ01AA02",Tetracyclines,12,10986-8|18917-5|20379-4|21250-6|224-6|225-3|226-1|227-9|23623-2|25223-9
+ECO,Econazole,Antifungals,"D01AC03,G01AF05,QD01AC03,QG01AF05",Antifungals for topical use,4,25595-0|25637-0|54178-9|55673-8
+EFF,Efflux,Other,,,0,
+ENX,Enoxacin,"Fluoroquinolones,Quinolones","J01MA04,QJ01MA04",Quinolone antibacterials,8,16816-1|18918-3|228-7|229-5|230-3|231-1|3590-7|41692-5
+ENR,Enrofloxacin,"Fluoroquinolones,Quinolones",QJ01MA90,,4,23712-3|35796-2|35797-0|35798-8
+ENV,Enviomycin,Antimycobacterials,"J04AB06,QJ04AB06",,0,
+EPE,Eperozolid,Other,,,0,
+EPC,Epicillin,"Penicillins,Beta-lactams","J01CA07,QJ01CA07","Beta-lactam antibacterials, penicillins",0,
+EPP,Epiroprim,Other,,,0,
+ERV,Eravacycline,Tetracyclines,"J01AA13,QJ01AA13",Tetracyclines,3,100049-6|85423-2|93767-2
+ETP,Ertapenem,"Carbapenems,Beta-lactams","J01DH03,QJ01DH03",Other beta-lactam antibacterials,5,101486-9|35799-6|35800-2|35801-0|35802-8
+ERY,Erythromycin,Macrolides,"D10AF02,J01FA01,QD10AF02,QJ01FA01,QJ51FA01,QS01AA17,S01AA17","Macrolides, lincosamides and streptogramins",21,100050-4|11576-6|12298-6|16829-4|16830-2|18919-1|18920-9|20380-2|232-9|233-7
+ETH,Ethambutol,Antimycobacterials,"J04AK02,QJ04AK02",Drugs for treatment of tuberculosis,22,100051-2|16841-9|18921-7|20381-0|23625-7|240-2|241-0|242-8|243-6|25187-6
+ETI,Ethambutol/isoniazid,Antimycobacterials,"J04AM03,QJ04AM03",Drugs for treatment of tuberculosis,0,
+ETI1,Ethionamide,Antimycobacterials,"J04AD03,QJ04AD03",Drugs for treatment of tuberculosis,14,16099-4|16845-0|18922-5|20382-8|23617-4|25183-5|25196-7|25198-3|25231-2|41693-3
+ETO,Ethopabate,Other,QP51AX17,,0,
+EXE,Exebacase,Other,,,0,
+FAR,Faropenem,Other,"J01DI03,QJ01DI03",Other beta-lactam antibacterials,3,73600-9|73622-3|73645-4
+FDX,Fidaxomicin,Other,"A07AA12,QA07AA12",,3,73599-3|73621-5|73644-7
+FIN,Finafloxacin,"Fluoroquinolones,Quinolones",,,3,73598-5|73620-7|73643-9
+FLA,Flavomycin,Other,,,0,
+FLE,Fleroxacin,"Fluoroquinolones,Quinolones","J01MA08,QJ01MA08",Quinolone antibacterials,4,25411-0|32372-5|35806-9|7012-8
+FLO,Flomoxef,Other,"J01DC14,QJ01DC14",,2,100052-0|53822-3
+FLR,Florfenicol,Phenicols,"QJ01BA90,QJ51BA90",,4,23740-4|35807-7|35808-5|87599-7
+FLC,Flucloxacillin,"Isoxazolylpenicillins,Penicillins,Beta-lactams","J01CF05,QJ01CF05,QJ51CF05","Beta-lactam antibacterials, penicillins",0,
+FLU,Fluconazole,Antifungals,"D01AC15,J02AC01,QD01AC15,QJ02AC01",Antimycotics for systemic use,10,10987-6|16870-8|18924-1|248-5|249-3|250-1|251-9|25255-1|7013-6|80530-9
+FCT,Flucytosine,Antifungals,"D01AE21,J02AX01,QD01AE21,QJ02AX01",Antifungals for topical use,0,
+FLM,Flumequine,Quinolones,"J01MB07,QJ01MB07",Quinolone antibacterials,4,55675-3|55676-1|55677-9|55678-7
+FLR1,Flurithromycin,Macrolides,"J01FA14,QJ01FA14","Macrolides, lincosamides and streptogramins",0,
+FFL,Fosfluconazole,Antifungals,,,0,
+FOS,Fosfomycin,Phosphonics,"J01XX01,QJ01XX01,QS02AA17,S02AA17",Other antibacterials,4,25596-8|25653-7|35809-3|35810-1
+FMD,Fosmidomycin,Other,,,0,
+FRM,Framycetin,Aminoglycosides,"D09AA01,QD09AA01,QJ01GB91,QR01AX08,QS01AA07,R01AX08,S01AA07",,6,18926-6|257-6|258-4|259-2|260-0|55679-5
+FUR,Furazidin,Nitrofurans,"J01XE03,QJ01XE03",Other antibacterials,0,
+FRZ,Furazolidone,Nitrofurans,"G01AX06,QG01AX06,QJ01XE90",,2,69574-2|87794-4
+FUS,Fusidic acid,Fusidanes,"D06AX01,D09AA02,J01XC01,QD06AX01,QD09AA02,QJ01XC01,QS01AA13,S01AA13",Other antibacterials,4,262-6|263-4|261-8|264-2
+GAM,Gamithromycin,Macrolides,QJ01FA95,,3,100054-6|88376-9|88378-5
+GRN,Garenoxacin,"Fluoroquinolones,Quinolones","J01MA19,QJ01MA19",,3,35811-9|35812-7|35813-5
+GAT,Gatifloxacin,"Fluoroquinolones,Quinolones","J01MA16,QJ01MA16,QS01AE06,S01AE06",Quinolone antibacterials,5,31036-7|31038-3|31040-9|31042-5|41494-6
+GEM,Gemifloxacin,"Fluoroquinolones,Quinolones","J01MA15,QJ01MA15",Quinolone antibacterials,4,35814-3|35815-0|35816-8|41697-4
+GEN,Gentamicin,Aminoglycosides,"D06AX07,J01GB03,QA07AA91,QD06AX07,QG01AA91,QG51AA04,QJ01GB03,QJ51GB03,QS01AA11,QS02AA14,QS03AA06,S01AA11,S02AA14,S03AA06",Aminoglycoside antibacterials,30,101494-3|13561-6|13562-4|15106-8|18928-2|18929-0|22746-2|22747-0|266-7|267-5
+GEH,Gentamicin-high,Aminoglycosides,,,4,18929-0|35817-6|7017-7|7018-5
+GEP,Gepotidacin,Other,"J01XX13,QJ01XX13",,0,
+GRX,Grepafloxacin,"Fluoroquinolones,Quinolones","J01MA11,QJ01MA11",Quinolone antibacterials,4,21316-5|23638-0|23639-8|35818-4
+GRI,Griseofulvin,Antifungals,"D01AA08,D01BA01,QD01AA08,QD01BA01",,4,12402-4|54200-1|54201-9|54202-7
+HAB,Habekacin,Aminoglycosides,,,0,
+HCH,Hachimycin,Antifungals,"D01AA03,G01AA06,J02AA02,QD01AA03,QG01AA06,QJ02AA02",Antimycotics for systemic use,0,
+HET,Hetacillin,"Penicillins,Beta-lactams","J01CA18,QJ01CA18","Beta-lactam antibacterials, penicillins",5,18931-6|274-1|275-8|276-6|277-4
+HYG,Hygromycin,Aminoglycosides,,,0,
+IBX,Ibrexafungerp,Antifungals,"J02AX07,QJ02AX07",,0,
+ICL,Iclaprim,Trimethoprims,"J01EA03,QJ01EA03",,3,73597-7|73619-9|73642-1
+IPM,Imipenem,"Carbapenems,Beta-lactams","J01DH51,QJ01DH51",Other beta-lactam antibacterials,25,101487-7|17010-0|18932-4|18933-2|23613-3|25221-3|25257-7|27331-8|278-2|279-0
+IPE,Imipenem/EDTA,"Carbapenems,Beta-lactams",,,4,35819-2|54170-6|54171-4|54172-2
+IMR,Imipenem/relebactam,"Carbapenems,Beta-lactams,Beta-lactamase inhibitors","J01DH56,QJ01DH56",,3,85424-0|93232-7|96372-8
+ISV,Isavuconazole,Antifungals,"J02AC05,QJ02AC05",,2,85381-2|88887-5
+ISE,Isepamicin,Aminoglycosides,"J01GB11,QJ01GB11",Aminoglycoside antibacterials,4,32381-6|35820-0|35821-8|55680-3
+ISO,Isoconazole,Antifungals,"D01AC05,G01AF07,QD01AC05,QG01AF07",Antimycotics for topic use,4,55681-1|55682-9|55683-7|55684-5
+INH,Isoniazid,Antimycobacterials,"J04AC01,QJ04AC01",Drugs for treatment of tuberculosis,24,18934-0|20383-6|23947-5|25217-1|25218-9|25219-7|25451-6|26756-7|286-5|287-3
+IST,Isoniazid/sulfamethoxazole/trimethoprim/pyridoxine,"Trimethoprims,Sulfonamides,Antimycobacterials",,Drugs for treatment of tuberculosis,0,
+ITR,Itraconazole,Antifungals,"J02AC02,QJ02AC02",Antimycotics for systemic use,11,10989-2|12392-7|25258-5|25452-4|27081-9|32184-4|32185-1|32603-3|54179-7|7021-9
+JOS,Josamycin,Macrolides,"J01FA07,QJ01FA07","Macrolides, lincosamides and streptogramins",4,25597-6|25702-2|41698-2|41699-0
+KAN,Kanamycin,Aminoglycosides,"A07AA08,J01GB04,QA07AA08,QJ01GB04,QS01AA24,S01AA24",Aminoglycoside antibacterials,23,18935-7|18936-5|23609-1|23889-9|25182-7|25213-0|25214-8|290-7|291-5|292-3
+KAH,Kanamycin-high,Aminoglycosides,,,3,18936-5|7023-5|7024-3
+KAC,Kanamycin/cephalexin,Aminoglycosides,,,0,
+KAS,Kasugamycin,Aminoglycosides,,,0,
+KET,Ketoconazole,Antifungals,"D01AC08,G01AF11,H02CA03,J02AB02,QD01AC08,QG01AF11,QH02CA03,QJ02AB02",Antimycotics for systemic use,11,10990-0|12393-5|18937-3|25259-3|294-9|295-6|296-4|297-2|60091-6|60092-4
+KIT,Kitasamycin,Macrolides,QJ01FA93,,0,
+LAS,Lasalocid,Ionophores,QP51BB02,,1,87598-9
+LSC,Lascufloxacin,"Fluoroquinolones,Quinolones","J01MA25,QJ01MA25",Quinolone antibacterials,0,
+LTM,Latamoxef,"Cephalosporins (3rd gen.),Cephalosporins,Beta-lactams","J01DD06,QJ01DD06",Other beta-lactam antibacterials,0,
+LMU,Lefamulin,Other,"J01XX12,QJ01XX12",,2,85425-7|99281-8
+LEN,Lenampicillin,"Penicillins,Beta-lactams",,,0,
+LVX,Levofloxacin,"Fluoroquinolones,Quinolones","J01MA12,QJ01MA12,QS01AE05,S01AE05",Quinolone antibacterials,13,101501-5|20396-8|20629-2|21367-8|21368-6|30532-6|30533-4|48173-9|53716-7|7026-8
+LEO,Levofloxacin/ornidazole,"Fluoroquinolones,Quinolones","J01RA05,QJ01RA05",Combinations of antibacterials,0,
+LND,Levonadifloxacin,"Fluoroquinolones,Quinolones","J01MA24,QJ01MA24",,0,
+LSP,Linco-spectin,Other,,,0,
+LIN,Lincomycin,Lincosamides,"J01FF02,QJ01FF02,QJ51FF02","Macrolides, lincosamides and streptogramins",7,18938-1|298-0|299-8|300-4|301-2|41700-6|87597-1
+LNZ,Linezolid,Oxazolidinones,"J01XX08,QJ01XX08",Other antibacterials,9,29254-0|29255-7|29258-1|33332-8|34202-2|41500-0|80609-1|88706-7|96111-0
+LFE,Linoprist-flopristin,Other,,,0,
+LOM,Lomefloxacin,"Fluoroquinolones,Quinolones","J01MA07,QJ01MA07,QS01AE04,S01AE04",Quinolone antibacterials,6,18939-9|302-0|303-8|304-6|305-3|41701-4
+LOR,Loracarbef,"Cephalosporins (2nd gen.),Cephalosporins,Beta-lactams","J01DC08,QJ01DC08",Other beta-lactam antibacterials,6,18940-7|306-1|307-9|308-7|309-5|7027-6
+LYM,Lymecycline,Tetracyclines,"J01AA04,QJ01AA04",Tetracyclines,5,18941-5|310-3|311-1|312-9|313-7
+MNA,Mandelic acid,Other,"B05CA06,J01XX06,QB05CA06,QJ01XX06",Other antibacterials,0,
+MGX,Manogepix,Antifungals,,,0,
+MAR,Marbofloxacin,"Fluoroquinolones,Quinolones",QJ01MA93,,3,73596-9|73618-1|73641-3
+MEC,Mecillinam,"Penicillins,Beta-lactams","J01CA11,QJ01CA11","Beta-lactam antibacterials, penicillins",3,18951-4|347-5|348-3
+MEL,Meleumycin,Macrolides,,,0,
+MEM,Meropenem,"Carbapenems,Beta-lactams","J01DH02,QJ01DH02",Other beta-lactam antibacterials,14,101222-8|101488-5|101489-3|18943-1|41406-0|6651-4|6652-2|6653-0|6654-8|7029-2
+MNC,Meropenem/nacubactam,"Carbapenems,Beta-lactams,Beta-lactamase inhibitors",,,0,
+MEV,Meropenem/vaborbactam,"Carbapenems,Beta-lactams,Beta-lactamase inhibitors","J01DH52,QJ01DH52",Other beta-lactam antibacterials,5,101222-8|101489-3|85427-3|88892-5|90980-4
+MES,Mesulfamide,Other,,,0,
+MTC,Metacycline,Tetracyclines,"J01AA05,QJ01AA05",Tetracyclines,0,
+MTM,Metampicillin,"Penicillins,Beta-lactams","J01CA14,QJ01CA14","Beta-lactam antibacterials, penicillins",0,
+MTH,Methenamine,Other,"J01XX05,QJ01XX05",Other antibacterials,0,
+MET,Meticillin,"Isoxazolylpenicillins,Penicillins,Beta-lactams","J01CF03,QJ01CF03,QJ51CF03","Beta-lactam antibacterials, penicillins",1,323-6
+MTP,Metioprim,Other,,,0,
+MXT,Metioxate,"Fluoroquinolones,Quinolones",,,0,
+MTR,Metronidazole,Other,"A01AB17,D06BX01,G01AF01,J01XD01,P01AB01,QA01AB17,QD06BX01,QG01AF01,QJ01XD01,QP51CA01",Other antibacterials,7,10991-8|18946-4|326-9|327-7|328-5|329-3|7031-8
+MEZ,Mezlocillin,"Ureidopenicillins,Penicillins,Beta-lactams","J01CA10,QJ01CA10","Beta-lactam antibacterials, penicillins",10,18947-2|330-1|331-9|332-7|333-5|3820-8|41702-2|54194-6|54195-3|54196-1
+MSU,Mezlocillin/sulbactam,"Penicillins,Beta-lactams,Beta-lactamase inhibitors",,,3,54194-6|54195-3|54196-1
+MIF,Micafungin,Antifungals,"J02AX05,QJ02AX05",Antimycotics for systemic use,4,53812-4|58418-5|65340-2|85048-7
+MCZ,Miconazole,Antifungals,"A01AB09,A07AC01,D01AC02,G01AF04,J02AB01,QA01AB09,QA07AC01,QD01AC02,QG01AF04,QJ02AB01,QS02AA13,S02AA13",Antimycotics for systemic use,5,17278-3|25607-3|25722-0|54180-5|55686-0
+MCR,Micronomicin,Aminoglycosides,"QS01AA22,S01AA22",,0,
+MID,Midecamycin,Macrolides,"J01FA03,QJ01FA03","Macrolides, lincosamides and streptogramins",0,
+MIL,Miloxacin,"Fluoroquinolones,Quinolones",,,0,
+MNO,Minocycline,Tetracyclines,"A01AB23,D10AF07,J01AA08,QA01AB23,QD10AF07,QJ01AA08",Tetracyclines,11,18948-0|25225-4|334-3|335-0|336-8|337-6|34606-4|3822-4|49757-8|55156-4
+MCM,Miocamycin,Macrolides,"J01FA11,QJ01FA11","Macrolides, lincosamides and streptogramins",6,18949-8|338-4|339-2|340-0|341-8|55687-8
+MON,Monensin sodium,Ionophores,,,0,
+MRN,Morinamide,Antimycobacterials,"J04AK04,QJ04AK04",Drugs for treatment of tuberculosis,0,
+MFX,Moxifloxacin,"Fluoroquinolones,Quinolones","J01MA14,QJ01MA14,QS01AE07,S01AE07",Quinolone antibacterials,14,31037-5|31039-1|31041-7|31043-3|41502-6|43751-7|45223-5|76043-9|76044-7|76045-4
+MUP,Mupirocin,Other,"D06AX09,QD06AX09,QR01AX06,R01AX06",,6,20389-3|35822-6|35823-4|60542-8|60543-6|7033-4
+NAC,Nacubactam,Beta-lactamase inhibitors,,,0,
+NAD,Nadifloxacin,"Fluoroquinolones,Quinolones","D10AF05,QD10AF05",,0,
+NAF,Nafcillin,"Penicillins,Beta-lactams","J01CF06,QJ01CF06",,8,10993-4|18951-4|25232-0|346-7|347-5|348-3|349-1|41704-8
+ZWK,Nafithromycin,Macrolides,,,0,
+NAL,Nalidixic acid,Quinolones,"J01MB02,QJ01MB02",Quinolone antibacterials,3,18952-2|351-7|352-5
+NAL-S,Nalidixic acid screening test,Quinolones,,,0,
+NAR,Narasin,Ionophores,QP51BB04,,1,87570-8
+NEM,Nemonoxacin,"Fluoroquinolones,Quinolones","J01MB08,QJ01MB08",Quinolone antibacterials,0,
+NEO,Neomycin,Aminoglycosides,"A01AB08,A07AA01,B05CA09,D06AX04,J01GB05,QA01AB08,QA07AA01,QB05CA09,QD06AX04,QJ01GB05,QR02AB01,QS01AA03,QS02AA07,QS03AA01,R02AB01,S01AA03,S02AA07,S03AA01",Aminoglycoside antibacterials,8,10995-9|18953-0|25262-7|354-1|355-8|356-6|357-4|41705-5
+NET,Netilmicin,Aminoglycosides,"J01GB07,QJ01GB07,QS01AA23,S01AA23",Aminoglycoside antibacterials,14,18954-8|25263-5|358-2|359-0|360-8|361-6|3848-9|3849-7|3850-5|47385-0
+NIC,Nicarbazin,Other,,,0,
+NIF,Nifuroquine,"Fluoroquinolones,Quinolones",,,0,
+NFR,Nifurtoinol,Nitrofurans,"J01XE02,QJ01XE02",Other antibacterials,0,
+NTZ,Nitazoxanide,Other,P01AX11,,3,73595-1|73617-3|73640-5
+NIT,Nitrofurantoin,Nitrofurans,"J01XE01,QJ01XE01",Other antibacterials,7,18955-5|362-4|363-2|364-0|365-7|3860-4|7036-7
+NIZ,Nitrofurazone,Nitrofurans,,,2,20388-5|87793-6
+NTR,Nitroxoline,"Fluoroquinolones,Quinolones","J01XX07,QJ01XX07",Other antibacterials,5,25608-1|25723-8|32382-4|54181-3|55688-6
+NOR,Norfloxacin,"Fluoroquinolones,Quinolones","J01MA06,QJ01MA06,QS01AE02,S01AE02",Quinolone antibacterials,8,18956-3|366-5|367-3|368-1|369-9|3867-9|41504-2|7037-5
+NOR-S,Norfloxacin screening test,"Fluoroquinolones,Quinolones",,,0,
+NME,Norfloxacin/metronidazole,"Fluoroquinolones,Quinolones","J01RA14,QJ01RA14",Combinations of antibacterials,0,
+NTI,Norfloxacin/tinidazole,"Fluoroquinolones,Quinolones","J01RA13,QJ01RA13",Combinations of antibacterials,0,
+NVA,Norvancomycin,"Glycopeptides,Peptides",,,0,
+NOV,Novobiocin,Aminocoumarins,QJ01XX95,,7,17378-1|18957-1|370-7|371-5|372-3|373-1|41706-3
+NYS,Nystatin,"Ionophores,Antifungals","A07AA02,D01AA01,G01AA01,QA07AA02,QD01AA01,QG01AA01",,5,10697-1|10698-9|18958-9|35824-2|55689-4
+OFX,Ofloxacin,"Fluoroquinolones,Quinolones","J01MA01,QJ01MA01,QS01AE01,QS02AA16,S01AE01,S02AA16",Quinolone antibacterials,15,18959-7|20384-4|23948-3|25264-3|374-9|375-6|376-4|377-2|3877-8|41408-6
+OOR,Ofloxacin/ornidazole,"Fluoroquinolones,Quinolones","J01RA09,QJ01RA09",Combinations of antibacterials,0,
+OLE,Oleandomycin,Macrolides,"J01FA05,QJ01FA05","Macrolides, lincosamides and streptogramins",6,18960-5|378-0|379-8|380-6|381-4|55690-2
+OMC,Omadacycline,Tetracyclines,"J01AA15,QJ01AA15",,3,73594-4|73616-5|73639-7
+OPT,Optochin,Other,,,2,100055-3|73665-2
+ORB,Orbifloxacin,"Fluoroquinolones,Quinolones",QJ01MA95,,3,35825-9|35826-7|35827-5
+ORI,Oritavancin,"Lipoglycopeptides,Glycopeptides,Peptides","J01XA05,QJ01XA05",Other antibacterials,4,41707-1|41708-9|41709-7|41736-0
+ORS,Ormetroprim/sulfamethoxazole,"Trimethoprims,Sulfonamides",,,3,73593-6|73615-7|73638-9
+ORN,Ornidazole,Other,"G01AF06,J01XD03,P01AB03,QG01AF06,QJ01XD03,QP51AA03",Other antibacterials,4,55691-0|55692-8|55693-6|55694-4
+OST,Ostreogrycin,Streptogramins,,,0,
+OTE,Oteseconazole,Antifungals,"J02AC06,QJ02AC06",Antimycotics for systemic use,0,
+OXA,Oxacillin,"Isoxazolylpenicillins,Penicillins,Beta-lactams","J01CF04,QJ01CF04,QJ51CF04","Beta-lactam antibacterials, penicillins",8,18961-3|25265-0|382-2|383-0|384-8|385-5|3882-8|7039-1
+OXA-S,Oxacillin screening test,"Isoxazolylpenicillins,Penicillins,Beta-lactams",,,0,
+OXO,Oxolinic acid,Quinolones,"J01MB05,QJ01MB05",Quinolone antibacterials,0,
+OXY,Oxytetracycline,Tetracyclines,"A01AB25,D06AA03,G01AA07,J01AA06,QA01AB25,QD06AA03,QG01AA07,QG51AA01,QJ01AA06,QJ51AA06,QS01AA04,S01AA04",Tetracyclines,9,17396-3|18962-1|25266-8|386-3|387-1|388-9|389-7|55699-3|87595-5
+OZN,Ozenoxacin,Quinolones,"D06AX14,QD06AX14",,0,
+PAS,P-aminosalicylic acid,Antimycobacterials,,,0,
+PAN,Panipenem,"Carbapenems,Beta-lactams",,,2,100056-1|53823-1
+PAR,Paromomycin,Other,"A07AA06,QA07AA06,QJ01GB92",,5,51719-3|53824-9|55700-9|55701-7|55702-5
+PAZ,Pazufloxacin,"Fluoroquinolones,Quinolones","J01MA18,QJ01MA18",Quinolone antibacterials,0,
+PEF,Pefloxacin,"Fluoroquinolones,Quinolones","J01MA03,QJ01MA03",Quinolone antibacterials,5,18963-9|35828-3|390-5|3906-5|7040-9
+PEF-S,Pefloxacin screening test,"Fluoroquinolones,Quinolones",,,0,
+PNM,Penamecillin,"Penicillins,Beta-lactams","J01CE06,QJ01CE06","Beta-lactam antibacterials, penicillins",0,
+PNO,Penicillin/novobiocin,"Penicillins,Beta-lactams,Aminocoumarins",,,3,35872-1|35873-9|35874-7
+PSU,Penicillin/sulbactam,"Penicillins,Beta-lactams,Beta-lactamase inhibitors",,,0,
+PNM1,Penimepicycline,Tetracyclines,"J01AA10,QJ01AA10",Tetracyclines,0,
+PIM,Pentisomicin,Aminoglycosides,,,0,
+PTZ,Pentizidone,Other,,,0,
+PEX,Pexiganan,Other,,,0,
+PHE,Pheneticillin,"Penicillins,Beta-lactams","J01CE05,QJ01CE05","Beta-lactam antibacterials, penicillins",0,
+PHN,Phenoxymethylpenicillin,"Penicillins,Beta-lactams","J01CE02,QJ01CE02","Beta-lactam antibacterials, penicillins",3,18966-2|396-2|397-0
+PMR,Pimaricin,Antifungals,,,0,
+PPA,Pipemidic acid,Quinolones,"J01MB04,QJ01MB04",Quinolone antibacterials,0,
+PIP,Piperacillin,"Ureidopenicillins,Penicillins,Beta-lactams","J01CA12,QJ01CA12","Beta-lactam antibacterials, penicillins",20,101490-1|101491-9|18969-6|18970-4|25268-4|3972-7|407-7|408-5|409-3|410-1
+PIS,Piperacillin/sulbactam,"Penicillins,Beta-lactams,Beta-lactamase inhibitors",,,4,54197-9|54198-7|54199-5|55704-1
+TZP,Piperacillin/tazobactam,"Ureidopenicillins,Penicillins,Beta-lactams,Beta-lactamase inhibitors","J01CR05,QJ01CR05","Beta-lactam antibacterials, penicillins",7,101491-9|18970-4|411-9|412-7|413-5|414-3|7044-1
+PRC,Piridicillin,"Penicillins,Beta-lactams",,,0,
+PRL,Pirlimycin,"Lincosamides,Macrolides",QJ51FF90,,3,35829-1|35830-9|35831-7
+PIR,Piromidic acid,Quinolones,"J01MB03,QJ01MB03",Quinolone antibacterials,0,
+PVM,Pivampicillin,"Penicillins,Beta-lactams","J01CA02,QJ01CA02","Beta-lactam antibacterials, penicillins",5,18971-2|415-0|416-8|417-6|418-4
+PME,Pivmecillinam,"Penicillins,Beta-lactams","J01CA08,QJ01CA08","Beta-lactam antibacterials, penicillins",1,18951-4
+PLZ,Plazomicin,Aminoglycosides,"J01GB14,QJ01GB14",,5,73592-8|73614-0|73637-1|92024-9|94719-2
+PLB,Polymyxin B,Polymyxins,"A07AA05,J01XB02,QA07AA05,QJ01XB02,QJ51XB02,QS01AA18,QS02AA11,QS03AA03,S01AA18,S02AA11,S03AA03",Other antibacterials,8,17473-0|18972-0|25269-2|35832-5|419-2|420-0|421-8|422-6
+POP,Polymyxin B/polysorbate 80,Polymyxins,,,0,
+POS,Posaconazole,Antifungals,"J02AC04,QJ02AC04",Antimycotics for systemic use,6,53731-6|54186-2|54187-0|54188-8|54189-6|80545-7
+PRA,Pradofloxacin,"Fluoroquinolones,Quinolones",QJ01MA97,,2,76148-6|87800-9
+PRX,Premafloxacin,"Fluoroquinolones,Quinolones",,,3,73591-0|73613-2|73636-3
+PMD,Pretomanid,Antimycobacterials,"J04AK08,QJ04AK08",Drugs for treatment of tuberculosis,1,93850-6
+PRM,Primycin,Macrolides,,,0,
+PRI,Pristinamycin,Streptogramins,"J01FG01,QJ01FG01","Macrolides, lincosamides and streptogramins",4,32383-2|35833-3|35834-1|55709-0
+PRB,Procaine benzylpenicillin,"Penicillins,Beta-lactams","J01CE09,QJ01CE09,QJ51CE09","Beta-lactam antibacterials, penicillins",0,
+PRP,Propicillin,"Penicillins,Beta-lactams","J01CE03,QJ01CE03","Beta-lactam antibacterials, penicillins",0,
+PKA,Propikacin,Aminoglycosides,,,0,
+PTH,Protionamide,Antimycobacterials,"J04AD01,QJ04AD01",Drugs for treatment of tuberculosis,0,
+PRU,Prulifloxacin,"Fluoroquinolones,Quinolones","J01MA17,QJ01MA17",Quinolone antibacterials,2,100058-7|76145-2
+PZA,Pyrazinamide,Antimycobacterials,"J04AK01,QJ04AK01",Drugs for treatment of tuberculosis,16,11001-5|18973-8|20461-0|23632-3|25186-8|25229-6|25270-0|423-4|424-2|425-9
+QDA,Quinupristin/dalfopristin,Streptogramins,QJ01FG02,"Macrolides, lincosamides and streptogramins",5,23640-6|23641-4|33334-4|35835-8|58712-1
+RAC,Ractopamine,Other,,,0,
+RAM,Ramoplanin,"Glycopeptides,Peptides",,,4,41710-5|41711-3|41712-1|41737-8
+RZM,Razupenem,"Carbapenems,Beta-lactams",,,3,73590-2|73612-4|73635-5
+RTP,Retapamulin,Pleuromutilins,"D06AX13,QD06AX13",Antibiotics for topical use,0,
+RZF,Rezafungin,Antifungals,,,0,
+RBC,Ribociclib,Antifungals,"L01EF02,QL01EF02",Antimycotics for systemic use,0,
+RST,Ribostamycin,Aminoglycosides,"J01GB10,QJ01GB10",Aminoglycoside antibacterials,0,
+RID1,Ridinilazole,Other,,,0,
+RIB,Rifabutin,"Rifamycins,Antimycobacterials","J04AB04,QJ04AB04",Drugs for treatment of tuberculosis,15,100699-8|16100-0|16386-5|16387-3|19149-4|20386-9|23630-7|24032-5|25199-1|25200-7
+RIF,Rifampicin,"Rifamycins,Antimycobacterials","J04AB02,QJ04AB02,QJ54AB02",Drugs for treatment of tuberculosis,3,18974-6|428-3|429-1
+REI,Rifampicin/ethambutol/isoniazid,"Rifamycins,Antimycobacterials","J04AM07,QJ04AM07",Drugs for treatment of tuberculosis,0,
+RFI,Rifampicin/isoniazid,"Rifamycins,Antimycobacterials","J04AM02,QJ04AM02",Drugs for treatment of tuberculosis,0,
+RPEI,Rifampicin/pyrazinamide/ethambutol/isoniazid,"Rifamycins,Antimycobacterials","J04AM06,QJ04AM06",Drugs for treatment of tuberculosis,0,
+RPI,Rifampicin/pyrazinamide/isoniazid,"Rifamycins,Antimycobacterials","J04AM05,QJ04AM05",Drugs for treatment of tuberculosis,0,
+RFM,Rifamycin,"Rifamycins,Antimycobacterials","A07AA13,D06AX15,J04AB03,QA07AA13,QD06AX15,QJ04AB03,QJ54AB03,QS01AA16,QS02AA12,S01AA16,S02AA12",Drugs for treatment of tuberculosis,0,
+RFP,Rifapentine,"Rifamycins,Antimycobacterials","J04AB05,QJ04AB05",Drugs for treatment of tuberculosis,2,100059-5|76627-9
+RFX,Rifaximin,Other,"A07AA11,D06AX11,QA07AA11,QD06AX11,QG51AA06,QJ51XX01",Intestinal antiinfectives,3,73589-4|73611-6|73634-8
+RIT,Ritipenem,"Carbapenems,Beta-lactams",,,0,
+RIA,Ritipenem acoxil,"Carbapenems,Beta-lactams",,,0,
+ROK,Rokitamycin,Macrolides,"J01FA12,QJ01FA12","Macrolides, lincosamides and streptogramins",0,
+RLT,Rolitetracycline,Tetracyclines,"J01AA09,QJ01AA09",Tetracyclines,5,18976-1|435-8|436-6|437-4|438-2
+ROS,Rosoxacin,Quinolones,"J01MB01,QJ01MB01",Quinolone antibacterials,6,18977-9|439-0|440-8|441-6|442-4|55713-2
+RXT,Roxithromycin,Macrolides,"J01FA06,QJ01FA06","Macrolides, lincosamides and streptogramins",6,18978-7|443-2|444-0|445-7|446-5|7046-6
+RFL,Rufloxacin,"Fluoroquinolones,Quinolones","J01MA10,QJ01MA10",Quinolone antibacterials,0,
+SAL,Salinomycin,Ionophores,QP51BB01,,4,35836-6|35837-4|35838-2|87593-0
+SAR,Sarafloxacin,"Fluoroquinolones,Quinolones",QJ01MA98,,3,73588-6|73610-8|73633-0
+SRC,Sarecycline,Tetracyclines,"J01AA14,QJ01AA14",Tetracyclines,0,
+SRX,Sarmoxicillin,"Penicillins,Beta-lactams",,,0,
+SEC,Secnidazole,Other,P01AB07,,0,
+SIS,Sisomicin,Aminoglycosides,"J01GB08,QJ01GB08",Aminoglycoside antibacterials,6,18979-5|447-3|448-1|449-9|450-7|55714-0
+SIT,Sitafloxacin,"Fluoroquinolones,Quinolones","J01MA21,QJ01MA21",,0,
+SDA,Sodium aminosalicylate,Antimycobacterials,"J04AA02,QJ04AA02",Drugs for treatment of tuberculosis,0,
+SOL,Solithromycin,Macrolides,"J01FA16,QJ01FA16",,3,73587-8|73609-0|73632-2
+SPX,Sparfloxacin,"Fluoroquinolones,Quinolones","J01MA09,QJ01MA09",Quinolone antibacterials,5,20397-6|23610-9|23628-1|35839-0|7047-4
+SPT,Spectinomycin,Other,"J01XX04,QJ01XX04",Other antibacterials,6,18980-3|35840-8|451-5|452-3|453-1|454-9
+SPI,Spiramycin,Macrolides,"J01FA02,QJ01FA02,QJ51FA02","Macrolides, lincosamides and streptogramins",6,18981-1|455-6|456-4|457-2|458-0|55715-7
+SPM,Spiramycin/metronidazole,Other,"J01RA04,QJ01RA04",Combinations of antibacterials,0,
+STR,Streptoduocin,Aminoglycosides,"J01GA02,QJ01GA02",Aminoglycoside antibacterials,0,
+STR1,Streptomycin,Aminoglycosides,"A07AA04,J01GA01,QA07AA04,QJ01GA01",Aminoglycoside antibacterials,21,18982-9|18983-7|20462-8|23626-5|25185-0|25205-6|25206-4|35841-6|4039-4|42658-5
+STH,Streptomycin-high,Aminoglycosides,,,4,18983-7|35841-6|6933-6|7049-0
+STI,Streptomycin/isoniazid,Antimycobacterials,"J04AM01,QJ04AM01",Drugs for treatment of tuberculosis,0,
+SUL,Sulbactam,Beta-lactamase inhibitors,"J01CG01,QJ01CG01","Beta-lactam antibacterials, penicillins",4,41716-2|41717-0|41718-8|41739-4
+SBC,Sulbenicillin,"Penicillins,Beta-lactams","J01CA16,QJ01CA16","Beta-lactam antibacterials, penicillins",0,
+SUC,Sulconazole,Antifungals,"D01AC09,QD01AC09",,0,
+SUP,Sulfachlorpyridazine,Sulfonamides,QJ01EQ12,,0,
+SDI,Sulfadiazine,"Trimethoprims,Sulfonamides","J01EC02,QJ01EQ10",Sulfonamides and trimethoprim,9,18984-5|27216-1|463-0|464-8|465-5|466-3|59742-7|6907-0|7050-8
+SLT,Sulfadiazine/tetroxoprim,"Trimethoprims,Sulfonamides",J01EE06,Sulfonamides and trimethoprim,0,
+SLT1,Sulfadiazine/trimethoprim,"Trimethoprims,Sulfonamides","J01EE02,QJ01EW10,QJ51RE01",Sulfonamides and trimethoprim,0,
+SUD,Sulfadimethoxine,"Trimethoprims,Sulfonamides","J01ED01,QJ01EQ09,QP51BA01",Sulfonamides and trimethoprim,2,87799-3|87803-3
+SDM,Sulfadimidine,"Trimethoprims,Sulfonamides","J01EB03,QJ01EQ03,QP51AG01",Sulfonamides and trimethoprim,0,
+SLT2,Sulfadimidine/trimethoprim,"Trimethoprims,Sulfonamides","J01EE05,QJ01EW03",Sulfonamides and trimethoprim,0,
+SLF,Sulfafurazole,"Trimethoprims,Sulfonamides","J01EB05,QJ01EQ05,QS01AB02,S01AB02",Sulfonamides and trimethoprim,0,
+SLF1,Sulfaisodimidine,"Trimethoprims,Sulfonamides",J01EB01,Sulfonamides and trimethoprim,0,
+SLF2,Sulfalene,"Trimethoprims,Sulfonamides","J01ED02,QJ01EQ19",Sulfonamides and trimethoprim,0,
+SZO,Sulfamazone,"Trimethoprims,Sulfonamides",J01ED09,Sulfonamides and trimethoprim,0,
+SLF3,Sulfamerazine,"Trimethoprims,Sulfonamides","D06BA06,J01ED07,QD06BA06,QJ01EQ17",Sulfonamides and trimethoprim,0,
+SLT3,Sulfamerazine/trimethoprim,"Trimethoprims,Sulfonamides","J01EE07,QJ01EW18",Sulfonamides and trimethoprim,0,
+SUM,Sulfamethazine,Sulfonamides,,,1,87592-2
+SLF4,Sulfamethizole,"Trimethoprims,Sulfonamides","B05CA04,D06BA04,J01EB02,QB05CA04,QD06BA04,QJ01EQ02,QS01AB01,S01AB01",Sulfonamides and trimethoprim,3,60175-7|60176-5|60177-3
+SMX,Sulfamethoxazole,"Trimethoprims,Sulfonamides","J01EC01,QJ01EQ11",Sulfonamides and trimethoprim,15,10342-4|11577-4|18985-2|25271-8|39772-9|467-1|468-9|469-7|470-5|59971-2
+SLF5,Sulfamethoxypyridazine,"Trimethoprims,Sulfonamides","J01ED05,QJ01EQ15",Sulfonamides and trimethoprim,0,
+SLF6,Sulfametomidine,"Trimethoprims,Sulfonamides",J01ED03,Sulfonamides and trimethoprim,0,
+SLF7,Sulfametoxydiazine,"Trimethoprims,Sulfonamides",J01ED04,Sulfonamides and trimethoprim,0,
+SLT4,Sulfametrole/trimethoprim,"Trimethoprims,Sulfonamides",J01EE03,Sulfonamides and trimethoprim,0,
+SLF8,Sulfamoxole,"Trimethoprims,Sulfonamides",J01EC03,Sulfonamides and trimethoprim,0,
+SLT5,Sulfamoxole/trimethoprim,"Trimethoprims,Sulfonamides",J01EE04,Sulfonamides and trimethoprim,0,
+SLF9,Sulfanilamide,"Trimethoprims,Sulfonamides","D06BA05,J01EB06,QD06BA05,QJ01EQ06",Sulfonamides and trimethoprim,0,
+SLF10,Sulfaperin,"Trimethoprims,Sulfonamides",J01ED06,Sulfonamides and trimethoprim,0,
+SLF11,Sulfaphenazole,"Trimethoprims,Sulfonamides","J01ED08,QJ01EQ08",Sulfonamides and trimethoprim,0,
+SLF12,Sulfapyridine,"Trimethoprims,Sulfonamides","J01EB04,QJ01EQ04",Sulfonamides and trimethoprim,2,14075-6|55580-5
+SNA,Sulfasuccinamide,Sulfonamides,,,0,
+SUT,Sulfathiazole,"Trimethoprims,Sulfonamides","D06BA02,J01EB07,QD06BA02,QJ01EQ07",Sulfonamides and trimethoprim,3,87591-4|87796-9|87797-7
+SLF13,Sulfathiourea,"Trimethoprims,Sulfonamides",J01EB08,Sulfonamides and trimethoprim,0,
+SOX,Sulfisoxazole,Sulfonamides,,,8,11578-2|18986-0|25226-2|471-3|472-1|473-9|474-7|9701-4
+SSS,Sulfonamide,Sulfonamides,,,12,17674-3|17675-0|18987-8|35842-4|4040-2|4041-0|4042-8|475-4|476-2|477-0
+SLP,Sulopenem,Other,,,3,55289-3|55290-1|55291-9
+SLT6,Sultamicillin,"Penicillins,Beta-lactams,Beta-lactamase inhibitors","J01CR04,QJ01CR04","Beta-lactam antibacterials, penicillins",0,
+SUR,Surotomycin,Other,,,0,
+TAL,Talampicillin,"Penicillins,Beta-lactams","J01CA15,QJ01CA15","Beta-lactam antibacterials, penicillins",5,18988-6|479-6|480-4|481-2|482-0
+TLP,Talmetoprim,Other,,,0,
+TAN,Taniborbactam,"Carbapenems,Beta-lactams,Beta-lactamase inhibitors",,,0,
+TAZ,Tazobactam,Beta-lactamase inhibitors,"J01CG02,QJ01CG02","Beta-lactam antibacterials, penicillins",4,41719-6|41720-4|41721-2|41740-2
+TBP,Tebipenem,"Carbapenems,Beta-lactams",,,0,
+TZD,Tedizolid,Oxazolidinones,"J01XX11,QJ01XX11",Other antibacterials,3,73586-0|73608-2|73631-4
+TEC,Teicoplanin,"Glycopeptides,Peptides","J01XA02,QJ01XA02",Other antibacterials,12,18989-4|25534-9|25535-6|34378-0|34379-8|4043-6|483-8|484-6|485-3|486-1
+TCM,Teicoplanin-macromethod,"Glycopeptides,Peptides",,,0,
+TLV,Telavancin,"Lipoglycopeptides,Glycopeptides,Peptides","J01XA03,QJ01XA03",Other antibacterials,4,72894-9|73630-6|85051-1|88886-7
+TLT,Telithromycin,Macrolides,"J01FA15,QJ01FA15","Macrolides, lincosamides and streptogramins",4,35843-2|35844-0|35845-7|41722-0
+TMX,Temafloxacin,"Fluoroquinolones,Quinolones","J01MA05,QJ01MA05",Quinolone antibacterials,5,18990-2|487-9|488-7|489-5|490-3
+TEM,Temocillin,"Penicillins,Beta-lactams","J01CA17,QJ01CA17","Beta-lactam antibacterials, penicillins",6,18991-0|491-1|492-9|493-7|494-5|54190-4
+TRB,Terbinafine,Antifungals,"D01AE15,D01BA02,QD01AE15,QD01BA02",Antifungals for systemic use,3,10720-1|10721-9|18992-8
+TRC,Terconazole,Antifungals,"G01AG02,QG01AG02",,1,55196-0
+TRZ,Terizidone,Antimycobacterials,"J04AK03,QJ04AK03",Drugs for treatment of tuberculosis,0,
+TCY,Tetracycline,Tetracyclines,"A01AB13,D06AA04,J01AA07,QA01AB13,QD06AA04,QG01AA90,QG51AA02,QJ01AA07,QJ51AA07,QS01AA09,QS02AA08,QS03AA02,S01AA09,S02AA08,S03AA02",Tetracyclines,10,101504-9|18993-6|25272-6|4045-1|495-2|496-0|497-8|498-6|7052-4|87590-6
+TCY-S,Tetracycline screening test,Tetracyclines,,,0,
+TOL,Tetracycline/oleandomycin,Tetracyclines,"J01RA08,QJ01RA08",Combinations of antibacterials,0,
+TET,Tetroxoprim,Other,,,0,
+THA,Thiacetazone,Oxazolidinones,,,3,32384-0|54184-7|54204-3
+THI,Thiamphenicol,Phenicols,"J01BA02,QJ01BA02,QJ51BA02",Amphenicols,4,41723-8|41724-6|41725-3|54169-8
+TAT,Thioacetazone,Antimycobacterials,"J04AK07,QJ04AK07",Drugs for treatment of tuberculosis,0,
+THI1,Thioacetazone/isoniazid,Antimycobacterials,"J04AM04,QJ04AM04",Drugs for treatment of tuberculosis,0,
+THS,Thiostrepton,Peptides,,,0,
+TIA,Tiamulin,Pleuromutilins,QJ01XQ01,,4,35846-5|35847-3|35848-1|87589-8
+TIC,Ticarcillin,"Penicillins,Beta-lactams","J01CA13,QJ01CA13","Beta-lactam antibacterials, penicillins",19,18994-4|18995-1|25254-4|4054-3|4055-0|499-4|500-9|501-7|502-5|503-3
+TCC,Ticarcillin/clavulanic acid,"Penicillins,Beta-lactams,Beta-lactamase inhibitors","J01CR03,QJ01CR03","Beta-lactam antibacterials, penicillins",3,18995-1|504-1|505-8
+TGC,Tigecycline,Tetracyclines,"J01AA12,QJ01AA12",Tetracyclines,6,101499-2|42354-1|42355-8|42356-6|42357-4|55158-0
+TMN,Tigemonam,"Monobactams,Beta-lactams",,,0,
+TBQ,Tilbroquinol,"Fluoroquinolones,Quinolones",P01AA05,,0,
+TIP,Tildipirosin,Macrolides,QJ01FA96,,3,100060-3|88375-1|88377-7
+TIL,Tilmicosin,Macrolides,QJ01FA91,,4,35849-9|35850-7|35851-5|87588-0
+TIN,Tinidazole,Other,"G01AF21,J01XD02,P01AB02,QG01AF21,QJ01XD02,QP51AA02",Other antibacterials,4,54928-7|55720-7|55721-5|55722-3
+TCR,Tiocarlide,Antimycobacterials,"J04AD02,QJ04AD02",Drugs for treatment of tuberculosis,0,
+TDC,Tiodonium chloride,Other,,,0,
+TXC,Tioxacin,"Fluoroquinolones,Quinolones",,,0,
+TIZ,Tizoxanide,Other,,,3,73585-2|73607-4|73629-8
+TOB,Tobramycin,Aminoglycosides,"J01GB01,QJ01GB01,QS01AA12,S01AA12",Aminoglycoside antibacterials,26,101496-8|13584-8|17808-7|18996-9|22750-4|22751-2|22752-0|25227-0|25800-4|31094-6
+TOH,Tobramycin-high,Aminoglycosides,,,0,
+TFX,Tosufloxacin,"Fluoroquinolones,Quinolones","J01MA22,QJ01MA22,QS01AE09,S01AE09",,2,100061-1|76146-0
+TMP,Trimethoprim,Trimethoprims,"J01EA01,QJ01EA01,QJ51EA01",Sulfonamides and trimethoprim,26,101495-0|11005-6|17747-7|18997-7|18998-5|20387-7|23614-1|23631-5|25273-4|32342-8
+SXT,Trimethoprim/sulfamethoxazole,"Trimethoprims,Sulfonamides",J01EE01,Sulfonamides and trimethoprim,12,101495-0|18998-5|20387-7|23631-5|25273-4|32342-8|4081-6|515-7|516-5|517-3
+TRL,Troleandomycin,Macrolides,"J01FA08,QJ01FA08","Macrolides, lincosamides and streptogramins",5,18999-3|519-9|520-7|521-5|522-3
+TRO,Trospectomycin,Other,,,0,
+TVA,Trovafloxacin,"Fluoroquinolones,Quinolones","J01MA13,QJ01MA13",Quinolone antibacterials,4,23642-2|23643-0|35855-6|7058-1
+TUL,Tulathromycin,Macrolides,QJ01FA94,,2,76149-4|87798-5
+TYL,Tylosin,Macrolides,"QJ01FA90,QJ51FA90",,4,35856-4|35857-2|35858-0|87587-2
+TYL1,Tylvalosin,Macrolides,QJ01FA92,,2,101526-2|87586-4
+PRU1,Ulifloxacin (Prulifloxacin),Other,,,0,
+VAN,Vancomycin,"Glycopeptides,Peptides","A07AA09,J01XA01,QA07AA09,QJ01XA01,QS01AA28,S01AA28",Other antibacterials,23,13586-3|13587-1|19000-9|20578-1|23615-8|25228-8|31012-8|39092-2|39796-8|39797-6
+VAM,Vancomycin-macromethod,"Glycopeptides,Peptides",,,0,
+VIO,Viomycin,Antimycobacterials,,,6,19001-7|23616-6|527-2|528-0|529-8|530-6
+VIR,Virginiamycine,Streptogramins,,,0,
+VOR,Voriconazole,Antifungals,"J02AC03,QJ02AC03",Antimycotics for systemic use,10,32379-0|35862-2|35863-0|38370-3|41199-1|41200-7|53902-3|73676-9|80553-1|80651-3
+XER,Xeruborbactam,Beta-lactamase inhibitors,,,0,
+XBR,Xibornol,Other,"J01XX02,QJ01XX02",Other antibacterials,0,
+ZID,Zidebactam,Beta-lactamase inhibitors,,,0,
+ZFD,Zoliflodacin,Spiropyrimidinetriones,,,0,
+ZOR,Zorbamycin,"Glycopeptides,Peptides",,,0,

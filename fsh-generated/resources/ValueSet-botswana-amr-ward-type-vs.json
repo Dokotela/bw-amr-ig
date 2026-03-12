@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "BotswanaAMRWardTypeVS",
+  "id": "botswana-amr-ward-type-vs",
+  "title": "Botswana AMR Ward Type",
+  "description": "Ward/location types for AMR surveillance, aligned with WHONET location type and GLASS origin classification",
+  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ward-type-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "concept": [
+          {
+            "code": "IMP",
+            "display": "inpatient encounter"
+          },
+          {
+            "code": "AMB",
+            "display": "ambulatory"
+          },
+          {
+            "code": "EMER",
+            "display": "emergency"
+          },
+          {
+            "code": "ACUTE",
+            "display": "inpatient acute"
+          },
+          {
+            "code": "OBSENC",
+            "display": "observation encounter"
+          }
+        ]
+      }
+    ]
+  }
+}

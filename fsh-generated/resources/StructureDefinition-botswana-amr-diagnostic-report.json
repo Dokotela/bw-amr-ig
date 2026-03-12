@@ -5,7 +5,7 @@
   "name": "BotswanaAMRDiagnosticReport",
   "title": "Botswana AMR DiagnosticReport",
   "status": "draft",
-  "description": "Bundles AMR susceptibility observations into one comprehensive report",
+  "description": "Bundles AMR culture results into one comprehensive report. References top-level observations (gram stain and organism identifications). Susceptibility and special test results are accessed via OrganismObservation.hasMember.",
   "fhirVersion": "4.3.0",
   "kind": "resource",
   "abstract": false,
@@ -23,6 +23,36 @@
         "id": "DiagnosticReport.status",
         "path": "DiagnosticReport.status",
         "patternCode": "final"
+      },
+      {
+        "id": "DiagnosticReport.category",
+        "path": "DiagnosticReport.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.category:microbiologyStudies",
+        "path": "DiagnosticReport.category",
+        "sliceName": "microbiologyStudies",
+        "min": 1,
+        "max": "1",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "18725-2",
+              "system": "http://loinc.org",
+              "display": "Microbiology studies (set)"
+            }
+          ]
+        }
       },
       {
         "id": "DiagnosticReport.code",
@@ -51,6 +81,18 @@
         ]
       },
       {
+        "id": "DiagnosticReport.encounter",
+        "path": "DiagnosticReport.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-encounter"
+            ]
+          }
+        ]
+      },
+      {
         "id": "DiagnosticReport.effective[x]",
         "path": "DiagnosticReport.effective[x]",
         "slicing": {
@@ -74,6 +116,19 @@
         "type": [
           {
             "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.performer",
+        "path": "DiagnosticReport.performer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner"
+            ]
           }
         ]
       },
@@ -123,43 +178,13 @@
         "id": "DiagnosticReport.result:organism",
         "path": "DiagnosticReport.result",
         "sliceName": "organism",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
               "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "DiagnosticReport.result:susceptibility",
-        "path": "DiagnosticReport.result",
-        "sliceName": "susceptibility",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "DiagnosticReport.result:specialTests",
-        "path": "DiagnosticReport.result",
-        "sliceName": "specialTests",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation"
             ]
           }
         ]
