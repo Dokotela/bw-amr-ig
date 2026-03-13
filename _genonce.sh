@@ -34,6 +34,8 @@ cp output/ValueSet-botswana-amr-special-test-vs.json flutter/assets/ValueSet-bot
 cp output/ValueSet-botswana-amr-specimen-site-vs.json flutter/assets/ValueSet-botswana-amr-specimen-site-vs.json
 cp output/ValueSet-botswana-amr-specimen-type-vs.json flutter/assets/ValueSet-botswana-amr-specimen-type-vs.json
 cp output/ValueSet-botswana-amr-test-result-status-vs.json flutter/assets/ValueSet-botswana-amr-test-result-status-vs.json
+cp output/ValueSet-botswana-amr-ast-method-vs.json flutter/assets/ValueSet-botswana-amr-ast-method-vs.json
+cp output/ValueSet-botswana-amr-ward-type-vs.json flutter/assets/ValueSet-botswana-amr-ward-type-vs.json
 
 # Convert to Dart files
 json_to_dart "output/CodeSystem-botswana-amr-local-method-cs.json" "flutter/lib/fhir/code_system-botswana-amr-local-method-cs.dart" "CodeSystem" "botswanaAmrLocalMethodCs"
@@ -47,6 +49,8 @@ json_to_dart "output/ValueSet-botswana-amr-special-test-vs.json" "flutter/lib/fh
 json_to_dart "output/ValueSet-botswana-amr-specimen-site-vs.json" "flutter/lib/fhir/value_set-botswana-amr-specimen-site-vs.dart" "ValueSet" "botswanaAmrSpecimenSiteVs"
 json_to_dart "output/ValueSet-botswana-amr-specimen-type-vs.json" "flutter/lib/fhir/value_set-botswana-amr-specimen-type-vs.dart" "ValueSet" "botswanaAmrSpecimenTypeVs"
 json_to_dart "output/ValueSet-botswana-amr-test-result-status-vs.json" "flutter/lib/fhir/value_set-botswana-amr-test-result-status-vs.dart" "ValueSet" "botswanaAmrTestResultStatusVs"
+json_to_dart "output/ValueSet-botswana-amr-ast-method-vs.json" "flutter/lib/fhir/value_set-botswana-amr-ast-method-vs.dart" "ValueSet" "botswanaAmrAstMethodVs"
+json_to_dart "output/ValueSet-botswana-amr-ward-type-vs.json" "flutter/lib/fhir/value_set-botswana-amr-ward-type-vs.dart" "ValueSet" "botswanaAmrWardTypeVs"
 
 cd output
 python3 -m http.server 8000

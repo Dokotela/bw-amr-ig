@@ -34,6 +34,13 @@ dart analyze
 dart test
 ```
 
+### Export package
+```bash
+cd export
+dart pub get
+dart test
+```
+
 ## Architecture
 
 ### FSH Source (`input/fsh/`)
@@ -58,9 +65,9 @@ DiagnosticReport (top-level, references Encounter for ward/admission context)
 
 Key design: OrganismObservation uses `hasMember` to group its susceptibility and special test results. This properly handles multi-organism isolates (each organism links to its own AST panel).
 
-### ConceptMaps (`input/resources/`)
+### ConceptMaps (`concept-maps/`)
 
-FHIR ConceptMap resources bridging WHONET codes to standard terminologies:
+FHIR ConceptMap resources bridging WHONET codes to standard terminologies. Stored in `concept-maps/` (not `input/resources/`) to avoid IG Publisher attempting to validate ~5000 organism mappings against the terminology server, which causes it to hang.
 
 - `ConceptMap-whonet-organism-to-snomed.json` — ~5000 WHONET organism codes → SNOMED CT
 - `ConceptMap-whonet-antibiotic-to-loinc.json` — ~271 WHONET antibiotic codes → LOINC susceptibility codes
@@ -84,10 +91,28 @@ A Dart library (not a Flutter app) that wraps the IG artifacts for use in Dart/F
 - `lib/value_set_extension.dart` — Extension on `ValueSet` for working with coded values
 - Depends on `fhir_r4` package
 
+### Export Package (`export/`)
+
+Standalone Dart package (`bw_amr_export`) for generating WHONET and GLASS flat-file exports from FHIR resources:
+
+- `lib/src/concept_map_index.dart` — Bidirectional index from ConceptMap JSON; builds reverse lookups (LOINC→WHONET, SNOMED→WHONET, WHONET→ATC)
+- `lib/src/resource_resolver.dart` — Walks FHIR resource graph (DiagnosticReport→Organism→Susceptibility) to produce flat `IsolateRow` objects
+- `lib/src/isolate_row.dart` — Data model for one isolate row with demographics, specimen, organism, and antibiotic results
+- `lib/src/whonet_exporter.dart` — Pipe-delimited WHONET format output
+- `lib/src/glass_exporter.dart` — CSV output with ATC codes and HA/CO origin classification for WHO GLASS
+- Depends on `fhir_r4: ^0.5.1`; uses `.valueString` (not `.value`) for primitive access
+
+```bash
+cd export
+dart pub get
+dart test
+```
+
 ### Other Directories
 
 - `fsh-generated/` — Output from `sushi` (JSON resources, IG definition). Regenerated on build.
 - `output/` — Full rendered IG (HTML). Regenerated on build.
+- `concept-maps/` — ConceptMap JSON files (kept outside `input/` to avoid publisher validation overhead)
 - `python/` — WHONET mapping CSVs, ConceptMap generator, and SNOMED organism lookup scripts
 - `reference-materials/` — MII (German) microbiology profile JSON files used as design references
 - `input/pagecontent/` — Narrative IG pages (markdown)
