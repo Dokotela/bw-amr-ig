@@ -1,0 +1,18 @@
+{
+  "resourceType" : "Patient",
+  "id" : "ExamplePatientMotswana",
+  "meta" : {
+    "profile" : ["http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient",
+    "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient ExamplePatientMotswana</b></p><a name=\"ExamplePatientMotswana\"> </a><a name=\"hcExamplePatientMotswana\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-botswana-amr-patient.html\">Botswana AMR Patient</a>, <code>http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Patient</code></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Keabetswe Motswana  Female, DoB: 1981-05-14</p><hr/></div>"
+  },
+  "name" : [{
+    "family" : "Motswana",
+    "given" : ["Keabetswe"]
+  }],
+  "gender" : "female",
+  "birthDate" : "1981-05-14"
+}

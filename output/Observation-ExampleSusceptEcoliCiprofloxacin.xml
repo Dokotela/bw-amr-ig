@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ExampleSusceptEcoliCiprofloxacin"/>
+  <meta>
+    <profile value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"/>
+    <profile value="http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SusceptibilityObservation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ExampleSusceptEcoliCiprofloxacin</b></p><a name="ExampleSusceptEcoliCiprofloxacin"> </a><a name="hcExampleSusceptEcoliCiprofloxacin"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-botswana-amr-susceptibility-observation.html">Botswana AMR Susceptibility Observation</a>, <code>http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SusceptibilityObservation</code></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span>, <span title="Codes:{http://loinc.org 18725-2}">Microbiology studies (set)</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 185-9}">Ciprofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)</span></p><p><b>subject</b>: <a href="Patient-ExamplePatientMotswana.html">Keabetswe Motswana  Female, DoB: 1981-05-14</a></p><p><b>effective</b>: 2026-03-11 14:00:00+0200</p><p><b>value</b>: 12 mm<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm = 'mm')</span></p><p><b>interpretation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation R}">Resistant</span></p><p><b>method</b>: <span title="Codes:{http://snomed.info/sct 115254003}">Disc diffusion method</span></p><p><b>specimen</b>: <a href="Specimen-ExampleSpecimenUrine.html">Specimen: identifier = PMH-2026-U4421; type = Urine</a></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="18725-2"/>
+      <display value="Microbiology studies (set)"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="185-9"/>
+      <display value="Ciprofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplePatientMotswana"/>
+  </subject>
+  <effectiveDateTime value="2026-03-11T14:00:00+02:00"/>
+  <valueQuantity>
+    <value value="12"/>
+    <unit value="mm"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mm"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <version value="CLSI 2025"/>
+      <code value="R"/>
+      <display value="Resistant"/>
+    </coding>
+  </interpretation>
+  <method>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="115254003"/>
+      <display value="Disc diffusion method"/>
+    </coding>
+  </method>
+  <specimen>
+    <reference value="Specimen/ExampleSpecimenUrine"/>
+  </specimen>
+</Observation>

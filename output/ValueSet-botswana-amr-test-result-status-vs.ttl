@@ -11,14 +11,17 @@
   fhir:id [ fhir:v "botswana-amr-test-result-status-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet botswana-amr-test-result-status-vs</b></p><a name=\"botswana-amr-test-result-status-vs\"> </a><a name=\"hcbotswana-amr-test-result-status-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/10828004\">10828004</a></td><td>Positive</td></tr><tr><td><a href=\"http://snomed.info/id/260385009\">260385009</a></td><td>Negative</td></tr><tr><td><a href=\"http://snomed.info/id/82334004\">82334004</a></td><td>Indeterminate</td></tr><tr><td><a href=\"http://snomed.info/id/385660001\">385660001</a></td><td>Not done</td></tr><tr><td><a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>Unknown</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet botswana-amr-test-result-status-vs</b></p><a name=\"botswana-amr-test-result-status-vs\"> </a><a name=\"hcbotswana-amr-test-result-status-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/10828004\">10828004</a></td><td>Positive</td></tr><tr><td><a href=\"http://snomed.info/id/260385009\">260385009</a></td><td>Negative</td></tr><tr><td><a href=\"http://snomed.info/id/82334004\">82334004</a></td><td>Indeterminate</td></tr><tr><td><a href=\"http://snomed.info/id/385660001\">385660001</a></td><td>Not done</td></tr><tr><td><a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>Unknown</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs"^^xsd:anyURI ;
+     fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs>
+  ] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "BotswanaAMRTestResultStatusVS"] ; # 
   fhir:title [ fhir:v "Botswana AMR Test Result Status"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-09T10:14:37-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-13T15:05:11-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "University of Botswana Partnership"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "University of Botswana Partnership" ] ;
@@ -30,7 +33,10 @@
   fhir:description [ fhir:v "Status values for test results in Botswana AMR surveillance"] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "10828004" ] ;
          fhir:display [ fhir:v "Positive" ]

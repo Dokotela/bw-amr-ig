@@ -1,0 +1,78 @@
+# bw-amr-ig#0.1.0: Botswana AMR Implementation Guide
+
+## Pages
+
+* [Home](index.md)
+* [Artifacts Summary](artifacts.md)
+* [Background](background.md)
+* [Use Cases](use-cases.md)
+* [Implementation](implementation.md)
+
+## Resources
+
+### CodeSystems
+
+* [Botswana AMR Local Identification Method Codes](CodeSystem-botswana-amr-local-method-cs.md)
+* [Botswana AMR Local Organism Codes](CodeSystem-botswana-amr-local-organism-cs.md)
+
+### ValueSets
+
+* [Botswana AMR Antibiotic Susceptibility LOINC](ValueSet-botswana-amr-antibiotic-susceptibility-loinc.md)
+* [Botswana AMR AST Method](ValueSet-botswana-amr-ast-method-vs.md)
+* [Botswana AMR Gram Stain Results](ValueSet-botswana-amr-gram-stain-result-vs.md)
+* [Botswana AMR Organism Identification Methods](ValueSet-botswana-amr-identification-method-vs.md)
+* [Botswana AMR Interpretation](ValueSet-botswana-amr-interpretation.md)
+* [Botswana AMR Organism ValueSet](ValueSet-botswana-amr-organism-vs.md)
+* [Botswana AMR Special Tests](ValueSet-botswana-amr-special-test-vs.md)
+* [Botswana AMR Specimen Collection Sites](ValueSet-botswana-amr-specimen-site-vs.md)
+* [Botswana AMR Specimen Type VS](ValueSet-botswana-amr-specimen-type-vs.md)
+* [Botswana AMR Test Result Status](ValueSet-botswana-amr-test-result-status-vs.md)
+* [Botswana AMR Ward Type](ValueSet-botswana-amr-ward-type-vs.md)
+
+### Resource Profiles
+
+* [Botswana AMR DiagnosticReport](StructureDefinition-botswana-amr-diagnostic-report.md)
+* [Botswana AMR Encounter](StructureDefinition-botswana-amr-encounter.md)
+* [Botswana AMR Gram Stain Observation](StructureDefinition-botswana-amr-gram-stain-observation.md)
+* [Botswana AMR Organism Identification Observation](StructureDefinition-botswana-amr-organism-observation.md)
+* [Botswana AMR Patient](StructureDefinition-botswana-amr-patient.md)
+* [Botswana AMR Special Test Observation](StructureDefinition-botswana-amr-special-test-observation.md)
+* [Botswana AMR Specimen](StructureDefinition-botswana-amr-specimen.md)
+* [Botswana AMR Susceptibility Observation](StructureDefinition-botswana-amr-susceptibility-observation.md)
+
+### Extensions
+
+* [Specimen Collection Location](StructureDefinition-specimen-collection-location.md)
+
+### ImplementationGuides
+
+* [Botswana AMR Implementation Guide](index.md)
+
+### OperationDefinitions
+
+* [Export WHONET Flat File](OperationDefinition-ExportWHONET.md)
+
+### Examples
+
+* [ExampleDiagnosticReportAMR (DiagnosticReport)](DiagnosticReport-ExampleDiagnosticReportAMR.md)
+* [ExampleEncounterInpatient (Encounter)](Encounter-ExampleEncounterInpatient.md)
+* [ExampleGramStainNegative (Observation)](Observation-ExampleGramStainNegative.md)
+* [ExampleOrganismEcoli (Observation)](Observation-ExampleOrganismEcoli.md)
+* [ExampleOrganismKlebsiella (Observation)](Observation-ExampleOrganismKlebsiella.md)
+* [ExampleSpecialTestEcoliEsbl (Observation)](Observation-ExampleSpecialTestEcoliEsbl.md)
+* [ExampleSpecialTestKlebEsbl (Observation)](Observation-ExampleSpecialTestKlebEsbl.md)
+* [ExampleSusceptEcoliAmoxClav (Observation)](Observation-ExampleSusceptEcoliAmoxClav.md)
+* [ExampleSusceptEcoliAmpicillin (Observation)](Observation-ExampleSusceptEcoliAmpicillin.md)
+* [ExampleSusceptEcoliCeftriaxone (Observation)](Observation-ExampleSusceptEcoliCeftriaxone.md)
+* [ExampleSusceptEcoliCiprofloxacin (Observation)](Observation-ExampleSusceptEcoliCiprofloxacin.md)
+* [ExampleSusceptEcoliGentamicin (Observation)](Observation-ExampleSusceptEcoliGentamicin.md)
+* [ExampleSusceptEcoliNitrofurantoin (Observation)](Observation-ExampleSusceptEcoliNitrofurantoin.md)
+* [ExampleSusceptEcoliTmpSmx (Observation)](Observation-ExampleSusceptEcoliTmpSmx.md)
+* [ExampleSusceptKlebAmoxClav (Observation)](Observation-ExampleSusceptKlebAmoxClav.md)
+* [ExampleSusceptKlebAmpicillin (Observation)](Observation-ExampleSusceptKlebAmpicillin.md)
+* [ExampleSusceptKlebCeftriaxone (Observation)](Observation-ExampleSusceptKlebCeftriaxone.md)
+* [ExampleSusceptKlebCiprofloxacin (Observation)](Observation-ExampleSusceptKlebCiprofloxacin.md)
+* [ExampleSusceptKlebGentamicin (Observation)](Observation-ExampleSusceptKlebGentamicin.md)
+* [ExampleSusceptKlebMeropenem (Observation)](Observation-ExampleSusceptKlebMeropenem.md)
+* [ExamplePatientMotswana (Patient)](Patient-ExamplePatientMotswana.md)
+* [ExampleSpecimenUrine (Specimen)](Specimen-ExampleSpecimenUrine.md)

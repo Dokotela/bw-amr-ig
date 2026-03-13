@@ -9,16 +9,20 @@
 <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "bw-amr-ig"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide bw-amr-ig</b></p><a name=\"bw-amr-ig\"> </a><a name=\"hcbw-amr-ig\"> </a><h2>BWAMRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig</pre><div><p>FHIR Implementation Guide for the Botswana AMR Data Analytics Platform</p>\n</div></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide bw-amr-ig</b></p><a name=\"bw-amr-ig\"> </a><a name=\"hcbw-amr-ig\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>BWAMRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig</pre><div><p>FHIR Implementation Guide for the Botswana AMR Data Analytics Platform</p>\n</div></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig"^^xsd:anyURI ;
+     fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig>
+  ] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "BWAMRIG"] ; # 
   fhir:title [ fhir:v "Botswana AMR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-09T10:14:37-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-13T15:05:11-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "University of Botswana Partnership"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "University of Botswana Partnership" ] ;
@@ -34,30 +38,36 @@
   fhir:dependsOn ( [
      fhir:id [ fhir:v "hl7tx" ] ;
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment>
+       ] ;
        fhir:value [
-         a fhir:markdown ;
+         a fhir:Markdown ;
          fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology"
        ]
      ] ) ;
      fhir:uri [
        fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
-       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+       fhir:l <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.5.0" ]
+     fhir:version [ fhir:v "7.1.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment>
+       ] ;
        fhir:value [
-         a fhir:markdown ;
+         a fhir:Markdown ;
          fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
        ]
      ] ) ;
      fhir:uri [
        fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+       fhir:l <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
      fhir:version [ fhir:v "5.2.0" ]
@@ -65,1196 +75,2315 @@
   fhir:definition [
      fhir:extension ( [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "copyrightyear"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "2025"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "releaselabel"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "0.1.0"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "show-inherited-invariants"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "false"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "usage-stats-opt-out"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "false"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "autoload-resources"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "true"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "path-liquid"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "template/liquid"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "path-liquid"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "input/liquid"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "path-qa"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "temp/qa"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "path-temp"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "temp/pages"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "path-output"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "output"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "path-suppressed-warnings"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "input/ignoreWarnings.txt"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "path-history"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "http://bw.health.gov/fhir/history.html"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "template-html"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "template-page.html"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "template-md"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "template-page-md.html"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "apply-contact"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "true"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "apply-context"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "true"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "apply-copyright"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "true"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "apply-jurisdiction"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "true"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "apply-license"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "true"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "apply-publisher"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "true"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "apply-version"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "true"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "apply-wg"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "true"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "active-tables"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "true"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "fmm-definition"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "http://hl7.org/fhir/versions.html#maturity"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "propagate-status"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "true"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "excludelogbinaryformat"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "true"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "tabbed-snapshots"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "true"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.5.0"
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
        ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
-           fhir:v "copyrightyear"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "2025"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "releaselabel"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "0.1.0"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "show-inherited-invariants"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "false"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "usage-stats-opt-out"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "false"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "autoload-resources"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "true"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "path-liquid"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "template/liquid"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "path-liquid"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "input/liquid"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "path-qa"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "temp/qa"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "path-temp"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "temp/pages"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "path-output"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "output"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "path-suppressed-warnings"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "input/ignoreWarnings.txt"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "path-history"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "http://bw.health.gov/fhir/history.html"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "template-html"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "template-page.html"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "template-md"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "template-page-md.html"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "apply-contact"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "true"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "apply-context"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "true"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "apply-copyright"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "true"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "apply-jurisdiction"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "true"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "apply-license"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "true"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "apply-publisher"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "true"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "apply-version"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "true"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "apply-wg"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "true"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "active-tables"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "true"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "fmm-definition"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "http://hl7.org/fhir/versions.html#maturity"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "propagate-status"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "true"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "excludelogbinaryformat"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "true"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:String ;
            fhir:v "tabbed-snapshots"
          ]
        ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "true"
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency>
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "hl7.fhir.uv.tools.r4#0.9.0"
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "copyrightyear"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "2025"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "releaselabel"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "0.1.0"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "show-inherited-invariants"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "false"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "usage-stats-opt-out"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "false"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "autoload-resources"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "path-liquid"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "template/liquid"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "path-liquid"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "input/liquid"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "path-qa"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "temp/qa"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "path-temp"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "temp/pages"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "path-output"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "output"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "path-suppressed-warnings"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "input/ignoreWarnings.txt"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "path-history"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "http://bw.health.gov/fhir/history.html"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "template-html"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "template-page.html"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "template-md"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "template-page-md.html"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "apply-contact"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "apply-context"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "apply-copyright"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "apply-jurisdiction"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "apply-license"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "apply-publisher"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "apply-version"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "apply-wg"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "active-tables"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "fmm-definition"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "http://hl7.org/fhir/versions.html#maturity"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "propagate-status"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "excludelogbinaryformat"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "tabbed-snapshots"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
      ] ) ;
      fhir:resource ( [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://bw.health.gov/fhir/ValueSet/botswana-amr-antibiotic-susceptibility-loinc> ;
+         fhir:l <http://bw.health.gov/fhir/ValueSet/botswana-amr-antibiotic-susceptibility-loinc> ;
          fhir:reference [ fhir:v "ValueSet/botswana-amr-antibiotic-susceptibility-loinc" ]
        ] ;
        fhir:name [ fhir:v "Botswana AMR Antibiotic Susceptibility LOINC" ] ;
        fhir:description [ fhir:v "Collection of LOINC codes for antibiotic-susceptibility tests (MIC panel and individual drugs)" ] ;
        fhir:example [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/ValueSet/botswana-amr-ast-method-vs> ;
+         fhir:reference [ fhir:v "ValueSet/botswana-amr-ast-method-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Botswana AMR AST Method" ] ;
+       fhir:description [ fhir:v "Antimicrobial susceptibility testing methods used in Botswana AMR surveillance" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://bw.health.gov/fhir/StructureDefinition/botswana-amr-diagnostic-report> ;
+         fhir:l <http://bw.health.gov/fhir/StructureDefinition/botswana-amr-diagnostic-report> ;
          fhir:reference [ fhir:v "StructureDefinition/botswana-amr-diagnostic-report" ]
        ] ;
        fhir:name [ fhir:v "Botswana AMR DiagnosticReport" ] ;
-       fhir:description [ fhir:v "Bundles AMR susceptibility observations into one comprehensive report" ] ;
+       fhir:description [ fhir:v "Bundles AMR culture results into one comprehensive report. References top-level observations (gram stain and organism identifications). Susceptibility and special test results are accessed via OrganismObservation.hasMember." ] ;
        fhir:example [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://bw.health.gov/fhir/StructureDefinition/botswana-amr-gram-stain-observation> ;
+         fhir:l <http://bw.health.gov/fhir/StructureDefinition/botswana-amr-encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/botswana-amr-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "Botswana AMR Encounter" ] ;
+       fhir:description [ fhir:v "Captures the clinical encounter context for AMR surveillance: ward type (inpatient/outpatient/ICU), admission date, department, and facility. Required for WHONET export and GLASS hospital-acquired vs community-acquired classification." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/StructureDefinition/botswana-amr-gram-stain-observation> ;
          fhir:reference [ fhir:v "StructureDefinition/botswana-amr-gram-stain-observation" ]
        ] ;
        fhir:name [ fhir:v "Botswana AMR Gram Stain Observation" ] ;
        fhir:description [ fhir:v "Records gram stain results for specimens in Botswana AMR surveillance" ] ;
        fhir:example [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://bw.health.gov/fhir/ValueSet/botswana-amr-gram-stain-result-vs> ;
+         fhir:l <http://bw.health.gov/fhir/ValueSet/botswana-amr-gram-stain-result-vs> ;
          fhir:reference [ fhir:v "ValueSet/botswana-amr-gram-stain-result-vs" ]
        ] ;
        fhir:name [ fhir:v "Botswana AMR Gram Stain Results" ] ;
        fhir:description [ fhir:v "Gram stain results used in Botswana AMR surveillance" ] ;
        fhir:example [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://bw.health.gov/fhir/ValueSet/botswana-amr-interpretation> ;
+         fhir:l <http://bw.health.gov/fhir/ValueSet/botswana-amr-interpretation> ;
          fhir:reference [ fhir:v "ValueSet/botswana-amr-interpretation" ]
        ] ;
        fhir:name [ fhir:v "Botswana AMR Interpretation" ] ;
        fhir:description [ fhir:v "Only Susceptible, Intermediate, or Resistant" ] ;
        fhir:example [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://bw.health.gov/fhir/CodeSystem/botswana-amr-local-method-cs> ;
+         fhir:l <http://bw.health.gov/fhir/CodeSystem/botswana-amr-local-method-cs> ;
          fhir:reference [ fhir:v "CodeSystem/botswana-amr-local-method-cs" ]
        ] ;
        fhir:name [ fhir:v "Botswana AMR Local Identification Method Codes" ] ;
        fhir:description [ fhir:v "Local codes for identification methods used in Botswana AMR surveillance" ] ;
        fhir:example [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://bw.health.gov/fhir/CodeSystem/botswana-amr-local-organism-cs> ;
+         fhir:l <http://bw.health.gov/fhir/CodeSystem/botswana-amr-local-organism-cs> ;
          fhir:reference [ fhir:v "CodeSystem/botswana-amr-local-organism-cs" ]
        ] ;
        fhir:name [ fhir:v "Botswana AMR Local Organism Codes" ] ;
        fhir:description [ fhir:v "Local codes for organism combinations and complex designations used in Botswana AMR surveillance" ] ;
        fhir:example [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://bw.health.gov/fhir/ValueSet/botswana-amr-identification-method-vs> ;
+         fhir:l <http://bw.health.gov/fhir/ValueSet/botswana-amr-identification-method-vs> ;
          fhir:reference [ fhir:v "ValueSet/botswana-amr-identification-method-vs" ]
        ] ;
        fhir:name [ fhir:v "Botswana AMR Organism Identification Methods" ] ;
        fhir:description [ fhir:v "Methods used for organism identification in Botswana AMR surveillance" ] ;
        fhir:example [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://bw.health.gov/fhir/StructureDefinition/botswana-amr-organism-observation> ;
+         fhir:l <http://bw.health.gov/fhir/StructureDefinition/botswana-amr-organism-observation> ;
          fhir:reference [ fhir:v "StructureDefinition/botswana-amr-organism-observation" ]
        ] ;
        fhir:name [ fhir:v "Botswana AMR Organism Identification Observation" ] ;
-       fhir:description [ fhir:v "Records organism identification results from culture in Botswana AMR surveillance" ] ;
+       fhir:description [ fhir:v "Records organism identification results from culture in Botswana AMR surveillance. Acts as the parent observation for susceptibility and special test results via hasMember." ] ;
        fhir:example [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://bw.health.gov/fhir/ValueSet/botswana-amr-organism-vs> ;
+         fhir:l <http://bw.health.gov/fhir/ValueSet/botswana-amr-organism-vs> ;
          fhir:reference [ fhir:v "ValueSet/botswana-amr-organism-vs" ]
        ] ;
        fhir:name [ fhir:v "Botswana AMR Organism ValueSet" ] ;
-       fhir:description [ fhir:v "Organisms identified in Botswana AMR surveillance using SNOMED CT codes and local codes for combinations" ] ;
+       fhir:description [ fhir:v "Organisms identified in Botswana AMR surveillance. Includes all descendants of SNOMED CT 'Organism' (410607006) plus local codes for organism combinations that labs report together." ] ;
        fhir:example [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://bw.health.gov/fhir/StructureDefinition/botswana-amr-patient> ;
+         fhir:l <http://bw.health.gov/fhir/StructureDefinition/botswana-amr-patient> ;
          fhir:reference [ fhir:v "StructureDefinition/botswana-amr-patient" ]
        ] ;
        fhir:name [ fhir:v "Botswana AMR Patient" ] ;
        fhir:description [ fhir:v "Patient profile for Botswana AMR surveillance capturing essential demographics" ] ;
        fhir:example [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://bw.health.gov/fhir/StructureDefinition/botswana-amr-special-test-observation> ;
+         fhir:l <http://bw.health.gov/fhir/StructureDefinition/botswana-amr-special-test-observation> ;
          fhir:reference [ fhir:v "StructureDefinition/botswana-amr-special-test-observation" ]
        ] ;
        fhir:name [ fhir:v "Botswana AMR Special Test Observation" ] ;
-       fhir:description [ fhir:v "Records special AMR test results (ESBL, Carbapenemase, D-Zone, MRSA) in Botswana AMR surveillance" ] ;
+       fhir:description [ fhir:v "Records special AMR test results (ESBL, Carbapenemase, D-Zone, MRSA) in Botswana AMR surveillance. Should be referenced from the parent OrganismObservation via hasMember." ] ;
        fhir:example [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://bw.health.gov/fhir/ValueSet/botswana-amr-special-test-vs> ;
+         fhir:l <http://bw.health.gov/fhir/ValueSet/botswana-amr-special-test-vs> ;
          fhir:reference [ fhir:v "ValueSet/botswana-amr-special-test-vs" ]
        ] ;
        fhir:name [ fhir:v "Botswana AMR Special Tests" ] ;
        fhir:description [ fhir:v "Special antimicrobial resistance tests performed in Botswana AMR surveillance" ] ;
        fhir:example [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://bw.health.gov/fhir/StructureDefinition/botswana-amr-specimen> ;
+         fhir:l <http://bw.health.gov/fhir/StructureDefinition/botswana-amr-specimen> ;
          fhir:reference [ fhir:v "StructureDefinition/botswana-amr-specimen" ]
        ] ;
        fhir:name [ fhir:v "Botswana AMR Specimen" ] ;
        fhir:description [ fhir:v "Specimen profile for Botswana AMR surveillance with required collection details" ] ;
        fhir:example [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://bw.health.gov/fhir/ValueSet/botswana-amr-specimen-site-vs> ;
+         fhir:l <http://bw.health.gov/fhir/ValueSet/botswana-amr-specimen-site-vs> ;
          fhir:reference [ fhir:v "ValueSet/botswana-amr-specimen-site-vs" ]
        ] ;
        fhir:name [ fhir:v "Botswana AMR Specimen Collection Sites" ] ;
        fhir:description [ fhir:v "Anatomical sites where specimens are collected for Botswana AMR surveillance" ] ;
        fhir:example [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://bw.health.gov/fhir/ValueSet/botswana-amr-specimen-type-vs> ;
+         fhir:l <http://bw.health.gov/fhir/ValueSet/botswana-amr-specimen-type-vs> ;
          fhir:reference [ fhir:v "ValueSet/botswana-amr-specimen-type-vs" ]
        ] ;
        fhir:name [ fhir:v "Botswana AMR Specimen Type VS" ] ;
        fhir:description [ fhir:v "Specimen types used in Botswana AMR data collection, reusing v3-SpecimenType codes" ] ;
        fhir:example [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://bw.health.gov/fhir/StructureDefinition/botswana-amr-susceptibility-observation> ;
+         fhir:l <http://bw.health.gov/fhir/StructureDefinition/botswana-amr-susceptibility-observation> ;
          fhir:reference [ fhir:v "StructureDefinition/botswana-amr-susceptibility-observation" ]
        ] ;
        fhir:name [ fhir:v "Botswana AMR Susceptibility Observation" ] ;
-       fhir:description [ fhir:v "Records S/I/R (and optional MIC) for a single antibiotic test on a specimen" ] ;
+       fhir:description [ fhir:v "Records S/I/R (and optional MIC) for a single antibiotic test on a specimen. Should be referenced from the parent OrganismObservation via hasMember." ] ;
        fhir:example [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://bw.health.gov/fhir/ValueSet/botswana-amr-test-result-status-vs> ;
+         fhir:l <http://bw.health.gov/fhir/ValueSet/botswana-amr-test-result-status-vs> ;
          fhir:reference [ fhir:v "ValueSet/botswana-amr-test-result-status-vs" ]
        ] ;
        fhir:name [ fhir:v "Botswana AMR Test Result Status" ] ;
        fhir:description [ fhir:v "Status values for test results in Botswana AMR surveillance" ] ;
        fhir:example [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/ValueSet/botswana-amr-ward-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/botswana-amr-ward-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Botswana AMR Ward Type" ] ;
+       fhir:description [ fhir:v "Ward/location types for AMR surveillance, aligned with WHONET location type and GLASS origin classification" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Observation/ExampleSpecialTestEcoliEsbl> ;
+         fhir:reference [ fhir:v "Observation/ExampleSpecialTestEcoliEsbl" ]
+       ] ;
+       fhir:name [ fhir:v "E. coli Special Test - ESBL (Negative)" ] ;
+       fhir:description [ fhir:v "ESBL testing for E. coli isolate - Negative" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Observation/ExampleSusceptEcoliAmoxClav> ;
+         fhir:reference [ fhir:v "Observation/ExampleSusceptEcoliAmoxClav" ]
+       ] ;
+       fhir:name [ fhir:v "E. coli Susceptibility - Amoxicillin/Clavulanate (S)" ] ;
+       fhir:description [ fhir:v "E. coli amoxicillin/clavulanate susceptibility - Susceptible by disk diffusion" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Observation/ExampleSusceptEcoliAmpicillin> ;
+         fhir:reference [ fhir:v "Observation/ExampleSusceptEcoliAmpicillin" ]
+       ] ;
+       fhir:name [ fhir:v "E. coli Susceptibility - Ampicillin (R)" ] ;
+       fhir:description [ fhir:v "E. coli ampicillin susceptibility - Resistant by disk diffusion" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Observation/ExampleSusceptEcoliCeftriaxone> ;
+         fhir:reference [ fhir:v "Observation/ExampleSusceptEcoliCeftriaxone" ]
+       ] ;
+       fhir:name [ fhir:v "E. coli Susceptibility - Ceftriaxone (S)" ] ;
+       fhir:description [ fhir:v "E. coli ceftriaxone susceptibility - Susceptible by disk diffusion" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Observation/ExampleSusceptEcoliCiprofloxacin> ;
+         fhir:reference [ fhir:v "Observation/ExampleSusceptEcoliCiprofloxacin" ]
+       ] ;
+       fhir:name [ fhir:v "E. coli Susceptibility - Ciprofloxacin (R)" ] ;
+       fhir:description [ fhir:v "E. coli ciprofloxacin susceptibility - Resistant by disk diffusion" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Observation/ExampleSusceptEcoliGentamicin> ;
+         fhir:reference [ fhir:v "Observation/ExampleSusceptEcoliGentamicin" ]
+       ] ;
+       fhir:name [ fhir:v "E. coli Susceptibility - Gentamicin (S)" ] ;
+       fhir:description [ fhir:v "E. coli gentamicin susceptibility - Susceptible by disk diffusion" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Observation/ExampleSusceptEcoliNitrofurantoin> ;
+         fhir:reference [ fhir:v "Observation/ExampleSusceptEcoliNitrofurantoin" ]
+       ] ;
+       fhir:name [ fhir:v "E. coli Susceptibility - Nitrofurantoin (S)" ] ;
+       fhir:description [ fhir:v "E. coli nitrofurantoin susceptibility - Susceptible by disk diffusion" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Observation/ExampleSusceptEcoliTmpSmx> ;
+         fhir:reference [ fhir:v "Observation/ExampleSusceptEcoliTmpSmx" ]
+       ] ;
+       fhir:name [ fhir:v "E. coli Susceptibility - Trimethoprim/Sulfamethoxazole (R)" ] ;
+       fhir:description [ fhir:v "E. coli TMP/SMX susceptibility - Resistant by disk diffusion" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "DiagnosticReport"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/DiagnosticReport/ExampleDiagnosticReportAMR> ;
+         fhir:reference [ fhir:v "DiagnosticReport/ExampleDiagnosticReportAMR" ]
+       ] ;
+       fhir:name [ fhir:v "Example AMR Diagnostic Report - Urine Culture" ] ;
+       fhir:description [ fhir:v "Complete AMR diagnostic report for urine culture with E. coli and K. pneumoniae" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Encounter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Encounter/ExampleEncounterInpatient> ;
+         fhir:reference [ fhir:v "Encounter/ExampleEncounterInpatient" ]
+       ] ;
+       fhir:name [ fhir:v "Example Encounter - Inpatient at Princess Marina Hospital" ] ;
+       fhir:description [ fhir:v "Inpatient encounter, admitted 2 days before specimen collection" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-encounter"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-encounter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Observation/ExampleGramStainNegative> ;
+         fhir:reference [ fhir:v "Observation/ExampleGramStainNegative" ]
+       ] ;
+       fhir:name [ fhir:v "Example Gram Stain - Gram-negative" ] ;
+       fhir:description [ fhir:v "Gram stain showing Gram-negative organisms in urine specimen" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Observation/ExampleOrganismEcoli> ;
+         fhir:reference [ fhir:v "Observation/ExampleOrganismEcoli" ]
+       ] ;
+       fhir:name [ fhir:v "Example Organism - Escherichia coli (Isolate 1)" ] ;
+       fhir:description [ fhir:v "E. coli identified from urine culture, isolate 1" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Observation/ExampleOrganismKlebsiella> ;
+         fhir:reference [ fhir:v "Observation/ExampleOrganismKlebsiella" ]
+       ] ;
+       fhir:name [ fhir:v "Example Organism - Klebsiella pneumoniae (Isolate 2)" ] ;
+       fhir:description [ fhir:v "Klebsiella pneumoniae identified from urine culture, isolate 2" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Patient/ExamplePatientMotswana> ;
+         fhir:reference [ fhir:v "Patient/ExamplePatientMotswana" ]
+       ] ;
+       fhir:name [ fhir:v "Example Patient - Keabetswe Motswana" ] ;
+       fhir:description [ fhir:v "A 45-year-old female patient admitted to Princess Marina Hospital" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Specimen"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Specimen/ExampleSpecimenUrine> ;
+         fhir:reference [ fhir:v "Specimen/ExampleSpecimenUrine" ]
+       ] ;
+       fhir:name [ fhir:v "Example Specimen - Mid-stream Urine" ] ;
+       fhir:description [ fhir:v "Mid-stream clean catch urine specimen collected from inpatient" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "OperationDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/OperationDefinition/ExportWHONET> ;
+         fhir:reference [ fhir:v "OperationDefinition/ExportWHONET" ]
+       ] ;
+       fhir:name [ fhir:v "Export WHONET Flat File" ] ;
+       fhir:description [ fhir:v "Exports AMR DiagnosticReport data as a WHONET-compatible flat file or GLASS submission file. The operation flattens the FHIR resource graph (DiagnosticReport -> OrganismObservation -> SusceptibilityObservation) into isolate-centric rows suitable for WHONET import or WHO GLASS batch upload." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Observation/ExampleSpecialTestKlebEsbl> ;
+         fhir:reference [ fhir:v "Observation/ExampleSpecialTestKlebEsbl" ]
+       ] ;
+       fhir:name [ fhir:v "Klebsiella Special Test - ESBL (Negative)" ] ;
+       fhir:description [ fhir:v "ESBL testing for Klebsiella pneumoniae isolate - Negative" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Observation/ExampleSusceptKlebAmoxClav> ;
+         fhir:reference [ fhir:v "Observation/ExampleSusceptKlebAmoxClav" ]
+       ] ;
+       fhir:name [ fhir:v "Klebsiella Susceptibility - Amoxicillin/Clavulanate (I)" ] ;
+       fhir:description [ fhir:v "Klebsiella pneumoniae amoxicillin/clavulanate susceptibility - Intermediate by disk diffusion" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Observation/ExampleSusceptKlebAmpicillin> ;
+         fhir:reference [ fhir:v "Observation/ExampleSusceptKlebAmpicillin" ]
+       ] ;
+       fhir:name [ fhir:v "Klebsiella Susceptibility - Ampicillin (R)" ] ;
+       fhir:description [ fhir:v "Klebsiella pneumoniae ampicillin susceptibility - Resistant by disk diffusion" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Observation/ExampleSusceptKlebCeftriaxone> ;
+         fhir:reference [ fhir:v "Observation/ExampleSusceptKlebCeftriaxone" ]
+       ] ;
+       fhir:name [ fhir:v "Klebsiella Susceptibility - Ceftriaxone (S)" ] ;
+       fhir:description [ fhir:v "Klebsiella pneumoniae ceftriaxone susceptibility - Susceptible by disk diffusion" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Observation/ExampleSusceptKlebCiprofloxacin> ;
+         fhir:reference [ fhir:v "Observation/ExampleSusceptKlebCiprofloxacin" ]
+       ] ;
+       fhir:name [ fhir:v "Klebsiella Susceptibility - Ciprofloxacin (S)" ] ;
+       fhir:description [ fhir:v "Klebsiella pneumoniae ciprofloxacin susceptibility - Susceptible by disk diffusion" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Observation/ExampleSusceptKlebGentamicin> ;
+         fhir:reference [ fhir:v "Observation/ExampleSusceptKlebGentamicin" ]
+       ] ;
+       fhir:name [ fhir:v "Klebsiella Susceptibility - Gentamicin (S)" ] ;
+       fhir:description [ fhir:v "Klebsiella pneumoniae gentamicin susceptibility - Susceptible by disk diffusion" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://bw.health.gov/fhir/Observation/ExampleSusceptKlebMeropenem> ;
+         fhir:reference [ fhir:v "Observation/ExampleSusceptKlebMeropenem" ]
+       ] ;
+       fhir:name [ fhir:v "Klebsiella Susceptibility - Meropenem (S)" ] ;
+       fhir:description [ fhir:v "Klebsiella pneumoniae meropenem susceptibility - Susceptible by disk diffusion" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://bw.health.gov/fhir/StructureDefinition/specimen-collection-location> ;
+         fhir:l <http://bw.health.gov/fhir/StructureDefinition/specimen-collection-location> ;
          fhir:reference [ fhir:v "StructureDefinition/specimen-collection-location" ]
        ] ;
        fhir:name [ fhir:v "Specimen Collection Location" ] ;
        fhir:description [ fhir:v "Ward or facility location where specimen was collected" ] ;
        fhir:example [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v false
        ]
      ] ) ;
      fhir:page [
        fhir:name [
-         a fhir:url ;
-         fhir:v "toc.html"^^xsd:anyURI
+         a fhir:Url ;
+         fhir:v "toc.html"^^xsd:anyURI ;
+         fhir:l fhir:toc.html
        ] ;
        fhir:title [ fhir:v "Table of Contents" ] ;
        fhir:generation [ fhir:v "html" ] ;
        fhir:page ( [
          fhir:name [
-           a fhir:url ;
-           fhir:v "index.html"^^xsd:anyURI
+           a fhir:Url ;
+           fhir:v "index.html"^^xsd:anyURI ;
+           fhir:l fhir:index.html
          ] ;
          fhir:title [ fhir:v "Home" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:name [
-           a fhir:url ;
-           fhir:v "background.html"^^xsd:anyURI
+           a fhir:Url ;
+           fhir:v "background.html"^^xsd:anyURI ;
+           fhir:l fhir:background.html
          ] ;
          fhir:title [ fhir:v "Background" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:name [
-           a fhir:url ;
-           fhir:v "implementation.html"^^xsd:anyURI
+           a fhir:Url ;
+           fhir:v "implementation.html"^^xsd:anyURI ;
+           fhir:l fhir:implementation.html
          ] ;
          fhir:title [ fhir:v "Implementation" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:name [
-           a fhir:url ;
-           fhir:v "use-cases.html"^^xsd:anyURI
+           a fhir:Url ;
+           fhir:v "use-cases.html"^^xsd:anyURI ;
+           fhir:l fhir:use-cases.html
          ] ;
          fhir:title [ fhir:v "Use Cases" ] ;
          fhir:generation [ fhir:v "markdown" ]

@@ -19,119 +19,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
   	<link href="assets/css/cqf.css" rel="stylesheet" />
-    <style>
-html { font-size: 18px !important; }
-body { font-size: 18px !important; }
-* { font-size: inherit !important; }
-p, li, div, span, td, th { font-size: 18px !important; line-height: 1.6 !important; }
-
-/* Make headings smaller */
-h1 { font-size: 1.3em !important; }
-h2 { font-size: 1.2em !important; }
-h3 { font-size: 1.1em !important; }
-h4 { font-size: 1.05em !important; }
-h5 { font-size: 1.0em !important; }
-h6 { font-size: 0.95em !important; }
-
-/* Target specific elements that are too big */
-.copy-text { font-size: 16px !important; }
-table.colsd td { font-size: 16px !important; }
-table.colsd i { font-size: 16px !important; }
-
-code, pre { font-size: 16px !important; }
-
-/* Add more space between the title area and navigation menu */
-.navbar, .nav-tabs, .page-header + .nav, .breadcrumb {
-  margin-top: 20px !important;
-}
-
-/* Hide HL7 logo */
-#hl7-nav, #hl7-logo { display: none !important; }
-
-/* Style the existing title area with background and logos */
-#ig-status {
-  background-image: url('assets/images/flag_of_botswana.png');
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  padding: 20px;
-  position: relative;
-  min-height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Add overlay for readability */
-#ig-status::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.1);
-  border-radius: 10px;
-}
-
-/* Style the container paragraph */
-#ig-status p {
-  color: white !important;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
-  z-index: 2;
-  position: relative;
-  flex-grow: 1;
-  text-align: center;
-  margin: 0 20px !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Space out the title and version specifically */
-#ig-status p span:first-child {
-  margin-bottom: 15px !important;
-  display: block;
-}
-
-#ig-status p br + span {
-  margin-top: 15px !important;
-  display: block;
-}
-
-/* Add logos as pseudo-elements */
-#ig-status::after {
-  content: '';
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 80px;
-  height: 80px;
-  background-image: url('assets/images/bup-logo.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: rgba(255,255,255,0.95);
-  border-radius: 8px;
-  z-index: 2;
-}
-
-/* Add right logo */
-#ig-status {
-  background-image: 
-    url('assets/images/chop-logo.png'),
-    url('assets/images/flag_of_botswana.png');
-  background-position: 
-    right 20px center,
-    center center;
-  background-size: 
-    80px auto,
-    100% 100%;
-  background-repeat: no-repeat;
-}
-</style>
+    <!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -142,10 +30,10 @@ code, pre { font-size: 16px !important; }
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -160,11 +48,6 @@ code, pre { font-size: 16px !important; }
 
         <!-- Placeholder for child template header declarations -->
 
-        <div id="hl7-nav">
-          <a id="hl7-logo" data-no-external="true" href="http://hl7.org">
-            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
-          </a>
-        </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Botswana AMR Implementation Guide</span>
@@ -276,6 +159,143 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Analytics</strong>: Machine learning models for trend analysis</li>
 </ul>
 
+<h2 id="fhir-resource-hierarchy">FHIR Resource Hierarchy</h2>
+
+<p>AMR culture results are modeled as a tree rooted at DiagnosticReport:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DiagnosticReport (BotswanaAMRDiagnosticReport)
+├── encounter → Encounter (BotswanaAMREncounter)
+│     ├── class: ward type (inpatient/outpatient/ICU/emergency)
+│     ├── period.start: admission date
+│     └── serviceProvider → Organization (facility)
+├── specimen → Specimen (BotswanaAMRSpecimen)
+├── result[gramStain] → GramStainObservation
+└── result[organism] → OrganismObservation (1..*)
+      ├── valueCodeableConcept: identified organism
+      ├── identifier: isolate number
+      └── hasMember → SusceptibilityObservation (0..*)
+      │     ├── code: antibiotic (LOINC panel code)
+      │     ├── interpretation: S / I / R
+      │     ├── valueQuantity: MIC or zone diameter
+      │     └── method: AST method (disk diffusion, MIC, etc.)
+      └── hasMember → SpecialTestObservation (0..*)
+</code></pre></div></div>
+
+<p>Each OrganismObservation represents one isolate. Susceptibility results are linked as <code class="language-plaintext highlighter-rouge">hasMember</code> references, keeping antibiotic results grouped per organism.</p>
+
+<h2 id="whonet-export-workflow">WHONET Export Workflow</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">$export-whonet</code> operation (<code class="language-plaintext highlighter-rouge">[base]/DiagnosticReport/$export-whonet</code>) flattens the FHIR resource graph into isolate-centric rows for WHONET or GLASS import.</p>
+
+<p><strong>How it works:</strong></p>
+
+<ol>
+  <li>Query DiagnosticReports matching the date range and facility filters.</li>
+  <li>For each DiagnosticReport, resolve the Encounter (ward type, admission date), Patient (demographics), and Specimen (type, collection date, body site).</li>
+  <li>For each OrganismObservation in <code class="language-plaintext highlighter-rouge">result[organism]</code>, create one row.</li>
+  <li>Pivot each SusceptibilityObservation under that organism into columns (one column per antibiotic for S/I/R, one for MIC).</li>
+  <li>Output as pipe-delimited text (<code class="language-plaintext highlighter-rouge">format=whonet</code>) or GLASS batch CSV (<code class="language-plaintext highlighter-rouge">format=glass</code>).</li>
+</ol>
+
+<p><strong>Parameters:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">start</code></td>
+      <td>date</td>
+      <td>Specimen collection date range start</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">end</code></td>
+      <td>date</td>
+      <td>Specimen collection date range end</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">facility</code></td>
+      <td>string</td>
+      <td>Filter by facility name</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">format</code></td>
+      <td>code</td>
+      <td><code class="language-plaintext highlighter-rouge">whonet</code> (pipe-delimited) or <code class="language-plaintext highlighter-rouge">glass</code> (GLASS CSV)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The output is a Binary resource with <code class="language-plaintext highlighter-rouge">contentType: text/csv</code>.</p>
+
+<h2 id="glass-reporting-alignment">GLASS Reporting Alignment</h2>
+
+<p>The Encounter profile captures data required for WHO GLASS classification:</p>
+
+<ul>
+  <li><strong>Ward type</strong> (<code class="language-plaintext highlighter-rouge">Encounter.class</code>): Determines the patient origin field in GLASS (inpatient, outpatient, ICU, emergency).</li>
+  <li><strong>Admission date</strong> (<code class="language-plaintext highlighter-rouge">Encounter.period.start</code>): Used with specimen collection date to classify infections. The GLASS algorithm considers a specimen collected &gt;= 2 calendar days after admission as hospital-acquired.</li>
+  <li><strong>Facility</strong> (<code class="language-plaintext highlighter-rouge">Encounter.serviceProvider</code>): Maps to the GLASS laboratory/institution identifier.</li>
+</ul>
+
+<h2 id="terminology-strategy">Terminology Strategy</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Domain</th>
+      <th>Primary CodeSystem</th>
+      <th>Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Observation codes</td>
+      <td>LOINC</td>
+      <td>DiagnosticReport.code, Observation.code, susceptibility panel codes</td>
+    </tr>
+    <tr>
+      <td>Organisms</td>
+      <td>SNOMED CT</td>
+      <td>OrganismObservation.valueCodeableConcept</td>
+    </tr>
+    <tr>
+      <td>Antibiotic substances</td>
+      <td>SNOMED CT</td>
+      <td>Substance-level coding for susceptibility drugs</td>
+    </tr>
+    <tr>
+      <td>GLASS antibiotics</td>
+      <td>ATC (WHO)</td>
+      <td>Required for GLASS batch submission format</td>
+    </tr>
+    <tr>
+      <td>S/I/R interpretation</td>
+      <td>HL7 ObservationInterpretation</td>
+      <td>Susceptibility interpretation codes</td>
+    </tr>
+    <tr>
+      <td>Botswana-specific codes</td>
+      <td>Local CodeSystems</td>
+      <td><code class="language-plaintext highlighter-rouge">BotswanaAMRLocalOrganismCS</code>, <code class="language-plaintext highlighter-rouge">BotswanaAMRLocalMethodCS</code> for codes not yet in SNOMED/LOINC</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>ConceptMaps are planned for the following translations:</p>
+
+<ul>
+  <li><strong>Organism local code to SNOMED</strong> — maps Botswana lab organism codes to SNOMED CT</li>
+  <li><strong>Antibiotic to LOINC</strong> — maps antibiotic names to LOINC susceptibility panel codes</li>
+  <li><strong>Antibiotic to ATC</strong> — maps antibiotic names to ATC codes for GLASS submission</li>
+  <li><strong>Antibiotic to SNOMED substance</strong> — maps antibiotic names to SNOMED CT substance codes</li>
+</ul>
+
 <h2 id="fhir-integration">FHIR Integration</h2>
 
 <p>This implementation guide provides the FHIR foundation for:</p>
@@ -316,7 +336,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/Dokotela/bw-amr-ig">University of Botswana Partnership</a>.  Package bw-amr-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Wed, Jul 9, 2025 10:14-0400">2025-07-09</span>
+          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/Dokotela/bw-amr-ig">University of Botswana Partnership</a>.  Package bw-amr-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Fri, Mar 13, 2026 15:05-0400">2026-03-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

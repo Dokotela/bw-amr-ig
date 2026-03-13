@@ -19,119 +19,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
   	<link href="assets/css/cqf.css" rel="stylesheet" />
-    <style>
-html { font-size: 18px !important; }
-body { font-size: 18px !important; }
-* { font-size: inherit !important; }
-p, li, div, span, td, th { font-size: 18px !important; line-height: 1.6 !important; }
-
-/* Make headings smaller */
-h1 { font-size: 1.3em !important; }
-h2 { font-size: 1.2em !important; }
-h3 { font-size: 1.1em !important; }
-h4 { font-size: 1.05em !important; }
-h5 { font-size: 1.0em !important; }
-h6 { font-size: 0.95em !important; }
-
-/* Target specific elements that are too big */
-.copy-text { font-size: 16px !important; }
-table.colsd td { font-size: 16px !important; }
-table.colsd i { font-size: 16px !important; }
-
-code, pre { font-size: 16px !important; }
-
-/* Add more space between the title area and navigation menu */
-.navbar, .nav-tabs, .page-header + .nav, .breadcrumb {
-  margin-top: 20px !important;
-}
-
-/* Hide HL7 logo */
-#hl7-nav, #hl7-logo { display: none !important; }
-
-/* Style the existing title area with background and logos */
-#ig-status {
-  background-image: url('assets/images/flag_of_botswana.png');
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  padding: 20px;
-  position: relative;
-  min-height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Add overlay for readability */
-#ig-status::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.1);
-  border-radius: 10px;
-}
-
-/* Style the container paragraph */
-#ig-status p {
-  color: white !important;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
-  z-index: 2;
-  position: relative;
-  flex-grow: 1;
-  text-align: center;
-  margin: 0 20px !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Space out the title and version specifically */
-#ig-status p span:first-child {
-  margin-bottom: 15px !important;
-  display: block;
-}
-
-#ig-status p br + span {
-  margin-top: 15px !important;
-  display: block;
-}
-
-/* Add logos as pseudo-elements */
-#ig-status::after {
-  content: '';
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 80px;
-  height: 80px;
-  background-image: url('assets/images/bup-logo.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: rgba(255,255,255,0.95);
-  border-radius: 8px;
-  z-index: 2;
-}
-
-/* Add right logo */
-#ig-status {
-  background-image: 
-    url('assets/images/chop-logo.png'),
-    url('assets/images/flag_of_botswana.png');
-  background-position: 
-    right 20px center,
-    center center;
-  background-size: 
-    80px auto,
-    100% 100%;
-  background-repeat: no-repeat;
-}
-</style>
+    <!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -142,10 +30,10 @@ code, pre { font-size: 16px !important; }
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -160,11 +48,6 @@ code, pre { font-size: 16px !important; }
 
         <!-- Placeholder for child template header declarations -->
 
-        <div id="hl7-nav">
-          <a id="hl7-logo" data-no-external="true" href="http://hl7.org">
-            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
-          </a>
-        </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Botswana AMR Implementation Guide</span>
@@ -255,16 +138,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Resource Profiles</a>
+         <a href="#1">Behavior: Operation Definitions</a>
       </li>
       <li>
-         <a href="#2">Structures: Extension Definitions</a>
+         <a href="#2">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#3">Terminology: Value Sets</a>
+         <a href="#3">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#4">Terminology: Code Systems</a>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -273,6 +162,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:html="http://www.w3.org/1999/xhtml">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Behavior: Operation Definitions </h3>
+    <p>These are custom operations that can be supported by and/or invoked by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="OperationDefinition-ExportWHONET.html"
+                  title="OperationDefinition/ExportWHONET">Export WHONET Flat File</a>
+            </td>
+            <td>
+<p>Exports AMR DiagnosticReport data as a WHONET-compatible flat file or GLASS submission file. The operation flattens the FHIR resource graph (DiagnosticReport -&gt; OrganismObservation -&gt; SusceptibilityObservation) into isolate-centric rows suitable for WHONET import or WHO GLASS batch upload.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
    <h3>Structures: Resource Profiles </h3>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -284,7 +190,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/botswana-amr-diagnostic-report">Botswana AMR DiagnosticReport</a>
             </td>
             <td>
-<p>Bundles AMR susceptibility observations into one comprehensive report</p>
+<p>Bundles AMR culture results into one comprehensive report. References top-level observations (gram stain and organism identifications). Susceptibility and special test results are accessed via OrganismObservation.hasMember.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-botswana-amr-encounter.html"
+                  title="StructureDefinition/botswana-amr-encounter">Botswana AMR Encounter</a>
+            </td>
+            <td>
+<p>Captures the clinical encounter context for AMR surveillance: ward type (inpatient/outpatient/ICU), admission date, department, and facility. Required for WHONET export and GLASS hospital-acquired vs community-acquired classification.</p>
 </td>
          </tr>
          <tr>
@@ -302,7 +217,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/botswana-amr-organism-observation">Botswana AMR Organism Identification Observation</a>
             </td>
             <td>
-<p>Records organism identification results from culture in Botswana AMR surveillance</p>
+<p>Records organism identification results from culture in Botswana AMR surveillance. Acts as the parent observation for susceptibility and special test results via hasMember.</p>
 </td>
          </tr>
          <tr>
@@ -320,7 +235,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/botswana-amr-special-test-observation">Botswana AMR Special Test Observation</a>
             </td>
             <td>
-<p>Records special AMR test results (ESBL, Carbapenemase, D-Zone, MRSA) in Botswana AMR surveillance</p>
+<p>Records special AMR test results (ESBL, Carbapenemase, D-Zone, MRSA) in Botswana AMR surveillance. Should be referenced from the parent OrganismObservation via hasMember.</p>
 </td>
          </tr>
          <tr>
@@ -338,12 +253,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/botswana-amr-susceptibility-observation">Botswana AMR Susceptibility Observation</a>
             </td>
             <td>
-<p>Records S/I/R (and optional MIC) for a single antibiotic test on a specimen</p>
+<p>Records S/I/R (and optional MIC) for a single antibiotic test on a specimen. Should be referenced from the parent OrganismObservation via hasMember.</p>
 </td>
          </tr>
       </tbody>
    </table>
-   <a name="2"> </a>
+   <a name="3"> </a>
    <h3>Structures: Extension Definitions </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -360,12 +275,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-botswana-amr-ast-method-vs.html"
+                  title="ValueSet/botswana-amr-ast-method-vs">Botswana AMR AST Method</a>
+            </td>
+            <td>
+<p>Antimicrobial susceptibility testing methods used in Botswana AMR surveillance</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-botswana-amr-antibiotic-susceptibility-loinc.html"
@@ -408,7 +332,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="ValueSet/botswana-amr-organism-vs">Botswana AMR Organism ValueSet</a>
             </td>
             <td>
-<p>Organisms identified in Botswana AMR surveillance using SNOMED CT codes and local codes for combinations</p>
+<p>Organisms identified in Botswana AMR surveillance. Includes all descendants of SNOMED CT 'Organism' (410607006) plus local codes for organism combinations that labs report together.</p>
 </td>
          </tr>
          <tr>
@@ -447,9 +371,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Status values for test results in Botswana AMR surveillance</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-botswana-amr-ward-type-vs.html"
+                  title="ValueSet/botswana-amr-ward-type-vs">Botswana AMR Ward Type</a>
+            </td>
+            <td>
+<p>Ward/location types for AMR surveillance, aligned with WHONET location type and GLASS origin classification</p>
+</td>
+         </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -475,6 +408,212 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
+   <a name="6"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleSpecialTestEcoliEsbl.html"
+                  title="Observation/ExampleSpecialTestEcoliEsbl">E. coli Special Test - ESBL (Negative)</a>
+            </td>
+            <td>
+<p>ESBL testing for E. coli isolate - Negative</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleSusceptEcoliAmoxClav.html"
+                  title="Observation/ExampleSusceptEcoliAmoxClav">E. coli Susceptibility - Amoxicillin/Clavulanate (S)</a>
+            </td>
+            <td>
+<p>E. coli amoxicillin/clavulanate susceptibility - Susceptible by disk diffusion</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleSusceptEcoliAmpicillin.html"
+                  title="Observation/ExampleSusceptEcoliAmpicillin">E. coli Susceptibility - Ampicillin (R)</a>
+            </td>
+            <td>
+<p>E. coli ampicillin susceptibility - Resistant by disk diffusion</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleSusceptEcoliCeftriaxone.html"
+                  title="Observation/ExampleSusceptEcoliCeftriaxone">E. coli Susceptibility - Ceftriaxone (S)</a>
+            </td>
+            <td>
+<p>E. coli ceftriaxone susceptibility - Susceptible by disk diffusion</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleSusceptEcoliCiprofloxacin.html"
+                  title="Observation/ExampleSusceptEcoliCiprofloxacin">E. coli Susceptibility - Ciprofloxacin (R)</a>
+            </td>
+            <td>
+<p>E. coli ciprofloxacin susceptibility - Resistant by disk diffusion</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleSusceptEcoliGentamicin.html"
+                  title="Observation/ExampleSusceptEcoliGentamicin">E. coli Susceptibility - Gentamicin (S)</a>
+            </td>
+            <td>
+<p>E. coli gentamicin susceptibility - Susceptible by disk diffusion</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleSusceptEcoliNitrofurantoin.html"
+                  title="Observation/ExampleSusceptEcoliNitrofurantoin">E. coli Susceptibility - Nitrofurantoin (S)</a>
+            </td>
+            <td>
+<p>E. coli nitrofurantoin susceptibility - Susceptible by disk diffusion</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleSusceptEcoliTmpSmx.html"
+                  title="Observation/ExampleSusceptEcoliTmpSmx">E. coli Susceptibility - Trimethoprim/Sulfamethoxazole (R)</a>
+            </td>
+            <td>
+<p>E. coli TMP/SMX susceptibility - Resistant by disk diffusion</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-ExampleDiagnosticReportAMR.html"
+                  title="DiagnosticReport/ExampleDiagnosticReportAMR">Example AMR Diagnostic Report - Urine Culture</a>
+            </td>
+            <td>
+<p>Complete AMR diagnostic report for urine culture with E. coli and K. pneumoniae</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-ExampleEncounterInpatient.html"
+                  title="Encounter/ExampleEncounterInpatient">Example Encounter - Inpatient at Princess Marina Hospital</a>
+            </td>
+            <td>
+<p>Inpatient encounter, admitted 2 days before specimen collection</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleGramStainNegative.html"
+                  title="Observation/ExampleGramStainNegative">Example Gram Stain - Gram-negative</a>
+            </td>
+            <td>
+<p>Gram stain showing Gram-negative organisms in urine specimen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleOrganismEcoli.html"
+                  title="Observation/ExampleOrganismEcoli">Example Organism - Escherichia coli (Isolate 1)</a>
+            </td>
+            <td>
+<p>E. coli identified from urine culture, isolate 1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleOrganismKlebsiella.html"
+                  title="Observation/ExampleOrganismKlebsiella">Example Organism - Klebsiella pneumoniae (Isolate 2)</a>
+            </td>
+            <td>
+<p>Klebsiella pneumoniae identified from urine culture, isolate 2</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-ExamplePatientMotswana.html"
+                  title="Patient/ExamplePatientMotswana">Example Patient - Keabetswe Motswana</a>
+            </td>
+            <td>
+<p>A 45-year-old female patient admitted to Princess Marina Hospital</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-ExampleSpecimenUrine.html"
+                  title="Specimen/ExampleSpecimenUrine">Example Specimen - Mid-stream Urine</a>
+            </td>
+            <td>
+<p>Mid-stream clean catch urine specimen collected from inpatient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleSpecialTestKlebEsbl.html"
+                  title="Observation/ExampleSpecialTestKlebEsbl">Klebsiella Special Test - ESBL (Negative)</a>
+            </td>
+            <td>
+<p>ESBL testing for Klebsiella pneumoniae isolate - Negative</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleSusceptKlebAmoxClav.html"
+                  title="Observation/ExampleSusceptKlebAmoxClav">Klebsiella Susceptibility - Amoxicillin/Clavulanate (I)</a>
+            </td>
+            <td>
+<p>Klebsiella pneumoniae amoxicillin/clavulanate susceptibility - Intermediate by disk diffusion</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleSusceptKlebAmpicillin.html"
+                  title="Observation/ExampleSusceptKlebAmpicillin">Klebsiella Susceptibility - Ampicillin (R)</a>
+            </td>
+            <td>
+<p>Klebsiella pneumoniae ampicillin susceptibility - Resistant by disk diffusion</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleSusceptKlebCeftriaxone.html"
+                  title="Observation/ExampleSusceptKlebCeftriaxone">Klebsiella Susceptibility - Ceftriaxone (S)</a>
+            </td>
+            <td>
+<p>Klebsiella pneumoniae ceftriaxone susceptibility - Susceptible by disk diffusion</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleSusceptKlebCiprofloxacin.html"
+                  title="Observation/ExampleSusceptKlebCiprofloxacin">Klebsiella Susceptibility - Ciprofloxacin (S)</a>
+            </td>
+            <td>
+<p>Klebsiella pneumoniae ciprofloxacin susceptibility - Susceptible by disk diffusion</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleSusceptKlebGentamicin.html"
+                  title="Observation/ExampleSusceptKlebGentamicin">Klebsiella Susceptibility - Gentamicin (S)</a>
+            </td>
+            <td>
+<p>Klebsiella pneumoniae gentamicin susceptibility - Susceptible by disk diffusion</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleSusceptKlebMeropenem.html"
+                  title="Observation/ExampleSusceptKlebMeropenem">Klebsiella Susceptibility - Meropenem (S)</a>
+            </td>
+            <td>
+<p>Klebsiella pneumoniae meropenem susceptibility - Susceptible by disk diffusion</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
 </div>
 
 </div>
@@ -493,7 +632,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/Dokotela/bw-amr-ig">University of Botswana Partnership</a>.  Package bw-amr-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Wed, Jul 9, 2025 10:14-0400">2025-07-09</span>
+          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/Dokotela/bw-amr-ig">University of Botswana Partnership</a>.  Package bw-amr-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Fri, Mar 13, 2026 15:05-0400">2026-03-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -10,7 +10,7 @@ void main() {
 
   setUpAll(() {
     // Load ConceptMaps
-    final cmDir = '${Directory.current.parent.path}/input/resources';
+    final cmDir = '${Directory.current.parent.path}/concept-maps';
     index = ConceptMapIndex.fromJson(
       antibioticToLoincJson:
           File('$cmDir/ConceptMap-whonet-antibiotic-to-loinc.json')

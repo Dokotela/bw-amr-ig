@@ -12,6 +12,7 @@
   <sch:pattern>
     <sch:title>f:Observation</sch:title>
     <sch:rule context="f:Observation">
+      <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:subject) &gt;= 1">subject: minimum cardinality of 'subject' is 1</sch:assert>
       <sch:assert test="count(f:specimen) &gt;= 1">specimen: minimum cardinality of 'specimen' is 1</sch:assert>
     </sch:rule>

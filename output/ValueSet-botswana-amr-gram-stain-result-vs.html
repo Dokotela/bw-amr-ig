@@ -19,119 +19,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
   	<link href="assets/css/cqf.css" rel="stylesheet" />
-    <style>
-html { font-size: 18px !important; }
-body { font-size: 18px !important; }
-* { font-size: inherit !important; }
-p, li, div, span, td, th { font-size: 18px !important; line-height: 1.6 !important; }
-
-/* Make headings smaller */
-h1 { font-size: 1.3em !important; }
-h2 { font-size: 1.2em !important; }
-h3 { font-size: 1.1em !important; }
-h4 { font-size: 1.05em !important; }
-h5 { font-size: 1.0em !important; }
-h6 { font-size: 0.95em !important; }
-
-/* Target specific elements that are too big */
-.copy-text { font-size: 16px !important; }
-table.colsd td { font-size: 16px !important; }
-table.colsd i { font-size: 16px !important; }
-
-code, pre { font-size: 16px !important; }
-
-/* Add more space between the title area and navigation menu */
-.navbar, .nav-tabs, .page-header + .nav, .breadcrumb {
-  margin-top: 20px !important;
-}
-
-/* Hide HL7 logo */
-#hl7-nav, #hl7-logo { display: none !important; }
-
-/* Style the existing title area with background and logos */
-#ig-status {
-  background-image: url('assets/images/flag_of_botswana.png');
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  padding: 20px;
-  position: relative;
-  min-height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Add overlay for readability */
-#ig-status::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.1);
-  border-radius: 10px;
-}
-
-/* Style the container paragraph */
-#ig-status p {
-  color: white !important;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
-  z-index: 2;
-  position: relative;
-  flex-grow: 1;
-  text-align: center;
-  margin: 0 20px !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Space out the title and version specifically */
-#ig-status p span:first-child {
-  margin-bottom: 15px !important;
-  display: block;
-}
-
-#ig-status p br + span {
-  margin-top: 15px !important;
-  display: block;
-}
-
-/* Add logos as pseudo-elements */
-#ig-status::after {
-  content: '';
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 80px;
-  height: 80px;
-  background-image: url('assets/images/bup-logo.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: rgba(255,255,255,0.95);
-  border-radius: 8px;
-  z-index: 2;
-}
-
-/* Add right logo */
-#ig-status {
-  background-image: 
-    url('assets/images/chop-logo.png'),
-    url('assets/images/flag_of_botswana.png');
-  background-position: 
-    right 20px center,
-    center center;
-  background-size: 
-    80px auto,
-    100% 100%;
-  background-repeat: no-repeat;
-}
-</style>
+    <!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -142,10 +30,10 @@ code, pre { font-size: 16px !important; }
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -153,18 +41,13 @@ code, pre { font-size: 16px !important; }
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5.10"}
-    h3,h4,h5,h6{--heading-prefix:"5.10"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.13"}
+    h3,h4,h5,h6{--heading-prefix:"5.13"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
         <!-- Placeholder for child template header declarations -->
 
-        <div id="hl7-nav">
-          <a id="hl7-logo" data-no-external="true" href="http://hl7.org">
-            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
-          </a>
-        </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Botswana AMR Implementation Guide</span>
@@ -304,7 +187,7 @@ code, pre { font-size: 16px !important; }
         
           Draft
           
-            as of 2025-07-09
+            as of 2026-03-13
           
         
       </td>
@@ -343,14 +226,14 @@ code, pre { font-size: 16px !important; }
 
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"></p><a name="botswana-amr-gram-stain-result-vs"> </a><a name="hcbotswana-amr-gram-stain-result-vs"> </a>
-<ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/8745002">8745002</a></td><td>Gram-positive</td></tr><tr><td><a href="http://snomed.info/id/87172008">87172008</a></td><td>Gram-negative</td></tr><tr><td><a href="http://snomed.info/id/411933009">411933009</a></td><td>Gram-variable</td></tr><tr><td><a href="http://snomed.info/id/58296003">58296003</a></td><td>Yeast</td></tr><tr><td><a href="http://snomed.info/id/74964007">74964007</a></td><td>Other</td></tr></table></li></ul></div>
+<div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="botswana-amr-gram-stain-result-vs"> </a><a name="hcbotswana-amr-gram-stain-result-vs"> </a>
+<ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/8745002">8745002</a></td><td>Gram-positive</td></tr><tr><td><a href="http://snomed.info/id/87172008">87172008</a></td><td>Gram-negative</td></tr><tr><td><a href="http://snomed.info/id/411933009">411933009</a></td><td>Gram-variable</td></tr><tr><td><a href="http://snomed.info/id/58296003">58296003</a></td><td>Yeast</td></tr><tr><td><a href="http://snomed.info/id/74964007">74964007</a></td><td>Other</td></tr></table></li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"/><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 4 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-8745002"> </a>  <a href="http://snomed.info/id/8745002">8745002</a></td><td>http://snomed.info/sct</td><td>Gram-positive bacterium</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-87172008"> </a>  <a href="http://snomed.info/id/87172008">87172008</a></td><td>http://snomed.info/sct</td><td>Gram-negative bacillus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-58296003"> </a>  <a href="http://snomed.info/id/58296003">58296003</a></td><td>http://snomed.info/sct</td><td>Saccharomyces cerevisiae</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-74964007"> </a>  <a href="http://snomed.info/id/74964007">74964007</a></td><td>http://snomed.info/sct</td><td>Other</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"/><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025<span class="copy-text-inline"><button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button></span></p><p>This value set contains 4 concepts</p><table class="codes" data-fhir="generated"><tr><td><b>System</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name="x-http://snomed.info/sct-8745002"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/8745002">8745002</a></td><td>Gram-positive bacterium</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;8745002&quot;, &quot;display&quot;: &quot;Gram-positive bacterium&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;8745002&quot;&gt;&lt;display value=&quot;Gram-positive bacterium&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-87172008"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/87172008">87172008</a></td><td>Gram-negative bacillus</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;87172008&quot;, &quot;display&quot;: &quot;Gram-negative bacillus&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;87172008&quot;&gt;&lt;display value=&quot;Gram-negative bacillus&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-58296003"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/58296003">58296003</a></td><td>Saccharomyces cerevisiae</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;58296003&quot;, &quot;display&quot;: &quot;Saccharomyces cerevisiae&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;58296003&quot;&gt;&lt;display value=&quot;Saccharomyces cerevisiae&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-74964007"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/74964007">74964007</a></td><td>Other</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;74964007&quot;, &quot;display&quot;: &quot;Other&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;74964007&quot;&gt;&lt;display value=&quot;Other&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr></table></div>
 
   <hr/>
   <p>
@@ -409,7 +292,7 @@ code, pre { font-size: 16px !important; }
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/Dokotela/bw-amr-ig">University of Botswana Partnership</a>.  Package bw-amr-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Wed, Jul 9, 2025 10:14-0400">2025-07-09</span>
+          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/Dokotela/bw-amr-ig">University of Botswana Partnership</a>.  Package bw-amr-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Fri, Mar 13, 2026 15:05-0400">2026-03-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

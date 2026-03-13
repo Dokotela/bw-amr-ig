@@ -1,0 +1,90 @@
+# Botswana AMR Interpretation - Botswana AMR Implementation Guide v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Botswana AMR Interpretation**
+
+## ValueSet: Botswana AMR Interpretation 
+
+| | |
+| :--- | :--- |
+| *Official URL*:http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation | *Version*:0.1.0 |
+| Draft as of 2026-03-13 | *Computable Name*:BotswanaAMRInterpretation |
+
+ 
+Only Susceptible, Intermediate, or Resistant 
+
+ **References** 
+
+* [Botswana AMR Susceptibility Observation](StructureDefinition-botswana-amr-susceptibility-observation.md)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ Explanation of the columns that may appear on this page: 
+
+| | |
+| :--- | :--- |
+| Level | A few code lists that FHIR defines are hierarchical - each code is assigned a level. In this scheme, some codes are under other codes, and imply that the code they are under also applies |
+| System | The source of the definition of the code (when the value set draws in codes defined elsewhere) |
+| Code | The code (used as the code in the resource instance) |
+| Display | The display (used in the*display*element of a[Coding](http://hl7.org/fhir/R4B/datatypes.html#Coding)). If there is no display, implementers should not simply display the code, but map the concept into their application |
+| Definition | An explanation of the meaning of the concept |
+| Comments | Additional notes about how to use the code |
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "botswana-amr-interpretation",
+  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation",
+  "version" : "0.1.0",
+  "name" : "BotswanaAMRInterpretation",
+  "title" : "Botswana AMR Interpretation",
+  "status" : "draft",
+  "date" : "2026-03-13T15:05:11-04:00",
+  "publisher" : "University of Botswana Partnership",
+  "contact" : [
+    {
+      "name" : "University of Botswana Partnership",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://github.com/Dokotela/bw-amr-ig"
+        }
+      ]
+    }
+  ],
+  "description" : "Only Susceptible, Intermediate, or Resistant",
+  "compose" : {
+    "include" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+        "concept" : [
+          {
+            "code" : "S",
+            "display" : "Susceptible"
+          },
+          {
+            "code" : "I",
+            "display" : "Intermediate"
+          },
+          {
+            "code" : "R",
+            "display" : "Resistant"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+```

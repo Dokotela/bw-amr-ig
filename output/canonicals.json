@@ -28,6 +28,13 @@
     "name" : "BotswanaAMRDiagnosticReport"
   },
   {
+    "id" : "botswana-amr-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-encounter",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMREncounter"
+  },
+  {
     "id" : "botswana-amr-gram-stain-observation",
     "type" : "StructureDefinition",
     "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation",
@@ -84,6 +91,13 @@
     "name" : "BotswanaAMRAntibioticSusceptibilityLOINC"
   },
   {
+    "id" : "botswana-amr-ast-method-vs",
+    "type" : "ValueSet",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ast-method-vs",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRASTMethodVS"
+  },
+  {
     "id" : "botswana-amr-gram-stain-result-vs",
     "type" : "ValueSet",
     "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-gram-stain-result-vs",
@@ -138,5 +152,19 @@
     "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs",
     "version" : "0.1.0",
     "name" : "BotswanaAMRTestResultStatusVS"
+  },
+  {
+    "id" : "botswana-amr-ward-type-vs",
+    "type" : "ValueSet",
+    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ward-type-vs",
+    "version" : "0.1.0",
+    "name" : "BotswanaAMRWardTypeVS"
+  },
+  {
+    "id" : "ExportWHONET",
+    "type" : "OperationDefinition",
+    "url" : "http://bw.health.gov/fhir/OperationDefinition/export-whonet",
+    "version" : "0.1.0",
+    "name" : "ExportWHONET"
   }
 ]

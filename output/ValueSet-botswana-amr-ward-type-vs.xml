@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="botswana-amr-ward-type-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet botswana-amr-ward-type-vs</b></p><a name="botswana-amr-ward-type-vs"> </a><a name="hcbotswana-amr-ward-type-vs"> </a><ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html"><code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code></a><span title="Version is not explicitly stated, which means it is fixed to 10.0.0, the version found through the package references"> version &#x1F4E6;10.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP">IMP</a></td><td>inpatient encounter</td><td>A patient encounter where a patient is admitted by a hospital or equivalent facility, assigned to a location where patients generally stay at least overnight and provided with room, board, and continuous nursing service.</td></tr><tr><td><a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB">AMB</a></td><td>ambulatory</td><td>A comprehensive term for health care provided in a healthcare facility (e.g. a practitioneraTMs office, clinic setting, or hospital) on a nonresident basis. The term ambulatory usually implies that the patient has come to the location and is not assigned to a bed. Sometimes referred to as an outpatient encounter.</td></tr><tr><td><a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-EMER">EMER</a></td><td>emergency</td><td>A patient encounter that takes place at a dedicated healthcare service delivery location where the patient receives immediate evaluation and treatment, provided until the patient can be discharged or responsibility for the patient's care is transferred elsewhere (for example, the patient could be admitted as an inpatient or transferred to another facility.)</td></tr><tr><td><a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-ACUTE">ACUTE</a></td><td>inpatient acute</td><td>An acute inpatient encounter.</td></tr><tr><td><a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-OBSENC">OBSENC</a></td><td>observation encounter</td><td>An encounter where the patient usually will start in different encounter, such as one in the emergency department (EMER) but then transition to this type of encounter because they require a significant period of treatment and monitoring to determine whether or not their condition warrants an inpatient admission or discharge. In the majority of cases the decision about admission or discharge will occur within a time period determined by local, regional or national regulation, often between 24 and 48 hours.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ward-type-vs"/>
+  <version value="0.1.0"/>
+  <name value="BotswanaAMRWardTypeVS"/>
+  <title value="Botswana AMR Ward Type"/>
+  <status value="draft"/>
+  <date value="2026-03-13T15:05:11-04:00"/>
+  <publisher value="University of Botswana Partnership"/>
+  <contact>
+    <name value="University of Botswana Partnership"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/Dokotela/bw-amr-ig"/>
+    </telecom>
+  </contact>
+  <description value="Ward/location types for AMR surveillance, aligned with WHONET location type and GLASS origin classification"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <concept>
+        <code value="IMP"/>
+        <display value="inpatient encounter"/>
+      </concept>
+      <concept>
+        <code value="AMB"/>
+        <display value="ambulatory"/>
+      </concept>
+      <concept>
+        <code value="EMER"/>
+        <display value="emergency"/>
+      </concept>
+      <concept>
+        <code value="ACUTE"/>
+        <display value="inpatient acute"/>
+      </concept>
+      <concept>
+        <code value="OBSENC"/>
+        <display value="observation encounter"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

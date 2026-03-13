@@ -11,14 +11,17 @@
   fhir:id [ fhir:v "botswana-amr-local-method-cs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem botswana-amr-local-method-cs</b></p><a name=\"botswana-amr-local-method-cs\"> </a><a name=\"hcbotswana-amr-local-method-cs\"> </a><p>This  code system <code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">vitek<a name=\"botswana-amr-local-method-cs-vitek\"> </a></td><td>Vitek automated system</td><td>bioMérieux Vitek automated identification and susceptibility testing system</td></tr><tr><td style=\"white-space:nowrap\">phoenix<a name=\"botswana-amr-local-method-cs-phoenix\"> </a></td><td>Phoenix automated system</td><td>BD Phoenix automated identification and susceptibility testing system</td></tr><tr><td style=\"white-space:nowrap\">api<a name=\"botswana-amr-local-method-cs-api\"> </a></td><td>API biochemical strips</td><td>bioMérieux API manual biochemical identification strips</td></tr><tr><td style=\"white-space:nowrap\">manual<a name=\"botswana-amr-local-method-cs-manual\"> </a></td><td>Manual biochemical testing</td><td>Traditional manual biochemical identification methods</td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem botswana-amr-local-method-cs</b></p><a name=\"botswana-amr-local-method-cs\"> </a><a name=\"hcbotswana-amr-local-method-cs\"> </a><p>This  code system <code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">vitek<a name=\"botswana-amr-local-method-cs-vitek\"> </a></td><td>Vitek automated system</td><td>bioMérieux Vitek automated identification and susceptibility testing system</td></tr><tr><td style=\"white-space:nowrap\">phoenix<a name=\"botswana-amr-local-method-cs-phoenix\"> </a></td><td>Phoenix automated system</td><td>BD Phoenix automated identification and susceptibility testing system</td></tr><tr><td style=\"white-space:nowrap\">api<a name=\"botswana-amr-local-method-cs-api\"> </a></td><td>API biochemical strips</td><td>bioMérieux API manual biochemical identification strips</td></tr><tr><td style=\"white-space:nowrap\">manual<a name=\"botswana-amr-local-method-cs-manual\"> </a></td><td>Manual biochemical testing</td><td>Traditional manual biochemical identification methods</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs"^^xsd:anyURI ;
+     fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs>
+  ] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "BotswanaAMRLocalMethodCS"] ; # 
   fhir:title [ fhir:v "Botswana AMR Local Identification Method Codes"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-09T10:14:37-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-13T15:05:11-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "University of Botswana Partnership"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "University of Botswana Partnership" ] ;

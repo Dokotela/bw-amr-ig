@@ -1,0 +1,85 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://bw.health.gov/fhir/Observation/ExampleGramStainNegative> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleGramStainNegative"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation"^^xsd:anyURI ;
+       fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation>
+     ] [
+       fhir:v "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-GramStainObservation"^^xsd:anyURI ;
+       fhir:l <http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-GramStainObservation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ExampleGramStainNegative</b></p><a name=\"ExampleGramStainNegative\"> </a><a name=\"hcExampleGramStainNegative\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-botswana-amr-gram-stain-observation.html\">Botswana AMR Gram Stain Observation</a>, <code>http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-GramStainObservation</code></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://loinc.org 18725-2}\">Microbiology studies (set)</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 664-3}\">Microscopic observation [Identifier] in Specimen by Gram stain</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatientMotswana.html\">Keabetswe Motswana  Female, DoB: 1981-05-14</a></p><p><b>effective</b>: 2026-03-10 10:00:00+0200</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 87172008}\">Gram-negative</span></p><p><b>specimen</b>: <a href=\"Specimen-ExampleSpecimenUrine.html\">Specimen: identifier = PMH-2026-U4421; type = Urine</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "laboratory" ] ;
+       fhir:display [ fhir:v "Laboratory" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       a loinc:18725-2 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "18725-2" ] ;
+       fhir:display [ fhir:v "Microbiology studies (set)" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:664-3 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "664-3" ] ;
+       fhir:display [ fhir:v "Microscopic observation [Identifier] in Specimen by Gram stain" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://bw.health.gov/fhir/Patient/ExamplePatientMotswana> ;
+     fhir:reference [ fhir:v "Patient/ExamplePatientMotswana" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2026-03-10T10:00:00+02:00"^^xsd:dateTime
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:87172008 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "87172008" ] ;
+       fhir:display [ fhir:v "Gram-negative" ]
+     ] )
+  ] ; # 
+  fhir:specimen [
+     fhir:l <http://bw.health.gov/fhir/Specimen/ExampleSpecimenUrine> ;
+     fhir:reference [ fhir:v "Specimen/ExampleSpecimenUrine" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

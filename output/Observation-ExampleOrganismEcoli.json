@@ -1,0 +1,82 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ExampleOrganismEcoli",
+  "meta" : {
+    "profile" : ["http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation",
+    "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-OrganismObservation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ExampleOrganismEcoli</b></p><a name=\"ExampleOrganismEcoli\"> </a><a name=\"hcExampleOrganismEcoli\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-botswana-amr-organism-observation.html\">Botswana AMR Organism Identification Observation</a>, <code>http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-OrganismObservation</code></p></div><p><b>identifier</b>: isolate-1</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://loinc.org 18725-2}\">Microbiology studies (set)</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 634-6}\">Bacteria identified in Specimen by Culture</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatientMotswana.html\">Keabetswe Motswana  Female, DoB: 1981-05-14</a></p><p><b>effective</b>: 2026-03-11 09:00:00+0200</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 112283007}\">Escherichia coli</span></p><p><b>method</b>: <span title=\"Codes:{http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs vitek}\">Vitek automated system</span></p><p><b>specimen</b>: <a href=\"Specimen-ExampleSpecimenUrine.html\">Specimen: identifier = PMH-2026-U4421; type = Urine</a></p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-ExampleSusceptEcoliAmpicillin.html\">Observation Ampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)</a></li><li><a href=\"Observation-ExampleSusceptEcoliAmoxClav.html\">Observation Amoxicillin+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)</a></li><li><a href=\"Observation-ExampleSusceptEcoliCeftriaxone.html\">Observation Ceftriaxone [Susceptibility] by Minimum inhibitory concentration (MIC)</a></li><li><a href=\"Observation-ExampleSusceptEcoliCiprofloxacin.html\">Observation Ciprofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)</a></li><li><a href=\"Observation-ExampleSusceptEcoliGentamicin.html\">Observation Gentamicin [Susceptibility] by Minimum inhibitory concentration (MIC)</a></li><li><a href=\"Observation-ExampleSusceptEcoliTmpSmx.html\">Observation Trimethoprim+Sulfamethoxazole [Susceptibility] by Minimum inhibitory concentration (MIC)</a></li><li><a href=\"Observation-ExampleSusceptEcoliNitrofurantoin.html\">Observation Nitrofurantoin [Susceptibility] by Minimum inhibitory concentration (MIC)</a></li><li><a href=\"Observation-ExampleSpecialTestEcoliEsbl.html\">Observation Extended spectrum beta lactamase [Presence] in Isolate</a></li></ul></div>"
+  },
+  "identifier" : [{
+    "value" : "isolate-1"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory",
+      "display" : "Laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "18725-2",
+      "display" : "Microbiology studies (set)"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "634-6",
+      "display" : "Bacteria identified in Specimen by Culture"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExamplePatientMotswana"
+  },
+  "effectiveDateTime" : "2026-03-11T09:00:00+02:00",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "112283007",
+      "display" : "Escherichia coli"
+    }]
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs",
+      "code" : "vitek",
+      "display" : "Vitek automated system"
+    }]
+  },
+  "specimen" : {
+    "reference" : "Specimen/ExampleSpecimenUrine"
+  },
+  "hasMember" : [{
+    "reference" : "Observation/ExampleSusceptEcoliAmpicillin"
+  },
+  {
+    "reference" : "Observation/ExampleSusceptEcoliAmoxClav"
+  },
+  {
+    "reference" : "Observation/ExampleSusceptEcoliCeftriaxone"
+  },
+  {
+    "reference" : "Observation/ExampleSusceptEcoliCiprofloxacin"
+  },
+  {
+    "reference" : "Observation/ExampleSusceptEcoliGentamicin"
+  },
+  {
+    "reference" : "Observation/ExampleSusceptEcoliTmpSmx"
+  },
+  {
+    "reference" : "Observation/ExampleSusceptEcoliNitrofurantoin"
+  },
+  {
+    "reference" : "Observation/ExampleSpecialTestEcoliEsbl"
+  }]
+}

@@ -1,16 +1,17 @@
 {
   "resourceType" : "ImplementationGuide",
   "id" : "bw-amr-ig",
+  "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide bw-amr-ig</b></p><a name=\"bw-amr-ig\"> </a><a name=\"hcbw-amr-ig\"> </a><h2>BWAMRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig</pre><div><p>FHIR Implementation Guide for the Botswana AMR Data Analytics Platform</p>\n</div></div>"
+    "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide bw-amr-ig</b></p><a name=\"bw-amr-ig\"> </a><a name=\"hcbw-amr-ig\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>BWAMRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig</pre><div><p>FHIR Implementation Guide for the Botswana AMR Data Analytics Platform</p>\n</div></div>"
   },
   "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig",
   "version" : "0.1.0",
   "name" : "BWAMRIG",
   "title" : "Botswana AMR Implementation Guide",
   "status" : "draft",
-  "date" : "2025-07-09T10:14:37-04:00",
+  "date" : "2026-03-13T15:05:11-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [{
     "name" : "University of Botswana Partnership",
@@ -31,7 +32,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.5.0"
+    "version" : "7.1.0"
   },
   {
     "id" : "hl7ext",
@@ -343,7 +344,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.5.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
     },
     {
       "extension" : [{
@@ -657,13 +658,37 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/botswana-amr-ast-method-vs"
+      },
+      "name" : "Botswana AMR AST Method",
+      "description" : "Antimicrobial susceptibility testing methods used in Botswana AMR surveillance",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
         "reference" : "StructureDefinition/botswana-amr-diagnostic-report"
       },
       "name" : "Botswana AMR DiagnosticReport",
-      "description" : "Bundles AMR susceptibility observations into one comprehensive report",
+      "description" : "Bundles AMR culture results into one comprehensive report. References top-level observations (gram stain and organism identifications). Susceptibility and special test results are accessed via OrganismObservation.hasMember.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/botswana-amr-encounter"
+      },
+      "name" : "Botswana AMR Encounter",
+      "description" : "Captures the clinical encounter context for AMR surveillance: ward type (inpatient/outpatient/ICU), admission date, department, and facility. Required for WHONET export and GLASS hospital-acquired vs community-acquired classification.",
       "exampleBoolean" : false
     },
     {
@@ -747,7 +772,7 @@
         "reference" : "StructureDefinition/botswana-amr-organism-observation"
       },
       "name" : "Botswana AMR Organism Identification Observation",
-      "description" : "Records organism identification results from culture in Botswana AMR surveillance",
+      "description" : "Records organism identification results from culture in Botswana AMR surveillance. Acts as the parent observation for susceptibility and special test results via hasMember.",
       "exampleBoolean" : false
     },
     {
@@ -759,7 +784,7 @@
         "reference" : "ValueSet/botswana-amr-organism-vs"
       },
       "name" : "Botswana AMR Organism ValueSet",
-      "description" : "Organisms identified in Botswana AMR surveillance using SNOMED CT codes and local codes for combinations",
+      "description" : "Organisms identified in Botswana AMR surveillance. Includes all descendants of SNOMED CT 'Organism' (410607006) plus local codes for organism combinations that labs report together.",
       "exampleBoolean" : false
     },
     {
@@ -783,7 +808,7 @@
         "reference" : "StructureDefinition/botswana-amr-special-test-observation"
       },
       "name" : "Botswana AMR Special Test Observation",
-      "description" : "Records special AMR test results (ESBL, Carbapenemase, D-Zone, MRSA) in Botswana AMR surveillance",
+      "description" : "Records special AMR test results (ESBL, Carbapenemase, D-Zone, MRSA) in Botswana AMR surveillance. Should be referenced from the parent OrganismObservation via hasMember.",
       "exampleBoolean" : false
     },
     {
@@ -843,7 +868,7 @@
         "reference" : "StructureDefinition/botswana-amr-susceptibility-observation"
       },
       "name" : "Botswana AMR Susceptibility Observation",
-      "description" : "Records S/I/R (and optional MIC) for a single antibiotic test on a specimen",
+      "description" : "Records S/I/R (and optional MIC) for a single antibiotic test on a specimen. Should be referenced from the parent OrganismObservation via hasMember.",
       "exampleBoolean" : false
     },
     {
@@ -857,6 +882,294 @@
       "name" : "Botswana AMR Test Result Status",
       "description" : "Status values for test results in Botswana AMR surveillance",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/botswana-amr-ward-type-vs"
+      },
+      "name" : "Botswana AMR Ward Type",
+      "description" : "Ward/location types for AMR surveillance, aligned with WHONET location type and GLASS origin classification",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleSpecialTestEcoliEsbl"
+      },
+      "name" : "E. coli Special Test - ESBL (Negative)",
+      "description" : "ESBL testing for E. coli isolate - Negative",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleSusceptEcoliAmoxClav"
+      },
+      "name" : "E. coli Susceptibility - Amoxicillin/Clavulanate (S)",
+      "description" : "E. coli amoxicillin/clavulanate susceptibility - Susceptible by disk diffusion",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleSusceptEcoliAmpicillin"
+      },
+      "name" : "E. coli Susceptibility - Ampicillin (R)",
+      "description" : "E. coli ampicillin susceptibility - Resistant by disk diffusion",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleSusceptEcoliCeftriaxone"
+      },
+      "name" : "E. coli Susceptibility - Ceftriaxone (S)",
+      "description" : "E. coli ceftriaxone susceptibility - Susceptible by disk diffusion",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleSusceptEcoliCiprofloxacin"
+      },
+      "name" : "E. coli Susceptibility - Ciprofloxacin (R)",
+      "description" : "E. coli ciprofloxacin susceptibility - Resistant by disk diffusion",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleSusceptEcoliGentamicin"
+      },
+      "name" : "E. coli Susceptibility - Gentamicin (S)",
+      "description" : "E. coli gentamicin susceptibility - Susceptible by disk diffusion",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleSusceptEcoliNitrofurantoin"
+      },
+      "name" : "E. coli Susceptibility - Nitrofurantoin (S)",
+      "description" : "E. coli nitrofurantoin susceptibility - Susceptible by disk diffusion",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleSusceptEcoliTmpSmx"
+      },
+      "name" : "E. coli Susceptibility - Trimethoprim/Sulfamethoxazole (R)",
+      "description" : "E. coli TMP/SMX susceptibility - Resistant by disk diffusion",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DiagnosticReport"
+      }],
+      "reference" : {
+        "reference" : "DiagnosticReport/ExampleDiagnosticReportAMR"
+      },
+      "name" : "Example AMR Diagnostic Report - Urine Culture",
+      "description" : "Complete AMR diagnostic report for urine culture with E. coli and K. pneumoniae",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/ExampleEncounterInpatient"
+      },
+      "name" : "Example Encounter - Inpatient at Princess Marina Hospital",
+      "description" : "Inpatient encounter, admitted 2 days before specimen collection",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleGramStainNegative"
+      },
+      "name" : "Example Gram Stain - Gram-negative",
+      "description" : "Gram stain showing Gram-negative organisms in urine specimen",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleOrganismEcoli"
+      },
+      "name" : "Example Organism - Escherichia coli (Isolate 1)",
+      "description" : "E. coli identified from urine culture, isolate 1",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleOrganismKlebsiella"
+      },
+      "name" : "Example Organism - Klebsiella pneumoniae (Isolate 2)",
+      "description" : "Klebsiella pneumoniae identified from urine culture, isolate 2",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/ExamplePatientMotswana"
+      },
+      "name" : "Example Patient - Keabetswe Motswana",
+      "description" : "A 45-year-old female patient admitted to Princess Marina Hospital",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Specimen"
+      }],
+      "reference" : {
+        "reference" : "Specimen/ExampleSpecimenUrine"
+      },
+      "name" : "Example Specimen - Mid-stream Urine",
+      "description" : "Mid-stream clean catch urine specimen collected from inpatient",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/ExportWHONET"
+      },
+      "name" : "Export WHONET Flat File",
+      "description" : "Exports AMR DiagnosticReport data as a WHONET-compatible flat file or GLASS submission file. The operation flattens the FHIR resource graph (DiagnosticReport -> OrganismObservation -> SusceptibilityObservation) into isolate-centric rows suitable for WHONET import or WHO GLASS batch upload.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleSpecialTestKlebEsbl"
+      },
+      "name" : "Klebsiella Special Test - ESBL (Negative)",
+      "description" : "ESBL testing for Klebsiella pneumoniae isolate - Negative",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleSusceptKlebAmoxClav"
+      },
+      "name" : "Klebsiella Susceptibility - Amoxicillin/Clavulanate (I)",
+      "description" : "Klebsiella pneumoniae amoxicillin/clavulanate susceptibility - Intermediate by disk diffusion",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleSusceptKlebAmpicillin"
+      },
+      "name" : "Klebsiella Susceptibility - Ampicillin (R)",
+      "description" : "Klebsiella pneumoniae ampicillin susceptibility - Resistant by disk diffusion",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleSusceptKlebCeftriaxone"
+      },
+      "name" : "Klebsiella Susceptibility - Ceftriaxone (S)",
+      "description" : "Klebsiella pneumoniae ceftriaxone susceptibility - Susceptible by disk diffusion",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleSusceptKlebCiprofloxacin"
+      },
+      "name" : "Klebsiella Susceptibility - Ciprofloxacin (S)",
+      "description" : "Klebsiella pneumoniae ciprofloxacin susceptibility - Susceptible by disk diffusion",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleSusceptKlebGentamicin"
+      },
+      "name" : "Klebsiella Susceptibility - Gentamicin (S)",
+      "description" : "Klebsiella pneumoniae gentamicin susceptibility - Susceptible by disk diffusion",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleSusceptKlebMeropenem"
+      },
+      "name" : "Klebsiella Susceptibility - Meropenem (S)",
+      "description" : "Klebsiella pneumoniae meropenem susceptibility - Susceptible by disk diffusion",
+      "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
     },
     {
       "extension" : [{

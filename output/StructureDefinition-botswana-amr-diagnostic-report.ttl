@@ -12,14 +12,17 @@
   fhir:id [ fhir:v "botswana-amr-diagnostic-report"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition botswana-amr-diagnostic-report</b></p><a name=\"botswana-amr-diagnostic-report\"> </a><a name=\"hcbotswana-amr-diagnostic-report\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport\">DiagnosticReport</a><a name=\"DiagnosticReport\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/diagnosticreport.html\">DiagnosticReport</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">A Diagnostic report - a combination of request information, atomic results, images, interpretation, as well as formatted reports</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.meta\">meta</a><a name=\"DiagnosticReport.meta\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.meta.profile\">profile</a><a name=\"DiagnosticReport.meta.profile\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/references.html\">canonical</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4B/structuredefinition.html\">StructureDefinition</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Profiles this resource claims to conform to</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-DiagnosticReport</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.status\">status</a><a name=\"DiagnosticReport.status\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4B/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">registered | partial | preliminary | final +</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">final</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.code\">code</a><a name=\"DiagnosticReport.code\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Name/Code for this diagnostic report</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4B/datatypes-definitions.html#CodeableConcept.coding\">coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Code defined by a terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">(complex)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4B/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">http://loinc.org</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4B/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">58321-0</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4B/datatypes-definitions.html#Coding.display\">display</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Representation defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">Bacteria identified and antimicrobial susceptibility panel</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.subject\">subject</a><a name=\"DiagnosticReport.subject\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/references.html\">Reference</a>(<a href=\"StructureDefinition-botswana-amr-patient.html\">Botswana AMR Patient</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The subject of the report - usually, but not always, the patient</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic; font-style: italic\" href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.effective[x]\">Slices for effective[x]</a><a name=\"DiagnosticReport.effective_x_\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">1</span><span style=\"font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic; opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4B/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Clinically relevant time/time-period for report</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by type:$this</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.effective[x]:effectiveDateTime\" title=\"Slice effectiveDateTime\">effective[x]:effectiveDateTime</a><a name=\"DiagnosticReport.effective_x_.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Clinically relevant time/time-period for report</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.specimen\">specimen</a><a name=\"DiagnosticReport.specimen\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/references.html\">Reference</a>(<a href=\"StructureDefinition-botswana-amr-specimen.html\">Botswana AMR Specimen</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Specimens this report is based on</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic; font-style: italic\" href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.result\">Slices for result</a><a name=\"DiagnosticReport.result\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">1</span><span style=\"font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"font-style: italic; font-style: italic\" href=\"http://hl7.org/fhir/R4B/references.html\">Reference</a><span style=\"font-style: italic\">(</span><a style=\"opacity: 0.5; font-style: italic; opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4B/observation.html\">Observation</a><span style=\"font-style: italic\">)</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Observations</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:resolve().code</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck034.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.result:gramStain\" title=\"Slice gramStain\">result:gramStain</a><a name=\"DiagnosticReport.result.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/references.html\">Reference</a>(<a href=\"StructureDefinition-botswana-amr-gram-stain-observation.html\">Botswana AMR Gram Stain Observation</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Observations</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck034.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.result:organism\" title=\"Slice organism\">result:organism</a><a name=\"DiagnosticReport.result.3\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/references.html\">Reference</a>(<a href=\"StructureDefinition-botswana-amr-organism-observation.html\">Botswana AMR Organism Identification Observation</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Observations</span><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck034.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.result:susceptibility\" title=\"Slice susceptibility\">result:susceptibility</a><a name=\"DiagnosticReport.result.4\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/references.html\">Reference</a>(<a href=\"StructureDefinition-botswana-amr-susceptibility-observation.html\">Botswana AMR Susceptibility Observation</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Observations</span><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck024.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.result:specialTests\" title=\"Slice specialTests\">result:specialTests</a><a name=\"DiagnosticReport.result.5\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/references.html\">Reference</a>(<a href=\"StructureDefinition-botswana-amr-special-test-observation.html\">Botswana AMR Special Test Observation</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Observations</span><br/></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition botswana-amr-diagnostic-report</b></p><a name=\"botswana-amr-diagnostic-report\"> </a><a name=\"hcbotswana-amr-diagnostic-report\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport\">DiagnosticReport</a><a name=\"DiagnosticReport\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/diagnosticreport.html\">DiagnosticReport</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">A Diagnostic report - a combination of request information, atomic results, images, interpretation, as well as formatted reports</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.meta\">meta</a><a name=\"DiagnosticReport.meta\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.meta.profile\">profile</a><a name=\"DiagnosticReport.meta.profile\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/references.html\">canonical</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4B/structuredefinition.html\">StructureDefinition</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Profiles this resource claims to conform to</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-DiagnosticReport</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.status\">status</a><a name=\"DiagnosticReport.status\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4B/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">registered | partial | preliminary | final +</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">final</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic; font-style: italic\" href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.category\">Slices for category</a><a name=\"DiagnosticReport.category\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">1</span><span style=\"font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic; opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Service category</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:$this</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck125.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.category:microbiologyStudies\" title=\"Slice microbiologyStudies\">category:microbiologyStudies</a><a name=\"DiagnosticReport.category.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Service category</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1241.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4B/datatypes-definitions.html#CodeableConcept.coding\">coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Code defined by a terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">(Complex)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12410.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4B/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">http://loinc.org</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12410.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4B/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">18725-2</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12400.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4B/datatypes-definitions.html#Coding.display\">display</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Representation defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">Microbiology studies (set)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.code\">code</a><a name=\"DiagnosticReport.code\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Name/Code for this diagnostic report</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4B/datatypes-definitions.html#CodeableConcept.coding\">coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Code defined by a terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">(Complex)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4B/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">http://loinc.org</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4B/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">58321-0</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4B/datatypes-definitions.html#Coding.display\">display</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Representation defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">Bacteria identified and antimicrobial susceptibility panel</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.subject\">subject</a><a name=\"DiagnosticReport.subject\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/references.html\">Reference</a>(<a href=\"StructureDefinition-botswana-amr-patient.html\">Botswana AMR Patient</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The subject of the report - usually, but not always, the patient</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.encounter\">encounter</a><a name=\"DiagnosticReport.encounter\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/references.html\">Reference</a>(<a href=\"StructureDefinition-botswana-amr-encounter.html\">Botswana AMR Encounter</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Health care event when test ordered</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic; font-style: italic\" href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.effective[x]\">Slices for effective[x]</a><a name=\"DiagnosticReport.effective_x_\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">1</span><span style=\"font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic; opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4B/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Clinically relevant time/time-period for report</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by type:$this</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.effective[x]:effectiveDateTime\" title=\"Slice effectiveDateTime\">effective[x]:effectiveDateTime</a><a name=\"DiagnosticReport.effective_x_.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Clinically relevant time/time-period for report</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.performer\">performer</a><a name=\"DiagnosticReport.performer\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/references.html\">Reference</a>(<a href=\"http://hl7.org/fhir/R4B/organization.html\">Organization</a> | <a href=\"http://hl7.org/fhir/R4B/practitioner.html\">Practitioner</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Responsible Diagnostic Service</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.specimen\">specimen</a><a name=\"DiagnosticReport.specimen\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/references.html\">Reference</a>(<a href=\"StructureDefinition-botswana-amr-specimen.html\">Botswana AMR Specimen</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Specimens this report is based on</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic; font-style: italic\" href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.result\">Slices for result</a><a name=\"DiagnosticReport.result\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">1</span><span style=\"font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"font-style: italic; font-style: italic\" href=\"http://hl7.org/fhir/R4B/references.html\">Reference</a><span style=\"font-style: italic\">(</span><a style=\"opacity: 0.5; font-style: italic; opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4B/observation.html\">Observation</a><span style=\"font-style: italic\">)</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Observations</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:resolve().code</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck034.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.result:gramStain\" title=\"Slice gramStain\">result:gramStain</a><a name=\"DiagnosticReport.result.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/references.html\">Reference</a>(<a href=\"StructureDefinition-botswana-amr-gram-stain-observation.html\">Botswana AMR Gram Stain Observation</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Observations</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck024.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-botswana-amr-diagnostic-report-definitions.html#DiagnosticReport.result:organism\" title=\"Slice organism\">result:organism</a><a name=\"DiagnosticReport.result.3\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4B/references.html\">Reference</a>(<a href=\"StructureDefinition-botswana-amr-organism-observation.html\">Botswana AMR Organism Identification Observation</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Observations</span><br/></td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report"^^xsd:anyURI ;
+     fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report>
+  ] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "BotswanaAMRDiagnosticReport"] ; # 
   fhir:title [ fhir:v "Botswana AMR DiagnosticReport"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-09T10:14:37-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-13T15:05:11-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "University of Botswana Partnership"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "University of Botswana Partnership" ] ;
@@ -28,38 +31,56 @@
        fhir:value [ fhir:v "https://github.com/Dokotela/bw-amr-ig" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Bundles AMR susceptibility observations into one comprehensive report"] ; # 
+  fhir:description [ fhir:v "Bundles AMR culture results into one comprehensive report. References top-level observations (gram stain and organism identifications). Susceptibility and special test results are accessed via OrganismObservation.hasMember."] ; # 
   fhir:fhirVersion [ fhir:v "4.3.0"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "workflow" ] ;
-     fhir:uri [ fhir:v "http://hl7.org/fhir/workflow"^^xsd:anyURI ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/workflow"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/workflow>
+     ] ;
      fhir:name [ fhir:v "Workflow Pattern" ]
   ] [
      fhir:identity [ fhir:v "v2" ] ;
-     fhir:uri [ fhir:v "http://hl7.org/v2"^^xsd:anyURI ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/v2"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/v2>
+     ] ;
      fhir:name [ fhir:v "HL7 v2 Mapping" ]
   ] [
      fhir:identity [ fhir:v "rim" ] ;
-     fhir:uri [ fhir:v "http://hl7.org/v3"^^xsd:anyURI ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/v3"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/v3>
+     ] ;
      fhir:name [ fhir:v "RIM Mapping" ]
   ] [
      fhir:identity [ fhir:v "w5" ] ;
-     fhir:uri [ fhir:v "http://hl7.org/fhir/fivews"^^xsd:anyURI ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/fivews"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/fivews>
+     ] ;
      fhir:name [ fhir:v "FiveWs Pattern Mapping" ]
   ] ) ; # 
   fhir:kind [ fhir:v "resource"] ; # 
   fhir:abstract [ fhir:v false] ; # 
-  fhir:type [ fhir:v "DiagnosticReport"^^xsd:anyURI] ; # 
+  fhir:type [
+     fhir:v "DiagnosticReport"^^xsd:anyURI ;
+     fhir:l fhir:DiagnosticReport
+  ] ; # 
   fhir:baseDefinition [
      fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"^^xsd:anyURI ;
-     fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
+     fhir:l <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
   ] ; # 
   fhir:derivation [ fhir:v "constraint"] ; # 
   fhir:snapshot [
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version>
+       ] ;
        fhir:value [
-         a fhir:string ;
+         a fhir:String ;
          fhir:v "4.3.0"
        ]
      ] ) ;
@@ -85,7 +106,7 @@
          fhir:xpath [ fhir:v "not(parent::f:contained and f:contained)" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] [
          fhir:key [ fhir:v "dom-3" ] ;
@@ -95,7 +116,7 @@
          fhir:xpath [ fhir:v "not(exists(for $contained in f:contained return $contained[not(exists(parent::*/descendant::f:reference/@value=concat('#', $contained/*/f:id/@value)) or exists(descendant::f:reference[@value='#']))]))" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] [
          fhir:key [ fhir:v "dom-4" ] ;
@@ -105,7 +126,7 @@
          fhir:xpath [ fhir:v "not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] [
          fhir:key [ fhir:v "dom-5" ] ;
@@ -115,19 +136,25 @@
          fhir:xpath [ fhir:v "not(exists(f:contained/*/f:meta/f:security))" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice>
+           ] ;
            fhir:value [
-             a fhir:boolean ;
+             a fhir:Boolean ;
              fhir:v true
            ]
          ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation>
+           ] ;
            fhir:value [
-             a fhir:markdown ;
+             a fhir:Markdown ;
              fhir:v "When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a human readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time."
            ]
          ] ) ;
@@ -138,7 +165,7 @@
          fhir:xpath [ fhir:v "exists(f:text/h:div)" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -175,13 +202,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "id"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "id"^^xsd:anyURI ;
+             fhir:l fhir:id
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
        fhir:isModifier [ fhir:v false ] ;
@@ -199,7 +233,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Meta"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Meta"^^xsd:anyURI ;
+           fhir:l fhir:Meta
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -209,7 +246,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -230,13 +267,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "id"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "id"^^xsd:anyURI ;
+             fhir:l fhir:id
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
@@ -267,7 +311,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -277,7 +324,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -287,7 +334,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -310,7 +357,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "id"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "id"^^xsd:anyURI ;
+           fhir:l fhir:id
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -320,7 +370,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -339,7 +389,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "instant"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "instant"^^xsd:anyURI ;
+           fhir:l fhir:instant
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -349,7 +402,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -368,7 +421,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "uri"^^xsd:anyURI ;
+           fhir:l fhir:uri
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -378,7 +434,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -397,16 +453,19 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "canonical"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "canonical"^^xsd:anyURI ;
+           fhir:l fhir:canonical
+         ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/StructureDefinition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/StructureDefinition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/StructureDefinition|4.3.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/StructureDefinition?version=4.3.0>
          ] )
        ] ) ;
        fhir:pattern [
-         a fhir:canonical ;
+         a fhir:Canonical ;
          fhir:v "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-DiagnosticReport"^^xsd:anyURI ;
-         fhir:link <http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-DiagnosticReport>
+         fhir:l <http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-DiagnosticReport>
        ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -416,7 +475,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -435,7 +494,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Coding"^^xsd:anyURI ;
+           fhir:l fhir:Coding
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -445,29 +507,35 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/build/StructureDefinition/binding-definition"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/build/StructureDefinition/binding-definition"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/build/StructureDefinition/binding-definition>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "Security Labels from the Healthcare Privacy and Security Classification System."
            ]
          ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "SecurityLabels"
            ]
          ] ) ;
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/security-labels"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/security-labels>
+           fhir:v "http://hl7.org/fhir/ValueSet/security-labels|4.3.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/security-labels?version=4.3.0>
          ]
        ]
      ] [
@@ -484,7 +552,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Coding"^^xsd:anyURI ;
+           fhir:l fhir:Coding
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -494,29 +565,35 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/build/StructureDefinition/binding-definition"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/build/StructureDefinition/binding-definition"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/build/StructureDefinition/binding-definition>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "Codes that represent various types of tags, commonly workflow-related; e.g. \"Needs review by Dr. Jones\"."
            ]
          ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "Tags"
            ]
          ] ) ;
          fhir:strength [ fhir:v "example" ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/common-tags"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/common-tags>
+           fhir:v "http://hl7.org/fhir/ValueSet/common-tags|4.3.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/common-tags?version=4.3.0>
          ]
        ]
      ] [
@@ -533,7 +610,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "uri"^^xsd:anyURI ;
+           fhir:l fhir:uri
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -543,7 +623,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -564,7 +644,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -574,7 +657,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -582,24 +665,30 @@
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet>
+           ] ;
            fhir:value [
-             a fhir:canonical ;
+             a fhir:Canonical ;
              fhir:v "http://hl7.org/fhir/ValueSet/all-languages"^^xsd:anyURI ;
-             fhir:link <http://hl7.org/fhir/ValueSet/all-languages>
+             fhir:l <http://hl7.org/fhir/ValueSet/all-languages>
            ]
          ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "Language"
            ]
          ] ) ;
          fhir:strength [ fhir:v "preferred" ] ;
          fhir:description [ fhir:v "IETF language tag" ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/languages"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/languages>
+           fhir:v "http://hl7.org/fhir/ValueSet/languages|4.3.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/languages?version=4.3.0>
          ]
        ]
      ] [
@@ -617,7 +706,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Narrative"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Narrative"^^xsd:anyURI ;
+           fhir:l fhir:Narrative
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -627,7 +719,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -652,7 +744,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Resource"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Resource"^^xsd:anyURI ;
+           fhir:l fhir:Resource
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "dom-r4b" ] ;
@@ -662,7 +757,7 @@
          fhir:xpath [ fhir:v "not(f:Citation|f:Evidence|f:EvidenceReport|f:EvidenceVariable|f:MedicinalProductDefinition|f:PackagedProductDefinition|f:AdministrableProductDefinition|f:Ingredient|f:ClinicalUseDefinition|f:RegulatedAuthorization|f:SubstanceDefinition|f:SubscriptionStatus|f:SubscriptionTopic) or not(parent::f:Citation|parent::f:Evidence|parent::f:EvidenceReport|parent::f:EvidenceVariable|parent::f:MedicinalProductDefinition|parent::f:PackagedProductDefinition|parent::f:AdministrableProductDefinition|parent::f:Ingredient|parent::f:ClinicalUseDefinition|parent::f:RegulatedAuthorization|parent::f:SubstanceDefinition|f:SubscriptionStatus|f:SubscriptionTopic)" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -687,7 +782,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -697,7 +795,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -707,7 +805,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -733,7 +831,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -743,7 +844,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -753,7 +854,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -780,7 +881,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Identifier"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -790,7 +894,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -825,22 +929,25 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/CarePlan"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/CarePlan>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/CarePlan|4.3.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/CarePlan?version=4.3.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation|4.3.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation?version=4.3.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationRequest"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationRequest>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.3.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/MedicationRequest?version=4.3.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/NutritionOrder"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/NutritionOrder>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/NutritionOrder|4.3.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/NutritionOrder?version=4.3.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ServiceRequest"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ServiceRequest>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/ServiceRequest|4.3.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/ServiceRequest?version=4.3.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -851,7 +958,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -881,10 +988,13 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
        ] ) ;
        fhir:pattern [
-         a fhir:code ;
+         a fhir:Code ;
          fhir:v "final"
        ] ;
        fhir:constraint ( [
@@ -895,7 +1005,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -904,9 +1014,12 @@
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "DiagnosticReportStatus"
            ]
          ] ) ;
@@ -914,7 +1027,7 @@
          fhir:description [ fhir:v "The status of the diagnostic report." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.3.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.3.0>
+           fhir:l <http://hl7.org/fhir/ValueSet/diagnostic-report-status?version=4.3.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -933,11 +1046,18 @@
      ] [
        fhir:id [ fhir:v "DiagnosticReport.category" ] ;
        fhir:path [ fhir:v "DiagnosticReport.category" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "pattern" ] ;
+           fhir:path [ fhir:v "$this" ]
+         ] ) ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
        fhir:short [ fhir:v "Service category" ] ;
        fhir:definition [ fhir:v "A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes." ] ;
        fhir:comment [ fhir:v "Multiple categories are allowed using various categorization schemes.   The level of granularity is defined by the category concepts in the value set. More fine-grained filtering can be performed using the metadata and/or terminology hierarchy in DiagnosticReport.code." ] ;
        fhir:alias ( [ fhir:v "Department" ] [ fhir:v "Sub-department" ] [ fhir:v "Service" ] [ fhir:v "Discipline" ] ) ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
          fhir:path [ fhir:v "DiagnosticReport.category" ] ;
@@ -945,7 +1065,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -955,7 +1078,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -963,17 +1086,95 @@
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "DiagnosticServiceSection"
            ]
          ] ) ;
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "HL7 V2 table 0074" ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/diagnostic-service-sections"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/diagnostic-service-sections>
+           fhir:v "http://hl7.org/fhir/ValueSet/diagnostic-service-sections|4.3.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/diagnostic-service-sections?version=4.3.0>
+         ]
+       ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "w5" ] ;
+         fhir:map [ fhir:v "FiveWs.class" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "OBR-24" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "inboundRelationship[typeCode=COMP].source[classCode=LIST, moodCode=EVN, code < LabService].code" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "DiagnosticReport.category:microbiologyStudies" ] ;
+       fhir:path [ fhir:v "DiagnosticReport.category" ] ;
+       fhir:sliceName [ fhir:v "microbiologyStudies" ] ;
+       fhir:short [ fhir:v "Service category" ] ;
+       fhir:definition [ fhir:v "A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes." ] ;
+       fhir:comment [ fhir:v "Multiple categories are allowed using various categorization schemes.   The level of granularity is defined by the category concepts in the value set. More fine-grained filtering can be performed using the metadata and/or terminology hierarchy in DiagnosticReport.code." ] ;
+       fhir:alias ( [ fhir:v "Department" ] [ fhir:v "Sub-department" ] [ fhir:v "Service" ] [ fhir:v "Discipline" ] ) ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "DiagnosticReport.category" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
+       ] ) ;
+       fhir:pattern [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a loinc:18725-2 ;
+           fhir:system [
+             fhir:v "http://loinc.org"^^xsd:anyURI ;
+             fhir:l <http://loinc.org>
+           ] ;
+           fhir:code [ fhir:v "18725-2" ] ;
+           fhir:display [ fhir:v "Microbiology studies (set)" ]
+         ] )
+       ] ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
+       fhir:binding [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
+           fhir:value [
+             a fhir:String ;
+             fhir:v "DiagnosticServiceSection"
+           ]
+         ] ) ;
+         fhir:strength [ fhir:v "example" ] ;
+         fhir:description [ fhir:v "HL7 V2 table 0074" ] ;
+         fhir:valueSet [
+           fhir:v "http://hl7.org/fhir/ValueSet/diagnostic-service-sections|4.3.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/diagnostic-service-sections?version=4.3.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -1000,13 +1201,19 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] ) ;
        fhir:pattern [
          a fhir:CodeableConcept ;
          fhir:coding ( [
            a loinc:58321-0 ;
-           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://loinc.org"^^xsd:anyURI ;
+             fhir:l <http://loinc.org>
+           ] ;
            fhir:code [ fhir:v "58321-0" ] ;
            fhir:display [ fhir:v "Bacteria identified and antimicrobial susceptibility panel" ]
          ] )
@@ -1019,7 +1226,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1027,17 +1234,20 @@
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "DiagnosticReportCodes"
            ]
          ] ) ;
          fhir:strength [ fhir:v "preferred" ] ;
          fhir:description [ fhir:v "LOINC Codes for Diagnostic Reports" ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/report-codes"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/report-codes>
+           fhir:v "http://hl7.org/fhir/ValueSet/report-codes|4.3.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/report-codes?version=4.3.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -1068,10 +1278,13 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient"^^xsd:anyURI ;
-           fhir:link <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient>
+           fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1082,7 +1295,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1120,10 +1333,13 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Encounter"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Encounter>
+           fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-encounter"^^xsd:anyURI ;
+           fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-encounter>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1134,7 +1350,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1177,7 +1393,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1187,7 +1406,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1223,7 +1442,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1233,7 +1455,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1268,7 +1490,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "instant"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "instant"^^xsd:anyURI ;
+           fhir:l fhir:instant
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1278,7 +1503,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1310,19 +1535,16 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
-         ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
-         ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Organization"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Organization>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/CareTeam"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/CareTeam>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Practitioner>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1333,7 +1555,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1368,19 +1590,22 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner|4.3.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Practitioner?version=4.3.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.3.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/PractitionerRole?version=4.3.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization|4.3.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Organization?version=4.3.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/CareTeam"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/CareTeam>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/CareTeam|4.3.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/CareTeam?version=4.3.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1391,7 +1616,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1425,10 +1650,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen"^^xsd:anyURI ;
-           fhir:link <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen>
+           fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1439,7 +1667,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1475,10 +1703,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation|4.3.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Observation?version=4.3.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1489,7 +1720,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1519,10 +1750,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation"^^xsd:anyURI ;
-           fhir:link <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation>
+           fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1533,7 +1767,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1555,7 +1789,7 @@
        fhir:comment [ fhir:v "Observations can contain observations." ] ;
        fhir:requirements [ fhir:v "Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful." ] ;
        fhir:alias ( [ fhir:v "Data" ] [ fhir:v "Atomic Value" ] [ fhir:v "Result" ] [ fhir:v "Atomic result" ] [ fhir:v "Data" ] [ fhir:v "Test" ] [ fhir:v "Analyte" ] [ fhir:v "Battery" ] [ fhir:v "Organizer" ] ) ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
          fhir:path [ fhir:v "DiagnosticReport.result" ] ;
@@ -1563,10 +1797,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation"^^xsd:anyURI ;
-           fhir:link <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation>
+           fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1577,95 +1814,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ] ) ;
-       fhir:mustSupport [ fhir:v false ] ;
-       fhir:isModifier [ fhir:v false ] ;
-       fhir:isSummary [ fhir:v false ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "v2" ] ;
-         fhir:map [ fhir:v "OBXs" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "outboundRelationship[typeCode=COMP].target" ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "DiagnosticReport.result:susceptibility" ] ;
-       fhir:path [ fhir:v "DiagnosticReport.result" ] ;
-       fhir:sliceName [ fhir:v "susceptibility" ] ;
-       fhir:short [ fhir:v "Observations" ] ;
-       fhir:definition [ fhir:v "[Observations](http://hl7.org/fhir/R4B/observation.html)  that are part of this diagnostic report." ] ;
-       fhir:comment [ fhir:v "Observations can contain observations." ] ;
-       fhir:requirements [ fhir:v "Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful." ] ;
-       fhir:alias ( [ fhir:v "Data" ] [ fhir:v "Atomic Value" ] [ fhir:v "Result" ] [ fhir:v "Atomic result" ] [ fhir:v "Data" ] [ fhir:v "Test" ] [ fhir:v "Analyte" ] [ fhir:v "Battery" ] [ fhir:v "Organizer" ] ) ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "*" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "DiagnosticReport.result" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "*" ]
-       ] ;
-       fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
-         fhir:targetProfile ( [
-           fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"^^xsd:anyURI ;
-           fhir:link <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation>
-         ] )
-       ] ) ;
-       fhir:constraint ( [
-         fhir:key [ fhir:v "ele-1" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
-         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
-         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ] ) ;
-       fhir:mustSupport [ fhir:v false ] ;
-       fhir:isModifier [ fhir:v false ] ;
-       fhir:isSummary [ fhir:v false ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "v2" ] ;
-         fhir:map [ fhir:v "OBXs" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "outboundRelationship[typeCode=COMP].target" ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "DiagnosticReport.result:specialTests" ] ;
-       fhir:path [ fhir:v "DiagnosticReport.result" ] ;
-       fhir:sliceName [ fhir:v "specialTests" ] ;
-       fhir:short [ fhir:v "Observations" ] ;
-       fhir:definition [ fhir:v "[Observations](http://hl7.org/fhir/R4B/observation.html)  that are part of this diagnostic report." ] ;
-       fhir:comment [ fhir:v "Observations can contain observations." ] ;
-       fhir:requirements [ fhir:v "Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful." ] ;
-       fhir:alias ( [ fhir:v "Data" ] [ fhir:v "Atomic Value" ] [ fhir:v "Result" ] [ fhir:v "Atomic result" ] [ fhir:v "Data" ] [ fhir:v "Test" ] [ fhir:v "Analyte" ] [ fhir:v "Battery" ] [ fhir:v "Organizer" ] ) ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "*" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "DiagnosticReport.result" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "*" ]
-       ] ;
-       fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
-         fhir:targetProfile ( [
-           fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation"^^xsd:anyURI ;
-           fhir:link <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation>
-         ] )
-       ] ) ;
-       fhir:constraint ( [
-         fhir:key [ fhir:v "ele-1" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
-         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
-         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1692,10 +1841,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ImagingStudy"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ImagingStudy>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/ImagingStudy|4.3.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/ImagingStudy?version=4.3.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1706,7 +1858,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1731,7 +1883,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "BackboneElement"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "BackboneElement"^^xsd:anyURI ;
+           fhir:l fhir:BackboneElement
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1741,7 +1896,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div|self::f:Parameters" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1769,13 +1924,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "string"^^xsd:anyURI ;
+             fhir:l fhir:string
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
@@ -1798,7 +1960,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1808,7 +1973,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -1818,7 +1983,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -1843,7 +2008,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1853,7 +2021,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -1863,7 +2031,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v true ] ;
@@ -1888,7 +2056,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1898,7 +2069,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1921,10 +2092,13 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Media"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Media>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Media|4.3.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Media?version=4.3.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1935,7 +2109,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1960,7 +2134,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1970,7 +2147,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1996,7 +2173,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2006,7 +2186,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -2014,17 +2194,20 @@
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "AdjunctDiagnosis"
            ]
          ] ) ;
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "SNOMED CT Clinical Findings" ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/clinical-findings"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/clinical-findings>
+           fhir:v "http://hl7.org/fhir/ValueSet/clinical-findings|4.3.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/clinical-findings?version=4.3.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -2049,7 +2232,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Attachment"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Attachment"^^xsd:anyURI ;
+           fhir:l fhir:Attachment
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2059,7 +2245,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -2082,16 +2268,45 @@
        fhir:id [ fhir:v "DiagnosticReport.meta.profile" ] ;
        fhir:path [ fhir:v "DiagnosticReport.meta.profile" ] ;
        fhir:pattern [
-         a fhir:canonical ;
+         a fhir:Canonical ;
          fhir:v "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-DiagnosticReport"^^xsd:anyURI ;
-         fhir:link <http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-DiagnosticReport>
+         fhir:l <http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-DiagnosticReport>
        ]
      ] [
        fhir:id [ fhir:v "DiagnosticReport.status" ] ;
        fhir:path [ fhir:v "DiagnosticReport.status" ] ;
        fhir:pattern [
-         a fhir:code ;
+         a fhir:Code ;
          fhir:v "final"
+       ]
+     ] [
+       fhir:id [ fhir:v "DiagnosticReport.category" ] ;
+       fhir:path [ fhir:v "DiagnosticReport.category" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "pattern" ] ;
+           fhir:path [ fhir:v "$this" ]
+         ] ) ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
+     ] [
+       fhir:id [ fhir:v "DiagnosticReport.category:microbiologyStudies" ] ;
+       fhir:path [ fhir:v "DiagnosticReport.category" ] ;
+       fhir:sliceName [ fhir:v "microbiologyStudies" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:pattern [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a loinc:18725-2 ;
+           fhir:system [
+             fhir:v "http://loinc.org"^^xsd:anyURI ;
+             fhir:l <http://loinc.org>
+           ] ;
+           fhir:code [ fhir:v "18725-2" ] ;
+           fhir:display [ fhir:v "Microbiology studies (set)" ]
+         ] )
        ]
      ] [
        fhir:id [ fhir:v "DiagnosticReport.code" ] ;
@@ -2100,7 +2315,10 @@
          a fhir:CodeableConcept ;
          fhir:coding ( [
            a loinc:58321-0 ;
-           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://loinc.org"^^xsd:anyURI ;
+             fhir:l <http://loinc.org>
+           ] ;
            fhir:code [ fhir:v "58321-0" ] ;
            fhir:display [ fhir:v "Bacteria identified and antimicrobial susceptibility panel" ]
          ] )
@@ -2110,10 +2328,26 @@
        fhir:path [ fhir:v "DiagnosticReport.subject" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient"^^xsd:anyURI ;
-           fhir:link <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient>
+           fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "DiagnosticReport.encounter" ] ;
+       fhir:path [ fhir:v "DiagnosticReport.encounter" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-encounter"^^xsd:anyURI ;
+           fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-encounter>
          ] )
        ] )
      ] [
@@ -2135,17 +2369,39 @@
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "DiagnosticReport.performer" ] ;
+       fhir:path [ fhir:v "DiagnosticReport.performer" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Organization>
+         ] [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Practitioner>
+         ] )
        ] )
      ] [
        fhir:id [ fhir:v "DiagnosticReport.specimen" ] ;
        fhir:path [ fhir:v "DiagnosticReport.specimen" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen"^^xsd:anyURI ;
-           fhir:link <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen>
+           fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen>
          ] )
        ] )
      ] [
@@ -2166,49 +2422,29 @@
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation"^^xsd:anyURI ;
-           fhir:link <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation>
+           fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation>
          ] )
        ] )
      ] [
        fhir:id [ fhir:v "DiagnosticReport.result:organism" ] ;
        fhir:path [ fhir:v "DiagnosticReport.result" ] ;
        fhir:sliceName [ fhir:v "organism" ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation"^^xsd:anyURI ;
-           fhir:link <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation>
-         ] )
-       ] )
-     ] [
-       fhir:id [ fhir:v "DiagnosticReport.result:susceptibility" ] ;
-       fhir:path [ fhir:v "DiagnosticReport.result" ] ;
-       fhir:sliceName [ fhir:v "susceptibility" ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "*" ] ;
-       fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
-         fhir:targetProfile ( [
-           fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"^^xsd:anyURI ;
-           fhir:link <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation>
-         ] )
-       ] )
-     ] [
-       fhir:id [ fhir:v "DiagnosticReport.result:specialTests" ] ;
-       fhir:path [ fhir:v "DiagnosticReport.result" ] ;
-       fhir:sliceName [ fhir:v "specialTests" ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "*" ] ;
-       fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
-         fhir:targetProfile ( [
-           fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation"^^xsd:anyURI ;
-           fhir:link <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation>
+           fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation>
          ] )
        ] )
      ] )

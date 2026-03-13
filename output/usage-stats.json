@@ -18,6 +18,12 @@
         "title": "Botswana AMR DiagnosticReport"
       }
     ],
+    "Encounter": [
+      {
+        "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-encounter",
+        "title": "Botswana AMR Encounter"
+      }
+    ],
     "Observation": [
       {
         "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
@@ -53,6 +59,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
     ],
@@ -64,6 +73,9 @@
     ],
     "http://hl7.org/fhir/build/StructureDefinition/binding-definition": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/build/StructureDefinition/no-binding": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"

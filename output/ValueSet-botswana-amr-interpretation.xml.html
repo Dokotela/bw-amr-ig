@@ -21,119 +21,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
   	<link href="assets/css/cqf.css" rel="stylesheet" />
-    <style>
-html { font-size: 18px !important; }
-body { font-size: 18px !important; }
-* { font-size: inherit !important; }
-p, li, div, span, td, th { font-size: 18px !important; line-height: 1.6 !important; }
-
-/* Make headings smaller */
-h1 { font-size: 1.3em !important; }
-h2 { font-size: 1.2em !important; }
-h3 { font-size: 1.1em !important; }
-h4 { font-size: 1.05em !important; }
-h5 { font-size: 1.0em !important; }
-h6 { font-size: 0.95em !important; }
-
-/* Target specific elements that are too big */
-.copy-text { font-size: 16px !important; }
-table.colsd td { font-size: 16px !important; }
-table.colsd i { font-size: 16px !important; }
-
-code, pre { font-size: 16px !important; }
-
-/* Add more space between the title area and navigation menu */
-.navbar, .nav-tabs, .page-header + .nav, .breadcrumb {
-  margin-top: 20px !important;
-}
-
-/* Hide HL7 logo */
-#hl7-nav, #hl7-logo { display: none !important; }
-
-/* Style the existing title area with background and logos */
-#ig-status {
-  background-image: url('assets/images/flag_of_botswana.png');
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  padding: 20px;
-  position: relative;
-  min-height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Add overlay for readability */
-#ig-status::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.1);
-  border-radius: 10px;
-}
-
-/* Style the container paragraph */
-#ig-status p {
-  color: white !important;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
-  z-index: 2;
-  position: relative;
-  flex-grow: 1;
-  text-align: center;
-  margin: 0 20px !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Space out the title and version specifically */
-#ig-status p span:first-child {
-  margin-bottom: 15px !important;
-  display: block;
-}
-
-#ig-status p br + span {
-  margin-top: 15px !important;
-  display: block;
-}
-
-/* Add logos as pseudo-elements */
-#ig-status::after {
-  content: '';
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 80px;
-  height: 80px;
-  background-image: url('assets/images/bup-logo.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: rgba(255,255,255,0.95);
-  border-radius: 8px;
-  z-index: 2;
-}
-
-/* Add right logo */
-#ig-status {
-  background-image: 
-    url('assets/images/chop-logo.png'),
-    url('assets/images/flag_of_botswana.png');
-  background-position: 
-    right 20px center,
-    center center;
-  background-size: 
-    80px auto,
-    100% 100%;
-  background-repeat: no-repeat;
-}
-</style>
+    <!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -144,10 +32,10 @@ code, pre { font-size: 16px !important; }
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -155,18 +43,13 @@ code, pre { font-size: 16px !important; }
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5.11"}
-    h3,h4,h5,h6{--heading-prefix:"5.11"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.14"}
+    h3,h4,h5,h6{--heading-prefix:"5.14"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
         <!-- Placeholder for child template header declarations -->
 
-        <div id="hl7-nav">
-          <a id="hl7-logo" data-no-external="true" href="http://hl7.org">
-            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
-          </a>
-        </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Botswana AMR Implementation Guide</span>
@@ -293,7 +176,7 @@ code, pre { font-size: 16px !important; }
         
           Draft
           
-            as of 2025-07-09
+            as of 2026-03-13
           
         
       </td>
@@ -309,28 +192,28 @@ code, pre { font-size: 16px !important; }
 
 
 
-  <pre class="xml" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
+  <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
 &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet">ValueSet</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#id">value</a>=&quot;botswana-amr-interpretation&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.text">text</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/resource.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#id">value</a>=&quot;botswana-amr-interpretation&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/domainresource.html#ValueSet.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet botswana-amr-interpretation&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;botswana-amr-interpretation&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcbotswana-amr-interpretation&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;http://terminology.hl7.org/6.5.0/CodeSystem-v3-ObservationInterpretation.html&quot;&gt;&lt;code&gt;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&lt;/code&gt;&lt;/a&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://terminology.hl7.org/6.5.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-S&quot;&gt;S&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Susceptible&lt;/td&gt;&lt;td&gt;Bacterial strain inhibited by in vitro concentration of an antimicrobial agent that is associated with a high likelihood of therapeutic success. Reference: CLSI (http://www.clsi.org/Content/NavigationMenu/Resources/HarmonizedTerminologyDatabase/Harmonized\_Terminolo.htm) Synonym (earlier term): Sensitive Projects: ISO 20776-1, ISO 20776-2&lt;br/&gt;&lt;br/&gt;\[Note 1: Bacterial strains are categorized as susceptible by applying the appropriate breakpoints in a defined phenotypic system.\]&lt;br/&gt;&lt;br/&gt;\[Note 2: This breakpoint can be altered due to changes in circumstances (e.g., changes in commonly used drug dosages, emergence of new resistance mechanisms).\]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://terminology.hl7.org/6.5.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-I&quot;&gt;I&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intermediate&lt;/td&gt;&lt;td&gt;Bacterial strain inhibited in vitro by a concentration of an antimicrobial agent that is associated with uncertain therapeutic effect. Reference: CLSI (http://www.clsi.org/Content/NavigationMenu/Resources/HarmonizedTerminologyDatabase/Harmonized\_Terminolo.htm) Projects: ISO 20776-1, ISO 20776-2&lt;br/&gt;&lt;br/&gt;\[Note 1: Bacterial strains are categorized as intermediate by applying the appropriate breakpoints in a defined phenotypic test system.\]&lt;br/&gt;&lt;br/&gt;\[Note 2: This class of susceptibility implies that an infection due to the isolate can be appropriately treated in body sites where the drugs are physiologically concentrated or when a high dosage of drug can be used.\]&lt;br/&gt;&lt;br/&gt;\[Note 3: This class also indicates a &amp;quot;buffer zone,&amp;quot; to prevent small, uncontrolled, technical factors from causing major discrepancies in interpretations.\]&lt;br/&gt;&lt;br/&gt;\[Note 4: These breakpoints can be altered due to changes in circumstances (e.g., changes in commonly used drug dosages, emergence of new resistance mechanisms).\]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://terminology.hl7.org/6.5.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-R&quot;&gt;R&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Resistant&lt;/td&gt;&lt;td&gt;Bacterial strain inhibited in vitro by a concentration of an antimicrobial agent that is associated with a high likelihood of therapeutic failure. Reference: CLSI (http://www.clsi.org/Content/NavigationMenu/Resources/HarmonizedTerminologyDatabase/Harmonized\_Terminolo.htm) Projects: ISO 20776-1, ISO 20776-2&lt;br/&gt;&lt;br/&gt;\[Note 1: Bacterial strains are categorized as resistant by applying the appropriate breakpoints in a defined phenotypic test system.\]&lt;br/&gt;&lt;br/&gt;\[Note 2: This breakpoint can be altered due to changes in circumstances (e.g., changes in commonly used drug dosages, emergence of new resistance mechanisms).\]&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-  &lt;/text&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet botswana-amr-interpretation&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;botswana-amr-interpretation&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcbotswana-amr-interpretation&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;http://terminology.hl7.org/7.1.0/CodeSystem-v3-ObservationInterpretation.html&quot;&gt;&lt;code&gt;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&lt;/code&gt;&lt;/a&gt;&lt;span title=&quot;Version is not explicitly stated, which means it is fixed to 4.0.0, the version found through the package references&quot;&gt; version &amp;#x1F4E6;4.0.0&lt;/span&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://terminology.hl7.org/7.1.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-S&quot;&gt;S&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Susceptible&lt;/td&gt;&lt;td&gt;Bacterial strain inhibited by in vitro concentration of an antimicrobial agent that is associated with a high likelihood of therapeutic success. Reference: CLSI (http://www.clsi.org/Content/NavigationMenu/Resources/HarmonizedTerminologyDatabase/Harmonized\_Terminolo.htm) Synonym (earlier term): Sensitive Projects: ISO 20776-1, ISO 20776-2&lt;br/&gt;&lt;br/&gt;\[Note 1: Bacterial strains are categorized as susceptible by applying the appropriate breakpoints in a defined phenotypic system.\]&lt;br/&gt;&lt;br/&gt;\[Note 2: This breakpoint can be altered due to changes in circumstances (e.g., changes in commonly used drug dosages, emergence of new resistance mechanisms).\]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://terminology.hl7.org/7.1.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-I&quot;&gt;I&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intermediate&lt;/td&gt;&lt;td&gt;Bacterial strain inhibited in vitro by a concentration of an antimicrobial agent that is associated with uncertain therapeutic effect. Reference: CLSI (http://www.clsi.org/Content/NavigationMenu/Resources/HarmonizedTerminologyDatabase/Harmonized\_Terminolo.htm) Projects: ISO 20776-1, ISO 20776-2&lt;br/&gt;&lt;br/&gt;\[Note 1: Bacterial strains are categorized as intermediate by applying the appropriate breakpoints in a defined phenotypic test system.\]&lt;br/&gt;&lt;br/&gt;\[Note 2: This class of susceptibility implies that an infection due to the isolate can be appropriately treated in body sites where the drugs are physiologically concentrated or when a high dosage of drug can be used.\]&lt;br/&gt;&lt;br/&gt;\[Note 3: This class also indicates a &amp;quot;buffer zone,&amp;quot; to prevent small, uncontrolled, technical factors from causing major discrepancies in interpretations.\]&lt;br/&gt;&lt;br/&gt;\[Note 4: These breakpoints can be altered due to changes in circumstances (e.g., changes in commonly used drug dosages, emergence of new resistance mechanisms).\]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://terminology.hl7.org/7.1.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-R&quot;&gt;R&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Resistant&lt;/td&gt;&lt;td&gt;Bacterial strain inhibited in vitro by a concentration of an antimicrobial agent that is associated with a high likelihood of therapeutic failure. Reference: CLSI (http://www.clsi.org/Content/NavigationMenu/Resources/HarmonizedTerminologyDatabase/Harmonized\_Terminolo.htm) Projects: ISO 20776-1, ISO 20776-2&lt;br/&gt;&lt;br/&gt;\[Note 1: Bacterial strains are categorized as resistant by applying the appropriate breakpoints in a defined phenotypic test system.\]&lt;br/&gt;&lt;br/&gt;\[Note 2: This breakpoint can be altered due to changes in circumstances (e.g., changes in commonly used drug dosages, emergence of new resistance mechanisms).\]&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/<a href="http://hl7.org/fhir/R4B/domainresource.html#ValueSet.text">text</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.url">url</a>
        <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>=&quot;http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;0.1.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;BotswanaAMRInterpretation&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Botswana AMR Interpretation&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#dateTime">value</a>=&quot;2025-07-09T10:14:37-04:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#dateTime">value</a>=&quot;2026-03-13T15:05:11-04:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.publisher">publisher</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;University of Botswana Partnership&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;University of Botswana Partnership&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;https://github.com/Dokotela/bw-amr-ig&quot;/&gt;
-    &lt;/telecom&gt;
-  &lt;/contact&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.contact">contact</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.description">description</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>=&quot;Only Susceptible, Intermediate, or Resistant&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose">compose</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include">include</a>&gt;
@@ -339,18 +222,18 @@ code, pre { font-size: 16px !important; }
       &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;S&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Susceptible&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;I&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Intermediate&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;R&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Resistant&quot;/&gt;
-      &lt;/concept&gt;
-    &lt;/include&gt;
-  &lt;/compose&gt;
-&lt;/ValueSet&gt;</code></pre>
+      &lt;/<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include">include</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose">compose</a>&gt;
+&lt;/<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet">ValueSet</a>&gt;</code></pre>
 
 
   <!-- insert notes if present -->
@@ -374,7 +257,7 @@ code, pre { font-size: 16px !important; }
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/Dokotela/bw-amr-ig">University of Botswana Partnership</a>.  Package bw-amr-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Wed, Jul 9, 2025 10:14-0400">2025-07-09</span>
+          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/Dokotela/bw-amr-ig">University of Botswana Partnership</a>.  Package bw-amr-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Fri, Mar 13, 2026 15:05-0400">2026-03-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

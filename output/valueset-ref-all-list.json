@@ -13,6 +13,18 @@
       "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
     },
     {
+      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ast-method-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BotswanaAMRASTMethodVS",
+      "title" : "Botswana AMR AST Method",
+      "description" : "Antimicrobial susceptibility testing methods used in Botswana AMR surveillance",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
+    },
+    {
       "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-gram-stain-result-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -59,7 +71,7 @@
       "status" : "draft",
       "name" : "BotswanaAMROrganismVS",
       "title" : "Botswana AMR Organism ValueSet",
-      "description" : "Organisms identified in Botswana AMR surveillance using SNOMED CT codes and local codes for combinations",
+      "description" : "Organisms identified in Botswana AMR surveillance. Includes all descendants of SNOMED CT 'Organism' (410607006) plus local codes for organism combinations that labs report together.",
       "systems" : [
         "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
         "http://snomed.info/sct"
@@ -117,6 +129,18 @@
       "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation"
     },
     {
+      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ward-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BotswanaAMRWardTypeVS",
+      "title" : "Botswana AMR Ward Type",
+      "description" : "Ward/location types for AMR surveillance, aligned with WHONET location type and GLASS origin classification",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
       "version" : "4.3.0",
       "status" : "active",
@@ -142,10 +166,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
       "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
+      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
@@ -173,13 +197,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.79"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-patient.html" : "Botswana AMR Patient",
-      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
-      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
+      "StructureDefinition-botswana-amr-diagnostic-report.html" : "Botswana AMR DiagnosticReport",
       "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen",
-      "StructureDefinition-botswana-amr-diagnostic-report.html" : "Botswana AMR DiagnosticReport"
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
+      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
+      "StructureDefinition-botswana-amr-patient.html" : "Botswana AMR Patient",
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter",
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
+      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -193,10 +218,24 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
       "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
+      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "DiagnosisRole",
+      "title" : "DiagnosisRole",
+      "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diagnosis-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.49"],
+      "sources" : ["2.16.840.1.113883.4.642.3.49"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
@@ -227,6 +266,156 @@
       "StructureDefinition-botswana-amr-diagnostic-report.html" : "Botswana AMR DiagnosticReport"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "AdmitSource",
+      "title" : null,
+      "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/admit-source"],
+      "oids" : ["2.16.840.1.113883.4.642.3.257"],
+      "sources" : ["2.16.840.1.113883.4.642.3.257"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "Diet",
+      "title" : null,
+      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diet"],
+      "oids" : ["2.16.840.1.113883.4.642.3.255"],
+      "sources" : ["2.16.840.1.113883.4.642.3.255"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "DischargeDisposition",
+      "title" : null,
+      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/discharge-disposition"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.259"],
+      "sources" : ["2.16.840.1.113883.4.642.3.259"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "EncounterLocationStatus",
+      "title" : "EncounterLocationStatus",
+      "description" : "The status of the location.",
+      "systems" : ["http://hl7.org/fhir/encounter-location-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.262"],
+      "sources" : ["2.16.840.1.113883.4.642.3.262"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "ParticipantType",
+      "title" : null,
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/participant-type",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.250"],
+      "sources" : ["2.16.840.1.113883.4.642.3.250"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "EncounterReasonCodes",
+      "title" : "Encounter Reason Codes",
+      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.261"],
+      "sources" : ["2.16.840.1.113883.4.642.3.261"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "SpecialArrangements",
+      "title" : null,
+      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.253"],
+      "sources" : ["2.16.840.1.113883.4.642.3.253"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "SpecialCourtesy",
+      "title" : null,
+      "description" : "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.252"],
+      "sources" : ["2.16.840.1.113883.4.642.3.252"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "EncounterStatus",
+      "title" : "EncounterStatus",
+      "description" : "Current state of the encounter.",
+      "systems" : ["http://hl7.org/fhir/encounter-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.246"],
+      "sources" : ["2.16.840.1.113883.4.642.3.246"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-type",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "EncounterType",
+      "title" : null,
+      "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/encounter-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.248"],
+      "sources" : ["2.16.840.1.113883.4.642.3.248"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
       "version" : "4.3.0",
       "status" : "draft",
@@ -238,13 +427,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-patient.html" : "Botswana AMR Patient",
-      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
-      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
+      "StructureDefinition-botswana-amr-diagnostic-report.html" : "Botswana AMR DiagnosticReport",
       "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen",
-      "StructureDefinition-botswana-amr-diagnostic-report.html" : "Botswana AMR DiagnosticReport"
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
+      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
+      "StructureDefinition-botswana-amr-patient.html" : "Botswana AMR Patient",
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter",
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
+      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -259,6 +449,22 @@
       "uses" : {
       },
       "StructureDefinition-botswana-amr-patient.html" : "Botswana AMR Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "LocationType",
+      "title" : null,
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/location-physical-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.328"],
+      "sources" : ["2.16.840.1.113883.4.642.3.328"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -289,10 +495,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
       "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
+      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -306,10 +512,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
       "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
+      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -325,10 +531,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
       "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
+      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -342,9 +548,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
-      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation"
+      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
+      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -358,10 +563,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
       "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
+      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -378,6 +583,20 @@
       "StructureDefinition-botswana-amr-patient.html" : "Botswana AMR Patient"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+      "version" : "4.3.0",
+      "status" : "active",
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+      "oids" : ["2.16.840.1.113883.4.642.3.59"],
+      "sources" : ["2.16.840.1.113883.4.642.3.59"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
       "version" : "4.3.0",
       "status" : "draft",
@@ -392,10 +611,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
       "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
+      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -411,10 +630,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
       "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
+      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/report-codes",
@@ -448,13 +667,28 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-botswana-amr-patient.html" : "Botswana AMR Patient",
-      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation",
-      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
-      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
-      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
+      "StructureDefinition-botswana-amr-diagnostic-report.html" : "Botswana AMR DiagnosticReport",
       "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen",
-      "StructureDefinition-botswana-amr-diagnostic-report.html" : "Botswana AMR DiagnosticReport"
+      "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation",
+      "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation",
+      "StructureDefinition-botswana-amr-patient.html" : "Botswana AMR Patient",
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter",
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation",
+      "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-type",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "ServiceType",
+      "title" : null,
+      "description" : "This value set defines an example set of codes of service-types.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/service-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.518"],
+      "sources" : ["2.16.840.1.113883.4.642.3.518"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/specimen-collection-method",
@@ -513,8 +747,22 @@
       "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen"
     },
     {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "Hl7VSReAdmissionIndicator",
+      "title" : "hl7VS-re-admissionIndicator",
+      "description" : "Value Set of codes which are used to specify that a patient is being re-admitted to a healthcare facility from which they were discharged, and indicates the circumstances around such re-admission.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0092"],
+      "oids" : ["2.16.840.1.113883.21.40"],
+      "sources" : ["2.16.840.1.113883.21.40"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter"
+    },
+    {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0371",
-      "version" : "2.0.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "Hl7VSAdditivePreservative",
       "title" : "hl7VS-additivePreservative",
@@ -528,7 +776,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0493",
-      "version" : "2.0.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "Hl7VSSpecimenCondition",
       "title" : "hl7VS-specimenCondition",
@@ -542,7 +790,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0916",
-      "version" : "2.0.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "Hl7VSRelevantClincialInformation",
       "title" : "hl7VS-relevantClincialInformation",
@@ -553,6 +801,34 @@
       "uses" : {
       },
       "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActEncounterCode",
+      "title" : "ActEncounterCode",
+      "description" : "Domain provides codes that qualify the ActEncounterClass (ENC)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "oids" : ["2.16.840.1.113883.1.11.13955"],
+      "sources" : ["2.16.840.1.113883.1.11.13955"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActPriority",
+      "title" : "ActPriority",
+      "description" : "A code or set of codes (e.g., for routine, emergency,) specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.\r\n\r\n*Discussion:* This attribute is used in orders to indicate the ordered priority, and in event documentation it indicates the actual priority used to perform the act. In definition mood it indicates the available priorities.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+      "oids" : ["2.16.840.1.113883.1.11.16866"],
+      "sources" : ["2.16.840.1.113883.1.11.16866"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter"
     }
   ]
 }

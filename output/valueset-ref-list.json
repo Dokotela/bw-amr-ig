@@ -13,6 +13,18 @@
       "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
     },
     {
+      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ast-method-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BotswanaAMRASTMethodVS",
+      "title" : "Botswana AMR AST Method",
+      "description" : "Antimicrobial susceptibility testing methods used in Botswana AMR surveillance",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
+    },
+    {
       "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-gram-stain-result-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -59,7 +71,7 @@
       "status" : "draft",
       "name" : "BotswanaAMROrganismVS",
       "title" : "Botswana AMR Organism ValueSet",
-      "description" : "Organisms identified in Botswana AMR surveillance using SNOMED CT codes and local codes for combinations",
+      "description" : "Organisms identified in Botswana AMR surveillance. Includes all descendants of SNOMED CT 'Organism' (410607006) plus local codes for organism combinations that labs report together.",
       "systems" : [
         "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
         "http://snomed.info/sct"
@@ -115,6 +127,18 @@
       "uses" : {
       },
       "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation"
+    },
+    {
+      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ward-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BotswanaAMRWardTypeVS",
+      "title" : "Botswana AMR Ward Type",
+      "description" : "Ward/location types for AMR surveillance, aligned with WHONET location type and GLASS origin classification",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "uses" : {
+      },
+      "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter"
     }
   ]
 }

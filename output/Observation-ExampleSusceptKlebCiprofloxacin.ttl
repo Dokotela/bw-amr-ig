@@ -1,0 +1,105 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://bw.health.gov/fhir/Observation/ExampleSusceptKlebCiprofloxacin> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleSusceptKlebCiprofloxacin"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"^^xsd:anyURI ;
+       fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation>
+     ] [
+       fhir:v "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SusceptibilityObservation"^^xsd:anyURI ;
+       fhir:l <http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SusceptibilityObservation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ExampleSusceptKlebCiprofloxacin</b></p><a name=\"ExampleSusceptKlebCiprofloxacin\"> </a><a name=\"hcExampleSusceptKlebCiprofloxacin\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-botswana-amr-susceptibility-observation.html\">Botswana AMR Susceptibility Observation</a>, <code>http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SusceptibilityObservation</code></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://loinc.org 18725-2}\">Microbiology studies (set)</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 185-9}\">Ciprofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatientMotswana.html\">Keabetswe Motswana  Female, DoB: 1981-05-14</a></p><p><b>effective</b>: 2026-03-11 14:00:00+0200</p><p><b>value</b>: 25 mm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm = 'mm')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation S}\">Susceptible</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 115254003}\">Disc diffusion method</span></p><p><b>specimen</b>: <a href=\"Specimen-ExampleSpecimenUrine.html\">Specimen: identifier = PMH-2026-U4421; type = Urine</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "laboratory" ] ;
+       fhir:display [ fhir:v "Laboratory" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       a loinc:18725-2 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "18725-2" ] ;
+       fhir:display [ fhir:v "Microbiology studies (set)" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:185-9 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "185-9" ] ;
+       fhir:display [ fhir:v "Ciprofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://bw.health.gov/fhir/Patient/ExamplePatientMotswana> ;
+     fhir:reference [ fhir:v "Patient/ExamplePatientMotswana" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2026-03-11T14:00:00+02:00"^^xsd:dateTime
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "25"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "mm" ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
+     fhir:code [ fhir:v "mm" ]
+  ] ; # 
+  fhir:interpretation ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation>
+       ] ;
+       fhir:version [ fhir:v "CLSI 2025" ] ;
+       fhir:code [ fhir:v "S" ] ;
+       fhir:display [ fhir:v "Susceptible" ]
+     ] )
+  ] ) ; # 
+  fhir:method [
+     fhir:coding ( [
+       a sct:115254003 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "115254003" ] ;
+       fhir:display [ fhir:v "Disc diffusion method" ]
+     ] )
+  ] ; # 
+  fhir:specimen [
+     fhir:l <http://bw.health.gov/fhir/Specimen/ExampleSpecimenUrine> ;
+     fhir:reference [ fhir:v "Specimen/ExampleSpecimenUrine" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

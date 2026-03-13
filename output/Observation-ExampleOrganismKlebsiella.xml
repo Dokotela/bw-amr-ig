@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ExampleOrganismKlebsiella"/>
+  <meta>
+    <profile value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation"/>
+    <profile value="http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-OrganismObservation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ExampleOrganismKlebsiella</b></p><a name="ExampleOrganismKlebsiella"> </a><a name="hcExampleOrganismKlebsiella"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-botswana-amr-organism-observation.html">Botswana AMR Organism Identification Observation</a>, <code>http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-OrganismObservation</code></p></div><p><b>identifier</b>: isolate-2</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span>, <span title="Codes:{http://loinc.org 18725-2}">Microbiology studies (set)</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 634-6}">Bacteria identified in Specimen by Culture</span></p><p><b>subject</b>: <a href="Patient-ExamplePatientMotswana.html">Keabetswe Motswana  Female, DoB: 1981-05-14</a></p><p><b>effective</b>: 2026-03-11 09:00:00+0200</p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 56415008}">Klebsiella pneumoniae</span></p><p><b>method</b>: <span title="Codes:{http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs vitek}">Vitek automated system</span></p><p><b>specimen</b>: <a href="Specimen-ExampleSpecimenUrine.html">Specimen: identifier = PMH-2026-U4421; type = Urine</a></p><p><b>hasMember</b>: </p><ul><li><a href="Observation-ExampleSusceptKlebAmpicillin.html">Observation Ampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)</a></li><li><a href="Observation-ExampleSusceptKlebAmoxClav.html">Observation Amoxicillin+Clavulanate [Susceptibility] by Minimum inhibitory concentration (MIC)</a></li><li><a href="Observation-ExampleSusceptKlebCeftriaxone.html">Observation Ceftriaxone [Susceptibility] by Minimum inhibitory concentration (MIC)</a></li><li><a href="Observation-ExampleSusceptKlebCiprofloxacin.html">Observation Ciprofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)</a></li><li><a href="Observation-ExampleSusceptKlebGentamicin.html">Observation Gentamicin [Susceptibility] by Minimum inhibitory concentration (MIC)</a></li><li><a href="Observation-ExampleSusceptKlebMeropenem.html">Observation Meropenem [Susceptibility] by Minimum inhibitory concentration (MIC)</a></li><li><a href="Observation-ExampleSpecialTestKlebEsbl.html">Observation Extended spectrum beta lactamase [Presence] in Isolate</a></li></ul></div>
+  </text>
+  <identifier>
+    <value value="isolate-2"/>
+  </identifier>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="18725-2"/>
+      <display value="Microbiology studies (set)"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="634-6"/>
+      <display value="Bacteria identified in Specimen by Culture"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplePatientMotswana"/>
+  </subject>
+  <effectiveDateTime value="2026-03-11T09:00:00+02:00"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="56415008"/>
+      <display value="Klebsiella pneumoniae"/>
+    </coding>
+  </valueCodeableConcept>
+  <method>
+    <coding>
+      <system value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs"/>
+      <code value="vitek"/>
+      <display value="Vitek automated system"/>
+    </coding>
+  </method>
+  <specimen>
+    <reference value="Specimen/ExampleSpecimenUrine"/>
+  </specimen>
+  <hasMember>
+    <reference value="Observation/ExampleSusceptKlebAmpicillin"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/ExampleSusceptKlebAmoxClav"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/ExampleSusceptKlebCeftriaxone"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/ExampleSusceptKlebCiprofloxacin"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/ExampleSusceptKlebGentamicin"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/ExampleSusceptKlebMeropenem"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/ExampleSpecialTestKlebEsbl"/>
+  </hasMember>
+</Observation>

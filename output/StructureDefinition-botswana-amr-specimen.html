@@ -23,119 +23,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
   	<link href="assets/css/cqf.css" rel="stylesheet" />
-    <style>
-html { font-size: 18px !important; }
-body { font-size: 18px !important; }
-* { font-size: inherit !important; }
-p, li, div, span, td, th { font-size: 18px !important; line-height: 1.6 !important; }
-
-/* Make headings smaller */
-h1 { font-size: 1.3em !important; }
-h2 { font-size: 1.2em !important; }
-h3 { font-size: 1.1em !important; }
-h4 { font-size: 1.05em !important; }
-h5 { font-size: 1.0em !important; }
-h6 { font-size: 0.95em !important; }
-
-/* Target specific elements that are too big */
-.copy-text { font-size: 16px !important; }
-table.colsd td { font-size: 16px !important; }
-table.colsd i { font-size: 16px !important; }
-
-code, pre { font-size: 16px !important; }
-
-/* Add more space between the title area and navigation menu */
-.navbar, .nav-tabs, .page-header + .nav, .breadcrumb {
-  margin-top: 20px !important;
-}
-
-/* Hide HL7 logo */
-#hl7-nav, #hl7-logo { display: none !important; }
-
-/* Style the existing title area with background and logos */
-#ig-status {
-  background-image: url('assets/images/flag_of_botswana.png');
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  padding: 20px;
-  position: relative;
-  min-height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Add overlay for readability */
-#ig-status::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.1);
-  border-radius: 10px;
-}
-
-/* Style the container paragraph */
-#ig-status p {
-  color: white !important;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
-  z-index: 2;
-  position: relative;
-  flex-grow: 1;
-  text-align: center;
-  margin: 0 20px !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Space out the title and version specifically */
-#ig-status p span:first-child {
-  margin-bottom: 15px !important;
-  display: block;
-}
-
-#ig-status p br + span {
-  margin-top: 15px !important;
-  display: block;
-}
-
-/* Add logos as pseudo-elements */
-#ig-status::after {
-  content: '';
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 80px;
-  height: 80px;
-  background-image: url('assets/images/bup-logo.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: rgba(255,255,255,0.95);
-  border-radius: 8px;
-  z-index: 2;
-}
-
-/* Add right logo */
-#ig-status {
-  background-image: 
-    url('assets/images/chop-logo.png'),
-    url('assets/images/flag_of_botswana.png');
-  background-position: 
-    right 20px center,
-    center center;
-  background-size: 
-    80px auto,
-    100% 100%;
-  background-repeat: no-repeat;
-}
-</style>
+    <!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -146,10 +34,10 @@ code, pre { font-size: 16px !important; }
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -157,18 +45,13 @@ code, pre { font-size: 16px !important; }
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5.6"}
-    h3,h4,h5,h6{--heading-prefix:"5.6"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.8"}
+    h3,h4,h5,h6{--heading-prefix:"5.8"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
         <!-- Placeholder for child template header declarations -->
 
-        <div id="hl7-nav">
-          <a id="hl7-logo" data-no-external="true" href="http://hl7.org">
-            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
-          </a>
-        </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Botswana AMR Implementation Guide</span>
@@ -278,6 +161,16 @@ code, pre { font-size: 16px !important; }
 
 
 
+  
+    
+      <li>
+        <a href="StructureDefinition-botswana-amr-specimen-examples.html">Examples</a>
+      </li>
+    
+  
+
+
+
 
   
     <li>
@@ -336,7 +229,7 @@ code, pre { font-size: 16px !important; }
         
           Draft
           
-            as of 2025-07-09
+            as of 2026-03-13
           
         
       </td>
@@ -366,8 +259,9 @@ code, pre { font-size: 16px !important; }
 <p><b>Usages:</b></p>
 <ul>
  <li>Refer to this Profile: <a href="StructureDefinition-botswana-amr-diagnostic-report.html">Botswana AMR DiagnosticReport</a>, <a href="StructureDefinition-botswana-amr-gram-stain-observation.html">Botswana AMR Gram Stain Observation</a>, <a href="StructureDefinition-botswana-amr-organism-observation.html">Botswana AMR Organism Identification Observation</a>, <a href="StructureDefinition-botswana-amr-special-test-observation.html">Botswana AMR Special Test Observation</a> and <a href="StructureDefinition-botswana-amr-susceptibility-observation.html">Botswana AMR Susceptibility Observation</a></li>
+ <li>Examples for this Profile: <a href="Specimen-ExampleSpecimenUrine.html">Specimen/ExampleSpecimenUrine</a></li>
 </ul>
-
+<p>You can also check for <a href="https://packages2.fhir.org/xig/bw-amr-ig|current/StructureDefinition/botswana-amr-specimen">usages in the FHIR IG Statistics</a></p>
 
   <!-- no uri -->
   <a name="profile"> </a>
@@ -450,7 +344,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>(<a href="StructureDefinition-botswana-amr-patient.html">Botswana AMR Patient</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Where the specimen came from. This may be from patient(s), from a location (e.g., the source of an environmental sample), or a sampling of a substance or a device</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fa6531f1-77d7-4868-86ac-80545c1f9910
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 9c3076be-9d27-45b6-895a-ad268425705b
 document.getElementById('cbbotswana-amr-specimenK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('botswana-amr-specimenK'), 'binding', document.getElementById('cbbotswana-amr-specimenK-binding').checked, document.getElementById('ppbotswana-amr-specimenK'));
 document.getElementById('cbbotswana-amr-specimenK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -460,10 +354,55 @@ filterDesc(document.getElementById('botswana-amr-specimenK'), 'obligation', docu
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Specimen.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#required">required</a></td><td title="Codes providing the status/availability of a specimen."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-specimen-status.html">SpecimenStatus</a><div><code>http://hl7.org/fhir/ValueSet/specimen-status|4.3.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/specimen-status|4.3.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Specimen.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-botswana-amr-specimen-type-vs.html">BotswanaAMRSpecimenTypeVS</a><div><code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs"></button></div><div>From this IG</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.status</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Codes providing the status/availability of a specimen.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-specimen-status.html">SpecimenStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/specimen-status|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.type</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-botswana-amr-specimen-type-vs.html">Botswana AMR Specimen Type VS</a>
+      <button data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
 </table>
 
         
@@ -473,15 +412,91 @@ filterDesc(document.getElementById('botswana-amr-specimenK'), 'obligation', docu
             <a name="inv-key"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Specimen</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Specimen</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where(((id.exists() and ('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url)))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(uri) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Specimen</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Specimen</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Specimen</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Specimen</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Specimen</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where(((id.exists() and ('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url)))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(uri) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Specimen</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Specimen</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Specimen</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -497,9 +512,9 @@ filterDesc(document.getElementById('botswana-amr-specimenK'), 'obligation', docu
           <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="botswana-amr-specimenD" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element" data-no-external="true">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description &amp; Constraints</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('botswana-amr-specimenD'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('botswana-amr-specimenD'), document.getElementById('ppbotswana-amr-specimenD'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppbotswana-amr-specimenD">Bindings <input onClick="filterDesc(document.getElementById('botswana-amr-specimenD'), 'binding',event.target.checked, document.getElementById('ppbotswana-amr-specimenD'))" size="1" name="binding" checked="true" id="cbbotswana-amr-specimenD-binding" type="checkbox"/><br/>Constraints <input onClick="filterDesc(document.getElementById('botswana-amr-specimenD'), 'constraint',event.target.checked, document.getElementById('ppbotswana-amr-specimenD'))" size="1" name="constraint" checked="true" id="cbbotswana-amr-specimenD-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('botswana-amr-specimenD'), 'obligation',event.target.checked, document.getElementById('ppbotswana-amr-specimenD'))" size="1" name="obligation" checked="true" id="cbbotswana-amr-specimenD-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-botswana-amr-specimen-definitions.html#Specimen" data-no-external="true">Specimen</a><a name="Specimen"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/specimen.html">Specimen</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Sample for analysis</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-botswana-amr-specimen-definitions.html#Specimen.meta" data-no-external="true">meta</a><a name="Specimen.meta"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
@@ -555,7 +570,7 @@ filterDesc(document.getElementById('botswana-amr-specimenK'), 'obligation', docu
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Anatomical collection site</span><br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-botswana-amr-specimen-site-vs.html" title="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs" class="binding">Botswana AMR Specimen Collection Sites</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4B/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fa6531f1-77d7-4868-86ac-80545c1f9910
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 9c3076be-9d27-45b6-895a-ad268425705b
 document.getElementById('cbbotswana-amr-specimenD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('botswana-amr-specimenD'), 'binding', document.getElementById('cbbotswana-amr-specimenD-binding').checked, document.getElementById('ppbotswana-amr-specimenD'));
 document.getElementById('cbbotswana-amr-specimenD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -566,10 +581,53 @@ filterDesc(document.getElementById('botswana-amr-specimenD'), 'obligation', docu
           <a name="tx"> </a>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Specimen.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-botswana-amr-specimen-type-vs.html">BotswanaAMRSpecimenTypeVS</a><div><code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>Specimen.collection.bodySite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="ValueSet-botswana-amr-specimen-site-vs.html">BotswanaAMRSpecimenSiteVS</a><div><code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs"></button></div><div>From this IG</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.type</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td>
+      <a style="opacity: 0.5" href="ValueSet-botswana-amr-specimen-type-vs.html">Botswana AMR Specimen Type VS</a>
+      <button data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Specimen.collection.​bodySite</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td>
+      <a style="opacity: 0.5" href="ValueSet-botswana-amr-specimen-site-vs.html">Botswana AMR Specimen Collection Sites</a>
+      <button data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
 </table>
 
         
@@ -764,7 +822,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aqg" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-botswana-amr-specimen-definitions.html#Specimen.collection.quantity" title="The quantity of specimen collected; for instance the volume of a blood sample, or the physical measurement of an anatomic pathology sample." data-no-external="true">quantity</a><a name="s-Specimen.collection.quantity"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#SimpleQuantity" title="Quantity">SimpleQuantity</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#SimpleQuantity" title="Quantity">SimpleQuantity(4.3.0)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The quantity of specimen collected</td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aqh" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-botswana-amr-specimen-definitions.html#Specimen.collection.method" title="A coded value specifying the technique that is used to perform the procedure." data-no-external="true">method</a><a name="s-Specimen.collection.method"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
@@ -780,7 +838,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Whether or how long patient abstained from food and/or drink<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/6.5.0/ValueSet-v2-0916.html" title="http://terminology.hl7.org/ValueSet/v2-0916" class="binding">hl7VS-relevantClincialInformation</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4B/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Codes describing the fasting status of the patient.</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Whether or how long patient abstained from food and/or drink<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.1.0/ValueSet-v2-0916.html" title="http://terminology.hl7.org/ValueSet/v2-0916" class="binding">hl7VS-relevantClincialInformation</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4B/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Codes describing the fasting status of the patient.</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aqja" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.">fastingStatusCodeableConcept</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
@@ -883,18 +941,18 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="asg" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-botswana-amr-specimen-definitions.html#Specimen.container.capacity" title="The capacity (volume or other measure) the container may contain." data-no-external="true">capacity</a><a name="s-Specimen.container.capacity"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#SimpleQuantity" title="Quantity">SimpleQuantity</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#SimpleQuantity" title="Quantity">SimpleQuantity(4.3.0)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Container volume or size</td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ash" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-botswana-amr-specimen-definitions.html#Specimen.container.specimenQuantity" title="The quantity of specimen in the container; may be volume, dimensions, or other appropriate measurements, depending on the specimen type." data-no-external="true">specimenQuantity</a><a name="s-Specimen.container.specimenQuantity"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#SimpleQuantity" title="Quantity">SimpleQuantity</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#SimpleQuantity" title="Quantity">SimpleQuantity(4.3.0)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Quantity of specimen within container</td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="asi" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Choice of Types" class="hierarchy"/> <a no-external="true" href="StructureDefinition-botswana-amr-specimen-definitions.html#Specimen.container.additive[x]" title="Introduced substance to preserve, maintain or enhance the specimen. Examples: Formalin, Citrate, EDTA." data-no-external="true">additive[x]</a><a name="s-Specimen.container.additive_x_"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Additive associated with container<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/6.5.0/ValueSet-v2-0371.html" title="http://terminology.hl7.org/ValueSet/v2-0371" class="binding">hl7VS-additivePreservative</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4B/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Substance added to specimen container.</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Additive associated with container<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.1.0/ValueSet-v2-0371.html" title="http://terminology.hl7.org/ValueSet/v2-0371" class="binding">hl7VS-additivePreservative</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4B/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Substance added to specimen container.</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="asia" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.">additiveCodeableConcept</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
@@ -909,13 +967,13 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">State of the specimen<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/6.5.0/ValueSet-v2-0493.html" title="http://terminology.hl7.org/ValueSet/v2-0493" class="binding">hl7VS-specimenCondition</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4B/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Codes describing the state of the specimen.</span><br/></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">State of the specimen<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.1.0/ValueSet-v2-0493.html" title="http://terminology.hl7.org/ValueSet/v2-0493" class="binding">hl7VS-specimenCondition</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4B/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Codes describing the state of the specimen.</span><br/></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="au" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-botswana-amr-specimen-definitions.html#Specimen.note" title="To communicate any details or issues about the specimen or during the specimen collection. (for example: broken vial, sent with patient, frozen)." data-no-external="true">note</a><a name="s-Specimen.note"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#Annotation">Annotation</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Comments<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fa6531f1-77d7-4868-86ac-80545c1f9910
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 9c3076be-9d27-45b6-895a-ad268425705b
 document.getElementById('cbbotswana-amr-specimenS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('botswana-amr-specimenS'), 'binding', document.getElementById('cbbotswana-amr-specimenS-binding').checked, document.getElementById('ppbotswana-amr-specimenS'));
 document.getElementById('cbbotswana-amr-specimenS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -925,36 +983,203 @@ filterDesc(document.getElementById('botswana-amr-specimenS'), 'obligation', docu
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Specimen.meta.security</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-security-labels.html">All Security Labels</a><div><code>http://hl7.org/fhir/ValueSet/security-labels</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/security-labels"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Specimen.meta.tag</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#example">example</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-common-tags.html">CommonTags</a><div><code>http://hl7.org/fhir/ValueSet/common-tags</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/common-tags"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Specimen.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#preferred">preferred</a></td><td title="IETF language tag"><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-languages.html">CommonLanguages</a><div><code>http://hl7.org/fhir/ValueSet/languages</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/languages"></button></div><div>From the FHIR Standard</div><table class="grid">
+<table class="list" data-fhir="generated-heirarchy">
   <tr>
-    <td style="font-size: 11px">
-      <b>Additional Bindings</b>
+    <td>
+      <b>Path</b>
     </td>
-    <td style="font-size: 11px">Purpose</td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
   </tr>
   <tr>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4B/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
+    <td>Specimen.meta.security</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[extensible]">extensible</a>
     </td>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4B/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-security-labels.html">SecurityLabels</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-labels|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
     </td>
   </tr>
-</table>
-</td></tr>
-<tr><td>Specimen.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#required">required</a></td><td title="Codes providing the status/availability of a specimen."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-specimen-status.html">SpecimenStatus</a><div><code>http://hl7.org/fhir/ValueSet/specimen-status|4.3.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/specimen-status|4.3.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Specimen.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-botswana-amr-specimen-type-vs.html">BotswanaAMRSpecimenTypeVS</a><div><code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>Specimen.collection.method</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#example">example</a></td><td title="The  technique that is used to perform the procedure."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-specimen-collection-method.html">FHIRSpecimenCollectionMethod</a><div><code>http://hl7.org/fhir/ValueSet/specimen-collection-method</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/specimen-collection-method"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Specimen.collection.bodySite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="ValueSet-botswana-amr-specimen-site-vs.html">BotswanaAMRSpecimenSiteVS</a><div><code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>Specimen.collection.fastingStatus[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#extensible">extensible</a></td><td title="Codes describing the fasting status of the patient."><a style="opacity: 1.0" href="http://terminology.hl7.org/6.5.0/ValueSet-v2-0916.html">Hl7VSRelevantClincialInformation</a><div><code>http://terminology.hl7.org/ValueSet/v2-0916</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0916"></button></div></td></tr>
-<tr><td>Specimen.processing.procedure</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#example">example</a></td><td title="Type indicating the technique used to process the specimen."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-specimen-processing-procedure.html">SpecimenProcessingProcedure</a><div><code>http://hl7.org/fhir/ValueSet/specimen-processing-procedure</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/specimen-processing-procedure"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Specimen.container.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#example">example</a></td><td title="Type of specimen container."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-specimen-container-type.html">SpecimenContainer</a><div><code>http://hl7.org/fhir/ValueSet/specimen-container-type</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/specimen-container-type"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Specimen.container.additive[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#example">example</a></td><td title="Substance added to specimen container."><a style="opacity: 1.0" href="http://terminology.hl7.org/6.5.0/ValueSet-v2-0371.html">Hl7VSAdditivePreservative</a><div><code>http://terminology.hl7.org/ValueSet/v2-0371</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0371"></button></div></td></tr>
-<tr><td>Specimen.condition</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#extensible">extensible</a></td><td title="Codes describing the state of the specimen."><a style="opacity: 1.0" href="http://terminology.hl7.org/6.5.0/ValueSet-v2-0493.html">Hl7VSSpecimenCondition</a><div><code>http://terminology.hl7.org/ValueSet/v2-0493</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0493"></button></div></td></tr>
+  <tr>
+    <td>Specimen.meta.tag</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-common-tags.html">Common Tags</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/common-tags|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.language</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td title="IETF language tag">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-languages.html">Common Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.status</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Codes providing the status/availability of a specimen.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-specimen-status.html">SpecimenStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/specimen-status|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.type</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-botswana-amr-specimen-type-vs.html">Botswana AMR Specimen Type VS</a>
+      <button data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Specimen.collection.​method</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="The  technique that is used to perform the procedure.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-specimen-collection-method.html">FHIR Specimen Collection Method</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/specimen-collection-method|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.collection.​bodySite</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-botswana-amr-specimen-site-vs.html">Botswana AMR Specimen Collection Sites</a>
+      <button data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Specimen.collection.​fastingStatus[x]</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="Codes describing the fasting status of the patient.">
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.1.0/ValueSet-v2-0916.html">hl7VS-relevantClincialInformation</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0916" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 3.0.0, the version found through the package references">&#x1F4E6;3.0.0</td>
+    <td>
+      <a href="http://terminology.hl7.org/7.1.0">THO v7.1</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.processing.​procedure</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="Type indicating the technique used to process the specimen.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-specimen-processing-procedure.html">SpecimenProcessingProcedure</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/specimen-processing-procedure|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.container.type</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="Type of specimen container.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-specimen-container-type.html">SpecimenContainer</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/specimen-container-type|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.container.additive[x]</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="Substance added to specimen container.">
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.1.0/ValueSet-v2-0371.html">hl7VS-additivePreservative</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0371" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 3.0.0, the version found through the package references">&#x1F4E6;3.0.0</td>
+    <td>
+      <a href="http://terminology.hl7.org/7.1.0">THO v7.1</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.condition</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="Codes describing the state of the specimen.">
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.1.0/ValueSet-v2-0493.html">hl7VS-specimenCondition</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0493" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 3.0.0, the version found through the package references">&#x1F4E6;3.0.0</td>
+    <td>
+      <a href="http://terminology.hl7.org/7.1.0">THO v7.1</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -964,16 +1189,100 @@ filterDesc(document.getElementById('botswana-amr-specimenS'), 'obligation', docu
             <a name="inv-snap"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Specimen</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Specimen</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where(((id.exists() and ('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url)))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(uri) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Specimen</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Specimen</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Specimen</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>dom-r4b</td><td>warning</td><td>Specimen.contained</td><td>Containing new R4B resources within R4 resources may cause interoperability issues if instances are shared with R4 systems<br/>: ($this is Citation or $this is Evidence or $this is EvidenceReport or $this is EvidenceVariable or $this is MedicinalProductDefinition or $this is PackagedProductDefinition or $this is AdministrableProductDefinition or $this is Ingredient or $this is ClinicalUseDefinition or $this is RegulatedAuthorization or $this is SubstanceDefinition or $this is SubscriptionStatus or $this is SubscriptionTopic) implies (%resource is Citation or %resource is Evidence or %resource is EvidenceReport or %resource is EvidenceVariable or %resource is MedicinalProductDefinition or %resource is PackagedProductDefinition or %resource is AdministrableProductDefinition or %resource is Ingredient or %resource is ClinicalUseDefinition or %resource is RegulatedAuthorization or %resource is SubstanceDefinition or %resource is SubscriptionStatus or %resource is SubscriptionTopic)</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Specimen</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Specimen</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where(((id.exists() and ('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url)))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(uri) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Specimen</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Specimen</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Specimen</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-r4b</td>
+    <td>warning</td>
+    <td>Specimen.contained</td>
+    <td>Containing new R4B resources within R4 resources may cause interoperability issues if instances are shared with R4 systems</td>
+    <td>
+      <code>($this is Citation or $this is Evidence or $this is EvidenceReport or $this is EvidenceVariable or $this is MedicinalProductDefinition or $this is PackagedProductDefinition or $this is AdministrableProductDefinition or $this is Ingredient or $this is ClinicalUseDefinition or $this is RegulatedAuthorization or $this is SubstanceDefinition or $this is SubscriptionStatus or $this is SubscriptionTopic) implies (%resource is Citation or %resource is Evidence or %resource is EvidenceReport or %resource is EvidenceVariable or %resource is MedicinalProductDefinition or %resource is PackagedProductDefinition or %resource is AdministrableProductDefinition or %resource is Ingredient or %resource is ClinicalUseDefinition or %resource is RegulatedAuthorization or %resource is SubstanceDefinition or %resource is SubscriptionStatus or %resource is SubscriptionTopic)</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1022,8 +1331,8 @@ filterDesc(document.getElementById('botswana-amr-specimenS'), 'obligation', docu
     "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.type" title="The kind of material that forms the specimen" class="dict"><span style="text-decoration: underline">type</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4B/null.html" style="color: navy">Kind of material that forms the specimen</a></span>
     "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.subject" title="Where the specimen came from. This may be from patient(s), from a location (e.g., the source of an environmental sample), or a sampling of a substance or a device" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>([CanonicalType[http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient]])}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Where the specimen came from. This may be from patient(s), from a location (e.g., the source of an environmental sample), or a sampling of a substance or a device</span>
     "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.receivedTime" title="Time when specimen was received for processing or testing" class="dict"><span style="text-decoration: underline">receivedTime</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">The time when specimen was received for processing</span>
-    "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.parent" title="Reference to the parent (source) specimen which is used when the specimen was either derived from or a component of another specimen" class="dict"><span style="text-decoration: underline">parent</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/specimen.html">Specimen</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Specimen from which this specimen originated</span>
-    "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.request" title="Details concerning a service request that required a specimen to be collected" class="dict"><span style="text-decoration: underline">request</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/servicerequest.html">ServiceRequest</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Why the specimen was collected</span>
+    "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.parent" title="Reference to the parent (source) specimen which is used when the specimen was either derived from or a component of another specimen" class="dict"><span style="text-decoration: underline">parent</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(Specimen|4.3.0)}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Specimen from which this specimen originated</span>
+    "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.request" title="Details concerning a service request that required a specimen to be collected" class="dict"><span style="text-decoration: underline">request</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(ServiceRequest|4.3.0)}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Why the specimen was collected</span>
     "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.collection" title="Details concerning the specimen collection" class="dict"><span style="text-decoration: underline">collection</span></a>" : { <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Collection details</span>
       "extension": [
         { // <span style="color: navy; opacity: 0.8"> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows one element"><b>Only One!</b></span> Specimen Collection Location</span>
@@ -1031,7 +1340,7 @@ filterDesc(document.getElementById('botswana-amr-specimenS'), 'obligation', docu
           "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.collection.extension.valueReference" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4B/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueReference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/location.html">Location</a></span>)} <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Value of extension</span>
         }
       ],
-      "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.collection.collector" title="Person who collected the specimen" class="dict"><span style="text-decoration: underline">collector</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/practitioner.html">Practitioner</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who collected the specimen</span>
+      "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.collection.collector" title="Person who collected the specimen" class="dict"><span style="text-decoration: underline">collector</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(Practitioner|4.3.0)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who collected the specimen</span>
       "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.collection.collectedDateTime" title="Time when specimen was collected from subject - the physiologically relevant time" class="dict"><span style="text-decoration: underline">collectedDateTime</span></a>" : [ <span style="color: navy"></span>
         { // <span style="color: navy; opacity: 0.8">Collection time</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span>
         // from Element: <a href="http://hl7.org/fhir/R4B/extensibility.html">extension</a>
@@ -1050,7 +1359,7 @@ filterDesc(document.getElementById('botswana-amr-specimenS'), 'obligation', docu
       ],
       "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.processing.description" title="Textual description of procedure" class="dict"><span style="text-decoration: underline">description</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Textual description of procedure</span>
       "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.processing.procedure" title="A coded value specifying the procedure used to process the specimen" class="dict"><span style="text-decoration: underline">procedure</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4B/null.html" style="color: navy">Indicates the treatment step  applied to the specimen</a></span>
-      "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.processing.additive" title="Material used in the processing step" class="dict"><span style="text-decoration: underline">additive</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/substance.html">Substance</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Material used in the processing step</span>
+      "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.processing.additive" title="Material used in the processing step" class="dict"><span style="text-decoration: underline">additive</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(Substance|4.3.0)}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Material used in the processing step</span>
 <span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Date and time of specimen processing</span>. One of these 2:</span>
       "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.processing.timeDateTime" title="A record of the time or period when the specimen processing occurred.  For example the time of sample fixation or the period of time the sample was in formalin" class="dict"><span style="text-decoration: underline">timeDateTime</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Date and time of specimen processing</span>
       "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.processing.timePeriod" title="A record of the time or period when the specimen processing occurred.  For example the time of sample fixation or the period of time the sample was in formalin" class="dict"><span style="text-decoration: underline">timePeriod</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#Period">Period</a></span>} <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Date and time of specimen processing</span>
@@ -1065,7 +1374,7 @@ filterDesc(document.getElementById('botswana-amr-specimenS'), 'obligation', docu
       "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.container.specimenQuantity" title="The quantity of specimen in the container; may be volume, dimensions, or other appropriate measurements, depending on the specimen type" class="dict"><span style="text-decoration: underline">specimenQuantity</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity">Quantity</a></span> (as <span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#SimpleQuantity#Quantity">SimpleQuantity</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Quantity of specimen within container</span>
 <span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Additive associated with container</span>. One of these 2:</span>
       "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.container.additiveCodeableConcept" title="Introduced substance to preserve, maintain or enhance the specimen. Examples: Formalin, Citrate, EDTA" class="dict"><span style="text-decoration: underline">additiveCodeableConcept</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4B/null.html" style="color: navy">Additive associated with container</a></span>
-      "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.container.additiveReference" title="Introduced substance to preserve, maintain or enhance the specimen. Examples: Formalin, Citrate, EDTA" class="dict"><span style="text-decoration: underline">additiveReference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/substance.html">Substance</a></span>)} <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4B/null.html" style="color: navy">Additive associated with container</a></span>
+      "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.container.additiveReference" title="Introduced substance to preserve, maintain or enhance the specimen. Examples: Formalin, Citrate, EDTA" class="dict"><span style="text-decoration: underline">additiveReference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(Substance|4.3.0)} <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4B/null.html" style="color: navy">Additive associated with container</a></span>
     }],
     "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.condition" title="A mode or state of being that describes the nature of the specimen" class="dict"><span style="text-decoration: underline">condition</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4B/null.html" style="color: navy">State of the specimen</a></span>
     "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.note" title="To communicate any details or issues about the specimen or during the specimen collection. (for example: broken vial, sent with patient, frozen)" class="dict"><span style="text-decoration: underline">note</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#Annotation">Annotation</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Comments</span>
@@ -1167,7 +1476,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>(<a href="StructureDefinition-botswana-amr-patient.html">Botswana AMR Patient</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Where the specimen came from. This may be from patient(s), from a location (e.g., the source of an environmental sample), or a sampling of a substance or a device</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fa6531f1-77d7-4868-86ac-80545c1f9910
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 9c3076be-9d27-45b6-895a-ad268425705b
 document.getElementById('cbbotswana-amr-specimenKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('botswana-amr-specimenKA'), 'binding', document.getElementById('cbbotswana-amr-specimenKA-binding').checked, document.getElementById('ppbotswana-amr-specimenKA'));
 document.getElementById('cbbotswana-amr-specimenKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1177,10 +1486,55 @@ filterDesc(document.getElementById('botswana-amr-specimenKA'), 'obligation', doc
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Specimen.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#required">required</a></td><td title="Codes providing the status/availability of a specimen."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-specimen-status.html">SpecimenStatus</a><div><code>http://hl7.org/fhir/ValueSet/specimen-status|4.3.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/specimen-status|4.3.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Specimen.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-botswana-amr-specimen-type-vs.html">BotswanaAMRSpecimenTypeVS</a><div><code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs"></button></div><div>From this IG</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.status</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Codes providing the status/availability of a specimen.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-specimen-status.html">SpecimenStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/specimen-status|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.type</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-botswana-amr-specimen-type-vs.html">Botswana AMR Specimen Type VS</a>
+      <button data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
 </table>
 
         
@@ -1190,15 +1544,91 @@ filterDesc(document.getElementById('botswana-amr-specimenKA'), 'obligation', doc
             <a name="inv-all-key"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Specimen</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Specimen</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where(((id.exists() and ('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url)))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(uri) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Specimen</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Specimen</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Specimen</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Specimen</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Specimen</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where(((id.exists() and ('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url)))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(uri) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Specimen</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Specimen</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Specimen</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1214,9 +1644,9 @@ filterDesc(document.getElementById('botswana-amr-specimenKA'), 'obligation', doc
           <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="botswana-amr-specimenDA" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element" data-no-external="true">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description &amp; Constraints</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('botswana-amr-specimenDA'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('botswana-amr-specimenDA'), document.getElementById('ppbotswana-amr-specimenDA'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppbotswana-amr-specimenDA">Bindings <input onClick="filterDesc(document.getElementById('botswana-amr-specimenDA'), 'binding',event.target.checked, document.getElementById('ppbotswana-amr-specimenDA'))" size="1" name="binding" checked="true" id="cbbotswana-amr-specimenDA-binding" type="checkbox"/><br/>Constraints <input onClick="filterDesc(document.getElementById('botswana-amr-specimenDA'), 'constraint',event.target.checked, document.getElementById('ppbotswana-amr-specimenDA'))" size="1" name="constraint" checked="true" id="cbbotswana-amr-specimenDA-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('botswana-amr-specimenDA'), 'obligation',event.target.checked, document.getElementById('ppbotswana-amr-specimenDA'))" size="1" name="obligation" checked="true" id="cbbotswana-amr-specimenDA-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-botswana-amr-specimen-definitions.html#Specimen" data-no-external="true">Specimen</a><a name="a-Specimen"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/specimen.html">Specimen</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Sample for analysis</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-botswana-amr-specimen-definitions.html#Specimen.meta" data-no-external="true">meta</a><a name="a-Specimen.meta"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
@@ -1272,7 +1702,7 @@ filterDesc(document.getElementById('botswana-amr-specimenKA'), 'obligation', doc
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Anatomical collection site</span><br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-botswana-amr-specimen-site-vs.html" title="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs" class="binding">Botswana AMR Specimen Collection Sites</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4B/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fa6531f1-77d7-4868-86ac-80545c1f9910
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 9c3076be-9d27-45b6-895a-ad268425705b
 document.getElementById('cbbotswana-amr-specimenDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('botswana-amr-specimenDA'), 'binding', document.getElementById('cbbotswana-amr-specimenDA-binding').checked, document.getElementById('ppbotswana-amr-specimenDA'));
 document.getElementById('cbbotswana-amr-specimenDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1282,10 +1712,53 @@ filterDesc(document.getElementById('botswana-amr-specimenDA'), 'obligation', doc
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Specimen.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-botswana-amr-specimen-type-vs.html">BotswanaAMRSpecimenTypeVS</a><div><code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>Specimen.collection.bodySite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="ValueSet-botswana-amr-specimen-site-vs.html">BotswanaAMRSpecimenSiteVS</a><div><code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs"></button></div><div>From this IG</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.type</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td>
+      <a style="opacity: 0.5" href="ValueSet-botswana-amr-specimen-type-vs.html">Botswana AMR Specimen Type VS</a>
+      <button data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Specimen.collection.​bodySite</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td>
+      <a style="opacity: 0.5" href="ValueSet-botswana-amr-specimen-site-vs.html">Botswana AMR Specimen Collection Sites</a>
+      <button data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
 </table>
 
         
@@ -1480,7 +1953,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aqg" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-botswana-amr-specimen-definitions.html#Specimen.collection.quantity" title="The quantity of specimen collected; for instance the volume of a blood sample, or the physical measurement of an anatomic pathology sample." data-no-external="true">quantity</a><a name="sa-Specimen.collection.quantity"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#SimpleQuantity" title="Quantity">SimpleQuantity</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#SimpleQuantity" title="Quantity">SimpleQuantity(4.3.0)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The quantity of specimen collected</td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aqh" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-botswana-amr-specimen-definitions.html#Specimen.collection.method" title="A coded value specifying the technique that is used to perform the procedure." data-no-external="true">method</a><a name="sa-Specimen.collection.method"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
@@ -1496,7 +1969,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Whether or how long patient abstained from food and/or drink<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/6.5.0/ValueSet-v2-0916.html" title="http://terminology.hl7.org/ValueSet/v2-0916" class="binding">hl7VS-relevantClincialInformation</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4B/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Codes describing the fasting status of the patient.</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Whether or how long patient abstained from food and/or drink<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.1.0/ValueSet-v2-0916.html" title="http://terminology.hl7.org/ValueSet/v2-0916" class="binding">hl7VS-relevantClincialInformation</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4B/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Codes describing the fasting status of the patient.</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aqja" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.">fastingStatusCodeableConcept</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
@@ -1599,18 +2072,18 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="asg" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-botswana-amr-specimen-definitions.html#Specimen.container.capacity" title="The capacity (volume or other measure) the container may contain." data-no-external="true">capacity</a><a name="sa-Specimen.container.capacity"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#SimpleQuantity" title="Quantity">SimpleQuantity</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#SimpleQuantity" title="Quantity">SimpleQuantity(4.3.0)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Container volume or size</td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ash" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-botswana-amr-specimen-definitions.html#Specimen.container.specimenQuantity" title="The quantity of specimen in the container; may be volume, dimensions, or other appropriate measurements, depending on the specimen type." data-no-external="true">specimenQuantity</a><a name="sa-Specimen.container.specimenQuantity"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#SimpleQuantity" title="Quantity">SimpleQuantity</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#SimpleQuantity" title="Quantity">SimpleQuantity(4.3.0)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Quantity of specimen within container</td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="asi" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Choice of Types" class="hierarchy"/> <a no-external="true" href="StructureDefinition-botswana-amr-specimen-definitions.html#Specimen.container.additive[x]" title="Introduced substance to preserve, maintain or enhance the specimen. Examples: Formalin, Citrate, EDTA." data-no-external="true">additive[x]</a><a name="sa-Specimen.container.additive_x_"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Additive associated with container<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/6.5.0/ValueSet-v2-0371.html" title="http://terminology.hl7.org/ValueSet/v2-0371" class="binding">hl7VS-additivePreservative</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4B/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Substance added to specimen container.</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Additive associated with container<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.1.0/ValueSet-v2-0371.html" title="http://terminology.hl7.org/ValueSet/v2-0371" class="binding">hl7VS-additivePreservative</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4B/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Substance added to specimen container.</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="asia" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.">additiveCodeableConcept</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
@@ -1625,13 +2098,13 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">State of the specimen<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/6.5.0/ValueSet-v2-0493.html" title="http://terminology.hl7.org/ValueSet/v2-0493" class="binding">hl7VS-specimenCondition</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4B/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Codes describing the state of the specimen.</span><br/></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">State of the specimen<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.1.0/ValueSet-v2-0493.html" title="http://terminology.hl7.org/ValueSet/v2-0493" class="binding">hl7VS-specimenCondition</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4B/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Codes describing the state of the specimen.</span><br/></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="au" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-botswana-amr-specimen-definitions.html#Specimen.note" title="To communicate any details or issues about the specimen or during the specimen collection. (for example: broken vial, sent with patient, frozen)." data-no-external="true">note</a><a name="sa-Specimen.note"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#Annotation">Annotation</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Comments<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fa6531f1-77d7-4868-86ac-80545c1f9910
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 9c3076be-9d27-45b6-895a-ad268425705b
 document.getElementById('cbbotswana-amr-specimenSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('botswana-amr-specimenSA'), 'binding', document.getElementById('cbbotswana-amr-specimenSA-binding').checked, document.getElementById('ppbotswana-amr-specimenSA'));
 document.getElementById('cbbotswana-amr-specimenSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1641,36 +2114,203 @@ filterDesc(document.getElementById('botswana-amr-specimenSA'), 'obligation', doc
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Specimen.meta.security</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-security-labels.html">All Security Labels</a><div><code>http://hl7.org/fhir/ValueSet/security-labels</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/security-labels"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Specimen.meta.tag</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#example">example</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-common-tags.html">CommonTags</a><div><code>http://hl7.org/fhir/ValueSet/common-tags</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/common-tags"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Specimen.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#preferred">preferred</a></td><td title="IETF language tag"><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-languages.html">CommonLanguages</a><div><code>http://hl7.org/fhir/ValueSet/languages</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/languages"></button></div><div>From the FHIR Standard</div><table class="grid">
+<table class="list" data-fhir="generated-heirarchy">
   <tr>
-    <td style="font-size: 11px">
-      <b>Additional Bindings</b>
+    <td>
+      <b>Path</b>
     </td>
-    <td style="font-size: 11px">Purpose</td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
   </tr>
   <tr>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4B/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
+    <td>Specimen.meta.security</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[extensible]">extensible</a>
     </td>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4B/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-security-labels.html">SecurityLabels</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-labels|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
     </td>
   </tr>
-</table>
-</td></tr>
-<tr><td>Specimen.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#required">required</a></td><td title="Codes providing the status/availability of a specimen."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-specimen-status.html">SpecimenStatus</a><div><code>http://hl7.org/fhir/ValueSet/specimen-status|4.3.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/specimen-status|4.3.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Specimen.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-botswana-amr-specimen-type-vs.html">BotswanaAMRSpecimenTypeVS</a><div><code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>Specimen.collection.method</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#example">example</a></td><td title="The  technique that is used to perform the procedure."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-specimen-collection-method.html">FHIRSpecimenCollectionMethod</a><div><code>http://hl7.org/fhir/ValueSet/specimen-collection-method</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/specimen-collection-method"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Specimen.collection.bodySite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="ValueSet-botswana-amr-specimen-site-vs.html">BotswanaAMRSpecimenSiteVS</a><div><code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>Specimen.collection.fastingStatus[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#extensible">extensible</a></td><td title="Codes describing the fasting status of the patient."><a style="opacity: 1.0" href="http://terminology.hl7.org/6.5.0/ValueSet-v2-0916.html">Hl7VSRelevantClincialInformation</a><div><code>http://terminology.hl7.org/ValueSet/v2-0916</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0916"></button></div></td></tr>
-<tr><td>Specimen.processing.procedure</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#example">example</a></td><td title="Type indicating the technique used to process the specimen."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-specimen-processing-procedure.html">SpecimenProcessingProcedure</a><div><code>http://hl7.org/fhir/ValueSet/specimen-processing-procedure</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/specimen-processing-procedure"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Specimen.container.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#example">example</a></td><td title="Type of specimen container."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-specimen-container-type.html">SpecimenContainer</a><div><code>http://hl7.org/fhir/ValueSet/specimen-container-type</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/specimen-container-type"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Specimen.container.additive[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#example">example</a></td><td title="Substance added to specimen container."><a style="opacity: 1.0" href="http://terminology.hl7.org/6.5.0/ValueSet-v2-0371.html">Hl7VSAdditivePreservative</a><div><code>http://terminology.hl7.org/ValueSet/v2-0371</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0371"></button></div></td></tr>
-<tr><td>Specimen.condition</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#extensible">extensible</a></td><td title="Codes describing the state of the specimen."><a style="opacity: 1.0" href="http://terminology.hl7.org/6.5.0/ValueSet-v2-0493.html">Hl7VSSpecimenCondition</a><div><code>http://terminology.hl7.org/ValueSet/v2-0493</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0493"></button></div></td></tr>
+  <tr>
+    <td>Specimen.meta.tag</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-common-tags.html">Common Tags</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/common-tags|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.language</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td title="IETF language tag">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-languages.html">Common Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.status</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Codes providing the status/availability of a specimen.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-specimen-status.html">SpecimenStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/specimen-status|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.type</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-botswana-amr-specimen-type-vs.html">Botswana AMR Specimen Type VS</a>
+      <button data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Specimen.collection.​method</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="The  technique that is used to perform the procedure.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-specimen-collection-method.html">FHIR Specimen Collection Method</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/specimen-collection-method|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.collection.​bodySite</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-botswana-amr-specimen-site-vs.html">Botswana AMR Specimen Collection Sites</a>
+      <button data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Specimen.collection.​fastingStatus[x]</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="Codes describing the fasting status of the patient.">
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.1.0/ValueSet-v2-0916.html">hl7VS-relevantClincialInformation</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0916" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 3.0.0, the version found through the package references">&#x1F4E6;3.0.0</td>
+    <td>
+      <a href="http://terminology.hl7.org/7.1.0">THO v7.1</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.processing.​procedure</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="Type indicating the technique used to process the specimen.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-specimen-processing-procedure.html">SpecimenProcessingProcedure</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/specimen-processing-procedure|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.container.type</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="Type of specimen container.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-specimen-container-type.html">SpecimenContainer</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/specimen-container-type|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.container.additive[x]</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="Substance added to specimen container.">
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.1.0/ValueSet-v2-0371.html">hl7VS-additivePreservative</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0371" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 3.0.0, the version found through the package references">&#x1F4E6;3.0.0</td>
+    <td>
+      <a href="http://terminology.hl7.org/7.1.0">THO v7.1</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Specimen.condition</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="Codes describing the state of the specimen.">
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.1.0/ValueSet-v2-0493.html">hl7VS-specimenCondition</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0493" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 3.0.0, the version found through the package references">&#x1F4E6;3.0.0</td>
+    <td>
+      <a href="http://terminology.hl7.org/7.1.0">THO v7.1</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -1680,16 +2320,100 @@ filterDesc(document.getElementById('botswana-amr-specimenSA'), 'obligation', doc
             <a name="inv-all-snap"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Specimen</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Specimen</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where(((id.exists() and ('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url)))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(uri) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Specimen</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Specimen</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Specimen</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>dom-r4b</td><td>warning</td><td>Specimen.contained</td><td>Containing new R4B resources within R4 resources may cause interoperability issues if instances are shared with R4 systems<br/>: ($this is Citation or $this is Evidence or $this is EvidenceReport or $this is EvidenceVariable or $this is MedicinalProductDefinition or $this is PackagedProductDefinition or $this is AdministrableProductDefinition or $this is Ingredient or $this is ClinicalUseDefinition or $this is RegulatedAuthorization or $this is SubstanceDefinition or $this is SubscriptionStatus or $this is SubscriptionTopic) implies (%resource is Citation or %resource is Evidence or %resource is EvidenceReport or %resource is EvidenceVariable or %resource is MedicinalProductDefinition or %resource is PackagedProductDefinition or %resource is AdministrableProductDefinition or %resource is Ingredient or %resource is ClinicalUseDefinition or %resource is RegulatedAuthorization or %resource is SubstanceDefinition or %resource is SubscriptionStatus or %resource is SubscriptionTopic)</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Specimen</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Specimen</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where(((id.exists() and ('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url)))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(uri) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Specimen</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Specimen</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Specimen</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-r4b</td>
+    <td>warning</td>
+    <td>Specimen.contained</td>
+    <td>Containing new R4B resources within R4 resources may cause interoperability issues if instances are shared with R4 systems</td>
+    <td>
+      <code>($this is Citation or $this is Evidence or $this is EvidenceReport or $this is EvidenceVariable or $this is MedicinalProductDefinition or $this is PackagedProductDefinition or $this is AdministrableProductDefinition or $this is Ingredient or $this is ClinicalUseDefinition or $this is RegulatedAuthorization or $this is SubstanceDefinition or $this is SubscriptionStatus or $this is SubscriptionTopic) implies (%resource is Citation or %resource is Evidence or %resource is EvidenceReport or %resource is EvidenceVariable or %resource is MedicinalProductDefinition or %resource is PackagedProductDefinition or %resource is AdministrableProductDefinition or %resource is Ingredient or %resource is ClinicalUseDefinition or %resource is RegulatedAuthorization or %resource is SubstanceDefinition or %resource is SubscriptionStatus or %resource is SubscriptionTopic)</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1738,8 +2462,8 @@ filterDesc(document.getElementById('botswana-amr-specimenSA'), 'obligation', doc
     "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.type" title="The kind of material that forms the specimen" class="dict"><span style="text-decoration: underline">type</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4B/null.html" style="color: navy">Kind of material that forms the specimen</a></span>
     "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.subject" title="Where the specimen came from. This may be from patient(s), from a location (e.g., the source of an environmental sample), or a sampling of a substance or a device" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>([CanonicalType[http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient]])}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Where the specimen came from. This may be from patient(s), from a location (e.g., the source of an environmental sample), or a sampling of a substance or a device</span>
     "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.receivedTime" title="Time when specimen was received for processing or testing" class="dict"><span style="text-decoration: underline">receivedTime</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">The time when specimen was received for processing</span>
-    "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.parent" title="Reference to the parent (source) specimen which is used when the specimen was either derived from or a component of another specimen" class="dict"><span style="text-decoration: underline">parent</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/specimen.html">Specimen</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Specimen from which this specimen originated</span>
-    "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.request" title="Details concerning a service request that required a specimen to be collected" class="dict"><span style="text-decoration: underline">request</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/servicerequest.html">ServiceRequest</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Why the specimen was collected</span>
+    "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.parent" title="Reference to the parent (source) specimen which is used when the specimen was either derived from or a component of another specimen" class="dict"><span style="text-decoration: underline">parent</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(Specimen|4.3.0)}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Specimen from which this specimen originated</span>
+    "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.request" title="Details concerning a service request that required a specimen to be collected" class="dict"><span style="text-decoration: underline">request</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(ServiceRequest|4.3.0)}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Why the specimen was collected</span>
     "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.collection" title="Details concerning the specimen collection" class="dict"><span style="text-decoration: underline">collection</span></a>" : { <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Collection details</span>
       "extension": [
         { // <span style="color: navy; opacity: 0.8"> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows one element"><b>Only One!</b></span> Specimen Collection Location</span>
@@ -1747,7 +2471,7 @@ filterDesc(document.getElementById('botswana-amr-specimenSA'), 'obligation', doc
           "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.collection.extension.valueReference" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4B/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueReference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/location.html">Location</a></span>)} <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Value of extension</span>
         }
       ],
-      "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.collection.collector" title="Person who collected the specimen" class="dict"><span style="text-decoration: underline">collector</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/practitioner.html">Practitioner</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who collected the specimen</span>
+      "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.collection.collector" title="Person who collected the specimen" class="dict"><span style="text-decoration: underline">collector</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(Practitioner|4.3.0)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who collected the specimen</span>
       "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.collection.collectedDateTime" title="Time when specimen was collected from subject - the physiologically relevant time" class="dict"><span style="text-decoration: underline">collectedDateTime</span></a>" : [ <span style="color: navy"></span>
         { // <span style="color: navy; opacity: 0.8">Collection time</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span>
         // from Element: <a href="http://hl7.org/fhir/R4B/extensibility.html">extension</a>
@@ -1766,7 +2490,7 @@ filterDesc(document.getElementById('botswana-amr-specimenSA'), 'obligation', doc
       ],
       "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.processing.description" title="Textual description of procedure" class="dict"><span style="text-decoration: underline">description</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Textual description of procedure</span>
       "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.processing.procedure" title="A coded value specifying the procedure used to process the specimen" class="dict"><span style="text-decoration: underline">procedure</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4B/null.html" style="color: navy">Indicates the treatment step  applied to the specimen</a></span>
-      "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.processing.additive" title="Material used in the processing step" class="dict"><span style="text-decoration: underline">additive</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/substance.html">Substance</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Material used in the processing step</span>
+      "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.processing.additive" title="Material used in the processing step" class="dict"><span style="text-decoration: underline">additive</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(Substance|4.3.0)}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Material used in the processing step</span>
 <span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Date and time of specimen processing</span>. One of these 2:</span>
       "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.processing.timeDateTime" title="A record of the time or period when the specimen processing occurred.  For example the time of sample fixation or the period of time the sample was in formalin" class="dict"><span style="text-decoration: underline">timeDateTime</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Date and time of specimen processing</span>
       "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.processing.timePeriod" title="A record of the time or period when the specimen processing occurred.  For example the time of sample fixation or the period of time the sample was in formalin" class="dict"><span style="text-decoration: underline">timePeriod</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#Period">Period</a></span>} <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Date and time of specimen processing</span>
@@ -1781,7 +2505,7 @@ filterDesc(document.getElementById('botswana-amr-specimenSA'), 'obligation', doc
       "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.container.specimenQuantity" title="The quantity of specimen in the container; may be volume, dimensions, or other appropriate measurements, depending on the specimen type" class="dict"><span style="text-decoration: underline">specimenQuantity</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity">Quantity</a></span> (as <span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#SimpleQuantity#Quantity">SimpleQuantity</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Quantity of specimen within container</span>
 <span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Additive associated with container</span>. One of these 2:</span>
       "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.container.additiveCodeableConcept" title="Introduced substance to preserve, maintain or enhance the specimen. Examples: Formalin, Citrate, EDTA" class="dict"><span style="text-decoration: underline">additiveCodeableConcept</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4B/null.html" style="color: navy">Additive associated with container</a></span>
-      "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.container.additiveReference" title="Introduced substance to preserve, maintain or enhance the specimen. Examples: Formalin, Citrate, EDTA" class="dict"><span style="text-decoration: underline">additiveReference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/substance.html">Substance</a></span>)} <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4B/null.html" style="color: navy">Additive associated with container</a></span>
+      "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.container.additiveReference" title="Introduced substance to preserve, maintain or enhance the specimen. Examples: Formalin, Citrate, EDTA" class="dict"><span style="text-decoration: underline">additiveReference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(Substance|4.3.0)} <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4B/null.html" style="color: navy">Additive associated with container</a></span>
     }],
     "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.condition" title="A mode or state of being that describes the nature of the specimen" class="dict"><span style="text-decoration: underline">condition</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4B/null.html" style="color: navy">State of the specimen</a></span>
     "<a href="StructureDefinition-botswana-amr-specimen.html#Specimen.note" title="To communicate any details or issues about the specimen or during the specimen collection. (for example: broken vial, sent with patient, frozen)" class="dict"><span style="text-decoration: underline">note</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#Annotation">Annotation</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Comments</span>
@@ -1866,7 +2590,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/Dokotela/bw-amr-ig">University of Botswana Partnership</a>.  Package bw-amr-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Wed, Jul 9, 2025 10:14-0400">2025-07-09</span>
+          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/Dokotela/bw-amr-ig">University of Botswana Partnership</a>.  Package bw-amr-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Fri, Mar 13, 2026 15:05-0400">2026-03-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
