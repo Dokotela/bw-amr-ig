@@ -3,8 +3,7 @@
   "id": "ExampleSpecimenUrine",
   "meta": {
     "profile": [
-      "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen",
-      "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Specimen"
+      "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-specimen"
     ]
   },
   "identifier": [
@@ -40,7 +39,7 @@
         {
           "code": "258574006",
           "system": "http://snomed.info/sct",
-          "display": "Mid-stream urine specimen collection"
+          "display": "Mid-stream urine sample"
         }
       ]
     }

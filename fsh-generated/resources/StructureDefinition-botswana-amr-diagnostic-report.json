@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "botswana-amr-diagnostic-report",
-  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report",
+  "url": "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-diagnostic-report",
   "name": "BotswanaAMRDiagnosticReport",
   "title": "Botswana AMR DiagnosticReport",
   "status": "draft",
@@ -14,11 +14,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "DiagnosticReport.meta.profile",
-        "path": "DiagnosticReport.meta.profile",
-        "patternCanonical": "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-DiagnosticReport"
-      },
       {
         "id": "DiagnosticReport.status",
         "path": "DiagnosticReport.status",
@@ -60,9 +55,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "58321-0",
+              "code": "85421-6",
               "system": "http://loinc.org",
-              "display": "Bacteria identified and antimicrobial susceptibility panel"
+              "display": "Bacterial identification and susceptibility panel - Isolate"
             }
           ]
         }
@@ -75,7 +70,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient"
+              "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-patient"
             ]
           }
         ]
@@ -87,7 +82,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-encounter"
+              "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-encounter"
             ]
           }
         ]
@@ -140,7 +135,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen"
+              "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-specimen"
             ]
           }
         ]
@@ -169,7 +164,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation"
+              "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-gram-stain-observation"
             ]
           }
         ]
@@ -184,7 +179,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation"
+              "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-organism-observation"
             ]
           }
         ]

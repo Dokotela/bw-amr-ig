@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "botswana-amr-patient",
-  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient",
+  "url": "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-patient",
   "name": "BotswanaAMRPatient",
   "title": "Botswana AMR Patient",
   "status": "draft",
@@ -14,11 +14,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Patient.meta.profile",
-        "path": "Patient.meta.profile",
-        "patternCanonical": "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Patient"
-      },
       {
         "id": "Patient.name",
         "path": "Patient.name",

@@ -7,8 +7,6 @@ Id: botswana-amr-diagnostic-report
 Title: "Botswana AMR DiagnosticReport"
 Description: "Bundles AMR culture results into one comprehensive report. References top-level observations (gram stain and organism identifications). Susceptibility and special test results are accessed via OrganismObservation.hasMember."
 
-* meta.profile = "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-DiagnosticReport"
-
 // Standard microbiology category coding for discoverability
 * category 1..*
 * category ^slicing.discriminator.type = #pattern
@@ -19,7 +17,7 @@ Description: "Bundles AMR culture results into one comprehensive report. Referen
 
 * status = #final
 
-* code = LNC#58321-0 "Bacteria identified and antimicrobial susceptibility panel"
+* code = LNC#85421-6 "Bacterial identification and susceptibility panel - Isolate"
 
 * subject 1..1
 * subject only Reference(BotswanaAMRPatient)

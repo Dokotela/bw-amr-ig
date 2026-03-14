@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "botswana-amr-special-test-observation",
-  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation",
+  "url": "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-special-test-observation",
   "name": "BotswanaAMRSpecialTestObservation",
   "title": "Botswana AMR Special Test Observation",
   "status": "draft",
@@ -23,14 +23,9 @@
             "severity": "error",
             "human": "If there is no value, a dataAbsentReason must be provided",
             "expression": "value.exists() or dataAbsentReason.exists()",
-            "source": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation"
+            "source": "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-special-test-observation"
           }
         ]
-      },
-      {
-        "id": "Observation.meta.profile",
-        "path": "Observation.meta.profile",
-        "patternCanonical": "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SpecialTestObservation"
       },
       {
         "id": "Observation.status",
@@ -88,7 +83,7 @@
         "path": "Observation.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-special-test-vs"
+          "valueSet": "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-special-test-vs"
         }
       },
       {
@@ -159,7 +154,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs"
+          "valueSet": "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-test-result-status-vs"
         }
       },
       {
@@ -170,7 +165,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen"
+              "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-specimen"
             ]
           }
         ]

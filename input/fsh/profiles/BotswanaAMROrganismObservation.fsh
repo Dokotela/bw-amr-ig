@@ -10,7 +10,6 @@ Title: "Botswana AMR Organism Identification Observation"
 Description: "Records organism identification results from culture in Botswana AMR surveillance. Acts as the parent observation for susceptibility and special test results via hasMember."
 
 * status = #final
-* meta.profile = "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-OrganismObservation"
 
 // Standard microbiology category coding for discoverability
 * category 1..*
@@ -22,7 +21,7 @@ Description: "Records organism identification results from culture in Botswana A
 * category[microbiologyStudies] = LNC#18725-2 "Microbiology studies (set)"
 
 // LOINC code for organism identification
-* code = LNC#634-6 "Bacteria identified in Specimen by Culture"
+* code = LNC#634-6 "Bacteria identified in Specimen by Aerobe culture"
 
 // Identified organism from our organism valueset
 * valueCodeableConcept 1..1

@@ -3,8 +3,7 @@
   "id": "ExamplePatientMotswana",
   "meta": {
     "profile": [
-      "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient",
-      "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Patient"
+      "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-patient"
     ]
   },
   "name": [

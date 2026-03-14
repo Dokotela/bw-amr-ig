@@ -4,7 +4,7 @@ Usage: #definition
 Title: "Export WHONET Flat File"
 Description: "Exports AMR DiagnosticReport data as a WHONET-compatible flat file or GLASS submission file. The operation flattens the FHIR resource graph (DiagnosticReport -> OrganismObservation -> SusceptibilityObservation) into isolate-centric rows suitable for WHONET import or WHO GLASS batch upload."
 
-* url = "http://bw.health.gov/fhir/OperationDefinition/export-whonet"
+* url = "http://bw.health.gov/fhir/amr/OperationDefinition/ExportWHONET"
 * version = "0.1.0"
 * name = "ExportWHONET"
 * status = #draft

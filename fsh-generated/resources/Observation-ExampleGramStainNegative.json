@@ -3,8 +3,7 @@
   "id": "ExampleGramStainNegative",
   "meta": {
     "profile": [
-      "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation",
-      "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-GramStainObservation"
+      "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-gram-stain-observation"
     ]
   },
   "status": "final",
@@ -49,7 +48,7 @@
       {
         "code": "87172008",
         "system": "http://snomed.info/sct",
-        "display": "Gram-negative"
+        "display": "Gram-negative bacillus"
       }
     ]
   }

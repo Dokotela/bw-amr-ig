@@ -5,7 +5,7 @@
   "id": "botswana-amr-ward-type-vs",
   "title": "Botswana AMR Ward Type",
   "description": "Ward/location types for AMR surveillance, aligned with WHONET location type and GLASS origin classification",
-  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ward-type-vs",
+  "url": "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-ward-type-vs",
   "compose": {
     "include": [
       {

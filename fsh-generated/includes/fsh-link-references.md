@@ -43,3 +43,7 @@
 [ExampleSusceptKlebGentamicin]: Observation-ExampleSusceptKlebGentamicin.html
 [ExampleSusceptKlebMeropenem]: Observation-ExampleSusceptKlebMeropenem.html
 [SpecimenCollectionLocation]: StructureDefinition-specimen-collection-location.html
+[WHONETAntibioticToLOINC]: ConceptMap-whonet-antibiotic-to-loinc.html
+[WHONETAntibioticToSNOMED]: ConceptMap-whonet-antibiotic-to-snomed.html
+[WHONETAntibioticToATC]: ConceptMap-whonet-antibiotic-to-atc.html
+[WHONETOrganismToSNOMED]: ConceptMap-whonet-organism-to-snomed.html

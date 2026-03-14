@@ -9,7 +9,6 @@ Title: "Botswana AMR Special Test Observation"
 Description: "Records special AMR test results (ESBL, Carbapenemase, D-Zone, MRSA) in Botswana AMR surveillance. Should be referenced from the parent OrganismObservation via hasMember."
 
 * status = #final
-* meta.profile = "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SpecialTestObservation"
 
 // Standard microbiology category coding for discoverability
 * category 1..*

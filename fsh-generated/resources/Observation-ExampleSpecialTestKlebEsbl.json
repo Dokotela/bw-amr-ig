@@ -3,8 +3,7 @@
   "id": "ExampleSpecialTestKlebEsbl",
   "meta": {
     "profile": [
-      "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation",
-      "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SpecialTestObservation"
+      "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-special-test-observation"
     ]
   },
   "status": "final",

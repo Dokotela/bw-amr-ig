@@ -7,8 +7,6 @@ Id: botswana-amr-encounter
 Title: "Botswana AMR Encounter"
 Description: "Captures the clinical encounter context for AMR surveillance: ward type (inpatient/outpatient/ICU), admission date, department, and facility. Required for WHONET export and GLASS hospital-acquired vs community-acquired classification."
 
-* meta.profile = "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Encounter"
-
 * status = #finished
 
 // Ward type: inpatient, outpatient, emergency, ICU

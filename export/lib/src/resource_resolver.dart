@@ -180,9 +180,8 @@ class ResourceResolver {
       final method = _mapAstMethod(
         obs.method?.coding?.firstOrNull?.code?.valueString,
       );
-      final breakpointVersion = obs
-          .interpretation?.firstOrNull?.coding?.firstOrNull?.version
-          ?.valueString;
+      final breakpointVersion =
+          obs.interpretation?.firstOrNull?.text?.valueString;
 
       antibiotics[whonetCode] = AntibioticResult(
         sir: sir,
@@ -226,10 +225,10 @@ class ResourceResolver {
     // Map LOINC special test codes to WHONET field names
     final field = switch (loincCode) {
       '99596-9' => 'ESBL',
-      '101214-7' => 'CARB',
-      '33747-0' => 'MRSA',
-      '6984-4' => 'BLAC',
-      '18895-8' => null, // D-zone — not a standard WHONET column
+      '86930-5' => 'CARB',
+      '13317-3' => 'MRSA',
+      '6985-6' => 'BLAC',
+      '42720-3' => null, // D-zone — not a standard WHONET column
       _ => null,
     };
     if (field == null) return null;
@@ -281,8 +280,8 @@ class ResourceResolver {
 
   static String? _mapAstMethod(String? snomedCode) => switch (snomedCode) {
         '115254003' => 'DISK',
-        '91461000' => 'MIC',
-        '89588004' => 'ETEST',
+        '263696007' => 'MIC',
+        '104234003' => 'ETEST',
         '702873001' => 'AUTO',
         _ => null,
       };

@@ -8,7 +8,7 @@
   "status": "draft",
   "description": "Maps WHONET organism codes to SNOMED CT concepts. Derived from the AMR R package (https://github.com/msberends/AMR) which integrates WHONET organism codes with SNOMED CT mappings. Contains 4995 WHONET organism codes.",
   "sourceUri": "http://whonet.org/CodeSystem/organism",
-  "targetUri": "http://snomed.info/sct",
+  "targetUri": "http://snomed.info/sct?fhir_vs",
   "group": [
     {
       "source": "http://whonet.org/CodeSystem/organism",

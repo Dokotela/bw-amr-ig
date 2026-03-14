@@ -3,8 +3,7 @@
   "id": "ExampleSusceptEcoliTmpSmx",
   "meta": {
     "profile": [
-      "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
-      "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SusceptibilityObservation"
+      "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"
     ]
   },
   "status": "final",
@@ -56,10 +55,10 @@
         {
           "code": "R",
           "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-          "display": "Resistant",
-          "version": "CLSI 2025"
+          "display": "Resistant"
         }
-      ]
+      ],
+      "text": "CLSI 2025"
     }
   ],
   "method": {

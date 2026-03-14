@@ -3,8 +3,7 @@
   "id": "ExampleDiagnosticReportAMR",
   "meta": {
     "profile": [
-      "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report",
-      "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-DiagnosticReport"
+      "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-diagnostic-report"
     ]
   },
   "status": "final",
@@ -22,9 +21,9 @@
   "code": {
     "coding": [
       {
-        "code": "58321-0",
+        "code": "85421-6",
         "system": "http://loinc.org",
-        "display": "Bacteria identified and antimicrobial susceptibility panel"
+        "display": "Bacterial identification and susceptibility panel - Isolate"
       }
     ]
   },

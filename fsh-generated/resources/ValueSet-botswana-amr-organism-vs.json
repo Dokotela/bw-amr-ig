@@ -5,7 +5,7 @@
   "id": "botswana-amr-organism-vs",
   "title": "Botswana AMR Organism ValueSet",
   "description": "Organisms identified in Botswana AMR surveillance. Includes all descendants of SNOMED CT 'Organism' (410607006) plus local codes for organism combinations that labs report together.",
-  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs",
+  "url": "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs",
   "compose": {
     "include": [
       {
@@ -19,7 +19,7 @@
         ]
       },
       {
-        "system": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs"
+        "system": "http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-organism-cs"
       }
     ]
   }

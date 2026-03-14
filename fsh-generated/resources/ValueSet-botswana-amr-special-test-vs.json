@@ -5,7 +5,7 @@
   "id": "botswana-amr-special-test-vs",
   "title": "Botswana AMR Special Tests",
   "description": "Special antimicrobial resistance tests performed in Botswana AMR surveillance",
-  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-special-test-vs",
+  "url": "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-special-test-vs",
   "compose": {
     "include": [
       {
@@ -16,20 +16,20 @@
             "display": "Extended spectrum beta lactamase [Presence] in Isolate"
           },
           {
-            "code": "101214-7",
-            "display": "Carbapenemase [Presence] in Isolate by Molecular method"
+            "code": "86930-5",
+            "display": "Carbapenemase [Presence] in Isolate"
           },
           {
-            "code": "18895-8",
-            "display": "Clindamycin inducible resistance [Susceptibility] by Disk diffusion (KB)"
+            "code": "42720-3",
+            "display": "Clindamycin.induced [Susceptibility] by Disk diffusion (KB)"
           },
           {
-            "code": "33747-0",
-            "display": "Methicillin resistant Staphylococcus aureus [Presence] in Specimen"
+            "code": "13317-3",
+            "display": "Methicillin resistant Staphylococcus aureus [Presence] in Specimen by Organism specific culture"
           },
           {
-            "code": "6984-4",
-            "display": "Beta lactamase [Presence] in Isolate"
+            "code": "6985-6",
+            "display": "Beta lactamase.usual [Susceptibility]"
           }
         ]
       }

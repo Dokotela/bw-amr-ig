@@ -8,7 +8,7 @@
   "status": "draft",
   "description": "Maps WHONET antibiotic codes to LOINC susceptibility test codes. Derived from the AMR R package (https://github.com/msberends/AMR). Contains 271 WHONET antibiotic codes with LOINC mappings. Note: equivalence is 'relatedto' because one WHONET antibiotic code maps to multiple LOINC codes representing different test methods (MIC, disk diffusion, etc.).",
   "sourceUri": "http://whonet.org/CodeSystem/antibiotic",
-  "targetUri": "http://loinc.org",
+  "targetUri": "http://loinc.org/vs",
   "group": [
     {
       "source": "http://whonet.org/CodeSystem/antibiotic",

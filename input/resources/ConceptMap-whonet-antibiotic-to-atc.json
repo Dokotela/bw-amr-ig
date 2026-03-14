@@ -8,7 +8,7 @@
   "status": "draft",
   "description": "Maps WHONET antibiotic codes to WHO ATC (Anatomical Therapeutic Chemical) codes. Derived from the AMR R package (https://github.com/msberends/AMR). Contains 374 WHONET antibiotic codes with ATC mappings.",
   "sourceUri": "http://whonet.org/CodeSystem/antibiotic",
-  "targetUri": "http://www.whocc.no/atc",
+  "targetUri": "http://www.whocc.no/atc/vs",
   "group": [
     {
       "source": "http://whonet.org/CodeSystem/antibiotic",

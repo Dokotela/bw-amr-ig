@@ -9,8 +9,6 @@ Id: botswana-amr-susceptibility-observation
 Title: "Botswana AMR Susceptibility Observation"
 Description: "Records S/I/R (and optional MIC) for a single antibiotic test on a specimen. Should be referenced from the parent OrganismObservation via hasMember."
 
-* meta.profile = "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SusceptibilityObservation"
-
 * status = #final
 
 // Standard microbiology category coding for discoverability
@@ -28,7 +26,7 @@ Description: "Records S/I/R (and optional MIC) for a single antibiotic test on a
 // S/I/R interpretation with guideline version tracking
 * interpretation 1..1
 * interpretation from BotswanaAMRInterpretation (required)
-* interpretation.coding.version 0..1  // CLSI or EUCAST breakpoint version (e.g., "CLSI 2025", "EUCAST 12.0")
+* interpretation.text 0..1  // Breakpoint guideline version (e.g., "CLSI 2025", "EUCAST 12.0")
 
 // Quantitative result: MIC (ug/mL) or disk diffusion zone diameter (mm)
 * valueQuantity 0..1

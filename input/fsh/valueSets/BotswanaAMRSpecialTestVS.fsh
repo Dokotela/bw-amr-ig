@@ -9,14 +9,14 @@ Description: "Special antimicrobial resistance tests performed in Botswana AMR s
 // ESBL Detection
 * include LNC#99596-9 "Extended spectrum beta lactamase [Presence] in Isolate"
 
-// Carbapenemase Detection  
-* include LNC#101214-7 "Carbapenemase [Presence] in Isolate by Molecular method"
+// Carbapenemase Detection
+* include LNC#86930-5 "Carbapenemase [Presence] in Isolate"
 
 // D-Zone Test (Clindamycin inducible resistance)
-* include LNC#18895-8 "Clindamycin inducible resistance [Susceptibility] by Disk diffusion (KB)"
+* include LNC#42720-3 "Clindamycin.induced [Susceptibility] by Disk diffusion (KB)"
 
 // MRSA Detection
-* include LNC#33747-0 "Methicillin resistant Staphylococcus aureus [Presence] in Specimen"
+* include LNC#13317-3 "Methicillin resistant Staphylococcus aureus [Presence] in Specimen by Organism specific culture"
 
 // Beta-lactamase detection (distinct from ESBL — detects basic beta-lactamase production)
-* include LNC#6984-4 "Beta lactamase [Presence] in Isolate"
+* include LNC#6985-6 "Beta lactamase.usual [Susceptibility]"

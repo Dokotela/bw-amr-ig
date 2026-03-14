@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "botswana-amr-encounter",
-  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-encounter",
+  "url": "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-encounter",
   "name": "BotswanaAMREncounter",
   "title": "Botswana AMR Encounter",
   "status": "draft",
@@ -15,11 +15,6 @@
   "differential": {
     "element": [
       {
-        "id": "Encounter.meta.profile",
-        "path": "Encounter.meta.profile",
-        "patternCanonical": "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Encounter"
-      },
-      {
         "id": "Encounter.status",
         "path": "Encounter.status",
         "patternCode": "finished"
@@ -29,7 +24,7 @@
         "path": "Encounter.class",
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ward-type-vs"
+          "valueSet": "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-ward-type-vs"
         }
       },
       {
@@ -40,7 +35,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient"
+              "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-patient"
             ]
           }
         ]

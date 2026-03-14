@@ -9,10 +9,10 @@ Description: "Antimicrobial susceptibility testing methods used in Botswana AMR 
 * include SCT#115254003 "Disc diffusion method"
 
 // Broth microdilution (MIC reference method)
-* include SCT#91461000 "Broth dilution susceptibility test"
+* include SCT#263696007 "Broth dilution"
 
 // Gradient strip (Etest)
-* include SCT#89588004 "Gradient diffusion method"
+* include SCT#104234003 "Gradient strip susceptibility test"
 
 // Automated systems
 * include SCT#702873001 "Automated antimicrobial susceptibility test"

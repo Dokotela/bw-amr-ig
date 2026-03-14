@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "botswana-amr-specimen",
-  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen",
+  "url": "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-specimen",
   "name": "BotswanaAMRSpecimen",
   "title": "Botswana AMR Specimen",
   "status": "draft",
@@ -15,11 +15,6 @@
   "differential": {
     "element": [
       {
-        "id": "Specimen.meta.profile",
-        "path": "Specimen.meta.profile",
-        "patternCanonical": "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Specimen"
-      },
-      {
         "id": "Specimen.identifier",
         "path": "Specimen.identifier",
         "min": 1,
@@ -31,7 +26,7 @@
         "min": 1,
         "binding": {
           "strength": "required",
-          "valueSet": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs"
+          "valueSet": "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-specimen-type-vs"
         }
       },
       {
@@ -42,7 +37,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient"
+              "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-patient"
             ]
           }
         ]
@@ -71,7 +66,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/specimen-collection-location"
+              "http://bw.health.gov/fhir/amr/StructureDefinition/specimen-collection-location"
             ]
           }
         ]
@@ -108,7 +103,7 @@
         "path": "Specimen.collection.bodySite",
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs"
+          "valueSet": "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-specimen-site-vs"
         }
       }
     ]

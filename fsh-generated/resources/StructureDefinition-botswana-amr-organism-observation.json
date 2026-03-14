@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "botswana-amr-organism-observation",
-  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation",
+  "url": "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-organism-observation",
   "name": "BotswanaAMROrganismObservation",
   "title": "Botswana AMR Organism Identification Observation",
   "status": "draft",
@@ -23,14 +23,9 @@
             "severity": "error",
             "human": "If there is no value, a dataAbsentReason must be provided",
             "expression": "value.exists() or dataAbsentReason.exists()",
-            "source": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation"
+            "source": "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-organism-observation"
           }
         ]
-      },
-      {
-        "id": "Observation.meta.profile",
-        "path": "Observation.meta.profile",
-        "patternCanonical": "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-OrganismObservation"
       },
       {
         "id": "Observation.identifier",
@@ -96,7 +91,7 @@
             {
               "code": "634-6",
               "system": "http://loinc.org",
-              "display": "Bacteria identified in Specimen by Culture"
+              "display": "Bacteria identified in Specimen by Aerobe culture"
             }
           ]
         }
@@ -169,7 +164,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs"
+          "valueSet": "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs"
         }
       },
       {
@@ -177,7 +172,7 @@
         "path": "Observation.method",
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-identification-method-vs"
+          "valueSet": "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-identification-method-vs"
         }
       },
       {
@@ -188,7 +183,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen"
+              "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-specimen"
             ]
           }
         ]
@@ -200,8 +195,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation"
+              "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation",
+              "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-special-test-observation"
             ]
           }
         ]

@@ -5,8 +5,6 @@ Id: botswana-amr-specimen
 Title: "Botswana AMR Specimen"
 Description: "Specimen profile for Botswana AMR surveillance with required collection details"
 
-* meta.profile = "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Specimen"
-
 * type 1..1
 * type from BotswanaAMRSpecimenTypeVS (required)
 

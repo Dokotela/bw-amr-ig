@@ -9,7 +9,6 @@ Title: "Botswana AMR Gram Stain Observation"
 Description: "Records gram stain results for specimens in Botswana AMR surveillance"
 
 * status = #final
-* meta.profile = "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-GramStainObservation"
 
 // Standard microbiology category coding for discoverability
 * category 1..*

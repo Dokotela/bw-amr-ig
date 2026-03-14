@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "specimen-collection-location",
-  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/specimen-collection-location",
+  "url": "http://bw.health.gov/fhir/amr/StructureDefinition/specimen-collection-location",
   "name": "SpecimenCollectionLocation",
   "title": "Specimen Collection Location",
   "status": "draft",
@@ -34,7 +34,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/specimen-collection-location"
+        "fixedUri": "http://bw.health.gov/fhir/amr/StructureDefinition/specimen-collection-location"
       },
       {
         "id": "Extension.value[x]",
