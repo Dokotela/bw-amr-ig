@@ -6,22 +6,22 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://bw.health.gov/fhir/ValueSet/botswana-amr-organism-vs> a fhir:ValueSet ;
+<http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "botswana-amr-organism-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet botswana-amr-organism-vs</b></p><a name=\"botswana-amr-organism-vs\"> </a><a name=\"hcbotswana-amr-organism-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a 410607006 (Organism (organism))</li><li>Include all codes defined in <a href=\"CodeSystem-botswana-amr-local-organism-cs.html\"><code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet botswana-amr-organism-vs</b></p><a name=\"botswana-amr-organism-vs\"> </a><a name=\"hcbotswana-amr-organism-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a 410607006 (Organism (organism))</li><li>Include all codes defined in <a href=\"CodeSystem-botswana-amr-local-organism-cs.html\"><code>http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-organism-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
-     fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs"^^xsd:anyURI ;
-     fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs>
+     fhir:v "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs"^^xsd:anyURI ;
+     fhir:l <http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs>
   ] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "BotswanaAMROrganismVS"] ; # 
   fhir:title [ fhir:v "Botswana AMR Organism ValueSet"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-03-13T15:05:11-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-13T21:27:21-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "University of Botswana Partnership"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "University of Botswana Partnership" ] ;
@@ -44,8 +44,8 @@
        ] )
      ] [
        fhir:system [
-         fhir:v "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs"^^xsd:anyURI ;
-         fhir:l <http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs>
+         fhir:v "http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-organism-cs"^^xsd:anyURI ;
+         fhir:l <http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-organism-cs>
        ]
      ] )
   ] . # 

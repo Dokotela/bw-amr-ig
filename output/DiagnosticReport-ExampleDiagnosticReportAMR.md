@@ -6,9 +6,9 @@
 
 ## Example DiagnosticReport: Example AMR Diagnostic Report - Urine Culture
 
-Profiles: [Botswana AMR DiagnosticReport](StructureDefinition-botswana-amr-diagnostic-report.md), `http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-DiagnosticReport`
+Profile: [Botswana AMR DiagnosticReport](StructureDefinition-botswana-amr-diagnostic-report.md)
 
-## Bacteria identified and antimicrobial susceptibility panel (Microbiology studies (set) ) 
+## Bacterial identification and susceptibility panel - Isolate (Microbiology studies (set) ) 
 
 | | |
 | :--- | :--- |
@@ -19,14 +19,14 @@ Profiles: [Botswana AMR DiagnosticReport](StructureDefinition-botswana-amr-diagn
 **Report Details**
 
 * **Code**: [Microscopic observation [Identifier] in Specimen by Gram stain](Observation-ExampleGramStainNegative.md)
-  * **Value**: Gram-negative
+  * **Value**: Gram-negative bacillus
   * **Flags**: Final
   * **When For**: 2026-03-10 10:00:00+0200
-* **Code**: [Bacteria identified in Specimen by Culture](Observation-ExampleOrganismEcoli.md)
+* **Code**: [Bacteria identified in Specimen by Aerobe culture](Observation-ExampleOrganismEcoli.md)
   * **Value**: Escherichia coli
   * **Flags**: Final
   * **When For**: 2026-03-11 09:00:00+0200
-* **Code**: [Bacteria identified in Specimen by Culture](Observation-ExampleOrganismKlebsiella.md)
+* **Code**: [Bacteria identified in Specimen by Aerobe culture](Observation-ExampleOrganismKlebsiella.md)
   * **Value**: Klebsiella pneumoniae
   * **Flags**: Final
   * **When For**: 2026-03-11 09:00:00+0200
@@ -41,8 +41,7 @@ Profiles: [Botswana AMR DiagnosticReport](StructureDefinition-botswana-amr-diagn
   "id" : "ExampleDiagnosticReportAMR",
   "meta" : {
     "profile" : [
-      "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report",
-      "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-DiagnosticReport"
+      "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-diagnostic-report"
     ]
   },
   "status" : "final",
@@ -61,8 +60,8 @@ Profiles: [Botswana AMR DiagnosticReport](StructureDefinition-botswana-amr-diagn
     "coding" : [
       {
         "system" : "http://loinc.org",
-        "code" : "58321-0",
-        "display" : "Bacteria identified and antimicrobial susceptibility panel"
+        "code" : "85421-6",
+        "display" : "Bacterial identification and susceptibility panel - Isolate"
       }
     ]
   },

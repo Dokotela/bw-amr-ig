@@ -1,0 +1,78 @@
+{% raw %}<pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4B/observation.html#Observation">resourceType</a>" : "Observation",
+  "<a href="http://hl7.org/fhir/R4B/resource.html#Observation.id">id</a>" : "ExampleSusceptEcoliAmpicillin",
+  "<a href="http://hl7.org/fhir/R4B/resource.html#Observation.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4B/resource.html#Meta#Meta.profile">profile</a>" : [
+      <a href="StructureDefinition-botswana-amr-susceptibility-observation.html" style="color: Maroon">&#x1F517;</a> "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4B/domainresource.html#Observation.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation ExampleSusceptEcoliAmpicillin&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ExampleSusceptEcoliAmpicillin\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcExampleSusceptEcoliAmpicillin\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-botswana-amr-susceptibility-observation.html\&quot;&gt;Botswana AMR Susceptibility Observation&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;Laboratory&lt;/span&gt;, &lt;span title=\&quot;Codes:{http://loinc.org 18725-2}\&quot;&gt;Microbiology studies (set)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 28-1}\&quot;&gt;Ampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-ExamplePatientMotswana.html\&quot;&gt;Keabetswe Motswana  Female, DoB: 1981-05-14&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2026-03-11 14:00:00+0200&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 6 mm&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemm = 'mm')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;interpretation&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation R}\&quot;&gt;CLSI 2025&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 115254003}\&quot;&gt;Disc diffusion method&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;specimen&lt;/b&gt;: &lt;a href=\&quot;Specimen-ExampleSpecimenUrine.html\&quot;&gt;Specimen: identifier = PMH-2026-U4421; type = Urine&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4B/observation.html#Observation.status">status</a>" : "final",
+  "<a href="http://hl7.org/fhir/R4B/observation.html#Observation.category">category</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a>" : "laboratory",
+          "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a>" : "Laboratory"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+          "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a>" : "18725-2",
+          "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a>" : "Microbiology studies (set)"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4B/observation.html#Observation.code">code</a>" : {
+    "<a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+        "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a>" : "28-1",
+        "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a>" : "Ampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4B/observation.html#Observation.subject">subject</a>" : {
+    <a href="Patient-ExamplePatientMotswana.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">reference</a>" : "Patient/ExamplePatientMotswana"
+  },
+  "<a href="http://hl7.org/fhir/R4B/observation.html#Observation.effective_x_">effectiveDateTime</a>" : "2026-03-11T14:00:00+02:00",
+  "<a href="http://hl7.org/fhir/R4B/observation.html#Observation.value_x_">valueQuantity</a>" : {
+    "<a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.value">value</a>" : 6,
+    "<a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mm",
+    "<a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+    "<a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.code">code</a>" : "mm"
+  },
+  "<a href="http://hl7.org/fhir/R4B/observation.html#Observation.interpretation">interpretation</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a>" : "R",
+          "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a>" : "Resistant"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "CLSI 2025"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4B/observation.html#Observation.method">method</a>" : {
+    "<a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+        "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a>" : "115254003",
+        "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a>" : "Disc diffusion method"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4B/observation.html#Observation.specimen">specimen</a>" : {
+    <a href="Specimen-ExampleSpecimenUrine.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">reference</a>" : "Specimen/ExampleSpecimenUrine"
+  }
+}</code></pre>
+{% endraw %}

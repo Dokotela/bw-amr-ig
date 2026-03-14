@@ -1,7 +1,7 @@
 {
   "resourceType": "ConceptMap",
   "id": "whonet-antibiotic-to-loinc",
-  "url": "http://bw.health.gov/fhir/ConceptMap/whonet-antibiotic-to-loinc",
+  "url": "http://bw.health.gov/fhir/amr/ConceptMap/whonet-antibiotic-to-loinc",
   "version": "0.1.0",
   "name": "WHONETAntibioticToLOINC",
   "title": "WHONET Antibiotic Codes to LOINC Susceptibility Codes",

@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient | *Version*:0.1.0 |
+| *Official URL*:http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-patient | *Version*:0.1.0 |
 | Draft as of 2026-03-13 | *Computable Name*:BotswanaAMRPatient |
 
  
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-patient
 {
   "resourceType" : "StructureDefinition",
   "id" : "botswana-amr-patient",
-  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient",
+  "url" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-patient",
   "version" : "0.1.0",
   "name" : "BotswanaAMRPatient",
   "title" : "Botswana AMR Patient",
   "status" : "draft",
-  "date" : "2026-03-13T15:05:11-04:00",
+  "date" : "2026-03-13T21:27:21-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [
     {
@@ -94,11 +94,6 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-patient
       {
         "id" : "Patient",
         "path" : "Patient"
-      },
-      {
-        "id" : "Patient.meta.profile",
-        "path" : "Patient.meta.profile",
-        "patternCanonical" : "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Patient"
       },
       {
         "id" : "Patient.name",

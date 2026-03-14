@@ -1,7 +1,84 @@
 {% raw %}<h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>DiagnosticReport.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#required">required</a></td><td title="The status of the diagnostic report.">Pattern Value: final<div><code>http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.3.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.3.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>DiagnosticReport.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#preferred">preferred</a></td><td title="LOINC Codes for Diagnostic Reports">Pattern Value: LOINC Code 58321-0("Bacteria identified and antimicrobial susceptibility panel")<div><code>http://hl7.org/fhir/ValueSet/report-codes</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/report-codes"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>DiagnosticReport.status</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="The status of the diagnostic report.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-diagnostic-report-status.html">DiagnosticReportStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>DiagnosticReport.category</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="HL7 V2 table 0074">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-diagnostic-service-sections.html">Diagnostic Service Section Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/diagnostic-service-sections|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>DiagnosticReport.category:microbiologyStudies</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="HL7 V2 table 0074">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-diagnostic-service-sections.html">Diagnostic Service Section Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/diagnostic-service-sections|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>DiagnosticReport.code</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td title="LOINC Codes for Diagnostic Reports">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-report-codes.html">LOINC Diagnostic Report Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/report-codes|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 {% endraw %}

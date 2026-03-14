@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs | *Version*:0.1.0 |
+| *Official URL*:http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-test-result-status-vs | *Version*:0.1.0 |
 | Draft as of 2026-03-13 | *Computable Name*:BotswanaAMRTestResultStatusVS |
 
  
@@ -45,12 +45,12 @@ Status values for test results in Botswana AMR surveillance
 {
   "resourceType" : "ValueSet",
   "id" : "botswana-amr-test-result-status-vs",
-  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs",
+  "url" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-test-result-status-vs",
   "version" : "0.1.0",
   "name" : "BotswanaAMRTestResultStatusVS",
   "title" : "Botswana AMR Test Result Status",
   "status" : "draft",
-  "date" : "2026-03-13T15:05:11-04:00",
+  "date" : "2026-03-13T21:27:21-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [
     {

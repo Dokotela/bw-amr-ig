@@ -1,7 +1,7 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc",
+      "url" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-antibiotic-susceptibility-loinc",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "BotswanaAMRAntibioticSusceptibilityLOINC",
@@ -13,7 +13,7 @@
       "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
     },
     {
-      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ast-method-vs",
+      "url" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-ast-method-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "BotswanaAMRASTMethodVS",
@@ -25,7 +25,7 @@
       "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
     },
     {
-      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-gram-stain-result-vs",
+      "url" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-gram-stain-result-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "BotswanaAMRGramStainResultVS",
@@ -37,14 +37,14 @@
       "StructureDefinition-botswana-amr-gram-stain-observation.html" : "Botswana AMR Gram Stain Observation"
     },
     {
-      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-identification-method-vs",
+      "url" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-identification-method-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "BotswanaAMRIdentificationMethodVS",
       "title" : "Botswana AMR Organism Identification Methods",
       "description" : "Methods used for organism identification in Botswana AMR surveillance",
       "systems" : [
-        "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs",
+        "http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs",
         "http://snomed.info/sct"
       ],
       "uses" : {
@@ -52,7 +52,7 @@
       "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
     },
     {
-      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation",
+      "url" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-interpretation",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "BotswanaAMRInterpretation",
@@ -66,22 +66,22 @@
       "StructureDefinition-botswana-amr-susceptibility-observation.html" : "Botswana AMR Susceptibility Observation"
     },
     {
-      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs",
+      "url" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "BotswanaAMROrganismVS",
       "title" : "Botswana AMR Organism ValueSet",
       "description" : "Organisms identified in Botswana AMR surveillance. Includes all descendants of SNOMED CT 'Organism' (410607006) plus local codes for organism combinations that labs report together.",
       "systems" : [
-        "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
-        "http://snomed.info/sct"
+        "http://snomed.info/sct",
+        "http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-organism-cs"
       ],
       "uses" : {
       },
       "StructureDefinition-botswana-amr-organism-observation.html" : "Botswana AMR Organism Identification Observation"
     },
     {
-      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-special-test-vs",
+      "url" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-special-test-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "BotswanaAMRSpecialTestVS",
@@ -93,7 +93,7 @@
       "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation"
     },
     {
-      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs",
+      "url" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-specimen-site-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "BotswanaAMRSpecimenSiteVS",
@@ -105,7 +105,7 @@
       "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen"
     },
     {
-      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs",
+      "url" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-specimen-type-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "BotswanaAMRSpecimenTypeVS",
@@ -117,7 +117,7 @@
       "StructureDefinition-botswana-amr-specimen.html" : "Botswana AMR Specimen"
     },
     {
-      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs",
+      "url" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-test-result-status-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "BotswanaAMRTestResultStatusVS",
@@ -129,7 +129,7 @@
       "StructureDefinition-botswana-amr-special-test-observation.html" : "Botswana AMR Special Test Observation"
     },
     {
-      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ward-type-vs",
+      "url" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-ward-type-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "BotswanaAMRWardTypeVS",
@@ -139,6 +139,42 @@
       "uses" : {
       },
       "StructureDefinition-botswana-amr-encounter.html" : "Botswana AMR Encounter"
+    },
+    {
+      "url" : "http://loinc.org/vs",
+      "version" : null,
+      "status" : "active",
+      "name" : "LOINCCodes",
+      "title" : "All LOINC codes",
+      "description" : "",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "ConceptMap-whonet-antibiotic-to-loinc.html" : "WHONET Antibiotic Codes to LOINC Susceptibility Codes"
+    },
+    {
+      "url" : "http://snomed.info/sct?fhir_vs",
+      "version" : null,
+      "status" : "active",
+      "name" : "SCTValueSetAll",
+      "title" : "All Codes SCT ValueSet",
+      "description" : "Value Set for All SNOMED CT Concepts",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "ConceptMap-whonet-antibiotic-to-snomed.html" : "WHONET Antibiotic Codes to SNOMED CT Substance Codes"
+    },
+    {
+      "url" : "http://snomed.info/sct?fhir_vs",
+      "version" : null,
+      "status" : "active",
+      "name" : "SCTValueSetAll",
+      "title" : "All Codes SCT ValueSet",
+      "description" : "Value Set for All SNOMED CT Concepts",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "ConceptMap-whonet-organism-to-snomed.html" : "WHONET Organism Codes to SNOMED CT"
     }
   ]
 }

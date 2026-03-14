@@ -1,7 +1,7 @@
 {
   "resourceType": "ConceptMap",
   "id": "whonet-organism-to-snomed",
-  "url": "http://bw.health.gov/fhir/ConceptMap/whonet-organism-to-snomed",
+  "url": "http://bw.health.gov/fhir/amr/ConceptMap/whonet-organism-to-snomed",
   "version": "0.1.0",
   "name": "WHONETOrganismToSNOMED",
   "title": "WHONET Organism Codes to SNOMED CT",

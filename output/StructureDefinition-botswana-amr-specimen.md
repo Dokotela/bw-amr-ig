@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen | *Version*:0.1.0 |
+| *Official URL*:http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-specimen | *Version*:0.1.0 |
 | Draft as of 2026-03-13 | *Computable Name*:BotswanaAMRSpecimen |
 
  
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-specime
 {
   "resourceType" : "StructureDefinition",
   "id" : "botswana-amr-specimen",
-  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen",
+  "url" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-specimen",
   "version" : "0.1.0",
   "name" : "BotswanaAMRSpecimen",
   "title" : "Botswana AMR Specimen",
   "status" : "draft",
-  "date" : "2026-03-13T15:05:11-04:00",
+  "date" : "2026-03-13T21:27:21-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [
     {
@@ -86,11 +86,6 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-specime
         "path" : "Specimen"
       },
       {
-        "id" : "Specimen.meta.profile",
-        "path" : "Specimen.meta.profile",
-        "patternCanonical" : "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Specimen"
-      },
-      {
         "id" : "Specimen.identifier",
         "path" : "Specimen.identifier",
         "min" : 1,
@@ -102,7 +97,7 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-specime
         "min" : 1,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs"
+          "valueSet" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-specimen-type-vs"
         }
       },
       {
@@ -113,7 +108,7 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-specime
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient"
+              "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-patient"
             ]
           }
         ]
@@ -142,7 +137,7 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-specime
           {
             "code" : "Extension",
             "profile" : [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/specimen-collection-location"
+              "http://bw.health.gov/fhir/amr/StructureDefinition/specimen-collection-location"
             ]
           }
         ]
@@ -179,7 +174,7 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-specime
         "path" : "Specimen.collection.bodySite",
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs"
+          "valueSet" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-specimen-site-vs"
         }
       }
     ]

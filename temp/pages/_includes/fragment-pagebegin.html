@@ -30,10 +30,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="{{site.data.info.assets}}assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="{{site.data.info.assets}}assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="{{site.data.info.assets}}assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="{{site.data.info.assets}}assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{site.data.info.assets}}assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{site.data.info.assets}}assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{site.data.info.assets}}assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="{{site.data.info.assets}}assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="{{site.data.info.assets}}assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -47,7 +47,7 @@
       <div class="container">  <!-- container -->
 {% if site.data.info.fcpspec == 'true' %}
         <div id="fcp-nav">
-          <a id="fcp-logo" no-external="true" href="https://confluence.hl7.org/display/FCP/FCP+Specification+Registry">
+          <a id="fcp-logo" data-no-external="true" href="https://confluence.hl7.org/display/FCP/FCP+Specification+Registry">
             <img height="60" alt="Visit the FHIR Community Process Specification Registry" src="assets/images/fcp-logo.png"/>
           </a>
         </div>

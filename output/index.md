@@ -7,7 +7,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig | *Version*:0.1.0 |
+| *Official URL*:http://bw.health.gov/fhir/amr/ImplementationGuide/bw-amr-ig | *Version*:0.1.0 |
 | Draft as of 2026-03-13 | *Computable Name*:BWAMRIG |
 
 # Botswana AMR Implementation Guide
@@ -54,12 +54,12 @@ This FHIR Implementation Guide provides the technical foundation for standardize
   "resourceType" : "ImplementationGuide",
   "id" : "bw-amr-ig",
   "language" : "en",
-  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig",
+  "url" : "http://bw.health.gov/fhir/amr/ImplementationGuide/bw-amr-ig",
   "version" : "0.1.0",
   "name" : "BWAMRIG",
   "title" : "Botswana AMR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-03-13T15:05:11-04:00",
+  "date" : "2026-03-13T21:27:21-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [
     {
@@ -78,18 +78,6 @@ This FHIR Implementation Guide provides the technical foundation for standardize
   "fhirVersion" : ["4.3.0"],
   "dependsOn" : [
     {
-      "id" : "hl7tx",
-      "extension" : [
-        {
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
-          "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
-        }
-      ],
-      "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
-      "packageId" : "hl7.terminology.r4",
-      "version" : "7.1.0"
-    },
-    {
       "id" : "hl7ext",
       "extension" : [
         {
@@ -100,6 +88,12 @@ This FHIR Implementation Guide provides the technical foundation for standardize
       "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
       "packageId" : "hl7.fhir.uv.extensions.r4",
       "version" : "5.2.0"
+    },
+    {
+      "id" : "hl7_terminology_r4b",
+      "uri" : "http://terminology.hl7.org",
+      "packageId" : "hl7.terminology.r4b",
+      "version" : "6.0.2"
     }
   ],
   "definition" : {
@@ -255,7 +249,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
           },
           {
             "url" : "value",
-            "valueString" : "http://bw.health.gov/fhir/history.html"
+            "valueString" : "http://bw.health.gov/fhir/amr/history.html"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -610,7 +604,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
           },
           {
             "url" : "value",
-            "valueString" : "http://bw.health.gov/fhir/history.html"
+            "valueString" : "http://bw.health.gov/fhir/amr/history.html"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -1118,7 +1112,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "E. coli Special Test - ESBL (Negative)",
         "description" : "ESBL testing for E. coli isolate - Negative",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-special-test-observation"
       },
       {
         "extension" : [
@@ -1132,7 +1126,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "E. coli Susceptibility - Amoxicillin/Clavulanate (S)",
         "description" : "E. coli amoxicillin/clavulanate susceptibility - Susceptible by disk diffusion",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"
       },
       {
         "extension" : [
@@ -1146,7 +1140,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "E. coli Susceptibility - Ampicillin (R)",
         "description" : "E. coli ampicillin susceptibility - Resistant by disk diffusion",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"
       },
       {
         "extension" : [
@@ -1160,7 +1154,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "E. coli Susceptibility - Ceftriaxone (S)",
         "description" : "E. coli ceftriaxone susceptibility - Susceptible by disk diffusion",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"
       },
       {
         "extension" : [
@@ -1174,7 +1168,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "E. coli Susceptibility - Ciprofloxacin (R)",
         "description" : "E. coli ciprofloxacin susceptibility - Resistant by disk diffusion",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"
       },
       {
         "extension" : [
@@ -1188,7 +1182,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "E. coli Susceptibility - Gentamicin (S)",
         "description" : "E. coli gentamicin susceptibility - Susceptible by disk diffusion",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"
       },
       {
         "extension" : [
@@ -1202,7 +1196,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "E. coli Susceptibility - Nitrofurantoin (S)",
         "description" : "E. coli nitrofurantoin susceptibility - Susceptible by disk diffusion",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"
       },
       {
         "extension" : [
@@ -1216,7 +1210,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "E. coli Susceptibility - Trimethoprim/Sulfamethoxazole (R)",
         "description" : "E. coli TMP/SMX susceptibility - Resistant by disk diffusion",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"
       },
       {
         "extension" : [
@@ -1230,7 +1224,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "Example AMR Diagnostic Report - Urine Culture",
         "description" : "Complete AMR diagnostic report for urine culture with E. coli and K. pneumoniae",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-diagnostic-report"
       },
       {
         "extension" : [
@@ -1244,7 +1238,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "Example Encounter - Inpatient at Princess Marina Hospital",
         "description" : "Inpatient encounter, admitted 2 days before specimen collection",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-encounter"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-encounter"
       },
       {
         "extension" : [
@@ -1258,7 +1252,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "Example Gram Stain - Gram-negative",
         "description" : "Gram stain showing Gram-negative organisms in urine specimen",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-gram-stain-observation"
       },
       {
         "extension" : [
@@ -1272,7 +1266,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "Example Organism - Escherichia coli (Isolate 1)",
         "description" : "E. coli identified from urine culture, isolate 1",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-organism-observation"
       },
       {
         "extension" : [
@@ -1286,7 +1280,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "Example Organism - Klebsiella pneumoniae (Isolate 2)",
         "description" : "Klebsiella pneumoniae identified from urine culture, isolate 2",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-organism-observation"
       },
       {
         "extension" : [
@@ -1300,7 +1294,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "Example Patient - Keabetswe Motswana",
         "description" : "A 45-year-old female patient admitted to Princess Marina Hospital",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-patient"
       },
       {
         "extension" : [
@@ -1314,7 +1308,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "Example Specimen - Mid-stream Urine",
         "description" : "Mid-stream clean catch urine specimen collected from inpatient",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-specimen"
       },
       {
         "extension" : [
@@ -1342,7 +1336,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "Klebsiella Special Test - ESBL (Negative)",
         "description" : "ESBL testing for Klebsiella pneumoniae isolate - Negative",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-special-test-observation"
       },
       {
         "extension" : [
@@ -1356,7 +1350,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "Klebsiella Susceptibility - Amoxicillin/Clavulanate (I)",
         "description" : "Klebsiella pneumoniae amoxicillin/clavulanate susceptibility - Intermediate by disk diffusion",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"
       },
       {
         "extension" : [
@@ -1370,7 +1364,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "Klebsiella Susceptibility - Ampicillin (R)",
         "description" : "Klebsiella pneumoniae ampicillin susceptibility - Resistant by disk diffusion",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"
       },
       {
         "extension" : [
@@ -1384,7 +1378,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "Klebsiella Susceptibility - Ceftriaxone (S)",
         "description" : "Klebsiella pneumoniae ceftriaxone susceptibility - Susceptible by disk diffusion",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"
       },
       {
         "extension" : [
@@ -1398,7 +1392,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "Klebsiella Susceptibility - Ciprofloxacin (S)",
         "description" : "Klebsiella pneumoniae ciprofloxacin susceptibility - Susceptible by disk diffusion",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"
       },
       {
         "extension" : [
@@ -1412,7 +1406,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "Klebsiella Susceptibility - Gentamicin (S)",
         "description" : "Klebsiella pneumoniae gentamicin susceptibility - Susceptible by disk diffusion",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"
       },
       {
         "extension" : [
@@ -1426,7 +1420,7 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "Klebsiella Susceptibility - Meropenem (S)",
         "description" : "Klebsiella pneumoniae meropenem susceptibility - Susceptible by disk diffusion",
-        "exampleCanonical" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+        "exampleCanonical" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"
       },
       {
         "extension" : [
@@ -1440,6 +1434,62 @@ This FHIR Implementation Guide provides the technical foundation for standardize
         },
         "name" : "Specimen Collection Location",
         "description" : "Ward or facility location where specimen was collected",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/whonet-antibiotic-to-loinc"
+        },
+        "name" : "WHONET Antibiotic Codes to LOINC Susceptibility Codes",
+        "description" : "Maps WHONET antibiotic codes to LOINC susceptibility test codes. Derived from the AMR R package (https://github.com/msberends/AMR). Contains 271 WHONET antibiotic codes with LOINC mappings. Note: equivalence is 'relatedto' because one WHONET antibiotic code maps to multiple LOINC codes representing different test methods (MIC, disk diffusion, etc.).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/whonet-antibiotic-to-snomed"
+        },
+        "name" : "WHONET Antibiotic Codes to SNOMED CT Substance Codes",
+        "description" : "Maps WHONET antibiotic codes to SNOMED CT substance concept IDs. Derived from the official LOINC-SNOMED CT Ontology (September 2025) by tracing LOINC susceptibility codes through their SNOMED observable entity representations to the Component (704320005) relationship, which identifies the substance being tested. Contains 213 authoritative antimicrobial mappings.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/whonet-antibiotic-to-atc"
+        },
+        "name" : "WHONET Antibiotic Codes to WHO ATC Classification",
+        "description" : "Maps WHONET antibiotic codes to WHO ATC (Anatomical Therapeutic Chemical) codes. Derived from the AMR R package (https://github.com/msberends/AMR). Contains 374 WHONET antibiotic codes with ATC mappings.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ConceptMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "ConceptMap/whonet-organism-to-snomed"
+        },
+        "name" : "WHONET Organism Codes to SNOMED CT",
+        "description" : "Maps WHONET organism codes to SNOMED CT concepts. Derived from the AMR R package (https://github.com/msberends/AMR) which integrates WHONET organism codes with SNOMED CT mappings. Contains 4995 WHONET organism codes.",
         "exampleBoolean" : false
       }
     ],

@@ -4,15 +4,15 @@
   <id value="bw-amr-ig"/>
   <language value="en"/>
   <text>
-    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide bw-amr-ig</b></p><a name="bw-amr-ig"> </a><a name="hcbw-amr-ig"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><h2>BWAMRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig</pre><div><p>FHIR Implementation Guide for the Botswana AMR Data Analytics Platform</p>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide bw-amr-ig</b></p><a name="bw-amr-ig"> </a><a name="hcbw-amr-ig"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><h2>BWAMRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://bw.health.gov/fhir/amr/ImplementationGuide/bw-amr-ig</pre><div><p>FHIR Implementation Guide for the Botswana AMR Data Analytics Platform</p>
 </div></div>
   </text>
-  <url value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ImplementationGuide/bw-amr-ig"/>
+  <url value="http://bw.health.gov/fhir/amr/ImplementationGuide/bw-amr-ig"/>
   <version value="0.1.0"/>
   <name value="BWAMRIG"/>
   <title value="Botswana AMR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-03-13T15:05:11-04:00"/>
+  <date value="2026-03-13T21:27:21-04:00"/>
   <publisher value="University of Botswana Partnership"/>
   <contact>
     <name value="University of Botswana Partnership"/>
@@ -25,14 +25,6 @@
   <packageId value="bw-amr-ig"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.3.0"/>
-  <dependsOn id="hl7tx">
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
-      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
-    </extension>
-    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
-    <packageId value="hl7.terminology.r4"/>
-    <version value="7.1.0"/>
-  </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
       <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
@@ -40,6 +32,11 @@
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
     <version value="5.2.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_terminology_r4b">
+    <uri value="http://terminology.hl7.org"/>
+    <packageId value="hl7.terminology.r4b"/>
+    <version value="6.0.2"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -135,7 +132,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://bw.health.gov/fhir/history.html"/>
+        <valueString value="http://bw.health.gov/fhir/amr/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -354,7 +351,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://bw.health.gov/fhir/history.html"/>
+        <valueString value="http://bw.health.gov/fhir/amr/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -717,7 +714,7 @@
       </reference>
       <name value="E. coli Special Test - ESBL (Negative)"/>
       <description value="ESBL testing for E. coli isolate - Negative"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-special-test-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -728,7 +725,7 @@
       </reference>
       <name value="E. coli Susceptibility - Amoxicillin/Clavulanate (S)"/>
       <description value="E. coli amoxicillin/clavulanate susceptibility - Susceptible by disk diffusion"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -739,7 +736,7 @@
       </reference>
       <name value="E. coli Susceptibility - Ampicillin (R)"/>
       <description value="E. coli ampicillin susceptibility - Resistant by disk diffusion"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -750,7 +747,7 @@
       </reference>
       <name value="E. coli Susceptibility - Ceftriaxone (S)"/>
       <description value="E. coli ceftriaxone susceptibility - Susceptible by disk diffusion"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -761,7 +758,7 @@
       </reference>
       <name value="E. coli Susceptibility - Ciprofloxacin (R)"/>
       <description value="E. coli ciprofloxacin susceptibility - Resistant by disk diffusion"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -772,7 +769,7 @@
       </reference>
       <name value="E. coli Susceptibility - Gentamicin (S)"/>
       <description value="E. coli gentamicin susceptibility - Susceptible by disk diffusion"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -783,7 +780,7 @@
       </reference>
       <name value="E. coli Susceptibility - Nitrofurantoin (S)"/>
       <description value="E. coli nitrofurantoin susceptibility - Susceptible by disk diffusion"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -794,7 +791,7 @@
       </reference>
       <name value="E. coli Susceptibility - Trimethoprim/Sulfamethoxazole (R)"/>
       <description value="E. coli TMP/SMX susceptibility - Resistant by disk diffusion"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -805,7 +802,7 @@
       </reference>
       <name value="Example AMR Diagnostic Report - Urine Culture"/>
       <description value="Complete AMR diagnostic report for urine culture with E. coli and K. pneumoniae"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-diagnostic-report"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -816,7 +813,7 @@
       </reference>
       <name value="Example Encounter - Inpatient at Princess Marina Hospital"/>
       <description value="Inpatient encounter, admitted 2 days before specimen collection"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-encounter"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-encounter"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -827,7 +824,7 @@
       </reference>
       <name value="Example Gram Stain - Gram-negative"/>
       <description value="Gram stain showing Gram-negative organisms in urine specimen"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-gram-stain-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -838,7 +835,7 @@
       </reference>
       <name value="Example Organism - Escherichia coli (Isolate 1)"/>
       <description value="E. coli identified from urine culture, isolate 1"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-organism-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -849,7 +846,7 @@
       </reference>
       <name value="Example Organism - Klebsiella pneumoniae (Isolate 2)"/>
       <description value="Klebsiella pneumoniae identified from urine culture, isolate 2"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-organism-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -860,7 +857,7 @@
       </reference>
       <name value="Example Patient - Keabetswe Motswana"/>
       <description value="A 45-year-old female patient admitted to Princess Marina Hospital"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -871,7 +868,7 @@
       </reference>
       <name value="Example Specimen - Mid-stream Urine"/>
       <description value="Mid-stream clean catch urine specimen collected from inpatient"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-specimen"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -893,7 +890,7 @@
       </reference>
       <name value="Klebsiella Special Test - ESBL (Negative)"/>
       <description value="ESBL testing for Klebsiella pneumoniae isolate - Negative"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-special-test-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -904,7 +901,7 @@
       </reference>
       <name value="Klebsiella Susceptibility - Amoxicillin/Clavulanate (I)"/>
       <description value="Klebsiella pneumoniae amoxicillin/clavulanate susceptibility - Intermediate by disk diffusion"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -915,7 +912,7 @@
       </reference>
       <name value="Klebsiella Susceptibility - Ampicillin (R)"/>
       <description value="Klebsiella pneumoniae ampicillin susceptibility - Resistant by disk diffusion"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -926,7 +923,7 @@
       </reference>
       <name value="Klebsiella Susceptibility - Ceftriaxone (S)"/>
       <description value="Klebsiella pneumoniae ceftriaxone susceptibility - Susceptible by disk diffusion"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -937,7 +934,7 @@
       </reference>
       <name value="Klebsiella Susceptibility - Ciprofloxacin (S)"/>
       <description value="Klebsiella pneumoniae ciprofloxacin susceptibility - Susceptible by disk diffusion"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -948,7 +945,7 @@
       </reference>
       <name value="Klebsiella Susceptibility - Gentamicin (S)"/>
       <description value="Klebsiella pneumoniae gentamicin susceptibility - Susceptible by disk diffusion"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -959,7 +956,7 @@
       </reference>
       <name value="Klebsiella Susceptibility - Meropenem (S)"/>
       <description value="Klebsiella pneumoniae meropenem susceptibility - Susceptible by disk diffusion"/>
-      <exampleCanonical value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"/>
+      <exampleCanonical value="http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -970,6 +967,50 @@
       </reference>
       <name value="Specimen Collection Location"/>
       <description value="Ward or facility location where specimen was collected"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/whonet-antibiotic-to-loinc"/>
+      </reference>
+      <name value="WHONET Antibiotic Codes to LOINC Susceptibility Codes"/>
+      <description value="Maps WHONET antibiotic codes to LOINC susceptibility test codes. Derived from the AMR R package (https://github.com/msberends/AMR). Contains 271 WHONET antibiotic codes with LOINC mappings. Note: equivalence is 'relatedto' because one WHONET antibiotic code maps to multiple LOINC codes representing different test methods (MIC, disk diffusion, etc.)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/whonet-antibiotic-to-snomed"/>
+      </reference>
+      <name value="WHONET Antibiotic Codes to SNOMED CT Substance Codes"/>
+      <description value="Maps WHONET antibiotic codes to SNOMED CT substance concept IDs. Derived from the official LOINC-SNOMED CT Ontology (September 2025) by tracing LOINC susceptibility codes through their SNOMED observable entity representations to the Component (704320005) relationship, which identifies the substance being tested. Contains 213 authoritative antimicrobial mappings."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/whonet-antibiotic-to-atc"/>
+      </reference>
+      <name value="WHONET Antibiotic Codes to WHO ATC Classification"/>
+      <description value="Maps WHONET antibiotic codes to WHO ATC (Anatomical Therapeutic Chemical) codes. Derived from the AMR R package (https://github.com/msberends/AMR). Contains 374 WHONET antibiotic codes with ATC mappings."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/whonet-organism-to-snomed"/>
+      </reference>
+      <name value="WHONET Organism Codes to SNOMED CT"/>
+      <description value="Maps WHONET organism codes to SNOMED CT concepts. Derived from the AMR R package (https://github.com/msberends/AMR) which integrates WHONET organism codes with SNOMED CT mappings. Contains 4995 WHONET organism codes."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ward-type-vs | *Version*:0.1.0 |
+| *Official URL*:http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-ward-type-vs | *Version*:0.1.0 |
 | Draft as of 2026-03-13 | *Computable Name*:BotswanaAMRWardTypeVS |
 
  
@@ -45,12 +45,12 @@ Ward/location types for AMR surveillance, aligned with WHONET location type and 
 {
   "resourceType" : "ValueSet",
   "id" : "botswana-amr-ward-type-vs",
-  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ward-type-vs",
+  "url" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-ward-type-vs",
   "version" : "0.1.0",
   "name" : "BotswanaAMRWardTypeVS",
   "title" : "Botswana AMR Ward Type",
   "status" : "draft",
-  "date" : "2026-03-13T15:05:11-04:00",
+  "date" : "2026-03-13T21:27:21-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [
     {

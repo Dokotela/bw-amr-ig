@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-identification-method-vs | *Version*:0.1.0 |
+| *Official URL*:http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-identification-method-vs | *Version*:0.1.0 |
 | Draft as of 2026-03-13 | *Computable Name*:BotswanaAMRIdentificationMethodVS |
 
  
@@ -45,12 +45,12 @@ Methods used for organism identification in Botswana AMR surveillance
 {
   "resourceType" : "ValueSet",
   "id" : "botswana-amr-identification-method-vs",
-  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-identification-method-vs",
+  "url" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-identification-method-vs",
   "version" : "0.1.0",
   "name" : "BotswanaAMRIdentificationMethodVS",
   "title" : "Botswana AMR Organism Identification Methods",
   "status" : "draft",
-  "date" : "2026-03-13T15:05:11-04:00",
+  "date" : "2026-03-13T21:27:21-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [
     {
@@ -84,7 +84,7 @@ Methods used for organism identification in Botswana AMR surveillance
         ]
       },
       {
-        "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs",
+        "system" : "http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs",
         "concept" : [
           {
             "code" : "vitek",

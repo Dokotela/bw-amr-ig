@@ -6,7 +6,7 @@
 
 ## Example Observation: Example Organism - Escherichia coli (Isolate 1)
 
-Profiles: [Botswana AMR Organism Identification Observation](StructureDefinition-botswana-amr-organism-observation.md), `http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-OrganismObservation`
+Profile: [Botswana AMR Organism Identification Observation](StructureDefinition-botswana-amr-organism-observation.md)
 
 **identifier**: isolate-1
 
@@ -14,7 +14,7 @@ Profiles: [Botswana AMR Organism Identification Observation](StructureDefinition
 
 **category**: Laboratory, Microbiology studies (set)
 
-**code**: Bacteria identified in Specimen by Culture
+**code**: Bacteria identified in Specimen by Aerobe culture
 
 **subject**: [Keabetswe Motswana Female, DoB: 1981-05-14](Patient-ExamplePatientMotswana.md)
 
@@ -47,8 +47,7 @@ Profiles: [Botswana AMR Organism Identification Observation](StructureDefinition
   "id" : "ExampleOrganismEcoli",
   "meta" : {
     "profile" : [
-      "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation",
-      "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-OrganismObservation"
+      "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-organism-observation"
     ]
   },
   "identifier" : [
@@ -82,7 +81,7 @@ Profiles: [Botswana AMR Organism Identification Observation](StructureDefinition
       {
         "system" : "http://loinc.org",
         "code" : "634-6",
-        "display" : "Bacteria identified in Specimen by Culture"
+        "display" : "Bacteria identified in Specimen by Aerobe culture"
       }
     ]
   },
@@ -102,7 +101,7 @@ Profiles: [Botswana AMR Organism Identification Observation](StructureDefinition
   "method" : {
     "coding" : [
       {
-        "system" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs",
+        "system" : "http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs",
         "code" : "vitek",
         "display" : "Vitek automated system"
       }

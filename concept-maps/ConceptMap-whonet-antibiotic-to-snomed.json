@@ -1,7 +1,7 @@
 {
   "resourceType": "ConceptMap",
   "id": "whonet-antibiotic-to-snomed",
-  "url": "http://bw.health.gov/fhir/ConceptMap/whonet-antibiotic-to-snomed",
+  "url": "http://bw.health.gov/fhir/amr/ConceptMap/whonet-antibiotic-to-snomed",
   "version": "0.1.0",
   "name": "WHONETAntibioticToSNOMED",
   "title": "WHONET Antibiotic Codes to SNOMED CT Substance Codes",

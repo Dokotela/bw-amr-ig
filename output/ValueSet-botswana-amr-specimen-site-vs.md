@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs | *Version*:0.1.0 |
+| *Official URL*:http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-specimen-site-vs | *Version*:0.1.0 |
 | Draft as of 2026-03-13 | *Computable Name*:BotswanaAMRSpecimenSiteVS |
 
  
@@ -45,12 +45,12 @@ Anatomical sites where specimens are collected for Botswana AMR surveillance
 {
   "resourceType" : "ValueSet",
   "id" : "botswana-amr-specimen-site-vs",
-  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs",
+  "url" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-specimen-site-vs",
   "version" : "0.1.0",
   "name" : "BotswanaAMRSpecimenSiteVS",
   "title" : "Botswana AMR Specimen Collection Sites",
   "status" : "draft",
-  "date" : "2026-03-13T15:05:11-04:00",
+  "date" : "2026-03-13T21:27:21-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [
     {
@@ -94,7 +94,7 @@ Anatomical sites where specimens are collected for Botswana AMR surveillance
             "display" : "Stool specimen"
           },
           {
-            "code" : "258603006",
+            "code" : "321667001",
             "display" : "Respiratory tract structure"
           },
           {
@@ -126,7 +126,7 @@ Anatomical sites where specimens are collected for Botswana AMR surveillance
             "display" : "Catheter tip"
           },
           {
-            "code" : "302562005",
+            "code" : "119376003",
             "display" : "Tissue specimen"
           },
           {

@@ -1,0 +1,379 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+  "version" : "CLSI 2025",
+  "code" : "S",
+  "display" : "Susceptible"
+}, "valueSet" :null, "langs":"en", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "code" : "S",
+  "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+  "version" : "CLSI 2025",
+  "severity" : "error",
+  "error" : "A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation' version 'CLSI 2025' could not be found, so the code cannot be validated. Valid versions: 2018-08-12 or 4.0.0",
+  "class" : "CODESYSTEM_UNSUPPORTED_VERSION",
+  "server" : "https://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "UNKNOWN_CODESYSTEM_VERSION"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "not-found",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-found"
+      }],
+      "text" : "A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation' version 'CLSI 2025' could not be found, so the code cannot be validated. Valid versions: 2018-08-12 or 4.0.0"
+    },
+    "expression" : ["Coding.system"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+    "version" : "CLSI 2025",
+    "code" : "S",
+    "display" : "Susceptible"
+  }]
+}, "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation", "version": "0.1.0", "langs":"en", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "display" : "Susceptible",
+  "code" : "S",
+  "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+  "version" : "4.0.0",
+  "severity" : "error",
+  "error" : "A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation' version 'CLSI 2025' could not be found, so the code cannot be validated. Valid versions: 2018-08-12 or 4.0.0",
+  "class" : "CODESYSTEM_UNSUPPORTED_VERSION",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n2ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: Analysing http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0 for validation purposes\n2ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: Parameters: disp-lang=en, generate-narrative, default-to-latest\n2ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: Prepare include[0]: \"(http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation)(S,I,R)\"\n2ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: CodeSystem found: \"http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0\"\n2ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: Validate \"[http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|CLSI 2025#S (\"Susceptible\")]\"\n2ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: Check \"http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|CLSI 2025#S\"\n4ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: CodeSystem found: http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0 for http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation\n4ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: check code in (http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation)(S,I,R) at CodeableConcept.coding[0]\n4ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: Code \"S\" found in http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "VALUESET_VALUE_MISMATCH_DEFAULT"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "vs-invalid"
+      }],
+      "text" : "The code system 'http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation' version '4.0.0' for the versionless include in the ValueSet include is different to the one in the value ('CLSI 2025')"
+    },
+    "expression" : ["CodeableConcept.coding[0].version"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "UNKNOWN_CODESYSTEM_VERSION"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "not-found",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-found"
+      }],
+      "text" : "A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation' version 'CLSI 2025' could not be found, so the code cannot be validated. Valid versions: 2018-08-12 or 4.0.0"
+    },
+    "expression" : ["CodeableConcept.coding[0].system"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+  "version" : "CLSI 2025",
+  "code" : "R",
+  "display" : "Resistant"
+}, "valueSet" :null, "langs":"en", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "code" : "R",
+  "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+  "version" : "CLSI 2025",
+  "severity" : "error",
+  "error" : "A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation' version 'CLSI 2025' could not be found, so the code cannot be validated. Valid versions: 2018-08-12 or 4.0.0",
+  "class" : "CODESYSTEM_UNSUPPORTED_VERSION",
+  "server" : "https://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "UNKNOWN_CODESYSTEM_VERSION"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "not-found",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-found"
+      }],
+      "text" : "A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation' version 'CLSI 2025' could not be found, so the code cannot be validated. Valid versions: 2018-08-12 or 4.0.0"
+    },
+    "expression" : ["Coding.system"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+    "version" : "CLSI 2025",
+    "code" : "R",
+    "display" : "Resistant"
+  }]
+}, "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation", "version": "0.1.0", "langs":"en", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "display" : "Resistant",
+  "code" : "R",
+  "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+  "version" : "4.0.0",
+  "severity" : "error",
+  "error" : "A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation' version 'CLSI 2025' could not be found, so the code cannot be validated. Valid versions: 2018-08-12 or 4.0.0",
+  "class" : "CODESYSTEM_UNSUPPORTED_VERSION",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n2ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: Analysing http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0 for validation purposes\n2ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: Parameters: disp-lang=en, generate-narrative, default-to-latest\n2ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: Prepare include[0]: \"(http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation)(S,I,R)\"\n2ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: CodeSystem found: \"http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0\"\n2ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: Validate \"[http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|CLSI 2025#R (\"Resistant\")]\"\n2ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: Check \"http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|CLSI 2025#R\"\n3ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: CodeSystem found: http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0 for http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation\n3ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: check code in (http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation)(S,I,R) at CodeableConcept.coding[0]\n3ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: Code \"R\" found in http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "VALUESET_VALUE_MISMATCH_DEFAULT"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "vs-invalid"
+      }],
+      "text" : "The code system 'http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation' version '4.0.0' for the versionless include in the ValueSet include is different to the one in the value ('CLSI 2025')"
+    },
+    "expression" : ["CodeableConcept.coding[0].version"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "UNKNOWN_CODESYSTEM_VERSION"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "not-found",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-found"
+      }],
+      "text" : "A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation' version 'CLSI 2025' could not be found, so the code cannot be validated. Valid versions: 2018-08-12 or 4.0.0"
+    },
+    "expression" : ["CodeableConcept.coding[0].system"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+  "version" : "CLSI 2025",
+  "code" : "I",
+  "display" : "Intermediate"
+}, "valueSet" :null, "langs":"en", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "code" : "I",
+  "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+  "version" : "CLSI 2025",
+  "severity" : "error",
+  "error" : "A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation' version 'CLSI 2025' could not be found, so the code cannot be validated. Valid versions: 2018-08-12 or 4.0.0",
+  "class" : "CODESYSTEM_UNSUPPORTED_VERSION",
+  "server" : "https://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "UNKNOWN_CODESYSTEM_VERSION"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "not-found",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-found"
+      }],
+      "text" : "A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation' version 'CLSI 2025' could not be found, so the code cannot be validated. Valid versions: 2018-08-12 or 4.0.0"
+    },
+    "expression" : ["Coding.system"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+    "version" : "CLSI 2025",
+    "code" : "I",
+    "display" : "Intermediate"
+  }]
+}, "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation", "version": "0.1.0", "langs":"en", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "display" : "Intermediate",
+  "code" : "I",
+  "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+  "version" : "4.0.0",
+  "severity" : "error",
+  "error" : "A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation' version 'CLSI 2025' could not be found, so the code cannot be validated. Valid versions: 2018-08-12 or 4.0.0",
+  "class" : "CODESYSTEM_UNSUPPORTED_VERSION",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n2ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: Analysing http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0 for validation purposes\n2ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: Parameters: disp-lang=en, generate-narrative, default-to-latest\n2ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: Prepare include[0]: \"(http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation)(S,I,R)\"\n2ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: CodeSystem found: \"http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0\"\n2ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: Validate \"[http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|CLSI 2025#I (\"Intermediate\")]\"\n2ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: Check \"http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|CLSI 2025#I\"\n3ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: CodeSystem found: http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0 for http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation\n3ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: check code in (http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation)(S,I,R) at CodeableConcept.coding[0]\n3ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation|0.1.0: Code \"I\" found in http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "VALUESET_VALUE_MISMATCH_DEFAULT"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "vs-invalid"
+      }],
+      "text" : "The code system 'http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation' version '4.0.0' for the versionless include in the ValueSet include is different to the one in the value ('CLSI 2025')"
+    },
+    "expression" : ["CodeableConcept.coding[0].version"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "UNKNOWN_CODESYSTEM_VERSION"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "not-found",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-found"
+      }],
+      "text" : "A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation' version 'CLSI 2025' could not be found, so the code cannot be validated. Valid versions: 2018-08-12 or 4.0.0"
+    },
+    "expression" : ["CodeableConcept.coding[0].system"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------

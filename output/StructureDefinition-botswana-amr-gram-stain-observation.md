@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation | *Version*:0.1.0 |
+| *Official URL*:http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-gram-stain-observation | *Version*:0.1.0 |
 | Draft as of 2026-03-13 | *Computable Name*:BotswanaAMRGramStainObservation |
 
  
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-gram-st
 {
   "resourceType" : "StructureDefinition",
   "id" : "botswana-amr-gram-stain-observation",
-  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation",
+  "url" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-gram-stain-observation",
   "version" : "0.1.0",
   "name" : "BotswanaAMRGramStainObservation",
   "title" : "Botswana AMR Gram Stain Observation",
   "status" : "draft",
-  "date" : "2026-03-13T15:05:11-04:00",
+  "date" : "2026-03-13T21:27:21-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [
     {
@@ -105,14 +105,9 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-gram-st
             "severity" : "error",
             "human" : "If there is no value, a dataAbsentReason must be provided",
             "expression" : "value.exists() or dataAbsentReason.exists()",
-            "source" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation"
+            "source" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-gram-stain-observation"
           }
         ]
-      },
-      {
-        "id" : "Observation.meta.profile",
-        "path" : "Observation.meta.profile",
-        "patternCanonical" : "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-GramStainObservation"
       },
       {
         "id" : "Observation.status",
@@ -244,7 +239,7 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-gram-st
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-gram-stain-result-vs"
+          "valueSet" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-gram-stain-result-vs"
         }
       },
       {
@@ -255,7 +250,7 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-gram-st
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen"
+              "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-specimen"
             ]
           }
         ]

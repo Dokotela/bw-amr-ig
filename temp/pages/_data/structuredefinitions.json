@@ -1,7 +1,7 @@
 {
   "botswana-amr-diagnostic-report" : {
     "index" : 0,
-    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report",
+    "url" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-diagnostic-report",
     "name" : "BotswanaAMRDiagnosticReport",
     "title" : "Botswana AMR DiagnosticReport",
     "uml" : false,
@@ -15,7 +15,7 @@
     "basepath" : "http://hl7.org/fhir/R4B/diagnosticreport.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Wed Jul 09 10:14:37 EDT 2025",
+    "date" : "Fri Mar 13 21:27:21 EDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "University of Botswana Partnership",
@@ -24,14 +24,44 @@
     "copyright" : null,
     "copyrightlang" : {
     },
-    "description" : "Bundles AMR susceptibility observations into one comprehensive report",
+    "description" : "Bundles AMR culture results into one comprehensive report. References top-level observations (gram stain and organism identifications). Susceptibility and special test results are accessed via OrganismObservation.hasMember.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "botswana-amr-encounter" : {
+    "index" : 1,
+    "url" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-encounter",
+    "name" : "BotswanaAMREncounter",
+    "title" : "Botswana AMR Encounter",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-botswana-amr-encounter.html",
+    "kind" : "resource",
+    "type" : "Encounter",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+    "basename" : "Encounter",
+    "basepath" : "http://hl7.org/fhir/R4B/encounter.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Fri Mar 13 21:27:21 EDT 2026",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "University of Botswana Partnership",
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Captures the clinical encounter context for AMR surveillance: ward type (inpatient/outpatient/ICU), admission date, department, and facility. Required for WHONET export and GLASS hospital-acquired vs community-acquired classification.",
     "descriptionlang" : {
     },
     "obligations" : false
   },
   "botswana-amr-gram-stain-observation" : {
-    "index" : 1,
-    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation",
+    "index" : 2,
+    "url" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-gram-stain-observation",
     "name" : "BotswanaAMRGramStainObservation",
     "title" : "Botswana AMR Gram Stain Observation",
     "uml" : false,
@@ -45,7 +75,7 @@
     "basepath" : "http://hl7.org/fhir/R4B/observation.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Wed Jul 09 10:14:37 EDT 2025",
+    "date" : "Fri Mar 13 21:27:21 EDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "University of Botswana Partnership",
@@ -60,8 +90,8 @@
     "obligations" : false
   },
   "botswana-amr-organism-observation" : {
-    "index" : 2,
-    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation",
+    "index" : 3,
+    "url" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-organism-observation",
     "name" : "BotswanaAMROrganismObservation",
     "title" : "Botswana AMR Organism Identification Observation",
     "uml" : false,
@@ -75,7 +105,7 @@
     "basepath" : "http://hl7.org/fhir/R4B/observation.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Wed Jul 09 10:14:37 EDT 2025",
+    "date" : "Fri Mar 13 21:27:21 EDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "University of Botswana Partnership",
@@ -84,14 +114,14 @@
     "copyright" : null,
     "copyrightlang" : {
     },
-    "description" : "Records organism identification results from culture in Botswana AMR surveillance",
+    "description" : "Records organism identification results from culture in Botswana AMR surveillance. Acts as the parent observation for susceptibility and special test results via hasMember.",
     "descriptionlang" : {
     },
     "obligations" : false
   },
   "botswana-amr-patient" : {
-    "index" : 3,
-    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient",
+    "index" : 4,
+    "url" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-patient",
     "name" : "BotswanaAMRPatient",
     "title" : "Botswana AMR Patient",
     "uml" : false,
@@ -105,7 +135,7 @@
     "basepath" : "http://hl7.org/fhir/R4B/patient.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Wed Jul 09 10:14:37 EDT 2025",
+    "date" : "Fri Mar 13 21:27:21 EDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "University of Botswana Partnership",
@@ -120,8 +150,8 @@
     "obligations" : false
   },
   "botswana-amr-special-test-observation" : {
-    "index" : 4,
-    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation",
+    "index" : 5,
+    "url" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-special-test-observation",
     "name" : "BotswanaAMRSpecialTestObservation",
     "title" : "Botswana AMR Special Test Observation",
     "uml" : false,
@@ -135,7 +165,7 @@
     "basepath" : "http://hl7.org/fhir/R4B/observation.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Wed Jul 09 10:14:37 EDT 2025",
+    "date" : "Fri Mar 13 21:27:21 EDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "University of Botswana Partnership",
@@ -144,14 +174,14 @@
     "copyright" : null,
     "copyrightlang" : {
     },
-    "description" : "Records special AMR test results (ESBL, Carbapenemase, D-Zone, MRSA) in Botswana AMR surveillance",
+    "description" : "Records special AMR test results (ESBL, Carbapenemase, D-Zone, MRSA) in Botswana AMR surveillance. Should be referenced from the parent OrganismObservation via hasMember.",
     "descriptionlang" : {
     },
     "obligations" : false
   },
   "botswana-amr-specimen" : {
-    "index" : 5,
-    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen",
+    "index" : 6,
+    "url" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-specimen",
     "name" : "BotswanaAMRSpecimen",
     "title" : "Botswana AMR Specimen",
     "uml" : false,
@@ -165,7 +195,7 @@
     "basepath" : "http://hl7.org/fhir/R4B/specimen.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Wed Jul 09 10:14:37 EDT 2025",
+    "date" : "Fri Mar 13 21:27:21 EDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "University of Botswana Partnership",
@@ -180,8 +210,8 @@
     "obligations" : false
   },
   "botswana-amr-susceptibility-observation" : {
-    "index" : 6,
-    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
+    "index" : 7,
+    "url" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation",
     "name" : "BotswanaAMRSusceptibilityObservation",
     "title" : "Botswana AMR Susceptibility Observation",
     "uml" : false,
@@ -195,7 +225,7 @@
     "basepath" : "http://hl7.org/fhir/R4B/observation.html",
     "adl" : false,
     "status" : "draft",
-    "date" : "Wed Jul 09 10:14:37 EDT 2025",
+    "date" : "Fri Mar 13 21:27:21 EDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "University of Botswana Partnership",
@@ -204,14 +234,14 @@
     "copyright" : null,
     "copyrightlang" : {
     },
-    "description" : "Records S/I/R (and optional MIC) for a single antibiotic test on a specimen",
+    "description" : "Records S/I/R (and optional MIC) for a single antibiotic test on a specimen. Should be referenced from the parent OrganismObservation via hasMember.",
     "descriptionlang" : {
     },
     "obligations" : false
   },
   "specimen-collection-location" : {
-    "index" : 7,
-    "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/specimen-collection-location",
+    "index" : 8,
+    "url" : "http://bw.health.gov/fhir/amr/StructureDefinition/specimen-collection-location",
     "name" : "SpecimenCollectionLocation",
     "title" : "Specimen Collection Location",
     "uml" : false,
@@ -225,7 +255,7 @@
     "basepath" : "http://hl7.org/fhir/R4B/extensibility.html#Extension",
     "adl" : false,
     "status" : "draft",
-    "date" : "Wed Jul 09 10:14:37 EDT 2025",
+    "date" : "Fri Mar 13 21:27:21 EDT 2026",
     "abstract" : false,
     "derivation" : "constraint",
     "publisher" : "University of Botswana Partnership",

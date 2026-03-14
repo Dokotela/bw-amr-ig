@@ -1,0 +1,216 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "en"
+}, "url": "http://hl7.org/fhir/ValueSet/languages", "version": "4.3.0", "langs":"en", "useServer":"true", "useClient":"true", "guessSystem":"true", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "display" : "English",
+  "code" : "en",
+  "system" : "urn:ietf:bcp:47",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n2ms http://hl7.org/fhir/ValueSet/languages|4.3.0: Analysing http://hl7.org/fhir/ValueSet/languages|4.3.0 for validation purposes\n2ms http://hl7.org/fhir/ValueSet/languages|4.3.0: Parameters: disp-lang=en, generate-narrative, default-to-latest\n2ms http://hl7.org/fhir/ValueSet/languages|4.3.0: Prepare include[0]: \"(urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,es-UY,fi,fr,fr-BE,fr-CH,fr-FR,fy,fy-NL,hi,hr,it,it-CH,it-IT,ja,ko,nl,nl-BE,nl-NL,no,no-NO,pa,pl,pt,pt-BR,ru,ru-RU,sr,sr-RS,sv,sv-SE,te,zh,zh-CN,zh-HK,zh-SG,zh-TW)\"\n3ms http://hl7.org/fhir/ValueSet/languages|4.3.0: CodeSystem found: \"urn:ietf:bcp:47|null\"\n3ms http://hl7.org/fhir/ValueSet/languages|4.3.0: Validate \"[undefined#en (\"undefined\")]\" and infer system\n3ms http://hl7.org/fhir/ValueSet/languages|4.3.0: Check \"undefined#en\"\n3ms http://hl7.org/fhir/ValueSet/languages|4.3.0: Inferred CodeSystem = \"urn:ietf:bcp:47\"\n3ms http://hl7.org/fhir/ValueSet/languages|4.3.0: CodeSystem found: urn:ietf:bcp:47|null for urn:ietf:bcp:47\n3ms http://hl7.org/fhir/ValueSet/languages|4.3.0: check code in (urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,es-UY,fi,fr,fr-BE,fr-CH,fr-FR,fy,fy-NL,hi,hr,it,it-CH,it-IT,ja,ko,nl,nl-BE,nl-NL,no,no-NO,pa,pl,pt,pt-BR,ru,ru-RU,sr,sr-RS,sv,sv-SE,te,zh,zh-CN,zh-HK,zh-SG,zh-TW) at \n3ms http://hl7.org/fhir/ValueSet/languages|4.3.0: Code \"en\" found in urn:ietf:bcp:47|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "18725-2",
+    "display" : "Microbiology studies (set)"
+  }]
+}, "url": "http://hl7.org/fhir/ValueSet/observation-category", "version": "4.3.0", "langs":"en", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "No valid coding was found for the value set 'http://hl7.org/fhir/ValueSet/observation-category|4.3.0'",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/ValueSet/observation-category|4.3.0: Analysing http://hl7.org/fhir/ValueSet/observation-category|4.3.0 for validation purposes\n1ms http://hl7.org/fhir/ValueSet/observation-category|4.3.0: Parameters: disp-lang=en, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/ValueSet/observation-category|4.3.0: Prepare include[0]: \"(http://terminology.hl7.org/CodeSystem/observation-category)\"\n1ms http://hl7.org/fhir/ValueSet/observation-category|4.3.0: CodeSystem found: \"http://terminology.hl7.org/CodeSystem/observation-category|2.0.0\"\n1ms http://hl7.org/fhir/ValueSet/observation-category|4.3.0: Validate \"[http://loinc.org#18725-2 (\"Microbiology studies (set)\")]\"\n3ms http://hl7.org/fhir/ValueSet/observation-category|4.3.0: Check \"http://loinc.org#18725-2\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://loinc.org#18725-2 ('Microbiology studies (set)')' was not found in the value set 'http://hl7.org/fhir/ValueSet/observation-category|4.3.0'"
+    },
+    "expression" : ["CodeableConcept.coding[0].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "No valid coding was found for the value set 'http://hl7.org/fhir/ValueSet/observation-category|4.3.0'"
+    }
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "112283007",
+    "display" : "Escherichia coli"
+  }]
+}, "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs", "version": "0.1.0", "langs":"en", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "display" : "Escherichia coli",
+  "code" : "112283007",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: Analysing http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0 for validation purposes\n1ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: Parameters: disp-lang=en, generate-narrative, default-to-latest\n1ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: Prepare include[0]: \"(http://snomed.info/sct)(conceptis-a410607006)\"\n1ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\"\n1ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: Prepare include[1]: \"(http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs)\"\n1ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: CodeSystem found: \"http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs|0.1.0\"\n1ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: Validate \"[http://snomed.info/sct#112283007 (\"Escherichia coli\")]\"\n1ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: Check \"http://snomed.info/sct#112283007\"\n1ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct\n1ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: check code in (http://snomed.info/sct)(conceptis-a410607006) at CodeableConcept.coding[0]\n2ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: Filter concept is-a 410607006: Code \"112283007\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "56415008",
+    "display" : "Klebsiella pneumoniae"
+  }]
+}, "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs", "version": "0.1.0", "langs":"en", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "display" : "Klebsiella pneumoniae",
+  "code" : "56415008",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: Analysing http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0 for validation purposes\n1ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: Parameters: disp-lang=en, generate-narrative, default-to-latest\n1ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: Prepare include[0]: \"(http://snomed.info/sct)(conceptis-a410607006)\"\n1ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\"\n1ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: Prepare include[1]: \"(http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs)\"\n1ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: CodeSystem found: \"http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs|0.1.0\"\n1ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: Validate \"[http://snomed.info/sct#56415008 (\"Klebsiella pneumoniae\")]\"\n1ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: Check \"http://snomed.info/sct#56415008\"\n1ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct\n1ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: check code in (http://snomed.info/sct)(conceptis-a410607006) at CodeableConcept.coding[0]\n2ms http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs|0.1.0: Filter concept is-a 410607006: Code \"56415008\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "112283007",
+    "display" : "Escherichia coli"
+  }]
+}, "url": "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs", "version": "0.1.0", "langs":"en", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "display" : "Escherichia coli",
+  "code" : "112283007",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n2ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: Analysing http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0 for validation purposes\n2ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: Parameters: disp-lang=en, generate-narrative, default-to-latest\n2ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: Prepare include[0]: \"(http://snomed.info/sct)(conceptis-a410607006)\"\n2ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\"\n2ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: Prepare include[1]: \"(http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-organism-cs)\"\n2ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: CodeSystem found: \"http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-organism-cs|0.1.0\"\n2ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: Validate \"[http://snomed.info/sct#112283007 (\"Escherichia coli\")]\"\n2ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: Check \"http://snomed.info/sct#112283007\"\n2ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct\n2ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: check code in (http://snomed.info/sct)(conceptis-a410607006) at CodeableConcept.coding[0]\n5ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: Filter concept is-a 410607006: Code \"112283007\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "56415008",
+    "display" : "Klebsiella pneumoniae"
+  }]
+}, "url": "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs", "version": "0.1.0", "langs":"en", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "display" : "Klebsiella pneumoniae",
+  "code" : "56415008",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: Analysing http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0 for validation purposes\n1ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: Parameters: disp-lang=en, generate-narrative, default-to-latest\n1ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: Prepare include[0]: \"(http://snomed.info/sct)(conceptis-a410607006)\"\n1ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\"\n1ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: Prepare include[1]: \"(http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-organism-cs)\"\n1ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: CodeSystem found: \"http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-organism-cs|0.1.0\"\n1ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: Validate \"[http://snomed.info/sct#56415008 (\"Klebsiella pneumoniae\")]\"\n1ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: Check \"http://snomed.info/sct#56415008\"\n1ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct\n1ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: check code in (http://snomed.info/sct)(conceptis-a410607006) at CodeableConcept.coding[0]\n4ms http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs|0.1.0: Filter concept is-a 410607006: Code \"56415008\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------

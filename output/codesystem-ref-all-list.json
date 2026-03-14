@@ -1,7 +1,7 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs",
+      "url" : "http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "BotswanaAMRLocalMethodCS",
@@ -12,7 +12,7 @@
       "ValueSet-botswana-amr-identification-method-vs.html" : "Botswana AMR Organism Identification Methods"
     },
     {
-      "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+      "url" : "http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-organism-cs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "BotswanaAMRLocalOrganismCS",
@@ -119,6 +119,23 @@
       "http://hl7.org/fhir/R4B/valueset-specimen-status.html" : "SpecimenStatus"
     },
     {
+      "url" : "http://loinc.org",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "LOINC",
+      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+      "oids" : ["2.16.840.1.113883.6.1"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-observation-codes.html" : "LOINC Codes",
+      "ValueSet-botswana-amr-antibiotic-susceptibility-loinc.html" : "Botswana AMR Antibiotic Susceptibility LOINC",
+      "ConceptMap-whonet-antibiotic-to-loinc.html" : "WHONET Antibiotic Codes to LOINC Susceptibility Codes",
+      "ValueSet-botswana-amr-special-test-vs.html" : "Botswana AMR Special Tests",
+      "http://loinc.org/" : "All LOINC codes",
+      "http://hl7.org/fhir/R4B/valueset-report-codes.html" : "LOINC Diagnostic Report Codes"
+    },
+    {
       "url" : "http://snomed.info/sct",
       "version" : null,
       "status" : "active",
@@ -128,19 +145,22 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-botswana-amr-organism-vs.html" : "Botswana AMR Organism ValueSet",
-      "http://hl7.org/fhir/R4B/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
-      "ValueSet-botswana-amr-specimen-site-vs.html" : "Botswana AMR Specimen Collection Sites",
-      "ValueSet-botswana-amr-test-result-status-vs.html" : "Botswana AMR Test Result Status",
+      "ConceptMap-whonet-antibiotic-to-snomed.html" : "WHONET Antibiotic Codes to SNOMED CT Substance Codes",
       "ValueSet-botswana-amr-ast-method-vs.html" : "Botswana AMR AST Method",
-      "http://hl7.org/fhir/R4B/valueset-encounter-reason.html" : "Encounter Reason Codes",
-      "http://hl7.org/fhir/R4B/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
-      "ValueSet-botswana-amr-identification-method-vs.html" : "Botswana AMR Organism Identification Methods",
+      "https://browser.ihtsdotools.org/" : "All Codes SCT ValueSet",
+      "http://hl7.org/fhir/R4B/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
       "http://hl7.org/fhir/R4B/valueset-specimen-container-type.html" : "SpecimenContainer",
+      "ValueSet-botswana-amr-specimen-site-vs.html" : "Botswana AMR Specimen Collection Sites",
+      "ValueSet-botswana-amr-organism-vs.html" : "Botswana AMR Organism ValueSet",
+      "ConceptMap-whonet-organism-to-snomed.html" : "WHONET Organism Codes to SNOMED CT",
+      "ValueSet-botswana-amr-test-result-status-vs.html" : "Botswana AMR Test Result Status",
+      "http://hl7.org/fhir/R4B/valueset-encounter-reason.html" : "Encounter Reason Codes",
       "http://hl7.org/fhir/R4B/valueset-observation-methods.html" : "Observation Methods",
       "ValueSet-botswana-amr-gram-stain-result-vs.html" : "Botswana AMR Gram Stain Results",
+      "ValueSet-botswana-amr-identification-method-vs.html" : "Botswana AMR Organism Identification Methods",
       "http://hl7.org/fhir/R4B/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4B/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes"
+      "http://hl7.org/fhir/R4B/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
+      "http://hl7.org/fhir/R4B/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -153,18 +173,6 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4B/valueset-encounter-admit-source.html" : "AdmitSource"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
-      "version" : "1.0.1",
-      "status" : "active",
-      "name" : "CommonTags",
-      "title" : "Common Tags",
-      "description" : "Common Tag Codes defined by FHIR project",
-      "oids" : ["2.16.840.1.113883.4.642.1.1067"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4B/valueset-common-tags.html" : "Common Tags"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -252,7 +260,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
-      "version" : "2.0.0",
+      "version" : "1.0.1",
       "status" : "active",
       "name" : "ObservationCategoryCodes",
       "title" : "Observation Category Codes",
@@ -300,7 +308,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0074",
-      "version" : "3.0.0",
+      "version" : "2.0.0",
       "status" : "active",
       "name" : "DiagnosticServiceSectionId",
       "title" : "diagnosticServiceSectionId",
@@ -312,7 +320,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0092",
-      "version" : "3.0.0",
+      "version" : "2.0.0",
       "status" : "active",
       "name" : "ReAdmissionIndicator",
       "title" : "re-admissionIndicator",
@@ -320,11 +328,11 @@
       "oids" : ["2.16.840.1.113883.18.36"],
       "uses" : {
       },
-      "http://terminology.hl7.org/7.1.0/ValueSet-v2-0092.html" : "hl7VS-re-admissionIndicator"
+      "http://terminology.hl7.org/6.0.2/ValueSet-v2-0092.html" : "hl7VS-re-admissionIndicator"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
-      "version" : "3.0.0",
+      "version" : "2.0.0",
       "status" : "active",
       "name" : "ContactRole2",
       "title" : "contactRole2",
@@ -336,7 +344,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0371",
-      "version" : "3.0.0",
+      "version" : "2.0.0",
       "status" : "active",
       "name" : "AdditivePreservative",
       "title" : "additivePreservative",
@@ -344,11 +352,11 @@
       "oids" : ["2.16.840.1.113883.18.229"],
       "uses" : {
       },
-      "http://terminology.hl7.org/7.1.0/ValueSet-v2-0371.html" : "hl7VS-additivePreservative"
+      "http://terminology.hl7.org/6.0.2/ValueSet-v2-0371.html" : "hl7VS-additivePreservative"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0373",
-      "version" : "3.0.0",
+      "version" : "2.0.0",
       "status" : "active",
       "name" : "Treatment",
       "title" : "treatment",
@@ -360,7 +368,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0493",
-      "version" : "3.0.0",
+      "version" : "2.0.0",
       "status" : "active",
       "name" : "SpecimenCondition",
       "title" : "specimenCondition",
@@ -368,11 +376,11 @@
       "oids" : ["2.16.840.1.113883.18.317"],
       "uses" : {
       },
-      "http://terminology.hl7.org/7.1.0/ValueSet-v2-0493.html" : "hl7VS-specimenCondition"
+      "http://terminology.hl7.org/6.0.2/ValueSet-v2-0493.html" : "hl7VS-specimenCondition"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0916",
-      "version" : "3.0.0",
+      "version" : "2.0.0",
       "status" : "active",
       "name" : "RelevantClincialInformation",
       "title" : "relevantClincialInformation",
@@ -380,11 +388,11 @@
       "oids" : ["2.16.840.1.113883.18.422"],
       "uses" : {
       },
-      "http://terminology.hl7.org/7.1.0/ValueSet-v2-0916.html" : "hl7VS-relevantClincialInformation"
+      "http://terminology.hl7.org/6.0.2/ValueSet-v2-0916.html" : "hl7VS-relevantClincialInformation"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "version" : "10.0.0",
+      "version" : "9.0.0",
       "status" : "active",
       "name" : "ActCode",
       "title" : "ActCode",
@@ -392,12 +400,12 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
-      "http://terminology.hl7.org/7.1.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
+      "http://terminology.hl7.org/6.0.2/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
       "ValueSet-botswana-amr-ward-type-vs.html" : "Botswana AMR Ward Type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
-      "version" : "4.0.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "ActPriority",
       "title" : "ActPriority",
@@ -405,11 +413,11 @@
       "oids" : ["2.16.840.1.113883.5.7"],
       "uses" : {
       },
-      "http://terminology.hl7.org/7.1.0/ValueSet-v3-ActPriority.html" : "ActPriority"
+      "http://terminology.hl7.org/6.0.2/ValueSet-v3-ActPriority.html" : "ActPriority"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
-      "version" : "4.0.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "EncounterSpecialCourtesy",
       "title" : "EncounterSpecialCourtesy",
@@ -421,7 +429,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
-      "version" : "4.0.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "MaritalStatus",
       "title" : "MaritalStatus",
@@ -433,7 +441,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-      "version" : "4.0.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "NullFlavor",
       "title" : "NullFlavor",
@@ -441,12 +449,12 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4B/valueset-encounter-special-courtesy.html" : "SpecialCourtesy",
-      "http://hl7.org/fhir/R4B/valueset-marital-status.html" : "MaritalStatus"
+      "http://hl7.org/fhir/R4B/valueset-marital-status.html" : "MaritalStatus",
+      "http://hl7.org/fhir/R4B/valueset-encounter-special-courtesy.html" : "SpecialCourtesy"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-      "version" : "4.0.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "ObservationInterpretation",
       "title" : "ObservationInterpretation",
@@ -454,12 +462,12 @@
       "oids" : ["2.16.840.1.113883.5.83"],
       "uses" : {
       },
-      "ValueSet-botswana-amr-interpretation.html" : "Botswana AMR Interpretation",
-      "http://hl7.org/fhir/R4B/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
+      "http://hl7.org/fhir/R4B/valueset-observation-interpretation.html" : "Observation Interpretation Codes",
+      "ValueSet-botswana-amr-interpretation.html" : "Botswana AMR Interpretation"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-      "version" : "6.0.0",
+      "version" : "5.0.0",
       "status" : "active",
       "name" : "ParticipationType",
       "title" : "ParticipationType",
@@ -471,7 +479,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-SpecimenType",
-      "version" : "4.0.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "SpecimenType",
       "title" : "SpecimenType",
@@ -480,6 +488,30 @@
       "uses" : {
       },
       "ValueSet-botswana-amr-specimen-type-vs.html" : "Botswana AMR Specimen Type VS"
+    },
+    {
+      "url" : "http://www.whocc.no/atc",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "WC",
+      "title" : "WHO ATC",
+      "description" : "WHO ATC",
+      "oids" : ["2.16.840.1.113883.6.73"],
+      "uses" : {
+      },
+      "ConceptMap-whonet-antibiotic-to-atc.html" : "WHONET Antibiotic Codes to WHO ATC Classification"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-languages.html" : "Common Languages"
     }
   ]
 }

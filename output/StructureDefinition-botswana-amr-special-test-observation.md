@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation | *Version*:0.1.0 |
+| *Official URL*:http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-special-test-observation | *Version*:0.1.0 |
 | Draft as of 2026-03-13 | *Computable Name*:BotswanaAMRSpecialTestObservation |
 
  
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-special
 {
   "resourceType" : "StructureDefinition",
   "id" : "botswana-amr-special-test-observation",
-  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation",
+  "url" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-special-test-observation",
   "version" : "0.1.0",
   "name" : "BotswanaAMRSpecialTestObservation",
   "title" : "Botswana AMR Special Test Observation",
   "status" : "draft",
-  "date" : "2026-03-13T15:05:11-04:00",
+  "date" : "2026-03-13T21:27:21-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [
     {
@@ -105,14 +105,9 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-special
             "severity" : "error",
             "human" : "If there is no value, a dataAbsentReason must be provided",
             "expression" : "value.exists() or dataAbsentReason.exists()",
-            "source" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation"
+            "source" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-special-test-observation"
           }
         ]
-      },
-      {
-        "id" : "Observation.meta.profile",
-        "path" : "Observation.meta.profile",
-        "patternCanonical" : "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SpecialTestObservation"
       },
       {
         "id" : "Observation.status",
@@ -170,7 +165,7 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-special
         "path" : "Observation.code",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-special-test-vs"
+          "valueSet" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-special-test-vs"
         }
       },
       {
@@ -239,7 +234,7 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-special
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs"
+          "valueSet" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-test-result-status-vs"
         }
       },
       {
@@ -250,7 +245,7 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-special
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen"
+              "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-specimen"
             ]
           }
         ]

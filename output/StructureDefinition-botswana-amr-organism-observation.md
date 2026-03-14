@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation | *Version*:0.1.0 |
+| *Official URL*:http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-organism-observation | *Version*:0.1.0 |
 | Draft as of 2026-03-13 | *Computable Name*:BotswanaAMROrganismObservation |
 
  
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-organis
 {
   "resourceType" : "StructureDefinition",
   "id" : "botswana-amr-organism-observation",
-  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation",
+  "url" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-organism-observation",
   "version" : "0.1.0",
   "name" : "BotswanaAMROrganismObservation",
   "title" : "Botswana AMR Organism Identification Observation",
   "status" : "draft",
-  "date" : "2026-03-13T15:05:11-04:00",
+  "date" : "2026-03-13T21:27:21-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [
     {
@@ -105,14 +105,9 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-organis
             "severity" : "error",
             "human" : "If there is no value, a dataAbsentReason must be provided",
             "expression" : "value.exists() or dataAbsentReason.exists()",
-            "source" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-organism-observation"
+            "source" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-organism-observation"
           }
         ]
-      },
-      {
-        "id" : "Observation.meta.profile",
-        "path" : "Observation.meta.profile",
-        "patternCanonical" : "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-OrganismObservation"
       },
       {
         "id" : "Observation.identifier",
@@ -178,7 +173,7 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-organis
             {
               "system" : "http://loinc.org",
               "code" : "634-6",
-              "display" : "Bacteria identified in Specimen by Culture"
+              "display" : "Bacteria identified in Specimen by Aerobe culture"
             }
           ]
         }
@@ -249,7 +244,7 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-organis
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs"
+          "valueSet" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs"
         }
       },
       {
@@ -257,7 +252,7 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-organis
         "path" : "Observation.method",
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-identification-method-vs"
+          "valueSet" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-identification-method-vs"
         }
       },
       {
@@ -268,7 +263,7 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-organis
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen"
+              "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-specimen"
             ]
           }
         ]
@@ -280,8 +275,8 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-organis
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation"
+              "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation",
+              "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-special-test-observation"
             ]
           }
         ]

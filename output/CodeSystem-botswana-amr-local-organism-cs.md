@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs | *Version*:0.1.0 |
+| *Official URL*:http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-organism-cs | *Version*:0.1.0 |
 | Draft as of 2026-03-13 | *Computable Name*:BotswanaAMRLocalOrganismCS |
 
  
@@ -26,12 +26,12 @@ Local codes for organism combinations and complex designations used in Botswana 
 {
   "resourceType" : "CodeSystem",
   "id" : "botswana-amr-local-organism-cs",
-  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs",
+  "url" : "http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-organism-cs",
   "version" : "0.1.0",
   "name" : "BotswanaAMRLocalOrganismCS",
   "title" : "Botswana AMR Local Organism Codes",
   "status" : "draft",
-  "date" : "2026-03-13T15:05:11-04:00",
+  "date" : "2026-03-13T21:27:21-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [
     {

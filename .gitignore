@@ -1,1 +1,10 @@
 publisher.jar
+
+# Large generated files that exceed GitHub's 100MB limit
+output/qa-tx.html
+output/ConceptMap-whonet-organism-to-snomed.xml.html
+output/ConceptMap-whonet-organism-to-snomed.ttl.html
+temp/pages/_includes/ConceptMap-whonet-organism-to-snomed-ttl-html.xhtml
+temp/pages/_includes/ConceptMap-whonet-organism-to-snomed-xml-html.xhtml
+temp/qa/ConceptMap-whonet-organism-to-snomed-ttl-html.html
+temp/qa/ConceptMap-whonet-organism-to-snomed-xml-html.html

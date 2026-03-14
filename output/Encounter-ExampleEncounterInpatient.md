@@ -6,11 +6,11 @@
 
 ## Example Encounter: Example Encounter - Inpatient at Princess Marina Hospital
 
-Profiles: [Botswana AMR Encounter](StructureDefinition-botswana-amr-encounter.md), `http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Encounter`
+Profile: [Botswana AMR Encounter](StructureDefinition-botswana-amr-encounter.md)
 
 **status**: Finished
 
-**class**: [ActCode: IMP](http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP) (inpatient encounter)
+**class**: [ActCode: IMP](http://terminology.hl7.org/6.0.2/CodeSystem-v3-ActCode.html#v3-ActCode-IMP) (inpatient encounter)
 
 **subject**: [Keabetswe Motswana Female, DoB: 1981-05-14](Patient-ExamplePatientMotswana.md)
 
@@ -26,8 +26,7 @@ Profiles: [Botswana AMR Encounter](StructureDefinition-botswana-amr-encounter.md
   "id" : "ExampleEncounterInpatient",
   "meta" : {
     "profile" : [
-      "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-encounter",
-      "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Encounter"
+      "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-encounter"
     ]
   },
   "status" : "finished",

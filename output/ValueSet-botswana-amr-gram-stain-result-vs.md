@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-gram-stain-result-vs | *Version*:0.1.0 |
+| *Official URL*:http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-gram-stain-result-vs | *Version*:0.1.0 |
 | Draft as of 2026-03-13 | *Computable Name*:BotswanaAMRGramStainResultVS |
 
  
@@ -45,12 +45,12 @@ Gram stain results used in Botswana AMR surveillance
 {
   "resourceType" : "ValueSet",
   "id" : "botswana-amr-gram-stain-result-vs",
-  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-gram-stain-result-vs",
+  "url" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-gram-stain-result-vs",
   "version" : "0.1.0",
   "name" : "BotswanaAMRGramStainResultVS",
   "title" : "Botswana AMR Gram Stain Results",
   "status" : "draft",
-  "date" : "2026-03-13T15:05:11-04:00",
+  "date" : "2026-03-13T21:27:21-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [
     {
@@ -75,11 +75,11 @@ Gram stain results used in Botswana AMR surveillance
           },
           {
             "code" : "87172008",
-            "display" : "Gram-negative"
+            "display" : "Gram-negative bacillus"
           },
           {
-            "code" : "411933009",
-            "display" : "Gram-variable"
+            "code" : "301780001",
+            "display" : "Gram-variable bacterium"
           },
           {
             "code" : "58296003",

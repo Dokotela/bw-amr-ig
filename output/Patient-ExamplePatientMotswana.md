@@ -6,7 +6,7 @@
 
 ## Example Patient: Example Patient - Keabetswe Motswana
 
-Profiles: [Botswana AMR Patient](StructureDefinition-botswana-amr-patient.md), `http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Patient`
+Profile: [Botswana AMR Patient](StructureDefinition-botswana-amr-patient.md)
 
 Keabetswe Motswana Female, DoB: 1981-05-14
 
@@ -22,8 +22,7 @@ Keabetswe Motswana Female, DoB: 1981-05-14
   "id" : "ExamplePatientMotswana",
   "meta" : {
     "profile" : [
-      "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient",
-      "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Patient"
+      "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-patient"
     ]
   },
   "name" : [

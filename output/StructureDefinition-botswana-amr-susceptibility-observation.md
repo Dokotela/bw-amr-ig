@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation | *Version*:0.1.0 |
+| *Official URL*:http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation | *Version*:0.1.0 |
 | Draft as of 2026-03-13 | *Computable Name*:BotswanaAMRSusceptibilityObservation |
 
  
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-suscept
 {
   "resourceType" : "StructureDefinition",
   "id" : "botswana-amr-susceptibility-observation",
-  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
+  "url" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation",
   "version" : "0.1.0",
   "name" : "BotswanaAMRSusceptibilityObservation",
   "title" : "Botswana AMR Susceptibility Observation",
   "status" : "draft",
-  "date" : "2026-03-13T15:05:11-04:00",
+  "date" : "2026-03-13T21:27:21-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [
     {
@@ -105,14 +105,9 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-suscept
             "severity" : "error",
             "human" : "If there is no value and no interpretation, a dataAbsentReason must be provided",
             "expression" : "value.exists() or interpretation.exists() or dataAbsentReason.exists()",
-            "source" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation"
+            "source" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"
           }
         ]
-      },
-      {
-        "id" : "Observation.meta.profile",
-        "path" : "Observation.meta.profile",
-        "patternCanonical" : "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SusceptibilityObservation"
       },
       {
         "id" : "Observation.status",
@@ -170,7 +165,7 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-suscept
         "path" : "Observation.code",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc"
+          "valueSet" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-antibiotic-susceptibility-loinc"
         }
       },
       {
@@ -181,7 +176,7 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-suscept
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient"
+              "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-patient"
             ]
           }
         ]
@@ -251,7 +246,7 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-suscept
         "max" : "1",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation"
+          "valueSet" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-interpretation"
         }
       },
       {
@@ -259,7 +254,7 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-suscept
         "path" : "Observation.method",
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ast-method-vs"
+          "valueSet" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-ast-method-vs"
         }
       },
       {
@@ -270,7 +265,7 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-suscept
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen"
+              "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-specimen"
             ]
           }
         ]

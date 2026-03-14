@@ -6,7 +6,7 @@
 
 ## Example Specimen: Example Specimen - Mid-stream Urine
 
-Profiles: [Botswana AMR Specimen](StructureDefinition-botswana-amr-specimen.md), `http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Specimen`
+Profile: [Botswana AMR Specimen](StructureDefinition-botswana-amr-specimen.md)
 
 **identifier**: PMH-2026-U4421
 
@@ -19,7 +19,7 @@ Profiles: [Botswana AMR Specimen](StructureDefinition-botswana-amr-specimen.md),
 | | | | |
 | :--- | :--- | :--- | :--- |
 | - | **Collected[x]** | **Method** | **BodySite** |
-| * | 2026-03-10 08:30:00+0200 | Mid-stream urine specimen collection | Urine |
+| * | 2026-03-10 08:30:00+0200 | Mid-stream urine sample | Urine |
 
 
 
@@ -31,8 +31,7 @@ Profiles: [Botswana AMR Specimen](StructureDefinition-botswana-amr-specimen.md),
   "id" : "ExampleSpecimenUrine",
   "meta" : {
     "profile" : [
-      "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen",
-      "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Specimen"
+      "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-specimen"
     ]
   },
   "identifier" : [
@@ -59,7 +58,7 @@ Profiles: [Botswana AMR Specimen](StructureDefinition-botswana-amr-specimen.md),
         {
           "system" : "http://snomed.info/sct",
           "code" : "258574006",
-          "display" : "Mid-stream urine specimen collection"
+          "display" : "Mid-stream urine sample"
         }
       ]
     },

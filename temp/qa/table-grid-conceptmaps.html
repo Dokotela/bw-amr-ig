@@ -1,0 +1,109 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>table-grid-conceptmaps</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<table data-resource-type="ConceptMap" class="grid filtered-table">
+  <tr>
+    <th>Identity</th>
+    <th>Name</th>
+    <th>Version</th>
+    <th>Status</th>
+    <th>Owner</th>
+    <th>Copyright</th>
+    <th>Date</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>
+      <input size="10" id="filter-identity" type="text" class="filter-input"/>
+    </td>
+    <td>
+      <input size="30" id="filter-name" type="text" class="filter-input"/>
+    </td>
+    <td>
+      <input size="4" id="filter-version" type="text" class="filter-input"/>
+    </td>
+    <td>
+      <input size="4" id="filter-status" type="text" class="filter-input"/>
+    </td>
+    <td>
+      <input size="5" id="filter-owner" type="text" class="filter-input"/>
+    </td>
+    <td>
+      <input size="5" id="filter-copyright" type="text" class="filter-input"/>
+    </td>
+    <td>
+      <input size="6" id="filter-date" type="text" class="filter-input"/>
+    </td>
+    <td>
+      <input size="30" id="filter-desc" type="text" class="filter-input"/>
+    </td>
+  </tr>
+  <tr class="data-row">
+    <td>
+      <a href="ConceptMap/whonet-antibiotic-to-atc" title="whonet-antibiotic-to-atc">whonet-antibiotic-t…</a>
+    </td>
+    <td>WHONET Antibiotic Codes to WHO ATC Classification</td>
+    <td>0.1.0</td>
+    <td>draft</td>
+    <td>
+      <a href="https://github.com/Dokotela/bw-amr-ig" title="university of botswana partnership">external</a>
+    </td>
+    <td>n/a</td>
+    <td>2026-03-13</td>
+    <td title="Maps WHONET antibiotic codes to WHO ATC (Anatomical Therapeutic Chemical) codes. Derived from the AMR R package (https://github.com/msberends/AMR). Contains 374 WHONET antibiotic codes with ATC mappings.">Maps WHONET antibiotic codes to WHO ATC (Anatomical Therapeutic Chemical) codes. Derived from the A…
+</td>
+  </tr>
+  <tr class="data-row">
+    <td>
+      <a href="ConceptMap/whonet-antibiotic-to-loinc" title="whonet-antibiotic-to-loinc">whonet-antibiotic-t…</a>
+    </td>
+    <td>WHONET Antibiotic Codes to LOINC Susceptibility Codes</td>
+    <td>0.1.0</td>
+    <td>draft</td>
+    <td>
+      <a href="https://github.com/Dokotela/bw-amr-ig" title="university of botswana partnership">external</a>
+    </td>
+    <td>n/a</td>
+    <td>2026-03-13</td>
+    <td title="Maps WHONET antibiotic codes to LOINC susceptibility test codes. Derived from the AMR R package (https://github.com/msberends/AMR). Contains 271 WHONET antibiotic codes with LOINC mappings. Note: equivalence is 'relatedto' because one WHONET antibiotic code maps to multiple LOINC codes representing different test methods (MIC, disk diffusion, etc.).">Maps WHONET antibiotic codes to LOINC susceptibility test codes. Derived from the AMR R package (ht…
+</td>
+  </tr>
+  <tr class="data-row">
+    <td>
+      <a href="ConceptMap/whonet-antibiotic-to-snomed" title="whonet-antibiotic-to-snomed">whonet-antibiotic-t…</a>
+    </td>
+    <td>WHONET Antibiotic Codes to SNOMED CT Substance Codes</td>
+    <td>0.1.0</td>
+    <td>draft</td>
+    <td>
+      <a href="https://github.com/Dokotela/bw-amr-ig" title="university of botswana partnership">external</a>
+    </td>
+    <td>n/a</td>
+    <td>2026-03-13</td>
+    <td title="Maps WHONET antibiotic codes to SNOMED CT substance concept IDs. Derived from the official LOINC-SNOMED CT Ontology (September 2025) by tracing LOINC susceptibility codes through their SNOMED observable entity representations to the Component (704320005) relationship, which identifies the substance being tested. Contains 213 authoritative antimicrobial mappings.">Maps WHONET antibiotic codes to SNOMED CT substance concept IDs. Derived from the official LOINC-SN…
+</td>
+  </tr>
+  <tr class="data-row">
+    <td>
+      <a href="ConceptMap/whonet-organism-to-snomed" title="whonet-organism-to-snomed">whonet-organism-to-…</a>
+    </td>
+    <td>WHONET Organism Codes to SNOMED CT</td>
+    <td>0.1.0</td>
+    <td>draft</td>
+    <td>
+      <a href="https://github.com/Dokotela/bw-amr-ig" title="university of botswana partnership">external</a>
+    </td>
+    <td>n/a</td>
+    <td>2026-03-13</td>
+    <td title="Maps WHONET organism codes to SNOMED CT concepts. Derived from the AMR R package (https://github.com/msberends/AMR) which integrates WHONET organism codes with SNOMED CT mappings. Contains 4995 WHONET organism codes.">Maps WHONET organism codes to SNOMED CT concepts. Derived from the AMR R package (https://github.co…
+</td>
+  </tr>
+</table>
+<p class="table-filter-summary">Showing 4 of 4 entries</p>
+<script src="assets/js/table.js"> </script>
+</body>
+</html>

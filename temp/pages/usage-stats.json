@@ -4,7 +4,7 @@
   "fhirVersion": "4.3.0",
   "extensions": [
     {
-      "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/specimen-collection-location",
+      "url": "http://bw.health.gov/fhir/amr/StructureDefinition/specimen-collection-location",
       "title": "Specimen Collection Location",
       "types": [
         "Reference"
@@ -14,32 +14,41 @@
   "profiles": {
     "DiagnosticReport": [
       {
-        "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-diagnostic-report",
+        "url": "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-diagnostic-report",
         "title": "Botswana AMR DiagnosticReport"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-encounter",
+        "title": "Botswana AMR Encounter"
       }
     ],
     "Observation": [
       {
-        "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
+        "url": "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation",
         "title": "Botswana AMR Susceptibility Observation"
       }
     ],
     "Patient": [
       {
-        "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient",
+        "url": "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-patient",
         "title": "Botswana AMR Patient"
       }
     ],
     "Specimen": [
       {
-        "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-specimen",
+        "url": "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-specimen",
         "title": "Botswana AMR Specimen"
       }
     ]
   },
   "usage": {
-    "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/specimen-collection-location": [
+    "http://bw.health.gov/fhir/amr/StructureDefinition/specimen-collection-location": [
       "Specimen.collection"
+    ],
+    "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence": [
+      "ConceptMap.group.element.target"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
@@ -53,6 +62,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
     ],
@@ -64,6 +76,9 @@
     ],
     "http://hl7.org/fhir/build/StructureDefinition/binding-definition": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/build/StructureDefinition/no-binding": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"

@@ -1,0 +1,8 @@
+{
+  "urn:ietf:bcp:47" : null,
+  "http://whonet.org/CodeSystem/organism" : null,
+  "http://whonet.org/CodeSystem/antibiotic" : null,
+  "http://loinc.org" : null,
+  "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" : null,
+  "http://unitsofmeasure.org" : null
+}

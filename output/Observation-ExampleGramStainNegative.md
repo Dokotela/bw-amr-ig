@@ -6,7 +6,7 @@
 
 ## Example Observation: Example Gram Stain - Gram-negative
 
-Profiles: [Botswana AMR Gram Stain Observation](StructureDefinition-botswana-amr-gram-stain-observation.md), `http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-GramStainObservation`
+Profile: [Botswana AMR Gram Stain Observation](StructureDefinition-botswana-amr-gram-stain-observation.md)
 
 **status**: Final
 
@@ -18,7 +18,7 @@ Profiles: [Botswana AMR Gram Stain Observation](StructureDefinition-botswana-amr
 
 **effective**: 2026-03-10 10:00:00+0200
 
-**value**: Gram-negative
+**value**: Gram-negative bacillus
 
 **specimen**: [Specimen: identifier = PMH-2026-U4421; type = Urine](Specimen-ExampleSpecimenUrine.md)
 
@@ -32,8 +32,7 @@ Profiles: [Botswana AMR Gram Stain Observation](StructureDefinition-botswana-amr
   "id" : "ExampleGramStainNegative",
   "meta" : {
     "profile" : [
-      "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-gram-stain-observation",
-      "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-GramStainObservation"
+      "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-gram-stain-observation"
     ]
   },
   "status" : "final",
@@ -75,7 +74,7 @@ Profiles: [Botswana AMR Gram Stain Observation](StructureDefinition-botswana-amr
       {
         "system" : "http://snomed.info/sct",
         "code" : "87172008",
-        "display" : "Gram-negative"
+        "display" : "Gram-negative bacillus"
       }
     ]
   },

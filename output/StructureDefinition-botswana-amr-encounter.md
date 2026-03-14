@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-encounter | *Version*:0.1.0 |
+| *Official URL*:http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-encounter | *Version*:0.1.0 |
 | Draft as of 2026-03-13 | *Computable Name*:BotswanaAMREncounter |
 
  
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-encount
 {
   "resourceType" : "StructureDefinition",
   "id" : "botswana-amr-encounter",
-  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-encounter",
+  "url" : "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-encounter",
   "version" : "0.1.0",
   "name" : "BotswanaAMREncounter",
   "title" : "Botswana AMR Encounter",
   "status" : "draft",
-  "date" : "2026-03-13T15:05:11-04:00",
+  "date" : "2026-03-13T21:27:21-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [
     {
@@ -91,11 +91,6 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-encount
         "path" : "Encounter"
       },
       {
-        "id" : "Encounter.meta.profile",
-        "path" : "Encounter.meta.profile",
-        "patternCanonical" : "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Encounter"
-      },
-      {
         "id" : "Encounter.status",
         "path" : "Encounter.status",
         "patternCode" : "finished"
@@ -105,7 +100,7 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-encount
         "path" : "Encounter.class",
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ward-type-vs"
+          "valueSet" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-ward-type-vs"
         }
       },
       {
@@ -116,7 +111,7 @@ Other representations of profile: [CSV](StructureDefinition-botswana-amr-encount
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-patient"
+              "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-patient"
             ]
           }
         ]

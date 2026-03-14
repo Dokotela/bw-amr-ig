@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="140cf078-641a-42af-94ed-6d1836de29e3"/>
+  <id value="029ce7d3-c90f-4982-8727-acbedc3e175d"/>
   <meta>
-    <lastUpdated value="2026-03-13T15:05:11.514-04:00"/>
+    <lastUpdated value="2026-03-13T21:27:21.389-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc"/>
+    <fullUrl value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-antibiotic-susceptibility-loinc"/>
     <resource>
       <ValueSet>
         <text>
@@ -841,15 +841,15 @@
             </table>
           </div>
         </text>
-        <url value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc"/>
+        <url value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-antibiotic-susceptibility-loinc"/>
         <version value="0.1.0"/>
         <name value="BotswanaAMRAntibioticSusceptibilityLOINC"/>
         <title value="Botswana AMR Antibiotic Susceptibility LOINC"/>
         <status value="draft"/>
-        <date value="2026-03-13T15:05:11-04:00"/>
+        <date value="2026-03-13T21:27:21-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:4783d4c1-e1c3-4ba6-8f96-39ba8ff8912a"/>
-          <timestamp value="2026-03-13T15:08:25-04:00"/>
+          <identifier value="urn:uuid:57849482-8344-4849-a776-6d7216975f78"/>
+          <timestamp value="2026-03-13T23:30:15-04:00"/>
           <total value="40"/>
           <offset value="0"/>
           <parameter>
@@ -1089,7 +1089,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ast-method-vs"/>
+    <fullUrl value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-ast-method-vs"/>
     <resource>
       <ValueSet>
         <text>
@@ -1101,7 +1101,7 @@
                 <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
-            <p>This value set contains 2 concepts</p>
+            <p>This value set contains 4 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -1142,6 +1142,46 @@
               </tr>
               <tr>
                 <td>
+                  <a name="x-http://snomed.info/sct-263696007"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/263696007">263696007</a>
+                </td>
+                <td>Broth dilution</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;263696007&quot;, &quot;display&quot;: &quot;Broth dilution&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;263696007&quot;&gt;&lt;display value=&quot;Broth dilution&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-104234003"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/104234003">104234003</a>
+                </td>
+                <td>Gradient strip susceptibility test</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;104234003&quot;, &quot;display&quot;: &quot;Gradient strip susceptibility test&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;104234003&quot;&gt;&lt;display value=&quot;Gradient strip susceptibility test&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
                   <a name="x-http://snomed.info/sct-702873001"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
@@ -1163,16 +1203,16 @@
             </table>
           </div>
         </text>
-        <url value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ast-method-vs"/>
+        <url value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-ast-method-vs"/>
         <version value="0.1.0"/>
         <name value="BotswanaAMRASTMethodVS"/>
         <title value="Botswana AMR AST Method"/>
         <status value="draft"/>
-        <date value="2026-03-13T15:05:11-04:00"/>
+        <date value="2026-03-13T21:27:21-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:0fccf196-7ffd-4a96-8cf9-34f3852cd218"/>
-          <timestamp value="2026-03-13T15:08:25-04:00"/>
-          <total value="2"/>
+          <identifier value="urn:uuid:ae35a0e9-2e89-4b50-9dde-686584f540b4"/>
+          <timestamp value="2026-03-13T23:30:15-04:00"/>
+          <total value="4"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -1209,6 +1249,16 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <code value="263696007"/>
+            <display value="Broth dilution"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="104234003"/>
+            <display value="Gradient strip susceptibility test"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
             <code value="702873001"/>
             <display value="Calculation technique"/>
           </contains>
@@ -1217,7 +1267,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-gram-stain-result-vs"/>
+    <fullUrl value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-gram-stain-result-vs"/>
     <resource>
       <ValueSet>
         <text>
@@ -1229,7 +1279,7 @@
                 <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
-            <p>This value set contains 4 concepts</p>
+            <p>This value set contains 5 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -1290,6 +1340,26 @@
               </tr>
               <tr>
                 <td>
+                  <a name="x-http://snomed.info/sct-301780001"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/301780001">301780001</a>
+                </td>
+                <td>Gram-variable bacterium</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;301780001&quot;, &quot;display&quot;: &quot;Gram-variable bacterium&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;301780001&quot;&gt;&lt;display value=&quot;Gram-variable bacterium&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
                   <a name="x-http://snomed.info/sct-58296003"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
@@ -1331,16 +1401,16 @@
             </table>
           </div>
         </text>
-        <url value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-gram-stain-result-vs"/>
+        <url value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-gram-stain-result-vs"/>
         <version value="0.1.0"/>
         <name value="BotswanaAMRGramStainResultVS"/>
         <title value="Botswana AMR Gram Stain Results"/>
         <status value="draft"/>
-        <date value="2026-03-13T15:05:11-04:00"/>
+        <date value="2026-03-13T21:27:21-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:fc234295-147a-4261-bb27-1b1f9ac4239f"/>
-          <timestamp value="2026-03-13T15:08:20-04:00"/>
-          <total value="4"/>
+          <identifier value="urn:uuid:8955082f-0060-47b7-8749-e01a2e8030b9"/>
+          <timestamp value="2026-03-13T23:30:13-04:00"/>
+          <total value="5"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -1363,15 +1433,11 @@
             <valueUri value="null"/>
           </parameter>
           <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="en-US"/>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
@@ -1383,6 +1449,11 @@
             <system value="http://snomed.info/sct"/>
             <code value="87172008"/>
             <display value="Gram-negative bacillus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="301780001"/>
+            <display value="Gram-variable bacterium"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -1399,7 +1470,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-identification-method-vs"/>
+    <fullUrl value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-identification-method-vs"/>
     <resource>
       <ValueSet>
         <text>
@@ -1412,7 +1483,7 @@
                 <li>
                   <a href="CodeSystem-botswana-amr-local-method-cs.html">codesystem Botswana AMR Local Identification Method Codes v0.1.0 (CodeSystem)</a>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                    <button data-clipboard-text="http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
                   </span>
                 </li>
                 <li>SNOMED CT International edition 01-Feb 2025
@@ -1509,8 +1580,8 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs-vitek"> </a>
-                  <code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs</code>
+                  <a name="x-http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs-vitek"> </a>
+                  <code>http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-botswana-amr-local-method-cs.html#botswana-amr-local-method-cs-vitek">vitek</a>
@@ -1519,19 +1590,19 @@
                 <td>bioMérieux Vitek automated identification and susceptibility testing system</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;vitek&quot;, &quot;display&quot;: &quot;Vitek automated system&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;vitek&quot;, &quot;display&quot;: &quot;Vitek automated system&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;vitek&quot;&gt;&lt;display value=&quot;Vitek automated system&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;vitek&quot;&gt;&lt;display value=&quot;Vitek automated system&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs-phoenix"> </a>
-                  <code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs</code>
+                  <a name="x-http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs-phoenix"> </a>
+                  <code>http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-botswana-amr-local-method-cs.html#botswana-amr-local-method-cs-phoenix">phoenix</a>
@@ -1540,19 +1611,19 @@
                 <td>BD Phoenix automated identification and susceptibility testing system</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;phoenix&quot;, &quot;display&quot;: &quot;Phoenix automated system&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;phoenix&quot;, &quot;display&quot;: &quot;Phoenix automated system&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;phoenix&quot;&gt;&lt;display value=&quot;Phoenix automated system&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;phoenix&quot;&gt;&lt;display value=&quot;Phoenix automated system&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs-api"> </a>
-                  <code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs</code>
+                  <a name="x-http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs-api"> </a>
+                  <code>http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-botswana-amr-local-method-cs.html#botswana-amr-local-method-cs-api">api</a>
@@ -1561,19 +1632,19 @@
                 <td>bioMérieux API manual biochemical identification strips</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;api&quot;, &quot;display&quot;: &quot;API biochemical strips&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;api&quot;, &quot;display&quot;: &quot;API biochemical strips&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;api&quot;&gt;&lt;display value=&quot;API biochemical strips&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;api&quot;&gt;&lt;display value=&quot;API biochemical strips&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs-manual"> </a>
-                  <code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs</code>
+                  <a name="x-http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs-manual"> </a>
+                  <code>http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-botswana-amr-local-method-cs.html#botswana-amr-local-method-cs-manual">manual</a>
@@ -1582,27 +1653,27 @@
                 <td>Traditional manual biochemical identification methods</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;manual&quot;, &quot;display&quot;: &quot;Manual biochemical testing&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;manual&quot;, &quot;display&quot;: &quot;Manual biochemical testing&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;manual&quot;&gt;&lt;display value=&quot;Manual biochemical testing&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;manual&quot;&gt;&lt;display value=&quot;Manual biochemical testing&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-identification-method-vs"/>
+        <url value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-identification-method-vs"/>
         <version value="0.1.0"/>
         <name value="BotswanaAMRIdentificationMethodVS"/>
         <title value="Botswana AMR Organism Identification Methods"/>
         <status value="draft"/>
-        <date value="2026-03-13T15:05:11-04:00"/>
+        <date value="2026-03-13T21:27:21-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:08de1a2e-86dc-49f7-9785-afbb994036de"/>
-          <timestamp value="2026-03-13T15:08:23-04:00"/>
+          <identifier value="urn:uuid:a440296e-508f-4586-b5a6-0041dc1b9171"/>
+          <timestamp value="2026-03-13T23:30:14-04:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -1639,7 +1710,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs|0.1.0"/>
+            <valueUri value="http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs|0.1.0"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -1657,22 +1728,22 @@
             <display value="Temperature normal"/>
           </contains>
           <contains>
-            <system value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs"/>
+            <system value="http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs"/>
             <code value="vitek"/>
             <display value="Vitek automated system"/>
           </contains>
           <contains>
-            <system value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs"/>
+            <system value="http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs"/>
             <code value="phoenix"/>
             <display value="Phoenix automated system"/>
           </contains>
           <contains>
-            <system value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs"/>
+            <system value="http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs"/>
             <code value="api"/>
             <display value="API biochemical strips"/>
           </contains>
           <contains>
-            <system value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs"/>
+            <system value="http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs"/>
             <code value="manual"/>
             <display value="Manual biochemical testing"/>
           </contains>
@@ -1681,7 +1752,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation"/>
+    <fullUrl value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-interpretation"/>
     <resource>
       <ValueSet>
         <text>
@@ -1689,9 +1760,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ObservationInterpretation.html">codesystem ObservationInterpretation v4.0.0 (CodeSystem)</a>
+              <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">codesystem ObservationInterpretation v3.0.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|3.0.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -1722,7 +1793,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-S">S</a>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-S">S</a>
                 </td>
                 <td>Susceptible</td>
                 <td>
@@ -1737,12 +1808,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;S&quot;, &quot;display&quot;: &quot;Susceptible&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;S&quot;, &quot;display&quot;: &quot;Susceptible&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;S&quot;&gt;&lt;display value=&quot;Susceptible&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;S&quot;&gt;&lt;display value=&quot;Susceptible&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1752,7 +1823,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-I">I</a>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-I">I</a>
                 </td>
                 <td>Intermediate</td>
                 <td>
@@ -1771,12 +1842,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;I&quot;, &quot;display&quot;: &quot;Intermediate&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;I&quot;, &quot;display&quot;: &quot;Intermediate&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;I&quot;&gt;&lt;display value=&quot;Intermediate&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;I&quot;&gt;&lt;display value=&quot;Intermediate&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1786,7 +1857,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-R">R</a>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-R">R</a>
                 </td>
                 <td>Resistant</td>
                 <td>
@@ -1801,27 +1872,27 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;R&quot;, &quot;display&quot;: &quot;Resistant&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;R&quot;, &quot;display&quot;: &quot;Resistant&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;R&quot;&gt;&lt;display value=&quot;Resistant&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;R&quot;&gt;&lt;display value=&quot;Resistant&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation"/>
+        <url value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-interpretation"/>
         <version value="0.1.0"/>
         <name value="BotswanaAMRInterpretation"/>
         <title value="Botswana AMR Interpretation"/>
         <status value="draft"/>
-        <date value="2026-03-13T15:05:11-04:00"/>
+        <date value="2026-03-13T21:27:21-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:53be045a-d230-46fb-a516-47f45dfe3868"/>
-          <timestamp value="2026-03-13T15:08:25-04:00"/>
+          <identifier value="urn:uuid:c395cefb-f7cf-45d4-8b54-ce0c3d545943"/>
+          <timestamp value="2026-03-13T23:30:15-04:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1842,7 +1913,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|3.0.0"/>
           </parameter>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
@@ -1864,7 +1935,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs"/>
+    <fullUrl value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs"/>
     <resource>
       <ValueSet>
         <text>
@@ -1877,7 +1948,7 @@
                 <li>
                   <a href="CodeSystem-botswana-amr-local-organism-cs.html">codesystem Botswana AMR Local Organism Codes v0.1.0 (CodeSystem)</a>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                    <button data-clipboard-text="http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-organism-cs|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
                   </span>
                 </li>
                 <li>SNOMED CT International edition 01-Feb 2025
@@ -21909,18 +21980,18 @@
             </table>
           </div>
         </text>
-        <url value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-organism-vs"/>
+        <url value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs"/>
         <version value="0.1.0"/>
         <name value="BotswanaAMROrganismVS"/>
         <title value="Botswana AMR Organism ValueSet"/>
         <status value="draft"/>
-        <date value="2026-03-13T15:05:11-04:00"/>
+        <date value="2026-03-13T21:27:21-04:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:abfce6c8-7b48-4b87-846a-61a88e321a15"/>
-          <timestamp value="2026-03-13T15:08:20-04:00"/>
+          <identifier value="urn:uuid:1fdc5f0f-70f8-4eb8-9183-63f169b6d290"/>
+          <timestamp value="2026-03-13T23:30:14-04:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -21952,7 +22023,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-organism-cs|0.1.0"/>
+            <valueUri value="http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-organism-cs|0.1.0"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -26959,7 +27030,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-special-test-vs"/>
+    <fullUrl value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-special-test-vs"/>
     <resource>
       <ValueSet>
         <text>
@@ -26971,7 +27042,7 @@
                 <button data-clipboard-text="http://loinc.org|2.81" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
-            <p>This value set contains 1 concepts</p>
+            <p>This value set contains 5 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -27010,19 +27081,99 @@
                   </span>
                 </td>
               </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-86930-5"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/86930-5/">86930-5</a>
+                </td>
+                <td>Carbapenemase [Presence] in Isolate</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;86930-5&quot;, &quot;display&quot;: &quot;Carbapenemase [Presence] in Isolate&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;86930-5&quot;&gt;&lt;display value=&quot;Carbapenemase [Presence] in Isolate&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-42720-3"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/42720-3/">42720-3</a>
+                </td>
+                <td>Clindamycin.induced [Susceptibility] by Disk diffusion (KB)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;42720-3&quot;, &quot;display&quot;: &quot;Clindamycin.induced [Susceptibility] by Disk diffusion (KB)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;42720-3&quot;&gt;&lt;display value=&quot;Clindamycin.induced [Susceptibility] by Disk diffusion (KB)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-13317-3"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/13317-3/">13317-3</a>
+                </td>
+                <td>Methicillin resistant Staphylococcus aureus [Presence] in Specimen by Organism specific culture</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;13317-3&quot;, &quot;display&quot;: &quot;Methicillin resistant Staphylococcus aureus [Presence] in Specimen by Organism specific culture&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;13317-3&quot;&gt;&lt;display value=&quot;Methicillin resistant Staphylococcus aureus [Presence] in Specimen by Organism specific culture&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-6985-6"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/6985-6/">6985-6</a>
+                </td>
+                <td>Beta lactamase.usual [Susceptibility]</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;6985-6&quot;, &quot;display&quot;: &quot;Beta lactamase.usual [Susceptibility]&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;6985-6&quot;&gt;&lt;display value=&quot;Beta lactamase.usual [Susceptibility]&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
             </table>
           </div>
         </text>
-        <url value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-special-test-vs"/>
+        <url value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-special-test-vs"/>
         <version value="0.1.0"/>
         <name value="BotswanaAMRSpecialTestVS"/>
         <title value="Botswana AMR Special Tests"/>
         <status value="draft"/>
-        <date value="2026-03-13T15:05:11-04:00"/>
+        <date value="2026-03-13T21:27:21-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:4b90b538-e36b-4448-b2b9-b4829d9429ca"/>
-          <timestamp value="2026-03-13T15:08:24-04:00"/>
-          <total value="1"/>
+          <identifier value="urn:uuid:16afbbe0-d2a1-4893-953d-666537068c5c"/>
+          <timestamp value="2026-03-13T23:30:14-04:00"/>
+          <total value="5"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -27057,12 +27208,32 @@
             <code value="99596-9"/>
             <display value="SARS-CoV-2 (COVID-19) N protein IgG Ab [Presence] in Serum or Plasma by Immunoassay"/>
           </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="86930-5"/>
+            <display value="Carbapenemase [Presence] in Isolate"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="42720-3"/>
+            <display value="Clindamycin.induced [Susceptibility] by Disk diffusion (KB)"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="13317-3"/>
+            <display value="Methicillin resistant Staphylococcus aureus [Presence] in Specimen by Organism specific culture"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="6985-6"/>
+            <display value="Beta lactamase.usual [Susceptibility]"/>
+          </contains>
         </expansion>
       </ValueSet>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs"/>
+    <fullUrl value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-specimen-site-vs"/>
     <resource>
       <ValueSet>
         <text>
@@ -27074,7 +27245,7 @@
                 <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
-            <p>This value set contains 14 concepts</p>
+            <p>This value set contains 16 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -27215,6 +27386,26 @@
               </tr>
               <tr>
                 <td>
+                  <a name="x-http://snomed.info/sct-321667001"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/321667001">321667001</a>
+                </td>
+                <td>Respiratory tract structure</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;321667001&quot;, &quot;display&quot;: &quot;Respiratory tract structure&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;321667001&quot;&gt;&lt;display value=&quot;Respiratory tract structure&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
                   <a name="x-http://snomed.info/sct-45206002"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
@@ -27281,15 +27472,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/416775004">416775004</a>
                 </td>
-                <td>Chest and/or abdomen and/or pelvis structure (body structure)</td>
+                <td>Chest, abdomen, and pelvis</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;416775004&quot;, &quot;display&quot;: &quot;Chest and/or abdomen and/or pelvis structure (body structure)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;416775004&quot;, &quot;display&quot;: &quot;Chest, abdomen, and pelvis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;416775004&quot;&gt;&lt;display value=&quot;Chest and/or abdomen and/or pelvis structure (body structure)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;416775004&quot;&gt;&lt;display value=&quot;Chest, abdomen, and pelvis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -27355,6 +27546,26 @@
               </tr>
               <tr>
                 <td>
+                  <a name="x-http://snomed.info/sct-119376003"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/119376003">119376003</a>
+                </td>
+                <td>Tissue specimen</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;119376003&quot;, &quot;display&quot;: &quot;Tissue specimen&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;119376003&quot;&gt;&lt;display value=&quot;Tissue specimen&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
                   <a name="x-http://snomed.info/sct-74964007"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
@@ -27376,16 +27587,16 @@
             </table>
           </div>
         </text>
-        <url value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-site-vs"/>
+        <url value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-specimen-site-vs"/>
         <version value="0.1.0"/>
         <name value="BotswanaAMRSpecimenSiteVS"/>
         <title value="Botswana AMR Specimen Collection Sites"/>
         <status value="draft"/>
-        <date value="2026-03-13T15:05:11-04:00"/>
+        <date value="2026-03-13T21:27:21-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:fc9404a7-d6fe-40ab-94e8-75efabba7639"/>
-          <timestamp value="2026-03-13T15:08:51-04:00"/>
-          <total value="14"/>
+          <identifier value="urn:uuid:2f4416c6-87a1-499b-9787-f1ced0322a5b"/>
+          <timestamp value="2026-03-13T23:30:39-04:00"/>
+          <total value="16"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -27408,15 +27619,11 @@
             <valueUri value="null"/>
           </parameter>
           <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="en-US"/>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
@@ -27451,6 +27658,11 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <code value="321667001"/>
+            <display value="Respiratory tract structure"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
             <code value="45206002"/>
             <display value="Nose"/>
           </contains>
@@ -27467,7 +27679,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="416775004"/>
-            <display value="Chest and/or abdomen and/or pelvis structure (body structure)"/>
+            <display value="Chest, abdomen, and pelvis"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -27486,6 +27698,11 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <code value="119376003"/>
+            <display value="Tissue specimen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
             <code value="74964007"/>
             <display value="Other"/>
           </contains>
@@ -27494,7 +27711,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs"/>
+    <fullUrl value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-specimen-type-vs"/>
     <resource>
       <ValueSet>
         <text>
@@ -27502,9 +27719,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-SpecimenType.html">codesystem SpecimenType v4.0.0 (CodeSystem)</a>
+              <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-SpecimenType.html">codesystem SpecimenType v3.0.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-SpecimenType|4.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-SpecimenType|3.0.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 7 concepts</p>
@@ -27532,17 +27749,17 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-SpecimenType</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-BLD">BLD</a>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-BLD">BLD</a>
                 </td>
                 <td>Whole blood</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;BLD&quot;, &quot;display&quot;: &quot;Whole blood&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;BLD&quot;, &quot;display&quot;: &quot;Whole blood&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;BLD&quot;&gt;&lt;display value=&quot;Whole blood&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;BLD&quot;&gt;&lt;display value=&quot;Whole blood&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -27552,17 +27769,17 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-SpecimenType</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-CSF">CSF</a>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-CSF">CSF</a>
                 </td>
                 <td>Cerebrospinal fluid</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;CSF&quot;, &quot;display&quot;: &quot;Cerebrospinal fluid&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;CSF&quot;, &quot;display&quot;: &quot;Cerebrospinal fluid&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;CSF&quot;&gt;&lt;display value=&quot;Cerebrospinal fluid&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;CSF&quot;&gt;&lt;display value=&quot;Cerebrospinal fluid&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -27572,17 +27789,17 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-SpecimenType</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-GEN">GEN</a>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-GEN">GEN</a>
                 </td>
                 <td>Genital</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;GEN&quot;, &quot;display&quot;: &quot;Genital&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;GEN&quot;, &quot;display&quot;: &quot;Genital&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;GEN&quot;&gt;&lt;display value=&quot;Genital&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;GEN&quot;&gt;&lt;display value=&quot;Genital&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -27592,17 +27809,17 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-SpecimenType</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-STL">STL</a>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-STL">STL</a>
                 </td>
                 <td>Stool</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;STL&quot;, &quot;display&quot;: &quot;Stool&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;STL&quot;, &quot;display&quot;: &quot;Stool&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;STL&quot;&gt;&lt;display value=&quot;Stool&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;STL&quot;&gt;&lt;display value=&quot;Stool&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -27612,17 +27829,17 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-SpecimenType</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-UR">UR</a>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-UR">UR</a>
                 </td>
                 <td>Urine</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;UR&quot;, &quot;display&quot;: &quot;Urine&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;UR&quot;, &quot;display&quot;: &quot;Urine&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;UR&quot;&gt;&lt;display value=&quot;Urine&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;UR&quot;&gt;&lt;display value=&quot;Urine&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -27632,17 +27849,17 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-SpecimenType</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-PUS">PUS</a>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-PUS">PUS</a>
                 </td>
                 <td>Pus</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;PUS&quot;, &quot;display&quot;: &quot;Pus&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;PUS&quot;, &quot;display&quot;: &quot;Pus&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;PUS&quot;&gt;&lt;display value=&quot;Pus&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;PUS&quot;&gt;&lt;display value=&quot;Pus&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -27652,32 +27869,32 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-SpecimenType</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-SPT">SPT</a>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-SpecimenType.html#v3-SpecimenType-SPT">SPT</a>
                 </td>
                 <td>Sputum</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;SPT&quot;, &quot;display&quot;: &quot;Sputum&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;SPT&quot;, &quot;display&quot;: &quot;Sputum&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;SPT&quot;&gt;&lt;display value=&quot;Sputum&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-SpecimenType&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;SPT&quot;&gt;&lt;display value=&quot;Sputum&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-specimen-type-vs"/>
+        <url value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-specimen-type-vs"/>
         <version value="0.1.0"/>
         <name value="BotswanaAMRSpecimenTypeVS"/>
         <title value="Botswana AMR Specimen Type VS"/>
         <status value="draft"/>
-        <date value="2026-03-13T15:05:11-04:00"/>
+        <date value="2026-03-13T21:27:21-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:0adc4933-314f-4fdc-a06e-30ee0251dbb6"/>
-          <timestamp value="2026-03-13T15:08:51-04:00"/>
+          <identifier value="urn:uuid:38636fd9-6b89-40b9-a3c8-7c64686dcdc0"/>
+          <timestamp value="2026-03-13T23:30:40-04:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -27698,7 +27915,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-SpecimenType|4.0.0"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-SpecimenType|3.0.0"/>
           </parameter>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/v3-SpecimenType"/>
@@ -27740,7 +27957,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs"/>
+    <fullUrl value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-test-result-status-vs"/>
     <resource>
       <ValueSet>
         <text>
@@ -27874,15 +28091,15 @@
             </table>
           </div>
         </text>
-        <url value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-test-result-status-vs"/>
+        <url value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-test-result-status-vs"/>
         <version value="0.1.0"/>
         <name value="BotswanaAMRTestResultStatusVS"/>
         <title value="Botswana AMR Test Result Status"/>
         <status value="draft"/>
-        <date value="2026-03-13T15:05:11-04:00"/>
+        <date value="2026-03-13T21:27:21-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:f8b48b9b-ca6a-4ea3-bdc4-f3f084e1d1b4"/>
-          <timestamp value="2026-03-13T15:08:24-04:00"/>
+          <identifier value="urn:uuid:2cd80f7d-100b-4a69-8c3d-1e887726dcf1"/>
+          <timestamp value="2026-03-13T23:30:14-04:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -27947,7 +28164,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ward-type-vs"/>
+    <fullUrl value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-ward-type-vs"/>
     <resource>
       <ValueSet>
         <text>
@@ -27955,9 +28172,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html">codesystem ActCode v10.0.0 (CodeSystem)</a>
+              <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ActCode.html">codesystem ActCode v9.0.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-ActCode|10.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 5 concepts</p>
@@ -27988,7 +28205,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP">IMP</a>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ActCode.html#v3-ActCode-IMP">IMP</a>
                 </td>
                 <td>inpatient encounter</td>
                 <td>
@@ -27999,12 +28216,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;, &quot;version&quot;: &quot;10.0.0&quot;, &quot;code&quot;: &quot;IMP&quot;, &quot;display&quot;: &quot;inpatient encounter&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;, &quot;version&quot;: &quot;9.0.0&quot;, &quot;code&quot;: &quot;IMP&quot;, &quot;display&quot;: &quot;inpatient encounter&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;&gt;&lt;version value=&quot;10.0.0&quot;&gt;&lt;code value=&quot;IMP&quot;&gt;&lt;display value=&quot;inpatient encounter&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;&gt;&lt;version value=&quot;9.0.0&quot;&gt;&lt;code value=&quot;IMP&quot;&gt;&lt;display value=&quot;inpatient encounter&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -28014,7 +28231,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB">AMB</a>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ActCode.html#v3-ActCode-AMB">AMB</a>
                 </td>
                 <td>ambulatory</td>
                 <td>
@@ -28025,12 +28242,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;, &quot;version&quot;: &quot;10.0.0&quot;, &quot;code&quot;: &quot;AMB&quot;, &quot;display&quot;: &quot;ambulatory&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;, &quot;version&quot;: &quot;9.0.0&quot;, &quot;code&quot;: &quot;AMB&quot;, &quot;display&quot;: &quot;ambulatory&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;&gt;&lt;version value=&quot;10.0.0&quot;&gt;&lt;code value=&quot;AMB&quot;&gt;&lt;display value=&quot;ambulatory&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;&gt;&lt;version value=&quot;9.0.0&quot;&gt;&lt;code value=&quot;AMB&quot;&gt;&lt;display value=&quot;ambulatory&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -28040,7 +28257,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-EMER">EMER</a>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ActCode.html#v3-ActCode-EMER">EMER</a>
                 </td>
                 <td>emergency</td>
                 <td>
@@ -28051,12 +28268,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;, &quot;version&quot;: &quot;10.0.0&quot;, &quot;code&quot;: &quot;EMER&quot;, &quot;display&quot;: &quot;emergency&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;, &quot;version&quot;: &quot;9.0.0&quot;, &quot;code&quot;: &quot;EMER&quot;, &quot;display&quot;: &quot;emergency&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;&gt;&lt;version value=&quot;10.0.0&quot;&gt;&lt;code value=&quot;EMER&quot;&gt;&lt;display value=&quot;emergency&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;&gt;&lt;version value=&quot;9.0.0&quot;&gt;&lt;code value=&quot;EMER&quot;&gt;&lt;display value=&quot;emergency&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -28066,7 +28283,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-ACUTE">ACUTE</a>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ActCode.html#v3-ActCode-ACUTE">ACUTE</a>
                 </td>
                 <td>inpatient acute</td>
                 <td>
@@ -28077,12 +28294,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;, &quot;version&quot;: &quot;10.0.0&quot;, &quot;code&quot;: &quot;ACUTE&quot;, &quot;display&quot;: &quot;inpatient acute&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;, &quot;version&quot;: &quot;9.0.0&quot;, &quot;code&quot;: &quot;ACUTE&quot;, &quot;display&quot;: &quot;inpatient acute&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;&gt;&lt;version value=&quot;10.0.0&quot;&gt;&lt;code value=&quot;ACUTE&quot;&gt;&lt;display value=&quot;inpatient acute&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;&gt;&lt;version value=&quot;9.0.0&quot;&gt;&lt;code value=&quot;ACUTE&quot;&gt;&lt;display value=&quot;inpatient acute&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -28092,7 +28309,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-OBSENC">OBSENC</a>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ActCode.html#v3-ActCode-OBSENC">OBSENC</a>
                 </td>
                 <td>observation encounter</td>
                 <td>
@@ -28103,27 +28320,27 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;, &quot;version&quot;: &quot;10.0.0&quot;, &quot;code&quot;: &quot;OBSENC&quot;, &quot;display&quot;: &quot;observation encounter&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;, &quot;version&quot;: &quot;9.0.0&quot;, &quot;code&quot;: &quot;OBSENC&quot;, &quot;display&quot;: &quot;observation encounter&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;&gt;&lt;version value=&quot;10.0.0&quot;&gt;&lt;code value=&quot;OBSENC&quot;&gt;&lt;display value=&quot;observation encounter&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;&gt;&lt;version value=&quot;9.0.0&quot;&gt;&lt;code value=&quot;OBSENC&quot;&gt;&lt;display value=&quot;observation encounter&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ward-type-vs"/>
+        <url value="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-ward-type-vs"/>
         <version value="0.1.0"/>
         <name value="BotswanaAMRWardTypeVS"/>
         <title value="Botswana AMR Ward Type"/>
         <status value="draft"/>
-        <date value="2026-03-13T15:05:11-04:00"/>
+        <date value="2026-03-13T21:27:21-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:42d1aa0d-ec2c-4cc7-8f93-9f383130a186"/>
-          <timestamp value="2026-03-13T15:08:52-04:00"/>
+          <identifier value="urn:uuid:1a0d76a8-dcaf-46dd-a068-cd744a72d71c"/>
+          <timestamp value="2026-03-13T23:30:40-04:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -28144,7 +28361,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-ActCode|10.0.0"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"/>
           </parameter>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>

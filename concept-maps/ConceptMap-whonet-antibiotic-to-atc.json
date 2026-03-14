@@ -1,7 +1,7 @@
 {
   "resourceType": "ConceptMap",
   "id": "whonet-antibiotic-to-atc",
-  "url": "http://bw.health.gov/fhir/ConceptMap/whonet-antibiotic-to-atc",
+  "url": "http://bw.health.gov/fhir/amr/ConceptMap/whonet-antibiotic-to-atc",
   "version": "0.1.0",
   "name": "WHONETAntibioticToATC",
   "title": "WHONET Antibiotic Codes to WHO ATC Classification",

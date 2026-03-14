@@ -65,6 +65,17 @@ These define new code systems used by systems conforming to this implementation 
 | [Botswana AMR Local Identification Method Codes](CodeSystem-botswana-amr-local-method-cs.md) | Local codes for identification methods used in Botswana AMR surveillance |
 | [Botswana AMR Local Organism Codes](CodeSystem-botswana-amr-local-organism-cs.md) | Local codes for organism combinations and complex designations used in Botswana AMR surveillance |
 
+### Terminology: Concept Maps 
+
+These define transformations to convert between codes by systems conforming with this implementation guide.
+
+| | |
+| :--- | :--- |
+| [WHONET Antibiotic Codes to LOINC Susceptibility Codes](ConceptMap-whonet-antibiotic-to-loinc.md) | Maps WHONET antibiotic codes to LOINC susceptibility test codes. Derived from the AMR R package (https://github.com/msberends/AMR). Contains 271 WHONET antibiotic codes with LOINC mappings. Note: equivalence is 'relatedto' because one WHONET antibiotic code maps to multiple LOINC codes representing different test methods (MIC, disk diffusion, etc.). |
+| [WHONET Antibiotic Codes to SNOMED CT Substance Codes](ConceptMap-whonet-antibiotic-to-snomed.md) | Maps WHONET antibiotic codes to SNOMED CT substance concept IDs. Derived from the official LOINC-SNOMED CT Ontology (September 2025) by tracing LOINC susceptibility codes through their SNOMED observable entity representations to the Component (704320005) relationship, which identifies the substance being tested. Contains 213 authoritative antimicrobial mappings. |
+| [WHONET Antibiotic Codes to WHO ATC Classification](ConceptMap-whonet-antibiotic-to-atc.md) | Maps WHONET antibiotic codes to WHO ATC (Anatomical Therapeutic Chemical) codes. Derived from the AMR R package (https://github.com/msberends/AMR). Contains 374 WHONET antibiotic codes with ATC mappings. |
+| [WHONET Organism Codes to SNOMED CT](ConceptMap-whonet-organism-to-snomed.md) | Maps WHONET organism codes to SNOMED CT concepts. Derived from the AMR R package (https://github.com/msberends/AMR) which integrates WHONET organism codes with SNOMED CT mappings. Contains 4995 WHONET organism codes. |
+
 ### Example: Example Instances 
 
 These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.

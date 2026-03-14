@@ -1,0 +1,78 @@
+{% raw %}<pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition">resourceType</a>" : "OperationDefinition",
+  "<a href="http://hl7.org/fhir/R4B/resource.html#OperationDefinition.id">id</a>" : "ExportWHONET",
+  "<a href="http://hl7.org/fhir/R4B/domainresource.html#OperationDefinition.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: OperationDefinition ExportWHONET&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ExportWHONET\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcExportWHONET\&quot;&gt; &lt;/a&gt;&lt;p&gt;URL: [base]/DiagnosticReport/$export-whonet&lt;/p&gt;&lt;h3&gt;Parameters&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Scope&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;start&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4B/datatypes.html#date\&quot;&gt;date&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Start of date range filter for specimen collection date (inclusive). Only DiagnosticReports whose specimen was collected on or after this date are included.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;end&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4B/datatypes.html#date\&quot;&gt;date&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;End of date range filter for specimen collection date (inclusive). Only DiagnosticReports whose specimen was collected on or before this date are included.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;facility&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4B/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Filter results by facility name. Matches against the Encounter.serviceProvider organization name or DiagnosticReport.performer organization name.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;format&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4B/datatypes.html#code\&quot;&gt;code&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Output format: 'whonet' for WHONET pipe-delimited format, 'glass' for WHO GLASS batch submission format. Defaults to 'whonet'.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OUT&lt;/td&gt;&lt;td&gt;return&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4B/binary.html\&quot;&gt;Binary&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;The generated flat file returned as a Binary resource with contentType text/csv.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.url">url</a>" : "http://bw.health.gov/fhir/amr/OperationDefinition/ExportWHONET",
+  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.name">name</a>" : "ExportWHONET",
+  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.title">title</a>" : "Export WHONET Flat File",
+  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.kind">kind</a>" : "operation",
+  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.date">date</a>" : "2026-03-13T21:27:21-04:00",
+  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.publisher">publisher</a>" : "University of Botswana Partnership",
+  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "University of Botswana Partnership",
+      "<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://github.com/Dokotela/bw-amr-ig"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.description">description</a>" : "Exports AMR DiagnosticReport data as a WHONET-compatible flat file or GLASS submission file. The operation flattens the FHIR resource graph (DiagnosticReport -&gt; OrganismObservation -&gt; SusceptibilityObservation) into isolate-centric rows suitable for WHONET import or WHO GLASS batch upload.",
+  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.code">code</a>" : "export-whonet",
+  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.resource">resource</a>" : [
+    "DiagnosticReport"
+  ],
+  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.system">system</a>" : false,
+  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.type">type</a>" : true,
+  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.instance">instance</a>" : false,
+  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter">parameter</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.name">name</a>" : "start",
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.use">use</a>" : "in",
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.min">min</a>" : 0,
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.max">max</a>" : "1",
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.documentation">documentation</a>" : "Start of date range filter for specimen collection date (inclusive). Only DiagnosticReports whose specimen was collected on or after this date are included.",
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.type">type</a>" : "date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.name">name</a>" : "end",
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.use">use</a>" : "in",
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.min">min</a>" : 0,
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.max">max</a>" : "1",
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.documentation">documentation</a>" : "End of date range filter for specimen collection date (inclusive). Only DiagnosticReports whose specimen was collected on or before this date are included.",
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.type">type</a>" : "date"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.name">name</a>" : "facility",
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.use">use</a>" : "in",
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.min">min</a>" : 0,
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.max">max</a>" : "1",
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.documentation">documentation</a>" : "Filter results by facility name. Matches against the Encounter.serviceProvider organization name or DiagnosticReport.performer organization name.",
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.type">type</a>" : "string"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.name">name</a>" : "format",
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.use">use</a>" : "in",
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.min">min</a>" : 0,
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.max">max</a>" : "1",
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.documentation">documentation</a>" : "Output format: 'whonet' for WHONET pipe-delimited format, 'glass' for WHO GLASS batch submission format. Defaults to 'whonet'.",
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.type">type</a>" : "code"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.name">name</a>" : "return",
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.use">use</a>" : "out",
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.min">min</a>" : 1,
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.max">max</a>" : "1",
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.documentation">documentation</a>" : "The generated flat file returned as a Binary resource with contentType text/csv.",
+      "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.parameter.type">type</a>" : "Binary"
+    }
+  ]
+}</code></pre>
+{% endraw %}

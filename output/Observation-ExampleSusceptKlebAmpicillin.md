@@ -6,7 +6,7 @@
 
 ## Example Observation: Klebsiella Susceptibility - Ampicillin (R)
 
-Profiles: [Botswana AMR Susceptibility Observation](StructureDefinition-botswana-amr-susceptibility-observation.md), `http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SusceptibilityObservation`
+Profile: [Botswana AMR Susceptibility Observation](StructureDefinition-botswana-amr-susceptibility-observation.md)
 
 **status**: Final
 
@@ -20,7 +20,7 @@ Profiles: [Botswana AMR Susceptibility Observation](StructureDefinition-botswana
 
 **value**: 6 mm (Details: UCUM codemm = 'mm')
 
-**interpretation**: Resistant
+**interpretation**: CLSI 2025
 
 **method**: Disc diffusion method
 
@@ -36,8 +36,7 @@ Profiles: [Botswana AMR Susceptibility Observation](StructureDefinition-botswana
   "id" : "ExampleSusceptKlebAmpicillin",
   "meta" : {
     "profile" : [
-      "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-susceptibility-observation",
-      "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SusceptibilityObservation"
+      "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-susceptibility-observation"
     ]
   },
   "status" : "final",
@@ -85,11 +84,11 @@ Profiles: [Botswana AMR Susceptibility Observation](StructureDefinition-botswana
       "coding" : [
         {
           "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-          "version" : "CLSI 2025",
           "code" : "R",
           "display" : "Resistant"
         }
-      ]
+      ],
+      "text" : "CLSI 2025"
     }
   ],
   "method" : {

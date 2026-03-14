@@ -1,0 +1,47 @@
+---
+---
+{% include fragment-pagebegin.html %}
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-base-navtabs.html type='OperationDefinition' id='ExportWHONET' active='content' %}
+  <a name="root"> </a>
+
+  <h2 id="root">OperationDefinition: {{site.data.pages[page.path].title | escape_once}}
+{% if site.data.resources[resource_].experimental == true %}(Experimental){% endif %}
+  </h2>
+
+{% include fragment-resourceTable.html %}
+
+{%if site.data.resources[resource_].description %}
+<p>
+{{site.data.resources[resource_].description|markdownify}}
+</p>
+{% endif %}
+{%if site.data.resources[resource_].purpose %}
+<p>
+{{site.data.resources[resource_].purpose|markdownify}}
+</p>
+{% endif %}
+  <!-- insert intro if present -->
+  {% include fragment-intro.html type='OperationDefinition' id='ExportWHONET' %}
+
+<!--  <p>
+  Formats: <a href="OperationDefinition-ExportWHONET.xml.html">XML</a>, <a href="OperationDefinition-ExportWHONET.json.html">JSON</a>, <a href="OperationDefinition-ExportWHONET.ttl.html">Turtle</a>
+  </p>-->
+{% unless example %}
+  {% if 'OperationDefinition' == 'CapabilityStatement' %}
+  <p>
+      <a href="ExportWHONET.openapi.json" no-download="true">Raw OpenAPI-Swagger Definition file</a> | <a href="ExportWHONET.openapi.json" download>Download</a>
+  </p>
+  {% endif %}
+{% endunless %}
+
+  {% include OperationDefinition-ExportWHONET-html.xhtml %}
+
+  <!-- insert notes if present -->
+  {% include fragment-notes.html type='OperationDefinition' id='ExportWHONET' %}
+
+  {%include OperationDefinition-ExportWHONET-history.xhtml%}
+
+</div>
+{% include fragment-pageend.html %}

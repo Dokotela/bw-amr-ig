@@ -24,7 +24,7 @@ WHONET_ANTIBIOTIC_SYSTEM = "http://whonet.org/CodeSystem/antibiotic"
 SNOMED_SYSTEM = "http://snomed.info/sct"
 LOINC_SYSTEM = "http://loinc.org"
 ATC_SYSTEM = "http://www.whocc.no/atc"
-CANONICAL_BASE = "http://bw.health.gov/fhir"
+CANONICAL_BASE = "http://bw.health.gov/fhir/amr"
 
 
 def generate_organism_concept_map():

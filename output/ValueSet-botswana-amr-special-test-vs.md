@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-special-test-vs | *Version*:0.1.0 |
+| *Official URL*:http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-special-test-vs | *Version*:0.1.0 |
 | Draft as of 2026-03-13 | *Computable Name*:BotswanaAMRSpecialTestVS |
 
  
@@ -45,12 +45,12 @@ Special antimicrobial resistance tests performed in Botswana AMR surveillance
 {
   "resourceType" : "ValueSet",
   "id" : "botswana-amr-special-test-vs",
-  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-special-test-vs",
+  "url" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-special-test-vs",
   "version" : "0.1.0",
   "name" : "BotswanaAMRSpecialTestVS",
   "title" : "Botswana AMR Special Tests",
   "status" : "draft",
-  "date" : "2026-03-13T15:05:11-04:00",
+  "date" : "2026-03-13T21:27:21-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [
     {
@@ -74,20 +74,20 @@ Special antimicrobial resistance tests performed in Botswana AMR surveillance
             "display" : "Extended spectrum beta lactamase [Presence] in Isolate"
           },
           {
-            "code" : "101214-7",
-            "display" : "Carbapenemase [Presence] in Isolate by Molecular method"
+            "code" : "86930-5",
+            "display" : "Carbapenemase [Presence] in Isolate"
           },
           {
-            "code" : "18895-8",
-            "display" : "Clindamycin inducible resistance [Susceptibility] by Disk diffusion (KB)"
+            "code" : "42720-3",
+            "display" : "Clindamycin.induced [Susceptibility] by Disk diffusion (KB)"
           },
           {
-            "code" : "33747-0",
-            "display" : "Methicillin resistant Staphylococcus aureus [Presence] in Specimen"
+            "code" : "13317-3",
+            "display" : "Methicillin resistant Staphylococcus aureus [Presence] in Specimen by Organism specific culture"
           },
           {
-            "code" : "6984-4",
-            "display" : "Beta lactamase [Presence] in Isolate"
+            "code" : "6985-6",
+            "display" : "Beta lactamase.usual [Susceptibility]"
           }
         ]
       }

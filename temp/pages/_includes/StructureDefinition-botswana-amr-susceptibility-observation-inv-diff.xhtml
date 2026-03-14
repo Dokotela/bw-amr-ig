@@ -1,1 +1,30 @@
-{% raw %}{% endraw %}
+{% raw %}<h4>Constraints</h4>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>bw-amr-2</td>
+    <td>error</td>
+    <td>Observation</td>
+    <td>If there is no value and no interpretation, a dataAbsentReason must be provided</td>
+    <td>
+      <code>value.exists() or interpretation.exists() or dataAbsentReason.exists()</code>
+    </td>
+  </tr>
+</table>
+{% endraw %}

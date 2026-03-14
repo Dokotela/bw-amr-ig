@@ -6,7 +6,7 @@
 
 ## Example Observation: Klebsiella Special Test - ESBL (Negative)
 
-Profiles: [Botswana AMR Special Test Observation](StructureDefinition-botswana-amr-special-test-observation.md), `http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SpecialTestObservation`
+Profile: [Botswana AMR Special Test Observation](StructureDefinition-botswana-amr-special-test-observation.md)
 
 **status**: Final
 
@@ -32,8 +32,7 @@ Profiles: [Botswana AMR Special Test Observation](StructureDefinition-botswana-a
   "id" : "ExampleSpecialTestKlebEsbl",
   "meta" : {
     "profile" : [
-      "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/botswana-amr-special-test-observation",
-      "http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SpecialTestObservation"
+      "http://bw.health.gov/fhir/amr/StructureDefinition/botswana-amr-special-test-observation"
     ]
   },
   "status" : "final",

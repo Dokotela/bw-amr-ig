@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/specimen-collection-location | *Version*:0.1.0 |
+| *Official URL*:http://bw.health.gov/fhir/amr/StructureDefinition/specimen-collection-location | *Version*:0.1.0 |
 | Draft as of 2026-03-13 | *Computable Name*:SpecimenCollectionLocation |
 
 Ward or facility location where specimen was collected
@@ -41,12 +41,12 @@ Other representations of profile: [CSV](StructureDefinition-specimen-collection-
 {
   "resourceType" : "StructureDefinition",
   "id" : "specimen-collection-location",
-  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/specimen-collection-location",
+  "url" : "http://bw.health.gov/fhir/amr/StructureDefinition/specimen-collection-location",
   "version" : "0.1.0",
   "name" : "SpecimenCollectionLocation",
   "title" : "Specimen Collection Location",
   "status" : "draft",
-  "date" : "2026-03-13T15:05:11-04:00",
+  "date" : "2026-03-13T21:27:21-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [
     {
@@ -95,7 +95,7 @@ Other representations of profile: [CSV](StructureDefinition-specimen-collection-
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/StructureDefinition/specimen-collection-location"
+        "fixedUri" : "http://bw.health.gov/fhir/amr/StructureDefinition/specimen-collection-location"
       },
       {
         "id" : "Extension.value[x]",

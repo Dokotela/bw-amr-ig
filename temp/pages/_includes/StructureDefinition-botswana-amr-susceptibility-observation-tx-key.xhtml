@@ -1,8 +1,138 @@
 {% raw %}<h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Observation.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#required">required</a></td><td title="Codes providing the status of an observation.">Pattern Value: final<div><code>http://hl7.org/fhir/ValueSet/observation-status|4.3.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-status|4.3.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-botswana-amr-antibiotic-susceptibility-loinc.html">BotswanaAMRAntibioticSusceptibilityLOINC</a><div><code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc"></button></div><div>From this IG</div></td></tr>
-<tr><td>Observation.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-botswana-amr-interpretation.html">BotswanaAMRInterpretation</a><div><code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation"></button></div><div>From this IG</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Observation.status</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Codes providing the status of an observation.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-observation-status.html">ObservationStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-status|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Observation.category</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td title="Codes for high level observation categories.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-observation-category.html">Observation Category Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-category|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Observation.category:laboratory</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td title="Codes for high level observation categories.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-observation-category.html">Observation Category Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-category|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Observation.category:microbiologyStudies</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td title="Codes for high level observation categories.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-observation-category.html">Observation Category Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-category|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Observation.code</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-botswana-amr-antibiotic-susceptibility-loinc.html">Botswana AMR Antibiotic Susceptibility LOINC</a>
+      <button data-clipboard-text="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-antibiotic-susceptibility-loinc" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Observation.value[x]:valueQuantity.​comparator</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/valueset-quantity-comparator.html">QuantityComparator</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/quantity-comparator|4.3.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.3.0">&#x1F4CD;4.3.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4B/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Observation.interpretation</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-botswana-amr-interpretation.html">Botswana AMR Interpretation</a>
+      <button data-clipboard-text="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-interpretation" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Observation.method</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4B/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-botswana-amr-ast-method-vs.html">Botswana AMR AST Method</a>
+      <button data-clipboard-text="http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-ast-method-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
 </table>
 {% endraw %}

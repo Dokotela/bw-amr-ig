@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc | *Version*:0.1.0 |
+| *Official URL*:http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-antibiotic-susceptibility-loinc | *Version*:0.1.0 |
 | Draft as of 2026-03-13 | *Computable Name*:BotswanaAMRAntibioticSusceptibilityLOINC |
 
  
@@ -45,12 +45,12 @@ Collection of LOINC codes for antibiotic-susceptibility tests (MIC panel and ind
 {
   "resourceType" : "ValueSet",
   "id" : "botswana-amr-antibiotic-susceptibility-loinc",
-  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-antibiotic-susceptibility-loinc",
+  "url" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-antibiotic-susceptibility-loinc",
   "version" : "0.1.0",
   "name" : "BotswanaAMRAntibioticSusceptibilityLOINC",
   "title" : "Botswana AMR Antibiotic Susceptibility LOINC",
   "status" : "draft",
-  "date" : "2026-03-13T15:05:11-04:00",
+  "date" : "2026-03-13T21:27:21-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [
     {

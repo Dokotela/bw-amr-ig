@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ast-method-vs | *Version*:0.1.0 |
+| *Official URL*:http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-ast-method-vs | *Version*:0.1.0 |
 | Draft as of 2026-03-13 | *Computable Name*:BotswanaAMRASTMethodVS |
 
  
@@ -45,12 +45,12 @@ Antimicrobial susceptibility testing methods used in Botswana AMR surveillance
 {
   "resourceType" : "ValueSet",
   "id" : "botswana-amr-ast-method-vs",
-  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-ast-method-vs",
+  "url" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-ast-method-vs",
   "version" : "0.1.0",
   "name" : "BotswanaAMRASTMethodVS",
   "title" : "Botswana AMR AST Method",
   "status" : "draft",
-  "date" : "2026-03-13T15:05:11-04:00",
+  "date" : "2026-03-13T21:27:21-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [
     {
@@ -74,12 +74,12 @@ Antimicrobial susceptibility testing methods used in Botswana AMR surveillance
             "display" : "Disc diffusion method"
           },
           {
-            "code" : "91461000",
-            "display" : "Broth dilution susceptibility test"
+            "code" : "263696007",
+            "display" : "Broth dilution"
           },
           {
-            "code" : "89588004",
-            "display" : "Gradient diffusion method"
+            "code" : "104234003",
+            "display" : "Gradient strip susceptibility test"
           },
           {
             "code" : "702873001",

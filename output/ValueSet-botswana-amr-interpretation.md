@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation | *Version*:0.1.0 |
+| *Official URL*:http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-interpretation | *Version*:0.1.0 |
 | Draft as of 2026-03-13 | *Computable Name*:BotswanaAMRInterpretation |
 
  
@@ -45,12 +45,12 @@ Only Susceptible, Intermediate, or Resistant
 {
   "resourceType" : "ValueSet",
   "id" : "botswana-amr-interpretation",
-  "url" : "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/ValueSet/botswana-amr-interpretation",
+  "url" : "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-interpretation",
   "version" : "0.1.0",
   "name" : "BotswanaAMRInterpretation",
   "title" : "Botswana AMR Interpretation",
   "status" : "draft",
-  "date" : "2026-03-13T15:05:11-04:00",
+  "date" : "2026-03-13T21:27:21-04:00",
   "publisher" : "University of Botswana Partnership",
   "contact" : [
     {

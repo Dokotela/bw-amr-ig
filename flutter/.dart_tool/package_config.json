@@ -15,7 +15,7 @@
     },
     {
       "name": "fhir_r4",
-      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dev/fhir_r4-0.4.2",
+      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dev/fhir_r4-0.5.1",
       "packageUri": "lib/",
       "languageVersion": "3.5"
     },
@@ -50,12 +50,6 @@
       "languageVersion": "3.1"
     },
     {
-      "name": "sprintf",
-      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dev/sprintf-7.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "string_scanner",
       "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dev/string_scanner-1.4.1",
       "packageUri": "lib/",
@@ -75,13 +69,13 @@
     },
     {
       "name": "uuid",
-      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dev/uuid-4.5.1",
+      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dev/uuid-4.5.3",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "xml",
-      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dev/xml-6.6.0",
+      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dev/xml-6.6.1",
       "packageUri": "lib/",
       "languageVersion": "3.8"
     },
@@ -99,8 +93,8 @@
     }
   ],
   "generator": "pub",
-  "generatorVersion": "3.8.1",
-  "flutterRoot": "file:///home/grey/dev/flutter",
-  "flutterVersion": "3.32.4",
+  "generatorVersion": "3.10.4",
+  "flutterRoot": "file:///home/grey/flutter",
+  "flutterVersion": "3.38.5",
   "pubCache": "file:///home/grey/.pub-cache"
 }
