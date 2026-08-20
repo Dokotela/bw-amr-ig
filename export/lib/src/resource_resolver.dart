@@ -61,13 +61,11 @@ class ResourceResolver {
     final admissionDate = encounter?.period?.start?.valueString;
     final ward =
         encounter?.location?.firstOrNull?.location.display?.valueString;
-    final laboratory =
-        encounter?.serviceProvider?.display?.valueString ??
+    final laboratory = encounter?.serviceProvider?.display?.valueString ??
         report.performer?.firstOrNull?.display?.valueString;
 
     // Extract specimen details
-    final specimenDate =
-        specimen?.collection?.collectedDateTime?.valueString ??
+    final specimenDate = specimen?.collection?.collectedDateTime?.valueString ??
         report.effectiveDateTime?.valueString;
     final specimenType =
         specimen?.type?.coding?.firstOrNull?.display?.valueString;
@@ -123,11 +121,9 @@ class ResourceResolver {
     // Organism identification
     final snomedCode =
         organism.valueCodeableConcept?.coding?.firstOrNull?.code?.valueString;
-    final organismDisplay =
-        organism.valueCodeableConcept?.coding?.firstOrNull?.display
-            ?.valueString;
-    final isolateNumber =
-        organism.identifier?.firstOrNull?.value?.valueString;
+    final organismDisplay = organism
+        .valueCodeableConcept?.coding?.firstOrNull?.display?.valueString;
+    final isolateNumber = organism.identifier?.firstOrNull?.value?.valueString;
 
     // Walk hasMember for susceptibility and special test results
     final antibiotics = <String, AntibioticResult>{};
@@ -163,8 +159,8 @@ class ResourceResolver {
       final whonetCode = index.whonetCodeForLoinc(obsCode);
       if (whonetCode == null) continue;
 
-      final sir = obs.interpretation?.firstOrNull?.coding?.firstOrNull?.code
-          ?.valueString;
+      final sir = obs
+          .interpretation?.firstOrNull?.coding?.firstOrNull?.code?.valueString;
       final quantity = obs.valueQuantity;
       final unitCode = quantity?.code?.valueString;
       final value = quantity?.value?.valueDouble;
@@ -234,8 +230,8 @@ class ResourceResolver {
     if (field == null) return null;
 
     // Determine POS/NEG from interpretation or value
-    final interp = obs.interpretation?.firstOrNull?.coding?.firstOrNull?.code
-        ?.valueString;
+    final interp =
+        obs.interpretation?.firstOrNull?.coding?.firstOrNull?.code?.valueString;
     String? result;
     if (interp == 'POS' || interp == 'DET') {
       result = 'POS';
@@ -254,8 +250,7 @@ class ResourceResolver {
     return result != null ? MapEntry(field, result) : null;
   }
 
-  T? _resolve<T extends Resource>(
-      Reference? ref, Map<String, Resource> byRef) {
+  T? _resolve<T extends Resource>(Reference? ref, Map<String, Resource> byRef) {
     if (ref == null) return null;
     final refStr = ref.reference?.valueString;
     if (refStr == null) return null;

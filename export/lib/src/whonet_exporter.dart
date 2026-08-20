@@ -102,6 +102,7 @@ class WhonetExporter {
     ];
   }
 
-  static String _fmtDouble(double? v) =>
-      v == null ? '' : (v == v.roundToDouble() ? v.toInt().toString() : v.toString());
+  static String _fmtDouble(double? v) => v == null
+      ? ''
+      : (v == v.roundToDouble() ? v.toInt().toString() : v.toString());
 }

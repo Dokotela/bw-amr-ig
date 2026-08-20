@@ -5,9 +5,11 @@ final CodeSystem botswanaAmrLocalMethodCs = CodeSystem.fromJson({
   "id": "botswana-amr-local-method-cs",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem botswana-amr-local-method-cs</b></p><a name=\"botswana-amr-local-method-cs\"> </a><a name=\"hcbotswana-amr-local-method-cs\"> </a><p>This  code system <code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">vitek<a name=\"botswana-amr-local-method-cs-vitek\"> </a></td><td>Vitek automated system</td><td>bioM\u00e9rieux Vitek automated identification and susceptibility testing system</td></tr><tr><td style=\"white-space:nowrap\">phoenix<a name=\"botswana-amr-local-method-cs-phoenix\"> </a></td><td>Phoenix automated system</td><td>BD Phoenix automated identification and susceptibility testing system</td></tr><tr><td style=\"white-space:nowrap\">api<a name=\"botswana-amr-local-method-cs-api\"> </a></td><td>API biochemical strips</td><td>bioM\u00e9rieux API manual biochemical identification strips</td></tr><tr><td style=\"white-space:nowrap\">manual<a name=\"botswana-amr-local-method-cs-manual\"> </a></td><td>Manual biochemical testing</td><td>Traditional manual biochemical identification methods</td></tr></table></div>"
+    "div":
+        "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem botswana-amr-local-method-cs</b></p><a name=\"botswana-amr-local-method-cs\"> </a><a name=\"hcbotswana-amr-local-method-cs\"> </a><p>This  code system <code>http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">vitek<a name=\"botswana-amr-local-method-cs-vitek\"> </a></td><td>Vitek automated system</td><td>bioM\u00e9rieux Vitek automated identification and susceptibility testing system</td></tr><tr><td style=\"white-space:nowrap\">phoenix<a name=\"botswana-amr-local-method-cs-phoenix\"> </a></td><td>Phoenix automated system</td><td>BD Phoenix automated identification and susceptibility testing system</td></tr><tr><td style=\"white-space:nowrap\">api<a name=\"botswana-amr-local-method-cs-api\"> </a></td><td>API biochemical strips</td><td>bioM\u00e9rieux API manual biochemical identification strips</td></tr><tr><td style=\"white-space:nowrap\">manual<a name=\"botswana-amr-local-method-cs-manual\"> </a></td><td>Manual biochemical testing</td><td>Traditional manual biochemical identification methods</td></tr></table></div>"
   },
-  "url": "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs",
+  "url":
+      "http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs",
   "version": "0.1.0",
   "name": "BotswanaAMRLocalMethodCS",
   "title": "Botswana AMR Local Identification Method Codes",
@@ -18,31 +20,32 @@ final CodeSystem botswanaAmrLocalMethodCs = CodeSystem.fromJson({
     {
       "name": "University of Botswana Partnership",
       "telecom": [
-        {
-          "system": "url",
-          "value": "https://github.com/Dokotela/bw-amr-ig"
-        }
+        {"system": "url", "value": "https://github.com/Dokotela/bw-amr-ig"}
       ]
     }
   ],
-  "description": "Local codes for identification methods used in Botswana AMR surveillance",
+  "description":
+      "Local codes for identification methods used in Botswana AMR surveillance",
   "content": "complete",
   "count": 4,
   "concept": [
     {
       "code": "vitek",
       "display": "Vitek automated system",
-      "definition": "bioM\u00e9rieux Vitek automated identification and susceptibility testing system"
+      "definition":
+          "bioM\u00e9rieux Vitek automated identification and susceptibility testing system"
     },
     {
       "code": "phoenix",
       "display": "Phoenix automated system",
-      "definition": "BD Phoenix automated identification and susceptibility testing system"
+      "definition":
+          "BD Phoenix automated identification and susceptibility testing system"
     },
     {
       "code": "api",
       "display": "API biochemical strips",
-      "definition": "bioM\u00e9rieux API manual biochemical identification strips"
+      "definition":
+          "bioM\u00e9rieux API manual biochemical identification strips"
     },
     {
       "code": "manual",

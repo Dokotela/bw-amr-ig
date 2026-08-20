@@ -72,8 +72,8 @@ void main() {
   test('ResourceResolver extracts patient demographics', () {
     final resolver = ResourceResolver(index: index);
     final rows = resolver.resolve(resources);
-    final ecoli = rows.firstWhere(
-        (r) => r.organism?.contains('Escherichia') == true);
+    final ecoli =
+        rows.firstWhere((r) => r.organism?.contains('Escherichia') == true);
 
     expect(ecoli.lastName, isNotNull);
     expect(ecoli.sex, equals('F'));
@@ -82,8 +82,8 @@ void main() {
   test('ResourceResolver extracts antibiotic results', () {
     final resolver = ResourceResolver(index: index);
     final rows = resolver.resolve(resources);
-    final ecoli = rows.firstWhere(
-        (r) => r.organism?.contains('Escherichia') == true);
+    final ecoli =
+        rows.firstWhere((r) => r.organism?.contains('Escherichia') == true);
 
     // E. coli should have 7 susceptibility results
     expect(ecoli.antibiotics.length, greaterThanOrEqualTo(1));

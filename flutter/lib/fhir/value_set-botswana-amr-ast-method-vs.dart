@@ -17,10 +17,7 @@ final ValueSet botswanaAmrAstMethodVs = ValueSet.fromJson({
         "system": "http://snomed.info/sct",
         "concept": [
           {"code": "115254003", "display": "Disc diffusion method"},
-          {
-            "code": "91461000",
-            "display": "Broth dilution susceptibility test"
-          },
+          {"code": "91461000", "display": "Broth dilution susceptibility test"},
           {"code": "89588004", "display": "Gradient diffusion method"},
           {
             "code": "702873001",

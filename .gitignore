@@ -4,6 +4,9 @@ publisher.jar
 output/
 temp/
 
+# Dart build output for the export tool
+export/build/
+
 # Dart tooling
 .dart_tool/
 **/pubspec.lock

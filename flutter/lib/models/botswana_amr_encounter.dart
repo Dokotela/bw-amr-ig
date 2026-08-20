@@ -23,8 +23,8 @@ class BotswanaAMREncounterBuilder {
                   ?.coding
                   ?.first ??
               Coding(
-                system: FhirUri(
-                    'http://terminology.hl7.org/CodeSystem/v3-ActCode'),
+                system:
+                    FhirUri('http://terminology.hl7.org/CodeSystem/v3-ActCode'),
                 code: FhirCode(wardTypeDisplay!),
               )
           : Coding(
@@ -46,8 +46,7 @@ class BotswanaAMREncounterBuilder {
             ]
           : null,
       serviceProvider: serviceProviderId != null
-          ? Reference(
-              reference: FhirString('Organization/$serviceProviderId'))
+          ? Reference(reference: FhirString('Organization/$serviceProviderId'))
           : null,
       reasonCode: reasonCodes.isNotEmpty
           ? reasonCodes

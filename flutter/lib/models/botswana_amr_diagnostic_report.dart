@@ -60,8 +60,7 @@ class BotswanaAMRDiagnosticReportBuilder {
           : null,
       performer: performerIds.isNotEmpty
           ? performerIds
-              .map(
-                  (id) => Reference(reference: FhirString('Organization/$id')))
+              .map((id) => Reference(reference: FhirString('Organization/$id')))
               .toList()
           : null,
       specimen: specimenIds
