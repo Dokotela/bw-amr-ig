@@ -5,7 +5,15 @@
      filtered result set from bumblebee/tool/sct.py; step 1 requires re-running it
      immediately before anything is sent -->
 
-**TWO ITEMS OPEN, AND THE FIRST DECISION IS WHETHER TO SEND THEM AT ALL.**
+# 🛑 CLOSED 2026-09-03 — NEITHER IS BEING SUBMITTED. DO NOT RAISE IT AGAIN.
+
+**Grey's decision**, taken across both this file and cicada's: these are the less
+important requests and submitting them risks the 12 in bumblebee's dossier being
+discounted as a batch. Both of these are refinements anyway —
+`53465007` |Microbial identification, automated and semiautomated methods| already
+covers what the instruments do.
+
+Kept as the record of what was checked. It is not a queue.
 
 Everything else this IG mints already exists in SNOMED CT International — see
 `TERMINOLOGY-AUDIT.md`, where 32 of 36 local codes are matched to existing concepts
