@@ -57,10 +57,16 @@ carry the AST method, which is the argument for yes.
 - ✅ **Reference, verified:** Eigner U, Schmid A, Wild U, Bertsch D, Fahr AM.
   *Analysis of the comparative workflow and performance characteristics of the VITEK
   2 and Phoenix systems.* **J Clin Microbiol 2005;43(8):3829–34**,
-  doi:10.1128/jcm.43.8.3829-3834.2005. ⏳ Pair it with a recent evaluation for
-  recency — a 2025 comparison of direct and routine AST from positive blood cultures
-  exists in the Indian Journal of Medical Microbiology and **its citation still has
-  to be retrieved.**
+  doi:10.1128/jcm.43.8.3829-3834.2005.
+- ⚠️ **A recent evaluation exists and its citation is NOT confirmed.** Sirad N,
+  Atalay MA, Sağıroğlu P, *Evaluation of BD Phoenix and VITEK 2 for direct and
+  routine antimicrobial susceptibility testing of ESKAPE isolates from positive blood
+  culture bottles*, 2025, **PMID 40578794**. Two sources disagree about the journal —
+  one gives *Clinical Microbiology and Infection* 31(10):1626–9, the other an *Indian
+  Journal of Medical Microbiology* identifier — and PubMed would not render for me.
+  **Resolve the journal before this goes in a request**; the PMID is the part that is
+  certain. The guidance asks for recent references, so this one matters: the 2005
+  paper is authoritative and twenty years old.
 - ✅ **Use-case reference, verified:** WHO. *GLASS manual for antimicrobial
   resistance surveillance in common bacteria causing human infection.* Geneva, 2023,
   ISBN 978-92-4-007660-0.
@@ -91,9 +97,8 @@ carry the AST method, which is the argument for yes.
    on `Observation.device` instead.
 2. **Re-run the duplicate check** — `bumblebee/tool/ig_code_gap_check.py` plus the
    family enumeration. The International edition moves twice a year.
-3. **Retrieve the recent VITEK 2 / Phoenix evaluation citation.** The 2005 paper
-   alone is authoritative but twenty years old, and the guidance asks for recent
-   references.
+3. **Resolve the journal for PMID 40578794** (see entry 1). The 2005 paper alone is
+   authoritative but twenty years old, and the guidance asks for recent references.
 4. **Name `83089001` and `53465007` in both requests.** A reviewer will find them,
    and a request that has already distinguished itself from the near neighbours is
    the one that gets read.

@@ -42,6 +42,7 @@
 [ExampleSusceptKlebCiprofloxacin]: Observation-ExampleSusceptKlebCiprofloxacin.html
 [ExampleSusceptKlebGentamicin]: Observation-ExampleSusceptKlebGentamicin.html
 [ExampleSusceptKlebMeropenem]: Observation-ExampleSusceptKlebMeropenem.html
+[RetiredLocalOrganismsToSnomed]: ConceptMap-RetiredLocalOrganismsToSnomed.html
 [SpecimenCollectionLocation]: StructureDefinition-specimen-collection-location.html
 [WHONETAntibioticToLOINC]: ConceptMap-whonet-antibiotic-to-loinc.html
 [WHONETAntibioticToSNOMED]: ConceptMap-whonet-antibiotic-to-snomed.html

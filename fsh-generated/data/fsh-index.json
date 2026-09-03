@@ -4,16 +4,24 @@
     "fshName": "BotswanaAMRLocalMethodCS",
     "fshType": "CodeSystem",
     "fshFile": "codeSystems/BotswanaAMRLocalMethodCS.fsh",
-    "startLine": 2,
-    "endLine": 10
+    "startLine": 16,
+    "endLine": 22
   },
   {
     "outputFile": "CodeSystem-botswana-amr-local-organism-cs.json",
     "fshName": "BotswanaAMRLocalOrganismCS",
     "fshType": "CodeSystem",
     "fshFile": "codeSystems/BotswanaAMRLocalOrganismCS.fsh",
-    "startLine": 2,
-    "endLine": 38
+    "startLine": 16,
+    "endLine": 21
+  },
+  {
+    "outputFile": "ConceptMap-RetiredLocalOrganismsToSnomed.json",
+    "fshName": "RetiredLocalOrganismsToSnomed",
+    "fshType": "Instance",
+    "fshFile": "conceptmaps/RetiredLocalOrganismsToSnomed.fsh",
+    "startLine": 13,
+    "endLine": 187
   },
   {
     "outputFile": "DiagnosticReport-ExampleDiagnosticReportAMR.json",
@@ -284,8 +292,8 @@
     "fshName": "BotswanaAMRASTMethodVS",
     "fshType": "ValueSet",
     "fshFile": "valueSets/BotswanaAMRASTMethodVS.fsh",
-    "startLine": 3,
-    "endLine": 18
+    "startLine": 8,
+    "endLine": 23
   },
   {
     "outputFile": "ValueSet-botswana-amr-gram-stain-result-vs.json",
@@ -300,8 +308,8 @@
     "fshName": "BotswanaAMRIdentificationMethodVS",
     "fshType": "ValueSet",
     "fshFile": "valueSets/BotswanaAMRIdentificationMethodVS.fsh",
-    "startLine": 2,
-    "endLine": 16
+    "startLine": 10,
+    "endLine": 33
   },
   {
     "outputFile": "ValueSet-botswana-amr-interpretation.json",
@@ -317,7 +325,7 @@
     "fshType": "ValueSet",
     "fshFile": "valueSets/BotswanaAMROrganismVS.fsh",
     "startLine": 4,
-    "endLine": 13
+    "endLine": 15
   },
   {
     "outputFile": "ValueSet-botswana-amr-special-test-vs.json",

@@ -1,6 +1,7 @@
 Output File                                                       Name                                      Type        FSH File                                                Lines
-CodeSystem-botswana-amr-local-method-cs.json                      BotswanaAMRLocalMethodCS                  CodeSystem  codeSystems/BotswanaAMRLocalMethodCS.fsh                2 - 10
-CodeSystem-botswana-amr-local-organism-cs.json                    BotswanaAMRLocalOrganismCS                CodeSystem  codeSystems/BotswanaAMRLocalOrganismCS.fsh              2 - 38
+CodeSystem-botswana-amr-local-method-cs.json                      BotswanaAMRLocalMethodCS                  CodeSystem  codeSystems/BotswanaAMRLocalMethodCS.fsh                16 - 22
+CodeSystem-botswana-amr-local-organism-cs.json                    BotswanaAMRLocalOrganismCS                CodeSystem  codeSystems/BotswanaAMRLocalOrganismCS.fsh              16 - 21
+ConceptMap-RetiredLocalOrganismsToSnomed.json                     RetiredLocalOrganismsToSnomed             Instance    conceptmaps/RetiredLocalOrganismsToSnomed.fsh           13 - 187
 DiagnosticReport-ExampleDiagnosticReportAMR.json                  ExampleDiagnosticReportAMR                Instance    examples/BotswanaAMRExample.fsh                         358 - 370
 Encounter-ExampleEncounterInpatient.json                          ExampleEncounterInpatient                 Instance    examples/BotswanaAMRExample.fsh                         36 - 44
 Observation-ExampleGramStainNegative.json                         ExampleGramStainNegative                  Instance    examples/BotswanaAMRExample.fsh                         66 - 74
@@ -34,11 +35,11 @@ StructureDefinition-botswana-amr-specimen.json                    BotswanaAMRSpe
 StructureDefinition-botswana-amr-susceptibility-observation.json  BotswanaAMRSusceptibilityObservation      Profile     profiles/BotswanaAMRSusceptibilityObservation.fsh       6 - 50
 StructureDefinition-specimen-collection-location.json             SpecimenCollectionLocation                Extension   extensions/SpecimenCollectionLocation.fsh               2 - 9
 ValueSet-botswana-amr-antibiotic-susceptibility-loinc.json        BotswanaAMRAntibioticSusceptibilityLOINC  ValueSet    valueSets/BotswanaAMRAntibioticSusceptibilityLOINC.fsh  3 - 46
-ValueSet-botswana-amr-ast-method-vs.json                          BotswanaAMRASTMethodVS                    ValueSet    valueSets/BotswanaAMRASTMethodVS.fsh                    3 - 18
+ValueSet-botswana-amr-ast-method-vs.json                          BotswanaAMRASTMethodVS                    ValueSet    valueSets/BotswanaAMRASTMethodVS.fsh                    8 - 23
 ValueSet-botswana-amr-gram-stain-result-vs.json                   BotswanaAMRGramStainResultVS              ValueSet    valueSets/BotswanaAMRGramStrainResultVS.fsh             4 - 13
-ValueSet-botswana-amr-identification-method-vs.json               BotswanaAMRIdentificationMethodVS         ValueSet    valueSets/BotswanaAMRIdentificationMethodVS.fsh         2 - 16
+ValueSet-botswana-amr-identification-method-vs.json               BotswanaAMRIdentificationMethodVS         ValueSet    valueSets/BotswanaAMRIdentificationMethodVS.fsh         10 - 33
 ValueSet-botswana-amr-interpretation.json                         BotswanaAMRInterpretation                 ValueSet    valueSets/BotswanaAMRInterpretation.fsh                 3 - 9
-ValueSet-botswana-amr-organism-vs.json                            BotswanaAMROrganismVS                     ValueSet    valueSets/BotswanaAMROrganismVS.fsh                     4 - 13
+ValueSet-botswana-amr-organism-vs.json                            BotswanaAMROrganismVS                     ValueSet    valueSets/BotswanaAMROrganismVS.fsh                     4 - 15
 ValueSet-botswana-amr-special-test-vs.json                        BotswanaAMRSpecialTestVS                  ValueSet    valueSets/BotswanaAMRSpecialTestVS.fsh                  4 - 22
 ValueSet-botswana-amr-specimen-site-vs.json                       BotswanaAMRSpecimenSiteVS                 ValueSet    valueSets/BotswanaAMRSpecimenSiteVS.fsh                 3 - 24
 ValueSet-botswana-amr-specimen-type-vs.json                       BotswanaAMRSpecimenTypeVS                 ValueSet    valueSets/BotswanaAMRSpecimenTypeVS.fsh                 3 - 13

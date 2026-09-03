@@ -5,29 +5,19 @@
   "name": "BotswanaAMRLocalMethodCS",
   "id": "botswana-amr-local-method-cs",
   "title": "Botswana AMR Local Identification Method Codes",
-  "description": "Local codes for identification methods used in Botswana AMR surveillance",
+  "description": "The two automated identification and susceptibility instruments used in Botswana AMR surveillance that SNOMED CT International does not carry. Manual and API methods are not here: SNOMED has those and the value set binds them directly.",
   "url": "http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs",
   "concept": [
     {
       "code": "vitek",
       "display": "Vitek automated system",
-      "definition": "bioMérieux Vitek automated identification and susceptibility testing system"
+      "definition": "bioMérieux VITEK 2 automated identification and susceptibility testing system. SNOMED has only the Vitek yeast card, 83089001."
     },
     {
       "code": "phoenix",
       "display": "Phoenix automated system",
-      "definition": "BD Phoenix automated identification and susceptibility testing system"
-    },
-    {
-      "code": "api",
-      "display": "API biochemical strips",
-      "definition": "bioMérieux API manual biochemical identification strips"
-    },
-    {
-      "code": "manual",
-      "display": "Manual biochemical testing",
-      "definition": "Traditional manual biochemical identification methods"
+      "definition": "BD Phoenix automated identification and susceptibility testing system. No SNOMED concept."
     }
   ],
-  "count": 4
+  "count": 2
 }

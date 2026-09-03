@@ -1,38 +1,21 @@
-// Local code system for organism combinations and lab-specific terms
+// RETIRED 2026-09-03. Every concept this code system carried already exists in
+// SNOMED CT International, 2025-02-01 — see ConceptMap-retired-local-organisms-to-snomed
+// for the 32 codes and their SNOMED equivalents, and TERMINOLOGY-AUDIT.md for how
+// the original mapping run came to miss them.
+//
+// Two of the 32 were our own misspellings: `cedecia-lapagei` is Cedecea lapagei
+// 2345009, and `vagococcus-fluviali` is Vagococcus fluvialis 116418005. The
+// misspelling was also the search term, which is why nothing was found.
+//
+// One code is not retired because its target is not settled:
+// `cronobacter-sakazakii-group`. SNOMED has no group or complex concept for
+// Cronobacter — 'Cronobacter' returns 17 concepts, complete, covering the genus
+// 444664004 and seven species. WHONET's "group" label predates the split of
+// C. sakazakii into a genus. A microbiologist decides between the genus and
+// 445562004 |Cronobacter sakazakii|; it is not a gap in SNOMED.
 CodeSystem: BotswanaAMRLocalOrganismCS
 Id: botswana-amr-local-organism-cs
 Title: "Botswana AMR Local Organism Codes"
-Description: "Local codes for organism combinations and complex designations used in Botswana AMR surveillance"
+Description: "Retired. One code remains, pending a decision on which SNOMED concept WHONET's 'Cronobacter sakazakii group' means. Everything else this system carried is in SNOMED CT International; see ConceptMap-retired-local-organisms-to-snomed."
 
-* #acinetobacter-baumannii-complex "Acinetobacter baumannii complex"
-* #aeromonas-hydrophila-punctata "Aeromonas hydrophila/punctata"
-* #alcaligenes-faecalis-subsp-faecalis "Alcaligenes faecalis subsp. faecalis"
-* #brevundimonas-diminuta-vesicularis "Brevundimonas diminuta/Brevundimonas vesicularis"
-* #burkholderia-cepacia-group "Burkholderia cepacia group"
-* #cedecia-lapagei "Cedecia lapagei"
-* #cronobacter-sakazakii-group "Cronobacter sakazakii group"
-* #dermacoccus-nishinomiyaensis-kytococcus-sedentarius "Dermacoccus nishinomiyaensis/Kytococcus sedentarius"
-* #enterococcus-spp "Enterococcus spp."
-* #klebsiella-pneumoniae-subsp-pneumoniae "Klebsiella pneumoniae subsp. pneumoniae"
-* #klebsiella-spp "Klebsiella spp."
-* #leuconostoc-mesenteroides-subsp-cremoris "Leuconostoc mesenteroides subsp. cremoris"
-* #leuconostoc-mesenteroides-subsp-dextranicum "Leuconostoc mesenteroides subsp. dextranicum"
-* #methylobacterium-spp "Methylobacterium spp."
-* #moraxella-group "Moraxella group"
-* #morganella-morganii-subsp-morganii "Morganella morganii subsp. morganii"
-* #morganella-morganii-subsp-sibonii "Morganella morganii subsp. sibonii"
-* #myroides-spp "Myroides spp."
-* #neisseria-animaloris-zoodegmatis "Neisseria animaloris/Neisseria zoodegmatis"
-* #pandoraea-spp "Pandoraea spp."
-* #pantoea-spp "Pantoea spp."
-* #pseudomonas-spp "Pseudomonas spp."
-* #salmonella-group "Salmonella group"
-* #serratia-liquefaciens-group "Serratia liquefaciens group"
-* #shigella-group "Shigella group"
-* #staphylococcus-cohnii-subsp-cohnii "Staphylococcus cohnii subsp. cohnii"
-* #staphylococcus-hominis-subsp-hominis "Staphylococcus hominis subsp. hominis"
-* #streptococcus-constellatus-subsp-pharyngis "Streptococcus constellatus subsp. pharyngis"
-* #streptococcus-infantarius-subsp-coli "Streptococcus infantarius subsp. coli"
-* #streptococcus-mitis-oralis "Streptococcus mitis/Streptococcus oralis"
-* #vagococcus-fluviali "Vagococcus fluviali"
-* #yersinia-enterocolitica-frederiksenii "Yersinia enterocolitica/Yersinia frederiksenii"
+* #cronobacter-sakazakii-group "Cronobacter sakazakii group" "WHONET reports this group. SNOMED has the genus 444664004 |Cronobacter| and the species 445562004 |Cronobacter sakazakii| but no group concept. Pending a microbiologist's decision on which is meant."

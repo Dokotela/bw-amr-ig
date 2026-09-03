@@ -118,12 +118,57 @@ must name and distinguish itself from.
 
 Draft requests: `SNOMED-SUBMISSION-DOSSIER.md`.
 
-## Everything else this IG cites is real
+## 🔴 Eleven codes this IG cites mean something else entirely
 
 232 distinct external codes across both IGs were run through
-`CodeSystem/$validate-code`; **every code this IG cites resolved**, including all 40
-antibiotic susceptibility LOINC codes and the SNOMED specimen, method and result
-codes. Evidence: `bumblebee/results/ig_external_codes.tsv`.
+`CodeSystem/$validate-code`. Every one this IG cites **resolves** — and that proved
+nothing, because resolving only says the code exists. Re-running the check with the
+`display` parameter, so the server has to agree with our label, found **eleven codes
+in this IG that are the wrong concept**:
+
+| where | code | our label | what it actually is |
+|---|---|---|---|
+| identification method | `258066000` | Automated identification system | **Polymerase chain reaction technique** |
+| identification method | `252398009` | Biochemical identification | **Culture - general** |
+| identification method | `87273009` | Manual method | **Temperature normal** |
+| AST method | `115254003` | Disc diffusion method | **Fungal identification method** |
+| AST method | `702873001` | Automated antimicrobial susceptibility test | **Calculation technique** |
+| specimen site | `68171009` | Urine | **Axillary lymph node structure** |
+| specimen site | `69695003` | Cerebrospinal fluid | **Stomach structure** |
+| specimen site | `258580003` | Wound | **Whole blood specimen** |
+| specimen site | `416775004` | Throat structure | **Chest, abdomen, and pelvis** |
+| specimen site | `127949000` | Catheter tip | **Elbow region structure** |
+| gram stain result | `58296003` | Yeast | **Saccharomyces cerevisiae** |
+
+Plus one LOINC: the ESBL example sends `99596-9` labelled *Extended spectrum beta
+lactamase [Presence] in Isolate*, which is **SARS-CoV-2 N protein IgG Ab [Presence]
+in Serum or Plasma by Immunoassay**. The value set's own ESBL code, `99596-9`, is
+cited the same way — check both.
+
+Three more differ only in wording and are fine: `45206002` nasal cavity versus nasal
+structure, `258574006` mid-stream urine sample versus specimen, and v3 `CSF`.
+
+**The five method codes are fixed** in this commit — `53465007`, `362943005`,
+`4804005`, `359872008`, `84128001`, each re-validated with its display against the
+server.
+
+**The six specimen-site and gram-stain codes are not fixed, deliberately.** Choosing
+their replacements is a modelling decision, not a lookup: `Specimen.collection.bodySite`
+binds this value set, so its members should be **body structures**, and half of what
+is in it — urine, sputum specimen, stool specimen, catheter tip — are specimens, which
+belong in `Specimen.type`. Fixing the codes without settling that axis would just
+re-encode the confusion. Candidates found and validated, for whoever settles it:
+`258450006` |Cerebrospinal fluid specimen|, `119365002` |Specimen from wound| or
+`258531008` |Wound swab|, `119312009` |Catheter tip submitted as specimen|,
+`716153002` |Entire throat|.
+
+Evidence: `bumblebee/results/ig_display_mismatches.tsv`,
+`bwamr_method_vs_validation.tsv`.
+
+🔑 **The lesson for every future check: `$validate-code` without `display` only
+proves the code exists.** My own first pass ran it that way, reported all 232 valid,
+and I wrote "every code this IG cites is real" into this file. Eleven of them are not
+the concept we think.
 
 ## LOINC
 
@@ -138,17 +183,47 @@ the Botswana laboratories actually report is unknown** — there is no panel lis
 this repo — so no LOINC submission can be scoped from it yet. Getting that list is
 the prerequisite, not more searching.
 
-## The fixes, in the order they should land
+## What has been done, and what is left
 
-1. Replace the 30 organism local codes with the SNOMED codes above, and delete them
-   from `BotswanaAMRLocalOrganismCS`.
-2. Fix the two misspellings by binding to `2345009` and `116418005`.
-3. Delete `#api` and `#manual` from `BotswanaAMRLocalMethodCS`; the value set already
-   carries the SNOMED equivalents.
-4. Rewrite `BotswanaAMROrganismVS`'s description: the intensional
-   `is-a 410607006 |Organism|` include already covers everything above, so the local
-   system is only needed for `vitek`, `phoenix` and whatever Cronobacter decision
-   is made.
-5. Regenerate `concept-maps/ConceptMap-whonet-organism-to-snomed.json` after fixing
+**Done in this commit:**
+
+1. ✅ `BotswanaAMRLocalOrganismCS` retired down to one code. The 31 retired codes and
+   their SNOMED targets are in the new
+   `ConceptMap-retired-local-organisms-to-snomed`, so anything already recorded with
+   them can migrate. **All 31 targets were re-validated with their displays against
+   tx.fhir.org: 31 of 31 exact.**
+2. ✅ Both misspellings corrected in that map, with the reason on the row.
+3. ✅ `#api` and `#manual` retired from `BotswanaAMRLocalMethodCS`;
+   `BotswanaAMRIdentificationMethodVS` now binds the seven API kits SNOMED carries
+   individually, plus the generic kit-method concept.
+4. ✅ `BotswanaAMROrganismVS`'s description rewritten — it no longer claims SNOMED
+   does not cover these, and it says how SNOMED spells them.
+5. ✅ The five wrong method codes replaced (see the section above).
+
+**Left, and each needs a person:**
+
+6. The six specimen-site and gram-stain codes, together with the
+   `bodySite`-versus-`Specimen.type` axis question. **Laboratory decision.**
+7. `cronobacter-sakazakii-group`: genus `444664004` or species `445562004`.
+   **Microbiologist's decision.**
+8. Whether VITEK 2 and BD Phoenix are worth a SNOMED request at all.
+   **See `SNOMED-SUBMISSION-DOSSIER.md`.**
+9. Regenerate `concept-maps/ConceptMap-whonet-organism-to-snomed.json` after fixing
    `python/missing_organisms.py` to match on meaning rather than on the exact WHONET
-   string.
+   string. Until then that map carries the same fallback-to-parent-species errors.
+10. **Run `./_genonce.sh` and refresh `flutter/`.** `sushi .` was run and
+    `fsh-generated/` is current, but the Flutter package's assets and generated Dart
+    come from the IG Publisher's `output/`, and I could not complete a publisher run:
+    it sat at *Generating Narratives* for fifteen minutes on two attempts and I
+    stopped it. **I did not diagnose why.** The intensional all-organisms include is
+    the obvious suspect, since expanding every descendant of `410607006` is enormous,
+    but that is a guess and it was not measured — and the include is unchanged from
+    before this work, so whatever it is, it is not new.
+
+    ⚠️ **`flutter/assets/` was already stale before any of this**: those files are
+    dated **2025-07-09**, and they cite the local method code system as
+    `http://bw.health.gov/fhir/ImplementationGuide/bw-amr-ig/CodeSystem/botswana-amr-local-method-cs`,
+    which is not its URL — the canonical is `http://bw.health.gov/fhir/amr/...`. So
+    the app has been reading a value set that points at a code system that does not
+    exist, alongside the three wrong method codes. `fsh-generated/` has both right
+    now; the app will not until the publisher runs.

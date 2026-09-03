@@ -12,8 +12,8 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "115254003",
-            "display": "Disc diffusion method"
+            "code": "359872008",
+            "display": "Disk diffusion susceptibility test"
           },
           {
             "code": "263696007",
@@ -24,8 +24,8 @@
             "display": "Gradient strip susceptibility test"
           },
           {
-            "code": "702873001",
-            "display": "Automated antimicrobial susceptibility test"
+            "code": "84128001",
+            "display": "Automated microtiter identification and susceptibility test"
           }
         ]
       }

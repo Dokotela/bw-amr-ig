@@ -12,16 +12,48 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "258066000",
-            "display": "Automated identification system"
+            "code": "53465007",
+            "display": "Microbial identification, automated and semiautomated methods"
           },
           {
-            "code": "252398009",
-            "display": "Biochemical identification"
-          },
-          {
-            "code": "87273009",
+            "code": "362943005",
             "display": "Manual method"
+          },
+          {
+            "code": "4804005",
+            "display": "Microbial identification test"
+          },
+          {
+            "code": "108264004",
+            "display": "Microbial identification kit method"
+          },
+          {
+            "code": "49411005",
+            "display": "Microbial identification kit, API 20E method"
+          },
+          {
+            "code": "85285002",
+            "display": "Microbial identification kit, API 20C method"
+          },
+          {
+            "code": "8463003",
+            "display": "Microbial identification kit, API 20A method"
+          },
+          {
+            "code": "56495007",
+            "display": "Microbial identification kit, API 20S method"
+          },
+          {
+            "code": "56207007",
+            "display": "Microbial identification kit, API staph-ident method"
+          },
+          {
+            "code": "87350003",
+            "display": "Microbial identification kit, API staph-trac method"
+          },
+          {
+            "code": "36942008",
+            "display": "Microbial identification, API rapid E method"
           }
         ]
       },
@@ -35,14 +67,6 @@
           {
             "code": "phoenix",
             "display": "Phoenix automated system"
-          },
-          {
-            "code": "api",
-            "display": "API biochemical strips"
-          },
-          {
-            "code": "manual",
-            "display": "Manual biochemical testing"
           }
         ]
       }

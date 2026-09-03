@@ -1,0 +1,335 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "RetiredLocalOrganismsToSnomed",
+  "url": "http://bw.health.gov/fhir/amr/ConceptMap/retired-local-organisms-to-snomed",
+  "title": "Retired Botswana AMR Local Organism Codes to SNOMED CT",
+  "description": "The 32 local organism codes this IG carried until 2026-09-03, and the SNOMED CT International concept each one is. Two of them corrected a misspelling on our side.",
+  "version": "0.1.0",
+  "name": "RetiredLocalOrganismsToSnomed",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-09-03",
+  "publisher": "University of Botswana Partnership",
+  "sourceCanonical": "http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-organism-vs",
+  "targetCanonical": "http://snomed.info/sct?fhir_vs=isa/410607006",
+  "group": [
+    {
+      "source": "http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-organism-cs",
+      "target": "http://snomed.info/sct",
+      "element": [
+        {
+          "code": "acinetobacter-baumannii-complex",
+          "target": [
+            {
+              "code": "113376007",
+              "display": "Acinetobacter calcoaceticus-Acinetobacter baumannii complex",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "aeromonas-hydrophila-punctata",
+          "target": [
+            {
+              "code": "703028004",
+              "display": "Aeromonas hydrophila or Aeromonas punctata",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "alcaligenes-faecalis-subsp-faecalis",
+          "target": [
+            {
+              "code": "424719003",
+              "display": "Alcaligenes faecalis ss. faecalis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "brevundimonas-diminuta-vesicularis",
+          "target": [
+            {
+              "code": "703038009",
+              "display": "Brevundimonas diminuta or Brevundimonas vesicularis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "burkholderia-cepacia-group",
+          "target": [
+            {
+              "code": "131281002",
+              "display": "Burkholderia cepacia complex",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cedecia-lapagei",
+          "target": [
+            {
+              "code": "2345009",
+              "display": "Cedecea lapagei",
+              "equivalence": "equivalent",
+              "comment": "Our code misspelled the genus as Cedecia, which is why the original mapping run found nothing."
+            }
+          ]
+        },
+        {
+          "code": "dermacoccus-nishinomiyaensis-kytococcus-sedentarius",
+          "target": [
+            {
+              "code": "702936000",
+              "display": "Dermacoccus nishinomiyaensis or Kytococcus sedentarius",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "enterococcus-spp",
+          "target": [
+            {
+              "code": "2785000",
+              "display": "Enterococcus",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "klebsiella-pneumoniae-subsp-pneumoniae",
+          "target": [
+            {
+              "code": "18400002",
+              "display": "Klebsiella pneumoniae ss. pneumoniae",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "klebsiella-spp",
+          "target": [
+            {
+              "code": "75032006",
+              "display": "Klebsiella",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "leuconostoc-mesenteroides-subsp-cremoris",
+          "target": [
+            {
+              "code": "35041008",
+              "display": "Leuconostoc mesenteroides cremoris",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "leuconostoc-mesenteroides-subsp-dextranicum",
+          "target": [
+            {
+              "code": "86938009",
+              "display": "Leuconostoc mesenteroides dextranicum",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "methylobacterium-spp",
+          "target": [
+            {
+              "code": "38395008",
+              "display": "Methylobacterium",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "moraxella-group",
+          "target": [
+            {
+              "code": "36361003",
+              "display": "Moraxella",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "morganella-morganii-subsp-morganii",
+          "target": [
+            {
+              "code": "243302003",
+              "display": "Morganella morganii subsp morganii",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "morganella-morganii-subsp-sibonii",
+          "target": [
+            {
+              "code": "243303008",
+              "display": "Morganella morganii subsp sibonii",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "myroides-spp",
+          "target": [
+            {
+              "code": "115127008",
+              "display": "Myroides",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "neisseria-animaloris-zoodegmatis",
+          "target": [
+            {
+              "code": "716260000",
+              "display": "Neisseria animaloris or Neisseria zoodegmatis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pandoraea-spp",
+          "target": [
+            {
+              "code": "414998001",
+              "display": "Pandoraea",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "pantoea-spp",
+          "target": [
+            {
+              "code": "115013001",
+              "display": "Pantoea",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "pseudomonas-spp",
+          "target": [
+            {
+              "code": "57032008",
+              "display": "Pseudomonas",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "salmonella-group",
+          "target": [
+            {
+              "code": "27268008",
+              "display": "Salmonella",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "serratia-liquefaciens-group",
+          "target": [
+            {
+              "code": "722258003",
+              "display": "Serratia liquefaciens complex",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "shigella-group",
+          "target": [
+            {
+              "code": "77352002",
+              "display": "Shigella",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "staphylococcus-cohnii-subsp-cohnii",
+          "target": [
+            {
+              "code": "113963006",
+              "display": "Staphylococcus cohnii ss cohnii",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "staphylococcus-hominis-subsp-hominis",
+          "target": [
+            {
+              "code": "432505008",
+              "display": "Staphylococcus hominis hominis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "streptococcus-constellatus-subsp-pharyngis",
+          "target": [
+            {
+              "code": "415602002",
+              "display": "Streptococcus constellatus subspecies pharyngis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "streptococcus-infantarius-subsp-coli",
+          "target": [
+            {
+              "code": "437915004",
+              "display": "Streptococcus infantarius subspecies coli",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "streptococcus-mitis-oralis",
+          "target": [
+            {
+              "code": "703001009",
+              "display": "Streptococcus mitis or Streptococcus oralis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "vagococcus-fluviali",
+          "target": [
+            {
+              "code": "116418005",
+              "display": "Vagococcus fluvialis",
+              "equivalence": "equivalent",
+              "comment": "Our code dropped the final s of the species name, which is why the original mapping run found nothing."
+            }
+          ]
+        },
+        {
+          "code": "yersinia-enterocolitica-frederiksenii",
+          "target": [
+            {
+              "code": "55281000087101",
+              "display": "Yersinia enterocolitica or Yersinia frederiksenii",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
