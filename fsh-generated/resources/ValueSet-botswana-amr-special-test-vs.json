@@ -12,8 +12,8 @@
         "system": "http://loinc.org",
         "concept": [
           {
-            "code": "99596-9",
-            "display": "Extended spectrum beta lactamase [Presence] in Isolate"
+            "code": "104864-4",
+            "display": "Beta lactamase.extended spectrum [Presence]"
           },
           {
             "code": "86930-5",
@@ -21,7 +21,7 @@
           },
           {
             "code": "42720-3",
-            "display": "Clindamycin.induced [Susceptibility] by Disk diffusion (KB)"
+            "display": "Clindamycin [Susceptibility] by Agar diffusion.erythromycin induced resistance"
           },
           {
             "code": "13317-3",

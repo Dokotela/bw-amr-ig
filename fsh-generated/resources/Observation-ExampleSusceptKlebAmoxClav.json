@@ -64,9 +64,9 @@
   "method": {
     "coding": [
       {
-        "code": "115254003",
+        "code": "359872008",
         "system": "http://snomed.info/sct",
-        "display": "Disc diffusion method"
+        "display": "Disk diffusion susceptibility test"
       }
     ]
   }

@@ -333,7 +333,7 @@
     "fshType": "ValueSet",
     "fshFile": "valueSets/BotswanaAMRSpecialTestVS.fsh",
     "startLine": 4,
-    "endLine": 22
+    "endLine": 27
   },
   {
     "outputFile": "ValueSet-botswana-amr-specimen-site-vs.json",

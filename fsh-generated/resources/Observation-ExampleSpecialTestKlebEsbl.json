@@ -37,9 +37,9 @@
   "code": {
     "coding": [
       {
-        "code": "99596-9",
+        "code": "104864-4",
         "system": "http://loinc.org",
-        "display": "Extended spectrum beta lactamase [Presence] in Isolate"
+        "display": "Beta lactamase.extended spectrum [Presence]"
       }
     ]
   },

@@ -148,9 +148,13 @@ cited the same way — check both.
 Three more differ only in wording and are fine: `45206002` nasal cavity versus nasal
 structure, `258574006` mid-stream urine sample versus specimen, and v3 `CSF`.
 
-**The five method codes are fixed** in this commit — `53465007`, `362943005`,
-`4804005`, `359872008`, `84128001`, each re-validated with its display against the
-server.
+**Seven are fixed**: the five method codes — `53465007`, `362943005`, `4804005`,
+`359872008`, `84128001` — plus the ESBL LOINC code, which was `99596-9`, a SARS-CoV-2
+antibody test, and is now `104864-4` |Beta lactamase.extended spectrum [Presence]|,
+and the D-zone display. The wrong AST method code was also in **thirteen example
+susceptibility observations** and the ESBL one in two, so the examples were shipping
+it too; all fifteen are corrected. Every replacement was re-validated with its display
+against the server.
 
 **The six specimen-site and gram-stain codes are not fixed, deliberately.** Choosing
 their replacements is a modelling decision, not a lookup: `Specimen.collection.bodySite`

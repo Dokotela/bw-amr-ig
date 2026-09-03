@@ -137,7 +137,7 @@ Description: "E. coli ampicillin susceptibility - Resistant by disk diffusion"
 * valueQuantity = 6 'mm' "mm"
 * interpretation.coding = ObsInt#R "Resistant"
 * interpretation.text = "CLSI 2025"
-* method = SCT#115254003 "Disc diffusion method"
+* method = SCT#359872008 "Disk diffusion susceptibility test"
 
 // --- E. coli: Amoxicillin/Clavulanate - Susceptible ---
 Instance: ExampleSusceptEcoliAmoxClav
@@ -152,7 +152,7 @@ Description: "E. coli amoxicillin/clavulanate susceptibility - Susceptible by di
 * valueQuantity = 22 'mm' "mm"
 * interpretation.coding = ObsInt#S "Susceptible"
 * interpretation.text = "CLSI 2025"
-* method = SCT#115254003 "Disc diffusion method"
+* method = SCT#359872008 "Disk diffusion susceptibility test"
 
 // --- E. coli: Ceftriaxone - Susceptible ---
 Instance: ExampleSusceptEcoliCeftriaxone
@@ -167,7 +167,7 @@ Description: "E. coli ceftriaxone susceptibility - Susceptible by disk diffusion
 * valueQuantity = 28 'mm' "mm"
 * interpretation.coding = ObsInt#S "Susceptible"
 * interpretation.text = "CLSI 2025"
-* method = SCT#115254003 "Disc diffusion method"
+* method = SCT#359872008 "Disk diffusion susceptibility test"
 
 // --- E. coli: Ciprofloxacin - Resistant ---
 Instance: ExampleSusceptEcoliCiprofloxacin
@@ -182,7 +182,7 @@ Description: "E. coli ciprofloxacin susceptibility - Resistant by disk diffusion
 * valueQuantity = 12 'mm' "mm"
 * interpretation.coding = ObsInt#R "Resistant"
 * interpretation.text = "CLSI 2025"
-* method = SCT#115254003 "Disc diffusion method"
+* method = SCT#359872008 "Disk diffusion susceptibility test"
 
 // --- E. coli: Gentamicin - Susceptible ---
 Instance: ExampleSusceptEcoliGentamicin
@@ -197,7 +197,7 @@ Description: "E. coli gentamicin susceptibility - Susceptible by disk diffusion"
 * valueQuantity = 20 'mm' "mm"
 * interpretation.coding = ObsInt#S "Susceptible"
 * interpretation.text = "CLSI 2025"
-* method = SCT#115254003 "Disc diffusion method"
+* method = SCT#359872008 "Disk diffusion susceptibility test"
 
 // --- E. coli: Trimethoprim/Sulfamethoxazole - Resistant ---
 Instance: ExampleSusceptEcoliTmpSmx
@@ -212,7 +212,7 @@ Description: "E. coli TMP/SMX susceptibility - Resistant by disk diffusion"
 * valueQuantity = 8 'mm' "mm"
 * interpretation.coding = ObsInt#R "Resistant"
 * interpretation.text = "CLSI 2025"
-* method = SCT#115254003 "Disc diffusion method"
+* method = SCT#359872008 "Disk diffusion susceptibility test"
 
 // --- E. coli: Nitrofurantoin - Susceptible ---
 Instance: ExampleSusceptEcoliNitrofurantoin
@@ -227,7 +227,7 @@ Description: "E. coli nitrofurantoin susceptibility - Susceptible by disk diffus
 * valueQuantity = 19 'mm' "mm"
 * interpretation.coding = ObsInt#S "Susceptible"
 * interpretation.text = "CLSI 2025"
-* method = SCT#115254003 "Disc diffusion method"
+* method = SCT#359872008 "Disk diffusion susceptibility test"
 
 // ─────────────────────────────────────────────────────────────────────────────
 // 8. Susceptibility Observations - Klebsiella pneumoniae
@@ -246,7 +246,7 @@ Description: "Klebsiella pneumoniae ampicillin susceptibility - Resistant by dis
 * valueQuantity = 6 'mm' "mm"
 * interpretation.coding = ObsInt#R "Resistant"
 * interpretation.text = "CLSI 2025"
-* method = SCT#115254003 "Disc diffusion method"
+* method = SCT#359872008 "Disk diffusion susceptibility test"
 
 // --- Klebsiella: Amoxicillin/Clavulanate - Intermediate ---
 Instance: ExampleSusceptKlebAmoxClav
@@ -261,7 +261,7 @@ Description: "Klebsiella pneumoniae amoxicillin/clavulanate susceptibility - Int
 * valueQuantity = 16 'mm' "mm"
 * interpretation.coding = ObsInt#I "Intermediate"
 * interpretation.text = "CLSI 2025"
-* method = SCT#115254003 "Disc diffusion method"
+* method = SCT#359872008 "Disk diffusion susceptibility test"
 
 // --- Klebsiella: Ceftriaxone - Susceptible ---
 Instance: ExampleSusceptKlebCeftriaxone
@@ -276,7 +276,7 @@ Description: "Klebsiella pneumoniae ceftriaxone susceptibility - Susceptible by 
 * valueQuantity = 26 'mm' "mm"
 * interpretation.coding = ObsInt#S "Susceptible"
 * interpretation.text = "CLSI 2025"
-* method = SCT#115254003 "Disc diffusion method"
+* method = SCT#359872008 "Disk diffusion susceptibility test"
 
 // --- Klebsiella: Ciprofloxacin - Susceptible ---
 Instance: ExampleSusceptKlebCiprofloxacin
@@ -291,7 +291,7 @@ Description: "Klebsiella pneumoniae ciprofloxacin susceptibility - Susceptible b
 * valueQuantity = 25 'mm' "mm"
 * interpretation.coding = ObsInt#S "Susceptible"
 * interpretation.text = "CLSI 2025"
-* method = SCT#115254003 "Disc diffusion method"
+* method = SCT#359872008 "Disk diffusion susceptibility test"
 
 // --- Klebsiella: Gentamicin - Susceptible ---
 Instance: ExampleSusceptKlebGentamicin
@@ -306,7 +306,7 @@ Description: "Klebsiella pneumoniae gentamicin susceptibility - Susceptible by d
 * valueQuantity = 18 'mm' "mm"
 * interpretation.coding = ObsInt#S "Susceptible"
 * interpretation.text = "CLSI 2025"
-* method = SCT#115254003 "Disc diffusion method"
+* method = SCT#359872008 "Disk diffusion susceptibility test"
 
 // --- Klebsiella: Meropenem - Susceptible ---
 Instance: ExampleSusceptKlebMeropenem
@@ -321,7 +321,7 @@ Description: "Klebsiella pneumoniae meropenem susceptibility - Susceptible by di
 * valueQuantity = 28 'mm' "mm"
 * interpretation.coding = ObsInt#S "Susceptible"
 * interpretation.text = "CLSI 2025"
-* method = SCT#115254003 "Disc diffusion method"
+* method = SCT#359872008 "Disk diffusion susceptibility test"
 
 // ─────────────────────────────────────────────────────────────────────────────
 // 9. Special Test Observations - ESBL
@@ -336,7 +336,7 @@ Description: "ESBL testing for E. coli isolate - Negative"
 * subject = Reference(ExamplePatientMotswana)
 * specimen = Reference(ExampleSpecimenUrine)
 * effectiveDateTime = "2026-03-11T16:00:00+02:00"
-* code = LNC#99596-9 "Extended spectrum beta lactamase [Presence] in Isolate"
+* code = LNC#104864-4 "Beta lactamase.extended spectrum [Presence]"
 * valueCodeableConcept = SCT#260385009 "Negative"
 
 // --- Klebsiella ESBL: Negative ---
@@ -348,7 +348,7 @@ Description: "ESBL testing for Klebsiella pneumoniae isolate - Negative"
 * subject = Reference(ExamplePatientMotswana)
 * specimen = Reference(ExampleSpecimenUrine)
 * effectiveDateTime = "2026-03-11T16:00:00+02:00"
-* code = LNC#99596-9 "Extended spectrum beta lactamase [Presence] in Isolate"
+* code = LNC#104864-4 "Beta lactamase.extended spectrum [Presence]"
 * valueCodeableConcept = SCT#260385009 "Negative"
 
 // ─────────────────────────────────────────────────────────────────────────────

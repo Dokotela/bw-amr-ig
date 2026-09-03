@@ -40,7 +40,7 @@ ValueSet-botswana-amr-gram-stain-result-vs.json                   BotswanaAMRGra
 ValueSet-botswana-amr-identification-method-vs.json               BotswanaAMRIdentificationMethodVS         ValueSet    valueSets/BotswanaAMRIdentificationMethodVS.fsh         10 - 33
 ValueSet-botswana-amr-interpretation.json                         BotswanaAMRInterpretation                 ValueSet    valueSets/BotswanaAMRInterpretation.fsh                 3 - 9
 ValueSet-botswana-amr-organism-vs.json                            BotswanaAMROrganismVS                     ValueSet    valueSets/BotswanaAMROrganismVS.fsh                     4 - 15
-ValueSet-botswana-amr-special-test-vs.json                        BotswanaAMRSpecialTestVS                  ValueSet    valueSets/BotswanaAMRSpecialTestVS.fsh                  4 - 22
+ValueSet-botswana-amr-special-test-vs.json                        BotswanaAMRSpecialTestVS                  ValueSet    valueSets/BotswanaAMRSpecialTestVS.fsh                  4 - 27
 ValueSet-botswana-amr-specimen-site-vs.json                       BotswanaAMRSpecimenSiteVS                 ValueSet    valueSets/BotswanaAMRSpecimenSiteVS.fsh                 3 - 24
 ValueSet-botswana-amr-specimen-type-vs.json                       BotswanaAMRSpecimenTypeVS                 ValueSet    valueSets/BotswanaAMRSpecimenTypeVS.fsh                 3 - 13
 ValueSet-botswana-amr-test-result-status-vs.json                  BotswanaAMRTestResultStatusVS             ValueSet    valueSets/BotswanaAMRTestResultStatusVS.fsh             3 - 12
