@@ -7,10 +7,13 @@ class BotswanaAMRPatientBuilder {
 
   Patient build() {
     return Patient(
-      meta: FhirMeta(profile: [
-        FhirCanonical(
-            'http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Patient'),
-      ]),
+      meta: FhirMeta(
+        profile: [
+          FhirCanonical(
+            'http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Patient',
+          ),
+        ],
+      ),
       name: [HumanName(text: name?.toFhirString)],
       gender: gender == 'Male'
           ? AdministrativeGender.male

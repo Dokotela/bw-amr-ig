@@ -12,13 +12,16 @@ class BotswanaAMRSpecimenBuilder {
 
   Specimen build() {
     return Specimen(
-      meta: FhirMeta(profile: [
-        FhirCanonical(
-            'http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Specimen')
-      ]),
+      meta: FhirMeta(
+        profile: [
+          FhirCanonical(
+            'http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Specimen',
+          ),
+        ],
+      ),
       identifier: specimenId == null
           ? null
-          : [Identifier(value: FhirString(specimenId!))],
+          : [Identifier(value: FhirString(specimenId))],
       type: botswanaAmrSpecimenTypeVs
           .getCodeableConceptByDisplay(specimenTypeDisplay!),
       subject: Reference(reference: FhirString('Patient/$patientId')),
@@ -34,10 +37,11 @@ class BotswanaAMRSpecimenBuilder {
             ? [
                 FhirExtension(
                   url: FhirString(
-                      'http://bw.health.gov/fhir/StructureDefinition/specimen-collection-location'),
+                    'http://bw.health.gov/fhir/StructureDefinition/specimen-collection-location',
+                  ),
                   valueX:
                       Reference(reference: FhirString('Location/$locationId')),
-                )
+                ),
               ]
             : null,
       ),

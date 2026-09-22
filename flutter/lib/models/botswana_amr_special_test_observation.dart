@@ -11,20 +11,24 @@ class BotswanaAMRSpecialTestObservationBuilder {
 
   Observation build() {
     return Observation(
-      meta: FhirMeta(profile: [
-        FhirCanonical(
-            'http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SpecialTestObservation')
-      ]),
+      meta: FhirMeta(
+        profile: [
+          FhirCanonical(
+            'http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SpecialTestObservation',
+          ),
+        ],
+      ),
       status: ObservationStatus.final_,
       category: [
         CodeableConcept(
           coding: [
             Coding(
               system: FhirUri(
-                  'http://terminology.hl7.org/CodeSystem/observation-category'),
+                'http://terminology.hl7.org/CodeSystem/observation-category',
+              ),
               code: FhirCode('laboratory'),
               display: FhirString('Laboratory'),
-            )
+            ),
           ],
         ),
         CodeableConcept(
@@ -33,12 +37,12 @@ class BotswanaAMRSpecialTestObservationBuilder {
               system: FhirUri('http://loinc.org'),
               code: FhirCode('18725-2'),
               display: FhirString('Microbiology studies (set)'),
-            )
+            ),
           ],
         ),
       ],
       code: botswanaAmrSpecialTestVs.getCodeableConceptByDisplay(testType!) ??
-          CodeableConcept(text: FhirString(testType!)),
+          CodeableConcept(text: FhirString(testType)),
       valueX:
           botswanaAmrTestResultStatusVs.getCodeableConceptByDisplay(result!),
       specimen: Reference(reference: FhirString('Specimen/$specimenId')),

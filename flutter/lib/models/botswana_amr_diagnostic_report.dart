@@ -14,18 +14,26 @@ class BotswanaAMRDiagnosticReportBuilder {
     final resultReferences = <Reference>[];
 
     if (gramStainObservationId != null) {
-      resultReferences.add(Reference(
-          reference: FhirString('Observation/$gramStainObservationId')));
+      resultReferences.add(
+        Reference(
+          reference: FhirString('Observation/$gramStainObservationId'),
+        ),
+      );
     }
 
-    resultReferences.addAll(organismObservationIds
-        .map((id) => Reference(reference: FhirString('Observation/$id'))));
+    resultReferences.addAll(
+      organismObservationIds
+          .map((id) => Reference(reference: FhirString('Observation/$id'))),
+    );
 
     return DiagnosticReport(
-      meta: FhirMeta(profile: [
-        FhirCanonical(
-            'http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-DiagnosticReport'),
-      ]),
+      meta: FhirMeta(
+        profile: [
+          FhirCanonical(
+            'http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-DiagnosticReport',
+          ),
+        ],
+      ),
       category: [
         CodeableConcept(
           coding: [
@@ -33,7 +41,7 @@ class BotswanaAMRDiagnosticReportBuilder {
               system: FhirUri('http://loinc.org'),
               code: FhirCode('18725-2'),
               display: FhirString('Microbiology studies (set)'),
-            )
+            ),
           ],
         ),
       ],
@@ -44,8 +52,9 @@ class BotswanaAMRDiagnosticReportBuilder {
             system: FhirUri('http://loinc.org'),
             code: FhirCode('58321-0'),
             display: FhirString(
-                'Bacteria identified and antimicrobial susceptibility panel'),
-          )
+              'Bacteria identified and antimicrobial susceptibility panel',
+            ),
+          ),
         ],
       ),
       subject: Reference(reference: FhirString('Patient/$patientId')),

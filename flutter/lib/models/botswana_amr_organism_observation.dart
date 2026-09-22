@@ -21,20 +21,24 @@ class BotswanaAMROrganismObservationBuilder {
     ];
 
     return Observation(
-      meta: FhirMeta(profile: [
-        FhirCanonical(
-            'http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-OrganismObservation')
-      ]),
+      meta: FhirMeta(
+        profile: [
+          FhirCanonical(
+            'http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-OrganismObservation',
+          ),
+        ],
+      ),
       status: ObservationStatus.final_,
       category: [
         CodeableConcept(
           coding: [
             Coding(
               system: FhirUri(
-                  'http://terminology.hl7.org/CodeSystem/observation-category'),
+                'http://terminology.hl7.org/CodeSystem/observation-category',
+              ),
               code: FhirCode('laboratory'),
               display: FhirString('Laboratory'),
-            )
+            ),
           ],
         ),
         CodeableConcept(
@@ -43,7 +47,7 @@ class BotswanaAMROrganismObservationBuilder {
               system: FhirUri('http://loinc.org'),
               code: FhirCode('18725-2'),
               display: FhirString('Microbiology studies (set)'),
-            )
+            ),
           ],
         ),
       ],
@@ -53,11 +57,11 @@ class BotswanaAMROrganismObservationBuilder {
             system: FhirUri('http://loinc.org'),
             code: FhirCode('634-6'),
             display: FhirString('Bacteria identified in Specimen by Culture'),
-          )
+          ),
         ],
       ),
       identifier: isolateNumber != null
-          ? [Identifier(value: FhirString(isolateNumber!))]
+          ? [Identifier(value: FhirString(isolateNumber))]
           : null,
       valueX:
           botswanaAmrOrganismVs.getCodeableConceptByDisplay(organismDisplay!),

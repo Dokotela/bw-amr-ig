@@ -23,7 +23,7 @@ class BotswanaAMRSusceptibilityObservationBuilder {
           interpretationConcept.coding != null &&
           interpretationConcept.coding!.isNotEmpty) {
         final updatedCoding = interpretationConcept.coding!.first
-            .copyWith(version: FhirString(breakpointVersion!));
+            .copyWith(version: FhirString(breakpointVersion));
         finalInterpretation = interpretationConcept.copyWith(
           coding: [updatedCoding],
         );
@@ -51,20 +51,24 @@ class BotswanaAMRSusceptibilityObservationBuilder {
     }
 
     return Observation(
-      meta: FhirMeta(profile: [
-        FhirCanonical(
-            'http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SusceptibilityObservation')
-      ]),
+      meta: FhirMeta(
+        profile: [
+          FhirCanonical(
+            'http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-SusceptibilityObservation',
+          ),
+        ],
+      ),
       status: ObservationStatus.final_,
       category: [
         CodeableConcept(
           coding: [
             Coding(
               system: FhirUri(
-                  'http://terminology.hl7.org/CodeSystem/observation-category'),
+                'http://terminology.hl7.org/CodeSystem/observation-category',
+              ),
               code: FhirCode('laboratory'),
               display: FhirString('Laboratory'),
-            )
+            ),
           ],
         ),
         CodeableConcept(
@@ -73,13 +77,13 @@ class BotswanaAMRSusceptibilityObservationBuilder {
               system: FhirUri('http://loinc.org'),
               code: FhirCode('18725-2'),
               display: FhirString('Microbiology studies (set)'),
-            )
+            ),
           ],
         ),
       ],
       code: botswanaAmrAntibioticSusceptibilityLoinc
               .getCodeableConceptByDisplay(antibioticDisplay!) ??
-          CodeableConcept(text: FhirString(antibioticDisplay!)),
+          CodeableConcept(text: FhirString(antibioticDisplay)),
       interpretation:
           finalInterpretation != null ? [finalInterpretation] : null,
       valueX: valueQuantity,

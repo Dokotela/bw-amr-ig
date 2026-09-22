@@ -1,5 +1,5 @@
 import 'package:fhir_r4/fhir_r4.dart'
-    show ValueSet, ValueSetConcept, CodeableConcept, Coding;
+    show CodeableConcept, Coding, ValueSet, ValueSetConcept;
 
 extension ValueSetExtension on ValueSet {
   List<ValueSetConcept> get concepts {
@@ -20,14 +20,15 @@ extension ValueSetExtension on ValueSet {
     for (final include in compose!.include) {
       if (include.concept != null) {
         for (final concept in include.concept!) {
-          if (concept.display == display || concept.code == display) {
+          if (concept.display?.valueString == display ||
+              concept.code.valueString == display) {
             return CodeableConcept(
               coding: [
                 Coding(
                   system: include.system,
                   code: concept.code,
                   display: concept.display,
-                )
+                ),
               ],
               text: concept.display,
             );
@@ -44,14 +45,14 @@ extension ValueSetExtension on ValueSet {
     for (final include in compose!.include) {
       if (include.concept != null) {
         for (final concept in include.concept!) {
-          if (concept.code == code) {
+          if (concept.code.valueString == code) {
             return CodeableConcept(
               coding: [
                 Coding(
                   system: include.system,
                   code: concept.code,
                   display: concept.display,
-                )
+                ),
               ],
               text: concept.display,
             );

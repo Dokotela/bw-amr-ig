@@ -10,20 +10,24 @@ class BotswanaAMRGramStainObservationBuilder {
 
   Observation build() {
     return Observation(
-      meta: FhirMeta(profile: [
-        FhirCanonical(
-            'http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-GramStainObservation')
-      ]),
+      meta: FhirMeta(
+        profile: [
+          FhirCanonical(
+            'http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-GramStainObservation',
+          ),
+        ],
+      ),
       status: ObservationStatus.final_,
       category: [
         CodeableConcept(
           coding: [
             Coding(
               system: FhirUri(
-                  'http://terminology.hl7.org/CodeSystem/observation-category'),
+                'http://terminology.hl7.org/CodeSystem/observation-category',
+              ),
               code: FhirCode('laboratory'),
               display: FhirString('Laboratory'),
-            )
+            ),
           ],
         ),
         CodeableConcept(
@@ -32,7 +36,7 @@ class BotswanaAMRGramStainObservationBuilder {
               system: FhirUri('http://loinc.org'),
               code: FhirCode('18725-2'),
               display: FhirString('Microbiology studies (set)'),
-            )
+            ),
           ],
         ),
       ],
@@ -42,8 +46,9 @@ class BotswanaAMRGramStainObservationBuilder {
             system: FhirUri('http://loinc.org'),
             code: FhirCode('664-3'),
             display: FhirString(
-                'Microscopic observation [Identifier] in Specimen by Gram stain'),
-          )
+              'Microscopic observation [Identifier] in Specimen by Gram stain',
+            ),
+          ),
         ],
       ),
       valueX: botswanaAmrGramStainResultVs

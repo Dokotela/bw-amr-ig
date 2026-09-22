@@ -12,10 +12,13 @@ class BotswanaAMREncounterBuilder {
 
   Encounter build() {
     return Encounter(
-      meta: FhirMeta(profile: [
-        FhirCanonical(
-            'http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Encounter'),
-      ]),
+      meta: FhirMeta(
+        profile: [
+          FhirCanonical(
+            'http://bw.health.gov/fhir/StructureDefinition/BotswanaAMR-Encounter',
+          ),
+        ],
+      ),
       status: EncounterStatus.finished,
       class_: wardTypeDisplay != null
           ? botswanaAmrWardTypeVs
@@ -25,7 +28,7 @@ class BotswanaAMREncounterBuilder {
               Coding(
                 system:
                     FhirUri('http://terminology.hl7.org/CodeSystem/v3-ActCode'),
-                code: FhirCode(wardTypeDisplay!),
+                code: FhirCode(wardTypeDisplay),
               )
           : Coding(
               system:
@@ -42,7 +45,7 @@ class BotswanaAMREncounterBuilder {
               EncounterLocation(
                 location:
                     Reference(reference: FhirString('Location/$locationId')),
-              )
+              ),
             ]
           : null,
       serviceProvider: serviceProviderId != null
