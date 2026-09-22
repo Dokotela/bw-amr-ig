@@ -1,4 +1,4 @@
-import 'isolate_row.dart';
+import 'package:bw_amr_export/src/isolate_row.dart';
 
 /// Generates WHONET-compatible pipe-delimited flat files from [IsolateRow]s.
 ///
@@ -20,10 +20,9 @@ class WhonetExporter {
     }
     final sortedCodes = allCodes.toList()..sort();
 
-    final buf = StringBuffer();
-
-    // Header
-    buf.write(_fixedHeaders.join('|'));
+    final buf = StringBuffer()
+      // Header
+      ..write(_fixedHeaders.join('|'));
     for (final code in sortedCodes) {
       buf.write('|${code}_SIR|${code}_MIC|${code}_ND');
     }
@@ -34,9 +33,10 @@ class WhonetExporter {
       buf.write(_fixedValues(row).join('|'));
       for (final code in sortedCodes) {
         final ab = row.antibiotics[code];
-        buf.write('|${ab?.sir ?? ''}');
-        buf.write('|${_fmtDouble(ab?.mic)}');
-        buf.write('|${_fmtDouble(ab?.diskDiameter)}');
+        buf
+          ..write('|${ab?.sir ?? ''}')
+          ..write('|${_fmtDouble(ab?.mic)}')
+          ..write('|${_fmtDouble(ab?.diskDiameter)}');
       }
       buf.writeln();
     }

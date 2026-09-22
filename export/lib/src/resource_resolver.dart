@@ -1,7 +1,6 @@
+import 'package:bw_amr_export/src/concept_map_index.dart';
+import 'package:bw_amr_export/src/isolate_row.dart';
 import 'package:fhir_r4/fhir_r4.dart';
-
-import 'concept_map_index.dart';
-import 'isolate_row.dart';
 
 /// Resolves a bundle of FHIR resources into flat [IsolateRow]s.
 ///
@@ -73,7 +72,7 @@ class ResourceResolver {
 
     // Walk result references to find organism observations
     final rows = <IsolateRow>[];
-    for (final ref in report.result ?? []) {
+    for (final ref in report.result ?? const <Reference>[]) {
       final obs = _resolve<Observation>(ref, byRef);
       if (obs == null) continue;
 
@@ -81,22 +80,24 @@ class ResourceResolver {
       final code = obs.code.coding?.firstOrNull?.code?.valueString;
       if (code != '634-6') continue;
 
-      rows.add(_resolveOrganism(
-        obs,
-        byRef,
-        patientId: patientId,
-        lastName: lastName,
-        firstName: firstName,
-        sex: sex,
-        dateOfBirth: dob,
-        wardType: wardType,
-        admissionDate: admissionDate,
-        ward: ward,
-        laboratory: laboratory,
-        specimenDate: specimenDate,
-        specimenType: specimenType,
-        specimenId: specimenId,
-      ));
+      rows.add(
+        _resolveOrganism(
+          obs,
+          byRef,
+          patientId: patientId,
+          lastName: lastName,
+          firstName: firstName,
+          sex: sex,
+          dateOfBirth: dob,
+          wardType: wardType,
+          admissionDate: admissionDate,
+          ward: ward,
+          laboratory: laboratory,
+          specimenDate: specimenDate,
+          specimenType: specimenType,
+          specimenId: specimenId,
+        ),
+      );
     }
 
     return rows;
@@ -132,7 +133,7 @@ class ResourceResolver {
     String? mrsa;
     String? betaLactamase;
 
-    for (final ref in organism.hasMember ?? []) {
+    for (final ref in organism.hasMember ?? const <Reference>[]) {
       final obs = _resolve<Observation>(ref, byRef);
       if (obs == null) continue;
 

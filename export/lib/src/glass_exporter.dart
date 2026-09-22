@@ -1,5 +1,5 @@
-import 'concept_map_index.dart';
-import 'isolate_row.dart';
+import 'package:bw_amr_export/src/concept_map_index.dart';
+import 'package:bw_amr_export/src/isolate_row.dart';
 
 /// Generates WHO GLASS batch CSV files from [IsolateRow]s.
 ///
@@ -23,10 +23,9 @@ class GlassExporter {
     }
     final sortedCodes = allCodes.toList()..sort();
 
-    final buf = StringBuffer();
-
-    // Header
-    buf.write(_fixedHeaders.join(','));
+    final buf = StringBuffer()
+      // Header
+      ..write(_fixedHeaders.join(','));
     for (final code in sortedCodes) {
       final atc = index.atcCodeForWhonet(code) ?? code;
       buf.write(',$atc');
@@ -60,7 +59,8 @@ class GlassExporter {
   ];
 
   static List<String> _fixedValues(IsolateRow row) {
-    // GLASS origin: HA (hospital-acquired) if specimen >= 2 days after admission
+    // GLASS origin: HA (hospital-acquired) if specimen >= 2 days after
+    // admission
     String? origin;
     if (row.admissionDate != null && row.specimenDate != null) {
       final admission = DateTime.tryParse(row.admissionDate!);

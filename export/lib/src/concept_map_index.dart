@@ -1,6 +1,7 @@
 import 'dart:convert';
 
-import 'package:fhir_r4/fhir_r4.dart' show ConceptMap;
+import 'package:fhir_r4/fhir_r4.dart'
+    show ConceptMap, ConceptMapGroup, ConceptMapTarget;
 
 /// Bidirectional index built from FHIR ConceptMap resources.
 ///
@@ -22,11 +23,10 @@ class ConceptMapIndex {
   factory ConceptMapIndex.fromJson({
     String? antibioticToLoincJson,
     String? antibioticToAtcJson,
-    String? antibioticToSnomedJson,
     String? organismToSnomedJson,
   }) {
     final loincToWhonet = <String, String>{};
-    final snomedOrganismToWhonet = <String, _WhonetOrganism>{};
+    final snomedOrganismToWhonet = <String, WhonetOrganism>{};
     final whonetToAtc = <String, String>{};
     final whonetToOrganism = <String, String>{};
     final whonetAntibioticDisplays = <String, String>{};
@@ -68,7 +68,7 @@ class ConceptMapIndex {
   final Map<String, String> loincToWhonet;
 
   /// SNOMED organism code → WHONET organism info
-  final Map<String, _WhonetOrganism> snomedOrganismToWhonet;
+  final Map<String, WhonetOrganism> snomedOrganismToWhonet;
 
   /// WHONET antibiotic code → primary ATC code (e.g., "AMK" → "J01GB06")
   final Map<String, String> whonetToAtc;
@@ -101,13 +101,13 @@ class ConceptMapIndex {
     Map<String, String> loincToWhonet,
     Map<String, String> displays,
   ) {
-    for (final group in cm.group ?? []) {
-      for (final element in group.element ?? []) {
+    for (final group in cm.group ?? const <ConceptMapGroup>[]) {
+      for (final element in group.element) {
         final whonetCode = element.code?.valueString;
         final display = element.display?.valueString;
         if (whonetCode == null) continue;
         if (display != null) displays[whonetCode] = display;
-        for (final target in element.target ?? []) {
+        for (final target in element.target ?? const <ConceptMapTarget>[]) {
           final loincCode = target.code?.valueString;
           if (loincCode != null) {
             // Many LOINC codes map to the same WHONET code (MIC vs disk).
@@ -124,16 +124,16 @@ class ConceptMapIndex {
     ConceptMap cm,
     Map<String, String> whonetToAtc,
   ) {
-    for (final group in cm.group ?? []) {
-      for (final element in group.element ?? []) {
+    for (final group in cm.group ?? const <ConceptMapGroup>[]) {
+      for (final element in group.element) {
         final whonetCode = element.code?.valueString;
         if (whonetCode == null) continue;
-        for (final target in element.target ?? []) {
+        for (final target in element.target ?? const <ConceptMapTarget>[]) {
           final atcCode = target.code?.valueString;
           if (atcCode != null) {
             // ATC field may contain comma-separated codes (human + vet).
             // Take the first one that starts with J (anti-infectives).
-            String primary = atcCode.trim();
+            var primary = atcCode.trim();
             if (atcCode.contains(',')) {
               final parts = atcCode.split(',');
               primary = atcCode.trim();
@@ -157,23 +157,23 @@ class ConceptMapIndex {
 
   static void _indexOrganismToSnomed(
     ConceptMap cm,
-    Map<String, _WhonetOrganism> snomedToWhonet,
+    Map<String, WhonetOrganism> snomedToWhonet,
     Map<String, String> whonetToOrganism,
   ) {
-    for (final group in cm.group ?? []) {
-      for (final element in group.element ?? []) {
+    for (final group in cm.group ?? const <ConceptMapGroup>[]) {
+      for (final element in group.element) {
         final whonetCode = element.code?.valueString;
         final display = element.display?.valueString;
         if (whonetCode == null) continue;
         if (display != null) whonetToOrganism[whonetCode] = display;
-        for (final target in element.target ?? []) {
+        for (final target in element.target ?? const <ConceptMapTarget>[]) {
           final snomedCode = target.code?.valueString;
           if (snomedCode != null) {
             // Multiple SNOMED codes may map to the same WHONET organism.
             // Keep the first — it's typically the most specific.
             snomedToWhonet.putIfAbsent(
               snomedCode,
-              () => _WhonetOrganism(whonetCode, display ?? whonetCode),
+              () => WhonetOrganism(whonetCode, display ?? whonetCode),
             );
           }
         }
@@ -182,8 +182,8 @@ class ConceptMapIndex {
   }
 }
 
-class _WhonetOrganism {
-  const _WhonetOrganism(this.code, this.display);
+class WhonetOrganism {
+  const WhonetOrganism(this.code, this.display);
   final String code;
   final String display;
 }
