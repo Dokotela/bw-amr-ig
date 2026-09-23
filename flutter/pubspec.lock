@@ -110,7 +110,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: b2b0cb96deb8c3dcf5f9f7910355a106290bf933
+      resolved-ref: "1918ddb817db06fa2fe23f87365b3565476b0b85"
       url: "https://github.com/fhir-fli/fhir_generator.git"
     source: git
     version: "0.1.0+1"

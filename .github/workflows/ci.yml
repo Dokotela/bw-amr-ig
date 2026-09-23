@@ -19,7 +19,7 @@ jobs:
       - name: Format, analyze & test each package
         run: |
           failed=""
-          for d in export; do
+          for d in export flutter; do
             echo "::group::$d"
             if ! (
               set -e
