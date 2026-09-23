@@ -11,14 +11,15 @@
 /// canonical URL than `sushi-config.yaml`. It read the publisher's output,
 /// which is not tracked and needs a terminology server to build; SUSHI's
 /// output carries the same codes and canonical URLs without the narrative.
-/// The emitter is the family's shared `DartLiteralWriter` in fhir_generator;
+/// The emitter is the family's shared `DartLiteralWriter` (package
+/// dart_literal);
 /// `test/` proves each Dart object equals its source.
 library;
 
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:fhir_generator/fhir_generator.dart';
+import 'package:dart_literal/dart_literal.dart';
 
 /// Where SUSHI writes the IG's resources, relative to this package.
 const sourceDir = '../fsh-generated/resources';

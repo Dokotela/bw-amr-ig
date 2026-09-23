@@ -20,7 +20,7 @@ dependencies:
 
 dev_dependencies:
   collection: ^1.19.1
-  fhir_generator:
-    git: https://github.com/fhir-fli/fhir_generator.git
+  dart_literal:
+    git: https://github.com/fhir-fli/dart_literal.git
   test: ^1.25.0
   very_good_analysis: ^10.1.0
