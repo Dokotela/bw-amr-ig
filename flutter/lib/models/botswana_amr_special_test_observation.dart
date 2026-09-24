@@ -41,15 +41,18 @@ class BotswanaAMRSpecialTestObservationBuilder {
           ],
         ),
       ],
-      code: botswanaAmrSpecialTestVs.getCodeableConceptByDisplay(testType!) ??
+      code:
+          botswanaAmrSpecialTestVs.getCodeableConceptByDisplay(testType!) ??
           CodeableConcept(text: FhirString(testType)),
-      valueX:
-          botswanaAmrTestResultStatusVs.getCodeableConceptByDisplay(result!),
+      valueX: botswanaAmrTestResultStatusVs.getCodeableConceptByDisplay(
+        result!,
+      ),
       specimen: Reference(reference: FhirString('Specimen/$specimenId')),
       subject: Reference(reference: FhirString('Patient/$patientId')),
-      effectiveX: effectiveDateTime == null
-          ? null
-          : FhirDateTime.fromDateTime(effectiveDateTime!),
+      effectiveX:
+          effectiveDateTime == null
+              ? null
+              : FhirDateTime.fromDateTime(effectiveDateTime!),
     );
   }
 }

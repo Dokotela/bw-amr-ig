@@ -12,8 +12,8 @@ final ValueSet botswanaAmrGramStainResultVs = ValueSet.fromJson(
     'id': 'botswana-amr-gram-stain-result-vs',
     'title': 'Botswana AMR Gram Stain Results',
     'description': 'Gram stain results used in Botswana AMR surveillance',
-    'url': 'http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-gram-stain-'
-        'result-vs',
+    'url':
+        'http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-gram-stain-result-vs',
     'compose': {
       'include': [
         {

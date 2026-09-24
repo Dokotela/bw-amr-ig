@@ -15,9 +15,10 @@ class BotswanaAMRPatientBuilder {
         ],
       ),
       name: [HumanName(text: name?.toFhirString)],
-      gender: gender == 'Male'
-          ? AdministrativeGender.male
-          : AdministrativeGender.female,
+      gender:
+          gender == 'Male'
+              ? AdministrativeGender.male
+              : AdministrativeGender.female,
       birthDate: birthDate != null ? FhirDate.fromDateTime(birthDate!) : null,
     );
   }

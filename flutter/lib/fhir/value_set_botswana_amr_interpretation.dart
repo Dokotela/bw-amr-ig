@@ -12,13 +12,12 @@ final ValueSet botswanaAmrInterpretation = ValueSet.fromJson(
     'id': 'botswana-amr-interpretation',
     'title': 'Botswana AMR Interpretation',
     'description': 'Only Susceptible, Intermediate, or Resistant',
-    'url':
-        'http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-' 'interpretation',
+    'url': 'http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-interpretation',
     'compose': {
       'include': [
         {
-          'system': 'http://terminology.hl7.org/CodeSystem/v3-'
-              'ObservationInterpretation',
+          'system':
+              'http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation',
           'concept': [
             {
               'code': 'S',

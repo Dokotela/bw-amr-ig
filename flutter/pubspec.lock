@@ -86,10 +86,10 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "1682bf00a05bc9dd2df3114925da794332e858e9"
+      resolved-ref: "03e8cc5b001d553c864664d1592098d0cda2dc1c"
       url: "https://github.com/fhir-fli/dart_literal.git"
     source: git
-    version: "0.1.0"
+    version: "0.1.4"
   fhir_node:
     dependency: transitive
     description:

@@ -11,8 +11,9 @@ final ValueSet botswanaAmrWardTypeVs = ValueSet.fromJson(
     'name': 'BotswanaAMRWardTypeVS',
     'id': 'botswana-amr-ward-type-vs',
     'title': 'Botswana AMR Ward Type',
-    'description': 'Ward/location types for AMR surveillance, aligned with '
-        'WHONET location type and GLASS origin classification',
+    'description':
+        'Ward/location types for AMR surveillance, aligned with WHONET '
+        'location type and GLASS origin classification',
     'url': 'http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-ward-type-vs',
     'compose': {
       'include': [

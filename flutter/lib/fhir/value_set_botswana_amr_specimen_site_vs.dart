@@ -11,10 +11,11 @@ final ValueSet botswanaAmrSpecimenSiteVs = ValueSet.fromJson(
     'name': 'BotswanaAMRSpecimenSiteVS',
     'id': 'botswana-amr-specimen-site-vs',
     'title': 'Botswana AMR Specimen Collection Sites',
-    'description': 'Anatomical sites where specimens are collected for '
-        'Botswana AMR surveillance',
-    'url': 'http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-specimen-'
-        'site-vs',
+    'description':
+        'Anatomical sites where specimens are collected for Botswana AMR '
+        'surveillance',
+    'url':
+        'http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-specimen-site-vs',
     'compose': {
       'include': [
         {

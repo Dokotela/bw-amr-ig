@@ -12,20 +12,22 @@ final CodeSystem botswanaAmrLocalOrganismCs = CodeSystem.fromJson(
     'name': 'BotswanaAMRLocalOrganismCS',
     'id': 'botswana-amr-local-organism-cs',
     'title': 'Botswana AMR Local Organism Codes',
-    'description': 'Retired. One code remains, pending a decision on which '
-        "SNOMED concept WHONET's 'Cronobacter sakazakii group' means. "
-        'Everything else this system carried is in SNOMED CT '
-        'International; see ConceptMap-retired-local-organisms-to-snomed.',
-    'url': 'http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-'
-        'organism-cs',
+    'description':
+        'Retired. One code remains, pending a decision on which SNOMED '
+        "concept WHONET's 'Cronobacter sakazakii group' means. Everything "
+        'else this system carried is in SNOMED CT International; see '
+        'ConceptMap-retired-local-organisms-to-snomed.',
+    'url':
+        'http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-organism-cs',
     'concept': [
       {
         'code': 'cronobacter-sakazakii-group',
         'display': 'Cronobacter sakazakii group',
-        'definition': 'WHONET reports this group. SNOMED has the genus '
-            '444664004 |Cronobacter| and the species 445562004 '
-            '|Cronobacter sakazakii| but no group concept. Pending a '
-            "microbiologist's decision on which is meant.",
+        'definition':
+            'WHONET reports this group. SNOMED has the genus 444664004 '
+            '|Cronobacter| and the species 445562004 |Cronobacter '
+            "sakazakii| but no group concept. Pending a microbiologist's "
+            'decision on which is meant.',
       },
     ],
     'count': 1,

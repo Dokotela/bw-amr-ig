@@ -11,7 +11,8 @@ final ValueSet botswanaAmrOrganismVs = ValueSet.fromJson(
     'name': 'BotswanaAMROrganismVS',
     'id': 'botswana-amr-organism-vs',
     'title': 'Botswana AMR Organism ValueSet',
-    'description': 'Organisms identified in Botswana AMR surveillance: all '
+    'description':
+        'Organisms identified in Botswana AMR surveillance: all '
         "descendants of SNOMED CT 'Organism' (410607006). This includes "
         'the combinations, groups and subspecies that laboratories report '
         "together — SNOMED writes a subspecies as 'ss.', a slash pair as "
@@ -33,8 +34,8 @@ final ValueSet botswanaAmrOrganismVs = ValueSet.fromJson(
           ],
         },
         {
-          'system': 'http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-'
-              'local-organism-cs',
+          'system':
+              'http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-organism-cs',
           'concept': [
             {
               'code': 'cronobacter-sakazakii-group',

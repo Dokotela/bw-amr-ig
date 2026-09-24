@@ -51,13 +51,15 @@ class BotswanaAMRGramStainObservationBuilder {
           ),
         ],
       ),
-      valueX: botswanaAmrGramStainResultVs
-          .getCodeableConceptByDisplay(gramStainResult!),
+      valueX: botswanaAmrGramStainResultVs.getCodeableConceptByDisplay(
+        gramStainResult!,
+      ),
       specimen: Reference(reference: FhirString('Specimen/$specimenId')),
       subject: Reference(reference: FhirString('Patient/$patientId')),
-      effectiveX: effectiveDateTime == null
-          ? null
-          : FhirDateTime.fromDateTime(effectiveDateTime!),
+      effectiveX:
+          effectiveDateTime == null
+              ? null
+              : FhirDateTime.fromDateTime(effectiveDateTime!),
     );
   }
 }

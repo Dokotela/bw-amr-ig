@@ -15,15 +15,16 @@ class BotswanaAMRSusceptibilityObservationBuilder {
 
   Observation build() {
     // Build interpretation coding with optional breakpoint version
-    final interpretationConcept =
-        botswanaAmrInterpretation.getCodeableConceptByDisplay(interpretation!);
+    final interpretationConcept = botswanaAmrInterpretation
+        .getCodeableConceptByDisplay(interpretation!);
     CodeableConcept? finalInterpretation;
     if (interpretationConcept != null) {
       if (breakpointVersion != null &&
           interpretationConcept.coding != null &&
           interpretationConcept.coding!.isNotEmpty) {
-        final updatedCoding = interpretationConcept.coding!.first
-            .copyWith(version: FhirString(breakpointVersion));
+        final updatedCoding = interpretationConcept.coding!.first.copyWith(
+          version: FhirString(breakpointVersion),
+        );
         finalInterpretation = interpretationConcept.copyWith(
           coding: [updatedCoding],
         );
@@ -81,21 +82,26 @@ class BotswanaAMRSusceptibilityObservationBuilder {
           ],
         ),
       ],
-      code: botswanaAmrAntibioticSusceptibilityLoinc
-              .getCodeableConceptByDisplay(antibioticDisplay!) ??
+      code:
+          botswanaAmrAntibioticSusceptibilityLoinc.getCodeableConceptByDisplay(
+            antibioticDisplay!,
+          ) ??
           CodeableConcept(text: FhirString(antibioticDisplay)),
       interpretation:
           finalInterpretation != null ? [finalInterpretation] : null,
       valueX: valueQuantity,
-      method: astMethodDisplay != null
-          ? botswanaAmrAstMethodVs
-              .getCodeableConceptByDisplay(astMethodDisplay!)
-          : null,
+      method:
+          astMethodDisplay != null
+              ? botswanaAmrAstMethodVs.getCodeableConceptByDisplay(
+                astMethodDisplay!,
+              )
+              : null,
       specimen: Reference(reference: FhirString('Specimen/$specimenId')),
       subject: Reference(reference: FhirString('Patient/$patientId')),
-      effectiveX: effectiveDateTime == null
-          ? null
-          : FhirDateTime.fromDateTime(effectiveDateTime!),
+      effectiveX:
+          effectiveDateTime == null
+              ? null
+              : FhirDateTime.fromDateTime(effectiveDateTime!),
     );
   }
 }

@@ -19,31 +19,38 @@ class BotswanaAMRSpecimenBuilder {
           ),
         ],
       ),
-      identifier: specimenId == null
-          ? null
-          : [Identifier(value: FhirString(specimenId))],
-      type: botswanaAmrSpecimenTypeVs
-          .getCodeableConceptByDisplay(specimenTypeDisplay!),
+      identifier:
+          specimenId == null
+              ? null
+              : [Identifier(value: FhirString(specimenId))],
+      type: botswanaAmrSpecimenTypeVs.getCodeableConceptByDisplay(
+        specimenTypeDisplay!,
+      ),
       subject: Reference(reference: FhirString('Patient/$patientId')),
       collection: SpecimenCollection(
-        collectedX: collectionDateTime == null
-            ? null
-            : FhirDateTime.fromDateTime(collectionDateTime!),
-        bodySite: bodySiteDisplay != null
-            ? botswanaAmrSpecimenSiteVs
-                .getCodeableConceptByDisplay(bodySiteDisplay!)
-            : null,
-        extension_: locationId != null
-            ? [
-                FhirExtension(
-                  url: FhirString(
-                    'http://bw.health.gov/fhir/StructureDefinition/specimen-collection-location',
+        collectedX:
+            collectionDateTime == null
+                ? null
+                : FhirDateTime.fromDateTime(collectionDateTime!),
+        bodySite:
+            bodySiteDisplay != null
+                ? botswanaAmrSpecimenSiteVs.getCodeableConceptByDisplay(
+                  bodySiteDisplay!,
+                )
+                : null,
+        extension_:
+            locationId != null
+                ? [
+                  FhirExtension(
+                    url: FhirString(
+                      'http://bw.health.gov/fhir/StructureDefinition/specimen-collection-location',
+                    ),
+                    valueX: Reference(
+                      reference: FhirString('Location/$locationId'),
+                    ),
                   ),
-                  valueX:
-                      Reference(reference: FhirString('Location/$locationId')),
-                ),
-              ]
-            : null,
+                ]
+                : null,
       ),
     );
   }

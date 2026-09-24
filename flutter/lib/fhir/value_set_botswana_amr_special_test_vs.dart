@@ -11,10 +11,11 @@ final ValueSet botswanaAmrSpecialTestVs = ValueSet.fromJson(
     'name': 'BotswanaAMRSpecialTestVS',
     'id': 'botswana-amr-special-test-vs',
     'title': 'Botswana AMR Special Tests',
-    'description': 'Special antimicrobial resistance tests performed in '
-        'Botswana AMR surveillance',
-    'url': 'http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-special-'
-        'test-vs',
+    'description':
+        'Special antimicrobial resistance tests performed in Botswana AMR '
+        'surveillance',
+    'url':
+        'http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-special-test-vs',
     'compose': {
       'include': [
         {
@@ -30,13 +31,15 @@ final ValueSet botswanaAmrSpecialTestVs = ValueSet.fromJson(
             },
             {
               'code': '42720-3',
-              'display': 'Clindamycin [Susceptibility] by Agar '
+              'display':
+                  'Clindamycin [Susceptibility] by Agar '
                   'diffusion.erythromycin induced resistance',
             },
             {
               'code': '13317-3',
-              'display': 'Methicillin resistant Staphylococcus aureus '
-                  '[Presence] in Specimen by Organism specific culture',
+              'display':
+                  'Methicillin resistant Staphylococcus aureus [Presence] '
+                  'in Specimen by Organism specific culture',
             },
             {
               'code': '6985-6',

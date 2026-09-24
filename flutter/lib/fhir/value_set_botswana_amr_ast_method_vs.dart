@@ -11,10 +11,10 @@ final ValueSet botswanaAmrAstMethodVs = ValueSet.fromJson(
     'name': 'BotswanaAMRASTMethodVS',
     'id': 'botswana-amr-ast-method-vs',
     'title': 'Botswana AMR AST Method',
-    'description': 'Antimicrobial susceptibility testing methods used in '
-        'Botswana AMR surveillance',
-    'url':
-        'http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-ast-method-' 'vs',
+    'description':
+        'Antimicrobial susceptibility testing methods used in Botswana AMR '
+        'surveillance',
+    'url': 'http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-ast-method-vs',
     'compose': {
       'include': [
         {
@@ -34,8 +34,9 @@ final ValueSet botswanaAmrAstMethodVs = ValueSet.fromJson(
             },
             {
               'code': '84128001',
-              'display': 'Automated microtiter identification and '
-                  'susceptibility test',
+              'display':
+                  'Automated microtiter identification and susceptibility '
+                  'test',
             },
           ],
         },

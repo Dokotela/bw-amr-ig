@@ -14,10 +14,12 @@ class BotswanaAMROrganismObservationBuilder {
 
   Observation build() {
     final hasMemberReferences = <Reference>[
-      ...susceptibilityObservationIds
-          .map((id) => Reference(reference: FhirString('Observation/$id'))),
-      ...specialTestObservationIds
-          .map((id) => Reference(reference: FhirString('Observation/$id'))),
+      ...susceptibilityObservationIds.map(
+        (id) => Reference(reference: FhirString('Observation/$id')),
+      ),
+      ...specialTestObservationIds.map(
+        (id) => Reference(reference: FhirString('Observation/$id')),
+      ),
     ];
 
     return Observation(
@@ -60,20 +62,25 @@ class BotswanaAMROrganismObservationBuilder {
           ),
         ],
       ),
-      identifier: isolateNumber != null
-          ? [Identifier(value: FhirString(isolateNumber))]
-          : null,
-      valueX:
-          botswanaAmrOrganismVs.getCodeableConceptByDisplay(organismDisplay!),
+      identifier:
+          isolateNumber != null
+              ? [Identifier(value: FhirString(isolateNumber))]
+              : null,
+      valueX: botswanaAmrOrganismVs.getCodeableConceptByDisplay(
+        organismDisplay!,
+      ),
       specimen: Reference(reference: FhirString('Specimen/$specimenId')),
       subject: Reference(reference: FhirString('Patient/$patientId')),
-      effectiveX: effectiveDateTime == null
-          ? null
-          : FhirDateTime.fromDateTime(effectiveDateTime!),
-      method: identificationMethod != null
-          ? botswanaAmrIdentificationMethodVs
-              .getCodeableConceptByDisplay(identificationMethod!)
-          : null,
+      effectiveX:
+          effectiveDateTime == null
+              ? null
+              : FhirDateTime.fromDateTime(effectiveDateTime!),
+      method:
+          identificationMethod != null
+              ? botswanaAmrIdentificationMethodVs.getCodeableConceptByDisplay(
+                identificationMethod!,
+              )
+              : null,
       hasMember: hasMemberReferences.isNotEmpty ? hasMemberReferences : null,
     );
   }

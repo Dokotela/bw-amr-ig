@@ -11,10 +11,11 @@ final ValueSet botswanaAmrSpecimenTypeVs = ValueSet.fromJson(
     'name': 'BotswanaAMRSpecimenTypeVS',
     'id': 'botswana-amr-specimen-type-vs',
     'title': 'Botswana AMR Specimen Type VS',
-    'description': 'Specimen types used in Botswana AMR data collection, '
-        'reusing v3-SpecimenType codes',
-    'url': 'http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-specimen-'
-        'type-vs',
+    'description':
+        'Specimen types used in Botswana AMR data collection, reusing '
+        'v3-SpecimenType codes',
+    'url':
+        'http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-specimen-type-vs',
     'compose': {
       'include': [
         {

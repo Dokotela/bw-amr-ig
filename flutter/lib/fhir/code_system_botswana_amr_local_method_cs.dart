@@ -12,25 +12,28 @@ final CodeSystem botswanaAmrLocalMethodCs = CodeSystem.fromJson(
     'name': 'BotswanaAMRLocalMethodCS',
     'id': 'botswana-amr-local-method-cs',
     'title': 'Botswana AMR Local Identification Method Codes',
-    'description': 'The two automated identification and susceptibility '
-        'instruments used in Botswana AMR surveillance that SNOMED CT '
-        'International does not carry. Manual and API methods are not '
-        'here: SNOMED has those and the value set binds them directly.',
-    'url': 'http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-'
-        'method-cs',
+    'description':
+        'The two automated identification and susceptibility instruments '
+        'used in Botswana AMR surveillance that SNOMED CT International '
+        'does not carry. Manual and API methods are not here: SNOMED has '
+        'those and the value set binds them directly.',
+    'url':
+        'http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs',
     'concept': [
       {
         'code': 'vitek',
         'display': 'Vitek automated system',
-        'definition': 'bioMérieux VITEK 2 automated identification and '
+        'definition':
+            'bioMérieux VITEK 2 automated identification and '
             'susceptibility testing system. SNOMED has only the Vitek '
             'yeast card, 83089001.',
       },
       {
         'code': 'phoenix',
         'display': 'Phoenix automated system',
-        'definition': 'BD Phoenix automated identification and '
-            'susceptibility testing system. No SNOMED concept.',
+        'definition':
+            'BD Phoenix automated identification and susceptibility '
+            'testing system. No SNOMED concept.',
       },
     ],
     'count': 2,

@@ -20,42 +20,52 @@ class BotswanaAMREncounterBuilder {
         ],
       ),
       status: EncounterStatus.finished,
-      class_: wardTypeDisplay != null
-          ? botswanaAmrWardTypeVs
-                  .getCodeableConceptByDisplay(wardTypeDisplay!)
-                  ?.coding
-                  ?.first ??
-              Coding(
-                system:
-                    FhirUri('http://terminology.hl7.org/CodeSystem/v3-ActCode'),
-                code: FhirCode(wardTypeDisplay),
-              )
-          : Coding(
-              system:
-                  FhirUri('http://terminology.hl7.org/CodeSystem/v3-ActCode'),
-              code: FhirCode('AMB'),
-              display: FhirString('ambulatory'),
-            ),
-      subject: Reference(reference: FhirString('Patient/$patientId')),
-      period: admissionDate != null
-          ? Period(start: FhirDateTime.fromDateTime(admissionDate!))
-          : null,
-      location: locationId != null
-          ? [
-              EncounterLocation(
-                location:
-                    Reference(reference: FhirString('Location/$locationId')),
+      class_:
+          wardTypeDisplay != null
+              ? botswanaAmrWardTypeVs
+                      .getCodeableConceptByDisplay(wardTypeDisplay!)
+                      ?.coding
+                      ?.first ??
+                  Coding(
+                    system: FhirUri(
+                      'http://terminology.hl7.org/CodeSystem/v3-ActCode',
+                    ),
+                    code: FhirCode(wardTypeDisplay),
+                  )
+              : Coding(
+                system: FhirUri(
+                  'http://terminology.hl7.org/CodeSystem/v3-ActCode',
+                ),
+                code: FhirCode('AMB'),
+                display: FhirString('ambulatory'),
               ),
-            ]
-          : null,
-      serviceProvider: serviceProviderId != null
-          ? Reference(reference: FhirString('Organization/$serviceProviderId'))
-          : null,
-      reasonCode: reasonCodes.isNotEmpty
-          ? reasonCodes
-              .map((r) => CodeableConcept(text: FhirString(r)))
-              .toList()
-          : null,
+      subject: Reference(reference: FhirString('Patient/$patientId')),
+      period:
+          admissionDate != null
+              ? Period(start: FhirDateTime.fromDateTime(admissionDate!))
+              : null,
+      location:
+          locationId != null
+              ? [
+                EncounterLocation(
+                  location: Reference(
+                    reference: FhirString('Location/$locationId'),
+                  ),
+                ),
+              ]
+              : null,
+      serviceProvider:
+          serviceProviderId != null
+              ? Reference(
+                reference: FhirString('Organization/$serviceProviderId'),
+              )
+              : null,
+      reasonCode:
+          reasonCodes.isNotEmpty
+              ? reasonCodes
+                  .map((r) => CodeableConcept(text: FhirString(r)))
+                  .toList()
+              : null,
     );
   }
 }

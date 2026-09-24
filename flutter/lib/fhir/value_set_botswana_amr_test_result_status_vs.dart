@@ -12,9 +12,9 @@ final ValueSet botswanaAmrTestResultStatusVs = ValueSet.fromJson(
     'id': 'botswana-amr-test-result-status-vs',
     'title': 'Botswana AMR Test Result Status',
     'description':
-        'Status values for test results in Botswana AMR ' 'surveillance',
-    'url': 'http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-test-result-'
-        'status-vs',
+        'Status values for test results in Botswana AMR surveillance',
+    'url':
+        'http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-test-result-status-vs',
     'compose': {
       'include': [
         {

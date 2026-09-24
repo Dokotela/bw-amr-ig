@@ -22,8 +22,9 @@ class BotswanaAMRDiagnosticReportBuilder {
     }
 
     resultReferences.addAll(
-      organismObservationIds
-          .map((id) => Reference(reference: FhirString('Observation/$id'))),
+      organismObservationIds.map(
+        (id) => Reference(reference: FhirString('Observation/$id')),
+      ),
     );
 
     return DiagnosticReport(
@@ -58,23 +59,31 @@ class BotswanaAMRDiagnosticReportBuilder {
         ],
       ),
       subject: Reference(reference: FhirString('Patient/$patientId')),
-      encounter: encounterId != null
-          ? Reference(reference: FhirString('Encounter/$encounterId'))
-          : null,
-      effectiveX: effectiveDateTime == null
-          ? null
-          : FhirDateTime.fromDateTime(effectiveDateTime!),
-      issued: issuedDateTime != null
-          ? FhirInstant.fromDateTime(issuedDateTime!)
-          : null,
-      performer: performerIds.isNotEmpty
-          ? performerIds
-              .map((id) => Reference(reference: FhirString('Organization/$id')))
-              .toList()
-          : null,
-      specimen: specimenIds
-          .map((id) => Reference(reference: FhirString('Specimen/$id')))
-          .toList(),
+      encounter:
+          encounterId != null
+              ? Reference(reference: FhirString('Encounter/$encounterId'))
+              : null,
+      effectiveX:
+          effectiveDateTime == null
+              ? null
+              : FhirDateTime.fromDateTime(effectiveDateTime!),
+      issued:
+          issuedDateTime != null
+              ? FhirInstant.fromDateTime(issuedDateTime!)
+              : null,
+      performer:
+          performerIds.isNotEmpty
+              ? performerIds
+                  .map(
+                    (id) =>
+                        Reference(reference: FhirString('Organization/$id')),
+                  )
+                  .toList()
+              : null,
+      specimen:
+          specimenIds
+              .map((id) => Reference(reference: FhirString('Specimen/$id')))
+              .toList(),
       result: resultReferences,
     );
   }

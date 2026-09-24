@@ -11,10 +11,11 @@ final ValueSet botswanaAmrIdentificationMethodVs = ValueSet.fromJson(
     'name': 'BotswanaAMRIdentificationMethodVS',
     'id': 'botswana-amr-identification-method-vs',
     'title': 'Botswana AMR Organism Identification Methods',
-    'description': 'Methods used for organism identification in Botswana '
-        'AMR surveillance',
-    'url': 'http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-'
-        'identification-method-vs',
+    'description':
+        'Methods used for organism identification in Botswana AMR '
+        'surveillance',
+    'url':
+        'http://bw.health.gov/fhir/amr/ValueSet/botswana-amr-identification-method-vs',
     'compose': {
       'include': [
         {
@@ -22,8 +23,9 @@ final ValueSet botswanaAmrIdentificationMethodVs = ValueSet.fromJson(
           'concept': [
             {
               'code': '53465007',
-              'display': 'Microbial identification, automated and '
-                  'semiautomated methods',
+              'display':
+                  'Microbial identification, automated and semiautomated '
+                  'methods',
             },
             {
               'code': '362943005',
@@ -55,13 +57,11 @@ final ValueSet botswanaAmrIdentificationMethodVs = ValueSet.fromJson(
             },
             {
               'code': '56207007',
-              'display':
-                  'Microbial identification kit, API staph-ident ' 'method',
+              'display': 'Microbial identification kit, API staph-ident method',
             },
             {
               'code': '87350003',
-              'display':
-                  'Microbial identification kit, API staph-trac ' 'method',
+              'display': 'Microbial identification kit, API staph-trac method',
             },
             {
               'code': '36942008',
@@ -70,8 +70,8 @@ final ValueSet botswanaAmrIdentificationMethodVs = ValueSet.fromJson(
           ],
         },
         {
-          'system': 'http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-'
-              'local-method-cs',
+          'system':
+              'http://bw.health.gov/fhir/amr/CodeSystem/botswana-amr-local-method-cs',
           'concept': [
             {
               'code': 'vitek',
