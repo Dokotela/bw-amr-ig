@@ -15,20 +15,20 @@ import 'package:test/test.dart';
 const _eq = DeepCollectionEquality();
 
 void main() {
-  final assets = Directory('../fsh-generated/resources')
-      .listSync()
-      .whereType<File>()
-      .where((f) {
-    final name = f.path.split('/').last;
-    return name.endsWith('.json') &&
-        (name.startsWith('CodeSystem-') || name.startsWith('ValueSet-'));
-  }).toList()
-    ..sort((a, b) => a.path.compareTo(b.path));
+  final assets =
+      Directory(
+          '../fsh-generated/resources',
+        ).listSync().whereType<File>().where((f) {
+          final name = f.path.split('/').last;
+          return name.endsWith('.json') &&
+              (name.startsWith('CodeSystem-') || name.startsWith('ValueSet-'));
+        }).toList()
+        ..sort((a, b) => a.path.compareTo(b.path));
   String? urlOf(Resource r) => switch (r) {
-        ValueSet(:final url) => url?.valueString,
-        CodeSystem(:final url) => url?.valueString,
-        _ => null,
-      };
+    ValueSet(:final url) => url?.valueString,
+    CodeSystem(:final url) => url?.valueString,
+    _ => null,
+  };
   final byUrl = <String, Resource>{
     for (final r in generated.all) urlOf(r)!: r,
   };

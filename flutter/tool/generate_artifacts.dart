@@ -43,21 +43,24 @@ bool _isTerminology(String path) {
   );
   final file = '${typeSnake}_${id.replaceAll('-', '_')}'.toLowerCase();
   final words = id.split('-');
-  final variable = words.first +
+  final variable =
+      words.first +
       words.skip(1).map((w) => w[0].toUpperCase() + w.substring(1)).join();
   return (file, variable);
 }
 
 Future<void> main() async {
-  final assets = Directory(sourceDir)
-      .listSync()
-      .whereType<File>()
-      .where((f) => _isTerminology(f.path))
-      .toList()
-    ..sort((a, b) => a.path.compareTo(b.path));
+  final assets =
+      Directory(sourceDir)
+          .listSync()
+          .whereType<File>()
+          .where((f) => _isTerminology(f.path))
+          .toList()
+        ..sort((a, b) => a.path.compareTo(b.path));
   if (assets.isEmpty) {
-    stderr
-        .writeln('no CodeSystem/ValueSet JSON in $sourceDir: run sushi first');
+    stderr.writeln(
+      'no CodeSystem/ValueSet JSON in $sourceDir: run sushi first',
+    );
     exitCode = 66;
     return;
   }

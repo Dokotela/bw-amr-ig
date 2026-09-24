@@ -15,3 +15,6 @@ export/build/
 .idea/
 *.iml
 .vscode/
+
+# Dart build output for the flutter artifact package (flutter test writes it)
+flutter/build/
